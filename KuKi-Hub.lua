@@ -1,3 +1,6945 @@
---// This file was created by XHider v1.2 [https://discord.gg/hATuHQaQRb]
+task.spawn(function()
+    local HttpService = game:GetService("HttpService")
+    local Players = game:GetService("Players")
+    local LP = Players.LocalPlayer
 
-([[This file was protected with Xhider Obfuscator]]):gsub(".+",function(t)_ELPsXXb=t end)return(function(...)local l,c do local t=math.floor local p=string.char local N=string.byte local function o(c,l)local p=0x0 for N=0x0,0x7,0x1 do local o=c/0x2+l/0x2 if o~=t(o)then p=p+0x2^N end c=t(c/0x2)l=t(l/0x2)end return p end local U={0x7C,0x74;0x63,0x59}local function v(c,p)local o={}local U=0x1 local v=#c while U<=v do local l=0x0 local p=0x5 if U+0x4>v then p=(v-U)+0x1 for t=0x1,p,0x1 do l=l*0x55+(N(c,(U+t)-0x1)-0x21)end for t=p+0x1,0x5,0x1 do l=l*0x55+0x54 end else for t=0x0,0x4,0x1 do l=l*0x55+(N(c,U+t)-0x21)end end local Q=t(l/0x1000000)%0x100 local x=t(l/0x10000)%0x100 local E=t(l/0x100)%0x100 local Y=l%0x100 o[#o+0x1]=Q o[#o+0x1]=x o[#o+0x1]=E o[#o+0x1]=Y U=U+(p==0x5 and 0x5 or p)end for t=0x1,p,0x1 do o[#o]=nil end return o end local Q=([=[XHD:;KQDO-l`RD>S7B$),q;0%oa2m'*&4t#S@;e$QU$<>V$7:(_I@*1DU-F%i5:!'*`c)@p'`g!\GK6EHG\n,o[VF4U)+90H1QT?$^U&=Ul/U4VJ]ZFCSGq)\"hK!.&`s=U>u[3$05kFCSH04aV9\=W\P0(E5XkHZWb#7U/DG<aAjVFCSHCEcbeo:+fa.*="V28/2U?)Feml@p'Hk/1;AF1c@Q=H?<Y"3WT49>TnH9@p'`_(GHI7%"!)+=X,F(2]*,GG'%4s,:a3c$QT[>)%:_2@p($,%Qk"3(H<HQ#'b6"=X,F"3dPmX=X,F,2Ad$SFCSGiH?<Y",:`aR&/]\7@p($,%m1JOFCSGu.halW"qYlu@p($,$7Qu9&Lr-L@p($,#<X%."Enls=X,F52@fd"0G5%@FCSGu.f_I?(BQ16FCSGu.i(&UH$!P!,:`gY(jU45=X,F./09(Y@p($,%P/0:FCSGu.gIa8H$!P!,:a6^(jU45=X,F12@FbO@p($,"t4_<@p($,%kW$J@p($,%m4lS@p'3E$nW>5(EO,,!B:VqFED"q)?C:.#TX=4ATVEb-l`RD>T!_t*<6.&&.q8`%oa&t+!1\M;K-_f=UYKC/K#?@%362p4EGUS=UYKC/K#?@*sihc/JT36IWT(&'*iu.@p'NcG][Fu)BB>NH$!P!(_Hd")gc[:=W7qh0bYK3H$!P!*uGDI(O1%3=U6#X4F2*Z=VVhd4:V@>FCSH,G][Fu$QK4"I<8t%5B_-Y=W7qh/.;R]2$jk<FCSG`&Jlu.)FJ1>7<!?Y=Ul/U4VJ\e/Iid14uJR:=V)MP3"T%B##/2Q##8,&2I%(-3ZT&)57ebB.o7#i3"B$k+:&QT/JB$<1`d5@FUnKRA.]Om0iAVp2A69j.L64c2]Gp#0c^Ho.L64c2]Gp$+:&QT/JB$<1`d5@FUnHa0G5$n.L?kX2%pc-2-^b02]i#,2A/si+VP&Q3)CA_2%pc-2-^>lBj;8Z.pO*$Bi%/mBNu)WGn:np3"T%.A0"lOEZSF^GngrZ+Tb4=2%po@E<KP`0c:ls.mXA1CEacd4;&2m3'e/f2A69f3)`:=4$aJi2A69f4&\U@4;&2m.iA=&.hYenGo7M*Gn:np3"T$p49\/L1)UNuA6p8`0GGK70GPT80GFa'.M#QUHQYa]D'25ED]hMMC*5uID]hJPC*5uDCEQ&MCEQ)FC*5uIDBM>FDBMAEDBM>FD'25DBcolDD'2;E@3@s:CEQ)CBHTcBBHTcFC*5uHBHT]ABcofBBcofBBHT]ABcofBBcofBBHS$SBhUoZBhUoZBhUoW"r/$]49R'2BhBdPBhTpRBhTpRBhU$>3ZT%J"\_<b"\_<_"\_<_"\_<_"sXuo4Wm-kC`l,EBcofBBcofBBd5,</.bhm2BNYEGo%&2CEjZ#2aKc2Gn:np3"T%#4;e\m.L?u!CJ@&oGn:np3"T%$4:2Z4.N'`H2Ad$4/IhdcGn:np3"T$m/.ra80G>?l4W,%J+:J6C4;&G=4W+en.L65N2%pc-2-^_&3XuT4/K#*^3s>Tg.R=Rd58+5g.2)qmBM_b72]itD4;]R[/Ikl[Go.Jf2%pc-2-_+*+X7a@/K%+k/08%#2]itD4;]R[/Ikkr2@in'2@j.mE#BPo.g6%l4;]RL+:&Pj!acNK3XuT4/K#*^3s>Tg.T]&&A-a+`/.iX%.o[Jm+X7a@/K%YgDcIAY4^8g43ZT&)2&R;p3s>Tg.R=Rd58+5g0L8*&C/@>d4VLd*2BNYEGo7M#.g6%l4;^Wo2]i5B.0pLj"s+3i4:a(PE_Rtn2BNYEGo.+n.g6%l4;^X_E>]Yp.g6%l4;_344;e\m.L?tbE_\o#E*5Y2Dd4+f3ZT&)1)UO!"s+3i4@'`$/K%e!49\/L0NghEE_TgM2BNYEGo%&2CEjT5/K%+\+:&QP1)UNuFVRaZ49\2:2&R<'BN5lR2^9(V/K"dQ0NU\,A0)-f.o[9'2@`ss4<FbG.0pLjFVbW.BHn92/K%hi1)UNu"s+3i4B2t&4^8g43ZT&)2&R<=EE!bZ2^9(V/K"dQBH^^n4;'.F+:&Pj!_t19CIpibEY&fl"s+3i4:a)A"BIiiCemAiEY&fl"s+3i4:a)H"BIrkDG*>oBM)572BNYEGn(Dt/._ef+or;b.pO*$BM]NM2c)q14VLd*2BNYEGo7M#.g6%l4;^Wo2]i5B.0pLj"s+3i4:a(PE_%Vd5?nBs0,Xs*4<k^P4W.3#2],L$Hqm7>Bj:WG4;(Tt2]i5B.0pLjA5j-M3XuT4/K#*hBM)Q%BM)V82%po@E>]Yp.g6%l4;_:#DcIAY4^8g43ZT&)4W,%J+:J5S4[E=G4;&GB+:J5S4])Fg4;]R[/.l/YCIpibHqlt-Gn:np3"T$p49\/90G4p$+[K??FA6%1BM)W0Gn:np3"T$p49\2:0G4p$+[K??FA6%11)UNu"qV@UE_TLD2BNYEGo%&2BHn92/K%+\+:&QP1)UO!FVbW.BHnN,4W+Z#2%pc-2-_4-+AOEf+:&Qc3s>TgE>K3*CJZ)W+AOEo2]*,GE"3Hk/._e@0Hj!f0c^Hk3s6K7E?5Ms.o[&a3XuT4/K#*q1)UO!"s+3i4B5Jh49\2:3s>TgE)dJZ4^80q/I;UjGmG,c2&TQt2A-f-/Q;oY.L?q.E#BQ!Gn:np3"T$n2]i5B.0pLj*?>+]A-WW2*)812+%eq"BKe1OD,*K"C-PB=Cec`4D)jLR+%8%2Db`u&D*BjWCcF:KD,3W&D`TgVD`CEjDacB[D`CEjDacE))biUB)EK`[)Eoku)G;hcDaZ9ZDaZH+)GEC=?ogY!*BuD\@8AUWD`BUR(e[=@)GW[I(eI4tD`K^U(d1;1?r&I!)G2kbDFHK^CH+d\D+-B]CH4[WDE^!+DETm%C.U9aDa.8uDbWMt,Y&A2C-F<p+%eq"+$VJ[D,!`**'Q\iBg5'aHVd45D+Ft/,$mcD*Bl5YBhU6XDG*8p?q<a6Bhq,DHVdF7D+t==,$mb^*Bl5YBhU9.@7rmiBM(`n*(WM!Ced6!+%n@jHUgA*@7U]#,",+*CJ\&/CH+3uDbNPGCcOjaDb*/kCJ@&kBgbHl*B?JbCe-on(ck,e*(3.q*F9%S,$mcD*Bl5YBhU9^?qWd^Ce7)n)c&jKHVdF7D,(C5,#:R&C/@r.D)aF"DbNPG?qs'j@6["R*'-SfCcF[\CHY!1DFd-!)GECsCed?!)biS!@9s79,"YL5Ce%N&)E9W$DbNPG?qs'j@6["R*'-SfCdgWk+$)b8D-dNN,$mbe*Bl5YBhU6^*(iL>+&59PBhq,?*DSmH+%oX1@7Wjh,Z#";D+lW,+%eq"*(r"cCcsIQC-Fp[Bf\paCH=4M+%Sk#DG2c]CctfpCed;r,Z#";C-F<p+%eq"+$)kjCe7<$C-"^YBMUumHVd45D+P%9,$mc>*Bl5YBhU9++%nmD*D&^HHUg=uDbUO?,"5"+Bh)3#D)aF"DbNPrBK8F]CgIEM,"+auF^@Qb*Bl5YBhU9`*(iJ#*(WOGD,3PIC.LZhDG)]`DbEE$HN@4cHV[?`)`g;aBf\LW(e@=uDb`VBC0k"?Cd^`6@L#q1@5p.kDbNPGC.gopDE:'\*(rRq*F;NFBLkW7FU(?4?r'QaCJQW-+%eq"*(re$CemGrCeR,kBf[qFCe-ll*)B6P@6%"XCe7<"HN@4cD,*DpF^@R<*Bl5YBhU9_@7rmj*(`XtHN?nZ?qimf@U;Q/*Bl5YBhU6\C.gihBhgr:+&>9KHN?nZDbEJrF^@R;*Bl5YBhU6**(rOo?qFB?@L#q1*B5r'DbNPF*(3.p@8'-lDE^QfBgbEk*BukV@RNIYC]R<KC/75u@U;PN*Bl5YBhU6bCJ-rs*D%t/+%\mKBMUot)G2_\)G4$OFU(E5BhDJnC-"$l+%eq"*(VqdCd]sXC,dpo+$V\\CeQT`+%SXrHN?nZHV[?`)`g;aBfSj2DFdGDCec]dC0j\6Cd^c7FU(E5BhM5fC-"$l+%eq"+%Sn$CcX7NC/$E/*'HSbD)j=M*(r.hHN?nZDbEJqF^@R;*Bl5YBhU6_BhL`kCIqPJFU(T?DbsJ2*&oi&DbNPF*'HYiCe6oi(ca?MBgbEkCemDED+-ck*F9%J,$mbc*Bl5YBhU9cCJ-or@7`pg+&>=%D)k*f?qW7VD+[i)C/76%,Z#";C.0g"+%eq"*(37rD+-inCH4dZHVd.3@7U]#,$mb^*Bl5YBhU6\C.gfgCIpuA)c&jJD)k*0?qW4SHVd"3@7gi%,$mcC*Bl5YBhU9`CJ$lsC.UoC*D]^3BLtlu,Y&A2C-OBq+%eq"+$DP^CemGrD*9aQBLjgSD)jLR*'%%qCdh#s,Y&ACBM:ZnHVZLH)`g;aBf\p8Db3H&D,)c.C/./oC.U?M,Y&A2C.'a!+%eq"+%o(&CeI&pCICEaBK0$p?qime,Y&A2C.0g"+%eq"+#kuSD+$'YCJ$rkHUgM*@7gi%,$mcC*Bl5YBhU9c(e[1o?qEj7+&>p5BLtls,Y&A2C-F<p+%eq"+%o:,Cd1<bCd0UNCJ6H[HUgS,D+Y+:,$mbd*Bl5YBhU6_DbEADDFm;E*'-Jd@89*hC.g<`?qNa5HVdC9D?3NMBM:]n@U;N'*Bl5YBhU9ZBhL`kDFm;ED,3SC@899jC.0jXCe?QgBhCZ7*(rP#(f!@rBM);H@L#2&@73mWC-OBq+%eq"*(rb#CecZb*'R(tBKo3gCeQT`+%TER@L#>"Bh;DmC-=6o+%eq"+%nIjD+$`lCH+4KCJ72oCd1rAFU(rKBK.mrDbNPFD)jpa@6-YN*'HelBMUlnBK\[.DaculBhq5bF\>)#D?3NMD,*DoF^@R<*Bl5YBhUon*D/Up*D&aKHN?nZHVQgR)`g;aBfSOXDb*Q"Dba"NCJ%#ACIpB-)`g;aDG!/lBhq,>DFdK"D+IAeF\bA$D#mELD,*E!F^@R<*Bl5YBhU6_+%egHCIpuBHN?nZHVZCE)`g;aBf\.LDb3DFD,)r8+$)\kCJ%#BDE1'aDI-+8C.q>C@L#D"BM;MoC-"$l+%eq"+$W4oCct9h*'Q,YBK/FWCdg9_*)ALnHN?nZBMM9'@U;N#*Bl5YBhU9`(e[+o)G!=ADGN\tD)k*6DbDfa@7rscBh1NjDG!qN@L#q2C,e*tDbNPFCcOj`DE'mX+%o+%)b!7tD*9dTCJ@/qDG3;s)bNI`@SK<qC]RWT@7WjfF^@Qc*Bl5YBhU9`(e[1n*D%t/+%SdB?qs!8@7sWB@L#>&@743`C.0g"+%eq"+$*(pCd0gYCJ$?YHN@4cCdh$$@U;PI*Bl5YBhU6_@7rj^D+QH*Bh:`9Ced8p+%n@jHN@4c@7isb@U;N(*Bl5YBhU9.*(rRs)G!=o)c&jJD)k$a(d:AhDG!8qBh1K8C-G*fBLkBcD+R&oHN@4cCdh&sF^@Q\*Bl5YBhU9Z?qWdd*D&_"*',eu*DSmtBLFUVHN?nZHVZLH)`g;aBf[smDFm,pCeci7+$)kgC.U*FF\P;'DZNWNHVZLH)`g;aBf\scDFdK+CcOBtD,*JHCIpcW@SK9iD?3NMHVQpU)`g;aBfSI'DFm<$CedYMC/$EeC.V,uDE1'g(dp;]D+HQbDFlQ`C.UcjDdH4;Bh:T3@L#q1(cXE"DbNPFDa-TjCJR5m)brn#Bhq6"CgL4ABM;)@FU(rKBK.mrDbNPF*)8h%?p?nRCJ@&oBLG*e*(<4@CHk-cD)b!NF\>)#@0'IIC/78r@U;PN*Bl5YBhU6b(e[.<Bh:ckBhq/?D)k*1)bVqbC._MJFU(rD)E9W$DbNPGD*LBh@80'b)`]Z"D+-oq)EpM8**uEA?q!L*FU(rD+#l/)DbNPFDE1'b)c&as?qX!f*(Ve])c&gICd^WV@S]KlCB7NSHUpRQ)`g;aBf\L`DFlceCelcaC/$WkCJI8F?og_UDb;lcD-g=DDG3bG@L#D"BMV_rC-"$l+%eq"+%n:fCeHZeCICEaDbW`&CcXIR*'$;bHN@4cHVZLH)`g;aBf\p7Db2ldCedYOCJ?KdCIg0G@SK9i?ia@HHVZLH)`g;aBf[tGDFlcjCcOBtD+llbC.UcYF\P;&B`V<QHVZsU)`g;aBf\sfDFm2rCec]NF\"u%C]R<K?r'HoF^@R>*Bl5YBhU9+)G<@mHN@4cD,*Dt@U;Q)*Bl5YBhU6Y*(iLrDFm;EHN?nZD,*Ds@U;Q)*Bl5YBhU9.CJ-ro@7`s8HN@4cHV[!V)`g;aBf\U*DFdH#CgKn;DG3PAFU(?9@7<sXC.0g"+%eq"*(VhbD+%*!CIKpRHN?nZHV[?`)`g;aBfSI+Db2i6Ced>@C0k"?Cdg`5FU(0/Da[AeC.^0'+%eq"+#u2XCe6onCHY]>@L#q1*&oi&DbNPF)`^5c)biXr?pl_LBMLfo*B?J6DbNMu@9u`6DaXn6,"b4$D+@W'DE'O#DbNPGD*:6e)F$MR,Z#"UDadGfC,msk+%eq"+%\q$D+$<`+%\15+&+[kCelfc+&#+&@80cD@L#.qDadGfC.^0'+%eq"+%o:,D,3&jCJRtPFU(39?qsK`C-OBq+%eq"*(We'CcF=S*'QhmBg5'`CeHN_+%TERFU(95BM;MoD+u]-+%eq"+&4LiCdg9aCJI<"DbWT"DbW/j+%Sh"D`ojQHN@4c@7WjeF^@Qc*Bl5YBhU9*CJ-rj)G*CFD,3Jr)b<7BC._MJ@L#q1D)aF"DbNPF*(3.p@:!&>C.(N4FU(E9C.VMnCIg-&+%eq"+#uejD,*c*CICWgBMLolCdg$W*)ALn(e$koCe?unCe[;oCen(QFU(rDDE'O#DbNPF*(3.p@6$_A@S0!dC]RWTHUpOP)`g;aBf\L+Db*PJD,)f0C.^okCe6u?DE0FPDbEAnC.U]WF\,&&@0'.@BMM9%F^@O6*Bl5YBhU9**(rRAD+QK]BMUrmBLtK;*D/(fCe@#;(f*FACe@_L@L#q1DE'O#DbNPF*(3.p@6-eB@S0!dDZNWN@73CXF^@O7*Bl5YBhU9**(rRs(e@+CD,3GAC/7;tBK\+M?qNdc*D\t$CJ-oiHN?nZHV[!V)`g;aBfS[-DFdGDD-g"<DG3D=@L#q1*&oi&DbNPGD*C9eDE^<_?qs!cCJRE"BK8C+)a6Sg)dZ<EDG1@4,"4q%DbsJ2@5p.kDbNPGDE1'c@6$SM(e[@sC0h3K,#(L(BM_`+(cXE"DbNPG@6$\UCHb$]*'$8]Bhh0")I<_P,$mb_*Bl5YBhU9/*(rP#@7`a.+&>9N@8Bp"C.UZi,Z#";C-OBq+%eq"*(WIsCeI5u*'Q)YBLG<dDbVrd*(s=7Cdh&p,Y&ALDG=5!C,msk+%eq"+%8k&D+$'YC-ORQDbWJtCdg9_*)Ah!Db*nM@L#q1+#l/)DbNPFCcOj`DE:$Z+#u)&?q!RdCH4^.DG!8^@S]KlD#m`U?qimc@U;Q/*Bl5YBhU9.(e[.;)G!=EBhq/oHN?nZC.UZp@U;PJ*Bl5YBhU9d*(iLr*(WOFDGN`#*)9NUFU(rD*&oi&DbNPF@5pSSDGEJp+#u)&+&5=,?qj<AC.LZkD-g"BDGCL?,$mcC*Bl5YBhU9]CJ-r9)bELqDGF5.BLtor,Z#";C.^0'+%eq"*(WFrCcFpcC-G[#D,*Gs,Y&AAC/$urHVZCE)`g;aBfSOWDFm>sCIpH.C/%3&C.V-(DE1',DdE`G,"k:$BLc*)BK.mrDbNPFD+$`l*D8[qCHb6gBMUlp*'Q_:@7WacD)t-P,Y&AGCJ%<'HUpOP)`g;aBfSI+DFmMuCel`dC.^okCe6u?DE0FPDbEAnC.U]W,Y&A2CIp3'+%eq"*)B%'D+$fmC-"7LDbWZ$CdgZi*'$GeD`pTeCcO@PCcOpcHUgD#DGLR@,$m`>*Bl5YBhU6XCJ-or)G!>%CJR8pCIg`pDbDf3BM1Z9C/7,B(e[.ABLl0+DbWT#,Z#"JDGNT$HVQgR)`g;aBf\U/Db3;>CedZ*C.^okD+HB-DE:Kr(e$nmD+R/sDb*T%C.M#a,Y&AFBM1WeHVQjS)`g;aBf\U/Db3;>CedZ*C.^okD+HB-DE:Kr(dq%DCJ$u<DFcH*CL.<C,"Y7'Bh)3*BfJ!sDbNPF?o^ST)biXrDE^QjBK/7Y+%emIC-=m`Cd1EjBO2!@,"b:'DbsJ3CcF=!DbNPG?o^ST)G`XrDb3Gt)G`k#Bg,6;CeI,q@73UdC/.,tCJ75a,Y&ACCILTdHVR'Y)`g;aBf[smDFdH)Ced\JC.^okD+R5sDE0HqDb<;mC.UioDI*WO,$m`?*Bl5YBhU9/(e[+u?qEgk)c&duCIpf>)bVqf@6I:g*D\su(e[.A*D\sFHUgS*C.ek/,$mN4*Bl5YBhU9cCJ-or@7`pg+&>=%D)k'4)bVn/D+[,r+&5j=DG*Dq,Y&A2D+lW,+%eq"+%8XuD+.-!CJ$?YBMUl?C-"7P+&5(#Da[8qCe7Z0Ced>q,Y&A2C,msk+%eq"+#kuTCd0gYCJ-Q^DbWJtCdg9_*)Ah!Db*o2@7s*3@L#q2C,e*tDbNPF*'$>e?qWd_*'Hbh)F[+s*'H2XCJ@/qDG3;s)bNI`@SK<q@0'.@@7rj]HVZ@D)`g;aBf\"HDFd#rCed\PC.^o=Ce7,rDE0s[DG!/[,Z#"JC/%#sHVZCE)`g;aBf\U.DFl`_Ced](C/$Ea*)87mDE:--DdE`P,"k:$C.D<+BK.mrDbNPGC.(Ej?oUGK)GN_")FR%lBhM/HDE's_)FR%\,Y&A2C-"$l+%eq"*)A:gCeI5uC,n.KDbW`&CcY9i+%njuHVd4/BM/Y-,$m`8*Bl5YBhU6X*(rRsCIq#C(f!CqD+Qu>+%n@iBM1Zm)G`Y"DG!r*BMM9*,Z#"NDG<AlHUpRQ)`g;aBf\*oDFm>sCIgB_C/$WfCIpf9)b`OrDG!/;C0h3B,#:R&@8L!%D)aF"DbNPF(dCAgC.q)u)GEY!)G*D!Ccs[TCd(0c)G!A!*)0+.)GNIu@9s7B,$mbe*Bl5YBhU9`(e[1n*D%t/*D&XACed5B*(s=7@7Wjl,Z#"JC/%B(HVZCE)`g;aBf\O(DG!?$Ced\PC.^okCe-K.DE1BfDdE`P,"+[n?q46o*B5r'DbNPF)`^8dDEgE6)b`RqBg,!e*BukV,Y&ALDFmViC,msk+%eq"+%T()CdgipCHXBu*'HSbD)jOT*'Q8\DG+"OFU(rED`BX$DbNPFD,3N"*BHJ`@89<iBgbHl*Bc;ZD+-cjDG<N#BMLoq)GEY%(dpYh)I?3DDbWJ<FU(39?q=BcC-OBq+%eq"*(WIsCel`cC-"'q*&olSCdg*Y*(3gKFU(rD)E9W$DbNPFD*:6e)F$MaCH4-s+%8Y"*'-G6**u`J?q!@&FU(rDD`BX$DbNPF@8B6k*BHG^+'q`ECJ.);FU(rD)`T`%DbNPFCct-d?qWd^)`gJe*'QhX@S]9k?ia@HHVZLH)`g;aBf\LUDFm2BD,)rdD+lWeCIg0GF\P;&CB73JC.U]iF^@Q]*Bl5YBhU9**(iL?BM(`tCemK(@89iEFU(64Bgc&hC.g6(+%eq"*(rt)CcF[\HN?nZ?qimj@U;Q/*Bl5YBhU6\@7rm6D+R#>DGN]!HN?nZDbEK%@U;Q(*Bl5YBhUom(e[.<*D'9QFU(?9?qsfiC.0g"+%eq"+%et+Ce-6\CHj[RHN?nZBMCol@U;PK*Bl5YBhU9`@7rm/)G!=ADGN\t?qrs6HN@4cHVZsU)`g;aBf\U.DFm2<D,*Se@RrsfCB73JHVZRJ)`g;aBf\p7Db2],Cec]]Ce[B'CIg-ZDE1'M@S'9tDZNrWHVQjS)`g;aBf\LUDFm2mCemGBC-"$rCIg3)D`KOUDaZu9C.U<](e@%<CgKn;BM1]6FU(rDD`BX$DbNPGCd^Wk?qWd^)I?3@CJ./=FU(rD@5p.kDbNPFBgbWq+&5+!+$N1n?sZW4BLki=@L#.qDFdPhC.^0'+%eq"+&51&CcXFTCH5E:FU(?9?r'ljC.0g"+%eq"+$MDYCeI#oC-"[XHN?nZ?r'HmF^@R>*Bl5YBhU6X@7rjhHN@4cHVR'Y)`g;aBf\.!Db2ibDba#-C/%B+CJHTfDE:3fDFI8uD+R/qDdHODC.q#:@L#D(Ce[\kC-F<p+%eq"*)B7-D+.0"C-"^YBML9ZHN@4cHVZLH)`g;aBf[smDFm,kCedGDCJ6ZkCIp3GF\P;&D#m`UHV[!V)`g;aBf\UYDFdJED-g=EDG<M?@L#q1D`BX$DbNPFDGEQ#?p?nXC0k"DCJ-r7@L#q1DE'O#DbNPF)GWY#(e?qY@S0!cBE;3PBLtp"@U;Q.*Bl5YBhU9.@7rmiDFm;E(f+0RFU(rD+#l/)DbNPGD)jsa(cXfY)EgP:(e$noBK\[.BK\[J@S]Kl?ia@HHVZ=C)`g;aBf\OZDFlNdD)jKsCeQTfC.V,HDdH4DD,3P@@L#>&?qFHdC.0g"+%eq"+&5O0Ce6lmCH4g[HN@4c?r'HtF^@R>*Bl5YBhUoq(e[.lHN?nZHVZsU)`g;aBf\1MDFl]eCcX79F\"u$DZNrWHV[<_)`g;aBf\1MDFl]eCe6Q/C/./_F[\`"B`V<QD,*Gt@U;Q)*Bl5YBhU6_BhL`>*(WOFHN?nZ?r'Hs@U;Q+*Bl5YBhU9/(e[+tHN?nZHV[*Y)`g;aBfRk5@Rrd`B`V!HHV[*Y)`g;aBfS(;F\"esBE;3PHV[*Y)`g;aBf\LFF\"esCB7NSD,*H&@U;Q)*Bl5YBhU9/*(rRA*D&^IHN?nZBLtou@U;Q.*Bl5YBhU9/(e[+t)bEOHD,41RFU(rDD)aF"DbNPF@6$YT)I?3CC.(B0FU(rDDE'O#DbNPFDEU?gCJ@,]@S0!cCB7NSBLtotF^@RA*Bl5YBhU6X@7rm4CIq#BBMVYM@L#q1D`BX$DbNPG?p-kX(cXcX**u`KCJ.ACFU(W=Ce\"tC.'a!+%eq"*(_kaCd(?iC-"7LBfT38FU(rD?oU%jDbNPFD+$`l)bE=rBLtHTF\P/*@0'.@C.U]gF^@Q]*Bl5YBhU9Z+%nmsBhq3&DGN\t@8BoFFU(rD@5p.kDbNPFDE1'bD)agY?qj-h)I?3CBLtZ7FU(rDD`BX$DbNPFDE1'cD+-`fDI-+?CICQ3FU(39?qXTfC-OBq+%eq"+%n=fCd(?iCIKs(+$N.jD)b$b+%fQT@L#D(Cen/!C-F<p+%eq"+%\.dCcY$dC.q,uBMM#oHN?nZCdh'&@U;PI*Bl5YBhU6X*D/UDCe7)?Bhq-$D+R&l)G2bbHN?nZ@7WmdF^@Qc*Bl5YBhU9`(e[.;+&>@1CJRB"*DSmC+%oWUFU(?5BLu;lC-=6o+%eq"*(2Y`Cct-dCd0XOBKo3gCd1rAFU(rD(cXE"DbNPF*B?Ge)b`Ou)bEOu(e$nq**uE=BMCf7@L#D(Ce.YoC-F<p+%eq"+&5O0CcXj_CHXOPBMM#nHN?nZHVR'Y)`g;aBfSFUDFl`6D,*GEC.p</CIq$#DG<B"Db<<"C.L3`DdHODC.q&;@L#q1DE'O#DbNPs)`^5cCcF^HF\5#!C&q*IHV[*Y)`g;aBfSmRF\"esC&q*I?r'Hq@U;Q+*Bl5YBhUuoCJ-r;HN@4cHV[*Y)`g;aBfS%:F\"esD#m`UHVZ=C)`g;aBf\Xd@7`CUDb`VBC/$E`CIpckDI-FLD,3VBFU(rD*B5r'DbNPF?qs'j@5pPR)EpYi+%f%(*BukV@RNIXC&qERHVZRJ)`g;aBfSI+DFl`_Celf0C-":RC.U*`DE:*MF\,;2?ia%?HV[!V)`g;aBhUlADb*AGCgL4DDG<A;@L#.q@80iiC.^0'+%eq"BLOdXCcsOTCH5E:FU(T>Db!i)*&oi&DbNPF?p-kY@7`adD`UBe*(3:t*Buk:)a6u#CL.<L,$mN5*Bl5YBhU9c(e[+uCe6ll+&>9O@8B0:)G2b.)b!G$)G`UGHVd"*DGCL6,$mb^*Bl5YBhU9c(e[+uCe6l>CJRDu(f*FF+%8RDHVd%-BhSh8,"+dtF^@Qb*Bl5YBhU6X*D/Uo@7`pcBMU?[C.U]jC.g9.)G3@sHN?nZHVZLH)`g;aBfSF*DFm2BC/-K0C.p?dC/%,_F\P;&D?3NMHVZOI)`g;aBf\scDFdK+Ce-6\C/.0$C0k"=Ce6o6FU(W;@73mWC.L$%+%eq"*)AsHC.))DFU(rD*B5r'DbNPF+#u\iD+-`f(d1>d?qEggCHaUA@RNIXD#m`UHUpOP)`g;aBf\L`DFl`bCed>@C.p<bCJIAH@6-YODG!T'C.UfZF\,&%C&qERHVZLH)`g;aBf\^\DFl`eC/-K-CJ@MLCIpHN@SK9h@0'.@@7s9iHVZ@D)`g;aBf\^\DFl`5C/.GHCJ6Ha*)87iDE0TtDb;]L,Z#"JC/./mHVZCE)`g;aBf\^1Db*>oCcOC"Ce[T$C.U-`DE:*`DI*WF,"P1-CJ\&.D`BX$DbNPF*(3.pCH+UWDI*WF,$mc>*Bl5YBhUoo(e[/!D+R2DHVct)@8@23,$mc=*Bl5YBhUs!CJ-r9)G*t*DbEN",Z#"LBMD3'HVZLH)`g;aBfSjkDFdH#Celu:CJI8oCIp3G,Y&A2C,msk+%eq"*(2Y`D,)ccC,dnKCJ7&kCcF+Q*'Q)VDb*o2@7s<9FU(rKBK.mrDbNPG@6HtZCH+UV*B6;]BhClr*B6_=CIpimD)b$O@S9'dC]R<KHVR'Y)`g;aBfSj2DFd5ECel``CeZigCIpc;DE1!aDG!T!C.^loDI-FCC.q)<FU(TECe.YoCJHQ,+%eq"*(2Y`D,)ccC,e(PBf\OWCecZa+&5O1DG)obCe6lkCdhAG@L#q1*&oi&DbNPF@7rsg*B?D_(f!RJ*'ZnmBK8F+BMUupDdHOM@8$u',$mcC*Bl5YBhU9c@7rme*D]..(f+1.BLtp%,Z#";C,dmj+%eq"+%\.dCcXITCJQfbBMV?"D)s@NHUgb2C.S_6,#(L'Bh)3#(cXE"DbNPGCcOj`)F$Mb*)&k#@6$eX)dWhQ,#:^+BLc*"+#l/)DbNPGCH4^^DFd&jCHY-c@8&sf*DAgIDEgHR,Y&A2C.'a!+%eq"+$),UD+H?]CJ-B/CeRl3?qip`,Z#";C.^0'+%eq"*(iq)CcY'eCIM9"D,*c+,Z#";D+lW,+%eq"+%T()D+$ioCH4dZ*'I"nCd1?m*(rt/DaZ?XD*D!&Ced?!,Z#";C-=6o+%eq"*(qtcD,2ogC-OFSCJ72oD*M''BMCro,Z#"JCe6rqHVZOI)`g;aBf[smDFd5ECel`aC/./qC0h3B,"4q$D+@W'@5p.kDbNPGC.gopDE:$Z+%o+%**rqI,"b7%BM_`+)E9W$DbNPGCcOj`D+Hri*)/[s*D&_$CH+[.DI*WO,$mc>*Bl5YBhU9]*(rS$BM(`nHUg=u@7^c$,"4q$Ce%N&@5p.kDbNPGDE1'c*'Z\b*)&k#)I<_G,#:^+CJ\&.+#l/)DbNPGDE's`DGEJo)EC8aBhh0!*CN7ACe[Sh,Z#"PCJ-rhHUpOP)`g;aBfS[-DFdGDD,*PuD,!<"CJQW`DE0UVDG*8<C.Ui[,Z#"QCICKbHVZsU)`g;aBfSO.Db3<"Ced>`,Y&AACe6urHVZOI)`g;aBf\"HDFm)@CelfcC/$rsCL.<C,$mb`*Bl5YBhU9^C.^`kD+R3$BMV'$+&5+!HUgM&CJG13,",+&F^@Qb*Bl5YBhU9_DG*8p+%SmJ*(WID?qrs5*D/(dDbEDuHN@4cDbNPr@U;PI*Bl5YBhU9_DG*8p+%SmJBh:cm@89*l+%e:hHN@4cHV[!V)`g;aBf\scDFdGKCgKn;DG<G=@L#>"CJS%uC-=6o+%eq"*(VtfCcF@TD+d5mBK\:OD*M&BFU(rDD`BX$DbNPGD+[/r*D8[q**uEBCICN2FU(E;Cd_AkC-F<p+%eq"*(VtfCeHKaCIgokBKo!`HN?nZHV[<_)`g;aBf\RaDFm2BCed>@C/$BJF[\`"DZNWNBMCrtF^@Q^*Bl5YBhU6\*(rOD)G!@FBhq/?*Cr[CHN?nZ@7Wmg@U;PP*Bl5YBhU9_DG*5k*(W=A)G`dF?qs!6*(j6Q@L#S2CJ\&.*&oi&DbNPGD)jp`)EC8a(e[=s*(<+n(edUMDG*;qCgIED,$m`=*Bl5YBhU9`@7rm1C.UoCBM(]jCJR2B+%n=hD+d5pCJR5sDaco8*)AjsCIpl?HVdC9BLrM+,$mb^*Bl5YBhU9_DG*8CC.Ulp)bEIADb`SG*D8.fHVd%-Bho%2,"b:'@7O?qCcF=!DbNPFDE1'cDa-KaC.U]h)bN@r?ogY%*(WD#D*CHj*D/\#+&#0j,Z#";C,msk+%eq"+%n:fCeHZeCICEaCe.6$D)jLR*(;bcDa%2t@73U,@L#q1@5p.kDbNPF@6HtZ?qEdfBf\a_**uEEBLtQ4FU(rD(cXE"DbNPG(carbCILN9DbE>n)FR(r?sZW,BMLi7@L#1rDG""sD+lW,+%eq"+$W4oD,)ifC,nOUBKnp3C.h&r+%en"DFd8oCctf?@L#4uBh2#cC-OBq+%eq"*(rUACIBjWC/7>G*&pA5CH4.L+$EXGFU(rDD`BX$DbNPFCd^WkDEgB_)I?3@CICi;FU(rDD`BX$DbNPtBhUlp)E:#Z*F;NCCICl<@L#q2CcF=!DbNPGC/.,t@80'b+$N1@(f!S$BLG37Db<]&DF?uq)GWY$)GNI_@S0'g?ia%?HVZ@D)`g;aBfS[\DFdH!Dbi,3C-"+IC.V,t@6$hZDb<8\F[So),Y&A2C.^0'+%eq"*(WS!CeHKaCIhK%D,*f(,Y&A2C-OBq+%eq"*(r"cD+$*[CICQeBfS+LDbW/j*&ptpDbNQ",Y&A2C.'a!+%eq"*)B%'D+$fmCILQdCJ7c)?qipk,Z#";CJQW-+%eq"+%8XuD+.-!*'QekBf\scD*Bg#Bf\O[Da-!RCct'aHUgM$Bho%;,#:R&?r0m$D)aF"DbNPF)a-PiC/.&k+$N1m*Cqn]+$W(=DGNVD?q<Ra(carb*)/\"@9s7B,$mb`*Bl5YBhU6_*(rRs*)B$N+&>9O@8B-7HUgM&CJ"n8,#(L'DGXA1(cXE"DbNPF+#u\iD+-`f(d1>d?qEggCL.<C,$mb`*Bl5YBhU9^(e[+k*)8sMC/78q@8B0:HVd./CIAJ),"+[mDGXA1*B5r'DbNPGD)t!a*B?A^*'Z_f+%8\#?o^P>,Y&ACDbNQ$HV[?`)`g;aBfS[-DFdGKCed\KCL.<C,#:^+C.D<$+#l/)DbNPtBfJF[+$MtfCIgrmBhV#nCHb*4+%\db,Y&A2C.^0'+%eq"+%7k`D,3l,C-#BtD,*f',Y&ACDbNSqHV[?`)`g;aBf\-rDFlc0Ced>@C0h3K,$mbe*Bl5YBhU9c(e[.;)G!=ABMV$#C.U]jC._N/@7Wmm,Y&A2C,msk+%eq"+$!"oCcFmbCcXINBgk]lD)aIS*(r_(Db3u3@73C&FU(rDD)aF"DbNPGD+I#q+'r&QC.(c;FU(rD(cXE"DbNPGC.gopDFHff*)&jK(e$qq?sZW,BMM8C@L#q1DE'O#DbNPF*'HYi+&5*f@S0!cD?3iVHVZOI)`g;aBf\UYDFm2sCedYOC.pQiCL0e5Ce7>B@L#V*Cdh,cC.'a!+%eq"*(<=rD+.0"CH+d[BKoN=@L#q1DE'O#DbNPFDE's`*DAab@S0!c@0'IIHVZCE)`g;aBh_8JDFd6#C/.JGCJ?`7CIgBfDE:$\@:!&4C/.#8@L#5!BLQ#hC.g6(+%eq"*(rb$D+ZK_HN@4cHVZsU)`g;aBf\L`DFd8pCelfPF\"u*CB73JDbEPu@U;Q(*Bl5YBhU6_@7rji*Cs3PFU(rD)`T`%DbNPs?o^PS)EL/\+%o+%CH4jM@S]9iB`V!HBM(Zi@U;Q.*Bl5YBhUor)G<>"?qEj3(f"*Q@L#V*DbNqmC.'a!+%eq"+$)8YD+-BbCcOp\BKoN=FU(rD?oU%jDbNPFDad#oC,nOUBhLo]F\P2$C&q*I?qiscF^@RB*Bl5YBhU9`C.gilCIq#p)c&mMHN?nZDbNQ!@U;PI*Bl5YBhUon*D8Y$*D&aK)GWb#@8B0m?qW7RHN@4cHVZCE)`g;aBfSmbDFdK*CedZ*C,n%MCIpH]DE:-aDI-+8C/.&9FU(?8Bh2#cC.0g"+%eq"Bh:0]Cd0jZCICZhHN@4cCed>s@U;;u*Bl5YBhU9\@73Rg*D&aK)GW^DCJRGI)G2b_C.goo)G`XsHN@4cBLG<fF^@R=*Bl5YBhUr>+%oWU@L#5!CJ@nsC.g6(+%eq"*(WOuCeQN`HN@4cHVZLH)`g;aBfSIVDFd)jCIgorC/$BZC.^o\@SK9fB`V!HHVZOI)`g;aBf\^eDFmQ,CedZ&C/$WkCL1+>Ce@,;FU(rD)`T`%DbNPFD*:6e)F$\g@6R.Y*'ZnY@S]9iCB73JHVZRJ)`g;aBf\R)DFdK*Ced\PC,n"QC.M'!DE1'M@S0$eD?3NMBM(Zn@U;Q.*Bl5YBhU9.CJ-r9*D&^EBhqbN@L#D"CJ%AgC-"$l+%eq"*(r\!Cel`cCILZmBKns_D*:Bg*(`FrHN@4cHVZmS)`g;aBfSFUDFd5_@RWdjB`V<QD,*f%@U;Q)*Bl5YBhUor)bNCq)b<G%HN?nZHVZ@D)`g;aBfS[_DFm3!D,)c2C/$E+CJHW3D`L<hDG!/[@RNmi,Z#";C.'a!+%eq"*)Aq$CeIK(CJI,kBK]Bu?qisb,Y&A2C.g6(+%eq"BgagXCcXLVHUgD%CJG1<,"P1,D,=80D`BX$DbNPGCH4^^C-"UV+'o7U,"k:$DbsJ9BK.mrDbNPGD*:6e+%S\!*D&auBgbHgC/.JL)b<:pDG3;],Z#"UD,3l%HVZ=C)`g;aBfSj2DFdGDCec]dC-"*rCIg3.DdE`P,"b7%@7O?p)E9W$DbNPFCH4^_CJR5sBKAX]*(3:tC-P$2)dWhQ,",+(@U;PO*Bl5YBhU9*CJ-ro@7`p8BMV#DBLtKn)G2_\C.^foHN@4cHVZmS)`g;aBf\-p?r&[HF[\f(BE;3PHVZOI)`g;aBfSL'@8B03C/6N0C/$Q3CL1+>Ce@2=@L#q8BK.mrDbNPGDE^B`CH4XW(cY#`CH=aXBg4p2DG3DsBfSXK@S9'dD?3iVC.U`n@U;PJ*Bl5YBhU9_*(iIB)G`jN+&><L+&5iX@L#1rDF@8dD+lW,+%eq"+&4OjD,*T%Ce[8nBf\scC-=m_+&,7)Db)W\CeRkN@L#q1)`T`%DbNPFDE:Hg*B6MbCe7,q*C!"Z@S]9iC]RWTHVZLH)`g;aBf\^1Db*>oCe-6'C.pB[C.M&b@SK9fBE:mGDbNQ&@U;PI*Bl5YBhU6X*D/Uo@7`pcBMU?[Db*/t@7r=THN?nZHVZLH)`g;aBfS[2Db3H'CedGtC,nafD,2lPF\P;$CB73JHVZLH)`g;aBfS[2Db3H'CedGtC,nafD,2iOF\P;$C&q*IHVZsU)`g;aBf\UcDG!;nCedYiF\"u*C]R<KHUpRQ)`g;aBf\L`DFl]eCec]_D+lWbCe-9,DE:'aDb;o8CL0e9DG<eG@L#q1*B5r'DbNPFCH4^_CJR5tDE:9d(d:2bBLtQWF[SJrB`V!HD,*f*@U;Q)*Bl5YBhU6\)bNUEBM(`AHN?nZHVZCE)`g;aBf\^1Db*>oCe6NbC/%0$CIpulDE9XP@9u`+C/.,;FU(rD*&oi&DbNPFCH4^_CJR5sBKAX^+&,7%+&50MDG*>rCgL4J@71E(,$mbd*Bl5YBhU9Z*(iInC.UZeDGESI)G!1mDbDf3)bNIpHVdC??ia%?BMCuu@U;PK*Bl5YBhU9.@7rm/)bEOB*CrUrCJR5=HN?nZHVZRJ)`g;aBf\OZDFm2ACed5nCe[>GCIpl>DE9[AF\5&"B`V!H@7<R[HVZ@D)`g;aBf\^1Db*>oCe.&sC/$uAC/-]kDE:$^DbEMb,Z#"UD+I)tHVZ=C)`g;aBfSO.Db3<"Ced\KCeQTbCIpEfDI*WF,$mb`*Bl5YBhU9Z*(iInC.U]6+&><O?qrs6HUgM&C.S_-,$mbc*Bl5YBhU9`CJ-oi?qEjh)c&n!Ce6l>+%n@iD+do3C/7<',Y&A2C,msk+%eq"+&4OjD,*T%D)k$dBfIkFCeR/p*)Aq$Da.8u@7<U+@L#V*DbjJ$C.'a!+%eq"+$VJZD)sFRCcF=LBMVYM@L#S2Ce7_pCJHQ,+%eq"+&4OjD,*T%Cd^ZlCJ6EZCecog+&,7)?p.4bCcOFRD+.JHFU(W=Db*YiC.'a!+%eq"CJ6E]D+-<YCHY'^BLl/F@L#S.D,+2!C,dmj+%eq"+&4OjD,*T%D)amZBK\d\CemDtHN@4cHV[<_)`g;aBf\UcDFd8@CedJCCIg3HF[\`!C]R<KC.U`lF^@Q]*Bl5YBhU9Z*(iJ#BM(N;CemGGC/7kOFU(rD@5p.kDbNPGCct-d+$W%gCIgrn(g^<JBM(T4FU(TDCJ\&.*&oi&DbNPFCH4^_CJR5s@80'cBhClr*CN7ADb38pDI*WF,$mc>*Bl5YBhU6\)bNS"D+R5pHVct)?qUf%,$mbd*Bl5YBhU9_(e[+u)G!=pCJRAr+%\t#+%e7eDG*>tHVdC>C&qERD,*f0@U;Q)*Bl5YBhU9.*(rOu*D&_"HN@4cHVZ@D)`g;aBf\s4DFdH%Ce-9XC/%B+C.U*V?ogY!DbEA^F[Sr*,Z#";C.'a!+%eq"+&4OjD,*T%Ce6ohBg5Wo?qise,Z#"U?qF-[C,msk+%eq"+&4OjD,*T%CeZZ]Bf\[ZCJQlm+&+UmDb*nMFU(rD+#l/)DbNPFCH4^_CJR5tD`UBe*CWG!*)ApKC-P$N@S]Kk?ia@H?qisl@U;Q/*Bl5YBhU9`*D/Us(eI4D)FuVbHN@4cC.U`k@U;PJ*Bl5YBhU9c*D/UFDb*>ED,2l6D+RbL@L#q1?oU%jDbNPGDE^`jCJR5n@8'0WF\P2$DZNWNHVZLH)`g;aBf\^+DFlT2Ced\KCH=p3CIp3G@SK9fDZNrWHVZCE)`g;aBf\^1Db*>oCe7&AC.pB\C/7;FDE13eDI-FAC/75=@L#q8BK.mrDbNPFCH4^_CJR5s*BH\g@73R]+$N%<Ce-on*C!%[F\>)"?ia%?DbNSt@U;PI*Bl5YBhU9](e[+uDFm)@CJRDu@89*9BhLrsHN@4cC/7>tF^@Qa*Bl5YBhU9Z*(iInC.U]h+&>9NBMV)E)bVn/D+[hM@L#=uBh2#cCJQW-+%eq"+&4OjD,*T%Cd^]lCJ6W`CcG-nBMLlnDG3PsDbNJsHN?nZHVZOI)`g;aBf\^0DFm;FCecibC/$WaC0k"=Ce@ABFU(rDD`BX$DbNPGDE^`j)GEFo)I?NICILr=FU(rD)`T`%DbNPGDG3Du+&5+'C.UonCHb3RF\b;'?ia%?HVZ=C)`g;aBf\scDFlc0Ce-llC.pB`CIpE1DI-+CD+I/<@L#S.D+IbpC,dmj+%eq"+%8%dD+$ZjD*L?`BKo!`D*LBkHN?nZDbNSsF^@Q\*Bl5YBhU6\*(rP$*(WP'BhpH1)GWUs)G2_3HN@4cHV[<_)`g;aBf[tQDFmMJC/6N,C.pKNF[\`!?ia@HC.UckF^@Q]*Bl5YBhU9Z*(iInC.U]7CemK#?qs`D@L#S.D+RMhC,dmj+%eq"+&4OjD,*T%Cd(-]BLtoqCHXU#HN?nZHUpOP)`g;aBf\^1Db*>oCe7;uCeQchC.U*%DbN#hDFuidD+R#Z@S'$g?ia%?HVZ@D)`g;aBf\^1Db*>oCe-<)C/.0$C.V)H@6-_UDbEej@RNpj,Z#"LBh:WnHVQpU)`g;aBf\^1Db*>oCe7;uCe[W)CIg0\DG2fhDb;obD,3i&DFlQ1C.LfuCgIEM,$m`>*Bl5YBhU9Z*(iInC.U]q)bEJ!?qs!6*(htfBM1ZlCIg]h+%nmt+&5j4DbWo(,Z#";D+lW,+%eq"+&4OjD,*T%D)t']CJ7)mCem`(BM)!!D`C3_Ce7Z'CedZ&,Y&A2CJHQ,+%eq"+&4OjD,*T%Cd^-]BKng\CJQZg*)An#D`KOQCe.#pCd1s&@73C],Z#"NDGESqHUpRQ)`g;aBf\^1Db*>oCe7;JCe[B'CJIAs?ogY&Db<]"C0h3K,#:^*CI_E%+#l/)DbNPFCH4^_CJR5s@6HkS)G`k(@8B6:DacuY,Z#"OBh_)nHVZRJ)`g;aBf\^1Db*>oCe-l=C.p<XCe7,CD`KO<,Z#";C-OBq+%eq"+&4OjD,*T%D+HQ]BMUrqCHk6kBMDN'DbNT$,Z#"NDGEW&HUpRQ)`g;aBf\^1Db*>oCe6Q/C.pBaC.U*`DE:*a@7iC$CL.<L,#:L(BM_`+)`T`%DbNPFCH4^_CJR5sBMUolCH4jM,Z#";CJQW-+%eq"+&4OjD,*T%Cd^]mBMM8uCe.9)Bgk<eDG2`]CcOd]HUgM$Bh8V5,$mcC*Bl5YBhU6\)am1s*D\pEBh;?$BM(Zl,Z#"TBM1`hHV[<_)`g;aBf\^1Db*>oCe6Q3C.pKN,Z#"U?qX9]C,msk+%eq"+&4OjD,*T%CcXs\BLGNkCcG*f+%f%,)bX3Q@L#8"CJIttD+u]-+%eq"+&4OjD,*T%Cd^]mBfJCUD)j=NBLkitDG2`\HN@4cHVZRJ)`g;aBf\^1Db*>oCe-9'CJ@8qCe@,DDE1'M@S0$dC]R<KDbWo'@U;N)*Bl5YBhU9Z*(iInC.U]i)c&jLCe6l>+%n@iD+dQ%CJR2>BLG-/Cee"PFU(rD)E9W$DbNPF*'HYj@7<IZ?p7(Z*)Ah#C-G!2DdHOGBh^o8@L#S.D+[nrC,dmj+%eq"*(qtcCeHWeCH4j\+#l_dCcF+KHN?nZBMCur@U;PK*Bl5YBhU9]*(rS!*D&^E(f!M(*)8dCHN?nZHVZOI)`g;aBf\U.Db2ifCemMsCedAFCL1+>CeI5=@L#q1(cXE"DbNPFCH4^_CJR5s@7rj_Bh_)tBO4J4BMV;C@L#q1)E9W$DbNPFCH4^_CJR5s@80$d(eI1tCJ?Zb?sZr8Bh^r9FU(E;DGOA#C-F<p+%eq"*(WIsCeI5uD*L<_CJ7DuHN?nZ@7WX_@U;PP*Bl5YBhU9Z*(iInC.UZ;BLjm)+&5'I*D0?RFU(rD(cXE"DbNPFCH4^_CJR5s@8B0e@6$eXDI-FCBMV>D@L#q1*B5r'DbNPFCH4^_CJR5s@7iga)GN_%BLG3R@RNI_@0'IIC/7>r@U;PN*Bl5YBhU9Z*(iInC.U]qBLtWm*D\t"C.g9\?qOH@@L#q1(cXE"DbNPFCH4^_CJR5s@6[%U@8BBo@9u`-BLkN4@L#q1?oU%jDbNPFD)tBmBMV)u+&,$eF\P2$@0'IIBM(ZrF^@RA*Bl5YBhU9`+%8FmC/.&lC.VGI@L#V(?qsK`C.L$%+%eq"+%S.jD,"%PFU(62@89ojCIp3'+%eq"+&4OjD,*T%CeZZ]Bf\[ZC-G?k*(iS&DG<N#CelofD)t*eHN?nZHVR'Y)`g;aBf\^1Db*>oCe7&pC.p?dC/6c3DE:$/Db;o1C.UfpDdHODC.pr8@L#q1(cXE"DbNPFCH4^_CJR5tDbET!+$)km**uE=BLkQ5FU(rD)`T`%DbNPGDE1'b(cXfX)bEOu+%/UbF\b;&D#m`UC.UcnF^@Q]*Bl5YBhU9Z*(iInC.UZlDGN]%+&5iX@L#q1+#l/)DbNPFCH4^_CJR5sBg,$c*CW7q+%8ODC.(ETF\bM(D#m`UHV[<_)`g;aBfS[2Db3<"D,*Q%C/$QO@RW^bBE;3PC.Ucm@U;PJ*Bl5YBhU6\*D/RCD,3YKBLkQl*D]]W@L#4uBLGW^C-OBq+%eq"+&4OjD,*T%D*L<_BLt]pCd^0\*(j6Q@L#q1*B5r'DbNPFCH4^_CJR5s*(WRG?qEggDGNVc@RNI_?ia@HHVZ@D)`g;aBf\^1Db*>oCe7;ECe[AGCIglADE1!`DbED_@RNpp,Z#";C-"$l+%eq"+&4OjD,*T%CcFdYBMC0^CedE'*)B"-HUgS&C.S_6,"4q"CJ\&.@5p.kDbNPFDE's`DE^?`@6["Y**rqI,$mcD*Bl5YBhU9]*D/Us)bEM')G!.mHUge.DGLR@,$mb`*Bl5YBhU6_(e[.@D+Qu?CemN!@8B-7HUgM&D,(C>,"k:#C.D<+BK.mrDbNPF?p-kY@7`acBh:fm*D\q$@6R%**)/e#Da-`X,Z#"UD+R,kHVZ=C)`g;aBf\*oDFm>FC/.H#C.p?ZCe6<bDI*WO,$mcC*Bl5YBhU9.BM1Tf@7`p4D,42.BM(]l,Y&A2C-OBq+%eq"BLspXCeHNbC-"[XBg4=LD*KdT+%TF7DbNT',Y&A2C-F<p+%eq"+%nIjCd0gYCH4dZ+%\e"HUgS,DG(:<,$mb_*Bl5YBhU6^*(rRA?qEg1+#uS4C-#BtC.Ucs,Z#"JC/7/lHVZCE)`g;aBhUlmDFm>GCed].Ce[T-C.L*+D`U9eDdE`G,$mbd*Bl5YBhU9`@7rm1D+R2DBLkN=+%\sMDG)]cCe@&oHUgb5?ia%??q`saHVZ@D)`g;aBf\^1Db*>oCemK!C/%3&CJR;oDE:*^?qWgP,Y&A2C-F<p+%eq"Bh1rtCeHZeC,nXXBMV?"HUgS,DFFk-,#:L/Bh)3#)`T`%DbNPGDG3DoD)jjX*(re#*D]0k,Z#"NDGEGmHUpRQ)`g;aBhUlmDFm>GCed].Ce[T-C/-N]DE:$\DFuf0C0h3K,$mcC*Bl5YBhU6\)bNRID,3Z#BLu6,BM(]k,Z#";C,dmj+%eq"*(r1iCH+UVCHY*_BfJgaD)jLXHVdC;CeY43,$mb^*Bl5YBhUooBhL`g*D&_(BLtWrCJR6"@7r=SHVd%-CJ5%:,$mbd*Bl5YBhU9c(e[+uCe6ll+&>9O@8B0:)G2b.)b!J$HVdF8BE;3PHVZRJ)`g;aBf\s4DFdH%Ce6NbC/./oD+RH+DE0R?F\5&!BE;3P@7W[]F^@Qc*Bl5YBhU9c(e[+uCe6o=DGESGCed8n*(j6Q@L#q1)`T`%DbNPFCd^WkCILKi)GWe#@7WmS@S]9oBE;3PC/7?!F^@Qa*Bl5YBhU9_@7rm`?q<U^)c&n'+&5*JC.g<^BLGlB@L#q1)`T`%DbNPF*'HYj*'Heh@8'0h*(<=_F\b;-CB73JHVZOI)`g;aBfSm7DFl]^CecogC.p</C0j\4Cd^c7@L#q1(cXE"DbNPs)brb$Cd^QdDG*Jt(dCJk)I?3;BLkW7@L#>"D+IbpC-=6o+%eq"+$N.nCe7<$CJ.#kBK\:OD*M&BFU(?5D+RhqC-=6o+%eq"+%8XuCct$aD*L<_BLssVD)kW<FU(W=DFdPhC.'a!+%eq"BLOUTCcF^]CcF+L+$*FDFU(rD+#l/)DbNPtBfSL]CIg`gCIgrn)G`V!C.^i>BM(WXF\bM(@0'.@BMV#q@U;N#*Bl5YBhU9cCJ-r;D+R#>Bhq2s*)8aF(eQMZDbEDuC/7/p(eRgMFU(rED)aF"DbNPtBfSL]CIg`gCIgrn)FQkm*'Q_9BhLfm?q`gdBM(WnCHb6i+'r&GDFd/:FU(rD)`T`%DbNPFCct-e?oUGQ)`gJf+%/UbF\b;-D#m`UHVZOI)`g;aBf\scDFlc0Ce-6\C.p?YC0j\4Cd^Q1FU(rD)E9W$DbNPF*B?Ge)EpGaDE^Q:BgkNm*B6A3DdHOGBhh,=FU(63CJR_lC-OBq+%eq"+%\1eCe6NcC/-NcBg5<hD)sCOC/7kOFU(rD(cXE"DbNPGD+-fm*Bl_h(d:De)G`k))I?3;BLkH2@L#q1+#l/)DbNPF*'HYj@7<IZ?p7(,BgkNm*B6A3Db;oR@S]Kj?ia%?@7W[\@U;PP*Bl5YBhU9+DbE>q*D&_"+%SdB?qrs5*(j6QFU(TACe.>fC,dmj+%eq"+#u2XCe6onCHXFSBg5<hD)sCOHN?nZHVZCE)`g;aBf\scDFdK+Ced;CC/%3!Ce-6+DE:'bDI-FAC.L`6@L#D"D,"+uC-"$l+%eq"*(W=oD)s@IC/6Q]CeR,qD)a:M+%\^sHN?nZC/7)l@U;PN*Bl5YBhU6_D+d,?*D]1%*)8aFCe6l>+%n@iD+dnN@L#V+CI_E%*&oi&DbNPF?pm@`C/.&k+$)ni@6$eRBKAI,DG*>rCgIED,"+[sCf"//*B5r'DbNPFCH+X]C/%#@(cjo\)F[+s+#uYR,Z#";C,dmj+%eq"+&4LiCemK"+#l#WBg5<hD)sCOHVdC;Ce>"9,$mbc*Bl5YBhU9/(e[+u?qEgk)c&4f?r''9*D/(eDE_*'C/7)k,Y&AAC.LTlHVZCE)`g;aBf\*oDFm>ECJI>CC/$WfCe-6+DE:'bDI*WO,$mbe*Bl5YBhU9c*D/UF+%SmJ+%SdB?qrs5*(j7-@7W[`,Z#"NDGEJnHUpRQ)`g;aBf\smDFdGECedYJCJ6EcCIpu=@6-bVDbEDECL.<C,"k:#DbsJ9BK.mrDbNPFD)jpa@6-YN*'HelBMUlnBK\[.DaculBh1`[,Z#"PCICTnHUpOP)`g;aBfS[\DFdH!Dbi,3C-"d0CIg0,DbW`&DG!/@CIg?L,Z#";C-"$l+%eq"+&5.%CeI)rCICEa+&#C*CcF+K+%ejCHVd4/D+P%9,$m`8*Bl5YBhU9/(e[+u?qEgk)c&19CJR5D+%o!FDG*;DBh1NjDG+#4BMV$#,Y&ACC.q?(HVR'Y)`g;aBf\U.DFm>sCe7&rC.pBdCIg3-DbN&gDFuT]D+R#mDI*WF,$m`9*Bl5YBhU9]*(rRoBh:TgCemGF?qrs5*(iUBDG*;DBh1NjDG*DFHUgb6CeG(1,#:R-BLc*#D)aF"DbNPF(dCAgC-"j]*BltjBh_)o?oUJ"*(<1o)`U>b*(iP!*BlqoCL.<L,$mc=*Bl5YBhU6\*(rRsCe7Z'DbEPr,Z#"TBM1WeHV[<_)`g;aBf[smDFdH)Ced\JC.p?J,Y&A2C.'a!+%eq"*(qtcCeIK'CIL-XBKoNn?qj!g,Y&A2C-OBq+%eq"+#u2XD+%*!CIL-X+&#C*CcF+K+%fR9DbNW%,Z#";C.0g"+%eq"+%\=hCd0jZCJH`aHVd.2BMJk0,#:^1DbsJ2+#l/)DbNPFCct-d)F$MbCHY-5BgkNm*B6A3DacQM,Z#";C.0g"+%eq"+$!"oCd19fCH4aZHVd.2BMSq:,$mcD*Bl5YBhU9d@7rji?qEgeCJRDuHVdF7DG(:<,$mcC*Bl5YBhU6XCJ-osBM(c@)c'L1BM(]p,Y&AHC.q#tHVZsU)`g;aBf\O-Db*A@D,)fO,Z#";C,msk+%eq"+%n=fD+--ZC,e(JDbW]&DbWo)*(iY!DFml2?qa'3@L#4uCIqVoC-OBq+%eq"+%n=fD+--ZC,e(J+&#C*CcF+K+%fQT@L#q8BK.mrDbNPFDE1'c?oUGK*BcklBKACZ(edUM)bWLtD)t-PF\>)!D?3NMHVZRJ)`g;aBfSF^DFlN*D)jLQDb`\ICIpH]DE:*M@S0$cDZNrW?qj!m@U;Q/*Bl5YBhU6_?qWd5)b<Fu+&>=%HN?nZC.gfh@U;N**Bl5YBhU9`C.gi=*D&b!*',iQ?qrs0*(ht0@6I:.)c&aI(e[+?BLkBmHN@4cHVZ=C)`g;aBfSF[DFcN]CIg-*C/%3&CIq5IDdH4DD+RDBFU(rD)`T`%DbNPGD+I#q+&,7%*'Qkk*(3:_@S]9oDZNrWHVZRJ)`g;aBf\U*DFdH#CcOCMCedApC.L90DE:$K@S0$cD?3iVHVZOI)`g;aBfS[2Db2]1D,*c+C/$WaC0j\4Cd^W3@L#V+D,=80*&oi&DbNPGC,eO\+$)Ya@7Wmd)GWe!BKAI,DG*>rCgIED,$m`>*Bl5YBhU9](e[.;)bELGBhq/p?r'$6(d:AcDbEGr*)8e$BLG*5(f"+6DbWo%,Z#";C-"$l+%eq"*(rt)Ce7&q*'Q&XCJ72oD)k*c+&,($HVd4/D+b1;,"k:#@7O@"BK.mrDbNPFD+$`l(f*Fo)GN_")F[.sCd(N=DFm/oD`C3P,Z#";C-=6o+%eq"+%/IqCeH]fCJHW]BfIkFD)kX!BMC`k,Y&ACC/%)lHVR'Y)`g;aBf[tGDFl]hCelf4C.pB1C/./E@6-h"Db<<"C.U9`DdE`G,$mbc*Bl5YBhU9/CJ-r;?qEj7+&>9N*D].'*CMY[BLGm'C/7*!,Y&A2D+lW,+%eq"+%8XuD+.-!CJ$?YBMUl?CHaXU+%S^tDG3MrCe[r4CedZ$,Z#";CJQW-+%eq"+%8XuD+.-!CJ$?YBMUl?C-#'g*',cRDa[)lCd(6kHUgM$BMAe8,"b7#@8L!$)E9W$DbNPF@73I`CHb0`)EBQ!(e$qpBKng1DdE`G,#(C%Ce%N&?oU%jDbNPGD,3N"DGEJp+$)nX,Y&A2C-OBq+%eq"*(`h'D)t*cCJ-B.*'$;]D)aFQ*(j76DbNW(,Y&AKBh;)dC,msk+%eq"*(`h'D)t*cCJ-B.*'#cOCe-9[*'QYgDG+"O@L#q1*&oi&DbNPF@6HtY(e?qi*(rb$BLkEi?p?t)C.L]lD-g=JBhA\-,"k:#?q47!BK.mrDbNPF@6HtY(e?qi*(rb$BMUlnBK\[.DaculBhq5b,Y&A2C.0g"+%eq"*(`"eCcXLUCH4dZHUgM)BM&S,,$mb`*Bl5YBhU9/*(rP$+%\pKD,3W"CJR3!HVd./D+"\4,$mbd*Bl5YBhU9c(e[.u)G!>%Bhq-$D)k'3*(hq^CJ$oiHVdF8D?3NMHVR$X)`g;aBf[smDFdH)Ced\JC.^onCe7>IDE:-dDG!/jC.U-X@7`CD@RNmj@0'.@HUpRQ)`g;aBf[smDFdH)Ced\JC.^okD+[5@D`U3gDbEJpC0j\8DGNYA@L#q1?oU%jDbNPG*CN7q)`^2]CHb6S@SK0eD?3iVHVZRJ)`g;aBfRkODFl`5CedGCC-"adC.U*,D`U3N@S0$bB`V!HHV[<_)`g;aBfSm3DFl`bCedGuC/$WQ@RW^b?ia@HHVZCE)`g;aBfSF^DFlN*D)jKuD+l]2CIq#?D`L0bDI-+8C.M&?@L#q2CH+3uDbNPGD+-fm*Bl_iDb3Gt)EC8g)EpM8)a-Mk@6[4^(e?to)I?3D@7a07@L#8"C/%JiD+u]-+%eq"*(37qCd0j[CH4dZDbWT"DbW/j+%Sh"D`ojQHN@4cHUpOP)`g;aBf\!nDFmN#CIpH.CJ?Q1CIg0,DE0U!Db<\NCIpBL@S'$nC&q*IHUpRQ)`g;aBf\.VDFdGuCec]/C.^ooCe@,=D`U-]DFuc4CL1+BDGN_CFU(rD)E9W$DbNPF*'HYiCe6oi(ca>tC,e[`CIgf>C0k"BBhq/=FU(rD*&oi&DbNPF?qs'j@5pPR)G<Ru*CWFoBKAI,DG*>rCgKn@Bg`8',"b7"CI_E%)E9W$DbNPF+$DtmD,!>D)`^/]@89<mBK8C+DI*WO,"4n'F^@Qb*Bl5YBhU6_C.gi=Bh:$&(eI.=C/.&oCJ-BY(eR+qHN@4c@7W[fF^@Qc*Bl5YBhU6_C.gi=Bh:T7)brgEC/7);)a.4C@L#q1*&oi&DbNPGD,3N"+&"sI)a6PcC.h#s?pm@/DFm/oDI-FKBM8_.,$mbc*Bl5YBhU6_C.gi=Bh:$&BLtT>?qrs1)bVqfD+[i)C/7,o,Y&A2C,dmj+%eq"*(WS!CcXsbCcs[RBKo!`D*Ks'HUgb2DbLI>,#:^0BM_`++#l/)DbNPGD,3N"+&"sI)bE=n)bNS#?oUM#DG!8^,Z#";C-OBq+%eq"*(Ve`CeI/nCd13^BLtlpCdg*Y+%TF.DbNYt,Z#";C,msk+%eq"*(2Y`D,)ccC,dpo+$MAUCd(<f+%eh!DG+#+?qj'2@L#q1)E9W$DbNPFCJ$rpDG!/k@7Wm7BgkNm*B6A3DdH4>Bhpu8FU(95C/7qtD+u]-+%eq"+$N.oCec]dCHXBu+$VJWCctKl+%Sb!Db)W\HN@4cDG*K$F^@=2*Bl5YBhU6b*(rR?C.UlpBM(Z=?qrs1)alG\Ce@&p*DTWV@L#q2CH+3uDbNPFDE1'bC.pooBLt]m+%8Y#+#uYd)bWOu*DA_!CeI,n+'q`I@7ip/@L#q1*&oi&DbNPF)a-PiC/.&k+$N1m*D&Ou*BHP6Ce-o:@:!&>BMJk9,$mbd*Bl5YBhU9*(e[+jCIq#B)c&mMCe6l>+%n@iD+ccdHUge.C&q*ICedZ*@U;;u*Bl5YBhUom*(iIn+%SXoBMV&tCed8n*(r^sCeI)r*)8aBHN?nZ@7W^_F^@Qc*Bl5YBhU9`(e[1n*D&O@)brgEC/7);)a.4CFU(TADba(oC,dmj+%eq"+%S7gDbVodCcs[RBKo!`D*Ks'HN@4c@7W^]@U;PP*Bl5YBhU9`C.gi?+%\aB)brgEC/7);)a.4CFU(TADb*YiC,dmj+%eq"+%Sn$CcF1NCcs[RBKo!`D*Ks'HN@4cHVZCE)`g;aBf\L'DFlc0CemMI+$)h<CIg0'DE:*bDdH49C.Ul9FU(63C.VMnC-OBq+%eq"+%S7gCd0jZC/-NcBg5<hD)sCOC/7kOFU(rD)E9W$DbNPF(dC>f(cXf.)bE=o)FR(rD*C<5?sZW/Bhq&:FU(rD*B5r'DbNPGDGEQ!BLP3f(d:De)G`k))Ep#E@RNI]C]R<KHVZ=C)`g;aBf\*oDb2faDba"NC.^olD+R5oDdH4DD+[,9@L#q2CcF=!DbNPGD)jp`)G*@pD+dAt*)B(**B?JaCJRZ)@6-kYBK\^aC->$P@S0'nD#m`U@7W^aF^@Qc*Bl5YBhU6\CJ-ul?qEX.)brgEC/7);)Eh+B@L#8"C.VMnD+u]-+%eq"BKnscD+-3]CH47KDbWT"DbW/j+%Sh"D`ojQHN?nZHVZ@D)`g;aBf\*oDb2f6CcOCODbWr,CIpf9D`K^!Db;oR@RW^e,Y&A2D+u]-+%eq"*(Ve`D+$cmCH4XVBfJ@)C.'gW+&"q!Db)W\HVd(/C.\e7,$mbe*Bl5YBhU6\CJ-ul?qEX.)brgEC/7);*BdG*@7W^h,Z#";C-"$l+%eq"*(W=oD,3DtCJ-B.*'$D`DbW`%*(rUtHVd4/Cek@5,$mb^*Bl5YBhU6^*(rRo(eHG*BhCin*)8dBC.g<^HUgD$C.ek8,"Y7.Ce%N-BfJ!sDbNPGD)jp`@7`a^*)&k#(e$np)Eph@DFm/oD`C3b**rqR,$mbc*Bl5YBhU9`@7rjiBM(`n*',iQ*DSjH)bVqdCe@`(C/7,s,Z#"OBhqE)HVZRJ)`g;aBfSF*DFm2oCIgBaC/./DCIgB1DE:$K,Z#"PCICKbHUpOP)`g;aBfSF*Db3W'Cec]`C/$QhCIpH.@6-bVDbEDECJ@5`,Z#"TBLtucC,msk+%eq"BhUHbCemK"CIKs(+&,4$Celog*'HSfDFmkM@L#5!CIh5eC.g6(+%eq"+%8%dD+$ZjHN@4cC.M'#@U;N.*Bl5YBhUoq*D8XEBM(c;BMV&>@8B0m*(rdE)a-&&*B?M2)a-V9)`^;`@8&RUC-FOQHN@4cD,3PtF^@R<*Bl5YBhU6_+%egu)G!@@HN@4cBM(]t@U;Q.*Bl5YBhU6Y*(iLn+%SmJBMVYMFU(E;@73mWC-F<p+%eq"*(Ve`CeHHYD+uobBMV;uHN@4cBMC`q@U;PK*Bl5YBhU6_*(rRsBhgo?)GW^D*)8aAHN?nZHV[?`)`g;aBf[tGDFdH!DbibEC0j\6DbWqIFU(0.BhhbrC.^0'+%eq"+%n:fCeHZeCID2E@L#q1)E9W$DbNPGC,eO\C.(?bCJ@;t*BHYk*)ApKCgKn;BhqGEFU(0.BhqhsC.^0'+%eq"*(`"eCcXLUC-P`?FU(?8CJ7hrC.0g"+%eq"+%T()Cd'RSCHXOPHN?nZHV[?`)`g;aBfSO.Db3;?D,)f_C0j\6Db`_BFU(rDDE'O#DbNPGD,3N"*DAab@S0!bC]R<KHV[!V)`g;aBf[tGDFdJJCgL4DDGEM>FU(?5CeRqsC-=6o+%eq"+&4OjD,*T%*'Q;^CJ72oCe7YKFU(30@7sB^D+lW,+%eq"+&4OjD,*T%*'Q;^CJ72oCe6K-BfSIZDGN2fCen(QFU(TADadboC,dmj+%eq"*)84gCelffC-"4RBLGNjCe-<\HN?nZHVZsU)`g;aBfSOXDFd5uCec]NF\##$D#m`UDbEQ!@U;Q(*Bl5YBhU6\*(rOD)G!mM@L#q1+#l/)DbNPFCH+[^DGEJp+%\t#C.U]m*BHP6Ce-oZF\bM.C]R<KHVZ=C)`g;aBfSF)Db3;CD,2o5D+lllCIg3-DdH4DD+d8<FU(T?BM)AmCJ$9(+%eq"+&4OjD,*T%*'Q5]Bf\OWD*9XR*'$\:@7`4OCct$`CcXFNCcFmcDa%2CFU(rDD)aF"DbNPF*'HYjDdHOLC.1W6FU(rDDE'O#DbNPFDF?im*B?ANF\5"u@0'IIHVR9_)`g;aBf\U/Db3GFD,3)hC/%/oC.^o<@6-bVDbEDECJHWcDb*AEC.M$&CeHH0DI-FG?r'$/FU(rD(cXE"DbNPFDE1'cCH+UW)EgPf@7j$j*F;iGBLtW6@L#q1D)aF"DbNPF)EC/d+'q`HC.1B/FU(30@743`D+lW,+%eq"*(qtcCeHWeCH4j\+#l_dCcF+K+%\duD`ogPCcPN;FU(rKBK.mrDbNPFCH4^_CJR5C)alqhCIL`jBg,3:DFm/oD`C3PF\>(uD?3NMHVQpU)`g;aBf\O(DFdGDD,*PtC/%/uCe-6+DE:'bDFI8GCIpcqDFlQ\D+IAuD-g=BBh:Z5@L#q1@5p.kDbNPFCct-e@6["SCJIAtCL1+HBLG60FU(95C.(i`D+u]-+%eq"+%.h_D,)c^CIL]hBMM&pCeHZc*(W"gDb)T[HN@4cDG*K'F^@=2*Bl5YBhU9cDG*8pCe7)nD,3SE+&5(!*D8+fCe@&p*)9NU@L#>+CJIYkC.U*&+%eq"+%8k-HN@4cBMCciF^@Q^*Bl5YBhU6\*D/Us(e@+CCJQZa+&5'KHN?nZDG*5n@U;;t*Bl5YBhU6/(dpVc*D&aD(euhaCJR5mBLFUWCe@&p*)9NU@L#.pBh;)dC.^0'+%eq"+%Sn$CelfeCIhJIFU(rD(cXE"DbNPtCed?!Dbii"CIgrn*DT+)BO4J4BLt]8FU(0.BhDJnC.^0'+%eq"+%\1dCe7?%CIM8FFU(rECcF=!DbNPs@6$\VCIL`j?p@+Y)EC8g)F[">D,!].C-"gc(d15e)EpVVF\5),C]RWTHV[?`)`g;aBh^HgDFdJLCel`/CL1+@Db`bC@L#>"Ce.>fC-=6o+%eq"+%.h_D,)rbC,e+KBLGNjD)t]=FU(0.BhM5fC.^0'+%eq"*)A7gCcX=PCH5E:FU(?5Ce7DgC-=6o+%eq"+$*(pCeH]fCe[;oBg4:KD*M&BFU(TADG=5!C,dmj+%eq"*(r.gCct-dCcXs\BKng[CeluiHN?nZHV[*Y)`g;aBh1]ZF\"esC]R<KHV[*Y)`g;aBh1NUF\"esDZNrWD+R,p@U;Q%*Bl5YBhUcnHN@4cHVZCE)`g;aBfSFWDFm2mCcOC#D,!]$C.^oAD`L0aDI-FAC.U`5@L#q1CcF=!DbNQ#Da$$E@SKNnC&q*IHVQIH)`g;aBf\OaDFdJJD)jKuD+mW#C.^p!DE:*g(eQY/C/$H_Db*Q"D,!>oCJ$lhDb;c-DI-+<@7<L(FU(rDC,e*tDbNPb@S0?rB`V!HDbEQ'@U;Q(*Bl5YBhU9]*(rRs)G*sN@L#q2D`BX$DbNPF?p-kY@7`a3)a-Gb@89<mBLG36DaZH,*)/gtCJ7E'CHb3hCICHf)I?3DDbWS?FU(rE)`T`%DbNPFCcFa^C/%#lD)j?t+$)km)EC,2*(`I@?o^JR(carbCeI9!)G*A%)FZtl*BunW@S9BuD?3NMD+R-"@U;Q%*Bl5YBhU9cHN?nZHVQgR)`g;aBf[tGDFdJJCec]^C/$upCIpuADE13k(d0`SBhgB_Db)Q*CIgo\@S]?mC&q*I@73F[@U;N$*Bl5YBhU9Z*(iInC.U-')G*CsCJR5s(d:AeCe@#u+&5*GD+[):HN@4c@73FZ@U;N$*Bl5YBhU9Z*(iInC.U-')G*CsC/.#:?qW7VBLF^]+%S[E(e[+:HN?nZHV[!V)`g;aBf\L`DFdGKCgL4DDGNYAFU(rEC,e*tDbNPFCH4^_CJR5C)`^/]@89<mBK8C+DF??cDG3;rDbEG`@SK?jCB73JHUpOP)`g;aBf\LUDFlNYCelu5C.^omCe@,CD`L0bDG*ArD+R5`F\,&,?ia@HHUpRQ)`g;aBfSF*DFl]5Ceco5CH=^]CIgB1DE:$\DG!T'C0k"ADFd2;@L#q8BK.mrDbNPFCH4^_CJR5C)c&asBgbHl*Buk;)b!(n*B?STF\>)'CB73JC/7,pF^@Qa*Bl5YBhU9\Bgk<8*(WOu(f)naCJR6"BLFQu(eRgM@L#q1)E9W$DbNPFDad#oC.U]fCJ@)mBLtZp)am%>CgKn;Bh1W5FU(rED)aF"DbNPFCH4^_CJR5C)a?VcBhh0!Ccs[TDG*;qCedK%+$)biBKemd)dZ<:DFd#6@L#q8BfJ!sDbNPtCcOjaDE'mY*)/q%*CW4oCH4^-D+-ck)`^Dh(g^!=CILW4@L#D)?qF-[CIBj"+%eq"+&4OjD,*T%*'Q5\BML9ZCcF9qBh1ruDG)Z\Ce?H^D,3):CJ.?&D`TRODE1`=@L#q1+#l/)DbNPFCct-e@6["SCJIAtCIpfn*BHP6Ce-oZ@S]Kp@0'IIHVZLH)`g;aBf\U/Db3GFD,3)hC/%/oC.^o\F\P;*DZNrW?qis`HVZ@D)`g;aBf\O(DFdGDD,*PtC/%0!Ce6l8DE:*bDbED_,Y&A2C.0g"+%eq"*)Aq$CeH]gCH4-sHVd.2CJP7=,#(C$D+@W'?oU%jDbNPGC.gopDEgB`*)&+R,Y&ACDb`SoHV[?`)`g;aBfS[_DFm2<D,)f`+'o7U,#(C$Db!i)?oU%jDbNPGC.gopDEgB`*'H#B,Y&ACDb`Z%HV[?`)`g;aBfS[_DFm2<D,)f/**rqR,$mcC*Bl5YBhU6XDG*8p)G!=E)ECi#BM(`u,Z#"LDba#&HV[?`)`g;aBfS[_DFm2<D,)f5**rqR,$mcC*Bl5YBhU6XDG*8p)G!=ED`Lj#BM(cn,Y&A2CIBj"+%eq"+&4OjD,*T%*'Q5\BML9ZCcF9qBh:`mDFmMuD+-cjD,*#9CJ.?&D`TRODE1`nC.M'!,Y&ACBh;!#HVQpU)`g;aBf\LVDFd6#Cem>?C/%3!Ce-6+DE:'bDFI8GCIpcqDFlQ\D+IAuD-dNN,"4q"F^@Qb*Bl5YBhU9)CJ-r;D+R2D(f)n5Ced8n*(r"0D+d5rHN?nZ@7Wa_F^@Qc*Bl5YBhU9)CJ-r;D+R2D(f)n5+&5'I*D0?RFU(W=@80N`C.'a!+%eq"+%Sk#D,*f+C.U<[BMVYM@L#D&D+RhqCIg-&+%eq"+&4OjD,*T%*'Q5]Bf\OWCdh#s*'Q5[Db``"C-FsaD+RGuD)t]=FU(rD+#l/)DbNPFCH+X]C/.&l(d1,_+%\q&?pm@/DG!8^F\bM.?ia%?DG*5k@U;;t*Bl5YBhU6\*D/Us?qEgkDGN\tDGEZ"*(;V^*D/X@@89iEFU(62@7jWfCIp3'+%eq"+&4OjD,*T%*'QekBMLrlCe-<\*(`Cp(e$2\Cct'aCcOdYHN?nZ@73FY@U;N$*Bl5YBhU9`@7rm1D+R2DBLkN=*DSms@7s$iCe@&o)br\!D+d,AHN@4cBMCclF^@Q^*Bl5YBhU9_*(rP$*(WRsBhCc9C/7-"HN?nZ@7Wa^F^@Qc*Bl5YBhU6c@7rjiD+R2C*(WM&DbiYq*(j6QFU(30?qj`hD+lW,+%eq"*)A7gCcG*iCJIArBLGNjD+-<d+%S:iDa-ZeD*CuAFU(62@7s]gCIp3'+%eq"+&4OjD,*T%*'QekBMLrlCe-<\*(`Cp(e$/[CeI)oCcXs\HN@4cC/7/p@U;PN*Bl5YBhU9\)FZq=*D&aD(eue5Ced8>BLFRSD+[hMFU(rD*B5r'DbNPF(dC>`CILNc)ELAd+&#1**B?JQF[SJoD#m`UHVQmT)`g;aBf[tGDFdJJCec]^C/$upCIpuADE13k(d0`SBhq2qDFlT^C.UolD+dAbF[SPo@0'IIHV[!V)`g;aBf\L'DG!>FCgL4DDGN\B@L#5!C/.ksC.g6(+%eq"+%].*Cd0USHN?nZHVZ@D)`g;aBf\LUDFlNYCelu5C.^oBD+HE^DE132Db<;]@RW^i,Y&AADFd)rHVQgR)`g;aBf\^1Db*>oCcOCMCedApC.L90DE:$\@6I=.Ce7&qDb*T$C.M&b,Y&A2C,msk+%eq"*(_kaCd0jZCH4dZ*'$\hCcF:P+&5+%Db3u*?qj?:FU(W<Bi%i,*&oi&DbNPtBLG3hCILNcBM1in*(`V$)G`^HBK\[]DdE`P,#(I+?q46pDE'O#DbNPtBLG3hCILNcBM1in*(`V$)G`^HBK\[cCd1EjCJR8uD)b$eCICHS,Y&AKCJ@SjC,msk+%eq"*(W=oCcXg^CJ-B.BLssVCcXj]*(rOs(dqCGFU(?5Cd_AkC-=6o+%eq"+#u2XD)k9dCH4.HBLtloCd_;FFU(rEC,e*tDbNPFCH4^_CJR5C)c&asBhq6#)EL53D,!\J?p-eW(em[i@SK?jC&qER?qj<l@U;Q/*Bl5YBhU9/@7rm`*CrY!)c&jKHN@4cHVZmS)`g;aBhUrBDFd5_F[\f(C]RWTBMV&uF^@O6*Bl5YBhU6^*(<:D+&5:%CemJs@8BB:+%e:eCd^We)G`Y"DG!qNFU(E5DbX>"C-"$l+%eq"*(W=oD,3DtCJ-B.+$E=pCdg'Y*)An#HN@4c?r'KsF^@R>*Bl5YBhU6\(e$noHN?nZCdgip@U;N-*Bl5YBhU9Z*(iInC.U-'C.UlnC/7);+%n@jBLF^]BhCZf+%o%$)b<4p*(`L?*(j6QFU(rD@5p.kDbNPF*'HYj?p?nR*)&k$@:!&>BLG?3@L#q1)`T`%DbNPF+%/IsDEgEgCHY-b)GN^fF\b;-?ia@HHVR6^)`g;aBf\p7DFlc7Cel`2C/$ujC/./?@6-bVDbEDECIpoj)b`aE+&=XqD+ZQ_DbDcM@S]6mD?3NMHVZCE)`g;aBf\L'DG!>FCcOC#D+l]4CIpuCDE1'`DI-FAC.^r:@L#q1D`BX$DbNPs*'HYjCH=aYC0j\;C.q;B@L#q2CH+3uDbNPFD*:6dBK/:Y)b`b"@6$eX+$)beCd^Wj@6I(\Ce@&q**u`O@7id+@L#V(?qX9]C.L$%+%eq"Ce?H^CJ@hN@L#D(?qa?^C-F<p+%eq"+$W4oCct$aCH47KD+d,@HN?nZHVZsU)`g;aBf\OaDFlc7CeluU@Rs!f?ia%?HV[<_)`g;aBf\OaDFlc7Celuo*(iXcF[\`'D#m`UHVR'Y)`g;aBf\^1Db*>oCcOCODb`\DCIp3()bie%DG*AoC.^loDI-FCC/$u8FU(rD)`T`%DbNPFD*:6dBK/:ZDFm>qBhCi\@S]9nBE;3PHVZLH)`g;aBf\OWDFm,pC/.5sC.pB/CIg0GF\P;*?ia%?D,3T!@U;Q)*Bl5YBhUon+%egG*D&aKHN@4cDbNDoF^@Q\*Bl5YBhU9`(e[1n*D%t/*(WID*DSmt*D8+dHN?nZHVZCE)`g;aBf\^+DFmPMCelr5CH=jeC.U*,D`U3a@:!&4C.^u;FU(rD*B5r'DbNPFCH4^_CJR5C)b`RrCH4jb*B6AOF[SJoC]R<K?qs0eHVZ@D)`g;aBf\^+DFmPMCelr5CJ%#rCe-6+DE:'bDG*;^,Z#";CJQW-+%eq"+&4OjD,*T%*'Q;^CJ72oCe6K-Bf\[^DG)`^Ce-ilHVd.-BM&S,,"+[qDb!i)*B5r'DbNPFDF?inC-Fp\C,n$qD`C3eCJ@Jg,Y&A2CJQW-+%eq"+&4OjD,*T%*'QelBMM8uCe-E,BLkEhDa[#jCct'aHVd.-BM/Y-,"k:)D+@W.BK.mrDbNPF)a-Ph(e?qi@5p_VBLP0f+#lS6DEU<dDa-`X,Y&A2C.L$%+%eq"+%\1eD)t]n?r'L$,Z#";CJHQ,+%eq"+&4OjD,*T%*'QbkCJ6H[Cd1Wn*'-b;@7s'dCe6rmCcYU!@73F_,Z#"LC/%AtHVR'Y)`g;aBf\^1Db*>oCe7<!CedAFCIpHgDE0Hq?pm@ZC.U]kDI*WF,$m_^*Bl5YBhU9Z*(iInC.U-'(e@%@*D].'DacE\DG!5BBM:o=Ce?uk*)8drCIgf>?qNai*(j7-DF@3',Z#";D+lW,+%eq"BLFOSCeHWeCH4g[BfIkFCec`bBhLopDb*ApD*D!&Ced]%,Y&A2CJ-?)+%eq"+&4OjD,*T%*'Q)YBf\OWD+-<*Bgk?fDaZK\Cct$`Cd19`Cd1ToHUgM'DbLI5,#(R*?r0m$C,e*tDbNPGDad#o(f*Fp)F[.o)FR%lBfSm6DEU<dCHk<iD,!\i,Y&AGD+R&iHVQFG)`g;aBf\^1Db*>oCcOBsD,!N!C.UoCDE0CT(dpYeC.L3dDFdGD+&>@1D+[K"DFuZgDb<_i,Y&AKBLG-gHV[<_)`g;aBfSI+DFm;?C/.H'C.pBK,Z#"TBLG0_HV[<_)`g;aBfSI+DFm;rCIg]6C.q;e,Y&A2C,msk+%eq"+%S7gDbVodCd1?iBLGQlCec]b*'Q_hDFml2?qs35@L#D(?qsfiC-F<p+%eq"*(`"eCcXLUC-OsaBMCuoHN?nZHVZ@D)`g;aBfSFWDFm>GCelf5+$),!CJ%#qDE0USDb<8\@RWaf,Z#"TCIq;fC,msk+%eq"+%/e%CecldC-OF!+#u8WDbWPt*'Q_iDb*nMFU(rKBfJ!sDbNPGD+m;tC,eLU+&,("?qEggD,3MGCe6rt)bih&BjOS9CIL`7@L#q2)E9W$DbNPFCH4^_CJR5C)a6MbC.q,uC,eR-*CMbg?q!RdD+[/sCIq#t*(`S'*'-Ge@8'$g*(<1oCL1+>C.ek/,$m`>*Bl5YBhU9_CJ-os)G)Y`BhCfuCJR5=D*:?c@7<O]CJR5?BLG*hD,+,6DbWo0,Z#"UD+d5lHVZ=C)`g;aBf\U.DFd#rCed>?CeQTfC.V,HDdE`P,"4t$@U;PO*Bl5YBhU6_CJ-rsDFm,:BLkQr?qs!b*(hq/DG*>tHN@4cDbESs@U;Q(*Bl5YBhU9**(rRsD+RbLFU(TEDb<ekCJHQ,+%eq"+%\1eD+-rq*(2P_Bg5'`DbW)4Bh:3_D`C3_D*:0bCcYT<FU(96CeIkrCH=-m+%eq"+&4OjD,*T%*'Q5]BKnm]CcF:P+&,($DFm8qD,!K!CcOdXD+.0#Da$$&@5pq\DE0CMDad?"HN?nZDbET%F^@R;*Bl5YBhUom)am2"+%TER@L#q8BK.mrDbNPFCct-e@7<IY)EgPeBh0sT+%8OCDG*>rBhq5b@S9'iC]RWTHUpOP)`g;aBf\O,Db)W^CIg-&CJ6H/CJI8F?og_!Db;l5CIpo[F\,&+D#mELC/7/t@U;PN*Bl5YBhU9`@7rm1C.UoCBMUB2?qs$dDbDfaDbF+P@L#D&D+dtsCIg-&+%eq"+&4OjD,*T%*'QbkCJ6EZCecog+&,7)(e$/[Ce-<\D,3#dD+.JH@L#q1)`T`%DbNPF@6$\VCJ@<"BKAX^*(3:_F\b;,C&q*IHVZLH)`g;aBf\.VDFdGuCec]/C-"U\CIpu]@SK9kB`V!H?r'L#@U;Q+*Bl5YBhU9_*(rOoHN?nZC/7N!HVQLI)`g;aBf\^+DFmPMCelr5CJ%#mCe@,mDE:0cDb;l2CJ?Q]@7`.ND+IB)D*9aT?qN="DG)`2DbDfN,Z#"P?r'*kHVR9_)`g;aBf\+TDFdJED,*Q%C/$EeC/.0#)brjG@7im6CIpBaDb2f6C.Lf:Ce@E+DdE`P,"+aq?q46pD`BX$DbNPFCH4^_CJR5C)a?VcBhh0!Ccs[SBM(TjDa-`mBLP6gBM:os+#uVe@9s7B,$mc>*Bl5YBhU9`@7rm0Ce6l=HVct(BMAe8,$mc@*Bl5YBhU9)*(rR?HUge3BhSh/,"4t#@U;PO*Bl5YBhU9)*(rR?)G`h,(f*RE?qrs5DacB[CJ$rpHN@4cC.gfrF^@O=*Bl5YBhU9Z*(iInC.U-'Ce7&AC/7,C)G2bh?qNde@8B0jBLG9f*(WJ%HN?nZDF@3&F^@N\*Bl5YBhU9]*(rS!*D&^E(f!Cq?og_T(d:>l)bNIs)G`XtDG!>r)G!.?C.LZ7*(rUE)G=*P@L#S.DF@8dC,dmj+%eq"+%7k`D,3l,C-"'q+$)/SD*C9cHN?nZD,3St@U;Q)*Bl5YBhU9Z)bN@qD+R2DHN@4cBM(cmF^@RA*Bl5YBhU9_(e[.;BM(`t+&>oY@L#q1(cXE"DbNPGC/.,s)E:#[(cb&`BM:os*F;N>BM(]7FU(rD)`T`%DbNPF)EC/c)F$\g(f!S!Db`&R@S]9nD#m`UD,3SsF^@R<*Bl5YBhU6_+%egu*(WRGHN?nZBMV)r@U;N#*Bl5YBhU6])bNCs*(WOC(f*RCD)k'4)bVndCe@&pBM:lCD*:o@@L#q2DE'O#DbNPFCH4^_CJR5C)a6MbBM1fr*'Q_:Db38>?q<RaDbWo,DEfmRD,*JbF\P8(BE;3PBMCfjF^@Q^*Bl5YBhU9ZDG*9!@7`p8C/79&C/7);HN@4cHVZOI)`g;aBf\sfDFlN*D,)faC.^oq+'q`>CdgW2@L#V*@7sB^C.'a!+%eq"+%8OrCcF=SCH4dZCeRkN@L#q1)`T`%DbNPF?qWjf*Bl_c*)&k&BML<K@S]9nDZNrW?qj=!F^@RB*Bl5YBhU9cDG*8C)b<FFBhpu?HN?nZHVZOI)`g;aBf\sfDFlN*D,)faC.^ok+'q`>Cdg]4FU(63D,*kmC-OBq+%eq"*(2M\Cd10cCICTmBM(rpCelrg*(j6QFU(T?CJ7MiCJ$9(+%eq"+&4OjD,*T%*'Q8^BMCikD)jLR*(iLs(e%/"D*9UQCe[5mBM(Wh)`Uk>@L#q2@5p.kDbNPFCH4^_CJR5C)a6MbBM1fr*'Q_:Db38>?o^JQ@6HqWBh:fqC.LW7(ece1*F;N<D+.,>@L#5!C.V2eC.g6(+%eq"*(`"eCdg$YHN?nZ?qj<uF^@RB*Bl5YBhU6_D+d,?Bh:ck)c&q%HN?nZHVR6^)`g;aBf\^1Db*>oCcOBsD,!GuCIg0'DE1$aD`pf<Ce6rpDb*Q*Ce6u?CcsXS(d9W>@S]6m?ia@HC.Ufl@U;N.*Bl5YBhU9](e[+uDFlQ+(eI+ACed8>BLFRSDbDrkD`U<5?pm:Y@8B3f)G!4<C.^f=HN@4cHVZ@D)`g;aBf\^1Db*>oCcOBrD,*JtC.UchD`U-]DG!/[@RWaj,Y&AFBh1`iHVZRJ)`g;aBf\U*DFdH#CcOBtCedAtCIpE1DE:$K,Y&AACdh$"HVZOI)`g;aBfSm3DFl]bCemN!C/%B*CL.<L,$m`<*Bl5YBhU9Z*(iInC.U-')b<CoBhq#k*D8+7Ce@#pBM:lADb<;qCJI/>@7aL%BM:`i,Y&A2C-OBq+%eq"*(VhbCcF.NCHX@JBKn4QDbWSu*(s=7DbNDt,Y&A2C-F<p+%eq"+&4OjD+$fmCd1WjBLFRPHUgS,?ptAt,$mcD*Bl5YBhU9`@7rm/)G!=EDb`\JHUge.?q^l/,$mc>*Bl5YBhU9^(eR%i?qEj3HVct(BLiG3,#(I*C/@r.DE'O#DbNPGCeZcb*Bcnh*Blqj@73U^+$)_7Ce-on(e@.tD`C'b*Bckh@7s*V,Y&ALD+dT!HVZ=C)`g;aBf\O-Db2]1Ced5nDbW]"C.Uo<DdE`P,"+\#Bh)3#*B5r'DbNPF+&51()`U,1)`U>d+%8Y"*CN7\,Z#";C,dmj+%eq"*(_kaCeI#oCJ.#lDbW\tCcF.KHVdC;@8.&(,$mb_*Bl5YBhU6X*(iJ#*D%t/Bh:`9@89j!C.^lm,Z#";C.0g"+%eq"BhUurD+-BbCH4dZHUgM)C/,(2,$mbe*Bl5YBhU6_?qWd5)b;\,*CrV&*DSjB+%oX:@7X'h,Z#";C-F<p+%eq"+$N@tD,*JrC-G!]BMUN`HUgS+Bh\n9,"+\#C/@r-*B5r'DbNPG@890j)F$Ja*)&k&BMUopDGNSb,Y&AFBh1NcHVZRJ)`g;aBf\OaDFm2<D)jLPDb`\sC.L9`DE1'M,Y&A2C-F<p+%eq"*(VeaCd(-cCICEaBKns_HVd44Bhet:,$mcC*Bl5YBhU9`CJ-os+%\q$)c'L:BM(ck,Z#"LBhCWdHVQpU)`g;aBfSF*DFd5>D,*Q%C/$Q^C/.0#)brk%@7iCRC.U*'DFcZ`C.M$&CgIED,"4t)@U;PO*Bl5YBhU6_*(rRA*D&^C(f!CqDFm,A)bVq`)bNF?HN?nZHVZOI)`g;aBf\LUDFlNYCelu5C,n.QCgL4?DbNYBFU(TEDbF1uCJHQ,+%eq"+$E=tCcXLVCJHW]BLsmTD+ZQ_CJIT.DFlNZCcOa[D+dnN@L#q1(cXE"DbNPGD)jsb@7<IZ(f!S!@73Ue?sZW,BM(c9FU(rD*B5r'DbNPFCcFa^+&5*uBfRppD)t-e*&p8NF[SK!D#mELHVR$X)`g;aBf\^1Db*>oCcOBtD+llcC.Ul=)`gD3D`pf@Ce-EbDb*Aa@RNmi@0'IIHV[<_)`g;aBf\-rDFdJKC/6Q^C/%/`@RW^hBE:mGHV[!V)`g;aBf\O,Db*T!CgL4DDGNS?@L#>#Db4%sCJ-?)+%eq"+&4OjD,*T%*'Q5]Bg5'`Ceci2+&+Um(e$2]CcOa[D)aI#CIgonHN?nZCed]*@U;;u*Bl5YBhU6^(e[.u*D&L=CJRB'C/.&o)auM]D+d2>)brh#HN?nZCed])@U;;u*Bl5YBhU9Z)G<=m?qEU]+&>9P?qrsb)G;e.)G3@q*DSk"HN@4cBM:`mF^@O:*Bl5YBhU9Z*(iInC.U-'(e@%;CJR5n(d9]Q(eQYh+%S[ED+d,A)EL>h?qaTB@L#q8BfJ!sDbNPGCct-d?oUGR)GWe#@8B?nDE^c@DFd,p(d:Df)dZWICILT3@L#S.@7aQeC,dmj+%eq"*(`"eCdg$YD)jjXBKns_Cd(?hHN@4cCJ.#o@U;MO*Bl5YBhU9Z*(iInC.U-'(e@%;CJR5n(d9]Q(eQYh*(W=@(e[+k)EL>f*(`LFC.^i?CJ$ot@7jQAFU(rD*B5r'DbNPGC-=pb)FZqh)EBQ!D)t-e)EL5OF[SK!DZNrWC.^lq@U;PJ*Bl5YBhU6_(e[.r*D&_#CemJI?qs`D@L#D'Bh;DmC-F<p+%eq"+&5O0D,*f+*'Q,Y+$MSaHN?nZHV[<_)`g;aBf\^eDFd6#Ce-E+CcXmK@RW^hCB7NSHUpRQ)`g;aBfSI+DFl`_Ce-u<C.^o;D+RGKDb`c!?pmLgD-g";DFd)8FU(rD*B5r'DbNPFDGEQ#?p?nQ*D&b"@6["X?o^P>@RNIcD?3iVHVZOI)`g;aBfSFXDFm2AD,*T$Ce[T-C0k"=DbNJ=@L#q1*B5r'DbNPFD)jpa@6HkQ*'He=+#l_jCJ@JgF[SK!@0'.@HVZ=C)`g;aBfSFWDFlN/D,)iaCe[2rCIg3XDI-FLD+%)>@L#q1(cXE"DbNPGD+d5sDE:$[C-=gZBfJR_D-g"9BM(N2@L#q2+#l/)DbNPGCcOj`)c&b$BKepdBLG*d*Blh:DbNMB?p6>D+%].-*BlqoDb*/uBLG0e+$)_4)b`+n(f!dkF\>&%@0'II?qj?lF^@RB*Bl5YBhU6^*(rP#Bh:c<*DT%"HN@4cHUpRQ)`g;aBf\UYDFdK"Db_u`C/$Wg*)B%-DE:*^DG!E'CL0e9DFd,9FU(?8C.MGmC.0g"+%eq"+&4apD+--ZC-"d[HN?nZHVZmS)`g;aBf\p7@8AXE@RWO\BE;3P?r'0mHVZ@D)`g;aBf\U*DFl`aDbibEC-"'qCIg-`DE:*bDbEG`,Y&A2C,msk+%eq"*(VhbCeH]gC-OF!*'Z\bCd'dX*)Ah"Db*o)?r'34@L#4uD+[SiC-OBq+%eq"*(VhbCeH]gC-OF!*'QYcCe-<]*(s<R@L#q1*B5r'DbNPFCH4^_CJR5C)c&at)GEY%*BHPR@RNIbB`V!HHVZ=C)`g;aBf\^1Db*>oCe7;sCeZieC.U**DI-+CD+-l7@L#q1)E9W$DbNPFCH4^_CJR5C)biUs(ck,f*'$A4CgL4DBh1T4@L#S.?qsfiC,dmj+%eq"+&4OjD,*T%Cd^]mBg"4KD)j=MHN@4cHVZOI)`g;aBf\^1Db*>oCcOC$CeQc7CL0e5DbNM>@L#q1)`T`%DbNPFCH4^_CJR5s@5pPO)EC8Q@S]<h@0'IICed]/F^@=3*Bl5YBhU9Z*(iInC.U-'BhCfp+&5(*(d:>lDbEH!@8B-3HN@4cCed].@U;;u*Bl5YBhU9Z*(iInC.U]q(eI.=DbiZ&DbEK&DbEH!@8B-3HN@4cHVZCE)`g;aBf\^1Db*>oCcOBtCeZigCIp3aDE:'aDdHOBC.^c5@L#D"Db=+tC-"$l+%eq"+&4OjD,*T%Cd^-]BKng\CcG*f+%\auHN@4cHVQmT)`g;aBf\scDFm,uCelfcC/%2tCJI8s?o^RsDb<8;C/$Hb@7`CYCIpBfCeHHJ@RNO[BE:mGCemGtF^@=3*Bl5YBhU9Z*(iInC.U-'BLtT7D,3GF)G2_.CeI);Bh1NjHN?nZDbET"@U;Q(*Bl5YBhU9_*(rRA?qFB?@L#>"Db4%sC-=6o+%eq"+%7k`CeHZeCJ$K]BMV;uD)t]=@L#=uCJ@nsCJQW-+%eq"*(2M\CeI/sCICEaBhV#nD)sFO+%en)DaZ<VCeI)oHN?nZ@7X*hF^@Qc*Bl5YBhU6_*(iIr*D&aKDbibDBMUrm@7sWB@L#>"Db<ekC-=6o+%eq"+%\h!CeHNaCIg0++%]1(Cd(l@FU(rD)E9W$DbNPFCcOg`+#uhgDE:9c*'QhgD)t$2?sZr8Bh1o=FU(rD@5p.kDbNPFDbEGuC-"XW+&#1&CL1+HBLP0-FU(rD*B5r'DbNPFCcOg`+#lbfDE^Qg*(3:u*(<4\@RNIbD#mELDG*6!F^@=2*Bl5YBhU9cCJ-or@7`pg+&>=%D)k*c)bVqf?qNde)GaBT@L#q2C,e*tDbNPFCcOg`+$E+kCJ@;s?qj-kBLG3d*CW:oDG3;s)bNI`@SK?iCB7NSDbNE"F^@Q\*Bl5YBhU9]*D/Us)bEM'D,3JrC.LWl)bVqiHN?nZHVR'Y)`g;aBf\OZDFm2ACed5oD+uriCIg0,DG<AsDbEPuD+R/qDI-FCC/.8?FU(TA?qFHdC,dmj+%eq"+%n:fCeHZeCICEa+#u_cDbWZ"HN?nZHVZ@D)`g;aBf\O,Db)W0CJQZ3CJ?`bC.V)FD`KRVDb;oRF[\et,Z#"NDFdK(HUpRQ)`g;aBf\^1Db*>oCcOBtCeZihCIgB]DG<DuDG!/lC0h3B,$mbe*Bl5YBhU9]*(rRs)G!=o*',f$@8B0:(eRh)@7X*m,Y&A2C-"$l+%eq"+%\1eD)sUPCH4.HBfJ%KCH=1M*(rt)HUgS&DbCC=,#(L+DGXA1(cXE"DbNPF(dCAgC-"j^(emM!*DAt(*F9%S,$mc=*Bl5YBhU9*(e[.=D+Rc(DbET),Z#";C-OBq+%eq"+$)kjCd^!ZCHY'^BgbWrCemc)+%TF7DbNGq,Z#"UD+-ffHVZ=C)`g;aBfS[[DFlN0CemMDCH=-qCIq#=DdE`P,$mb^*Bl5YBhU9.CJ-rt*(WOCBhq-$D)k*c+%n@4HUgD$CeY43,$m`<*Bl5YBhU9Z*(iInC.U-'BLtWrCed5BCeHK/?qNa/BM:p#CJ-r?*D\pt@7aKqBM:`l,Y&A2D+lW,+%eq"*(WS!CeHKaCIgrlCJ6H[CJ7#t*)An#DaZ9VCctfpCemGs,Z#";CJHQ,+%eq"+%\1eD)sFLCJQ]^Bf\.LCe6Na+&"FoDaZ?XCcOj_D)bQu@73Fc,Y&A2C-=6o+%eq"*(2Y`D,)ccC,dpo+%f7)D+.K$BMCft,Z#";C.g6(+%eq"BKn4ND)sFRHVd%.C./G),$m`9*Bl5YBhU9Z*(iInC.U-')bEJ!?qs!6*(htfBM1Zl*(`FmCJ-r:HVdC?DG1@4,"Y:'CJ\&5BfJ!sDbNPFCcOg`+#lbfDE^Qg*(3:u*)ApKCeIH%*DA_")I<_P,"5!uF^@Qb*Bl5YBhU9^DG*8l+%\sKBhq0%C/.5s*CV\0?qNd`HN?nZHVR'Y)`g;aBf\^1Db*>oCcOBtCeQTbCIpEfDE:0e?qO*nC.UZg@:!&6C/.#8@L#8"CeRVjD+u]-+%eq"+%\1eD)sUPC,dtFBK\+JCec]h*)ALnD`pTeHN@4cHVZCE)`g;aBf\U/Db3;>CedZ*C.^p!Ce@,rDE:31DdHOBC._/@@L#q1*&oi&DbNPFCH4^_CJR5C)`U,]CICWm@6-_%+%8Lr)dZWMC.JY,,$mb^*Bl5YBhU9_*(iIB)c&q-(f*S(?r''h)bVqbHVd%-Ceb:4,"Y4$DF[`+BK.mrDbNPFCcFa^+&5*uBfRqHD+-okBg4IOCIC$aC.(QmBg+m^BhUfnDEgEeD`C*.Da$$%*Bc;(BhM-!D+[/>C-"4VCHXO%BK\:X*)&76(d9i%)b;Y,Da-0.DGDl5C.'s`)F$Pg(cXDsD+$'^@6$8HD)t!-)a6/Z*'$>/CeZW3@7s!fCICHcBf\LUBMLumD+Hrl+%n@gBg+C?,Z#";CJQW-+%eq"+&4OjD,*T%*'QelCJ6H[Cd'US*'Q5[Db*8rCe[8sHVd.-CInh.,#:^/?q46o+#l/)DbNPGD*:6e)EpG`*(re"C.1ThBg,6;D+I#[,Y&AGC.q-"HUpOP)`g;aBf\!rDFd#rCeci3CJ@N(CIpu>)b`+iDb<\LCIg?L,Z#"JDbNl$HVZOI)`g;aBf\U*DFlc1Cec]`C,n"FCL.<C,"b7(C.D<$)E9W$DbNPF+&,+#Dad/n?p@.Z@6$eX?o^P#DI*WF,$mbd*Bl5YBhU9](e[+uDFlQ+)G*=CCed8>DG)]`(eR.rHVdF5C]R<KDG*8nF^@=2*Bl5YBhU9_*(iIB+&59LD,3SE?r''l@7r=S?pm@]*DTWV@L#8"Cee(uD+u]-+%eq"*(r"dD+.-!CJH`aCJ6u?BM13+BKf-jDa-WkHN?nZDG*8lF^@=2*Bl5YBhU9^DG*8A)G!=EBMUrmD+Qu>?qW4TCe@&p*)9NU@L#=uCJ%\pCJQW-+%eq"+%en"CcXLVCH4*q+&,4$CemK(+%S[tDFuW\BgkN8HN?nZDbNGu@U;PI*Bl5YBhU9^DG*8A)G!=EDb3>>*)8aA+%n@jHN@4cC.^on@U;PJ*Bl5YBhU6X*D/UF)bEOI)c&jKC/7kOFU(?3CJ.bqCJQW-+%eq"+&4OjD,*T%*'Q8]BLsmTD*KdTCJIT-DFc]_CeR2rHN?nZBM(cq@U;Q.*Bl5YBhU9]CJ-rm*(`V!Cen(Q@L#.pBLu;lC.^0'+%eq"*(hnbCd^]lCIM8FFU(rD@5p.kDbNPFDE1'bDGEJp+&#1&)I?NLBLP3.@L#q2)E9W$DbNPGD)t!a*DAaG)`U;b?q!OcCHXR&?p6nVCe[;o)GEh+)EKWT?qEdk*DSq$)bWLtCH+X\*F;iEC./G),"Y:'D,=87BfJ!sDbNPGD)t!a*DAb!BhCln)EC8`+&50MC-P$aBfS[a(g[MN,#(R)@7O?qC,e*tDbNPF?qs'j?p?n')bEOt)b;\[)EpM7D)t!`)a?hnBh1QV,Z#";CIp3'+%eq"+&4OjD,*T%*'Q5]Bg5*aCd^cm+%f7-(e$/\D*LEmCcOmbHUgD#@7:K),$mcC*Bl5YBhU6\*(iJ#)G!=s)c'L1BM(cp,Y&AFBh:TmHVZRJ)`g;aBfSO-Db*T,CedGDCJI8sD+[5DD`L0N,Z#"UD+.,oHVZ=C)`g;aBf\.VDFl]hD)jKuD,!JsC.U0XDI*WF,$mN5*Bl5YBhU9Z*(iInC.U-'DFd5qBMUrm(d:AhC.gl;+&5*FHVd")Bh8V,,$mb`*Bl5YBhU6c(e[+k*D&aK)G`h$Bhq#rHUgM&Daat.,#:^.Bh)3#+#l/)DbNPGD)jsaDFd&j*'He<Db3E")EpM7Bgk?S,Z#"TC._SoC,msk+%eq"+%SauCcX=PCIg<`BKo0eCcF+J+%eFkDG+"OFU(rECcF=!DbNPFD)jpa@6-YN*'HelBLG*e*Blh;*(2Yg*)&V!)brb%CH+gMF\5)+B`V!HCe-ikF^@N]*Bl5YBhU9`*(iJ#+%SjJ(f*Ir@7WX2)bVn4@6I:2Bh1K4CJ-oi*D]+(D,*GE+%emJ+%nsDHN?nZ?r'-cHVZ@D)`g;aBfSX0Db3GFD,2ok*(iXICe@,qDE13k(d:VZ,Z#";C,msk+%eq"*)84gCelffC-#$8DbVodDbWSu*)B6P)bX46?r'H;FU(rD*&oi&DbNPGCH4^^C-"UV+%.h`BK/:XBM1]>C.'p&DdHOLC./G2,#(R)?r0m$C,e*tDbNPGCH4^^C-"UV+%.h`BLG-f*B6A4(em@sCeR)l+&4[Z,Z#"LC/76"HVR'Y)`g;aBfSX0Db3GFD,2ok*(iY(Ce-6-D`K[QDG*8oD+ucd(g[ME,$mb_*Bl5YBhU9`+%8FmBhgo>CemJr?qsa)C.^om,Z#";C-"$l+%eq"+&4OjD,*T%*'Q&WBKo0eCJ6EcBhC-bHVd4/DG:F>,$mb_*Bl5YBhU9`+%8FmBMV,F)c&jK@8Bp+C.^ol,Y&AFDFd/kHV[!V)`g;aBf\plDFlN)CgIED,$mc=*Bl5YBhU9^BM1W;D+Rc(DbE>n,Z#";C,dmj+%eq"*(VhbCeHKaC-"4RBf[qFDbWPtHVdC;?ptB(,"b4(CI_E%DE'O#DbNPFCd^Wl?ogP=,Y&A2CJ-?)+%eq"+%S+dD+$-\CH47KDbW`&CeHN_*'$;bDFm;oCe7,?CH4aYD+-oqHVd.0DaXn6,$mc=*Bl5YBhU6*(e[.<BM)<$DbE>l,Z#";C.'a!+%eq"*(r"dD+.-!CJH`aCJ7c2?qj?q,Y&ACDbi_rHV[?`)`g;aBf\L+Db*PJD,)f0C0h3K,#:O'C.D<$)`T`%DbNPFCd^Wl?ogPS+%\t#CJIAc,Z#"TD+m_kC,msk+%eq"+&4OjD,*T%*'Q_kCJ7/nDbW)4Bh:Qo@6%@0FU(E:BLkobC-F<p+%eq"BhUEbCemN$D)ssZBMM#nHN?nZBM(d!@U;Q.*Bl5YBhUup)bNCmCIpuB(f+0RFU(rD)`T`%DbNPF?qs'i)FZqg)G3Lt)FR%\@S]<gC]R<KHVZLH)`g;aBfSX0Db3GFD,2oeCedABC.U*F@SK9jB`V<Q?qj?pF^@RB*Bl5YBhU9*(e[.n*D&LCBLssWHN?nZHVZ@D)`g;aBf\.!DFl]eCe-<\C/$rsCIpuCD`K^!Db;oRF[\Pn,Y&AHC/%#sHVZsU)`g;aBfSF%Db3;>D,*ek,Y&A2C.g6(+%eq"+%f%'CcXLVHVd%.D+Ft/,#(C#?q46o?oU%jDbNPGDF?in@6-\OC-"(8,Y&ACBM1crHVZLH)`g;aBfS[-DFdGDD,*PuD,!<"CIg3H,Y&A2C.0g"+%eq"*(r.5CH=maCJ$?YHVd.2D+k7<,$mcC*Bl5YBhU6\@7rji+%\puBf]9jBM(Nf,Y&ACDb*?"HV[?`)`g;aBfSO.(euhaDb`VFC0h3B,#(C*C/@r-?oU%jDbNPGDF?in@6-\OC/$HL,Z#"LDb*,qHV[?`)`g;aBfSO'(euhaDb`VFC0h3B,$m`8*Bl5YBhU9Z*(iInC.U-'(e@%;C/7-"C.g<^?qN:[*(`XD)F[\&BMV,r,Y&ACBM1fjHVZLH)`g;aBf\OaDFm2<D+QT.CJ?`aC.L9L,Y&A2CIp3'+%eq"+$),VD)j:OC,eRXDbW]&Celrg+%f3N@7`CSCcO7MD)aCMHVd%,?qgr',$m`9*Bl5YBhU9**(rRs(e@+CD,3T$*D]0JC.g9-Ce@#;*)8e"Bgb3`HUgb6DG:F5,$mcC*Bl5YBhU9]@7rm/*D&OC+$!A(BM(Nj,Z#";C.0g"+%eq"+%o:,Cd0USCcXs1HUgM)D+Y+1,$mcC*Bl5YBhU9]@7rm/*D&OCBKB0iBM(Nh,Z#";CHaEq+%eq"*(qtcD,2id*'Q5]Bf[qFCeR/p*(rsL@6$_WD*CEgD,)c]BM(`k@80HrDEfmVHUgG,BhSh8,#:R-?r0m$D)aF"DbNPFCcOg`+&#.*DE^Qg(e$npCH4a/C.^itBh^ulBgb9hC->$eCL.<L,#(I*?q46pDE'O#DbNPF+#u\hCcF^X?p."WBhh0"?oUh+?p6nVDE(-_)bNIuBLG?kC/7)\,Z#";CIKp#+%eq"+%\1eD)t'^CcXs\Bg5<hCJ6He+%Sh"DFHifCct93CJ-?XD,*>sDaZK`HUgA*C.ek/,$mbd*Bl5YBhU9/CJ$iq)G!=EBhq0%+&5'K*D/^G?qNa/HUge3CB7NSHV[$W)`g;aBfSOZDFm>GCed\O+&"@7CJI8t?o^SNDb<8kC.U<\DFlQ`CJ@,mCICTpDbE#8D`p!*@7i3sDa[#uDEgNTF[\Vp?ia%?HVR6^)`g;aBf\!rDFm,ACed\KC/./oC.M&C)biUpDFuc4CIpE\)br=iD+R)mDb;c-DETjCF\b;%BE;3P@73I[@U;N$*Bl5YBhU6X@7rm1*D%t/CcXm\DFd&i*(rauCd^T5Bh1Nd@6Qt'HN?nZHVZCE)`g;aBf\^1Db*>oCcOC#D,!JuC.U*')bj"0)dZ<:C.h#;FU(E5DGOA#C-"$l+%eq"+&4OjD,*T%*'Q)YBMLrlCcF9qBLG01HN@4cCemH!@U;;u*Bl5YBhU6X@7rm1*D%t/D`U0_C/7);(d:>l)bNIsD,3T#HN?nZHUpOP)`g;aBfS[fDFl]5CcOCR+%S.6CIpH/)b`pKDbEH!C/%#\@S''gD?3NMC/72uF^@Qa*Bl5YBhU6^*(iL?*(`V!)c&duDb*,?+%e72D+dnN@L#q1*&oi&DbNPFCJ7)rDG*8m*(WRt)FR%kCdg];@7`dbDdHOLD,1I6,$mbe*Bl5YBhU6_*(rRA*D&^C(euh5)GWS%(eRh)@7`jc,Y&AKD+IGgC,msk+%eq"+&4OjD,*T%Cd^$ZBg"aZCeHN_+&"t#DG+"O@L#5!D+RhqC.g6(+%eq"*(r.gCct-dHN@4cDbE>q@U;Q(*Bl5YBhU6_*(iJ#*D'9Q@L#D'BM)AmC-F<p+%eq"+&54'CeI,rCH4XVBKns_HN?nZHV[?`)`g;aBfSF*DFl]5Ceco5CL0e7Db*PC@L#q2D`BX$DbNPF(cjuaC.U]f)EBQ!Ce7)t)auY_BM(WlCd1EjBMUN_+$)kl*D\q#**u`ODb`bC@L#q8BK.mrDbNPFCH4^_CJR5C)br[rBhLrnBfJd4?p6nVDE(-PF\>)&D#m`UHVR$X)`g;aBf\O,Db)W^CIgckC/$E[C.UoCDE0RPDG*]%Bhq5rDFl`PF[So&C&q*IHVZLH)`g;aBf[tGDFmPLD,*c&D,!_PCIpo[@SK9jC&q*IHUpOP)`g;aBfSF)Db3;CD,2o6+$)\gCIg?-)biS$DbEJGC.UfZ@S''g@0'IIHVZCE)`g;aBf\LVDFdGICed>@C-#$bC.UZ6DE:0eDdH49C.gi6FU(T@Bh_\qC,dmj+%eq"*(`"eCcXLUCd0gTBLkQgCem`(HN@4cHV[?`)`g;aBf\O,Db*>?D,*c+C0k"?Db*SDFU(rKBK.mrDbNPFD`pHh?p?n')b`RrCdgip*Bc;Z+&,+%D`L<R@S9'hC]R<KHUpRQ)`g;aBf\^1Db*>oCcOCOCedAtC/./E@6.++DbEGFC0j\8DFm/9@L#=uC/.PjCJQW-+%eq"+&4OjD,*T%*'QelCJ72pCcF@RCJI6#DGEYtCe[8rHN@4cD,3T"@U;Q)*Bl5YBhU6_(e[/!*D&aKHN@4cBM(Qh@U;Q.*Bl5YBhU90*(iL>)bELu)c'KUFU(0.BLGW^C.^0'+%eq"+%8XuCd1?gCJ.\L@L#4uCe@eqC-OBq+%eq"*)84gCelffC-"(NBLtKeD*KdT+%]KS@L#>%Ce[\kC.0g"+%eq"+%n=fD+--ZC,e(JHN@4cHV[!V)`g;aBf\O,Db*Q!CgKn;DFd,9@L#q1D`BX$DbNPGDF?in@6-\OC0j\;C/%DD@L#=uC/7qtCJQW-+%eq"*)A7gCcFj[C,n1KBfSj`C.pQd+&,7*DG)obCeR)oHN?nZHV[<_)`g;aBfSFUDFmQ%Ce-l=C/%2a@RW^h@0'.@BM(Qf@U;Q.*Bl5YBhU9d*(rOo+&>BR*)9NU@L#V/BhhGiC.L$%+%eq"+%S+dD+[hMFU(rD@5p.kDbNPF?qs'i(e?qo)EpVgBO4eEBLPW:FU(rD@5p.kDbNPGCed>u?pm:])G*FsC0k"GCJ7,;FU(0.CJ7MiC.^0'+%eq"*(_kaCctKnCHki@FU(rD*B5r'DbNPGC.gopDE:'\*)&Xr)GEY%?oUM>@RNL\CB7NSDbNGr@U;PI*Bl5YBhU9Z*(iInC.U-'BM(ZsCJI/l)G2_fHN@4cHVR'Y)`g;aBf\^1Db*>oCcOBsD+lZ1CJ%#>Dba#+DEU]tCe6?\DdHODC/7)9@L#S-BhqhsC,dmj+%eq"+%Sn$CeHKaCHY*fBfJgaD)j:MHN@4cCemH&@U;;u*Bl5YBhU9Z*(iInC.U-'BhCfuC/7,C@7r@U)bMtk)b<CqHN?nZ?qs*f@U;Q/*Bl5YBhU9_CJ-or*D&_((f!LsHN@4c?qs*eF^@RB*Bl5YBhU9_*(iIB?r'9=)c&n(HN?nZHVR$X)`g;aBf\^1Db*>oCcOC$D,*JrC.U?1DE:0i(e$b8CIpclDb)fQ@RNmhD#mELBMV-!@U;N#*Bl5YBhU9Z*(iInC.U-'C.UlnCJR6"@7r=S@6I:aCJR5CDG!qNFU(95CeIkrD+u]-+%eq"+&4OjD,*T%*'QelBg"aZCeci2Bh:3_DaZ9VHN?nZHVZ@D)`g;aBfSI+DFlc1CedZ-C.pQf*)87eDE:3dDG!2\@RWO_,Y&A2CIp3'+%eq"+&4OjD,*T%*'QbkBKn4KCd(Qm*&p5`(e$/\D*LEmCcOmbHUgD#?qq#(,#(R(DbsJ3C,e*tDbNPFCH4^_CJR5C)b!%j)E:5aBg59<DEU<dCJIB#@7ijP,Z#";CIg-&+%eq"+&4OjD,*T%*'Q5\Bf\OWCd(Qm+&#?P?qE+NCe@&oD)ajYD,+,6C.gik,Z#";D+lW,+%eq"+&4OjD,*T%*'QhmBML9ZCd'^"BLt]nD`ojQCd(lqCemJu,Z#"U@7rmgHVR$X)`g;aBf\^1Db*>oCcOCPDbWMuCIp9^DGEZ#?qX3uC.V*!DFmPg,Y&AFBLPEeHVQjS)`g;aBf\^1Db*>oCcOBtCedAqC.Uc:)b`L>Db<\NC.U9Z)c&=7**rqR,"+^qD,=80*B5r'DbNPFDEU?g@7rm5)b`RrCe7)s)EL5O,Z#"OBh;!#HVZRJ)`g;aBf\p8Db3;?D,)fbCeQQ^C.^p!DE1$L,Y&A2C-F<p+%eq"+$!"oD,3W%C-"+HBLFRPHVd44BM/Y6,$m`?*Bl5YBhU9Z*(iInC.U-'C.Uiu@89*cC.g9bBhLfoBM:Zh+%nmtBh1NdHVd43CeY43,"k:(@7O@"BK.mrDbNPFCH4^_CJR5C)a-JaBhh0!DEgK8DFHlkDE(-P,Y&AG?r'HuHVR9_)`g;aBf\^1Db*>oCcOBsD,!N!C.UoCDE0CODb<;nBhpWc@7Wj1+&5O1D+Z]jDdE`G,#(C)C.D<$?oU%jDbNPFD+$`mC-"UWCIgr],Z#"LDb32rHV[?`)`g;aBfSF)Db2W0D,)f.CgIED,",+(DbsJ3CH+3uDbNPFCH4^_CJR5C)biUs(eI1tCHXRS?p?tX@6$eXBhC`n+'o7U,#1O+Bh)3#BK.mrDbNPFD*:6fD)agY?p."X)GWe"Bh:3[CIh0!CICZnCelrd@7s*k*Bc\f*Bc8(Cd'^\*D]"%)bWLs*)'$l,Z#"OBh;#pHVZRJ)`g;aBf\^1Db*>oCcOCPDbWo)CIpfqDE0I<,Z#"LBhLirHVQpU)`g;aBf\^1Db*>oCcOCODb`]#C.U*`DE1$]DG*<"C/$Hb@7`@VC.M$%CgIED,"Y:&BM_`2BfJ!sDbNPFCH4^_CJR5C)a-Gb(cXucCHXRS(d:8d(eR;!BjM*J,$m`8*Bl5YBhU9Z*(iInC.U-'BLtW8CJR5p+%n@fD+c`i+%\b"@7jQrBMV,t,Y&AFBLP0gHVQjS)`g;aBf\^1Db*>oCcOCNCeZi9CJI8@?o^MPDb<8ACIpom@7`1SCL.<L,"Y%#@7O?q(cXE"DbNPF*)8h%?p?nRCJ@&oBK/7Y+%emIC-=m`Ce[;qD,3&e(emM$(em=@(e[P&?pm=]?sX.A,$mN5*Bl5YBhU9c*(iL@D+QumCemJs*)8t%*CMY_?qNde)GWRsHVd")BMJk9,$m`<*Bl5YBhU9/CJ-osBM(cn)c&du*CrFADbDf](eR+qBM:opDG!2mBhpujCIhK.BM:ck,Z#";C-"$l+%eq"+#uejD+-BbCJI<"+%/UqCe-H`+&"q"HVd4/DFt42,$mb`*Bl5YBhU9.@7rmiBM(c@DGN\u*)8aFHVd./DFb(9,$mbd*Bl5YBhU9/CJ-osBM(cn)c&du*CrFADbDf](eR+qHUge3DZNrWHVQpU)`g;aBf[tGDFdH!DbibEC.^oBD+HE^DE132Db<;p*)/1l?q<dcC.U?fCgKn8BhLo:FU(rE)`T`%DbNPF*)8k&@80'bBg,$eBK/7Y+%emIC-=m`CeHK\+&+UoC.q,qDbET#?ogYT@6-_@@S9EoBE;3PHV#n=)`g;aBh^K3Db*>rCcXj_+%\q$C.L6\DGNZ#DFuc4C.Uoo@7a-m+%]0RCe@&u(eQ\/DG)o7DbE#m(d0SrDETjRDFHH\?puhN?pmL4)a6/+)a6/`DdH4CDG<hHFU(rJ*B5r'DbNPs)`g;eCJ7#?Ce6B_CJ.0!)bi[rBhC`m(ck/fC.q<%@7i:U?o^MQDFHE_)a?\h)EL2a)FZM-*'Ze7(f*M&)bs+2+%f73C,e*p)a6/'C/.)]F[\YpB`V!H?qWse@U;>J*Bl5YBhUr=+%edqBh:'\CcXjZDGNM@BM1ioDbED@+&>1!Bgb6kD`U0f*(`Ir?p-h")G<F?+%emC?p-@o)G;q3C.h8ECILrDDad>r)Ep&VBKnCO@7jQAFU(rJ*B5r'DbNPs)`g;eCJ7#?Ce6B_CJ.0!)bi[rBhC`m(ck/fC.q<%@7i:U?o^MQDFHE_)a?\h)EL2a)FZM-*'Ze7(f*M&)bs+2+%f73C-OU"CH=?s)FZtYF[\YpCB73J?qWsc@U;>J*Bl5YBhUr=+%edqBh:'\CcXjZDGNM@BM1ioDbED@+&>1!Bgb6kD`U0f*(`Ir?p-h")G<F?+%emC?p-@o)G;q3C.h8ECILrDDad>r)Ep&V)a6/,Db=%O@L#V,CIh5eCcF*l+%eq"BKe1OD,*K"+%\aECed>oD*CBfC.prnD`ojPCemH'Cd^T9Cdg'ZDbEeKDa$*ZDEfmVDEgi>(caNS(d1Ag?p7%`?ogVX@8Ag*)a?_5)a?\iHN@4cHV#n=)`g;aBh^K3Db*>rCcXj_+%\q$C.L6\DGNZ#DFuc4C.Uoo@7a-m+%]0RCe@&u(eQ\/DG)o7DbE#m(d0SrDETjRDFHH\?puhN?pmL2)a6_<)a6_fDdHOLDGEJ=FU(rJ*B5r'DbNPs)`g;eCJ7#?Ce6B_CJ.0!)bi[rBhC`m(ck/fC.q<%@7i:U?o^MQDFHE_)a?\h)EL2a)FZM-*'Ze7(f*M&)bs+2+%f73C-"6r*)AI9CIpiYF[\YpDZNrWBMCipF^@Q^*Bl5YBhU9/@7rm6CIp9^*'-A`+#u_nHN@4cBMCioF^@Q^*Bl5YBhU9/@7rm6CIp9^*'-Aa+#u_nHN?nZBMCin@U;PK*Bl5YBhU9/@7rm6CIp9^*'->2+#u_nHN@4cHVZLH)`g;aBf[tQDFlNZCcXj/+%S+4*)'$l@SK9j@0'IIBMCit@U;PK*Bl5YBhU9/@7rm6CIp9^*'->4+#u_nHN?nZBMD0!F^@Q^*Bl5YBhU9/@7rm6CIp9^*'->-+#u_nHN@4cHVZLH)`g;aBf[tQDFlNZCcXj/+%S:9*)'$lF\P;/BE:mGHVZLH)`g;aBf[tQDFlNZCcXj/+%S78*)'$l@SK9qCB73JC.Ufj@U;N.*Bl5YBhU9Z*(iInC.U-')G*A%*)8dB(d:>6BM1]lBh1N4DbEMtCe6lqBM(T7@7ij5HN?nZHV[<_)`g;aBf\O,Db)W1C/.GKC.p<IF[\buC&q*IHVZCE)`g;aBfSF*DFl]5Ceco5CJ?`lCJQZgDE13gDI-FAC.go8FU(63DbO8!C-OBq+%eq"*(;S]CcP3jCHk9bBKo!fCcF=P+%fQT@L#>%Ce7DgC.0g"+%eq"+%S+cCd0j[CH4dZHN@4cC.L`pHVQLI)`g;aBf\^1Db*>oCcOBtD+lfjCIp3aDGEZ&?qN:SBhq)?DFcZeC.UomD+cT-(e$;dDb<K'DbE#T,Y&AL@7rsiHVR$X)`g;aBf\^1Db*>oCcOCODbW]"C.UZ:DE1!aDEU]<Ce6K]DFlQK,Z#"LBLG?dHVZLH)`g;aBf\LYDFm2AD,3)lCedArC.U*F,Y&A2CH+!k+%eq"+%Sn$CeI5uC.pN^DbWo+D)jLR+&#%$DFHrpCe[5qD,)ucD)ss\DE1Ek(d0f]D`KRQHUgP)DF=e,,"4aqC/@r-D)aF"DbNPsD*:6e)I<_P,$mQ3*Bl5YBhU9Z*(iInC.U-'(e@%=?qs!8@7s'e?pm=^)br[GBLG*3BLkEdCe[W&)G<FDCJ$r?(d1P8+%en%BLF^$Bg5X#@89<n,Z#"UDb`f)HVQmT)`g;aBf\^0DFd#jDba#)D+urnCJI8r(cjo_DG*AFCJ?Q`?q;t!C.U9eCeH]Q,Y&A2CHX?p+%eq"+&4OjD,*T%*'QekBMLrlCe-<\*(`Cp(e$\jCe?unCeZZ]Cem>p@5p_VD`TgVDE:foCe-iq,Z#";C.0g"+%eq"+%Sn$CelffC-"d[HUgM)Ce>"0,$mbc*Bl5YBhU9]CJ-rmCe7*#D,3SJC.LWp+%n@iD+do3C/73$,Z#"LBLG*]HVZLH)`g;aBf\s9Db3;>Ce-KbC/$W`C.L9L,Z#"LBhLrlHVQpU)`g;aBfSF[DFd9!Ced>E+$)8_C.V,HD`L<fDG*;oBh^ih)br\"C.M&rCgIED,$m`?*Bl5YBhU6_D+d,jD+R2r*',i!?r''l*(hq^DbDrkBh:Q6DbEABBhputHVd43Ceb:=,#:O'@8L!$)`T`%DbNPGCH4^^C-"UV+%.h`BLssF,Y&A2C-F<p+%eq"*)84gCelffC-#$8DbW\IHVd44BLN5',#:O&Bh)3#)`T`%DbNPGCH4^^C-"UV+%.h`BMUBL,Z#"JDb`_sHVZOI)`g;aBfSX0Db3GFD,2ok*(iY(+'o7U,"b7'BLc*")E9W$DbNPGCH4^^C-"UV+%.h`BLG*dC.(E9DI*WF,"b7'CI_E%)E9W$DbNPGCH4^^C-"UV+%.h`BK8=YC.(E9DI*WF,$m`9*Bl5YBhU9Z*(iInC.U-'BLtWm?r''iDbEPsC.(Ej@8B-3CJ-r?HUgb6DF=e5,$mN4*Bl5YBhU9*(e[+jCIq#B)c&mMD)k*4)bVqeD+d2C)GaC9DG*9!,Y&A2C.0g"+%eq"*(r.gCd^NhCH47LHUgM)CeG(1,$mb_*Bl5YBhU6_*(rRuCe7)CD,3PICcYU!C.^rm,Z#"ODFdGsHV[!V)`g;aBf\"HDFlc7CgIEM,$mb_*Bl5YBhU6^@7rj_BM(c@DGN\u*)9O1C.^rl,Z#";C-F<p+%eq"*(Ve`Ce6onCH4XVBfJU/HVd44CIeb-,#:O&Cf"//)`T`%DbNPGD)jsaCe6oi*(WRu*CMYK,Z#"JDb`VpHVZOI)`g;aBfSF*DFm,pCec]dC.p<\+'o7U,#(L1Ce%N&(cXE"DbNPGD)jsaCe6oi*(WRu*D&"aBjM*J,#:O&DGXA1)`T`%DbNPGDE's`*DAarC.h&p)G`jh,Y&A2C.'a!+%eq"*(qtcCcFg`CJR;pCeRl*?qs*k,Z#"TCJ7#iHV[<_)`g;aBfSO.Db2W]CedK"CIg3H,Y&A2C.'a!+%eq"*(qtcCcFg`CJR;pD)kWm?qs*i,Y&A2C.'a!+%eq"*(qtcCcFg`CJR;pD)bQl?qs*h,Z#";C.'a!+%eq"*(qtcCcFg`CJR;pD*M&s?qs*o,Z#"TCJ7GuHV[<_)`g;aBfS[_DFm2ACecidC/$BJ,Y&A2C-=6o+%eq"+$E=tCed]*CHjRNBfIkFD)kWmBMD0#,Z#"QC/.2nHVZsU)`g;aBfS[1DFm2BD,*Ga,Z#";CJ-?)+%eq"+%.h`CcXLVCHY'^+&,I+D+[&n*'$;b?puhJCe.6!CcOpcD+-oqHUgM'DFb(9,$mc>*Bl5YBhU6_BhL`kCe7,?HUg=tCJG1<,$mbe*Bl5YBhU6_BhL`kCe7,?*CrXu@8B0:)G4%+@7`jf,Z#";C.^0'+%eq"+%T()Cct9hC,f6rD,3Vt,Z#"OBhClkHVZRJ)`g;aBf\p8Db3;?D,)f`C.p<-CIpuADE:'L,Y&A2C/-H++%eq"D+%E#D+R-!,Y&AFDFdJtHV[!V)`g;aBf\!rDFm)9D-dNN,"P!tBh)3#CH+3uDbNQ#?sX.8,"P!tBLc*"CH+3uDbNQ#DdE`G,$mc:*Bl5YBhUckHVct.BMJk9,$mc>*Bl5YBhU6^CJ-ro@7`s8HVct(CIeb6,#:O&@8L!$)`T`%DbNPGD)jsaCe6oi*(WRu*DS@U,Z#";C-F<p+%eq"*(Ve`Ce6onCH4XVBfJg5HVd44CIJP*,$mb_*Bl5YBhU6_*(rRuCe7)CD,3PID`Up$C.^up,Y&A2C-F<p+%eq"*(Ve`Ce6onCH4XVBfJ$tHUgS+C/#"1,#:O%CI_E%)`T`%DbNPGD)jsaCe6oi*(WRu*B5f?,Y&A2C.^0'+%eq"*)B%'D+ZK_C-Pa$D,3W%,Z#";C,dmj+%eq"+$)8YCd^ZgCd'aSBhL<[Ce-<\HUgb1BhA\-,"+^qDF[`(*B5r'DbNPFD+$`l(f*Fo*BuhfCcY$dC-P$N,Z#";C.^0'+%eq"*)AFkD+$<a+$We%D,3W$,Z#";C.^0'+%eq"*)AFkD+$<a+$*FuD,3W#,Z#"QC/.GuHVZsU)`g;aBfS[-DFdGDD+mAa,Z#"QC/.K!HVZsU)`g;aBfS[-DFdGDD)t0Q,Y&A2C.0g"+%eq"*)AFkD+$<a+$D>*HUgM)Cd\S*,"4gqBi%i,BfJ!sDbNPFCH4^_CJR5C)a?VcBhh0!Ccs[T+%8LqCd1EjBK\^`BLG?gDb`c%CcXp`DbED@)bj%+*D]"%?q<X-BjM*J,"4arF^@Qb*Bl5YBhUor@7rj^D+R#l)brh+@8B3f)G3D!CeIH#HN@4cCemJrF^@=3*Bl5YBhU6\(e[.=DFlQ+*CrV'@8B0n(d:AhD+d2>C/7,>HN@4cDG*;p@U;;t*Bl5YBhU6^(e[.u*D&Rq(ca?LCJR5mBLFUWCe@&p*)9NUFU(rD)`T`%DbNPFD+$`l)F$JaCIgro)F[+]F\b>#C&qERHVR$X)`g;aBf\^1Db*>oCcOCNCe[AFCIpl;)b`b'DEU]qCe6lj@7WjRF[So&?ia%?HVR6^)`g;aBfSO.Db2]^Db`YtC.^oqCe-6+DE:'bDG*;oBh^ih)br\"C.M&rCcsXS(d9Z?F\b;%C&qERHUpOP)`g;aBfSOXDFm>FD,3);+#u5`+&53O@6-_YDbEA=CIpo[F\,)$D#mELHVZ=C)`g;aBfSOXDFm>FD,3);+#u5`+&#!F)dZ<ECeRMD@L#1qBLu;lD+lW,+%eq"+&4OjD,*T%*'Q)YBg5!^Ce-E,BfSIZDGN2fCe[qOFU(rDDE'O#DbNPF+&,+'C,nOFF\5#%B`V!HHUpRQ)`g;aBfSO-DFl`bCed>@C.^o@CIpB-)biXsDFui1C0k"ADG!>=@L#q1*&oi&DbNPFCH4^_CJR5C)a-Gb+%\q&?pm@ZCJISICgKn@D+"\4,$mb^*Bl5YBhU6])bNCs*(WOC(f*RCCIpij*D8+dHUgD$Db(11,"Y:&DbsJ9BfJ!sDbNPGCct-d?oUGQ+&#1%BfSXa+&#?SBM(Wl)F$_m)dWhH,#1L)?q46p*B5r'DbNPGDE1'b(cXfX)bEOu+%/UrBfSL+BLF^]Cd1EjCJR8uD,!8nD`L*_Bg"=W*)8h#D`U3N,Y&AACeR)rHVR6^)`g;aBfSO-DFl]5CelriC.pBeC/./DD`U<k(dq%oC.^l<DFcH]C.LfpBLGR!Db;cN,Z#"PD+[2uHVQFG)`g;aBfSO-DFl]5CelriC.pBeC/./DD`U<k(dq%oC.^l<DFcH]C.LfpBLFOSDb<_HDb<8\,Y&AAD,"+uCHjKr+%eq"+&4OjD,*T%*'Q5]BKnm]CcF:P+&,($DFm8qD*C?lBM:9bCeI5uD`Ta"@6%"]DaZN`DE:f>@L#5!Ce\"tC.g6(+%eq"+#ueiCd19fHN@4cHV[<_)`g;aBf\scDFdK+Ced;CC/%2a@RWaaB`V!HHVZsU)`g;aBf\paDFlN0D,*Ga@Rs!cB`V!HHVZsU)`g;aBf\.!Db2ibDba"m@Rs!cBE;3PDFHrj@U;MI*Bl5YBhU9Z*(iInC.U-'BM(]jBMUomDbDfaD+d2sBM:l=Ce?rr*D\sFCe[VH)bNFE*(j6QFU(E5DFI>eC-"$l+%eq"+%8XuD+.-!CJ$?YBMV<&D)k*c*)ALnHN?nZHUpRQ)`g;aBfSO.Db2]^Db`YH+&,4)CJI8q?o^_YDG!/?CL1+BDG!A>@L#>"@7s]gC-=6o+%eq"+#ueiCd19fCcXs\BLG-`Ce.SJ@L#V)BMDSpC.'a!+%eq"+%S+cCcXg^CJI,kBK]B;@L#q8BfJ!sDbNPG@6HtZCH+UV*DAdsBhq6"*D8:gCHk-c@8BBo(g^!=C/%&:@L#q1)E9W$DbNPFD,*Du@8B0c*B6P9*DT+*?p6q)**u`IBhCZ4FU(0.C/.PjC.^0'+%eq"+%8OrCcFpcC,f68@L#q1)`T`%DbNPGD+I#q+$W4k*D8n"BhV#_F\b>#D#m`UHVZ=C)`g;aBf\scDFlcjCeluiC-"daCIg0,DdHOMCeRPE@L#1qBLGrgD+lW,+%eq"+&5O0Cdh'!CH4XVBfJ@)CHXRT*'-bmDG2f_Cctf?FU(rKBK.mrDbNPFCILTk?q!@Y*(WRu*Cqn^Dad#?+%ek!Bg5*R@S9'gC&qERDG!2u@U;MM*Bl5YBhU9Z*(iInC.U-'?qEdkBhq#r(d:Ac)G3>#@89*4Ce@,p*D&Ou?q<U1)G;q3+%8OEC.^ikDb=%O@L#D(Bh;)dCIBj"+%eq"+%o:,DbNZ%*'Q,ZBg5<hD)sCOCJI>C(e$,ZCe[AuD*C<`BM(clDa#jTD`Uo?FU(TE@8'H_CJHQ,+%eq"+&4OjD,*T%*'Q5\BMLE^Celo3BM(TjDa[8qCe6rmCcPN;@L#q1)`T`%DbNPFCcOj`(dC8e?ogeUD+-o[F\b>#C]R<KHVZmS)`g;aBhUr=@8BT`@RWO\D#mELC/7N%@U;PN*Bl5YBhU9]@7rpcC.U-'(e@%@Ced9"@7r=SDbF+PFU(rD@5p.kDbNPFD+$`l)bE=m(e@.p*F;NFCJ@8>@L#q1+#l/)DbNPGCcOjaDE'mY*)/q%*D&Ou*BHP6Ce-oZ@S]KuBE;3PCdgit@U;N-*Bl5YBhU6^BK\d3?r'6q(f!LBCJR8p*D8.fD+$`jBh1N4Bgb3`*CrFl@7`g6*(s<R@L#.pC/7VkC.^0'+%eq"*(3:rCcXLVCH5E:FU(rD?oU%jDbNPG(cara(e?qi@5p_BF\P2'?ia%?D,3Z'F^@R<*Bl5YBhU9d*D/Uo*D&_(HN@4cHV[?`)`g;aBfS[1Db*Q#Ced>@C0k"?Db<D=@L#q1D)aF"DbNPGCcOj`CL0e?D+m5:FU(rDD`BX$DbNPFCeI,rDE:'\D-g=GC/7,:FU(rECH+3uDbNPGC,eO\C.(?bCJ@;t*BHYk*)ApKCe[W'Db3H"*)0+.)I?3D@73O*@L#q2CcF=!DbNPGC,eO\C.(?bCJ@;t*BHYk*)ApKCd^-aBfSX`C/.,tCJ6uZ@S0'mC]R<KHVR'Y)`g;aBf\^+DFd6#Ce-u@C.p</CIq$#DG<T#DFucfC.L*ZDdHODC/7ME@L#>%DbX>"C.0g"+%eq"BhU3\CeI5uC.pN^HN?nZDbEAnF^@R;*Bl5YBhU9_DG*5k*D'9QFU(rD*B5r'DbNPFD+d5sDFHigD`U-^)F[+s+#uYR@RNL[B`V!HDbWr+F^@O<*Bl5YBhU9Z*(iInC.U-'(eI+ACed8>?qW7R@6I=_)GWS!DG!/A(f"*Q@L#q8BfJ!sDbNPGCeZcb*C!%j*BH\g(ck,eCJISMDEU<cCd1EjBO4J8C/%DDFU(rD?oU%jDbNPFDE1'bD)agY(d1>S@SK0hCB7NSHVZmS)`g;aBhUc=Db3VgF[\PoDZNrW?qs-eF^@RB*Bl5YBhU9]*(rP#)G!@GCemH'HN?nZHV#t?)`g;aBf\.!DFm2<CcOCPD,*JqCIpl;)`g;/D`pfBCIplnDG<MtDb2W+Ce@DG(eZSfD`p!+Db<N!Db<;n@6HLm)a?\n@6[4_)F$J7D`p!)DFucc(d9]!*F;iLDbNP?FU(rD)E9W$DbNPF(dC>f(em=o?p."+D)t-e)EL54**uE@BhC]5@L#q2CH+3uDbNPF*'$Af?pm:X*)/q(CJI?!BM1]>D*C9d(cXucBM(Wn*F;iP@73R+@L#q1*&oi&DbNPFDb<At@5pPL*BcYc)GN_&BhC`>C.L]lD-g=JD++b5,$mb^*Bl5YBhU9]*D/Us)bEM'*',f%CJR6")bVn4HVd%-DbCC4,"4drF^@Qb*Bl5YBhU9]*D/Us)bEM'D,3JrDFm,tD+ZNZDbEDtHN@4c?qs-l@U;Q/*Bl5YBhU6])bNCs*(WOC(f*RCHN?nZDG!5o@U;MM*Bl5YBhU6\BhL`g*D&_(*',f%+&5:(+%.k]C.^imBh1N5DbEMtBhCWpD+R)m?qN:#+%8OEC.^ikDb=%OFU(rD*&oi&DbNPFCH4^_CJR5C)a-Jc+%\q&)b!+kCJISI@:!&>CeY4<,"+^pBLc*"*B5r'DbNPFDE's`DE^?`@7WmgBLP0e)bj!l,Z#"TCee(uC,msk+%eq"+&4OjD,*T%*'Q5\Bf\OWCd(QmCJI?&)bX3QFU(63Da[\nC-OBq+%eq"+%8XuD+$'YCe[AqBMLokCcF@R+%]KS@L#q1CH+3uDbNPFDdH4@Ce[D@FU(WAC.D<$*&oi&DbNPFCH4^_CJR5C)a-Jc+%\q&)b!+kCJISIDdE`P,$mc=*Bl5YBhU9.BM1coBMDN0DbEAm,Y&A2CIKp#+%eq"+&4OjD,*T%*'QbkBKnm]Cdg$WCJI-!DG*B!Cd1<lBM:fpD+$<`Da$KfHUgA*D+k7<,"+^pCI_E%*B5r'DbNPFDE's`DE:'\@6HkS+#l_iBM(WX,Z#";C,msk+%eq"*(qtcCcY!bCJ-NdBKnm]CcF:P+&,($DFml)?qEU)@L#D&Cen/!CIg-&+%eq"+&4OjD,*T%*'Q5]Bf\OWCdh#sCJI-!DG*B!Cd1<lBM:-^Bhh\MFU(T?CIhPnCJ$9(+%eq"*(r\!Cel`cCIKs(BfIkFCJ6Hd+%T++Db`buBKALbCcOdXCeI2sDE(Z<@L#1qCJ7MiD+lW,+%eq"*(WIsCeI/s*'Q5\Bf\OWCd(QmCJI3"DaZ<VCctf?@L#S-BMV_rC,dmj+%eq"+%n:fCeHZeCICEa*'-A_CcX=NHN@4c?qNmdF^@R:*Bl5YBhU6])bNCs*(WOC(f*RCD)k*/)G2_\C.^f:C/78EDF?cg@8B0:+%\=6BK\[Y+%nps(d1S@D+d5C?qN:VHN@4cHVZsU)`g;aBfSL\Db2W*D,*SeF\##!DZNWNHUpOP)`g;aBfSmlDFl]3CecihC/%AuCJI8s?o^_RDb;o1C.L6K@S''eBE;3PHVQ7B)`g;aBf\^1Db*>oCcOCODbMoeCIpB1Db`c!?qN:WC.^lkDFd5tC.V-#BLG32DbEN&Db;`2DI-+9DF?l6FU(rED`BX$DbNPFD)aj_DEU9^+#u)')`gGhD)am0C-=m_BfS[]+$!%rBKAXa)FQkj**uEFDb`S>FU(rD(cXE"DbNPFD)aj_DEU9^+%nmu*CWFuCgKn8BLGN8FU(rDD`BX$DbNPFD)aj_DEU9^+'q`EC/72<@L#q1)E9W$DbNPFCeI,rDG!/k*'#c#)GN_&*'-G5D-g"<BhD)@FU(36DbX>"CHX?p+%eq"*)A7gCem`*CJI;pBfIkFD)k*c*(`gJ?q`:PCemN"D,*K#BM(`kDE0UTDE0FNDEh/C@L#2#Dba(oCHX?p+%eq"*)A7gCem`*CJI;pBfIkFD)k*c*(`gJ?q`:PCemN"D,*K#BM:]i?qa9pDE:KlD`Uo?FU(rE*&oi&DbNPGC,eO\C.(?bCJ@;t*BHYk*)ApKCd^-aBfSX`C/.,tCJ6ukBh:`t@7<L^*'Q5`BLP6e*CN4n?sZr9CJ@/;@L#8#DbX>"CH=-m+%eq"+&4OjD,*T%*'Q;^BLFRPCd0d#BMLlnDb*T!Ce?rmCd19`D+$<`D`BTu@8Ag]DbDugDb`#eHN@4cDG!5m@U;MM*Bl5YBhU9Z*(iInC.U-'*(WOt@8B08CJ.,o@7<O_)G`Xu(e[.@Bhq#BC.LZf*D/15*(3Iu+%ejs*(s<R@L#q1DE'O#DbNPs+$DtmD,!>_@S0!gD#m`UHVZCE)`g;aBf\+TDFd5ECel`aC/%/pC/7)<DE:HpDdHOBC.(N4FU(WACe%N&*&oi&DbNPGDF?inC-"XXC.gijC.(Qm*Buk;DG*>rCgIEM,$mbe*Bl5YBhU9.(e[+qBM(!&*D&[sBhq#BDG+#4@7`mh,Y&A2C-"$l+%eq"*(<P#CcsOSCHXpZBMM#tCel`a*&p;bHVd4/@8@23,#:O%Db!i))`T`%DbNPG?qiLU*(WRs(e[=r)GWdg,Z#";C.L$%+%eq"+&4RkBhDE%?q<[b,Y&AFDFm,rHV[!V)`g;aBf\peDFlN*D-dNN,#:L'Db!i*@5p.kDbNPFCH4^_CJR5C)biXsCJ76!D)t$2Ce-o;?oUGQDbWo,C-OIM@6$VR@6-_S*F9%J,$mb_*Bl5YBhU9]CJ-r9C.UZ<CemJr?qsa)C.^uq,Z#";CHaEq+%eq"+&4OjD,*T%*'QekBMLrlCe-<\*(`Cp(e$,ZCe[AuD*C<`Cd13`@6-hVDG<&hHVd(5Bho%;,",+/C/@r.CH+3uDbNPGD*C9eDE^<_?p7(Y*CN.o*'Q_:?p6nW)a?Vh)FQqn+'o7L,#(L1?r0m#(cXE"DbNPFDE's`DE^?`@7Wm7)G<P#)dWhQ,$mcC*Bl5YBhU9/@7rm1)G!=ED,42.BM(Tf,Z#";Cel`.+%eq"+&4OjD,*T%*'QbkBKo!`CcF.LCJIB'DG<&dCe7,?CH=gZCd(-dDb;cbDE0FO(d:>3Dbi]"DGEGr(e?q:HUgb,C.\e.,"4t!Cf"//@5p.kDbNPGCcOja?oUGK+#uS4?sX.8,"kX/D,=81)`T`%DbNPGD)jsaDG3N$*'Znj)EC8g)EfuTBLF^]Da-`n)bWM!?qNpiCe7'!*BleiC.glZ,Y&A2CIp3'+%eq"+#u2XD+%*!CIL-X+$E(iDbWo)*(iP%DG*Z"Cd1BgD*LHjHVd%,?qUf%,"4dtF^@Qb*Bl5YBhU9/(e[+u?qEgk)c&48CJR6"BLFROD+[,rHN?nZDbNMs@U;PI*Bl5YBhU6XCJ-osBM(c@)c&18Bhq#k?qW7PHN@4cDbNMrF^@Q\*Bl5YBhU9/(e[+u?qEgk)c&18Bhq#k?qW7PHN@4cHV[!V)`g;aBf\"IDG<GEBjOnADFm/9FU(rDDE'O#DbNPF+&,+#D`U9PF\5#%D?3iVDbEB#F^@R;*Bl5YBhU9.BM1co)GF0QFU(rDDE'O#DbNPF+&,+#D`C-NF\5#%?ia@HDbEDqF^@R;*Bl5YBhU9.BM1co(edsOFU(rD*B5r'DbNPGD*C9f+&#.))EgPeBgbHm*B6AOF[SMnC]R<KHVZ@D)`g;aBf\+TDFm)iCe-o:C.pN5CJ%#BD`K[YDb;oR@RWR^,Y&A2D+lW,+%eq"*(VtfD)t'^D+cc`Bg+4JDbVrd*'I"rDa$N8BKB0iCemMt,Y&AADFm)hHVQgR)`g;aBfSF%Db)W^CIgf9C.pN5CJ%#BD`K[YDb;oe*)/1f?q<dfC.Uo],Z#";CIKp#+%eq"+%\1eD)t'^Ce[;oCJ7)mCe6B]+&"q!DG!>rD*KmWCd10]BM(`kDEUKhHVd"3D+t=4,"YL1CJ\&/?oU%jDbNPF?oUJR*D/Ro*(WRG*B6MhCcXp0BhLfmBhh0!Celrc+&#1*DFHfi+#lVR,Y&A2CJQW-+%eq"+%7k`CcFa_CH4XVDbWo,Cdg]j*(r.hDG!T!Ce.!!HVd.-C./G),$m`C*Bl5YBhU9c*D/UFDb*>ED,3Jr@7W[fDG)]`(eR.q@8B0jBLG9h)ELAi*(`LD@7ij5HVd45BhJb7,$m_]*Bl5YBhU9c*D/UFDb*>ED,3Jr@7W[fDG)]`(eR.q@8B0jBLG9h)ELA2*(`LE(d1Sl@7im6@7ij/HVd46CB73JCJ7&mF^@R9*Bl5YBhU9Z*(iInC.U-'(e@(<Bhq#B(eQP]DbEGuBM:oDCe?rhCJI/l+%\=6*(3+iDb<>C@7im5C.^i?+%oWUFU(rD*&oi&DbNPF+#u\iD+-`f(d1>d?qEggCJ?Z5C.L]lD-g=JCd\S3,",+/D,=81CH+3uDbNPtBg+jaC/.&rDE^Qh)`U;eBK8C+(e$bk)a-Jf*(rV"*F9%J,#1L0BM_`,*B5r'DbNPFCH4^_CJR5C)a-Jc+#l_k(ck#]CIh0"(emCpDEU<f)EgPjDFm9$C,eR\D`pEe?o^P>,Z#";C-"$l+%eq"+%Sn$CcFpcC-OUQDbW]&Celrg+%en"HUgS&@7U]#,#(L0Bi%i,(cXE"DbNPFCcOg`+&#.**D&auBgbHm+'o7L,#(R/Bi%i-C,e*tDbNPFD,3N"*D\st)EpYkBMUop*BlhfCHkKmD*CEi(ck#M,Z#";D+u]-+%eq"+&4OjD,*T%*'QelCJ6EZCe-E,Bh1-^DaZ9VHVd(/Db(11,$m`8*Bl5YBhU9^?qWa^?qEj7DGEMrC.U]=)bWXtCd^We)G`Y"DG!r*BMUlk,Z#";C,dmj+%eq"+&4OjD,*T%*'QelBLP3aD)jm]HUgb1BM&S5,$mbc*Bl5YBhU9Z*(iInC.U-'*(WM&CJR8p@7r=!?qOHqC/7N(,Z#"U@73C`HVR$X)`g;aBf\^1Db*>oCcOBtD+urdC.L'_DE:$e(e$bpC.U-\Db*5],Y&A2CJ$9(+%eq"+&4OjD,*T%*'Q;^BLG?eCd^-(Bh:WjDb)`_BK@kOD)b6dCd^rtDEh0(@7j!h,Z#";CHaEq+%eq"+&4OjD,*T%*'Q\iCJ7H!Cec]b*(rOs(e$/[Ce[5qCd'd(C-G<lDbE#hD`TROHUgG,Bh8V,,#1O+CJ\&.BK.mrDbNPFCH4^_CJR5C)`g8`*CNCtBK/@+*CMbg?pmLcBMLoq)GNInCem;r)am"m*&pVk*D]"%)a6Sf?pm@J,Y&A2CJ$9(+%eq"+&4OjD,*T%*'Q,YBfJd_DbVob*&pV9@8BQnCeQ`dBM:9aCcF[\DE1`n@7j!g,Z#";CJ$9(+%eq"+&4OjD,*T%*'Q,YBfJd_DbVob*&pV9?qN@SCcP!/CH4gbCeI6!DE1a"@7j!n,Z#"UDba#/HVQmT)`g;aBf\^1Db*>oCcOC"CeQNeC.^oBDE0CT(dp&#C.L$&DFm8qC.U-]Ce@Ae,Z#"U@73FXHVR$X)`g;aBf\!rDFd#rCeci3CJ@N(CIpu>)biV!Db<K#C.U9\@7`CD,Y&ACDb<8sHV[?`)`g;aBf\RaDFm,tCed\JC0h3B,$m`B*Bl5YBhU9)CJ-oi+%SmKD,3SCD)k*i*D/%5?qNa/*D]*MBg5$bBM(Nk@7`di*(s=.CdgTc,Y&A2CJ$9(+%eq"+$W4oD,)ifC,nOUBKna/C.0gV*'$_nDa#jOBKAC_Cd0UMD,*c+DE([!@7j$g,Y&AKCdh,cC,msk+%eq"+$W4oD,)ifC,nOUBKn1PD)t!_*)AFlDb3tNFU(95Db3_jD+u]-+%eq"+$W4oD,)ifC,nOUBKna/C.0gV*'$_nDa#jOHN@4cHVQmT)`g;aBf\1MDFd5CD,2lfC/$Wg*)B9VD`KOUDb;o8C.q>u)br7iC.Li@Ce?EJF[SPmBE;3PCe-lhF^@N]*Bl5YBhU9)CJ-oi+%SmKD,3SCD)k*i*D/%5?qNa/*D](,C-G*aDGNMpCe[W&?qNd4?qNa3HN?nZDFHrn@U;MI*Bl5YBhU9Z*(iInC.U-')G*A%*)8dB(d:>8BM1]n*)8aCBLG*5)ELA7CIgcl)bNG$+%fQT@L#q1BK.mrDbNPFCH4^_CJR5C)a-Ga)GEY%*Bc_8BM(WkCe[<!)b`q'Bg+d_*)Ah"C.(Bg+$MPd(cXi])G`\"DF?iX@ST<kC&q*IHVZCE)`g;aBfSFTDFdH)Ced\JC.q#lCIgB\DE:HlDdH49C.(B0FU(rKBK.mrDbNPtBK8F\*DSn$)G3Lu+#l_jCH=g\CILQhDE(*OF\>)%DZNrWHVQmT)`g;aBfSI+?qi<tCJIPHCJ?N+CJR;oDE:*`DG*5kC.U9a@7`C*C.LfuD+ZQLF[SPmCB7NSDFHrm@U;MI*Bl5YBhU9Z*(iInC.U-'BM(]jBhq#r+%n=hD+c`iBhCWoDb<;BBLkQl@8B3h)G3=B*D9ESFU(62?pn*_CIp3'+%eq"+&4RkD,*N"CHk-^BKo0fD,!8q+%nq"Db)ffCed8qD)aCMHN?nZBM:co@U;N'*Bl5YBhU6^BK\d3DGN`!(f!IG?r''c+%o%'D+d3"*DSjDDbE>o(f!@r)G!mMFU(39D+IGgCIKp#+%eq"+&4OjD,*T%*'Q5]Bf\OWCd0[SCJIT.DE9^RCe[5qBM:ipCd(?iD`TgVHN?nZHVZRJ)`g;aBfSO.Db3;=Cec]cD)sURC.U-+DE:$KF\5&$CB73J@73dgF^@O7*Bl5YBhU6\*D/Us)G*CF*',iZ@8B0:DG)`c@6I:gDGEG@Ce?r?HN@4cDFHrt@U;MI*Bl5YBhU6\(e[.=DFlQ+*DT%-@8B0n(d9Z%BM1]n*)8aCBLG*5)EL,e?q<U-*(rXF*(j6QFU(E;Bgb`_CIBj"+%eq"+%n=gCd0gYCH4[WBMUl?C,eU\*(r.hDFm8qBLkW:C,mtECcY9kDbj&,DG=.QFU(95DbEklD+u]-+%eq"*(`"eCcXLUCJI,kBK\U-CH=1M*)Ah!DFcKZHN@4cHVZsU)`g;aBfSOXDFl`6Cel`NF\##!@0'IIHUpOP)`g;aBfSI'DFlT+CedH$C/$Q0+&53I?o^MSDG*A@CIpBL@S''eC&q*IHVR$X)`g;aBfSI'DFlT+CedH$C/$Q0+&54#?og\ZDb<>DCIpirDb)QJ@RNmo@0'IIDbNMpF^@Q\*Bl5YBhU6_*(rRA*D&^C(f!CqC.LWpC.g<ZHN?nZHVQIH)`g;aBf\^1Db*>oCcOCOCeZieC.U*,DE:*g(dpY4CIpfrDFcH\C.U?bBLFOODb<MCDI-FE?qa99@L#S2@7=9aCJHQ,+%eq"+&4OjD,*T%Cd0gSBLtoqCcX:NBhCZjDa$$TCct0jD,++QFU(63DFdPhC-OBq+%eq"+%8OrCeI&pCH4m2+$N(hDbWSu*(s<R@L#q1@5p.kDbNPF(dCAgC.UiqCJ@&l)I?NLCJ@,:FU(63DFmViC-OBq+%eq"*)84gCeI,rCH4m2+&#C*DbWMs*(s<RFU(63DG!\jC-OBq+%eq"+$)kjCe7<$C-"j2+%\.`Cd(<f+%fQT@L#q1(cXE"DbNPFDEU?g@7rm5D`pB`Bhh0!DI-+:BLP?2@L#q1*&oi&DbNPGD)t!b@7<IZ?oUYWD,3H!)F$P8)a-MfCL1+HDbLI>,$mbd*Bl5YBhU6^*(iL?*(`V!)c&b$CIpc=DG)]c)G3=tHVdF:BE;3PHVZRJ)`g;aBf[smDFm,pCecia+$)YfCIpE`DE13QF\5&$D?3iVCe-loF^@N]*Bl5YBhU9**(iL?BM(`tC-"+R?r''h)bVqb*'Q5`+%\^ADG*5;D,3GsCe[W&)G<FDCJ$r?HN@4cDbNN&F^@Q\*Bl5YBhU9]@7rj^)bELqC-"*t+&5'KBLFR!HN@4cBMD2u@U;PK*Bl5YBhU6_(e[.;)G)Y`BLtZl*)8dBHN?nZDFHumF^@N\*Bl5YBhU9_*(iIBBhgo>)brguDGEJF?qW7R@6I:a?r''gC.^c<)ELAdC/7/BDb<>mDad\JFU(rECH+3uDbNPGD*C9eC-"XXCH=s`Ce-9WCemDFCe@&p(cb)eDEU?eBjOS>@7<R*FU(W@CJIYkC.p<)+%eq"+%\1eD)t'^D)sRPBMUumCcG-g+&#?P@7j6jCe@2tCcXL$C/%E!D`U9jDbi`#(d:>kDE0IODEgiq*D]]WFU(rD+#l/)DbNPGCct-d+$W%gCIgrn(e?AXCcXp0Bh:ZX@S]KuD?3NMHUpOP)`g;aBf\^1Db*>oCcOCOCeQN`CIg0,Db`c%?qO*sC.U<L@S''eD#m`U@7`meF^@Qc*Bl5YBhU6\@7rjc@8B09(eHJ`*DSjG*(j6QFU(?5?r'QaC-=6o+%eq"*(`"eCcXLUCcXp[BLkipD)kW<@L#q1)E9W$DbNPGCct-d+$W%l)EpVgD,!N$C.(EcD-g=EBhM/AFU(rKBfJ!sDbNPGDE1'b(cXfX)bEOu+%/UrBfSj5BLF^^*DA^uBO4eAC/.&9@L#q2CcF=!DbNPFCH4^_CJR5C)biXsCJ@<"BhC`>DFd,pD,!DpBMLor?q`gO@S0'm?ia%?HV[<_)`g;aBf\*oDb2faDba"NC.L9LF[\btD?3NMHVZOI)`g;aBf\*oDb2faDba"NC.^p!+'q`>Dbj%JFU(E:C.25jC-F<p+%eq"+$DP_Cct3eCIL*WDbW_JHN@4cC.^`i@U;PJ*Bl5YBhU9+)G3:>BM(`t(f*IrCH>K;@L#D'D,!elC-F<p+%eq"+$DP_Cct3eCIL*WDbWMDHN@4cBMD3&F^@Q^*Bl5YBhU9)CJ-r;D+QH*+%\jCCJR8pHN?nZD,3Z*F^@R<*Bl5YBhU9)CJ-r;D+QuhHN@4cBMUljF^@O6*Bl5YBhU9Z*(iInC.U-'D+R/=)G`U@(d:>2DG*;DBh1NjDG+"OFU(E:D,+2!C-F<p+%eq"+$DP_Cct3eCIL*WDbWqPHN@4cDG*<#F^@=2*Bl5YBhU9Z*(iInC.U-'+%\jECed8q+%n@fBM1Z8(f+0RFU(?8Db3_jC.0g"+%eq"+&54'CeI,rCH4XVHN@4cCemN#@U;;u*Bl5YBhU9`@7rm0*(`UD(f!Cq+#ueh)auJ)*D/XtCJR2=HN?nZ@7j$d@U;N(*Bl5YBhU9ZDG*8>Bhgr;CJRDu*D\sK)G2bc@6I:.C/78ED+$W:(f!=t@7`g/HN@4cBMD3%@U;PK*Bl5YBhU6XDG*8p?q<a6Bhq,D(ck,bHN@4c?q<[i@U;Q+*Bl5YBhUil(d18kHN@4c?qNmjHVZ@D)`g;aBf\^\DFl`5CedYJCJ%#lCe-K.DE:*bDG*;^,Y&ALCe[T!HVZ=C)`g;aBf\^\DFl`5CedYJCIgfo*)B(/DI*WO,$mb^*Bl5YBhU9ZCJ-r:*(`V((f!=qD)k*_Bga[[HUgD$@8$u0,"k:'?q47!BK.mrDbNPFD,3N"*D\st)EpYkBLkEiD*C<5)bE@qDE10P,Y&AFBgbBcHVZRJ)`g;aBfS[_DFm3!D,)faC.p?\Ce7>KD`U3N,Y&ABDF?rrHVQ7B)`g;aBfSO-DFl]5CelriC.pBeC/./DD`U<k(eR+uC.UZh@7`4PD,!>tD+[,<DbESIDbDc3DI*WO,#:L'?q46p@5p.kDbNPGD*C9eC-"XW+$)nj*CWFpBfJg6(d:8d(cb&d(f*%kBgbHlDEgBd+$W+l*F9%S,$mcC*Bl5YBhU9`(e[.<*D&aK+&>p>BM(Tk,Y&AKDbjJ$C,msk+%eq"+%S7gCd'ORC,dtF*'$_iCcOa[*(rY!DFmkMFU(TE?qjE_CJHQ,+%eq"+%Sn$CcFpcC-OUQDbWN!Cdg]jCJHQfDb)QZCeI0#D*M&B@L#q2DE'O#DbNPFCJI5t)`^2]@6I([BMCcn*B?G5(d:8dCe[;oBg4sd?pmLc(f!=^@SK6iDZNrWHVQ:C)`g;aBf\^\DFl`5CedYJCJ%#lD+[5rDE1'aDG!T#Bh1W<DFd8@CIq#nD+cT-(e$;]Db;l`DFuT*DG!Aa@S'$e@0'.@BM(TjF^@RA*Bl5YBhU9ZCJ-r:+&>?MC/7kOFU(rDDE'O#DbNPF)`^8dDEgEQF\5#$BE:mGHVQLI)`g;aBf\"RDFmQ#Db`YHD,!;sCIh/GDE:$e(e$b6C.L6^Db*T&C.U]gD*9a[(d0`V@7j!:DFuZM@S]6c,Z#";CJQW-+%eq"+$E=tCe.9$CILTeBfJgaCJ7*!*'Q5[D`L6bCH+R'HVd.-D,1I6,$mcD*Bl5YBhU9ZBgb65D+R2o(f!J'HUge-BLE/&,#(a.D,=80CcF=!DbNPF?r'H^,Z#"PC/.,uHUpOP)`g;aBf\+TDFm)sCed](C.p<bCJI8D?og\VDbEGAC.LZW,Z#";C,msk+%eq"+$E=tCe.9$CILTeBfJgaCJ6Ed+&,($DFdf1?qN[*@L#q1@5p.kDbNPF(e$emD)t-`@8'0i)I?3CCJ@MEFU(rE*B5r'DbNPF(e$emD+-`f?qX!g*CWFpBgk`CD+d5rD)t-f*DSt&)G*G"*BHJ1(dC_p)b!(mBf\RH@ST9pC&q*IHUpOP)`g;aBf\+TDFm)sCed](C.p<bCJRGCDG<B"Db;o3C.U9K@S''e@0'IIHV$[S)`g;aBfSF*DFd5>D,*Q%C/$Q^C/./E?og_(Db<AqD+HQ])b`aE+&>6HCe@&;Db<_MDETm*?qN+"DG!VGDEU64(cXfIF\+r(C]RWT@73ge@U;N$*Bl5YBhU9+Bgb60C.UoC)c&duC.U`iDG)]`@6I=c)G`XG*(rRDHN@4cHVZLH)`g;aBhUs"DGNW'Ced;@D+uriCIpfX@SK9pDZNrWHVZ@D)`g;aBf\^+DFmPMCelr5CJ%#rD+QumDE0UUDbED_@RWUa,Z#"UCe[W+HVZ=C)`g;aBf\^+DFmPMCelr5CJ7,pC.UZeDdE`G,#:I*F^@N[*Bl5YBhU9^)G37pBhgoj(f!LBBMUl>(d:Gf@6I:cC/7)<(e[.;CedE!*)/:7C.(E:DG!5>@7ij/HN?nZHVZsU)`g;aBh_<$DFlNYCel`NF\##(B`V<QHV[<_)`g;aBhUr>DFl`6Ce-9YC/%,_F[\bsB`V!HC/7N-@U;PN*Bl5YBhU9_CJ-r;D+R2ECemN!CJR5=BK\+MBM2AI@L#q1*&oi&DbNPFDbi]$CH+UW?p-tX*'->c(edULCe6rmCgL4IDb:=<,$mcD*Bl5YBhU9Z+%nmI*(WP&)c&mFHVdF6CJ>+2,"b7-CI_E%)E9W$DbNPFCJ.#rCe[5mCJ@;FCH4j])F[">CL.<C,$mb`*Bl5YBhU6\*(rOD)G!+m+&><O?qs!hHUgM&?qUf%,$mc=*Bl5YBhU9c@7rm/)G!n)DbEDo,Z#"ODG!E$HV[!V)`g;aBf\L`DFm;FCgIEM,$mb_*Bl5YBhU9c@7rm/)G!.:DGNZ"?qsa)C.^`f,Z#"LDb<]*HV[?`)`g;aBfSFUDFm5DCcXEt**rqI,"b7-C/@r-)E9W$DbNPGDE1'c*'Z\gBhV#oBh1`pBf\U.DdE`P,"P!tD+@W'CH+3uDbNQ"C0h3K,#(a.Ce%N&CcF=!DbNQ"C._2d,Z#";D+u]-+%eq"*(r"cD)jOVCec`dBLsmTCd(Nl*'-AcDa#jPHUgG&DG1@4,"4aq?r0m#D)aF"DbNPGDF?inDdE`P,$m`B*Bl5YBhU9_(e[.uDFm>sBhq/p?r''c*(r_#DbEE$C/7,oC.^ci(f!@n+%\dHC.hT'CdgTi,Y&A2CIKp#+%eq"*(r"cD)jOVCd0dSBf\"HCeHN_BM(TjDa[)lCeR?!CeZcaCelfeD`C6dHVd"3D+Y+:,"+^oBi%i,*B5r'DbNPGDE1'c*'Z\i)G*FsCcY$e*&ofA,Z#"TD,!DoHVZmS)`g;aBh:foDbWPa,Y&A2C-"$l+%eq"CemB$BM(ZiD,3&dCJ7,mD*LKhC-PB9HUgS&@7:Ju,"P!tCf"//CH+3uDbNQ"DdE`G,"4apBM_`+D)aF"DbNPGD)jsaDI*WO,$mc:*Bl5YBhU6(HUg>%BM&S,,$mc:*Bl5YBhU6.HVct.BM/Y-,#:^4Bi%i,+#l/)DbNPFCeI,sC,eL+)a?VdCcY$e)`g>4D+$6I,Y&AFBgb3gHVZRJ)`g;aBfSI+DFm;rCIprlC/%/sC.U*%Db`bf,Y&AFDG!/rHV[!V)`g;aBhUrBDFlNZCgIEM,$mc>*Bl5YBhU9d*(rRs*(Ve-HVct(D+t=4,$mc@*Bl5YBhU9Z+%nk#HUge3BMJk9,$mc@*Bl5YBhU9d(e[+?HUge3BMSq1,$mc@*Bl5YBhU9.Bgb6aHUge3BLiG*,"b='Bi%i-CcF=!DbNPFD,3N"C-"UV+$Mth*(WS$BK8C*DacumDad/sCJ$rqCJ75a,Z#";C,dmj+%eq"+&4RkD,*N"CHk-^BLkipCec]bHVdC:CJ>+;,$mb_*Bl5YBhU6\*(rOD)G!.:DGNZ"?qsa)C.^`m,Z#"QC.LfiHVZsU)`g;aBf\!nDFmMLCed>`,Y&A2C.0g"+%eq"BLPToD+$ZjCHXOPHVd.2Daat.,$mb`*Bl5YBhU6(*'QVkCec].)`gD8D)k*eHVd./?pk;s,$mbd*Bl5YBhU9_*(rP$*(WRs)bEFED,3Z#)bVqfD+dSIHUge1D?3NMHV[*Y)`g;aBf\XJ@Rrd_@0'IIHVZsU)`g;aBhUfsDFd8pCec`OF\##(C&q*IHUpOP)`g;aBf\O,DFdGJD,3VECeQQbC/75@DE:$aDFHEZ+&,Hq@S''e?ia%?HVZRJ)`g;aBf\R'Db*2nCIg-&C.pB[C.V,GDE:'L@S0$mC]RWTHVZRJ)`g;aBf\R'Db*2nCIpE]C/./EC.U*%D`U0M@S0$mDZNrWHVZ=C)`g;aBf\R'Db*2nCIgBaC/$W`C.L92DdH4DCedG@@L#S-CJS%uC,dmj+%eq"+%eIlD+[2nCe[;oBg4:KD*K^SHN?nZHVQgR)`g;aBf\R'Db*2nCIgomC/$upCIpuBDGEYD@7iC(C.U-ZDb*T%C.U?M@S]?lC]RWTHVZ=C)`g;aBf\R'Db*2nCIprlC/%/sC.U*%DdHOMCed5:@L#D&Ce@eqCIg-&+%eq"+%eIlD+[2nD+cc`BK]'eCec]a*)An#@8'*gC.q<$D,3#dCee"P@L#D(BM;2fCIBj"+%eq"+%eIlD+[2nD*9dSBf\OWCJ6Ec+&+[oD`p$VCe[DCCHk6hCeI2sD`TgVDE(Z<FU(rD(cXE"DbNPFDa-QiDbNW$Bg,$aBhh0"+'q`@BLPW:@L#q2D)aF"DbNPFDa-QiDbNW$)EpYgBgk9g(ck#1Bh1T8?pm:]Bf\U^BM(cqCL1+>DFm2:FU(rE*B5r'DbNPFDa-QiDbNW%(d1Af)bEM"CH+[.DFd)<?p6kWBM(Tm?qa'l?qEdk*'-Dd)bWLt*'ZeV@ST9pD#m`UHUpOP)`g;aBfSO.Db3;?D,)f_C.^om+&54%?og_VDFuT1C.UfZF\,)"B`V!HHVQ7B)`g;aBfSO.Db3;?D,)f_C.^ouD+[5ED`U3h(dp_lC.L3^DG<N#+&5*KCeH]eDb;`-(d9fR(g^!8DF?c3FU(rD*B5r'DbNPGDE's`DEU6^*)9!MD+R2t?pm@JF[SMmC]R<KHVQ7B)`g;aBfSO.Db3;?D,)f_C.^p!D+HB-DE:'_DG*>oC.UfjDG<N#+&5*KCeH]eDb;`-(d9WM(g^!8DF?f4@L#q2DE'O#DbNPGDE's`DEU6^*)9"(BK\X^C-"[YCJ6WiCJIB#BKAL^)F#uU?p@(G@SK6iD?3iVHUpOP)`g;aBfSO.Db3;?D,)f_C.^om+&54#?ogRrDb<]"C.U<LF\,)"BE;3PHVR$X)`g;aBfSF*DFl]5Ceco5CJ%$"Ce-9(DE:HlDb;]aC.U`i@7W:B@RNmnC&q*IBM(WjF^@RA*Bl5YBhU9+)G3:>BM(`t(f+0R@L#4u@7sB^C-OBq+%eq"+&4OjD,*T%*'Q5]Bf\OWD*9XR*'%%@@L#1qC/.PjD+lW,+%eq"*(qtcCeHWeCH4j\DbWYHCJ6Ti+&,($DFm5tCen(Q@L#q1*B5r'DbNPGDad#oCH+UV*B6;]BgbHl*BukVF[SMmDZNWNC.^`l@U;PJ*Bl5YBhU6_BhL`kCIpf>CemJsBMVYMFU(63@73mWC-OBq+%eq"+%S+dD+$-\CH47KDbW`&Cd^cm+&5iX@L#q2CH+3uDbNPFD*:6f?p?nRDE^QjBKACZCHXRRDbNMuD,!DpBhC`nBO4eF@7<F&FU(E5?qj`hC-"$l+%eq"+#u2XCd0[VCJI/lBMUl?C-"7P*(3(mHN?nZHUpRQ)`g;aBf\.LDb3DFD,)r8+#u#YCIpc;DE:61DbEGFCL0e9DG*D>@L#1qC/7VkD+lW,+%eq"+%S7gCd0dYCH4XVBK.\CD)t-cCJI3"D`pQdCee"P@L#q1*&oi&DbNPGD)jsa(cXfY)EgPiBLkEiC-P$2Dacum*F;NFDaXn6,$mb`*Bl5YBhU9+)G3:>BM(`t(f)k`D+R2>HVd..BhSh/,$m`8*Bl5YBhU6^*(rOr*CrXHBMV#DD)k*6@7r@UDbEE$C/7/pDbF,,BMUlp,Y&A2C,msk+%eq"*(qtcCeHWeCH4j\DbWYHCJ7E*BMLp!DG!r*?qO-7@L#q1)E9W$DbNPGD)jsa(cXfY)EgPiBK8=SBfJg5CgKn;BgbZ:FU(rECcF=!DbNPFCH4^_CJR5C)a-Gb(e$np*CN7lCIgfm(emCpCem`%+$N.[F\5,%BE;3PDG*>o@U;;t*Bl5YBhU9c*D/Rn?qEj7BMUrm+%S[r*(hq/)bNF?*)9NU@L#=uD+RhqCJQW-+%eq"+&,6KBKepb*'#lQCe?B.BLFU!*(iL@Db2l6Cd'^"HN@4cD,3Du@U;Q)*Bl5YBhUfm(d1;3*DJ::HN@4cBM(WiF^@RA*Bl5YBhUon?qWsmBM(`n)c'KUFU(61BhhGiCIp3'+%eq"*(Ve`CcsIQCHj[RDbWQ"D)j@O*'QVe(e$/\D*C?lD)t0`HN?nZHVZRJ)`g;aBfSF*DFl]5Ceco5CH=@NC.L$TDE:*MF\5&*B`V<QHUpOP)`g;aBf\O,Db)W^CIg-*C.p?0CIp9*)biV"DFuc5C.V)bF\,)"D#mELHVR'Y)`g;aBfS[1Db*PJCedJHC.p?cCJHT-DE:Kh@7rs1CIpilDdH4;C.LZ4FU(E9Cd_AkCIg-&+%eq"*(Ve`CcsIQCHj[RDbWZ$Cdg9_*)B()Db*;qC,eLZCcF^WD,++QFU(rEC,e*tDbNPFCcOg`+&#.*DbET!+%\q&)`g>`CJ.B$CedK#Bg4sNF\PA-D?3iVHVR$X)`g;aBf\^1Db*>oCcOCPCedAFCIpHgDE0IV(dpk?CIg<,DFlcQ@RNmnC]RWTHVZRJ)`g;aBfSI'DFlc0CedZ#C,naaD+H?-D`U<Q@S0$lBE:mGHUpOP)`g;aBf\^1Db*>oCcOBtCeQT1CIpo<)b`q*DG*6!C.L6K@S''dC]RWTHVZLH)`g;aBf\U/Db2W]Ce7&oC.pQ6CIgBM@SK<jBE:mGHVR'Y)`g;aBf\^1Db*>oCcOCOCeQN/CIg0+DGEYu@7rs1CIpilDdH4;C.M#>FU(E9Cdh,cCIg-&+%eq"+&4OjD,*T%*'Q5]Bg#0fCcG*fCJI,oD`pNfC,eLZCcF^WD,++Q@L#4sBhqhsCIp3'+%eq"+&4OjD,*T%*'QekBMLrlCe-<\*(`Cp(e$>`Ce[5rD+-ihHN@4cBMLrm@U;PK*Bl5YBhU9+?qWag)G!=AD,3SI?qs39HN@4cC/7Q$F^@Qa*Bl5YBhU6_C.gi?Bh:$&Ce7&n@8B0m?qW7RDG+"O@L#q1)`T`%DbNPFCcOg`+&#.**Blqk*'-PT@S]<lDZNWNHV[<_)`g;aBf\O,Db)WfC/-WiC/%Af@RWa`CB73JBMLrlF^@Q^*Bl5YBhU9_*(iIBBhgrm)c&n#D,3GoHN@4cHVZsU)`g;aBf\p7DFd)mCedYiF\##(C]R<KC.^`j@U;PJ*Bl5YBhU9_*(iIBBhgr:CemGF?r'fE@L#V)CJR_lC.'a!+%eq"+%\1eD)t'^D+HQ]BMVYMFU(rD@5p.kDbNPF)EC/c)F$\g(f!S!DdHOLCJI,9@L#=uD+.PmCJQW-+%eq"+%8XuCe7<$C-"^YBMUumCJ7)=CJI6#DFmN!CemAsHN?nZ?qWm`HVZ@D)`g;aBf\O,Db)W^CIg-VC/./nCIpl;)b_teDb<Jb,Z#"OBgkKeHVZRJ)`g;aBf\O,Db)W^CIg0WC/$W`CIgB,D`U<Q,Y&A2CIp3'+%eq"+%\1eD)t'^Ce[8nBfS+LCe6Na+&#?P@6$_WCe[AuCd1?iHUgD"Bh/P4,"k:&C.D<+BK.mrDbNPFCcOg`+&#.*+&#1%BhLorC.(EfCd16d@6I(G,Z#";D+u]-+%eq"+%\1eD)t'^Cd0gTBMD2uD)k'b+%n:fDa[)lHUgG&DFb(0,$mN4*Bl5YBhU9_*(iIBBhgo>)c&q%@8B0n(d:AhD+d2sBMVZ)DG*>t,Z#";CIg-&+%eq"+%\1eD)t'^Cd16_CJ72oCeI,p*)AFl(e$blCcOd]Ce[;oCen)6C.gll,Z#";CJQW-+%eq"+%\1eD)t'^D)k'^BKo!aD*KsZ*'Q_i@7ig^CcP0hHVd.-CeP.;,"Y:$Db!i0BfJ!sDbNPFCcOg`+&#.*+&#1%BhLorC.(EeDacum*DT+*CgIEM,$mbc*Bl5YBhU9_*(iIBBhgrmCemJI)GWOFDG)]\(eRh)C/7Q#,Y&AGC/72mHUpOP)`g;aBf\O,Db)W^CIpH2C/%2tCIg-UDE:0dDa[8FCIg?L,Y&A2C-=6o+%eq"+&4aoCdg$YC-P-`BMM#nD+.K$BMLrs,Y&AEDG*;uHUpRQ)`g;aBf\O,Db)W^CIp9^C/$r>CIp3()biRqDFuf2C0h3K,$mbe*Bl5YBhU6\@7rm0C.UlA*',f#*DSmtBLGls@7`pf,Y&AEDG*?!HUpRQ)`g;aBf\O,Db)W^CIg-VC/./nCIpl;)b`P$DbEeIC0h3K,$mbe*Bl5YBhU9_DG*8p+%\q'*',i%Ced8p+%oX1@7`pm,Y&AL@7<LbHVR$X)`g;aBf\O,Db)W^CIpH4CJ@8qC.U?3D`KRVDb;ocBhq)nDFlcQ,Z#"TDG=5!C,msk+%eq"*(WIsCcF.NCH=m\BLkEdCeci2Bg#0jDFmkM@L#q2CH+3uDbNPFCcOg`+&#.**D8n$DFm<!*'Zb:DF??cDF?uq*BHPh*F;iP@7<O)@L#q8BK.mrDbNPFCcOg`+&#.)BhClnCIL`oD*9dU+%8LqDb<McF\>)$@0'IIHVQjS)`g;aBf\^+DFmPMCelufC/%/pC.M&C)biV!Db<\GCe-6[DFd5qC0j\9CJ7#8FU(rECH+3uDbNPFD)aj_DEU9^+#u)&*DT+)BMD/HBK\[]BKo!f*(`It)I?3D@7<j2@L#4u?r'QaC-OBq+%eq"+%n:fCeHZeCICEaBLPWmDbW/j+%fQT@L#q2CH+3uDbNPFD)aj_DEU9^+#u)&*DT+)BMD/HBK\[]D`C3eD+R&qCgKnA@7<m3@L#q1)E9W$DbNPFDE's`DE^?`@7Wme*(3:tC-P$3+'r&LBgk9.FU(95DFI>eD+u]-+%eq"+%S(cCeHWdC-"'q+#krOCed](Bg"@SD`odNHN?nZC.^`q@U;PJ*Bl5YBhU9]CJ-r9C.UZeCemJs@89iE@L#=uCe[\kCJQW-+%eq"+%S(cCeHWdC-"'q*'#rTDbW/j*&p2eD`pQdD*BjWHN@4c@7`plF^@Qc*Bl5YBhU6_C.gil*(WP#(e@(m+&5'DCJ.\L@L#q8BfJ!sDbNPFD)aj_DEU9^+#u)'*CWG!*'Zb9BM(Wr+&"q$)I?NHC/7MEFU(?4Bh;DmC-=6o+%eq"*(r"cD+$*[CICQe+%nmsD*CuA@L#q2CH+3uDbNPFD)aj_DEU9^+#u)'*'ZnmBKng1*CWY%)`^DhDG3`)**uEF?q`s0FU(rD)E9W$DbNPGD,3N"DE0sZD)ss\C/7<"@7<O0D-g"<Bgk</FU(?6DF@8dCJ-?)+%eq"+%S(cCeHWdC-"'q+%]1(D*:Bg*)Ah!DG<N#Ce6lqCcOjZD+QK`HN@4cHUpRQ)`g;aBf\!rDFd#rCeci3CJ@N(CIpuC?ogOrDbEPrC0k"ADF?l6@L#q2D`BX$DbNPFD)aj_DEU9^+#u)&Cdgfp(f*LGC.L]kBM:ZlCe.6$@7`siC/%#p**uEFDbiV>FU(rKBfJ!sDbNPF+#u\iD+-`f(d1>d?qEggCH,!7(em@tD+R5u)dZ<@C/7PFFU(E9DbX>"CIg-&+%eq"+%S(cCeHWdC-"'q+%]1(D*:Bg*)Ah!DG<N#Ce6orD,2i^D,++QFU(rD*&oi&DbNPF+#u\iD+-`f(d1>d?qEggCHkN>BLP6eCgL4IDGCL6,$m`=*Bl5YBhU9`*D/Us(eI4D*',iU?qs!2+%n@fD+[-!+&5($D+$W8(f!@EBM(TkHVdC9C.S_-,"Y:+Bi%i3BfJ!sDbNPF+#u\hCcF^X?p."WBhh0"?oUh,Ce@&p(eI4uC0h3K,#(I)?q46pDE'O#DbNPFD)aj_DEU9^+#u)&D)b$e)GWXH)bWLt@7`scBh1Tl*(re&(em=_,Z#";D+u]-+%eq"+#uejD,*c*CJI<"CJ7,mCH=.K+%S:iD`C$ZHVd(/@8.&(,$mbd*Bl5YBhU6c*(rRsBh:cuD,3JrDFm,j)G2_2D+Z]jHUge0C&q*IHVZRJ)`g;aBf\O,Db)W^CIgB-CJ6E\C.^oBD`U0M@S0$lDZNrW?qs0lF^@RB*Bl5YBhU9`*(iInD+R2@BMV#CHN@4cHVZ=C)`g;aBf\O,Db)W^CIg]:C.p<^CIpu=DI-+CCemG?@L#>%DGF;"C.0g"+%eq"+$VV^D,*N"CIL!THN@4cHVZ@D)`g;aBf\O,Db)W^CIgonC/%/ECJI8s?o^_VDb<8\F[\Z!,Z#";C-=6o+%eq"+$D;XCcFmb*'QknCJ75qCcGHtBMLrq,Y&A2D+lW,+%eq"+%\1eD)t'^D)sRPBKnm]CJ7#t*)Ah!Da[)lCcPNlCem;o,Z#";C-OBq+%eq"+%n=gCem;s*'R(tCJ7DuDbWo)*)BU;DbNl),Z#";CJHQ,+%eq"+%\1eD)t'^CcXs\BLG*^Ce-<\CJHWhDaZ9VCcOpgCe[r4@7<R^,Z#"TDFmViC,msk+%eq"*(qtcCcXsbCJ-Q^DbW,kDbVrd*)AFlDa[VIFU(rD)`T`%DbNPFCcOg`+&#.))bW\!BLPBV@S]<l?ia%?DbEDtF^@R;*Bl5YBhU6XCJ-om*D'9Q@L#S,C._8fCJ$9(+%eq"+%\1eD)t'^D)sRPCJ7,mBLtZs*(s"+Db2laCd(?4CH5'bCeIK'D`Uo?FU(TDBhhGiCJHQ,+%eq"+%n=gCeI#o*(iOuBKnd[Cd0[S*(imK@7rm_CcOj^D)bQ;FU(rD)E9W$DbNPFCcOg`+&#.**D8n$*(<=tCH4^-BO4e@Bgk]:@L#V,Db!i)*&oi&DbNPFCcOg`+&#.))G*Ft)GEXuBfJg6C-=m`D-dNN,#(O*DGXA1(cXE"DbNPGD+$`mC.LW;)biXrBfSX`*F9%J,$mbd*Bl5YBhU9_*(iIBBhgr:CJRB'*)8dC*D/%1)bNIuHUge0D?3NMHVZLH)`g;aBfSFXDFlT\CemGsC/%DKCIgBMF\P>(@0'IIHVZ=C)`g;aBf\O,Db)W^CIgc8CJ6H+CIp3,DdHOMCemJ@FU(rD?oU%jDbNPF*'$>e?qWd_*'HbWF\P2%C&q*IDb`]#F^@O<*Bl5YBhU9_*(iIBBhgo>)brk$Bhq2sBg"0tBM1Z8*DSmsBgb34C/7kO@L#8"@89ojD+u]-+%eq"+%n=gCeI#o*'Q;^BLsmTCec]b*'#oWDb<>mHN@4c?qX0qHVZ@D)`g;aBf\O,Db)W^CIprlC/%AKCIgBaDE:3cDb;`M,Z#";C-=6o+%eq"+%8OrCcY$dC-"g\BMM&pCeIf2BMLs!,Z#"UDbi_rHVQmT)`g;aBf\O,Db)W^CIp3'C/$T6CIpuADE1$f(dpkpC.U`i@7`C^C.U*VCe?uZ,Z#";CJHQ,+%eq"*(_kaCe.9$CIL-XBK/7(C-=m_*'Q5[DFm,jCe-fjD+do3@7<R\,Y&ALCemMrHVZ=C)`g;aBf\O,Db)W^CIgB1C/%2FCIq$#DI*WF,$mcC*Bl5YBhU9`(e[.;CIq!"D,42.BM(Wn,Z#"OBgk`lHVZRJ)`g;aBf\O,Db)W^CIg]:C/$HeC.U0XDE13Q,Z#";D+u]-+%eq"+%7k`CeHZeCJ$K]BMV;uD)sNt+%\k"D`pNcHVd(/@8@2*,#(R.CI_E&C,e*tDbNPFCcOg`+&#.)*Bltk)b!7tCH4aZCJ.B$CeR)q)b<:],Y&A2C.0g"+%eq"*(_kaCe-6]CIL*WHVd.2DFk.1,"Y:+CI_E,BfJ!sDbNPFCcOg`+&#.)*Bltl+$)klD+[/mCJ%<$@6$hY(g[MN,#(C'DbsJ2?oU%jDbNPGCcOja@8B0dDGE\f,Y&A2CJ$9(+%eq"+%\1eD)t'^CeR/lBMM8uCe-E,BLkitDb;rbBKA$pBK8C*BhpTe(f+1.@7j$o,Z#";C.0g"+%eq"+%Sn$CeI5uC.pN^HVd.2DG(:3,$m`B*Bl5YBhU9_*(iIBBhgo9DGEVH+&5'JBLG<eDacus*)AjEC-G$i(cb#-@8'!gC->TnCdgTg,Z#";C,msk+%eq"+%Sk$Cd^coC,dnD*&pDaDbW`$+&"t#DG+#+?qX38FU(rECH+3uDbNPGD)jsb@6HkQ*)&k&BMC6ZBhUB1DEU<dD`C3eDbNi+CL0e@?q`g,@L#V3Bh)3#*&oi&DbNPGCcOj_Bhq#lCIgrqBMUop*Buk:@7`dbDI*WF,$mbe*Bl5YBhU9*@7rjcBhgr:)c&jJDbiYH)G4%+@7`sc,Z#";CJ$9(+%eq"+$N@tD+[2nC-"XWDbWW#CemK!*(rXuDFm8qCH=4MCe[2mCemQ&DE(Zm@7j$n,Y&AFBM:fiHVZRJ)`g;aBf\-uDb*>rCe6Q/C.pB_C.V,IDE1'M,Y&AABMCfqHV$LN)`g;aBh^K3Db*>rCeluo*(`UG*(`%3DE0IQDbEDn+%\n"@7W+WC.U*,D*:Q?Db<`(D`pcm@6[1a(e[1sDEUK5(cXf*@9s79,$mQ>*Bl5YBhUil)G3:l*(W=m)c&jJC/78p(dp,YDb<>D@8B3gBg+g/DGNN%?q<sp)G<CD*(iRGDE^cm*D8asDE]pTDETp)BfIdiCILonBg4L!HVct(D?3NMHVZOI)`g;aBh;#ADFd8ED,3)kC.pB\BjOn<Db3><FU(64Db<ekC.g6(+%eq"BM13^D,*N"HN@4cDG*Z)@U;;t*Bl5YBhUuo*(rOD)G!.;+&><L?qs3<+%e:iDG*;?+&5iXFU(rE*B5r'DbNPF)am%pDbNVs+%\t&BM:]mC/%&BDG*>rCe[;p+$DtmCH=se?qEdj*BHMd)GNn**'ZeVF\Y;.D?3iVHUon>)`g;aBh^K3Db*>rCeluo*(`UG*(`%3DE0IQDbEDn+%\n"@7W+WC.U*,D*:Q?Db<`(D`pcm@6[1a(e[1sDEUK5(cXf*@72sr)EgM8DFuW2DF?oo)a-M3*CV_])a?8]DG!8nDb;r4Da#j%)F#oU)G;qf)a,o&DdHOM?qEg/@L#5!DbEklC.g6(+%eq"Bhq2tCd0gYHN?nZ@7`sj@U;PP*Bl5YBhUrB(e[+@Bhq2t+&>:/?qrs6*D0?RFU(rD@5p.kDbNPtC.gopDFHffCIgrn(g^<JCJI2;FU(W<CJ.GhC.'a!+%eq"Bh^<]D,)ujCICQeBM);H@L#q8BfJ!sDbNPGD)jsb@6HkQ*)&jL*(3:sBK8C*Ce[W'Cd1EjCL1+DC.Li9FU(?4BM;MoC-=6o+%eq"+%nIjD,*N"*'Q)YBLFRPCd(l@@L#.pD+[nrC.^0'+%eq"Cd'QsCed>q*)9NUFU(rDD`BX$DbNPF*CN7q@7<[f+'q`EC.L]5@L#.pD+%/cC.^0'+%eq"+#lqnCd^uoCH>K;FU(rECH+3uDbNPGDE1'b(cXfX)bEOu+%/UrBh:us)EpJfDG<MqDbEf$CgKnA?q`j-FU(rD)`T`%DbNPtDE1'b(cXfX)bEOu+%/Ub@S]<kBE:mGHVZ=C)`g;aBf\L`DFd)tD)jLYCe[ArCJRYO?sZr>Cem><FU(rED)aF"DbNPGC.gopDFHff*)&k&BM1Tl*D]%"CHaU"?qs!h)a6Vj*Bckn?sZr3DG!A>FU(rE?oU%jDbNPtBg+jaC/.&A)`g8`(eI1tDE:-2Bh^rp)a-\lBhpWa*CrY$DaZlj)EC/N@S'9q@0'.@HVR'Y)`g;aBf\^^DFm2pCec]dC/%AKCIpE2@6-hRDb<K"C.U9`DdH4;C.Uo:@L#q2DE'O#DbNPtBg+jaC/.&A)a-Ga@73UdD)t$]CJ.B%D+R5u(e@"p)G*G"*BHJP@SK6pB`V!HBMLuo@U;PK*Bl5YBhUs"*(rOo)GWb!(f!M#?qrs5HN@4cBM(Wr@U;Q.*Bl5YBhU6\CJ-oiD+R2DBMVYM@L#q2C,e*tDbNPFDGEQ#?qisb*DT+&)FuSZ+&50MC.L]9?p-eQ(d1SZF\PA,D#m`UBM(Wq@U;Q.*Bl5YBhU6^*(rS$@7`p4(f"*QFU(T@C._SoC,dmj+%eq"*(VhbCeHKaC-"7LBf\U_D)b$bHN?nZHVZRJ)`g;aBf\L`DFdGKCe7#<CJ@K,Ce.8ED`L0N@S0'fBE:mGHV[!V)`g;aBf\LUDFm2<D-g"<DG!SDFU(rDDE'O#DbNPsD,3N"DEgBPF\5#$?ia@HHVQIH)`g;aBf\UYDFdK"Db_u`C/$Wg*)AgGDE13gDb<8@CJ?Qb?q<d8C.M$%CcsXR?puhJ@9u`/?qj'2@L#S-C.h>gC,dmj+%eq"*)Aq$CeIK(CH4dZ+%\.`D)sCOHN?nZCem;t@U;;u*Bl5YBhU6_*(rOoBhgr;DGNYHCed5<+%o(#D+-cmBh1NeHN@4cCem;sF^@=3*Bl5YBhU6_*(rOoBhgon+&>9N*DSmt+%o(#D+-cmBh1NeHN?nZHVQjS)`g;aBfSL`DFl]^CecomC.^oqD+QumDGEZ*?qN:&CIg?\DFd#9CL1+CCJ7):FU(E5?q=BcC-"$l+%eq"*)B7-D+$<aCHY-`*'Z/TC.M&u*(_ncHN?nZ@7id`@U;N(*Bl5YBhU9d*D/UsBh:cjDGN\JC/7;t?p7%WBgk?mDbiZ!C-G-6Bhq#o?q<X4HN?nZHV[<_)`g;aBfSF)Db3;=D,)f4+%\meF[\bs@0'.@HV[<_)`g;aBfSF)Db3;=D,)f4+%\jdF[\bs?ia@HHV[<_)`g;aBfSF)Db3;=D,)f4+%S.Q@RWa_B`V!H?qs3i@U;Q/*Bl5YBhU6_+%egu)G!=E*'->3HN@4c?qs3hF^@RB*Bl5YBhU6_+%egu)G!=E*'->4HN?nZ?qs3g@U;Q/*Bl5YBhU6_+%egu)G!=E*'->-HN?nZHVQjS)`g;aBfSF*DFl]5Ceco5CJ%#<D+[5tDE0UZ(e$b=CIp6[Db)Q*CL0e:CJ7DCFU(rKBfJ!sDbNPGD)jsa(cXfY)EgP:*(3:sBK8C+DG3c)@7j$jDdHOHC.LZ4FU(rKBfJ!sDbNPFD,3N"DGEJoBg,$5+%8\$+%8OpCe-on@6I+](g^!=C.L]5FU(rEC,e*tDbNPGDE1$b@89*8)bEOtC.L'V*'$\j(dp5c)GWe')bNI`@SK?nC]R<KHV[<_)`g;aBfSI*@88OXC/.GHC/$WQF[\brD#mEL?qs3m@U;Q/*Bl5YBhU9ZDbEB#?qEg7D,3PIHN@4cHUpRQ)`g;aBf\L`DFl]^Cel`_Ce[VOCIpB1Db``&?qN:SC0j\8DF?c3FU(rD)`T`%DbNPFD+$`l)F$J`*BH\h*(3:_F\b>)CB7NSHVZLH)`g;aBfSOXDFlc0D+HTdC/$u?CIg0G@SK<iCB7NS@7`sn@U;PP*Bl5YBhU6X@7rm4CIq#BCIps!DGEK%*(j6QFU(0.D+.PmC.^0'+%eq"*(`"eCd0gYCH5E:FU(TDBhDJnCJHQ,+%eq"*(r"dD+$io*'QYbBMUl?C-=IS+%\^s(e$\jCe-omD)bQ;FU(rKBfJ!sDbNPGDE1$b@89*8)bEOtC.L'UD+-f<?plkVDbWMp(g^!=C.M#>@L#q2?oU%jDbNPGDE1$b@89*8)bEOtC.L'[?pm@/Ce@&pD+m2qBhC`jBg"a_*CrIq*&p;O@S'9q?ia%?C.^cgF^@Q]*Bl5YBhU9/(e[+@+&5<L)c&mF@89iEFU(rD?oU%jDbNPGDF?in@80$a*'QkYF\P2,B`V<QBMLum@U;PK*Bl5YBhU6\*(iJ#CIpf7*)8pF?qs!1HN?nZHUpRQ)`g;aBf\.!DFm2<Celu5D,!H'D+RGLD`U?1Db<]-CL0e9DF?f4@L#8"@7sB^D+u]-+%eq"*(_kaCd(?iD+uobDbW`&CeI8uCJI?'D`osSHN@4cDG*Z-@U;;t*Bl5YBhU9.CJ-ro@7`s8DGN\tDGE]')bVq0Ce@&o*)9NU@L#4tBhhGiC-OBq+%eq"*(Ve`CeH]aCH4dZBf\"HD)j:RBh;>H@L#q8BfJ!sDbNPFD+$`l)EgA`CH+g_)GWe'*Bc;X+%.tjCJIB#)dZ<@C.M&?@L#>#@80iiCJ-?)+%eq"*(`"eCcY$d*'Q;^Bf\sbCdg'Y+%]-M)bi%fCelofD)ajYD,*#fHN@4cHVQIH)`g;aBhUf?DFcK[Dbi;iC/$WkC.V,HDGN27(d0`T+&"Rs(el\b*)'(+Bg,!/)a6,')dZ<>?qj*3@L#D&Dbj.pCIg-&+%eq"+&5O0CcXj_CHXOPBLFUQCecZf+&+UmDFlT\Ce-<\D+I)sD+%DG@L#q1DE'O#DbNPF(ck#b(cXfIF\5##B`V<Q?qs3l@U;Q/*Bl5YBhU6\@7rj^+%\pu)c&mMHN@4cC.glp@U;N**Bl5YBhU6\*(iJ#CIp6(CemJrD)k*1+%e77)G2kj+%\ar(e[+;D,3DoHN?nZ@7<R`@U;N$*Bl5YBhU9`@7rm1C.UoCBLtWr*DSmE*(i[uDaZo9*DSjCBgb3eHN@4cHVZmS)`g;aBf\U*DFcNKF[\PnC]R<KD,3GrF^@R<*Bl5YBhUomCJ-ro@7`s8HN?nZHVZRJ)`g;aBfSF*DFl]5Ceco5CJ%$"Ce7?#DE1'M@S0'fC&qERC.^cnF^@Q]*Bl5YBhU6_*(rRA*D&^C(euh6*(X*OFU(E5?qF-[C-"$l+%eq"*(r"dD+$io*'QYbBMUl?CHk<g*'-AcHN@4cBMLutF^@Q^*Bl5YBhUrp(e[+?D+R2o*D]+-@8BBjHN@4cHVZLH)`g;aBf\LYDFlN.Ced5>D,!]%C.U*F@SK<iC]R<K@7id_F^@O;*Bl5YBhU6\*(iJ#CIp6(CemJrD)k'/)bVn4+%eCoCJR5sC-G-2*D\pt@7`g/HN@4cDG*Z,@U;;t*Bl5YBhU6c(e[.=DFm/n+&>9P?qrs6?pmF\?qNdc*DTWV@L#=uCe@JhCJQW-+%eq"*(r"dD+$io*'QYbBMUl?C.0gU*(rsL?qs*kCeluhHN@4cHVZLH)`g;aBfSj2DFl]bCe@)AC.p<bCIg0GF\P>'DZNWNC.^cm@U;PJ*Bl5YBhU9.*(rS!)G!.lCemJs@8BoF@L#>%@80iiC.0g"+%eq"+$!"oCecZbCJ.)mHN@4cHVZ=C)`g;aBf\*oDFm>ECJQifC/%#uCIg3-(g^!BCembH@L#q1DE'O#DbNPGCH4^^DEgEQF\5##BE;3PCem>qF^@=3*Bl5YBhU9^(e[+t?qEgk*D\F<*DSjH+%n=hD+d5pCJR5sHN?nZBLG<i@U;Q**Bl5YBhU9+?qXNA@L#>!BM2,eC-=6o+%eq"+%T()Cd(6fCJ-Q^BfJgaCd1rA@L#q1DE'O#DbNPGD`U3c+%S[`@S0!eCB73JHVZCE)`g;aBf\L'DFl`6Cel`2C,n!kCJ%#rDE1'aDI-FAC.1H1,S1mp3"T%$4<57m/Iid14qC4%,VU`GA.K7g1`68p/KGT;4B)h4FU'EZ0G4p$+[H_V2]i#,2A072FVe<q49ts"2d?Ok3"RGR.hrs*.OQ<%4;&3$"sXoc2%W=_/.ra80G>?t/PmN].iA=&.hYen4<57m/Iid14qB:P";r*_FX&CH2Af!h/.ra80G>?t/PmN].iA=&.hYen4<57m/Iid14qB:P";r*_FX&CH/.bAV/.ra80G>?t/PmN].iA=&.hYen4<57m/Iid14qB:P";r*_FX&CH49uZ<3$&n@A/Z0n.N&Ob57&5./JT36Gq^aHE=WWc4]N=-3ZT&).iB'4$4$hC2]DuT2BNYEA.B1Q2(nqA0G5$1GngrZ2\Q0Y.iB'4$4$hC2]DuT2BNYE!Y5kI4Wse54;(Ts2@`[nA5-/k4;&GB+:J5S4ZF/m3)E%24VLd*2BNYEGo7M:.g8KK2]i5B.0pLj*?>+]!Ym-p2BNYEGo7M:.g7F74;e]:/Hl7]E>]Z2.g7S("BA$"HP->h3uJ5g3"cci4;%W++=BTA2@`[j2[BU+!_t0O5?nd0/Ii4P.N&g'A3gG)4;_$60c:ls2%pc-2-^_&3YN&/4X11J.mX.R.2c@p2[BU+!_k+9A3j6-/Iid15$es54^8R./Ii4LBH\<,Go7M:.g7S'":c"F2(nqA0G5$1'b_Ab2(&V54;]MR4W,%J+:J6C4;&G=4W+en.L65N3t;i(10bD#4^8R.4^8R.4^80q/I;UjGn1Jk4^8R.4^8R.4^8g43ZT&)2&-l=3"?C(E=a&j4V%N)0G5$l4rkLF@l+0%.6A+XEA/n?!\c-&ECrZ#DcJ5^/IhdcE)g1:E"Erg3"T%G0G4p*/jU<]3t;u;+@\?m1)X=h%M]le2@E864:!tL1`9OO##6g)##/?!Ce-f`"B?9I3ZT&).1cqp4rkLF!\c-%!\c-&ECE;tBN6KF2%pc-2-^7p.mX:K+=B-2CF;)(BN.9$@7XZf":uLP3"T%$4:E&63ZS2)4[B__1`9%64:!;=.gd9s4B+:&CF;)(BN.Z0Cee8"E"Erg3"T%92]3J?4:b!t2@^f?.303/!\c-%!\c-&ECE;tCK2fI2%pc-2-^1i1egOE3"Za**Z4r34:VE"3Z20U##6g)##/?!DGNbp"B?9I3ZT&)0,5@%A/c6n4@V+2/M@\J0,59-EA/n?!\c-&ECil/CfMoV2%pc-2-_ID2_PaTA/c6n4@V+2/M@\J0,59-EA/n?!\c-&EC<&hD,i#W2%pc-2-_7.2&QN*.gRL,.gd9s4@'V^1`9%64:!;=.gd9s4B+:&CF;)(BN.8pDbFA"E"Erg3"T%B0H1uJ0G5%*4rkLF@lk8=$5j$_0HUm"'dH1-'dH.?C.UZkE$8L#2%D8m##6g)##/?(CJ%#f"<gM?2A-o43XAso/.ra80G>?tE!dTqCIU2t/I3:)CH*7I2cLt*3X?Z:CF;)(CF;)(BN.]&@8'rj"B7cbBiS7L2@^f?.303/!\c-%!\c-&EC<,oE$6Yi'dH1-'dH.?BLtlpE$6Z&/fbrKED9^R0G-cW)[QK\2A/J;.9%Jq3X?Z:CF;)(CF;)(BN.]&@8'rj"B7cbBiS7L2@^f?.303/!\c-%!\c-&EC<,oE$6Yi'dH1-'dH.?BLtlpE$6Z&4;&2t.iAHo3!`It3#)EdE![F!0G%1d3"Za*&.^`/3#E54EE+4l.hE7iA/c6n4=<*NCF;)(BN.](D,4G$"@5UVDFm?%BLtKk?sFob.hE7hA/c6n4=<*NCF;)(BN.](D,4G$"@5U\D+I,nDGEW)C0Vtl.hE7gA/c6n4=<*NCF;)(BN.](D,4G$"@5UYD+IB&CJR8nCg7taGq0gG2&JbL/JJd+Gs3/Y.PMkS/O9n###6g)##/?#CIL`c"@kF6CF;)(BN.5oDbaS%@PB<0!\c-&ECE;tD,i#\'dH1-'dH.?DbEJrE$8"1##6g)##/?,D,*Ah"Ah'?CF;)(BN.JuBh;So@PB<0!\c-&EDK)'DcJ5^'dH1-'dH.?BLtloE$8=:##6g)##/?!C.pue"@kF6CF;)(BN.;tBhhqt@PB<0!\c-&EC<,nE$8"1##6g)##/?!C.q;n"Ah'?CF;)(BN.E$@7XZf@PB<0!\c-&ECil/DcJ5^'dH1-'dH.?BLtluE$8"1##6g)##/?'?pm@S"Ah'?CF;)(BN.DuBh2Mn,T.F14;AJr%MK$W4\erm0c:ls)\WGf'bpriA-Y(VCF;)(BN.](D+S"sFYG=C!\c-&ED8`'DcJ5g'dH1-'dH.?BLtlsE$8=:##6g)##/?!Ce-lb"@kF6CF;)(BN.Z*DH/,]'dH1-'dH.?BM:]nE$8"1##6g)##/?'?pm[\"@kF6CF;)(BN.DuBh;So@PB<0!\c-&ED&YtDH/,]'dH1-'dH.?D,*DoE$5Ml2%L9+5?oEA.hE7gGmGAo2dA6L.M"KG.L8T_'dH1-'dH.?C.h&uE$8"1##6g)##/?(CJ$ia"Ah'?CF;)(BN.JuBgl;k@PB<0!\c-&EDK)&BiQTX'dH1-'dH.?BMM9'E$8"1##6g)##/?#CILN]"@kF6CF;)(BN.Z,CJ%krFYG=C!\c-&ED8`'@9"aY'dH1-'dH.?Cdh$$E$5Ml2],L$5?oEA.hE7iGmGAo2dA?E/K"a"3"S%V.L8T_'dH1-'dH.?@7isbE$8"1##6g)##/?'?q!IU"@kF6CF;)(BN.DuBhDYp@PB<0!\c-&ED8l#DH/,,4:h`%0H*nI2@^Q/CKpiI4;(UG3!^*.0HCu`0Fn.i+ttNE!\c-&EC<,kC/l]Y'dH1-'dH.?BM:]mE$8"1##6g)##/?#BM;)l"Ah'?CF;)(BN.>uBgc5j@PB<0!\c-&ED8l#DcJ5g'dH1-'dH.?C/78rE$5Ml2%L9+5?oEA.hE7gGmGAo2dA?E/K"a"3"S%V.L8T_'dH1-'dH.?Cdh&rE$8=:##6g)##/?!C/%/i"@kF6CF;)(BN.>uBgl;k@PB<0!\c-&EDK)&C/l]Y'dH1-'dH.?BMCluE$8"1##6g)##/?#BM:cc"@kF6CF;)(BN.DuBM;\q,T.L*Gn:np3"T%:/.rU#2A.,63tMu8A-Y(VCF;)(BN.5oDb44u@PB<0!\c-&ECEB%BN6KW'dH1-'dH.?D,*DtE$8=:##6g)##/?(CJ$rd"Ah'?CF;)(BN.;tBhr"uFYG=C!\c-&ED8`'?r\XX'dH1-'dH.?BLtosE$8=:##6g)##/?(CJ%8m"@kF6CF;)(BN.Z*@9"aY'dH1-'dH.?DbEK"E$8=:##6g)##/?,Dadqq@PB<0!\c-&EC`Q!?r\Ws2%pc-2-_I42_c6\A-Y(VCF;)(BN.9$?qsukFYG=C!\c-&ED&YsBiQTX'dH1-'dH.?@7WjeE$8=:##6g)##/?#Bh:Q^"9B>J3ZT&))@6TZ4;]1B3tMu8A-Xb@##6g)##/?+C.(N`"<g>i##6g)##/?!DGNPj"Aga)##6g)##/?&DG3>g"<g>i##6g)##/?'CJ%8m"Ah'?CF;)(BN.Dt?qO]gFXK.2CF;)(BN.;tBhDYp"@5"0CF;)(BN.8pDa[kp@PB<0!\c-&EC<K$C/l](2%pc-2-_C..L8T_'dH1-'dH.?DbEJtE$8=:##6g)##/?,DG4>"FYG=C!\c-&ECE;tDcJ5g'dH1-'dH.?BMConE$8=:##6g)##/?!Ce-oc"9B>J3ZT&))]],!'GDBk+ttNE!\c-&ECil.C/l]b'dH1-'dH.?BLtltE$5Mu2BNYEGs<;c0Er*u%362p4@'K2##6g)##/?,DG=D#@PB<0!\c-&ED8o+D,i#+2%pc-2-`6Z1`[Js02F)N2BGF,'dH1-'dH.?BLtlsE$8=:##6g)##/?#Cd^T^"Ah'?CF;)(BN.](D+S"s,S1mp3"T%52%VYS3!]aq+ttNE!\c-&EDK)&D,i#e'dH1-'dH.??qimcE$8=:##6g)##/?!Ce.5l"Ah'?CF;)(BN.Z)CK2fc'dH1-'dH.?BLtorE$8"1##6g)##/?(CJ.&f"@kF6CF;)(BN.JuBLuJn,S1mp3"T%!3"Gun.g8@J+ttNE!\c-&ED&YsBN6K&2%pc-2-_"#.L6Uu+APKF'dH1-'dH.?Ced<#E$5Mu2BNYEGq9mG'G!/1.L8T_!\c-%!\c-&ECrZ!C/l]HA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'FA#&"G=4o"CJ.&rBhM,tCIqW3@8]BjDG3<!CIpfgDG<PqCeI2pG==f!BM:iqDb`Sj@OF,tCF;)(BN.;rDFe%s"@4sm.ifK3!\c-%!\c-&ECEB%BiQTGED])#C/R;nC/%#pCeR?&BhCiqF\P,#G=Y2,BhCfu@7<La@7WXZCdgilG=>5&BM(NgDb`Sj@OF,tCF;)(BN.K$C._bq"@4sm.ifK3!\c-%!\c-&ECEB%BiQTGED&\sBMq,pD,3l-CemJsCf!DuG=t8"DG3N'D,!]-D+R5qF\tM&Bi7As?qa6tC.U]mDaZrnE(;Q7##6g)##/?&BM1W`"<g>Z*tB"q4=<*NCF;)(BN.]&@8'rj"B7]fCIqW)DF@T(D+Ir7!\c-%!\c-&ECiW!BiQTGA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'D+[N"G=tY,?q<R[BMLihDFHoe?qWgd@7W[`Bhq/pCf!f+@8]d#@8'-fD+[3"C.gibFXK.2CF;)(BN.;rDG"1u"@4sm.ifK3!\c-%!\c-&ECEB%BiQTGEC`f&CJ[>sBi%<'E(;Q7##6g)##/?#CILT_"<g>Z*tB"q4=<*NCF;)(BN.]&@8'rj"B7ilBh_]-CJS&-DFmN*E(;Q7##6g)##/?!DGNVl"<g>Z*tB"q4=<*NCF;)(BN.]&@8'rj"B7ll@743pCIM?#DG3`)E)82@##6g)##/?%DG<Sm"<g>Z*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%Bgk9bF\bM)F\th3DbOG4!\c-%!\c-&ECiW!BN6KFA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'FA52&C.VN(C/.l+?qa6nE(;Q7##6g)##/?,DG=D#"@4sm.ifK3!\c-%!\c-&ECEB%BiQTGED]/$D+HuhD,!MrFA"u$BiS7p'dH1-'dH.?C.h&tE$6Z:)EJ'(1`7r"##6g)##/?+C.(H^"<h#FBMUolBi%*"D,=A8?pm@SFXK.2CF;)(BN.Z)C/l]HA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'FA52'DF@T.CJ%](BM:]qCK4Ir'dH1-'dH.?BMM9+E$6Z:)EJ'(1`7r"##6g)##/?+C.(H^"<h#FBMV*%CJ[9"DbsS?Ce?uc@OF,tCF;)(BN.8pDadqq"@4sm.ifK3!\c-%!\c-&ECEB%BiQTGED]D/Db*u.D,+26?qNp]FXK.2CF;)(BN.Z)D,i#KA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'FA5/#CJ.c2CJ@o2BM(]cFXK.2CF;)(BN.JuBM)Po"@4sm.ifK3!\c-%!\c-&ECEB%BiQTGED]G2DFIZ-F\5)+D,j@k'dH1-'dH.?DG*DpE$6Z:)EJ'(1`7r"##6g)##/?+C.(H^"<h#F?qE^hF\5b9BLP0YFXK.2CF;)(BN.JuBM2Vp"@4sm.ifK3!\c-%!\c-&ECEB%BiQTGED]/.?r'm&@7s]tBM:inC/n@q'dH1-'dH.?BMM9*E$6Z:)EJ'(1`7r"##6g)##/?+C.(H^"<h#FCJI<!F\P/*F\tS+D+d,d@OF,tCF;)(BN.>uBLlDm"@4sm.ifK3!\c-%!\c-&ECEB%BiQTGED]D/DGWc"@8L*)BM:onE)82@##6g)##/?!DGNqu"<g>Z*tB"q4=<*NCF;)(BN.]&@8'rj"B8N.DG+)0BLGrtBMClkCK4Ir'dH1-'dH.?DG*DrE$6Z:)EJ'(1`7r"##6g)##/?+C.(H^"<h#FCJ72qF\b\,FA55'CIDH(!\c-%!\c-&EC<&h@9"a?A3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'FA>5$D,<`,F\tS)Bhgue@OF,tCF;)(BN.JuBLH,i"@4sm.ifK3!\c-%!\c-&ECEB%BiQTGED]/.C/.l-@8L*)CICElE)82@##6g)##/?,D,*et"<g>Z*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%?r'6fC.)0!BMM6&@9$)_'dH1-'dH.?@7rmY"<g>Z*tB"q4=<*NCF;)(BN.]&@8'rj"B8)rF\>5#FA55$Bgl<'!\c-%!\c-&EC<,kD,i#KA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'Db*5kD,+2.BMLfkBN7hf'dH1-'dH.?Cdh'"E$6Z:)EJ'(1`7r"##6g)##/?+C.(H^"<h#JBM)B'DbsS7CIgfsE)82@##6g)##/?'?q!@R"<g>Z*tB"q4=<*NCF;)(BN.]&@8'rj"B7WcF\5(uFA55/@7=Ht!\c-%!\c-&EC`PuBN6KFA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'Ced8oF\,\5BMCof,WQ#D0FT013"-`8A/YIX3X?`72cKb]+UD?\5?o*8/R/8[+UD$`0c:ls.iA=&.hYec2],L$5?n=%.jm;=CF;)(BN.K&D+._o"@b-R2]+:W.h;V&0bkN1E<m-q/QDcY4;(U,2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?!Ce7#e"<gMe-j^n-%20ZkE=<Zr!\c-%!\c-&EDJl%?r\X>@lbV>4ZXSq.L7s@0G"dg/K"s5E)dJZ4^8R.4^8'n3"-`8$6MhC/.ra80G>?t/f>B;2A0:!2@`\KFUD(T2d?Ie0Fe=\.1c\C'dH1-'dH.?C.UZoE$6Z5*Z4r#0bkN1.iB6uE)dGXGngrZ01J)9(fWIWCF;)(BN.;tBgc5jE!REf2d@@,GmZ2X##6g)##/?+BLkfh"<g?C/f>B;2A/t*0c:ls*";oU.4Yu3.2*Um0./_ACF;)(BN.;tBgl;k"B?$C4^8R.4^8R.4^8R.4^8s82AZuA2]i#,2A07,4:M;u.iDSb4rkLF@lk8=$5j$_0HUm"'dH1-'dH.?@73CYE$8LZ!\c-%!\c-&ED8`&CK2fI!\c-%!\c-&ED8l"C/l]H!\c-%!\c-&EC`PuCK2fIE)7/_2]i#,2A07eGo7M*E"j6"1)^0&3X?`72cO#o4:M;u.iDSb4rkLF@lk8=$5j$_0HUm"'dH1-'dH.?@73CYE$8LZ@k/9$/NOg_)AF2&4]FC'CF;)(BN.9$?qO]gE)g1''dH1-'dH.?DbWSuE$6Z+57&5./JT36EE,sB2],g.2A7/9/.ra80G>?t4:VQ(.o6io2]i#,2A07eGo7M*E"j6"1)^0&3X?`72cKk\.hYqf/.ra80G>?tE*Nta4]N=-3ZT&)$PO<^A.'=g1(OKh3Z1[=0G4pC0Fe=()AF2&4]FC'CF;)(BN.5oDGOP%E"s!Q$PO<^GmGAo2d@[<3YtO=4:_E(2?d>X4;&2m2%pc-2-`!T/KGW5A-WDb/I3'k1+,%DCF;)(BN.](D+._o"@4m]/KGW5Gs)-D3$05%'dH1-'dH.?D,*H"E$6Z:57&5./JT36E=j,p4:kd*5?o*8/R0/%4W,)(/JJd+Gn(E&/.NRc591RP4BrI-4^8g43ZT&)&IB<V2\R2:A.]ac4:k760G4pC0Fe=()AF2&4]FC'CF;)(BN.K&CeS+uE"3Hr/.NRc&IB<V2\R2:Go[e.Gr,O33"d/;4XW3OCF;)(BN.E$?r(&l"@>LD4;&2m(^L*C3YsG&##6g)##/?+C.(Qa"<g>?/.ra80G>?t1_UE)2,Fhk.L9;l49ts"2cKnj.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.DsBhVer"=H/kCF;)(BN.K&Ce\2!"Ap$F4W,(r'dH1-'dH.?C.U]hE$6Z&!\c-%!\c-&ED8l"D,i#KAO-k7.L8uX2],L</I3'k1+,%DCF;)(BN.;tBM;\q"@3Y92]i#,2A07)2Ad#:FVl,1/QDuZ/I;UjE=<Zr!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KFFAs+d4W,)>*u,\!*u+tk/O(3^2&KRO##6g)##/?#C.q#f"BA_e'dH1-'dH.?C.U]hE$6Z&!\c-%!\c-&ED8l"D,i#KAO-k7.L8uX2],L</I3'k1+,%DCF;)(BN.5oDFn+t"@3Y92]i#,2A07)2Ad#:FVl,1/QDuZ/I;UjE=<Zr!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KFFAs+d4W,)>*u,\!*u+tk/O(3^2&KRO##6g)##/?#C.q#f"BA_e'dH1-'dH.?C.U]hE$6Z&!\c-%!\c-&ED8l"D,i#KB,DX#/R/ks4^9i\/KGW5!\c-%!\c-&ECrSrBN6KFA/YIX3X?`72cLY'4W,)4$4.LK4:b^)5?o'74W,)(3"cci$4.LK4:bC-0c:ls0H*n"2@*7l2Ad#:@lk8=(^L*R0HL624B+:&CF;)(BN.E$?q=QeE!REf2d@4/4W,)>$5igf/I2Of3sblkEA/n?!\c-&ED8`&D,i#\1_UE)2((@GCF;)(BN.DsBhVer"=H/kCF;)(BN.E$@8:)l"B?$C4^96@.PVkOA5jET4W,)>*Z4r%/I2Of3sblkEA/n?!\c-&ED8`&D,i#WE$mV-CF;)(BN.K&Ce\2!"?m"s2]FI\4:r#qE&e(;0FT013"-`8E?d8!'dH1-'dH.?C/79%E$6Z&2%pc-2-_jK//8:$4;^Wm3"Z`^'dH1-'dH.??qimaE$6Yi'dH1-'dH.?Cdh$!E$6Yi'dH1-'dH.?BMComE$6Z5*u,\!*u+tk/O(3^2&JCY)A!Vp.TAAiCF;)(BN.;tBgc5jE"Erg3"T%J2A6od0FUN"-j^n-.2`[V'dH1-'dH.??qimjE$6Y;5?o<>2@pu<.7$NY##6g)##/?,D,3Pl":,tO2d@jL.9'O^2Ad#:!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIF$DDl3"Z`^'dH1-'dH.??r'HpE$6Z'Bi%5sF\H(5F$DDl3"Z`^'dH1-'dH.?BLtp!E$6Z'Bi#ZK/JKik##6g)##/?+C.(<Z"<h#RBiS86E)dJ\.N)2J/IYlW1_UE)2((@GCF;)(BN.DsBhVer"=H/kCF;)(BN.E$@8:)l"BIH-.ifK3!\c-%!\c-&ECEB%BiQTGED0J2Bi%2iE)nnD.ifK3!\c-%!\c-&ED8`&CfMoJED0IE3!^K`'dH1-'dH.??r'HtE$6Z'BLG6\F\H(54;&2m0H*nF3"cc21d<`-3"Z`i/JJd+Gmb>o/Q>nSE$G>rE=j,p4:j/!##6g)##/?#C.q#f"<fEO##6g)##/?#Cd^`b"<h(o*tB"q4=<*NCF;)(BN.]&@8'rj"B7cbC.q`,CfOaT3#)EdG=c(&/IYko2Ad#:!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIF$DDl3"Z`^'dH1-'dH.??r'HpE$6Z'CIqW)Bi%2iE!mBf/Q>nSE$G>rE=j,p4:j/!##6g)##/?#C.q#f"<fEO##6g)##/?#Cd^`b"<h(o*tB"q4=<*NCF;)(BN.]&@8'rj"B8N$Cf!W#F\H(5/fbrKEDf(p"pb?)1_UE)2((@GCF;)(BN.DsBhVer"=H/kCF;)(BN.E$@8:)l"BIH-.ifK3!\c-%!\c-&ECEB%BiQTGED0J2Bi%9"E)cuA0F1oXCfMu%.9%/n4W,(r'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?BLtlpE$6Z%)EJ'(1`7r"##6g)##/?+C.(H^"<h#FCIqW)Bi%2iE#BQ!Go7M*Go7M*Gs)-D3$05%'dH1-'dH.?D,*GuE$6Z:57&5./JT36E=j,p4:kUK/0>Z4.TIJmGnCu#4:kHn2],LJ/0>Z4.U2r]4;(U#5?o*8/R0/%4W,)>*Z4r%/I2Of3sblkEA/n?!\c-&ED8`&D,i#W/JJd+GnCu#4:k7A4:!e\/Iid%/-lh\'dH1-'dH.?BLtp"E$8<n2Ad#:!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIE#BQ!Gq9mG'GDBkE=j,p4:k754:!e\/Iid%/-lh\'dH1-'dH.?BLtp"E$8LZ!\c-%!\c-&EDJl$BN6KF)\*kt4ujMc1^.,V*";oU.4Yu3.2*Um#!4Ik##6g)##/?!C/%Dp"<h%]2BNYEGrZ$D0FS'g4[B__1`7r"##6g)##/?+BLkQa"<fEO##6g)##/?'?pm7P"<fEO##6g)##/?#BMCrg"<gMd0G4pC0Fe=()AF2&4Ym]n2&uo5EA/n?!\c-&ECrSs@9"aK2%pc-2-_742@pu<.7#[$//8:$4;]_)##6g)##/?+BLkfh"<echGpjU?2(0IYA3i1;CF;)(BN.Z,C.qns/JJd+Gp<;&EE!ea4W,(r'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?BLtlpE$6Z%)EJ'(1`7r"##6g)##/?+C.(H^"<h#KF\P8"BiSG1)EJ'(1`7r"##6g)##/?#CdgW^"<h#KFV,?)0deqCCF;)(BN.]&@7XZf"B8)oE)8qpE#BK(4BsBQ.9'O^2Ad#:!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIF$DDl3"Z`^'dH1-'dH.??r'HpE$6Z'Bi%;uF[TM-F$DDl3"Z`^'dH1-'dH.?BLtp!E$6Z'Bi#ZK/JKik##6g)##/?+C.(<Z"<h#J@8's&BiSFC2],L$5?oN:2]*JD)EJ'(1`97/0c:ls/fbrKEDf4t"pb?)1_UE)2((@GCF;)(BN.DsBhVer"=H/kCF;)(BN.E$@8:)l"BIH-.ifK3!\c-%!\c-&ECEB%BiQTGED0J2Bi%9"E)cuA0F1oXBN6Q!.9%/n4W,(r'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?BLtlpE$6Z%)EJ'(1`7r"##6g)##/?+C.(H^"<h#ICf!W#F\H(5/fbrKEDf4t"pb?)1_UE)2((@GCF;)(BN.DsBhVer"=H/kCF;)(BN.E$@8:)l"BIH-.ifK3!\c-%!\c-&ECEB%BiQTGED]2+F\bD$BiSFQ3#)EdG>2@*/IYko2Ad#:!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIF$DDl3"Z`^'dH1-'dH.??r'HpE$6Z'Bi%;uF\Y4pE!mBf/Q>nOE$G>rE=j,p4:j/!##6g)##/?#C.q#f"<fEO##6g)##/?#Cd^`b"<h(o*tB"q4=<*NCF;)(BN.]&@8'rj"B8N$Cf!W#F\H(54;&2m4;&2m4;&2m(^L*C3YsG&##6g)##/?+BLtTa"<g>?/.ra80G>?t1_UE)2,GY93ZeqFE"s!Q1_UE)2-^k*4^9?M3ZeqFGmGAo2d@@,GnM&4GnCu#4:k754:!e\/Iid%/-lh\'dH1-'dH.?BLtp"E$8L'0c:ls1_UE)2+Aqt/Nj(M.hrg8/K%eH##6g)##/?#CdgT]"AfsE4W,(r'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?BLtlpE$6Z&4;&2m#nmOr2A/SS1_UE)2+BA+/Nj(M.hrg8/K%eH##6g)##/?#CdgT]"BA_e'dH1-'dH.?C.U]hE$6YR.hrs**"ihn+B2Vn-j^n-%N,up2A07W*[`p0CF;)(BN.JuBLQ2j"B?9I3ZT&)*";oU.1?dnA/c6n4=<*NCF;)(BN.](D,";""=H/kCF;)(BN.9$@7XZf"=H/kCF;)(BN.DuBMMhs"@b-R2]+:W.h;V&0bkN1()f+B3"H6e'dH1-'dH.?DbEK&E$8Kt2BNYEGpjU?2(0IYA2sf/0FS'g4XW3OCF;)(BN.](D+%Yn";MP:%20Zk%2B"PA2#N2!\c-&EC<&gBiQSu0c:ls"pb?)E=j,p4:j/!##6g)##/?#C.q#f"<fEO##6g)##/?#Cd^`b"<h(o*tB"q4=<*NCF;)(BN.]&@8'rj"B7cbBM;N,E)g3e*tB"q4=<*NCF;)(BN.E$?qFWf"B7cb1`ZQ(!\c-%!\c-&ECEB%D,i#KECE8fF\H(54:h`%GnM&4/f>61E=j,p4:j/!##6g)##/?#C.q#f"<fEO##6g)##/?#Cd^`b"<h(o*tB"q4=<*NCF;)(BN.]&@8'rj"B7cbCeRr8E)cuA0F1oX@7a`62@'Bh4;(m/2Ad#:!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIF$DDl3"Z`^'dH1-'dH.??r'HpE$6Z'Bi%&nBi%2iE!mBf/Q>/24;&2m4;&2m4;&2m(^L*C3YsG&##6g)##/?(CJ.#e"<g>?/.ra80G>?t1_UE)2,GY93ZeqFE"s!Q1_UE)2-^k*4^9?M3ZeqFGmGAo2d@@,GnM&4GnCu#4:k754:!e\/Iid%/-lh\'dH1-'dH.?BLtp"E$8L'0c:ls1_UE)2+Aqt/Nj(M.hrg8/K%eH##6g)##/?#CdgT]"AfsE4W,(r'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?BLtlpE$6Z&4;&2m#nmOr2A/SS1_UE)2+BA+/Nj(M.hrg8/K%eH##6g)##/?#CdgT]"BA_e'dH1-'dH.?C.U]hE$6YR.hrs**"ihn+B2V\4<4P52_Pt?'dH1-'dH.?D,*GtE$8LL/IYko2Ad#:!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIF$DDl3"Z`^'dH1-'dH.??r'HpE$6Z'Bi%;uF\H(50H*nF3"cc21d<`-3"Z`i/JJd+Gmb>o/Q>nOE$G>rE=j,p4:j/!##6g)##/?#C.q#f"<fEO##6g)##/?#Cd^`b"<h(o*tB"q4=<*NCF;)(BN.]&@8'rj"B7cbC.q`,CfOaT3#)EdG>2@*/IYko2Ad#:!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIF$DDl3"Z`^'dH1-'dH.??r'HpE$6Z'CIqW)Bi%2iE!mBf/Q>nOE$G>rE=j,p4:j/!##6g)##/?#C.q#f"<fEO##6g)##/?#Cd^`b"<h(o*tB"q4=<*NCF;)(BN.]&@8'rj"B8N$Cf!W#F\H(5/fbrKEDf4t"pb?)1_UE)2((@GCF;)(BN.DsBhVer"=H/kCF;)(BN.E$@8:)l"BIH-.ifK3!\c-%!\c-&ECEB%BiQTGED0J2Bi%9"E)cuA0F1oXBN6Q!.9%/n4W,(r'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?BLtlpE$6Z%)EJ'(1`7r"##6g)##/?+C.(H^"<h#FCIqW)Bi%2iE#BQ!Go7M*Go7M*Gs)-D3$05%'dH1-'dH.??r'HsE$6Z:57&5./JT36E=j,p4:kUK/0>Z4.TIJmGnCu#4:kHn2],LJ/0>Z4.U2r]4;(U#5?o*8/R0/%4W,)>*Z4r%/I2Of3sblkEA/n?!\c-&ED8`&D,i#W/JJd+GnCu#4:k7A4:!e\/Iid%/-lh\'dH1-'dH.?BLtp"E$8<n2Ad#:!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIE#BQ!Gq9mG'GDBkE=j,p4:k754:!e\/Iid%/-lh\'dH1-'dH.?BLtp"E$8LZ!\c-%!\c-&EDJl$BN6KF)\*kt4ujMc1^.,V0H*n#2Ad#:!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HAO/E_3"Q&t'O1VG4;(UU/IYko2Ad#:!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIF$DDl3"Z`^'dH1-'dH.??r'HpE$6Z'Bi%8tF\H(5$kEp]1)1W:.TAAiCF;)(BN.Z,C.qnsFYG=C!\c-&EC`AoBiQTS$kEp]1)1W:.TAAiCF;)(BN.Z,C.qnsFYG=C!\c-&EC`AoBN6KR$kEp]1)1W:.TAAiCF;)(BN.Z,C.qnsFYG=C!\c-&EC`AoCK2fU4:h`%Gmb2c.2*UR3`J($CF;)(BN.5oDF@boE$G>rE=j,p4:j/!##6g)##/?#C.q#f"<fEO##6g)##/?#Cd^`b"<h(o*tB"q4=<*NCF;)(BN.]&@8'rj"B7cbC.q`.E)dJZ4^8R.4^8R.4^9i\/KGW5!\c-%!\c-&ED8`&DcJ5MA/YIX3X?`72cLY'4W,)4$4.LK4:b^)5?o'74W,)(3"cci$4.LK4:bC-0c:ls0H*n"2@*7l2Ad#:@lk8=(^L*R0HL624B+:&CF;)(BN.E$?q=QeE!REf2d@4/4W,)>$5igf/I2Of3sblkEA/n?!\c-&ED8`&D,i#\1_UE)2((@GCF;)(BN.DsBhVer"=H/kCF;)(BN.E$@8:)l"B?$C4^96@.PVkOA5jET4W,)>*Z4r%/I2Of3sblkEA/n?!\c-&ED8`&D,i#WE$mV-CF;)(BN.K&Ce\2!"?m"s2]FI\4:r#qE"s!Q1_UE)2((@GCF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@,O/4<57T0elWD0c:ls"pb?)1_UE)2((@GCF;)(BN.DsBhVer"=H/kCF;)(BN.E$@8:)l"BIH-.ifK3!\c-%!\c-&ECEB%BiQTGED0J2Cf!etE%)"r.Mj*92%NqF##6g)##/?+C.(B\"Ah'?CF;)(BN.5tBhVerE%)"r.Mj*92%NqF##6g)##/?+C.(B\"Ah'?CF;)(BN.5tBh_ksE#BK(4Bqsm3"-`8$6NM+##6g)##/?(CJ.>n"B?rg.9%/n4W,(r'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?BLtlpE$6Z%)EJ'(1`7r"##6g)##/?+C.(H^"<h#KF\bD$BiSFC2],Ku2],Ku2],L*/KFg&$5igN2]E!.57&5./JT36EA@P)FUAio//__#5?p5b1dO\d##6g)##/?(CJ.>n":,tO2d@@,GmkN%!\c-%!\c-&ECrSrCK2fI!\c-%!\c-&ED8`&DH/,L!\c-%!\c-&EC`Pu?r\X>-UC-f/JJd+Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&EDJl$CK2fZ'dH1-'dH.?D,*H&E$8<u3"Q)pE#BQ!Go7G14;AJr(C:scA2#N2!\c-&ECE;sCK2f"0c:ls0H*n(2%D8m##6g)##/?&DG<Sm"<fEO##6g)##/?#Cdg]`"<fEO##6g)##/?(CJ.Ao"<e+YBj:WG4;(U*4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?!Ce7)g"Ah'?CF;)(BN.](Cee8"FUAio//_^t2],Ku2%L9+5?p5b1dO\d##6g)##/?(CJ.#e":,tO2d@@,GmkN%!\c-%!\c-&ECrSrCK2fI!\c-%!\c-&ED8`&DH/,L!\c-%!\c-&EC`Pu?r\X>-UC-f/JJd+Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&EDJl$CK2fZ'dH1-'dH.?D,*GtE$8<u3"Q)pE#BQ!Go7G14;AJr(C:scA2#N2!\c-&ECEB%DcJ5&0c:ls0H*n(2%D8m##6g)##/?&DG<Sm"<fEO##6g)##/?#Cdg]`"<fEO##6g)##/?(CJ.Ao"<e+YBj:WG4;(U*4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?!Ce7)g"Ah'?CF;)(BN.]&@7jfhFUAio//_^t2],Ku2%L9+5?p5b1dO\d##6g)##/?(CICQ_":,tO2d@@,GmkN%!\c-%!\c-&ECrSrCK2fI!\c-%!\c-&ED8`&DH/,L!\c-%!\c-&EC`Pu?r\X>-UC-f/JJd+Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&EDJl$CK2fZ'dH1-'dH.?Cdh&tE$8<u3"Q)pE#BQ!Go7M*Go7M*Gs2E>2]FI\4:r$/57&5./JT36EE+"_GnM&4Gp>+)'dH1-'dH.?C.U]fE$6YH0c:ls.iA=&.hYec2],Kt2@`\KFUD(T2d?Ie0Fe=\/e\Ep.L[$l4=<*NCF;)(BN.](D,+A#"@b0O/O(3^2&HN%2cO'T4VLd%5?n7m*u,\!*u+tk/O(3^2&KRO##6g)##/?!Ce7#e"B?0G4^8%J'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BLtopE$6Z9Bj:WG4;(U#5?%\D'dH1-'dH.?Cdh'&E$6Yi'dH1-'dH.?C.U]hE$6Z*#nmOr2A0:T'dH1-'dH.?BMCosE$6Z;A55EhGmGAo2d?DD'dH1-'dH.?Cdh'&E$6Yi'dH1-'dH.?BLtlpE$6Z:)EJ'(1`7r"##6g)##/?+C.(H^"<h#+2@heV2cTo='dH1-'dH.?Cdh'&E$6Yi'dH1-'dH.?@7WmdE$6Z:/IhdcGmZ2X##6g)##/?!Ce7#e"<fEO##6g)##/?#BMCcb"<g?8GmZ2X##6g)##/?!Ce7#e"<fEO##6g)##/?#BMCfc"<g?8GngrZ0./_ACF;)(BN.K&CeS+u"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&EDJl$D,i#W/JJd+GmZ2X##6g)##/?!Ce7#e"<fEO##6g)##/?!Ce6la"<gMf4:_E(2?d>X4;&2m.1c\C'dH1-'dH.?BMV#oE$6Z:1`ZQ(!\c-%!\c-&ECrSrC/l]H4;&2m4;&2m4;&2m4;&2m$kEp]1)1W:.R=[_2]i#,2A07/4<4P52c'_b0G#'n0H*n)4<4P52aL"g##6g)##/?(CJ.>n":,tO2d?Fh3"-`8$6NM+##6g)##/?(CJ.>n"B?HGGn1u(2%W>c'dH1-'dH.?D+R,oE$52h4;(U.0G-`V$5j`e&fD-*0,YZEE<laa4A\""CF;)(BN.5tBhVerFW(u*.N)=k3"Z`p0,5@&@kSE'4Z<rk*"!8e/Q<>a2%L9p'dH1-'dH.?D+R,oE$8<e3"Q<!FW2&*4B2t(.N'61Gn1u(2%W>c'dH1-'dH.?D+R,nE$52h4;(U.0G-`V$5j`e&fD-*0,YZEE<laa4A\""CF;)(BN.5tBh_ksFW(u*.N)=k3"Z`p0,5@&@kSE'4Z<rk*"!8e/Q<>a2%L9p'dH1-'dH.?D+R,nE$8<e3"Q<!FW2&*4B2t(.N'61Gn1u(2%W>c'dH1-'dH.?D+R,mE$52h4;(U.0G-`V$5j`e&fD-*0,YZEE<laa4A\""CF;)(BN.5tBhhqtFW(u*.N)=k3"Z`p0,5@&@kSE'4Z<rk*"!8e/Q<>a2%L9p'dH1-'dH.?D+R,mE$8<e3"Q<!FW2&*4B2t&4^8R0.N'61Gmb2c.2*V+A2#N2!\c-&EC`PuDH/,%0c:ls/f>B;2A.A;EA/n?!\c-&EC`PuDH/,X0H*n%1)1W:A3i1;CF;)(BN.5tBhVer/JJd+GmYQ%BLX?R2]+a`+?9K-2[EY).gZe`'dH1-'dH.?D+R,oE$8<e3"Q<!FW2&*4B2Fi1eg_!4;&2R49[GS4;%We591RP4A\""CF;)(BN.5tBhVerFW(u*.N)=k3"Z`p4:h`%0H*n%1)1W:A3i1;CF;)(BN.5tBh_ks/JJd+GmYQ%BLX?R2]+a`+?9K-2[EY).gZe`'dH1-'dH.?D+R,nE$8<e3"Q<!FW2&*4B2Fi1eg_!4;&2R49[GS4;%We591RP4A\""CF;)(BN.5tBh_ksFW(u*.N)=k3"Z`p4;&2m4:h`%0H*n)4<4P52aL"g##6g)##/?,D,3Pl":,tO2d?Fh3"-`8$6NM+##6g)##/?,D,3Pl"B?HGGn1u(2%W>c'dH1-'dH.?D+R,oE$52h4;(U.0G-`V$5j`e&fD-*0,YZEE<laa4A\""CF;)(BN.5tBhVerFW(u*.N)=k3"Z`p0,5@&@kSE'4Z<rk*"!8e/Q<>a2%L9p'dH1-'dH.?D+R,oE$8<e3"Q<!FW2&*4B2t(.N'61Gn1u(2%W>c'dH1-'dH.?D+R,nE$52h4;(U.0G-`V$5j`e&fD-*0,YZEE<laa4A\""CF;)(BN.5tBh_ksFW(u*.N)=k3"Z`p0,5@&@kSE'4Z<rk*"!8e/Q<>a2%L9p'dH1-'dH.?D+R,nE$8<e3"Q<!FW2&*4B2t(.N'61Gn1u(2%W>c'dH1-'dH.?D+R,mE$52h4;(U.0G-`V$5j`e&fD-*0,YZEE<laa4A\""CF;)(BN.5tBhhqtFW(u*.N)=k3"Z`p0,5@&@kSE'4Z<rk*"!8e/Q<>a2%L9p'dH1-'dH.?D+R,mE$8<e3"Q<!FW2&*4B2t(.N'61Gn1u(2%W>c'dH1-'dH.?D+R,lE$52h4;(U.0G-`V$5j`e&fD-*0,YZEE<laa4A\""CF;)(BN.5tBhr"uFW(u*.N)=k3"Z`p0,5@&@kSE'4Z<rk*"!8e/Q<>a2%L9p'dH1-'dH.?D+R,lE$8<e3"Q<!FW2&*4B2t&4^8R0.N'61Gmb2c.2*V+A2#N2!\c-&ECEB%DcJ5&0c:ls/f>B;2A.A;EA/n?!\c-&ECEB%DcJ5Y0H*n%1)1W:A3i1;CF;)(BN.5tBhVer/JJd+GmYQ%BLX?R2]+a`+?9K-2[EY).gZe`'dH1-'dH.?D+R,oE$8<e3"Q<!FW2&*4B2Fi1eg_!4;&2R49[GS4;%We591RP4A\""CF;)(BN.5tBhVerFW(u*.N)=k3"Z`p4:h`%0H*n%1)1W:A3i1;CF;)(BN.5tBh_ks/JJd+GmYQ%BLX?R2]+a`+?9K-2[EY).gZe`'dH1-'dH.?D+R,nE$8<e3"Q<!FW2&*4B2Fi1eg_!4;&2R49[GS4;%We591RP4A\""CF;)(BN.5tBh_ksFW(u*.N)=k3"Z`p4;&2m4;&2m0H*n)4<4P52aL"g##6g)##/?+C.(E]"<ABcGn1u(2%W>c'dH1-'dH.?D+R,sE$52h4;(U.0G-`V$5j`e&fD-*0,YZEE<laa4A\""CF;)(BN.5tBh2MnFW(u*.N)=k3"Z`p0,5@&@kSE'4Z<rk*"!8e/Q<>a2%L9p'dH1-'dH.?D+R,sE$8<e3"Q<!FW2&*4B2t&4^8R.4^8g43ZT&)4r[&r49u,m/eJ[33!^6"2&TX%3"Z`p2%pc-2-_(24[B_a!\c-%!\c-&EC<&gCK2fI.N&3u4<4tA2\6Ek4r[T-3"Q<!E#THM'dH1-'dH.?@7WmcE$6Z:2]2\t3Y35A/.N7b57&5./JT36EDft7E"Erg3"T%!49uo84[B_c/J8d.4<G:K2%^E:0bY*kE"Erg3"T$j.iS_",#VT=,S^qZ/JA@*.hrs*E=id!0bY*jA3i1;CF;)(BN.Z,C/8,!/JJd+GngrZ/JA@*.hrs*E?,5d.ORYKE'[&K##6g)##/?'?q!d^":,tO2d@@,GmG?#/Iid15#`7/4qB;D"B>e8'dH1-'dH.?DbEN#E$5r*4^7sq.L64c2]H!'.iS^QCEZt(A2#N2!\c-&EC`Q'BN6Jt0c:ls0H*nQ*[`p0CF;)(BN.Z)DcJ5M3"cci2\Q0Y$53FN*XNi'3"Amr.pOSM!\c-%!\c-&ECiW!CK2fI2@`\K*[`p0CF;)(BN.;sBhVer";:u,#!4Ik##6g)##/?,DG+8!";:u,#!4Ik##6g)##/?#BMCid"<e]rGp>+)'dH1-'dH.?C.U]lE$6Y=.pOSM!\c-%!\c-&ECEB%@9"a?2@`\K*[`p0CF;)(BN.Z,C.MVo";:u,#!4Ik##6g)##/?'CJ./i"<e]rGp>+)'dH1-'dH.?BMCp"E$6Y32],L<)\EYu0bY+)A2#N2!\c-&EC</uE$6/4Gp>+)'dH1-'dH.?BMCp"E$6Y32],L<)\EYu0bY+)A2#N2!\c-&EDK)%BiQSu0c:ls3"?T5!_t1N'GCKY4=hE_Gn(E&/.NRc2@pEm/.r'e3Yu$&.iS^cE#BQ!Go7M*Go7M*Go7M*Gn(E&/.NRc2@pEmG>_U:4;&2t*Z4r#2A-o43X?`72`Vc\1_gT6A/YIX3X?`72cLMa58+5g##G@g0G7=u3#)W/E=NQo2&-o//K#+&*Z4r#0bkN1.iB6uE)dGXGngrZ01J)9(fWIWCF;)(BN.5o@8:)lE#fi%EDuoV.2a'.E?/=kA2#N2!\c-&EC`Q'C/l\a2],L13$&n@!\c-%!\c-&ECrSrCfMoJE?/-r!\c-%!\c-&ECrSs?r\X>E"`FC0./_ACF;)(BN.;tBgl;k"@5T\E#fi%E=,Ge0G4pC0Fe=()AF2&4]FC'CF;)(BN.K&CeS+uE#fi%GmZ2X##6g)##/?!Ce7#e"<fEO##6g)##/?#Cdgid"<gB9E)clG4;(U*49ts"2d?DO4;&2m4;&2m58+5g##G@g0G7=u3#)W/E=3]t1(OKh3Z0S(##6g)##/?+BLkTb"<gMc4:!kR0G"d-4;(mkE#9N]0H*n*@l4K8EA/n?!\c-&EC`Q'CK2fU3"ccqE<m!e4;/?#3)rOV'dH1-'dH.?D,*c$E$5r*4^7sg3tMu`'dH1-'dH.?DbEN"E$6Z'3)BZ9'dH1-'dH.?DbEK%E$6Z&2@`\$!\c-%!\c-&ECrSs?r\X>A3gr&3"ccq01I](2]+:W.h;V&0bkN1EA/n?!\c-&EDJl$BiQTS3"cci0./_ACF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@>LKE!REf2d?Ok/I;UjGm[LT2],Ku2],Ku2],LI2@DGW/3sma2]i#,2A07e2%pc-2-^[s3ZT%K+;kb-4;^X+.gZeT2%pc-2-^f$4rkLFGn:np3"T%'A/d0T##6g)##/?#BMD2n"<eTj3ZT&)2*hm8'dH1-'dH.?C.UZkE$6Y@2BNYEGmHtU!\c-%!\c-&ECE;tDcJ5M/LNM?CF;)(BN.Z)?r\X>A5#r=!\c-%!\c-&ED&YsCfMoJA5#r=!\c-%!\c-&ED8r%CK2fIA5#r=!\c-%!\c-&EC<K$D,i#KA5#r5!\c-%!\c-&EC<K!E$6Z:591RP4Br^_'dH1-'dH.?BLtp%E$6Z:?q`seBhUonBhV]/Gn;V^##6g)##/?,D,3Gi"<g?8@T3R:/I3@+4qCmjE$mV-CF;)(BN.DuCJ8"t"=H/kCF;)(BN.JuCJA(u"@5"0CF;)(BN.](Cen>#58+5g0Mhg<0G7=u3#)W/E>qXu4:!VF.N]634WPFW.TB\G4VLd%5?n7m&.^Wk'dH1-'dH.?DbEJtE$8Kq.pN-Y&.^Wk'dH1-'dH.?D,*c+E$8Kq.pN-Y&.^Wk'dH1-'dH.?Ced?!E$8Kq.pN-Y&.^Wk'dH1-'dH.?BMCroE$8L'0c:ls0./_ACF;)(BN.K&Ce@ts"@5"0CF;)(BN.](Ce.hq0./_ACF;)(BN.;sBh_ks"@5FC4:h`%0H*n*@l4K8EA/n?!\c-&EC`Q'CfMoV2@`\$@l4K8EA/n?!\c-&ECE;sCfMoV3"cci4W,%;2%L-#49uN(GmGAo2d?DD'dH1-'dH.?C/7;rE$6Z:BNu,[.N'61Gm[:r.Qq#i##6g)##/?'CJ-rc"B?BQGm[:r.Qq#i##6g)##/?(CICK]"B>F04;(U.!\c-%!\c-&EDJl$DH/,LA24/q3uJ5W3"cl/!\c-%!\c-&ECEB%BiQTGED0XB2%L9+5?n7m&.^Wk'dH1-'dH.?BMCrnE$8L'0c:ls0./_ACF;)(BN.Z0BN6KFA5-#<!\c-%!\c-&ECrVtCK2fIA5-#-2%L9+5?n7m&.^Wk'dH1-'dH.?DbEN!E$8Kq.pN-Y&.^Wk'dH1-'dH.?BMCrmE$8Kq.pN-Y&.^Wk'dH1-'dH.?D,*c(E$8Kq.pN-Y&.^Wk'dH1-'dH.?C.U]qE$8L'0c:ls0./_ACF;)(BN.](Ce@ts"@3Y%2%L9d4:h`%0H*n*@l4K8EA/n?!\c-&EDJl%DH/,X/JJd+GmZ2X##6g)##/?!Ce6rc"<g>i##6g)##/?+BLtH]":?e8##6g)##/?&BhUrf"<g?8GmZ2X##6g)##/?#BMLfb"<g?7BhqE'?qa$hCd^Wf@7<I]Go7M*Go7M*Go@V6GnjEcGnh5b.30E@.T@6f*Z4r#0bkN1.iB6uE)dGXGngrZ4@VIF(fWIWCF;)(BN.Z,C._bqE"`FC4@VIF(fWIWCF;)(BN.Z0CK2fU2@`[j@l4K8EA/n?!\c-&EC<,kCfMoV2@`[j@l4K8EA/n?!\c-&ECrVtC/l]T2@`[j@l4K8EA/n?!\c-&ECrZ!@9"aK/JJd+Go87g##6g)##/?+BLtN_"<g>?3"Q<!Go7M*Go7M*Go7M*Gs<8Q3YsPX57&5./JT36EE+"_GrlTS)_>5I##6g)##/?,@8C/mE"`FC*Z4r$#uilHCF;)(BN.](CeJ%tE"`FC*Z4r$#uilHCF;)(BN.DuCIqeqE"`FC*Z4r$#uilHCF;)(BN.8pDG"1uE"`FC*Z4r$#uilHCF;)(BN.;sBh2MnE!REf2d?Ok/I;UjGmFTi4BrI-4^8R.4^9oR4<GXg2B;d(57&5./JT36EE*V[.pOT#03fM,GmkDp.h>l!2@^f?.303/!\c-%!\c-&EC`Q'@9"a?@lk8=)AF2&4Ur&5EE-9L2I%7+GmG?#/Iid15#_SC'dH1-'dH.?D,*c.E$6Yi'dH1-'dH.?D,*H%E$6Z&A3g2(.L64c2]H!82%D8m##6g)##/?&DG3bs"<h%e0c:ls.iA=&.hYerGo7M*Go7M*Gn(E&/.NRc591RP4BrI-4^9oR4<GXl2]3J?4:a=Y3!`(Z/.ra80G>?tE#KZ-Gp?E+Gnh5b.30E@.T?KY.i/F(3$/_l'dH1-'dH.??qim`E$6Z5*Z4r#0bkN1.iB6uE)dGXGngrZ0./_ACF;)(BN.;tBgl;k"@5U4##6g)##/?!Ce6ob"<ABcE=,Ge0G4pC0Fe=()AF2&4]FC'CF;)(BN.E$?r(&lE)ePE##6g)##/?(CJ.Ao"<gB9GmGAo2d?Ok/I;UjGmFTi4BrI-4^8R.4^80q/I;UjGo@D..N)1i2],L:0c:c5#o*XG/K$>V3"ccG.hr^!4W-fp/.ra80G>?tE#KZ-Gp?E+Gnh5b.30E@.T?KY.i/F(3$/_l'dH1-'dH.??qim`E$6Z5*Z4r#0bkN1.iB6uE)dGXGngrb0./_ACF;)(BN.;tBgl;k"@5U4##6g)##/?&BM2&l";:u,0./_ACF;)(BN.;tBgl;k"@5U4##6g)##/?,@7XZfE#fi%E=,Ge0G4pC0Fe=()AF2&4]FC'CF;)(BN.E$?r(&lE)ePE##6g)##/?(CJ.Ao"<gB9GmGAo2d?Ok/I;UjGmFTi4BrI-4^8R.4^80q/I;UjGo@D..N)1i2],L:0c:c5$5=3e1-lNg2]i#,2A07e58+5g##G@g0G7=u3#)W/E=3]t1(OKh3Z0S(##6g)##/?+BLkTb"<gMc4:!kR0G"d-4;(mkE#9N]0H*n*!\c-%!\c-&ECrSs?r\X>A3i1;CF;)(BN.5o?qaii3"cci(^L*C3YsG&##6g)##/?(CJ-ob"<h"bE!REf2d?Ok/I;UjGmFTi4BrI-4^8R.4^80q/I;UjGo@D..N)1i2],L:0c:c5%2f?^2@_)B3"@$:57&5./JT36EE*V[.pOT#03fM,GmkDp.h>l!2@^f?.303/!\c-%!\c-&ECE;tCK2fI@lk8=)AF2&4Ur&5EE-9L2I%7+GmZ2X##6g)##/?&DG3bs"<g?C'dH1-'dH.?DbNQ"E$5r*4^9i\/KGW5!\c-%!\c-&EC`PuD,i#KE=,tf0c:ls.iA=&.hYet.gZeT4;&2m4;&2m.iA=&.hYeb3"Q<!Go7M*Gs<8Q3Ys%K.ifN93'e/m2]i#,2A07e58+5g##G@g0G7=u3#)W/E=3]t1(OKh3Z0S(##6g)##/?+BLkTb"<gMc4:!kR0G"d-4;(mkE#9N]0H*n*!\c-%!\c-&ECrSs?r\X>A3i1;CF;)(BN.](Cd_Pm3"cci(^L*C3YsG&##6g)##/?(CJ-ob"<h"bE!REf2d?Ok/I;UjGmFTi4BrI-4^8R.4^80q/I;UjGo@D..N)1i2],L:0c:c5*u,"g)@d>nA/YIX3X?`72cO&d2@`\KFUD(T2d?Ie0Fe=\/e\Ep.L[$l4=<*NCF;)(BN.](D,+A#"@b0O/O(3^2&HN%2cO'T4VLd%5?%\D'dH1-'dH.?DbEK%E$6Z:A2#N2!\c-&ED8r%C/l\k.pN-8'dH1-'dH.?DbEK%E$6Z:A2#N2!\c-&EDJqu?r\XJ3"cci(^L*C3YsG&##6g)##/?(CJ-ob"<h"bE!REf2d?Ok/I;UjGmFTi4BrI-4^8R.4^80q/I;UjGo@D..N)1i2],L:0c:c5&KLl]/K#*B.iAFq57&5./JT36EE*V[.pOT#03fM,GmkDp.h>l!2@^f?.303/!\c-%!\c-&ECE;tCK2fI@lk8=)AF2&4Ur&5EE-9L2I%7+GmZ2X##6g)##/?&DG3bs"<g?C'dH1-'dH.?C.h'#E$5r*4^9i\/KGW5!\c-%!\c-&EC`PuD,i#KE=,tf0c:ls.iA=&.hYet.gZeT4;&2m4;&2m.iA=&.hYeb3"Q<!Go7M*Gs<8Q3Ys.J3'IoU.L8TL/.ra80G>?tE"s!Q/e\Ep.L[$l4=<*NCF;)(BN.DuCJ%kr"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&ED8l"DH/,X/JJd+Gn(E&/.NRc/IhdcGo7M*Gn(E&/.NRc591RP4BrI-4^9oR4<GXu4:3)1/JJp/A/YIX3X?`72cO&i5?n:!.i/F(3$/_l'dH1-'dH.?BMCrrE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?#BMLoe"B>F04;(U*49ts"2d?=p//_Ck2],L+49ts"2d?ss2%L9d4;&2m$k*\$/NO(O0F15R/.ra80G>?tE#KZ-Gp?E1Gnh5b2]3#?FUT*!!\c-%!\c-&EDJl%?r\X>@lk8=)AF2&4Ur&5EE*PYGqT.+.iC)S//8.k+\"3o2]+:W.h;V&0bkN1EA/n?!\c-&ED8l!@9"aP/IhdcE"s!Q$4%R_4?<Z^0F1Vo0c:ls.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?@7WmfE$8=;/JA<m*tA;Y/LNM?CF;)(BN.E#BhVer"@b0O/Nj(M.hrg8/K%eH##6g)##/?!C/.8k"BAP;2%D8m##6g)##/?!Ce.8m"<gMd0G4pC0Fe=()AF2&4]DhL'dH1-'dH.?DbEK%E$6Z&E#BQ!Go7M*Go7M*Gomt92&R2H*tA;Y/ItDV/.ra80G>?t$4.LK4:b^)5?oQO3ZeqFGmGAo2d@1.3ZT&))AEnu3$/,).mX:K.jm;=CF;)(BN.DuBMMhs"<&3kGp?E+BNuPeGmkDp.h>l!2@^f?.303/@lk8=)AF2&4Ur&5EE-9L2I%7+Gn0le0G5$Y'dH1-'dH.?DbEN"E$6Z'024)Q##6g)##/?&DG3bs"<gl###6g)##/?(CILZa"B>F04;(U.BI>c%CF;)(BN.E#Bh_ks"=H/kCF;)(BN.E$@8:)l"@4sS3"?Z'/K"aP'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?BLtlpE$6Y72],Ku2],Ku2],Ku2],L>49uf52A/Rb/.ra80G>?tE"s!Q%MK$W4\\ll0c:ls.iA=&.hYf70H1uJ0G5$Y'dH1-'dH.?@7WmmE$6Yi'dH1-'dH.?@73CR"<e?f.N'61Gq0gG2&JeM/JJd+Gn(E&/.NRc'bqAi/JT0,!\c-%!\c-&EC<&g@9"a?!\c-%!\c-&EC<K$E$6Y72%L9+5?oEA.hE7gGmGAo2d?Ok/I;UjGq^6A0aJd/4sr<PCF;)(BN.]&@7=Hc"=H/kCF;)(BN.Z0CfMoJ4;&2m4;&2m*=a#%*tA;Y/ItDV/.ra80G>?tE#KZ-Gp?E+C0VbgGnL]./PlQ\.jm;=CF;)(BN.K&D+._o"@b0O/O(3^2&HN%2cO&f2I%7+Gn0le0G5$Y'dH1-'dH.?DbEN"E$6Z'02F5S##6g)##/?&DG3bs"<gl###6g)##/?(CILZa"B>F04;(U?-j^n-%N,up2A070C*tu'CF;)(BN.;tBgl;k"B>O*0F1oXBN6&VGmkN%!\c-%!\c-&ED8l!?r\X>!\c-%!\c-&ECrSrDH/,L!\c-%!\c-&EDJl$?r\X>!\c-%!\c-&ECE;s?r\X>A3g2-//_D'0c:ls.1c\C'dH1-'dH.?BMCs"E$6Yi'dH1-'dH.?DbEMuE$6Yi'dH1-'dH.?C.U]pE$6Yi'dH1-'dH.??qipjE$6Z:591RP4BrI-4^9]S//8:E4<4P52cKiT!\c-%!\c-&ECrSs?r\X>E(=.H2%D8m##6g)##/?#BMCrg"<gMd0G4pC0Fe=()AF2&4]DJZ!\c-%!\c-&ECrSs?r\X>E)ePE##6g)##/?#BMM5n"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?DbEN'E$8Kk2],Ku2],Kt2@`\KFWO">0G7=u3#)W/E=<Zr!\c-%!\c-&ED8l"CK2fI@lk8=)AF2&4Ur&5EE-9L2I%7+Gn0le0G5$Y'dH1-'dH.?DbEN"E$6Z'4&.F^##6g)##/?&DG3bs"<gl###6g)##/?(CILZa"B>F04;(U?-j^n-%N,up2A06qCF;)(CF;)(BN.;tBgl;k"B>O*0F1oXBN6&VGmkN%!\c-%!\c-&ED8l!?r\X>!\c-%!\c-&ECrSrDH/,L!\c-%!\c-&EDJl$?r\X>!\c-%!\c-&ECE;s?r\X>A3g2-//_D'0c:ls.1c\C'dH1-'dH.?BMCs"E$6Yi'dH1-'dH.?DbEMuE$6Yi'dH1-'dH.?C.U]pE$6Yi'dH1-'dH.??qipjE$6Z:591RP4BrI-4^9]S//8:E4<4P52cLPi!\c-%!\c-&ECrSs?r\X>E(=.H2%D8m##6g)##/?#BMCrg"<gMd0G4pC0Fe=()AF2&4]E1o!\c-%!\c-&ECrSs?r\X>E)ePE##6g)##/?#BMM5n"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?DbEN'E$8Kk2],Ku2],Ku2],L>4:!i$A/YIX3X?`72cKiN.iA=&.hYep2%D8m##6g)##/?!Ce.8m"<gMd0G4pC0Fe=()AF2&4]DJT2@`\"2%D8m##6g)##/?#BMCrg"<gMd0G4pC0Fe=()AF2&4]DJT4;&2m*Z4r-2aJ&l2]i#,2A07H3"Z`p58+5g##GA!Gnh5b.30E@.T?TV.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.JuCIh_pE)dGXGngrZ/Hl7]E=,-,A3i1;CF;)(BN.5o@8C/m/JJd+GngrZ024)Q##6g)##/?&DG3bs"<g?C(EF@tGnUBL.1c\C'dH1-'dH.?BMComE$6Z5*u,\!*u+tk/O(3^2&KRM3"Z`p2@`\"2%D8m##6g)##/?!Ce.8m"<gMd0G4pC0Fe=()AF2&4]FHD1`9R80c:ls.iA=&.hYet.gZeT4;&2m4;&2m4;&2m.iA=&.hYeb3"Q<!Go7M*GrlTS'L<?I2]i#,2A07H3"Z`p58+5g##G:$4'Wd8GmkDp.h>ks4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?!C/.#d"BA_42I%7+GmFim4B):^4&njY'dH1-'dH.?D,*c$E$52h4;(U#5?n0i4"!!MCF;)(BN.;tBLQ2j"@5U4##6g)##/?!Ce6rc":,tO2d@@,GmG,c!\c-%!\c-&ECrSs?r\X>A3i6X1`97/0c:ls.iA=&.hYet3$'_+##6g)##/?(CIL]b"<e?d4^8R.4^8R.4^8R.4^80q/I;UjGt_0A2],L>4:!/fA/YIX3X?`72cL[s1`69%2@s-t2@`\KFUCB$0G7=u3#)W/E=NQo2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&EDK)%D,i#WE#9N]0H*n,+:JiT01]ATA2#N2!\c-&EC`Q'C/l]!0c:ls0H*n*D'q;*CF;)(BN.;tBLQ2j"@5U4##6g)##/?(CJ.#e":,tO2d@@,GmZer'dH1-'dH.?DbEK%E$6Z:A.fUe49ul72-_(4GmkN%!\c-%!\c-&ED8l"CK2fI@lbV>4ZXSq.L7s@0G"dg2]Wb?/JB'6E"`FC.1c\C'dH1-'dH.?C.UZoE$6Z5*u,\!*u+tk/O(3^2&KR-3"Z`=2A6p"/JJd+Gn(E&/.NRc/IhdcGo7M*Go7M*Go7M*Go7M*Gn(E&/.NRc591RP4BrI-4^8X)/N"FM0G5BB+<r`E0G#6@+@-VU2]i#,2A07I49uo84]!=(.odSnGnM&4GmkN%!\c-%!\c-&ED8l"CK2fI2@`[q2@*7q2%D8m##6g)##/?#BMCrg"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.DsBhVerE!REf2d?Ok/I;UjGo7M*GngrZ'H$lY2Af"l'dH1-'dH.?DbEPuE$5r*4^904.pN&^4;(Ts2@`\KFW2,a0G7=o49PX[4rF>'3`KAi2I%7+GmkN%!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ECrSqBiQTG/JJd+GngrZ/Hl7]2B#g'3`SaX'dH1-'dH.?C.U`jE$5r*4]E(!/K,3102rSbE)ePE##6g)##/?#DbNVm"<g?C.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?DbEPuE$6YH0c:ls58+5g##G@g0G7=o49PX[4rF>9.1-e#//\[c4s+&82I%7+GmFim4;/?#03(SM'dH1-'dH.?D,*c$E$52h4;(U*4:Df'/R/AZ0F1oXBN5*n'dH1-'dH.??qisdE$6Z:Bj:ZJ/JT*i2\Q0Y%ikjA2@`\"2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?!Ce7#e"<fEO##6g)##/?#Cdgid"<g<BBj;5Z4^8R.4^8R.4^8R.4^8R.4^8R0.N'61GqfmI0bY+)A2#N2!\c-&ED8buC/l\a2],LO3"An(0c:ls.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?BM(ZhE$6Yi'dH1-'dH.??qiscE$6Z53YND@4<FPr57&5./JT36EE+"_Gq'O@GmGAo2d?Ir.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.E#Bhr"u"=H/kCF;)(BN.5oDFIhp"@5ITBj;5Z4^8R.4]N().N'61GqfmI0bY+)A2#N2!\c-&ECrVtDcJ4f2],LO3"An(0c:ls2%pc-2-_=4.MWm3$QTcc/.Y;c2%D8m##6g)##/?!C/.&e"<err.MWm3$QTcc/.XBe##6g)##/?(CJ.Ao"<g>H3!^K`'dH1-'dH.?DbEMqE$6Y72],Ku2],LE2@N.\/.ra80G>?tE"!Na2%X!r/.ra80G>?tE#KZ-Gomt@2[Dtb3!^K`'dH1-'dH.?BM(ZoE$6Z'BM]QJ/JKik##6g)##/?#DbNDg"<h#OBi%/tE)g"<BhVW,Go.Jf2%pc-2-^=i1_TinA.B1b2&-o//K#*Z'dH1-'dH.?Ced>sE$6Z5&/#$Q1)VGD.gck#E??,82[E[m2@`\KFUD(T2d@7*+UD0^4:rMK4BrF+GngrZ/JB$<1`d5@E=+?P##6g)##/?(CIL]b"<h&XBMMMC0c:ls%2fue.2)n%$5j$_0HUm0%2fue.2)n%%20ut3$/_^2\,li2]iW)4rkLF!\c-%!\c-&ECE;tC/l]HFUBcT##6g)##/?#@896`"<h%T2],Ku2],Ku2],Ku2],g)2],L)2BNYEGode23Yt@;2\,li2]iVk'dH1-'dH.??r'HpE$6Z''dH1-'dH.?DbEJtE$8<t2@^f?.303/E#oi)3YsG&##6g)##/?&DGEVm"<g>o4<FP3.o.fO##6g)##/?+C.(H^"<h#JF\Pt9E#oi)3YsG&##6g)##/?&DG3bs"<g>i##6g)##/?#BMV#g"<JBg3YsG&##6g)##/?!Ce@,g"<g>Q.gZeT3tN>21+,%DCF;)(BN.Z,C/%tt"@3Y%2%L9d3tN>21+,%DCF;)(BN.K&DbaS%"@3Y%2%L9d3tN>21+,%DCF;)(BN.JuCJJ/!"@5ID2%pc-2-^n-2BO"E0G4q'/e\Ep.L[$l4@V(52]+:W.h;V&0bkN1E?5r*3YsG&##6g)##/?&DG3bs"<h%X5?ns72BO"E0G4pa3"cci3tN>21)_/B4T\1U2%pc3GmGAo2d@+/2BO"E0G4q"*>o(u.h`@bE#BQ!Gp<;&A/YIX3X?`72cKbY.iT':E"Erg3"T$h0c^H"3X?<0A.0:e!\c-%!\c-&ED8l"CK2fI0H*n"2@*7^0c^H"3X?<0GnUBL2\Q0Y3YW;@3$/,).n29$2]+:W.h;V&0bkN1EA/n?!\c-&ED8r%BiQTS/JJd+Gn(E&/.NRc4;&2m2%pc-2-^=o2@(Q0.gS]H0c^H"3X?<0!\c-%!\c-&ED8r%BiQTG2%pc-2-^\".L6au3Z1L^/KG#u4:!Sn##6g)##/?!Ce7&f"<gn[2A6'H3">pJ'dH1-'dH.?C.U]hE$6Z&!\c-%!\c-&ED8l"D,i#K2%pc-2-^+q4;f%e2]<WA%1<aP2`2KW2CCIHCF;)(BN.]&@8'rj"B5p>.L6au3Z2-uBhVVU2[L?]'dH1-'dH.?DbNPuE$6Yi'dH1-'dH.?BM(ZnE$6Z&2%pc-2-^+q4;f&DE>oW&4@V+2/M@\J0,59-EA/n?!\c-&EDK)%DcJ5YE(2bu4<4D+E?5r*3Ytm7/f>61&/#TaFU'QQ##6g)##/?#Cd^`b"<g>Q3"?T+/HK,a5?n=%.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.K&CeS+u"=H/kCF;)(BN.]&?qaii"@5Tq.gZeT/JJd+Gode23YsG&##6g)##/?#Cd^`b"<g>Z*tB"q4=<*NCF;)(BN.]&@8'rj"B6-I2BO##'dH1-'dH.?C.U]hE$6Yi'dH1-'dH.?D+R,nE$6Z+/KG#u4:!Sn##6g)##/?(CeR)d"<gkJ2%pc3!\c-%!\c-&EDJl$BN6KF!\c-%!\c-&EC`AoBiQTGE#BQ!GmFKV4;(CF2'!-!E!R0i1+,%DCF;)(BN.5o?r(&l"B6!L2]i#,2A07e/ef<:4Bqk#4;f%s'dH1-'dH.?@73FS"<g?C*"i8^!\c-%!\c-&EC<K#E$6Yi'dH1-'dH.??qisbE$6Y82I%7+GnM&4Gn1l'/.`@O/f>61GmGAo2d?=s4;f&?)BB^r4:kai3t;i(10bD#4^7sg.Mj`k##6g)##/?&DGEYn"<h#EBN5WR4^8R.4]N('4^8m6/IN-p2aJ&l2]i#,2A07.E"!Qq!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIA.2EA2],Kt/.ra80G>?l)^lt).9.2n3ZT&)0aS^!2\R2:$POHq#os3dA.0:e!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG2%pc-2-_+:1`[JC0Gm@p2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?!Ce7#e"<eTj3ZT&).1d444:X._0L5gP.jm;=CF;)(BN.DuCIMMm"=H/kCF;)(BN.;tBM2Vp":uLP3"T%*3"?T+/M%hP0F/[-2aIR+'dH1-'dH.?C.U]hE$6Y@2BNYEGn:]%/M%hP0F/[-2aJE!1`[JC0Gl,F2@(Q0.gRd]##6g)##/?!Ce7&f"<dsR.2`j:Gn^8h3"d/;4XW3OCF;)(BN.E$?r(&l"@5FC0aS^!2\R2:$POHq#os3d!\c-%!\c-&ED8`'CK2fIA.2EN2'!,1.m!b=!\c-%!\c-&EC`Q&D,i#K!\c-%!\c-&ECE;s?r\X>A/Z0n.N)1m5?&U<1`[JC0Gl,F2@(Q0.gRd]##6g)##/?!Ce7&f"<gnY3"H!F2@gfE0G>?s!\c-%!\c-&ED8l"D,i#KB2)>A0c:ls2&uo<#nmON/JT36A/#%S3"d/;4Y@Z^/M%VK/LNM?CF;)(BN.K&Ce\2!";CkH3"d/;4Y@Z^/M%VK/LNM?CF;)(BN.E$@8:)l"@3/X4;&2m/KG'%!\c-%!\c-&ECrSqCK2fIEDf(p/.qpi2,j]<'dH1-'dH.?C.U]hE$6Z*0aS^!2\R2:$POHq#os3d!\c-%!\c-&EDJl$BN6KFE$mV-CF;)(BN.DuBLlDm"@,OUBhUo^4;&2m.L[%+2cLD*2]i#,2A07e/ef<:4Bqjf.Mj`k##6g)##/?&DGEYn"<h#B4VLd.3ZT%JE>eie3X?`72cO&i5?o]a!\c-%!\c-&ED&YsDcJ5M2@`\K*[`p0CF;)(BN.Z,C.2Dl";:u,#!4Ik##6g)##/?&BhV2m"<e]rGp>+)'dH1-'dH.?@73IT"<e]rGp>+)'dH1-'dH.??r'KpE$6Y=.pOSM!\c-%!\c-&ECEB%@9"a?2@`\K*[`p0CF;)(BN.Z,C.MVo";:u,#!4Ik##6g)##/?!Ce@2i"<e]rGp>+)'dH1-'dH.?Ced>oE$6Y=.pOSM!\c-%!\c-&ED&YsDH/,L2@`\K*[`p0CF;)(BN.K&Db+.t";:u,#!4Ik##6g)##/?'CJ.>n"<e]rGp>+)'dH1-'dH.?C.U`mE$6Y=.pOSM!\c-%!\c-&ED8kuBN6KF2@`\K*[`p0CF;)(BN.;sBgl;k";:u,#!4Ik##6g)##/?,DG+8!";:u,#!4Ik##6g)##/?#BMV)i"<e]rGp>+)'dH1-'dH.?BMCunE$6Y=.pOSM!\c-%!\c-&ECrVtBiQTG2@`\K*[`p0CF;)(BN.5o?qFWf";:u,#!4Ik##6g)##/?%DG<es"<e]rGp>+)'dH1-'dH.?@7WX^E$6Y=.pOSM!\c-%!\c-&EC`Q&DcJ5M2@`\K*[`p0CF;)(BN.JuCJ.qs";:u,#!4Ik##6g)##/?,@74Bb";:u,#!4Ik##6g)##/?,@7=Hc";:u,#!4Ik##6g)##/?#BMUlc"<e]rGp>+)'dH1-'dH.?DbNSuE$6Y=.pOSM!\c-%!\c-&EC<N"E$6Y=.pOSM!\c-%!\c-&EC<&nBN6KF2@`\K*[`p0CF;)(BN.DuC.V\p";:u,#!4Ik##6g)##/?'CJ.,h"<e]rGp>+)'dH1-'dH.?C/7<'E$6Y=.pOSM!\c-%!\c-&EC<N!E$6Y=.pOSM!\c-%!\c-&ECE;rC/l]H2@`\K*[`p0CF;)(BN.Z0Ce7nr";:u,#!4Ik##6g)##/?+BM(N^"<e]rGp>+)'dH1-'dH.?@7WX\E$6Y=.pOSM!\c-%!\c-&ECE;rCfMoJ2@`\K*[`p0CF;)(BN.K&Db=;!";:u,#!4Ik##6g)##/?+BM(T`"<e]rGp>+)'dH1-'dH.?@7<XX"<e]rGp>+)'dH1-'dH.?D,*f)E$6Y=.pOSM!\c-%!\c-&EC<MtE$6Y=.pOSM!\c-%!\c-&EC`Q&@9"a?2@`\K*[`p0CF;)(BN.Z/D,i#K2@`\K*[`p0CF;)(BN.](DbFA"";:u,#!4Ik##6g)##/?,?qFWf";:u44rF>'4;%]gE)ePE##6g)##/?!C/.Jq"<e]rGp>+)'dH1-'dH.??qislE$6Y=.pOSM!\c-%!\c-&EDJl#DH/,L2@`\K*[`p0CF;)(BN.E#BhDYp";:u,#!4Ik##6g)##/?#BMUre"<e]rGp>+)'dH1-'dH.?C/7>uE$6Y=.pOSM!\c-%!\c-&ED&Ys?r\X>2@`\K*[`p0CF;)(BN.;sBMDbr";:u,#!4Ik##6g)##/?!C/78j"<e]rGp>+)'dH1-'dH.?BMV#tE$6Y=.pOSM!\c-%!\c-&EDJl#@9"a?2@`\K*[`p0CF;)(BN.5o?q"?b";:u,#!4Ik##6g)##/?!Ce@Do"<e]rGp>+)'dH1-'dH.?@7WX[E$6Y=.pOSM!\c-%!\c-&EC<&nD,i#K2@`\K*[`p0CF;)(BN.5o?qaii";:u,#!4Ik##6g)##/?&Bh_&h"<e]rGp>+)'dH1-'dH.??qipkE$6Y=.pOSM!\c-%!\c-&ECE;r?r\X>2@`\K*[`p0CF;)(BN.DuBM2Vp";:u,#!4Ik##6g)##/?!Ce6ob"<e]rGp>+)'dH1-'dH.?C.UckE$6Y=.pOSM!\c-%!\c-&EC<&nCfMoJ2@`\K*[`p0CF;)(BN.8pDFIhp";:u,#!4Ik##6g)##/?,?qO]g";:u,#!4Ik##6g)##/?#Bh:W`"<e]rGp>+)'dH1-'dH.?DbWo(E$6Y=.pOSM!\c-%!\c-&ECiW(BiQTG2@`\K*[`p0CF;)(BN.Z0Ce@ts";:u,#!4Ik##6g)##/?%DGESl"<e]rGp>+)'dH1-'dH.?C/7>sE$6Y=.pOSM!\c-%!\c-&ECrVsC/l]H2@`\K*[`p0CF;)(BN.;sBLlDm";:u,#!4Ik##6g)##/?%DGEVm"<e]rGp>+)'dH1-'dH.?C.UcjE$6Y=.pOSM!\c-%!\c-&ED8r%CfMoJ2@`\K*[`p0CF;)(BN.E#BhM_q";:u,#!4Ik##6g)##/?+BM1`c"<e]rGp>+)'dH1-'dH.?@7<OU"<e]rGp>+)'dH1-'dH.?DG*GrE$6Y=.pOSM!\c-%!\c-&ECrVsCfMoJ2@`\K*[`p0CF;)(BN.;r@81#k";:u,#!4Ik##6g)##/?&Bh^od"<e]rGp>+)'dH1-'dH.?@7WX`E$6Y=.pOSM!\c-%!\c-&ED8kuDH/,L2@`\K*[`p0CF;)(BN.K&DGFJ$";:u,#!4Ik##6g)##/?#BMV;o"<e]rGp>+)'dH1-'dH.?DbNT!E$6Y=.pOSM!\c-%!\c-&EDJl"C/l]H2@`\K*[`p0CF;)(BN.Z,D+e.u";:u,#!4Ik##6g)##/?#BMV>p"<e]rGp>+)'dH1-'dH.?@7WXfE$6Y=.pOSM!\c-%!\c-&EDK)$C/l]H2@`\K*[`p0CF;)(BN.DuD+n5!";:u,#!4Ik##6g)##/?#DbNhs"<e]rGp>+)'dH1-'dH.?BM(ZrE$6Y=.pOSM!\c-%!\c-&ECEB$CK2fI2@`\K*[`p0CF;)(BN.;r@8:)l";:u,#!4Ik##6g)##/?#C.prd"<e]rGp>+)'dH1-'dH.?BMC`iE$6Y=.pOSM!\c-%!\c-&EDJl"D,i#K2@`\K*[`p0CF;)(BN.K&DFn+t";:u,#!4Ik##6g)##/?!C/7)e"<e]rGp>+)'dH1-'dH.??qj!dE$6Y=.pOSM!\c-%!\c-&EDJl"DcJ5M2@`\K*[`p0CF;)(BN.;sBLH,i";:u,#!4Ik##6g)##/?,D+IAn"<e]rGp>+)'dH1-'dH.?@7<j^"<e]rGp>+)'dH1-'dH.?C/7?#E$6Y=.pOSM!\c-%!\c-&ECE;qCK2fI2@`\K*[`p0CF;)(BN.](DGOP%";:u,#!4Ik##6g)##/?#BLkTb"<e]rGqosN/N!c#2@`\K*[`p0CF;)(BN.>uCJS5"";:u,#!4Ik##6g)##/?,D+R,f"<e]rGn1Jr/JM.m.pN;`2[CC#GnUBL#!4Ik##6g)##/?#DbWVl"<e]rGp>+)'dH1-'dH.?DbNT'E$6Y=.pOSM!\c-%!\c-&EDJl"DH/,L2@`\K*[`p0CF;)(BN.K&DF@bo";:u,#!4Ik##6g)##/?!C/7/g"<e]rGp>+)'dH1-'dH.?@7<m_"<e]rGp>+)'dH1-'dH.??q`s\"<e]rGp>+)'dH1-'dH.?C.UcrE$6Y=.pOSM!\c-%!\c-&EDJl)BiQTG2@`\K*[`p0CF;)(BN.>uCIh_p";:u,#!4Ik##6g)##/?#DbWYm"<e]rGp>+)'dH1-'dH.?@7W[^E$6Y=.pOSM!\c-%!\c-&ECrVrBiQTG2@`\K*[`p0CF;)(BN.Z)DcJ5M2@`\K*[`p0CF;)(BN.])BN6KF2@`\K*[`p0CF;)(BN.;sCJA(u";:u,#!4Ik##6g)##/?,D+R2h"<daQ4;(U)0bXQu4X^C:4;(4%.gZeT0H*n"2@*7q2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?#C.q#f"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.K&@81#kE!REf2d@1.3ZT&)(D@Sq0FUN&2\,li2]iVk'dH1-'dH.??r'HpE$6Z''dH1-'dH.?C/7?!E$8L=2BNbC.47);CF;)(BN.;tBgl;k"@5"0CF;)(BN.K&@81#k(D@Sq0FTTf##6g)##/?#DbNPk"<g>M2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?#C.q#f"<ff73Y3;F!\c-%!\c-&EDJl)CK2fIA1A/k/JA=b!\c-%!\c-&ECEB%BiQTGED8i"BhUojBM:fmBhVW,BhUonBiR2&3Y3;F!\c-%!\c-&EDJl)C/l]HA1A/k/JA=b!\c-%!\c-&ECEB%BiQTGED0J5F\H'F2],L$5?o*8/R/Dh.jm;=CF;)(BN.DuBMMhs"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&ED8l'C/l]T/JJd+Gn:np3"T%J4:_Eu&/#3a3"d#3!\c-%!\c-&ECEB%BiQTGEA/n?!\c-&ED8l'D,i#W%2fBe!\c-%!\c-&ECrSs?r\X>A2#N2!\c-&ED8l'C/l]A4:_EO'dH1-'dH.??qipeE$6Z:/IhdcGpj79/LNM?CF;)(BN.DuD+S"s"@4sT2%p0j!\c-%!\c-&ECE;qD,i#KED0J4?qja#Ce7nk4:_EO'dH1-'dH.?C/7?(E$6Z:)A<qr.o.fO##6g)##/?+BM1T_"<h#ICe7`+Ce7`+Ce7nk4:_EO'dH1-'dH.?BMV#qE$6Z:G=bam4:_EO'dH1-'dH.?C.gfjE$6Z:G>;*r4:_EO'dH1-'dH.?BM(ZkE$6Z:.1c\C'dH1-'dH.?BMComE$6Y72],Kt2@`\KFV5W\0G7=u3#)W/E=<Zr!\c-%!\c-&ED8l"CK2fI@lk8=*>o(^4;&2,2[BX]E)dGXGngrZ2\Sq9.Qq#i##6g)##/?!Cd^N\"B>F04;(U&2CCIHCF;)(BN.Z,C/%tt"@3Y%2%L9d4;&2m4;&2m4:h`%Gn1l'/.`@O/f>61A/Z0n.N)1m5?n=%.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.DsBhVer"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&EDJl)BN6KR/JJd+E=<Zr!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?C.V)sE$8LZ@lP&3/Ii^<EE*S[4^9!2GmkN%!\c-%!\c-&ED8l"CK2fI@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?BMC`gE$8L'0c:m&.1c\C'dH1-'dH.?BMComE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?#BLkWc"BA`1*>o(u.h`@bE#BQ!Go7M*Go7M*E#BQ!Go7M*E%M(p.L7q=57&5./JT36EE+"_Gq0gG2&JbL/JJd+GngrZ#!4Ik##6g)##/?!Cd^Q]"<g?C'dH1-'dH.?BMM8uE$52h4;(To'GDBk'dH1-'dH.?BMM8uE$6M:3"Za/'dH1-'dH.?DbNVtE$6M43!^7*C0W"m.P3Oe.M#)n*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%DbNSoDb35k?qEX_DF@T'Dc080CJ@<#DG3;r?r09mC/RQ+@8'BmBh1ZkCK2Vg.R$EH*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%BgbWhDFmQ%DGX#$BMUlnC.h5sF\tD.@8]Bl?q!I`E#BK(4;AJr#!4Ik##6g)##/?!Cd^Q]"<g?C'dH1-'dH.?D,*DpE$52h4;(To'GDBk'dH1-'dH.?D,*DpE$6M:3"Za/'dH1-'dH.?DbNVsE$6M43!^7*C0W"m.P3Oe.M#)n*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%BLkNcBM1ZiD+d,oBgl-*G=t5!Bh1s"D+[5qDbrr.CJ.i4Bh:ZlBM1cu@9"Q].R$EH*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%Bgb<_C.gll?pm=XCID9+Dc0;2?q<[hD+$WnDbjJ:Bh1WdBLkHeD+mDqD+Iq:2%L9+5?o]a!\c-%!\c-&EDJl)CfMoJA3i1;CF;)(BN.](D+Iqr/JJd+GoesS2aKDcCF;)(BN.](D+Iqr#nmOeA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'FA#;/G=5/)BLtKhDbWSrF\>1uD,*Gp@8B-cCICHcF\P2$C/R?%CJI5tC.1NjE#BK(4;AJr#!4Ik##6g)##/?!Cd^Q]"<g?C'dH1-'dH.?DbEJrE$52h4;(To'GDBk'dH1-'dH.?DbEJrE$6M:3"Za/'dH1-'dH.?BMC`lE$6M43!^7*C0W"m.P3Oe.M#)n*tB"q4=<*NCF;)(BN.]&@8'rj"B7fd@7j^-BhLrqC.plm?r0NrG>:M&DF@2tBh^imCf"84CILokC.UcmDb<DqCe@th2@h]P)EJ'(1`7r"##6g)##/?+C.(H^"<h#JCJ@JsDFHikCe.$!Dadc+C.)6(BMD0%BgbEhC/%f*BLkg$G>(J+CIg`hBM1fe4:h`%0H*nQ*[`p0CF;)(BN.K&@7a`g"@5U4##6g)##/?,D,*Ah":,tO2d@+N2A/S7##6g)##/?,D,*Ah"=tK')aQD/.ifK3!\c-%!\c-&ECEB%BiQTGED]20D+Ii0C.pumCIClqDbreqD,!]&CeR<&?qipgBM^ukCe@l2DGE]%C/.H#C/kiV.N'61Gp>+)'dH1-'dH.?C.V*"E$6Z:A2#N2!\c-&EDK)'CfMo#0c:ls4#%Z`A2#N2!\c-&EDK)'CfMo>2]Wb?A2#N2!\c-&EDK)$?r\X24WOM(A56)[2@h)W2@g%!)EJ'(1`7r"##6g)##/?+C.(H^"<h#FCeR?!G>:D'Cd^`kC/%2oCID?+DG*Z"Ce-loD+dPuD,3W&G=b,$D+m8nCfM_h.R$EH*tB"q4=<*NCF;)(BN.]&@8'rj"B8N)BhUifCe-inBM:iqDbjJ>@8]KiCJ7E"DbNDpBh2?-C.UoiBM(`lBgkNkCfM&X.N'61Gp>+)'dH1-'dH.?C.V*"E$6Z:A2#N2!\c-&EDK)'DcJ5&0c:ls4#%Z`A2#N2!\c-&EDK)'DcJ5B2@h]P)EJ'(1`7r"##6g)##/?+C.(H^"<h#FBLkEnG=5/+Bhhc-?rB[&DG3PsCf"88Bi78oC.U`nE#BK(4;AJr#!4Ik##6g)##/?!Cd^Q]"<g?C'dH1-'dH.?BLtloE$52h4;(To'GDBk'dH1-'dH.?BLtloE$6M:3"Za/'dH1-'dH.?@7W[\E$6M43!^7*BNuek.R$EH*tB"q4=<*NCF;)(BN.]&@8'rj"B7ZaDF@Z,D+-rlF\Z+<Ce[5qD+d/j?q<OWBM:iuCIMMb2@h)W2@g%!)EJ'(1`7r"##6g)##/?+C.(H^"<h#NBLP?a@7isbC/@Ao@7Wd`BhD'!F\5>-G=Y5.DGEVm4:h`%0H*nQ*[`p0CF;)(BN.K&@7a`g"@5U4##6g)##/?!C.pue":,tO2d@+N2A/S7##6g)##/?!C.pue">(Mn1`8k<##6g)##/?,D+R5i">(/d/KID[Gq9mG)aQD/.ifK3!\c-%!\c-&ECEB%BiQTGECiVuDc0;,CeIGtG=>5*DFm>p@89p/BLl<1DG!8tDcJ%k.P3Oe.M#)n*tB"q4=<*NCF;)(BN.]&@8'rj"B7Zb?qjg/DbW_uF\Z+ED+mDtDaZofDaZodD,3i)CJA(=2%L9+5?o]a!\c-%!\c-&EDJl)CfMoJA3i1;CF;)(BN.;tBhhqt/JJd+GoesS2aKDcCF;)(BN.;tBhhqt#SIj^4@(qhCF;)(BN.Z,Cen>##T+9m3'g&%#nmOeA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'CemN$G>(_2BLQ$&G>(M1BhCZqD,<St?rB9iBhC`rE%Dq>#X01=.R?!>.ifK3!\c-%!\c-&ECEB%BiQTGECiT&BMqN(BMV,oCJmi-Bhh&r@7jX%@7j^)C.(EdBN5WT.N'61Gp>+)'dH1-'dH.?C.V*"E$6Z:A2#N2!\c-&EC<,nE$52h4;(To'GDBk'dH1-'dH.?@7ijY">(Mn1`8k<##6g)##/?,D+Qub">(/d/KIDZGq9mG#X01=.R?!>.ifK3!\c-%!\c-&ECEB%BiQTGED]"uBLl<,CJI8sBhq/pCf!PtG>:J%D,*K!Ce.$!DGX#-BM2N+DFI#uDaZrnE%Dq>)aQD/.ifK3!\c-%!\c-&ECEB%BiQTGED]#$Db4,:?qO-mCJ$lmC/@T$G==u"Db*2pDbE?"F[SSp@8]ToD+[K$CfM&X.N'61Gp>+)'dH1-'dH.?C.V*"E$6Z:A2#N2!\c-&EDK)'@9"`m0c:ls4#%Z`A2#N2!\c-&EDK)'@9"a32]Wb?A2#N2!\c-&EDK)+BiQT;4WOM(A5?/\2@h)W2@g%!)EJ'(1`7r"##6g)##/?+C.(H^"<h#MBMCrnG=k.uC.LioCf!Q)G=YG-D+I,nD+QusC/@?"Dadi+?q!FeBhh#lD,hhi.R$EH*tB"q4=<*NCF;)(BN.]&@8'rj"B7]cCJ$uhBLtZiD,3N"F\bD"?qEaj@80Hs@8''nF\P;.C/R;nCILonC.1ftE#BK(4;AJr#!4Ik##6g)##/?!Cd^Q]"<g?C'dH1-'dH.?BLtm!E$52h4;(To'GDBk'dH1-'dH.?BLtm!E$6M:3"Za/'dH1-'dH.?C/7)mE$6M43!^7*C0W"m.P3Oe.M#)n*tB"q4=<*NCF;)(BN.]&@8'rj"B8N'@7is_?q<X^Db38mCf!DuD+Ro3BM1Wj@803lF\tY.?rB[!?qWa_CJ@3#D,hhi.R$EH*tB"q4=<*NCF;)(BN.]&@8'rj"B8N'@7ij\BMV,pBhUluBMV`2CeI)hD,3SuCedK%C.)0!Ce-leDFdH!Da[<$CemJl4:h`%0H*nQ*[`p0CF;)(BN.K&@7a`g"@5U4##6g)##/?'?pm=R":,tO2d@+N2A/S7##6g)##/?'?pm=R">(Mn1`8k<##6g)##/?!C.Lfd">(/d/KIDZGq9mG#X01=.R?!>.ifK3!\c-%!\c-&ECEB%BiQTGED]),Bhqo/@89KoCIqW/DbiYn?pm^gD+[3"C.)0!BLkQjG==tt@89KoCIqef2@h]P)EJ'(1`7r"##6g)##/?+C.(H^"<h#FDFI9$G=>2,C.gigCeI)mG>(J,C.1NjCIqW'CJ7E+G=k,"?q=!hBLGNd4:h`%0H*nQ*[`p0CF;)(BN.K&@7a`g"@5U4##6g)##/?#Cd^Q]":,tO2d@+N2A/S7##6g)##/?#Cd^Q]">(Mn1`8k<##6g)##/?+Bhhqt#T+9m3'g&%#nmP!)\WGfA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'Ced9#G>:M0@8'?q?r'HlC.)6+CJ%;tBM1ZhDacrfD+m5oG>(8'?qs-pDFn+i2@h]P)EJ'(1`7r"##6g)##/?+C.(H^"<h#MBgk9]BhgosBhh0"C.)0'C/RDuBhUfkBh1p%CID9$@89*_DGNN%Dbii,BMVn<2%L9+5?o]a!\c-%!\c-&EDJl)CfMoJA3i1;CF;)(BN.9$@7sli/JJd+GoesS2aKDcCF;)(BN.9$@7sli#nmOeA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'BMLloG>(\6D+%K'Dc0#'CeIK(DbsS7C.1ikCeI)o@9!mM.N'61Gp>+)'dH1-'dH.?C.V*"E$6Z:A2#N2!\c-&ED8l#D,i#$0c:ls4#%Z`A2#N2!\c-&ED8l#D,i#@2@h]P)EJ'(1`7r"##6g)##/?+C.(H^"<h#FCeRN#G>CJ)CJ@&uD,3i$@7aX"CJ@,sBLtHfCed>nD,*ArG>CM/@73F]BLGNd4;&2m4:h`%0H*nI2@^Q/CKpiI4;(U#5?o]a!\c-%!\c-&EDJl)CfMoJA3i1;CF;)(BN.](D+S"s/JJd+GoesS2aKDcCF;)(BN.](D+S"s#SIj^4@(qhCF;)(BN.Z,Ce7nr#T+9m3'g&%#nmP!)\WGfA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'F@\l#G=b,$DaZusBgbEdDGOG4BMV!"BM1j"CICTeBLG?kG=Y2%@7<jkC.gib#nmOeA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'FA5&#Dc/r#Db<Au@8&pcF\PS7G=bM+Db3AoDbEN&F\PA#DGEGo@7ipe?q<[bE#BK(4;AJr#!4Ik##6g)##/?!Cd^Q]"<g?C'dH1-'dH.?BLtltE$52h4;(To'GDBk'dH1-'dH.?BLtltE$6M:3"Za/'dH1-'dH.?@7W[aE$6M43!^7*C0W"m.P3Oe.M#)n*tB"q4=<*NCF;)(BN.]&@8'rj"B7]aDc/r+?q<dlD+d2rDbretG=Y/!DF?irD,!B$DGX&*@8]KlD,!;pC.1NjC/lMf.R$EH*tB"q4=<*NCF;)(BN.]&@8'rj"B7ihBhDQ4CJ%#sDFd)m?r0*i@8]g#Db<>sBhqH%Dbs,.C/Rc1CICEkBMLup?r[dL.N'61Gp>+)'dH1-'dH.?C.V*"E$6Z:A2#N2!\c-&ED8`'DH/,%0c:ls4#%Z`A2#N2!\c-&ED8`'DH/,@2]Wb?A2#N2!\c-&EDK)+C/l]<4WOM(A5?/\2@h)W2@g%!)EJ'(1`7r"##6g)##/?+C.(H^"<h#FCIg]gG=>2*C/.H#CIqW-C/RQ&?r'$hD+$ipCJIu,C/.2sG=b;%D+d8rBhq/i#nmOeA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'FA>8(CJmMr?q!dgCJR2sF\P8#G>C\*BM(TmD,*c(F\tD&BLuB+CIq$"BhCiqE#BK(4;AJr#!4Ik##6g)##/?!Cd^Q]"<g?C'dH1-'dH.?C.UZjE$52h4;(To'GDBk'dH1-'dH.?C.UZjE$6J8.R$EH*tB"q4=<*NCF;)(BN.]&@8'rj"B7if@7j^#BhUcg?q<R[BM_,uG>1G(@8BTpDFHunCf!f*C/R`%@73F]BLG3gE#BK(4;AJr#!4Ik##6g)##/?!Cd^Q]"<g?C'dH1-'dH.?@7imZ":,tO2d@+N2A/S7##6g)##/?,DbFA"#SIj^4@(qhCF;)(BN.JuD+Iqr#T+9m3'g&%#nmP!)\WGfA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'F@e_p?rBBoDGNSqCICTfF\P.r?qWjfDb3;rCem`&F\tG%?qX[,DbWJoCeIH"C/lMf.R$EH*tB"q4=<*NCF;)(BN.]&@8'rj"B8N)CJ-rfBLPToC.plm@743pBi7<!DGEJsD+[5tD+%K$Ced;qG=k2%?q!O_@7rmY4:h`%0H*nQ*[`p0CF;)(BN.K&@7a`g"@5U4##6g)##/?#Bh:Q^":,tO2d@+N2A/S7##6g)##/?#Bh:Q^">(Mn1`8k<##6g)##/?,D+R)e">(/d/KIDZGq9mG#X01=.R?!>.ifK3!\c-%!\c-&ECEB%BiQTGECiJs@8]g!@8'-iC.Lj!F\YV)Ce[W-@7<R^C.^ijF\tJ,@8C''CedB!BhM,tC/lMf.R$EH*tB"q4=<*NCF;)(BN.]&@8'rj"B7]hBhqo5D,3l-CemJsCf!W'Bi7E(DG!6"D+R)nC/A&5@7<FUCe7?%DG3PuCIqe92%L9+5?o]a!\c-%!\c-&EDJl)CfMoJA3i1;CF;)(BN.9$@74Bb/JJd+GoesS2aKDcCF;)(BN.9$@74Bb#SIj^4@(qhCF;)(BN.>uCIqeq#T+9m3'g&%#nmP!)\WGfA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'FAG;*C/Rc1BLkBhC/%/uF\YG+G>1b7Ce-fkDG*>nF\tS+BLkE`BhqH%Db`Sj#nmOeA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'FAG8-Cf3T$CJRGs?pm7]F\P8)G=5,/DG*DsCeI2nF\tS*D,*MoC.pupBM1cu@9!mM.N'61Gp>+)'dH1-'dH.?C.V*"E$6Z:A2#N2!\c-&ED8l#CfMo#0c:ls4#%Z`A2#N2!\c-&ED8l#CfMo?2@h]P)EJ'(1`7r"##6g)##/?+C.(H^"<h#HDbEGlBgbEhC/%/uF\5+tDFm9#C.h6#Db``!F\tY,D+Ii7C/7<"BLP3`BN5WT.N'61Gp>+)'dH1-'dH.?C.V*"E$6Z:A2#N2!\c-&ED&YrDcJ5&0c:ls4#%Z`A2#N2!\c-&ED&YtDH/,A2@h]P)EJ'(1`7r"##6g)##/?+C.(H^"<h#RBM)H3CICHm?r09rBMq6%CJ.#kF\bM/CJJ.>2%L9+5?o]a!\c-%!\c-&EDJl)CfMoJA3i1;CF;)(BN.5oDbjY&/JJd+GoesS2aKDcCF;)(BN.5oDbjY&#nmOeA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'F@o##DGir&CJ@&uD,3N"F\YV)Bh1TkD+R#n@73@bF\tG'Cen54C.UcoCJ@K%CfM&V4^8R0.N'61Gq0gG2&JhN/JJd+GngrZ#!4Ik##6g)##/?!Cd^Q]"<g?C'dH1-'dH.?D,*E!E$52h4;(To'GDBk'dH1-'dH.?D,*E!E$6M:3"Za/'dH1-'dH.?CedZ%E$6M43!^7*C0W"m.P3Oe.M#)n*tB"q4=<*NCF;)(BN.]&@8'rj"B8N$@7=@!DbEK!?r'6lBM2H/C/R`'?qa!eDa[8rC/.l3CeIJs?r'HtDG!2pCIqef2@h]P)EJ'(1`7r"##6g)##/?+C.(H^"<h#FBM:lpG=k/!CIg`hBM1fj?qsm,Bh1ZlD+$cnDa[8pDb3<#G=4_nBhh#lD,3ht4:h`%0H*nQ*[`p0CF;)(BN.K&@7a`g"@5U4##6g)##/?!C.q>o":,tO2d@+N2A/S7##6g)##/?!C.q>o">(Mn1`8k<##6g)##/?!C.LW_">(/d/KIDZGq9mG)aQD/.ifK3!\c-%!\c-&ECEB%BiQTGECii$BMqN-DFHfoCJ@K%Cf!Q!BLQ*'?qEaiCJ.#kD,3N"F\tM&G=tA.CJR>uCe[T(Ce-lrE#BK(4;AJr#!4Ik##6g)##/?!Cd^Q]"<g?C'dH1-'dH.?C/78sE$52h4;(To'GDBk'dH1-'dH.?C/78sE$6M:3"Za/'dH1-'dH.?BMV$#E$6M43!^7*C0W"m.P3Oe.M#)n*tB"q4=<*NCF;)(BN.]&@8'rj"B7igDFI`*Bh^umCemc(Dbro-G=tG(CJRZ$BLGNq@8L*,DGNu$?qWa_CJ@3#C.)>`2@h]P)EJ'(1`7r"##6g)##/?+C.(H^"<h#IDG!/gCJIAr@73F]BLQ$)C/.r6DbWN!DF?cgCe@f)DG<AtG=Y#(BhUluBMLic4:h`%0H*nQ*[`p0CF;)(BN.K&@7a`g"@5U4##6g)##/?#CILK\":,tO2d@+N2A/S7##6g)##/?#CILK\">(Mn1`8k<##6g)##/?#C.q>o">(/d/KIDZGq9mG#X01=.R?!>.ifK3!\c-%!\c-&ECEB%BiQTGED]/$CJRDoDa[&pBM1cu@8KHjCJmDrC.1HeBLG9hD,=A7Db`VnBh_#qBLG3gE%Dq>)aQD/.ifK3!\c-%!\c-&ECEB%BiQTGED]/$C.glfDFm3"BMLihD,3YrCICKn?qE^dBLP3_F@8MrBMq?(CIpltBMLic4:h`%0H*nQ*[`p0CF;)(BN.K&@7a`g"@5U4##6g)##/?#CILN]":,tO2d@+N2A/S7##6g)##/?#CILN]">(Mn1`8k<##6g)##/?,@7`gY">(/d/KIDZGq9mG#X01=.R?!>.ifK3!\c-%!\c-&ECEB%BiQTGED]/%Da[&hBgk?gDFHlr@8KHtBi7W/Db3H"Db*,oC/A&:?qa$aBMLfkCJR2lDFn+i2@h]P)EJ'(1`7r"##6g)##/?+C.(H^"<h#NCICZeDbNl%DFmr-CJmGuCJIB$@7s9pD,=A5BM;T/@89KsCJ@/n@7a`/2%L9+5?o]a!\c-%!\c-&EDJl)CfMoJA3i1;CF;)(BN.Z,CJ%kr/JJd+GoesS2aKDcCF;)(BN.Z,CJ%kr#SIj^4@(qhCF;)(BN.K$D,";"#T+9m3'g&%#nmP!)\WGfA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'F@8Q$G>CS+DG3c#Db+&8CIq6"?qONrBM;-#DGir.C//%j2@h]P)EJ'(1`7r"##6g)##/?+C.(H^"<h#FDbEbuDb*Q+Bh2?&@80p%Cemc,C/A&2BMCosG>:P(CK1rW.N'61Gp>+)'dH1-'dH.?C.V*"E$6Z:A2#N2!\c-&ED8`'@9"`m0c:ls4#%Z`A2#N2!\c-&ED8`'@9"a42@h]P)EJ'(1`7r"##6g)##/?+C.(H^"<h#FBM:ll@8]cuCdg]kCe@2nC.(cjDFHuk?qa$oC/.l+?qEUeG=tY,?q<R[BMLic4:h`%0H*nQ*[`p0CF;)(BN.K&@7a`g"@5U4##6g)##/?'?pm^]":,tO2d@+N2A/S7##6g)##/?'?pm^]"=tK')aQD/.ifK3!\c-%!\c-&ECEB%BiQTGED]G2CIhW.@7<RaCIqW)BLuB3Bh1]sBhLfkD+%K+Db35hDG<i&C.(NqBMVn<2],Ku2],Ku2],LL//\[/)]8VWA/YIX3X?`72cO&n2BNYEGqosJ3'ei+4:_E8EE*2I/I;Uj+t#cBA0Wli'dH1-'dH.?C.V*"E$6Z+!_k+M4#%Z`@OFW/A1\>o/KIqQC*?/(2]Wb?@OFE)A1SZ2)Z^N[4^99K4:_E70c:c5A/YIX3X?`72cO&n2BNYEGo]Hi2%D8m##6g)##/?&DG<Sm"<fEO##6g)##/?(CILoh"<fEO##6g)##/?(CJ.Ao"<echGq0gG2&JbL/JJd+GngrZ3'g,6GnUBL3'^&=GmGAo2d@@,GmG?#/Iid15#_Xq.jm;=CF;)(BN.;tCJS5""BA$"'dH1-'dH.??qj!hE$52h4;(UG2A/S7##6g)##/?+BM1Za">(Mn1`8k<##6g)##/?&Bhgoc">(/d/KID\Gqp*E4>@caA2#N2!\c-&ECE;qDcJ5B2@hfS)EJ'(1`7r"##6g)##/?+C.(H^"<h#FCJ.'!G=k5+D+Ic+D,NYsBhCZqCf!T!Bh2E)D+RE%E%Dq>#XLBq.ifK3!\c-%!\c-&ECEB%BiQTGED]2)Bgl3*DFHflF\Y1rCedAuCd^QbCJ@2uG>:D(@7a`/2%L9d'GDBk'dH1-'dH.?BM(]jE$6M:3"Za/'dH1-'dH.?C/7)pE$6M43!^7*BO!S"1`8:^2aKDcCF;)(BN.E#BMMhs#nmOrA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'BM:ZlG==hqDb*2r@7WmfCf!T#G>(D%CeRN#DbiW!CJ@&uF\P/%Bi7W%Bhq/pCfM_h.P447*tB"q4=<*NCF;)(BN.]&@8'rj"B7fgD+Ro7Db`W#Db*Q'C.gigCJ.i0Bhgrm@80'bD+R2pD+%K(Ce@)i@893eBMLic4;&2m4:h`%0H*mlA3iX_GnUBL3'^&5D-R&K4;(UG2A/S7##6g)##/?#DbW_o">(Mn1`8k<##6g)##/?&Bhh,i">(/d/KID\Gqp*E4>@caA2#N2!\c-&ED8btC/l]=2@h*?)EJ'(1`7r"##6g)##/?+C.(H^"<h#FBLtp&G>(\6BMDT*Cf3Q"Bh_#qCf!Q$C/RQ$DF@!!E%Dq>'L=Z(.ifK3!\c-%!\c-&ECEB%BiQTGED]/+D+%Q.BLG6gDb*8rCIqW.DGj//C.q&nBgb3iDbNl%@8KBjG=Y&$DFHlnDG3AuCJ7Gp4:h`%0H*mlA3iXbGnUBL3'^&4?sE[>4;(UG2A/S7##6g)##/?+BM1]b">(Mn1`8k<##6g)##/?&Bhh,i">(/d/KID[Gqp*E4>@caA2#N2!\c-&ECE;qDH/,A2@h*?)EJ'(1`7r"##6g)##/?+C.(H^"<h#FBLtp&G>(\6BMDT*Cf3Q"Bh_#qCf!Q$C/RQ$DF@!!E%Dq>'L=Z(.ifK3!\c-%!\c-&ECEB%BiQTGED]/&CIME2@8B3iDadAtBLG3gF\"npD+[<!D+[/rCIL]rDa[8pF@er&G=Y2"DG3AqCe-lsDFn+<2%L9+5?nq0A5>T\2@`[fAO/giGmGAo2dA?O2aKDcCF;)(BN.E#BLlDm#SIj^4@(qhCF;)(BN.;sCJS5"#T+9m3'fu#(EF@t'GDBk'dH1-'dH.?BM(]pE$6J8.P447*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%BLkQdBhL]qC/@/iBM:fmBLG6cF\b\-BMq,t?pn9V2@hfS)EJ'(1`7r"##6g)##/?+C.(H^"<h#FBMClkG=b5"D,*GtC.LioCf!PsG=t5!Bh:cjBhLll@7<RaF\b\7Dc/u,BM:`oD+R5qCIqe92%L9+5?nq0A4T*U2@`[fAO/UcGmGAo2dA?O2aKDcCF;)(BN.5nBhVer#SIj^4@(qhCF;)(BN.;sCJS5"#T+9m3'g#$(EF@t'GDBk'dH1-'dH.?D,3PuE$6J8.P447*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%BLkQdBhL]qC/@/iBM:fmBLG6cF\b\-BMq,t?pn9V2@hfS)EJ'(1`7r"##6g)##/?+C.(H^"<h#FBMC`jG>(\,DFd/mC.LioCf!Q%G=4i&@73C[CIpokD+I)sF\##"CJml(BMV<%DG<f(CfM&X.N'61Go]I_DbO+=.pNfrA4o0T/JJd+Gqg6IA2#N2!\c-&ECE8lE$6M:3"Za/'dH1-'dH.?DbNW$E$6M43!^7*BO!S"1`8:^2aKDcCF;)(BN.])C/l]=2@h*?)EJ'(1`7r"##6g)##/?+C.(H^"<h#S?q=I&@73F`DGWVnBLkNiBhLikF\##+CJmDoC.V,l#nmOrA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'?qrs]DFI9(Bh1QpDFmr1G=Xu'DbE>qDF@/sCIh/qD+I>uG=bJ/?r'-jE#BK(4;AJr3'g,8Cg7nkGo]F^@7=-30c:ls'GDBk'dH1-'dH.?DG*GuE$6M:3"Za/'dH1-'dH.?DbNW$E$6M43!^7*CKrn%1`8:^2aKDcCF;)(BN.>uCJ.qs#nmP!A3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'@7<FUD+%&tD+du3G>1>$BhUlmCJ[8m?qsm,C/7-!E%Dq>'L=Z(.ifK3!\c-%!\c-&ECEB%BiQTGED8bu@8]R!CJI?!Ce@/tF[TD5BLkTiD+I/n@7<jnCIq2qD,3MsG>(D(C/.#kBLG3gE#BK(4;AJr3'g,>Bj;ShGo]F^?q"$20c:ls'GDBk'dH1-'dH.?DbNW#E$6M:3"Za/'dH1-'dH.?BMC`lE$6M43!^7*BO!S"1`8:^2aKDcCF;)(BN.;sCJ%kr#nmP!A3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'BMV<*G=t2&Ce\#9@8]NpBLPEh@8L*)CILok?q`pkDcJ%k.PXL;*tB"q4=<*NCF;)(BN.]&@8'rj"B7fdCe.`+D+dT%BhqH%Db`So@7sd$DGEPuC.gfhDbEAq@80j!BMV?!G==bsCemPuBhq/pCfM&X.N'61Go]I_BM:f]2@`[fAO/a_?sE[>4;(UG2A/S7##6g)##/?+BM2#k">(Mn1`8k<##6g)##/?#BLkH^">(/d/KID[Gqp*E4>@caA2#N2!\c-&ECE;q@9"a42@h*?)EJ'(1`7r"##6g)##/?+C.(H^"<h#JC.(cjDFd#nBM_B,G>1A$?r'3qF\tS)?pn1%BhM0#E%Dq>'L=Z(.ifK3!\c-%!\c-&ECEB%BiQTGECr]%BMqQ.Ce[>tBLG3gF\,"rCedGu@8B?sCIgfjF\tS)D,4>=DG*DtCICHdDcIA[.N'61Go]I_BMLr_2@`[fAO/ad?sE[>4;(UG2A/S7##6g)##/?!DFd5h">(Mn1`8k<##6g)##/?!C/7Pr">(/d/KID\Gqp*E4>@caA2#N2!\c-&EDJr'CK2f>2@h*?)EJ'(1`7r"##6g)##/?+C.(H^"<h#FCeR?&G=bJ.D,482DGiu*BhV$$Cf!AnCIhW/@8'*oE%Dq>'L=Z(.ifK3!\c-%!\c-&ECEB%BiQTGED\u*@80p&C.q?&DG3PuCIqW*CJmK"CJ6upCILQeDb*2r@8K3dDGOG8Ced5sBLkNkCIqe92%L9+5?nq0A5,?gGnUBL3'^&5DFd_C0c:ls'GDBk'dH1-'dH.?@7W[gE$6M:3"Za/'dH1-'dH.?C.V*!E$6M43!^7*BO!S"1`8:^2aKDcCF;)(BN.Z,Cd_Pm#nmP!A3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'F@])%?rB9eBhh#kDG<GlC._0#?qj`uCJ%$!G=XtsDb44j2@hfS)EJ'(1`7r"##6g)##/?+C.(H^"<h#FD+-`eG>:P*Bhq/pCf!T)Cf3W%D,*JsDb<DqCe@/tF\tV4?q"6rCILWiC.1NjCIqe92%L9+5?nq0A5,ElGnUBL3'^&5@7=-30c:ls'GDBk'dH1-'dH.?DbNW"E$6M:3"Za/'dH1-'dH.?C.V*!E$6M43!^7*CKrn%1`8:^2aKDcCF;)(BN.;sCJ.qs#nmP!A3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'F@])%?rB9eBhh#kDG<GlC._0#?qj`uCJ%$!G=XtsDb44j2@hfS)EJ'(1`7r"##6g)##/?+C.(H^"<h#FCed9"G=4\tDGEN!Db`SoC.1QcC.1KiDFd&nBh:Qi@743mCJI?&G>(M-D+m>o?q`maCfM&X.N'61Go]I_BLP<V2@`[fAO/da?sE[>4;(UG2A/S7##6g)##/?!Cd^W_">(Mn1`8k<##6g)##/?+Bh2Mn#T+9m3'fu#(EF@t'GDBk'dH1-'dH.?C.V)uE$6J8.P447*tB"q4=<*NCF;)(BN.]&@8'rj"B7Z`Bgc-.C/%,tF\Q%>Ce7&pCedDpD+d/hBMLrrBLlDb2@hfS)EJ'(1`7r"##6g)##/?+C.(H^"<h#NBgk]i?qX!iC/.H#CIqW'Bi7GuBh1Wm@800hDG<W)Cd^WdD+d,gCJR;oC.UlnCeR3#BMMh;2%L9+5?nq0A55QlGnUBL3'^&4D+.D?0c:ls'GDBk'dH1-'dH.?DbWo%E$6M:3"Za/'dH1-'dH.??q`gX">(/d/KID[Gqp*E4>@caA2#N2!\c-&ECrZ(C/l]=2@h*?)EJ'(1`7r"##6g)##/?+C.(H^"<h#NC.q;q?r'3hCf!PpDb35mDFm;qF\"l#G>1P*Ce[/e#nmOrA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'Ce?upG=b+tD+d2rDb`SoBLuB-C/7)nBLG3dDGEQ"C.26/Db=21?q!LfD,3Z&?r'-jE#BK(4;AJr3'g,5CeRe:.pNfrA55KnGmGAo2dA?O2aKDcCF;)(BN.JuD+e.u#SIj^4@(qhCF;)(BN.>uCIDGl#T+9m3'fu#(EF@t'GDBk'dH1-'dH.?C/7)oE$6J8.P447*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%Cd^ZcBh1QjC/@5kC.UflBhh#pF\tV3@7j^)DFm?"E%Dq>'L=Z(.ifK3!\c-%!\c-&ECEB%BiQTGED]//CJ7o/BLkfuC.gigCe\)5@8BQtDacuoBMColCID9"CJ-okG=k2&BhqH%Db`Sj4:h`%0H*mlA3i[aCg7nkGo]F^CILrb/JJd+Gqg6IA2#N2!\c-&ED8l'DH/,@2]Wb?A2#N2!\c-&ED&Yr@9"a34WOM(A56)U3"Z`T2A/S7##6g)##/?#BLkK_"=tK'#XLBq.ifK3!\c-%!\c-&ECEB%BiQTGED]/*@8'j'D+[,kF\5h6CeR5qCJ.#jFA>P7Dc/i"Cem;g#nmOrA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'FA55.CJmi&@806nDG!2pCIqW/Dc0)0BgbWlCJ%)p@8B0mD,=A3C/7PuBhq0!?q<^fBhCiqE#BK(4;AJr3'g,4BhVJ7.pNfrA5>ZrGmGAo2dA?O2aKDcCF;)(BN.DsBM;\q#SIj^4@(qhCF;)(BN.Z,Ce.hq#T+9m3'fu#(EF@t'GDBk'dH1-'dH.?BMV&qE$6J8.P447*tB"q4=<*NCF;)(BN.]&@8'rj"B8N)C/%2mC.grmCJ[GuG==erBhV3%F[SMnCf3`+C.1E\#nmOrA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'F@e_qBMq9!D+R#lDF?ojCf!PuG>(\.Ce6lnBMM6&BM2'!F[SJqD,Ni,CILQoDFn+<2%L9+5?nq0A5>ZqGnUBL3'^&3DFd_C0c:ls'GDBk'dH1-'dH.?C/7*!E$6M:3"Za/'dH1-'dH.?@7W[cE$6M43!^7*CKrn%1`8:^2aKDcCF;)(BN.JuD+%Yn#nmP!A3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'F@eu#C/RQ$Bh_&mBM;T5CeR5q@7XL)Ce[2iCIL`sCfM_h.PXL;*tB"q4=<*NCF;)(BN.]&@8'rj"B8N)@8'-b@7j3kDb*8rCIqW4Dc0&)CIgljBhgosBhh0"D,<o1CID?1CdginCfM&X.N'61Go]I_C.gi[2@`[fAO/gi?sE[>4;(UG2A/S7##6g)##/?'CICWa">(Mn1`8k<##6g)##/?!C.L`b">(/d/KID\Gqp*E4>@caA2#N2!\c-&ECiW(CK2f>2@h*?)EJ'(1`7r"##6g)##/?+C.(H^"<h#MBMCrnG=k.uC.LioCf!Q)G=YG-D+I,nD+QusC/@?"Dadi+?q!FeBhh#lD,hhi.PXL;*tB"q4=<*NCF;)(BN.]&@8'rj"B7]d@7s9gC.q#p@803lF\PP(D+$itC.q#sDG!;rD,*PrBLtHcG=t5$D+Huj@7<RaCIqe92%L9+5?nq0A4T*eGnUBL3'^&:D+.D?0c:ls'GDBk'dH1-'dH.?BMV&pE$6M:3"Za/'dH1-'dH.?C/7)nE$6M43!^7*CKrn%1`8:^2aKDcCF;)(BN.DsBMDbr#nmP!A3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'DbWYtCJmK"CJR2lDFmr.@8]?oDFd#iCIg`m@8C!'Ce@DrC.1ir@8'-iC.MVd2@hfS)EJ'(1`7r"##6g)##/?+C.(H^"<h#MBLPBfG=kA&@803lF\PP(D+$itC.q#sDG!;rD,*PrBLkioG=>#'C/.)nDG<f(CfM&X.N'61Go]I_D+R,_2@`[fAO/R\D-R&K4;(UG2A/S7##6g)##/?&Bhh>o">(Mn1`8k<##6g)##/?!C.Lcc">(/d/KID\Gqp*E4>@caA2#N2!\c-&ECrVr@9"a42@h*?)EJ'(1`7r"##6g)##/?+C.(H^"<h#FD+d>rG=5,/DbF2:D,4>>DFd)tCf"84?q=!d?qNaeC/lMf.PXL;*tB"q4=<*NCF;)(BN.]&@8'rj"B8N*DG<MnBh1]sDaZrnF[SJqG>:M*?qWjfC.1NjCIqW'BLPBiG>CV+?pmL]?pm7VDFn+<2%L9+5?nq0A4T'gGnUBL3'^&9CIhD@0c:ls'GDBk'dH1-'dH.?BM(]oE$6M:3"Za/'dH1-'dH.?C/7)mE$6M43!^7*CKrn%1`8:^2aKDcCF;)(BN.E#BLuJn#nmP!A3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'FA#;.?rBBr@80!_Ce6lnG>1e1D,48/C.(KbD+d2n?qO]\2@hfS)EJ'(1`7r"##6g)##/?+C.(H^"<h#FDG!9#G=YD2DFd)m?r'-jF\+l!Dc/i!C.(HoCdginCf"89?qX[#BLtNhDb<],D+R5qCK1rW.N'61Go]I_Ced8`2@`[fAO/U`?sE[>4;(UG2A/S7##6g)##/?&BhhAp">(Mn1`8k<##6g)##/?!C.Lfd">(/d/KID\Gqp*E4>@caA2#N2!\c-&ECrVr?r\X32@h*?)EJ'(1`7r"##6g)##/?+C.(H^"<h#FDFHrnG=4l#?qsg)DbiVmDb<K!F\tS/BMDZ6?qj?sE%Dq>'L=Z(.ifK3!\c-%!\c-&ECEB%BiQTGED])'CIhW+Ced5sBLkNkCIqW/Db3VsBMV,pBhUluBMLihFA5##DGiu*D,*?#Bh1QpDFn+<2%L9+5?nq0A4]'cGnUBL3'^&8CIhD@0c:ls'GDBk'dH1-'dH.??q`jY">(Mn1`8k<##6g)##/?!C.Lfd">(/d/KID[Gqp*E4>@caA2#N2!\c-&ECE8rE$6J8.P447*tB"q4=<*NCF;)(BN.]&@8'rj"B8N'?q`m]@80$kCJ[;sC.MN.Db`VpFA5"uBMqQ.BLP0Y#nmOrA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'FA#;(Dc/r'C.Lcm?qO*lCf!DtD+Ro2Db*8rCIqW'BM2&uG=k>$Db3;nCJ$lmCIqe92%L9+5?nq0A4f<lGnUBL3'^&8D+.D?0c:ls'GDBk'dH1-'dH.??q`mZ">(Mn1`8k<##6g)##/?+Bhhqt#T+9m3'fu#(EF@t'GDBk'dH1-'dH.??q`mZ"=tK'#XLBq.ifK3!\c-%!\c-&ECEB%BiQTGECiW#?rBZr?pmI[C.h`,CeR5pDFmr3Bh:]eBhhB!E%Dq>'L=Z(.ifK3!\c-%!\c-&ECEB%BiQTGECiGsBMq5qBLP9cDb38mCf!K'G==ntC.UitCICNfBgkNrF\b_.Bi72oCICEcDFHlrDFn+<2%L9+5?nq/A4f-dGmGAo2dA?O2aKDcCF;)(BN.>uCIMMm#SIj^4@(qhCF;)(BN.])CK2f=4WOM(A56)U3"Z`T2A/S7##6g)##/?%DGEnu"=tK'#XLBq.ifK3!\c-%!\c-&ECEB%BiQTGECiW#?rBZr?pmI[C.h`,CeR5pDFmr3Bh:]eBhhB!E%Dq>'L=Z(.ifK3!\c-%!\c-&ECEB%BiQTGECiDsBMqQ*BM(TiBLtNfCf!AoG=b2"Bh;$&C.^chC.Lj!F\#5-Bi7?&C.gib4;&2m4:h`%0H*nI2@^Q/CKpiI4;(U#5?nq0A4o<hGnUBL3'^&7CIhD@0c:ls'GDBk'dH1-'dH.?BM(]nE$6M:3"Za/'dH1-'dH.?@7W[bE$6M43!^7*BO!S"1`8:^2aKDcCF;)(BN.E#BM)Po#nmP!A3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'F@\l)G=b%rCe[T!DG=;6DadB(Db=,0@8B3aBLG9n@9"Q].PXL;*tB"q4=<*NCF;)(BN.]&@8'rj"B8N'CID?&CJ$rkBMD3!D+m8nCf!DpG=t;,C/%E%Dbif+C.V-$F\YG.Cf3W"Bh:]l@803lE#BK(4;AJr3'g,8CIqJ6.pNfrA4o9kGmGAo2dA?O2aKDcCF;)(BN.DuD+%Yn#SIj^4@(qhCF;)(BN.Z,Ce7nr#T+9m3'g#$(EF@t'GDBk'dH1-'dH.?BMC`rE$6J8.P447*tB"q4=<*NCF;)(BN.]&@8'rj"B8N*CIME-D,3Gq@8K<hG=t8+?q!C^F\PP+Dc0#.BLGNd#nmOrA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'FA5/%D,Nl$D+I&m@7`adDa[8p@8'j&Cd^rsDa[8rC/.#kBLQ$$D,*>jDbWr&@7WacCe@/tE#BK(4;AJr3'g,8DFme9.pNfrA4oX#GmGAo2dA?O2aKDcCF;)(BN.9$?r(&l#SIj^4@(qhCF;)(BN.Z,Ce@ts#T+9m3'fu#(EF@t'GDBk'dH1-'dH.?Cdh&pE$6J8.P447*tB"q4=<*NCF;)(BN.]&@8'rj"B7]a@8]?e@800dDG=;6DadB)?r0Qq@8]R!CICm$E%Dq>'L=Z(.ifK3!\c-%!\c-&ECEB%BiQTGED8i$@8]ElD,3Q"Db*8rCIqW+C.h`1BLkTs@8BBlBhM,tCJ[GrCJJ&2BhCcm?qj$eCe@/tE#BK(4;AJr3'g,?BhVJ7.pNfrA4/ddGmGAo2dA?O2aKDcCF;)(BN.])DH/,@2]Wb?A2#N2!\c-&EC<&mDcJ5A4WOM(A56)U3"Z`T2A/S7##6g)##/?+BhM_q#nmP!A3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'DbihsDad?"Bgc'&C/RK!Ce7?"@8KZr@8]ElDbii#E%Dq>'L=Z(.ifK3!\c-%!\c-&ECEB%BiQTGED&erBhM-"DFd8qDb*8rCIqW4BMqN(C.LTfD+[/m@7`mgDbsS6DGi`!BhC`iDbNN"CJ@K%CfM&X.N'61Go]I_@7rmR2@`[fAO0!n?sE[>4;(UG2A/S7##6g)##/?,@7a-b">(Mn1`8k<##6g)##/?!C.Lie">(/d/KID\Gqp*E4>@caA2#N2!\c-&EC<K$@9"a42@h*?)EJ'(1`7r"##6g)##/?+C.(H^"<h#FCIg]hG=tY1C.26(BMq2qD+m;nCJ\/1CJ@,iBhD&sCK2Vg.PXL;*tB"q4=<*NCF;)(BN.]&@8'rj"B8N$@896cC.h#mBLkBhC/%/uF\>"p@7<O\DG*Z"CJ75rCIqW'C.punG>(\6BMColCICTgCfM&X.N'61Go]I_?q`sU2@`[fAO0$l?sE[>4;(UG2A/S7##6g)##/?%DGNYm">(Mn1`8k<##6g)##/?!C.Lie">(/d/KID[Gqp*E4>@caA2#N2!\c-&ED&YqBiQT<2@h*?)EJ'(1`7r"##6g)##/?+C.(H^"<h#FCIg]hG=tY1C.26(BMq2qD+m;nCJ\/1CJ@,iBhD&sCK2Vg.PXL;*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%@7is_CJRAtDFHumBLtNfCf!f(G>1G)Cd^`hC.^`gCeIH"F\tY+Ce.`0?qWda?qWgeDb`Sj4:h`%0H*mlA3ipjBj;ShGo]F^?qWaP/JJd+Gqg6IA2#N2!\c-&ED8btDH/,@2]Wb?A2#N2!\c-&ECrVqBiQT;4WOM(A5-#T3"Z`T2A/S7##6g)##/?#DbWSk"=tK'#XLBq.ifK3!\c-%!\c-&ECEB%BiQTGED]#'?qX[%DbWMpF\"koCdgfiBhUcfFA#>/G>:Y-BhCfd#nmOrA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'F@ef"DGii$DaZllD+[K$Cf!K'G==i%DGNMq?qj<uD+R5qF\tk1@8]ErDG3JsDG<f(CfM&X.N'61Go]I_?qWdQ2@`[fAO0$o?sE[>4;(UG2A/S7##6g)##/?+BM2&l">(Mn1`8k<##6g)##/?&Bhq,h">(/d/KID[Gqp*E4>@caA2#N2!\c-&ECE;q?r\X32@h*?)EJ'(1`7r"##6g)##/?+C.(H^"<h#FCe.9"G>(>$Cee)6DGic(CJR>sD,=A7?qFO!C.grpBN6;d.PXL;*tB"q4=<*NCF;)(BN.]&@8'rj"B8N(Bhq)jDb<B#DaZrnF\bJ$BLG*cC.(cqDG3>pDF?ohFA58,Bi78u?qX3mBhqH%Db`Sj4:h`%0H*mlA3iX_BhVJ7.pNfrA5,Hn?sE[>4;(UG2A/S7##6g)##/?!C.M&k">(Mn1`8k<##6g)##/?,@7a0c">(/d/KID\Gqp*E4>@caA2#N2!\c-&EDK)+?r\X32@h*?)EJ'(1`7r"##6g)##/?+C.(H^"<h#MBgl30Cd^roDbr\tBi7At?q!IbF\tG$DGFA4CdgftE%Dq>'L=Z(.ifK3!\c-%!\c-&ECEB%BiQTGECiE!G>1>%C/7N-DbEN'DFmr3CJ.i-@7s!hD+HogC.V,r@8L*-Ce@2lDad?!C.plm@7rmY4:h`%0H*mlA3iX_CeRe:.pNfrA5,Hq?sE[>4;(UG2A/S7##6g)##/?%DGN\n">(Mn1`8k<##6g)##/?,@7a0c">(/d/KID[Gqp*E4>@caA2#N2!\c-&ED&YqBN6K;2@h*?)EJ'(1`7r"##6g)##/?+C.(H^"<h#MBgl30Cd^roDbr\tBi7At?q!IbF\tG$DGFA4CdgftE%Dq>'L=Z(.ifK3!\c-%!\c-&ECEB%BiQTGED8l'CJmN$Ce[>tBLG3gF\"l#G=kA/@8'*gCIq$"BhCijF@eo)?rB6fDb3>n?q`maCfM&X.N'61Go]I_BMClnGnUBL3'^&5BMLf[/JJd+Gqg6IA2#N2!\c-&ECiW(C/l]<2]Wb?A2#N2!\c-&EDK)+D,i#?4WOM(A5-#T3"Z`T2A/S7##6g)##/?'CICZb"=tK'#XLBq.ifK3!\c-%!\c-&ECEB%BiQTGED]&$Db+&1Da[9"F\P.rCIgol@7`g^F@],)CJml+@7`p\#nmOrA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'F@ehuDGi`!BM(WqDaZrnF\P.r?qEddBgkBjDGN]&D+R5nF@\\qC/RQ*CJ7E*@7WmfCfM&X.N'61Go]I_BMCrsGnUBL3'^&5BM1TX/JJd+Gqg6IA2#N2!\c-&ED&YqCK2f=2]Wb?A2#N2!\c-&EDK)+D,i#?4WOM(A56)U3"Z`T2A/S7##6g)##/?%DGN_o"=tK'#XLBq.ifK3!\c-%!\c-&ECEB%BiQTGED]&$Db+&1Da[9"F\P.rCIgol@7`g^F@],)CJml+@7`p\#nmOrA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'F@o&)BMq?#Db<`-CJ@K%Cf!Q$G==eqDG*As@89'eBhLijF\tG(CJS,3Db``"?r'-jE#BK(4;AJr3'g,6BM1WY2@`[fAO/a_?q"$20c:ls'GDBk'dH1-'dH.?DbNZ!E$6M:3"Za/'dH1-'dH.??qa6d">(/d/KID\Gqp*E4>@caA2#N2!\c-&ECrVqBN6K;2@h*?)EJ'(1`7r"##6g)##/?+C.(H^"<h#FCe.$"G>(M)DFdl-Cf3Z$CJIT$BM_i4CILrlD,3DtDH.qj.PXL;*tB"q4=<*NCF;)(BN.]&@8'rj"B8N)D+IAqDbEQ(Ce[2qCIqW-Dc/o&@7rje@803iBMCil?r1!,@8'?hCJ7,r@8B0mC.gib4:h`%0H*mlA3iX]BhVJ7.pNfrA5,Np?sE[>4;(UG2A/S7##6g)##/?&Bhq2j">(Mn1`8k<##6g)##/?+Bgc5j#T+9m3'g#$(EF@t'GDBk'dH1-'dH.?DbNYuE$6J8.P447*tB"q4=<*NCF;)(BN.]&@8'rj"B8N)D,*c!Bhq/sD,<Z%G>(>#CIL]jF\tG%?q"7#C.LWiE%Dq>'L=Z(.ifK3!\c-%!\c-&ECEB%BiQTGED]#!BMVf.C/$uqCILQoDFmr3?rB?gDF@/sDG3Ar@7s$f?r1!-DG3JnD+R/oDG<f(CfM&X.N'61Go]I_BMLilGnUBL3'^&5CJ-o[/JJd+Gqg6IA2#N2!\c-&ECE9!E$6M:3"Za/'dH1-'dH.?@7W[fE$6M43!^7*BO!S"1`8:^2aKDcCF;)(BN.])?r\X32@h*?)EJ'(1`7r"##6g)##/?+C.(H^"<h#JBhq)j@8'*eDGWc!Cf3Z)CJ@/oF\bJ1BMDZ1Bh^od#nmOrA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'BMLunG>(G'BM;)r?pm7VDFmr.CeS#3?qs*jC/.5qDb38mCf!VuBh;#nCIgcj?r'-jE#BK(4;AJr3'g,6CJ-r\2@`[fAO/a^?q"$20c:ls'GDBk'dH1-'dH.??qj$]">(Mn1`8k<##6g)##/?,D+RGo">(/d/KID[Gqp*E4>@caA2#N2!\c-&ECE;pE$6J8.P447*tB"q4=<*NCF;)(BN.]&@8'rj"B7fgC.h`7Bh_&rF\P>+G>(_.BM1ciC/.K$BMq/qBM)Pd2@hfS)EJ'(1`7r"##6g)##/?+C.(H^"<h#RBLQ*+DF?ffDG!W(C/%/uF\#"sCe-fiBMV?%DG3>pDF?ohC/.,q?rB^!@7rmY4:h`%0H*mlA3iX\BhVJ7.pNfrA5,QkD-R&K4;(UG2A/S7##6g)##/?!C.Ufc">(Mn1`8k<##6g)##/?,D+[2g">(/d/KID\Gqp*E4>@caA2#N2!\c-&EDK)*BiQT<2@h*?)EJ'(1`7r"##6g)##/?+C.(H^"<h#RDa[c5Bgk<eF\P>+G>(_.BM1ciC/7<#D,Nf"CfM_h.PXL;*tB"q4=<*NCF;)(BN.]&@8'rj"B8)n?rB6d@7`sgCdg]kCe@/tF\P>/G=b)$?q!dhCe7<$?r'HlC/7)kDc/u"Ce[2qCIqe92%L9+5?nq0A5,QkCg7nkGo]F^BMUlsGmGAo2dA?O2aKDcCF;)(BN.JuCe\2!#SIj^4@(qhCF;)(BN.Z,DbOG##T+9m3'g#$(EF@t'GDBk'dH1-'dH.?C/7,nE$6J8.P447*tB"q4=<*NCF;)(BN.]&@8'rj"B8)q@8]ct?qE^]BMLifBgkKhDG=50C/.#qG>1P-E%Dq>'L=Z(.ifK3!\c-%!\c-&ECEB%BiQTGED8htDc/u$DFHflC/7-!C.gigBLG9`D,3l)D,!GqDG!W(C/%f,C/79!G=tD*Ce@/tE#BK(4;AJr3'g,6C.Uf\2@`[fAO/a]DFd_C0c:ls'GDBk'dH1-'dH.?DG*DsE$6M:3"Za/'dH1-'dH.?@7W[`E$6M43!^7*BO!S"1`8:^2aKDcCF;)(BN.>uBM;\q#nmP!A3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'Ce@#nG=k/*CJ[K#G=tY6DF?otF\tJ,@7j^%@7<jkE%Dq>'L=Z(.ifK3!\c-%!\c-&ECEB%BiQTGECil)Dc0&+DbNl%DFmr1CJml+BhUupCILKd@7<F^C/A&5BM2&oC.(NqBMLic4:h`%0H*mlA3iX\DFme9.pNfrA5,<dD-R&K4;(UG2A/S7##6g)##/?'?q!OW">(Mn1`8k<##6g)##/?,D+R)e">(/d/KID[Gqp*E4>@caA2#N2!\c-&ECil.CK2f>2@h*?)EJ'(1`7r"##6g)##/?+C.(H^"<h#NDb<AkDb3W"F\Y7tDFI9!@80EkF@nf&Dc/u-?pm7P#nmOrA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'Ce-rnG>(A#DGNZ%DaZrnF\5A&BLP0_DFd0"D+I#kDb38kF@o52Bi7W/Bhq)oBgkNkCfM&X.N'61Go]I_BLkTnGnUBL3'^&5D+IAg/JJd+Gqg6IA2#N2!\c-&ECrVqC/l]<2]Wb?A2#N2!\c-&ED&YrCfMo>4WOM(A5-#T3"Z`T2A/S7##6g)##/?&Bhq5k"=tK'#XLBq.ifK3!\c-%!\c-&ECEB%BiQTGED]5)Ce.`2D+HrsF\YG-G=b&$CICTeFA5/$D,+8=BLPE`#nmOrA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'FAG;%@8]QlC.^un@803lF\4nnDbE>rBLkKiBh:]l@803eF@APrCf3MqDbEAq@803lE#BK(4;AJr3'p27D+R,_/JJd+Gqg6IA2#N2!\c-&ECE;oE$6M:3"Za/'dH1-'dH.?DG*H"E$6M43!^7*CKrn%1`8:^2aKDcCF;)(BN.](BN6K;2@h*?)EJ'(1`7r"##6g)##/?+C.(H^"<h#FC.popG=Xu#Cd_B&C.VT0D+I-#BM_i0Bh^iiG=4l'C/lMf.PXL;*tB"q4=<*NCF;)(BN.]&@8'rj"B8N#C.Ulh?qa!cDbEN'DFmr-@7aX$BLtKiC.1Hj@7WmfCf"84Bh:frG=4\oDFHlrDFn+<2],Ku2%L9+5?oEA.hE7gGmGAo2d@@,Go]I_BLtTjGnUBL3'^&5Ced5_/JJd+Gqg6IA2#N2!\c-&ECrZ!C/l]<2]Wb?A2#N2!\c-&ECiW(BN6K:4WOM(A5-#T3"Z`T2A/S7##6g)##/?&BM1if"=tK'#XLBq.ifK3!\c-%!\c-&ECEB%BiQTGED])$CJmi'DGEPtCeR3#BMLih?pn1!DG*B!?qs!gC.gunF\+quBMqQ*D,!DrCe@/tE%Dq>'L=Z(.ifK3!\c-%!\c-&ECEB%BiQTGED])$CJmi'DGEPtCeR3#BMLih?pn1!DG*B!?qs!gC.gunF\+quBMqQ*D,!DrCe@/tE#BK(4;AJr3'g,6Ced8`2@`[fAO/acDFd_C0c:ls'GDBk'dH1-'dH.?DbWT#E$6M:3"Za/'dH1-'dH.?CedZ%E$6M43!^7*CKrn%1`8:^2aKDcCF;)(BN.;rDFe%s#nmP!A3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'FA#)"G=Y5#BM(TlBhqH%Db`SoBLkKbD,*f(DbWo0?qN[gD+Ic0?r'3c?q!R`Db*8rCIqef2@hfS)EJ'(1`7r"##6g)##/?+C.(H^"<h#FDGE\rD,3Z"Db<;oC.1NjCIqW+D+e&6CILWkBLGNtDb*Q'D,<N%C/%l8?r'3kD+m8nCfM&X.N'61Go]I_BLtQlGnUBL3'^&5Cdh&c/JJd+Gqg6IA2#N2!\c-&EDJquDcJ5A2]Wb?A2#N2!\c-&ECrVqD,i#?4WOM(A5-#T3"Z`T2A/S7##6g)##/?!DGNSk"=tK'#XLBq.ifK3!\c-%!\c-&ECEB%BiQTGECrSt?rBBhCJ.)t@7WmfCf!PuBMq9!@7igdC.1EhBhM,tF\th2BMq;tC.pukDGNZ%DaZrnE%Dq>'L=Z(.ifK3!\c-%!\c-&ECEB%BiQTGECrSt?rBBhCJ.)t@7WmfCf!PuBMq9!@7igdC.1EhBhM,tF\th2BMq;tC.pukDGNZ%DaZrnE#BK(4;AJr3'g,6DbNPd2@`[fAO/abCIhD@0c:ls'GDBk'dH1-'dH.?DbWT"E$6M:3"Za/'dH1-'dH.?DbNZ&E$6M43!^7*CKrn%1`8:^2aKDcCF;)(BN.;rDFn+t#nmP!A3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'DacrmG=5/)D+[3"C.gigCe-leDb<<"?r''hD+[K$Cf!W#?rBBoBh_)rDbWMpC.Lj!E%Dq>'L=Z(.ifK3!\c-%!\c-&ECEB%BiQTGECrr+Cf3r1DFd)m?r'-jF\+huG=k2&@7<[eCe-lsDFmr,Bgl3(D+mApBhCfpCJR2l@9!mM.N'61Go]I_BM(`pGnUBL3'^&5Db*Si/JJd+Gqg6IA2#N2!\c-&ED&YqC/l]<2]Wb?A2#N2!\c-&ED&YqD,i#?4WOM(A5-#T3"Z`T2A/S7##6g)##/?%DGNbp"=tK'#XLBq.ifK3!\c-%!\c-&ECEB%BiQTGEC`DnBi78qCeI5pDb38mCf!Q!Bhhi/?qEU_BMD3!D+m8nF\b_8G>(\1@73UdD+IAuBLGNd#nmOrA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'D+[8rG=k;)DGEZ$Ce@/tF\P8&CJmW*Ce-okBLP?kBhCijC.1ikBgb9l@8B0jD+-ol@74B*2%L9+5?nq0A5,BkBj;ShGo]F^BM)!&GmGAo2dA?O2aKDcCF;)(BN.;rDG"1u#SIj^4@(qhCF;)(BN.>uC.MVo#T+9m3'g#$(EF@t'GDBk'dH1-'dH.?DbWT!E$6J8.P447*tB"q4=<*NCF;)(BN.]&@8'rj"B7Wd?qX[(?qj<jBMClnG=k/!C.hZ4D+[u5Bh_<$@9"Q].PXL;*tB"q4=<*NCF;)(BN.]&@8'rj"B7Wd?qX[(?qj<jBMClnG=k/!C.hZ4D+[u5Bh_<$@9!mM.N'61Go]I_BM1`lGnUBL3'^&5DGEGa/JJd+Gqg6IA2#N2!\c-&ED8o+DH/,@2]Wb?A2#N2!\c-&ED8r%@9"a34WOM(A5-#T3"Z`T2A/S7##6g)##/?#CILT_"=tK'#XLBq.ifK3!\c-%!\c-&ECEB%BiQTGEDAr,Bi75uBMLliCJ.i8BLtNpBLu<$DbE>nG=b&'@9"Q].PXL;*tB"q4=<*NCF;)(BN.]&@8'rj"B7if@7j^%BhM,tCIqW-C/RJsC.1QqDG!AqBhLijBM_i2BLtom@8'Bo@893eBMLic4:h`%0H*mlA3iX`CIqJ6.pNfrA5,EjD-R&K4;(UG2A/S7##6g)##/?!DGNVl">(Mn1`8k<##6g)##/?#C.q;n">(/d/KID[Gqp*E4>@caA2#N2!\c-&EDJquDH/,A2@h*?)EJ'(1`7r"##6g)##/?+C.(H^"<h#IBM2&o?pm[c@803lF\YV)DGN\uC.1Wj@73@bF\tJ)D+n,3Ce7&pCeIH"C/lMf.PXL;*tB"q4=<*NCF;)(BN.]&@8'rj"B7lkCe@l1DGNT'BM(NgDb`SoBM(ZeCed5oDbif"Bhq#mCe@f)DG3GrG=bM5Dbii,BMLic4:h`%0H*mlA3iX`DFme9.pNfrA5,Ep?sE[>4;(UG2A/S7##6g)##/?%DG<Sm">(Mn1`8k<##6g)##/?,@7ip[">(/d/KID\Gqp*E4>@caA2#N2!\c-&ED&YsCK2f>2@h*?)EJ'(1`7r"##6g)##/?+C.(H^"<h#FBM:]rBMq/tDbjJ3C.qf8DGEo,Cf"8=DG!>lBLG0fCK2Vg.PXL;*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%Bh1WkG=b8(C.^ik@7rm^C/78mDG!AuC.LfnDGNMoDFmr*@8B3oG=b5'DbNT#Db`Sj4:h`%0H*mlA3iXgBhVJ7.pNfrA5,`pD-R&K4;(UG2A/S7##6g)##/?'CJ.)g">(Mn1`8k<##6g)##/?,@7ip[">(/d/KID[Gqp*E4>@caA2#N2!\c-&ECiW!BN6K;2@h*?)EJ'(1`7r"##6g)##/?+C.(H^"<h#FBM:]rBMq/tDbjJ3C.qf8DGEo,Cf"8=DG!>lBLG0fCK2Vg.PXL;*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%Bgk`tG=t>%BM1cuDFmr,Cee/1@80!c@7j6lD+m8nCf"8<BhUujBMClkCe[2qCIqe92%L9+5?nq0A5,`pCg7nkGo]F^BLG*hGmGAo2dA?O2aKDcCF;)(BN.Z)BN6K:2]Wb?A2#N2!\c-&ED8r%?r\X24WOM(A5-#T3"Z`T2A/S7##6g)##/?,DG=D##nmP!A3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'FA58&C.MN,D,<`!BMq*"@7X*nF\tM+CIq]2Bh_)sE%Dq>'L=Z(.ifK3!\c-%!\c-&ECEB%BiQTGED]/$CJ-oeD+dQ'BLtNfCf!VuCJmZ%@80!`C/%)sD+[K+F\tM*Dadi1@8&seDb*8rCIqe92%L9+5?nq0A5,`uBj;ShGo]F^BLGQuGmGAo2dA?O2aKDcCF;)(BN.K$C.V\p#SIj^4@(qhCF;)(BN.DsBgl;k#T+9m3'g#$(EF@t'GDBk'dH1-'dH.?C.h&tE$6J8.P447*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%C/.9#G>(7tC/78mD+%'!?qFHqDG!B!G=Y,"C.hhg2@hfS)EJ'(1`7r"##6g)##/?+C.(H^"<h#FBMUs!Bi78rDFd5p@7rm^CeR8lBgbBjD,*f*@7rm^F@o82BMq9'?q<R[BMLic4:h`%0H*mlA3iXfBhVJ7.pNfrA5,cqD-R&K4;(UG2A/S7##6g)##/?,DGOP%#SIj^4@(qhCF;)(BN.Z0CeJ%t#T+9m3'fu#(EF@t'GDBk'dH1-'dH.?@7s*_"=tK'#XLBq.ifK3!\c-%!\c-&ECEB%BiQTGED]/%DaZufC.(KpF\b\7G==ksBhqH!F@Ao&CJmPu?qEj\#nmOrA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'FA55%Ce@l/DbNT#Db`SoC/78mDGNr'@803lF\tS+D+$Za@8B3nBLkNkCIqe92%L9+5?nq0A5,cqCg7nkGo]F^BLP9iGmGAo2dA?O2aKDcCF;)(BN.Dt?pn9a#SIj^4@(qhCF;)(BN.Z0CeJ%t#T+9m3'g#$(EF@t'GDBk'dH1-'dH.?BMM9+E$6J8.P447*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%CJ%9!G>Cn1@8KHu?rB]uBM:p"F\tk:Bhhi1BLP3`E%Dq>'L=Z(.ifK3!\c-%!\c-&ECEB%BiQTGED]/$D+R)h?q`g_?qO*lCf!W*BMq,tCe?upCILQoDFmr*?pm:aG>1G(DGNMoDFn+<2%L9+5?nq0A5,ctCg7nkGo]F^BLPX!GmGAo2dA?O2aKDcCF;)(BN.8pDadqq#SIj^4@(qhCF;)(BN.](CK2f=4WOM(A5-#T3"Z`T2A/S7##6g)##/?'CJ%;n"=tK'#XLBq.ifK3!\c-%!\c-&ECEB%BiQTGED]G3DFI`+BM(roBLkQdCJ@)n@743uCe@#gBgkKjDH.qj.PXL;*tB"q4=<*NCF;)(BN.]&@8'rj"B8N.DG!DnDGE]%C/.H#CIqW+Db4,3CJIT-BLP0_C.V,r@8K9gCdhN3DbWo'Db*8rCIqe92%L9+5?nq0A55NkBj;ShGo]F^CJ73!GmGAo2dA?O2aKDcCF;)(BN.Z)D,i#?2]Wb?A2#N2!\c-&ECE;nE$6M43!^7*CKrn%1`8:^2aKDcCF;)(BN.Z)D,i#@2@h*?)EJ'(1`7r"##6g)##/?+C.(H^"<h#F?q<XgG>:S,@8KBoBMq;tCeRN,F\+l!Dc/u,CJ.#e#nmOrA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'FA5/$D+Ii.C/%AuCdginCf!Ps@8]EhDb<B$D+[,o?qO*sF\,8'@8]Kt@73F]BLG3gE#BK(4;AJr3'g,5Bhgr]2@`[fAO/daD+.D?0c:ls'GDBk'dH1-'dH.?C/78uE$6M:3"Za/'dH1-'dH.??qj-`">(/d/KID\Gqp*E4>@caA2#N2!\c-&EDK)&DcJ5B2@h*?)EJ'(1`7r"##6g)##/?+C.(H^"<h#F?qEdeG=>5&BM)B)DGFA6BM1cuBM_#oDF@Z0Db3GqE%Dq>'L=Z(.ifK3!\c-%!\c-&ECEB%BiQTGED]G2Bh;K4DGET!Bhq/pCf!Q"CJmT"D+$im@73LfCdgiuF\5)'@8]g'C/%#rBhCiqE#BK(4;AJr3'g,5Bh:][2@`[fAO/daDFd_C0c:ls'GDBk'dH1-'dH.?DG*DpE$6M:3"Za/'dH1-'dH.??qj-`">(/d/KID[Gqp*E4>@caA2#N2!\c-&ED&YsC/l]=2@h*?)EJ'(1`7r"##6g)##/?+C.(H^"<h#F?qEdeG=>5&BM)B)DGFA6BM1cuBM_#oDF@Z0Db3GqE%Dq>'L=Z(.ifK3!\c-%!\c-&ECEB%BiQTGED]G2@8:!)CJI,pBgkNkCf!GmCIprqCJ./r?q<^cDGEGsF\5,%Cf3Mt@7`mgDb`Sj4:h`%0H*mlA3i[`DFme9.pNfrA55Nr?sE[>4;(UG2A/S7##6g)##/?!C/%&f">(Mn1`8k<##6g)##/?'CICE[">(/d/KID\Gqp*E4>@caA2#N2!\c-&EDK)&DH/,A2@h*?)EJ'(1`7r"##6g)##/?+C.(H^"<h#FCJ@2uG>Cq3@7j6lD+m8lC.)6'Bh1ZmDFI'"CJRDqFA5/$?q=HuBLG3gE%Dq>'L=Z(.ifK3!\c-%!\c-&ECEB%BiQTGED]2'D,4>4D,!`+C/7-!C.gigD+e&3CJ@N-D+$]eCICTgCf"84BhV!"G=>5,BMCil@7rmY4:h`%0H*mlA3i[_BhVJ7.pNfrA55QjD-R&K4;(UG2A/S7##6g)##/?#CILri">(Mn1`8k<##6g)##/?'CICE[">(/d/KID[Gqp*E4>@caA2#N2!\c-&ED8o+?r\X32@h*?)EJ'(1`7r"##6g)##/?+C.(H^"<h#FCJ@2uG>Cq3@7j6lD+m8lC.)6'Bh1ZmDFI'"CJRDqFA5/$?q=HuBLG3gE%Dq>'L=Z(.ifK3!\c-%!\c-&ECEB%BiQTGED]//CdhN(Ce-rmC.1NjCIqW)@8]NmC/%$!D+$`lD+%&p@8L*)Bh1]jG=Y2,DaZrnE#BK(4;AJr3'g,5BMLi\2@`[fAO/d`D+.D?0c:ls'GDBk'dH1-'dH.?DG*E"E$6M:3"Za/'dH1-'dH.?C.gfiE$6M43!^7*BO!S"1`8:^2aKDcCF;)(BN.>uBLlDm#nmP!A3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'F@8SsG=k,)CIpcf?q<R[F\4qo@80HsCJ$omCJR8nF\tS+?qN^ZDFHiq?pm7V@9"Q].PXL;*tB"q4=<*NCF;)(BN.]&@8'rj"B8N.DGFA4D+[)uCJ75rCIqW.Cf3r)?qE^_D+I?"C.plm?r1!(BgkHoG==esBhq/pCfM&X.N'61Go]I_CJ@)nGnUBL3'^&4BLPW_/JJd+Gqg6IA2#N2!\c-&EDJqu@9"a32]Wb?A2#N2!\c-&EDJr'BN6K:4WOM(A56)U3"Z`T2A/S7##6g)##/?!DGNqu"=tK'#XLBq.ifK3!\c-%!\c-&ECEB%BiQTGED]D,Bi79!@89*iC.1BgC/@5tG=4l'Ced;sDGE]%C/A&2Bgk?hG=tY2@7<jkC.)>`2@hfS)EJ'(1`7r"##6g)##/?+C.(H^"<h#FCe7;pBhCfmC.UipDb`SoBMCrjBh1p$CeIH!D+d8rBhqi+BMCs"Bi7;tD+I)sBhCiqE#BK(4;AJr3'g,5CJ7,`2@`[fAO/d_CIhD@0c:ls'GDBk'dH1-'dH.?DG*DrE$6M:3"Za/'dH1-'dH.?@7W^_E$6M43!^7*BO!S"1`8:^2aKDcCF;)(BN.>uBMDbr#nmP!A3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'FA>5$BMq>tBhUliC.h`0?pmI]Ce.Z'BMLrm@8]Hi?qFW[2@hfS)EJ'(1`7r"##6g)##/?+C.(H^"<h#FCJR<!G>1S-DG<f(Cf!W$G=tY7CJ%)tD+.,sD+[K+F\tS)BMLifC.q<%?r'-jE#BK(4;AJr3'g,5CJI/_2@`[fAO/d_D+.D?0c:ls'GDBk'dH1-'dH.?@7WjlE$6M:3"Za/'dH1-'dH.?@7W^_E$6M43!^7*CKrn%1`8:^2aKDcCF;)(BN.Z,CIDGl#nmP!A3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'FA>5$BMq>tBhUliC.h`0?pmI]Ce.Z'BMLrm@8]Hi?qFW[2@hfS)EJ'(1`7r"##6g)##/?+C.(H^"<h#FBLtp&G>CV+BhUitC.V,rDFmr3C/RDuC/%E%BM1ThDGEZ$DbsS7CJI,rG=bJ+Bh:Qi@7rmY4:h`%0H*mlA3i[^CeRe:.pNfrA55TnD-R&K4;(UG2A/S7##6g)##/?!C/%Ao">(Mn1`8k<##6g)##/?,D+[8i">(/d/KID\Gqp*E4>@caA2#N2!\c-&EDK)&@9"a42@h*?)EJ'(1`7r"##6g)##/?+C.(H^"<h#FBLPBiG==r#Bhhc,DGii*@806g?r1!(CICEbG=b;.BN6;d.PXL;*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%@73IW@8'C!C.^chC.LioCf!JuG=k;.CeR2m@7`phC.26"BMM9*@8]TrBh;!!?r'-jE#BK(4;AJr3'g,5CJ-r\2@`[fAO/d_?q"$20c:ls'GDBk'dH1-'dH.?@7WjkE$6M:3"Za/'dH1-'dH.?@7W^^E$6M43!^7*CKrn%1`8:^2aKDcCF;)(BN.Z,CIMMm#nmP!A3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'FA5J,DGj2,DbNVrC.h`0?pmF[C.26"BMM6&CJmGp?qjo_2@hfS)EJ'(1`7r"##6g)##/?+C.(H^"<h#FCJI;uG>1b8CJRE$CJ@K%Cf!f&G=5,+CedE#@7WmfCf"84CICKmG>:k/?q<R[BMLic4:h`%0H*mlA3i[]BhVJ7.pNfrA55WlD-R&K4;(UG2A/S7##6g)##/?,DFn+t#SIj^4@(qhCF;)(BN.Z,DbjY&#T+9m3'fu#(EF@t'GDBk'dH1-'dH.?@7rmY"=tK'#XLBq.ifK3!\c-%!\c-&ECEB%BiQTGEDB##G>:V3C.^upC.guo?r'HlCIME2DG!;qBMUouBhq2qCJ.c)BMM#qBMq;rC/7Q.D,3N"E%Dq>'L=Z(.ifK3!\c-%!\c-&ECEB%BiQTGED]2'G=b(sCICZm?qimbDb`So@8'j*DFdK*DacoqCIgom@743mBMM&uCJmZ,DG!W(C/%/uE#BK(4;AJr3'g,5C/.&^2@`[fAO/d^D+.D?0c:ls'GDBk'dH1-'dH.?@7isiE$6M:3"Za/'dH1-'dH.?@7W^]E$6M43!^7*CKrn%1`8:^2aKDcCF;)(BN.Z*BLlDm#nmP!A3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'CJRGpCJIQ"DbibtDG<N&C.)0$?rBZtDbNPsC.V)tC/.5qDGXJ6CJI8qG>:Y)C.1ftC.gib#nmOrA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'Cd^`eCdg`mDG!>sBLG3gF\>(rBLGNm?qEaiCJ.#kD,3i$FA55+DbjP7Db``"?r'-jE#BK(4;AJr3'g,5C.Uf\2@`[fAO/d^DFd_C0c:ls'GDBk'dH1-'dH.?Cdh'"E$6M:3"Za/'dH1-'dH.?@7W^dE$6M43!^7*BO!S"1`8:^2aKDcCF;)(BN.9$?q=Qe#nmP!A3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'BLtTdCeR/qC.gilC/.#kBLQ$"Bi79$C._2sBM(]lBM:cpCJ\/3CJ.#rG=b2"?qsEr@7rmY#nmOrA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'BM(QbBLGNqDG!2pCIqW-Dc/u(@73CXBLkj!BLkNkCJ\/3CJ$unG=4r$?qimbDb`Sj4:h`%0H*mlA3i[]DFme9.pNfrA55Wu?sE[>4;(UG2A/S7##6g)##/?'?q!@R">(Mn1`8k<##6g)##/?,D+[&c">(/d/KID[Gqp*E4>@caA2#N2!\c-&ECil.CfMo?2@h*?)EJ'(1`7r"##6g)##/?+C.(H^"<h#JCeS#5BhC]gDFm2lCIgom?r0?lG=kS+Dad/oDbWVtBhL]gF\tS)DG*5hCeR<%CILQoDFn+i2@hfS)EJ'(1`7r"##6g)##/?+C.(H^"<h#JC.MN4Db38lBMClkCe[2qCJ[AtG>:D&DaZunDb*8rCIqW'BMM6#Dc/l&DF?cgCe@/tE#BK(4;AJr3'g,5D+m>b2@`[fAO/deD+.D?0c:ls'GDBk'dH1-'dH.?C/7,mE$6M:3"Za/'dH1-'dH.?DbNZ%E$6M43!^7*BO!S"1`8:^2aKDcCF;)(BN.JuCee8"#nmP!A3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'FA52)Bi7?#BhV$#BhCiqF\Y>!C.h6(C.M#uBhh-$D+-oiFA5#%D+[u.C.M'!BgkNkCfM_h.PXL;*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%C/%)jCeR5nDb<JsBgkNkCf!T$G>(G*CedJsDbW]"DbNGtF\tS/Ce@/kD+m2l?qO*lCfM&X.N'61Go]I_CIg`iGnUBL3'^&4D+d,]/JJd+Gqg6IA2#N2!\c-&ECrVqDcJ5A2]Wb?A2#N2!\c-&EC<&lCfMo>4WOM(A5-#T3"Z`T2A/S7##6g)##/?&Bhq&f"=tK'#XLBq.ifK3!\c-%!\c-&ECEB%BiQTGED]/)Ce.5o@80'iF\+knDbNH#?qim^FA5,"G=4ksCfM_h.PXL;*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%Db*6!G==nuC.1NjCIqW*CJ%c1BMCiqBh_#nC.plm?r1!&BhV],BMC`gBLGNqDG!2pCK1rW.N'61Go]I_CIgfnGnUBL3'^&4D+./d/JJd+Gqg6IA2#N2!\c-&EC<&lDcJ5A2]Wb?A2#N2!\c-&EC<&lCfMo>4WOM(A56)U3"Z`T2A/S7##6g)##/?,D+[,e"=tK'#XLBq.ifK3!\c-%!\c-&ECEB%BiQTGED]/)Ce.5o@80'iF\+knDbNH#?qim^FA5,"G=4ksCfM_h.PXL;*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%DaZioG>Cq5D+$WcDFmr.?qsm0Db3>tBMLltCemJsCf"84CeS#3@7`sdD+mZ(DbEf)?r[dL.N'61Go]I_CIpomGnUBL3'^&4Ced5_/JJd+Gqg6IA2#N2!\c-&ECrZ(D,i#?2]Wb?A2#N2!\c-&EC<&lDH/,@4WOM(A5-#T3"Z`T2A/S7##6g)##/?%DGNPj"=tK'#XLBq.ifK3!\c-%!\c-&ECEB%BiQTGED]/)Cem`#Ce7`,Bh1rj#nmOrA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'FA5(uD+du2D,<r2D,h/Y.N'61Go]I_CIpurGnUBL3'^&4Ce7#^/JJd+Gqg6IA2#N2!\c-&ECE;tE$6M:3"Za/'dH1-'dH.?@7W^aE$6M43!^7*CKrn%1`8:^2aKDcCF;)(BN.](D,i#@2@h*?)EJ'(1`7r"##6g)##/?+C.(H^"<h#FBM(QlBMq5qBLu<,DGiu'@899kCf!Q!Ce\)7DbWZ)E%Dq>'L=Z(.ifK3!\c-%!\c-&ECEB%BiQTGED]/)DbNVpBM:iqDb`SoBMV#jC.(EcD+I/sBhq#mCe@f-Bgb<_CIg`kBh:Qi@7rmY4:h`%0H*mlB0f!fCe[k12],KqAO/ddDFd_C0c:ls'GDBk'dH1-'dH.?DG*K"E$6M:3"Za/'dH1-'dH.?@7W^hE$6M43!^7*BO!S"1`8:^2aKDcCF;)(BN.>uC._bq#nmP!A3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'FA5)%DFI`1DF?cdBM1ZdDFd,kF\P,#D,Nl-?qFW[2@hfS)EJ'(1`7r"##6g)##/?+C.(H^"<h#FBM(Tj?rB6h@7aR!DG")3D+dApBLkKlG>Cq:CfM&X.N'61Go]L`CIploGo[e.Go]F^CIq6(GmGAo2dA?O2aKDcCF;)(BN.JuCen>##SIj^4@(qhCF;)(BN.Z,Da[kp#T+9m3'g#$(EF@t'GDBk'dH1-'dH.?C/7,lE$6J8.P447*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%DbEB"G=bJ3@8K<hG>:h.DGWc&?qFNuC.1ih#nmOrA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'FA5)$CdhN.@7<jcDG=;3@8B6dBLtp!G>C_4?r[dL.N'61Go]L`CJ$unGo[e.Go]F^CJ%&tGmGAo2dA?O2aKDcCF;)(BN.;sC.hhr#SIj^4@(qhCF;)(BN.8p@7a`g#T+9m3'fu#(EF@t'GDBk'dH1-'dH.?DbNZ#E$6J8.P447*tB"q4=<*NCF;)(BN.]&@8'rj"B7fg@73RZCJ$ifFA>5.Dc0)&CJ[GuBhpugCJI2g#nmOrA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'BM:ciDc/o"?qj`uCJ7E$G=4\m?r0QoC.)6,@73RW4:h`%0H*mlB0f!eCIqJ,2],KqAO/dcD+.D?0c:ls'GDBk'dH1-'dH.?C/7,sE$6M:3"Za/'dH1-'dH.?CedZ)E$6M43!^7*CKrn%1`8:^2aKDcCF;)(BN.JuCe.hq#nmP!A3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'BM;*(CJmW%D,=A4Bgb9^C/.5oBM:fjD,Ni#DcJ%k.PXL;*tB"q4=<*NCF;)(BN.]&@8'rj"B7fg?qN^ZBM:lrF\tV+Cd_H2@7Wj`?qj!fG>:G-DH.8Z.N'61Go]L`CJ$lkGo[e.Go]F^CJ$rqGmGAo2dA?O2aKDcCF;)(BN.;sC.)>k#SIj^4@(qhCF;)(BN.8p@7jfh#T+9m3'fu#(EF@t'GDBk'dH1-'dH.?DbNZ*E$6J8.P447*tB"q4=<*NCF;)(BN.]&@8'rj"B7fg@73RZCJ$ifFA>5.Dc0)&CJ[GuBhpugCJI2g#nmOrA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'BM:`iBMq5pD,+2.CJ7E$G=4\tF\P8%Bhhi1C/7;k4:h`%0H*mlB0f!eDFme/2],KqAO/dbCeReE0c:ls'GDBk'dH1-'dH.??qipZ">(Mn1`8k<##6g)##/?'CICK]">(/d/KID[Gqp*E4>@caA2#N2!\c-&ECE;sE$6J8.P447*tB"q4=<*NCF;)(BN.]&@8'rj"B7fg@73RZCJ$ifFA>5.Dc0)&CJ[GuBhpugCJI2g#nmOrA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'BMClqDc0#*D+Ri)CJ7,oG=k5#DGWc#BMCigD+IAtE#BQ!Go7M*Gn(E&/.NR8!_k+M'GDBe!_t1N#T+9m3(GVu"@4=C3"Za)!_=bH#nmOr@OFH*A24l04>@ca@OFK+A1SZ2#QYMH4^9uK/K"a"3"S(Y2aJ&l2]i#,2A07e2%pc-2-^l&.1c\N2%pc-2-^o'3%$[JCF;)(BN.DuBMMhs"<ABcGo\Ok##6g)##/?#BMCrg"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.DsBhVerE"s!Q2\Q0Y4'Van4;(U*49ts"2d?q(4^9!2Gq0gG2&JbL/JJd+GngrZ$5jZb3X@_I/K"a"3"SYf'dH1-'dH.?Cdh&sE$52h4;(UG'GDBk+ttNE!\c-&ED8btCfMo['dH1-'dH.?DbNW(E$8=:##6g)##/?+Bh;So@PB<0!\c-&ED8`'D,i#e'dH1-'dH.?Cdh#tE$5N?#nmPM)EJ'(1`7r"##6g)##/?+C.(H^"<h#FD+[N,F[SJqF\tS2BMMh;2%L9+5?oQ?2&R2H'HI/X.hrd0A3i1;CF;)(BN.Z*BMVnt/JJd+Gqh;f2aIs-##6g)##/?(C.q#f"@kF6CF;)(BN.E#BLlDm,V^PQ.R?!>.ifK3!\c-%!\c-&ECEB%BiQTGED]/&D+Ri-Cf!AnCeS+=2%L9+5?oQ?2&R2H'HI/X.hrd0A3i1;CF;)(BN.DuBhDYp/JJd+Gqh;f2aIs-##6g)##/?#C/%)g"@kF6CF;)(BN.JuD+%Yn@PB<0!\c-&EC<,nE$5N?#nmPM)EJ'(1`7r"##6g)##/?+C.(H^"<h#FCd^]mF[SJj@73R`E#BK(4;AJr$5jZb3X@_I/K"a"3"SYf'dH1-'dH.?BMCloE$52h4;(UG'GDBk+ttNE!\c-&ECiW(CK2fc'dH1-'dH.?BMV&pE$8=:##6g)##/?!C.q;n"9CM=2@iA%*tB"q4=<*NCF;)(BN.]&@8'rj"B7]cBMM&nBLQ$$Ce@Do4;&2m4:h`%0H*nI2@^Q/CKpiI4;(U#5?oQ?2&R2H'HI/X.hrd0A3i1;CF;)(BN.Z*BMVnt/JJd+Gqh;f2aIs-##6g)##/?%DGNYm"9CM=2@iA%*tB"q4=<*NCF;)(BN.]&@8'rj"B8N$Bh^uiCeR,u@80!gCemJsCf!JqG>(D&BLtouDbEf)@7rm^FAGD(Dc/o!Bgb3iDbNl%DFn+<2%L9+5?oQ?2&R2H'HI/X.hrd0A3i1;CF;)(BN.DuBhDYp/JJd+Gqh;f2aIs-##6g)##/?&Bhq/i"Ah'?CF;)(BN.;sC//%u,V^PQ.R?!>.ifK3!\c-%!\c-&ECEB%BiQTGED]#'CID9(@8L*-?qF'b4:h`%0H*nE4:i))/MRtV4:WA52*jee##6g)##/?#BM;)l":,tO2dA?q2A/Ru'dH1-'dH.??qa9e"@kF6CF;)(BN.](BiQTa'dH1-'dH.?C/7,oE$8"1##6g)##/?!C.Uid"9CM=2@iA%*tB"q4=<*NCF;)(BN.]&@8'rj"B8)nBMq?$@890iC.^ik?r09hCf3u.@803p@73RhBM_2qBLtomCemc(Db`Sj4:h`%0H*nE4:i))/MRtV4:WA52*jee##6g)##/?%DG3_r":,tO2dA?q2A/Ru'dH1-'dH.??qj'^"9CM=2@iA%*tB"q4=<*NCF;)(BN.]&@8'rj"B8N#C.(?`CJRZ#FA5/(D,+@@2%L9+5?oQ?2&R2H'HI/X.hrd0A3i1;CF;)(BN.E!Ce7nr/JJd+Gqh;f2aIs-##6g)##/?+BhM_q,V^PQ.R?!>.ifK3!\c-%!\c-&ECEB%BiQTGEDB5/F\>5#F@eek4:h`%0H*nE4:i))/MRtV4:WA52*jee##6g)##/?!C/%,h":,tO2dA?q2A/Ru'dH1-'dH.??qj!lE$5N?#nmPM)EJ'(1`7r"##6g)##/?+C.(H^"<h#FDbNYtF\>h3BMV&rE#BQ!Go7G14;AJr%MK$W4\o#n0c:ls0H*nE4:i))/MRtV4:WA52*jee##6g)##/?'?q!LV":,tO2dA?q2A/Ru'dH1-'dH.?@7s*_"@kF6CF;)(BN.Z)BN6K&'J(17A3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'FA52-DFn#2@7`mgDb`SoC/78mDG*K$BhD*(CIgom@743mBM:`iBi7>qBhh#lD,3N"E#BK(4;AJr$5jZb3X@_I/K"a"3"SYf'dH1-'dH.?BMCloE$52h4;(UG'GDBk+ttNE!\c-&ED&YsCK2fZ'dH1-'dH.?Ced>qE$5N?#nmPM)EJ'(1`7r"##6g)##/?+C.(H^"<h#FBM;-(C/@DsCJ\/<?q<[X4:h`%0H*nE4:i))/MRtV4:WA52*jee##6g)##/?%DG3bs":,tO2dA?q2A/Ru'dH1-'dH.?@7isiE$8"1##6g)##/?,DFn+t,V^PQ.R?!>.ifK3!\c-%!\c-&ECEB%BiQTGECr]!G=kA,D+[2tD+-ol@7rm^DF@Z3C.^`mDG<AmCe6ll@743mBMLitBMq?#?qimbDb`Sj4:h`%0H*nE4:i))/MRtV4:WA52*jee##6g)##/?!C/%2j":,tO2dA?q2A/Ru'dH1-'dH.?DbWT"E$8=:##6g)##/?!DGNSk"9CM=2@iA%*tB"q4=<*NCF;)(BN.]&@8'rj"B7]g?q=Br@8C!'C.2D42%L9+5?oQ?2&R2H'HI/X.hrd0A3i1;CF;)(BN.DuBgl;k/JJd+Gqh;f2aIs-##6g)##/?&BM1T_"9CM=2@iA%*tB"q4=<*NCF;)(BN.]&@8'rj"B8N.D,O&.Ce@E#BhUutD,!8k@7aX&CJ7&mC.q?+BLkBhC/%f1BMV)lBhV3"@7<RaCIqe92%L9+5?oQ?2&R2H'HI/X.hrd0A3i1;CF;)(BN.DuBM;\q/JJd+Gqh;f2aIs-##6g)##/?!DGNPj"9CM=2@iA%*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%C.UZkF\"kuF\tJ/BM2V82%L9+5?oQ?2&R2H'HI/X.hrd0A3i1;CF;)(BN.JuBMMhs/JJd+Gqh;f2aIs-##6g)##/?!C/%#e"9CM=2@iA%*tB"q4=<*NCF;)(BN.]&@8'rj"B8N-D+-`bDaZunDb*8rCIqW0Cen58@7j!jCJ$rpDF?ojCf!E$DG+/0D+$]eCICTgCfM&V4^8R.4^8R.4^99K4:_ED49u[.57&5./JT36EE*ha3ZT&)(E!2SA1[fd.L7s@4<GY<E"3Hr/.NR8!_k+M(E!2S!_k+>!_t1N(E!2S!_t1?!`(7O(E!2S!`(7@!_=bH(E!2S!_=bB!_FhI(E!2S!_Fh:!_OnJ(E!2S!_Om_4;&2m2%pc-2-_7*3tFn"!\c-%!\c-&ECrSqD,i#KA1JZ04VIp#%363W'dH1-'dH.?DbEQ$E$8=:##6g)##/?!D+-]^"BAP`'dH1-'dH.?D,3PtE$6Z:%M]le2@E8=3$)<X##6g)##/?(C.q&g"Ah'?CF;)(BN.K'?q=QeE(;Q7##6g)##/?(CJ.>n"<g>n0G4p*/k-rb4&e1%CF;)(BN.5oDF@boFYG=C!\c-&EDJi'D,i#W@OF,tCF;)(BN.E#BLH,i"@47>2]*JJ@ji&mEA/n?!\c-&ED8bt@9"aP'dH1-'dH.?C.M'#E$8L_!\c-%!\c-&EDJl)@9"a?A1JZ04VIp#%363W'dH1-'dH.?BMC`qE$8=:##6g)##/?!D+-]^"BA5W'dH1-'dH.?BM(]sE$6Z:%M]le2@E8=3$)<X##6g)##/?#DbWqu"Ah'?CF;)(BN.K'?q=QeE(;Q7##6g)##/?(C.q)h"<g>n0G4p*/k-rb4&e1%CF;)(BN.5nBhhqtFYG=C!\c-&EDJi'D,i#WFXK.2CF;)(BN.;sC.2Dl"@47>2]*JJ@ji&mEA/n?!\c-&ECrVq?r\XO'dH1-'dH.?C.M'#E$8Lh!\c-%!\c-&EC`SuC/l]HA1JZ04VIp#%363W'dH1-'dH.?D,3PrE$8=:##6g)##/?!D+-]^"BAP`'dH1-'dH.?BM(`mE$6Z:%M]le2@E8=3$)<X##6g)##/?#Db`\m"Ah'?CF;)(BN.K'?q=QeE)82@##6g)##/?#Db`_n"<g>n0G4p*/k-rb4&e1%CF;)(BN.E#CJA(uFYG=C!\c-&EDJi'D,i#W@OF,tCF;)(BN.5o?qjoj"@47>2]*JJ@ji&mEA/n?!\c-&EC`Q&BN6KW'dH1-'dH.?C.M'#E$8L_!\c-%!\c-&ECrSqCfMoJA1JZ04VIp#%363W'dH1-'dH.?DbEQ#E$8=:##6g)##/?!D+-]^"BA5W'dH1-'dH.?DbEQ"E$6Z:%M]le2@E8=3$)<X##6g)##/?&DGEMj"Ah'?CF;)(BN.K'?q=QeDugda3ZT&)*utOq#osZ`A1//n.OR2<CF;)(BN.;tCIh_p"@b<^3#VcQ3#`H&BN6eh.hO$.4rI*L4:Df63!^H8EA/n?!\c-&ED8l&BiQTS2%pc-2-_m<.hO`F0,YU5*utOq#osZ`@ji9!4qJ<!'dH1-'dH.?CedZ'E$8<e3"Q<!E&n^G1b]LV4:k7=2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?(CILoh"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I%7+Gp>+)'dH1-'dH.?D,*f0E$6YH0c:ls.3B982,k2(2]i#,2A07e2%pc-2-^;#4:_E>3!^7*#RM(S/M[nS3)j/o2BNYEGmscY.L7.(/J&M#.1c\C'dH1-'dH.?BMCs"E$6Yi'dH1-'dH.?DbEMuE$6Yi'dH1-'dH.?D,*f,E$6Yi'dH1-'dH.?BMColE$6Yi'dH1-'dH.?@7W^gE$6Yi'dH1-'dH.?D,3Q$E$6Yi'dH1-'dH.?DbEQ!E$6Y;5?o*8/R/Ms.hrs*!\c-%!\c-&ECrSrCfMoJE=DpQ.L7.(/J&Li-j^Is/N=I]3%%!UE!REf2d?Ok.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.JuCe7nrE#BQ!GngrZ.1c\C'dH1-'dH.?BMCs"E$6Yi'dH1-'dH.?DbEMuE$6Yi'dH1-'dH.?D,*f,E$6Yi'dH1-'dH.??qipjE$6Z:A/Z0n.N)2%0c:ls"pb?)-j^Is/N=I]3%%$VE"s!Y.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?C.U]hE$6Z*-j^Is/N=I]3%%$V!\c-%!\c-&EDJl$BN6KFE$mV-CF;)(BN.DuBLlDm"@,OZGmGAo2d?Ok.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.Z,DG4>"FU\?U.L7^0/KHK@"Af7;4:_E>3!^6YCEZsf2],Ku2%L9+5?n=%.jm;=CF;)(BN.DuCIMMm"=H/kCF;)(BN.;tBM2Vp"=H/kCF;)(BN.5o?q=Qe"=H/kCF;)(BN.](CdhVn"@5Tq.gZeT/JJd+GngrZ/e\Ep.L[$l4=<*NCF;)(BN.](D,+A#"@b-R2]+:W.h;V&0bkN1E=DpQ.L7^0/KHKB"B>F04;(Ts2@`\KFUD(T2d?Ie0Fe=\/e\Ep.L[$l4=<*NCF;)(BN.](D,+A#"@b0O/O(3^2&HN%2cO'T4VLd%5?p&^/KGW5!\c-%!\c-&EC`PuD,i#KE=,tf0c:ls0H*n*!\c-%!\c-&ECrSs?r\X>A3gA74:_E>3!^6YBH[?`4;(U#5?nF0.hrs*!\c-%!\c-&ECrSrCfMoJE=DpQ.L7.(/J&Li-j^Is/N=I]3%%!UE!REf2d?Ok.2`j:Gmb>o/Q?""/I3'k1+,%DCF;)(BN.;tBMDbr"B5Fu#!4Ik##6g)##/?(CILoh"<h%d2[CE7GnM&4Gp>+)'dH1-'dH.?D,*f0E$6Y=.pN-8'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BLtopE$6Z;A5#r2.pNu$/R/?:'dH1-'dH.?BM(ZkE$6Y=.pN2f.jm;=CF;)(BN.DuCIMMm"=H/kCF;)(BN.;tBM2Vp"=H/kCF;)(BN.5o?q=Qe"=H/kCF;)(BN.](CdhVn"@5T_3"Q<!Go7G14Br'p.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.JuCe7nrE#BQ!Go7M*Go7M*Go7M*Go7G14BsBQ.9$Hd4:_E>3!^6YD'<0l5?nBs.1dL"3!^*$@lbV>4ZXSq.L7s@0G"dg-j^Is/N=I]3%%-YE!REf2d@jL.9'Oa4:E&63ZS2)4[q162]+:W.h;V&0bkN1E=DpQ.L7^0/KHKB"BA_e'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?BLtlpE$6Z%)EJ'(1`7r"##6g)##/?+C.(H^"<h#KF\bD$BiSFC2],Ku2],Ku2],Ku2],g)2],Ku2],Ku2],g22BNYEGpiju0,YTS.iAR'A3(G;1b9@E4@UG%4rY=CEA/n?!\c-&EC<,kDcJ5^591RP4B3L93!p6.*=`Ym.RlK/)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.Z,D+\(t"@4452$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXBN5TPGngrZ#!4Ik##6g)##/?,D+Huc"<daQ4;(U,3ZT%JE>eie3X?`72cO&i5?n=%.jm;=CF;)(BN.;tBMMhs"=H/kCF;)(BN.5o?pn9a"=H/kCF;)(BN.5oDFIhp"@>[ZBhVJB0c:ls0H*n)2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&ECEB%BN6KF!\c-%!\c-&ECrSq@9"a?!\c-%!\c-&EC<&gBN6KFA3g2-//_Cg2],L.2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&ECEB%BN6KF!\c-%!\c-&ECrSq@9"a?!\c-%!\c-&EDK)%CK2fIA3iUN/JJd+Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECil$D,i#\'dH1-'dH.?BMCcjE$8L6-j^n-%N,up2A07J##6g)##/?+C.1B["B>X1.2`j:Gmb>o/Q?"</IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B7fdD+e&3BMLfgC.h`,DFm8sBhhc*BMV)uG=k,)@9$SK2[CE7GnM&4Gp>+)'dH1-'dH.?@7WX`E$6Y72%L9+5?n:!.i/F(3$/_l'dH1-'dH.??r'KnE$6Yi'dH1-'dH.??r'HoE$6Yi'dH1-'dH.?DbEQ(E$6Yi'dH1-'dH.?@7WmdE$6Z:A/Z0n.N)1e2],L.2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&ECEB%BN6KF!\c-%!\c-&ECrSq@9"a?!\c-%!\c-&EDK)%CK2fIA3iXO/JJd+GngrZ*"ihn0Gt*u*u,\!*u+tk/O(3^2&KRO##6g)##/?'?pm@S"B>F04;(Ts2@`\KFT`1A0G7=u3#)W/EB+pA1_gT6@lk8=)AF2&4Ur&5EE-9L2I%7+Gm"U:'dH1-'dH.?DbEK%E$6Z:A2#N2!\c-&ECil/DH/+e2],L</I3'k1+,%DCF;)(BN.5oDFe%s"B5dIE!REf2d?Ok.2`j:Gmb>o/Q?""/I3'k1+,%DCF;)(BN.;tBMDbr"B5dIFX&\%'dH1-'dH.?@7WX`E$6Z&/.qpi2-_XW!\c-%!\c-&EC<&nDcJ5MA3gh02%L9d2@`\*,:>H5CF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@,OWGn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECiW(@9"aK4;&2m4;&2m4:h`%Gp<;&EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'BMUlmG=tA%D,<`%G>CS,BM(ZiF\tS(CIq]0D+%&iE#BQ!Go7G14Br'p.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.8p@74BbE#BQ!Go7M*Go7M*E#BQ!Go7M*Go7M*E"Erg3"T%L2@2r$3"?f^3#`H4%20BX2&TXP##6g)##/?%DGNVl"Af^42%L9k!tt]<((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.??qiseE$6Z:%ilK&4BrI-4]M_#3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf4t4VLd%5?o]a!\c-%!\c-&ECE;rDH/,L/JJd+GmkJj2%X!r/.ra80G>?tE"s!Q.1c\C'dH1-'dH.?DbEMrE$6Yi'dH1-'dH.?D,*f0E$6Yi'dH1-'dH.?D,*H%E$6Z9A5,?gBj:WG4;(U#5?nBs.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.E!CeJ%tFYG=C!\c-&ECE<#BiQTSA3i^Q/JJd+Gngrb.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?DG*K(E$8LZ!\c-%!\c-&ED&Yq?r\X>-UAXX2-^+h4;(U*4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?#@899a"Ah'?CF;)(BN.DuCee8"E"s!Q.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?DG*5nE$8=:##6g)##/?(C.poc"BA$"Bj:WG4;(U(2BNYEGm[+g4:!kS2\H]&/JT36*"ihn0Gt*g'dH1-'dH.?BMCchE$8Ko5?n7W/JJd+Gn(E"4<4Dh/fbrKEE+k4/KGW5!\c-%!\c-&ECrSrBN6KFE=,f1*[`p0CF;)(BN.](DbFA""B>I3/JT*i2\Q0Y#!4Ik##6g)##/?+BM(Wa"<e]rGnM&4GmZ2X##6g)##/?#DbNPk"<e]rGmZ2X##6g)##/?!Ce7#e"<fEO##6g)##/?#Cdgid"<g<BBj<S)4<GYOCKq&J.2`j:Gmb>o/Q?!f4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?#@899a"Ah'?CF;)(BN.DuCee8"E![F!0G%2+0c:c5A3iXO4:h`%Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ED9,(CK2fZ'dH1-'dH.?DG*5nE$8=:##6g)##/?(C.poc"B>O*0F1oXBN56@.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.E)CJJ/!FYG=C!\c-&ED&Z#BiQTX'dH1-'dH.?D,3Q"E$8Kk2],Ku2%L9+5?nBs.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.>uD+n5!FYG=C!\c-&EC`SuCfMoVA3iXO/JJd+Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ED9,(CK2fZ'dH1-'dH.?BMCciE$8Kk2%L9d2%pc-2-^2h*Z4r#2A-o43X?`72`Vc\1_gT6EA/n?!\c-&EDJl%DcJ5Y0H*n*GmGAo2d?Ok.2`j:Gmb>o/Q?""/I3'k1+,%DCF;)(BN.;tBMDbr"B5Fu#!4Ik##6g)##/?+BM(Wa"<h%d2[CE7GnM&4Gp>+)'dH1-'dH.??qiseE$6Y=.pNu$/R/?:'dH1-'dH.?BM(ZkE$6Y=.pN-8'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BLtopE$6Z;A5#r,2%L9d.iAHo3!`It3#)EdE$G>rEBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'CJIQ-G=4hrF\P.rBLG3dDG*8k@7j$aBhpuoBhM`(/.qpi2-_%./R0eO!\c-%!\c-&ECE;rDH/,L4;&2m4;&2m4:h`%Gngrb.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?DG*K(E$8LZ!\c-%!\c-&ED&Yq?r\X>A3h+@2-^+h4;(UP3$&YB*>nnc2*(pW0F0$B2@^=*+oref3uJk_4:3)>*tA;Y/MdM62aIrq58+5g0Mhg<0G7=u3#)W/E=NQo2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECrZ(CfMoVE#9N]58+5g0MPXaBNuPeGmkDp.h>l"E#9N]0H*mtBL,3C##6g)##/?&DG3bs":,tO2d?=a3tMu`'dH1-'dH.?BM(`kE$6Z'%362g2)l0_0G#uO//8.=/JA<mFUCQ04;&2m4;&2m4;&2m58+5g0Mhg<0G7=o49PX[E>oW&4=<*NCF;)(BN.Z0Cee8""@aU;0F0EB.mG!\2&KRO##6g)##/?+BLtWb"BA_e'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ED8l&D,i#W4VLd%5?n7L'dH1-'dH.?D,3Q!E$6Z9A5,HjBhUonGmGAo2d?=a3tMu`'dH1-'dH.?BM(`kE$6Z'%362g2)l0_0G#uO//8.9.2a%"0./_ACF;)(BN.;tBgl;k"B?$C4^8R.4^8U..pO)j*>nnc2*(pW0F0`R4;'=V2@`[n2d?Ie0Fe=\%362g2)l0_0G#uO//8.9.2a$r4VLcu2@`[nBM^Ae0,5<M.g[44$4%R_4Brm9GmkDp.h>lD3$&YB*>nnc2*(pW0F0$B2@^<k4VLd%5?olH0,5<M.g[44((:ca*>9A(A3hmR0,5<M.g[44$4%R_4BrU14]DUi.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.>uC.)>kE)ePE##6g)##/?%DGNu!"<g?C2\d/s/JJd+GngrZ2\Q0Y.1c\C'dH1-'dH.?C.UZoE$6Z5*u,\!*u+tk/O(3^2&KRG4:3)>*tA;Y/M@)4.iDV/0c:ls.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?BLG<eE$8=:##6g)##/?#BLtK^"AgcV0,5<M.g[44$4%R_4B2t(.N)1t4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?#@899a"Ah'?CF;)(BN.Z,DG=D#FYG=C!\c-&EC`AoCfMoV.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?BLG<eE$8=:##6g)##/?,D+d;i"Ah'?CF;)(BN.5tBhDYpE"3Hn2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ED9,(CK2fZ'dH1-'dH.?@7Wa`E$8=:##6g)##/?(CeR2g"B?$C4^8R.4^8R.4^8R.4^80q.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.E)CJJ/!FYG=C!\c-&EC<&kBN6KW'dH1-'dH.?D+R,rE$8L!4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?#@899a"Ah'?CF;)(BN.Z,DG=D#FYG=C!\c-&EC`AoDcJ5Y.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?BLG<eE$8=:##6g)##/?,D+d;i"Ah'?CF;)(BN.5tBhM_qE#BQ!Go7M*Go7G14Brm1Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ED8i%DH/,]'dH1-'dH.??qj<nE$8LnA5#r=0c:ls0H*n%/Iid14sr<PCF;)(BN.;tBLuJn"B5L7.jm;=CF;)(BN.DuCIMMm"=H/kCF;)(BN.;tBM2Vp"=H/kCF;)(BN.5o?q=Qe"=H/kCF;)(BN.DuBMVnt"=H/kCF;)(BN.Z,Dadqq"=H/kCF;)(BN.5nBh2Mn"=H/kCF;)(BN.;tCJ.qs"Ah'?CF;)(BN.JuCe@tsE#fi%E=W$]0G5$Y'dH1-'dH.?DbEN"E$6Z'.1c\C'dH1-'dH.?BMCs"E$6Yi'dH1-'dH.?DbEMuE$6Yi'dH1-'dH.?D,*f,E$6Yi'dH1-'dH.?BMColE$6Yi'dH1-'dH.?@7W^gE$6Yi'dH1-'dH.?D,3Q$E$6Yi'dH1-'dH.?DbEQ!E$6Z+'dH1-'dH.?BLG<dE$8Kg2],L-2%D8m##6g)##/?#BMM8o"<fEO##6g)##/?&DG<Jj"<fEO##6g)##/?(CILK\"<fEO##6g)##/?+BLtoj"<g?C/IhdcE!REf2d@1.3ZT&)00qAu/O(0`2]3DJ0G>?O2]3J?4:b[M##6g)##/?'?q!RX"B?HGGm[Le0c:ls.3B982,k2(2]i#,2A07e.iAHo3!`It3#)EdE'41;3$05%'dH1-'dH.?DbEMsE$6Z'02O/E!\c-%!\c-&ECE;rDH/,LE![F!0G%1m2@*7s!\c-%!\c-&ED8buBiQTG2@`\$!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HAO/^O2@`\K*[`p0CF;)(BN.](DbFA""@5T_3"Q<!GnUBL.1c\C'dH1-'dH.?BMCs"E$6Yi'dH1-'dH.?DbEMuE$6Yi'dH1-'dH.?D,*f,E$6Yi'dH1-'dH.??qipjE$6Z:A/Z0n.N)1i2],g)2%L9d"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#JBh:Zd?qs'hBM_,oDGif!D,3T(F\P>,CJmQ)BhD)lE#BQ!Go7G14BsBQ.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGED\u%Dc0&/?qEg`DGOG7CJ7-"Cd_B&?q"7'?qF'mDcL'I2],Ku2%L9+5?nBs.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.E!CeJ%tFYG=C!\c-&ECE<#BiQTSA3iXO/JJd+Gn:np3"T%(A31A>)A="u4<FP12A._R4:rS<.TAAiCF;)(BN.E$@7jfhE"s!Q03eJb4;(U*4:Df'/R/AZ0F1oU(^L*C3YsG&##6g)##/?&DG<Pl"<h"bFX&\%'dH1-'dH.??qiseE$6Z&/.qpi2-_%./R/?:'dH1-'dH.?BM(ZkE$6Y=.pN-8'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BLtopE$6Z;A5#r2.pOSM!\c-%!\c-&ECE;rDH/,LA3gh02%L9d4:h`%Gp<;&EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'CJ7H+G=5,&CdhH-D+%Q2C/%f1D+%Q2?qX!hCfOaF2],Ku2%L9+5?nBs.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.E!CeJ%tFYG=C!\c-&ECE<#BiQTSA3i[P/JJd+Gn(E"4<4Dh/fbrKEE+M*.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGED]//C._T+BM_,sBLlE$/.qpi2-_%./R0eO!\c-%!\c-&ECE;rDH/,L2\Q0*4;f&1)EJ'(1`7r"##6g)##/?+C.(H^"<h#FBLG-bG=YG)CIM?'C/RK"@7<I_BM_,sCeS#:?qO*nE)cuA0F1oXBN5rZ/IN-p2cM^^.ifK3!\c-%!\c-&ECEB%BiQTGED]//Cd_H2DGNZ$F\PS)C.gonD+[,jBM1ckG>(G0BhM`(/fbrKEDf4t2\Q0*4;f&1)EJ'(1`7r"##6g)##/?+C.(H^"<h#FBLG6bG==bnCIhQ*Dc/l#@7<UhCf!Q"CeS#:?qO*nE)cuA0F1oXBN5rZ/IN-p2cM^^.ifK3!\c-%!\c-&ECEB%BiQTGED]//Cd_H-Cd^coF\P1s@7iphC/%&kBM1frG=tY2D,";./fbrKEDf4t2\Q0*4;f&1)EJ'(1`7r"##6g)##/?+C.(H^"<h#FBLG0jG=b%sCIhQ*Cf3u3DF?clF\P2,BMq5sDb3YqE!mBf/Q>nOE"X*+/f>61EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'FA5G-Bi7?&DFIZ*Dc/i(DF?liDGWc%@7XR&CJR9$E)cuA0F1oXBN5rZ/IN-p2cM^^.ifK3!\c-%!\c-&ECEB%BiQTGED]//BLQ*%DbiVpF\P+qDFHihDb=,0DG<Jm?q`maCfOaT3#)EdG>2?P2@'Bh4;(mA*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%@806dCe[T)C/@?#G=4brD+dB!F\P5#D,N`)Ce-ueE#BQ!Go7M*Go7M*Go7M*E#BQ!Go7M*Go7M*E&n^G1b9@E4@U\&.2`<k/JA=]'dH1-'dH.?DF@3!E$8Kt2BNYEGpj+63"c3F/KFg,.R>fk.hO$.4rI*O3"?Z+.iea#EA/n?!\c-&EDJquD,i#\'dH1-'dH.?DacoiE$8Ku.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>/24VLd%5?n:!.i/F(3$/_l'dH1-'dH.??qim`E$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?!DGNMi"B>F04;(UP+:]+q/M@)*/I;Yb$5igk4:`6$'dH1-'dH.?D,*H"E$8Kk2%L9d%0Zq;2[CcI3!]Nr@kSE1*>o(^EA/n?!\c-&ECrSq?r\XJ4;&2m4;&2m4;&2t2%pc-2-_m<.hNmB.ifNEA3(G;1b9@E4@UG%4rY=CEA/n?!\c-&EC<,kDH/,]591RP4B4-<.hNmB.ifNE@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&EC<&mCK2fIA1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nOE#9N]0H*nQ*[`p0CF;)(BN.Z,Cee8"":,tO2d?Ic3"Qp"57&5./JT36EE*ha3ZT&).1d444:Xpr2%ERm5?o*8/Q;i`3!Bm+Go[e.GmkMk+;kAC'dH1-'dH.?BMComE$6Z&/JJd+Gn(E&/.NRc4;&2m2%pc-2-_+5.7"(I3!Bm+!\c-%!\c-&ED8l"CK2fI@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?BMV#pE$8Ko5?o*8/R08-.9li\4;(U*49ts"2d?q(4^8g43ZT&)4;&590Gt*A2@pE(.mX7G.i/F(3$/`8*u,\!*u+tk/O(3^2&KRO##6g)##/?+BLkTb"B?9I3ZT&)3thi1#nmPM%iH0"2@`5:'dH1-'dH.??r'HpE$6Z'FA5)!Da[c+@7s^#Cee/6BM)B)C.1NbDG*Jl0H+1(.h"'a##6g)##/?!Ce7&f"<gnK2@g$K2@j(Q'dH1-'dH.?BMCosE$6Z9Cg6rJ4;(UU/IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B6-F.M!d5.TKad4:Df'/R/AZ0F1oU/.qpi2-_%./R0eO!\c-%!\c-&EC<&mCK2fI2@`\"2'!,1.jm;=CF;)(BN.DuBMMhs"<ABcE=<Zc+;kAC'dH1-'dH.?BMComE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?#C.q#f"B?0G4]DOp3!Bm+!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KFF<2A4.P)MME$mV-CF;)(BN.DuBLlDm"@,OZE#BQ!Gn:np3"T$i2@g%!4;&590Gt*A2@pE(.pNeu4^8R.4:rS<.QSLZ4W+H,*u,\!*u+tk/O(3^2&KRO##6g)##/?!DGNMi"B?HGGodn9.U3\t4]E1*.M#9#0G4pC0Fe=()AF2&4]FC'CF;)(BN.K&CeS+uE#fi%Godn9.OR2<CF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@>LK/JJd+Gn(E"4<4Dh0H*n"2@*8E*[`p0CF;)(BN.Z,Cee8"":,tO2d@+14<5M24;&2m0H*nQ*[`p0CF;)(BN.JuBLQ2j"<ABcGrZ$D0FT013"-`8GmGAo2d?Ic3"Qp"*";oU.4Yu3.2*Uq#!4Ik##6g)##/?!C/%Dp"<h%T2],L$5?p&^/KGW5Go[e.Gs)-D3$05%'dH1-'dH.?DbEMsE$6YH0c:ls.3B982,k2(2]i#,2A07e(^L*C3YsG&##6g)##/?&DG<Pl"<h"N2@g$g#!4Ik##6g)##/?,D+R2h"<h%T2],g)2],L.3#)EdE![F!0G%1m2@*8E*[`p0CF;)(BN.Z,Cee8"";:u,2\Q0Y3thi1!\c-%!\c-&ED8buBiQTG2@`[q2@*7_2@g$q*u,\!*u+tk/O(3^2&KRO##6g)##/?!Ce7#e"B?BQGodn9.OR2<CF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@,OWGn(E&/.NRc4;&2m2%pc-2-_"-4"qZd/O9n###6g)##/?%DGNSk"@kF6CF;)(BN.JuCen>#@PB<0!\c-&ECE;tE$8"1##6g)##/?&BLG*X"9BMHGo7M)1_gT6*toIr4:Y=,0c:ls58+5g##H0G4#.N\4Brm9GngG`0Fe=\1_UWX0Fn.U4VLd%5?o*8/R0eO!\c-%!\c-&EC<&mCK2fI/JJd+God.o3#>Nu2],Kt2@`\KFV,PnGnh5b0FS['.h>kh2]3J?4:a1U2&Ho;@lk8=)AF2&4Ur&5EE-9L2I%7+GnM&4Gp>+)'dH1-'dH.?@7W[]E$6YH0c:ls3t;i(10bD#4^9!2GnCtrGo[e.E=j,j!\c-%!\c-&ECrSs?r\X>A3h(A4#.N\4BrU14]E:-4%:t42]+:W.h;V&0bkN1EA/n?!\c-&ED8r%BiQTS3"ccq1_UX-*u,\!*u+tk/O(3^2&KRO##6g)##/?!Ce7#e"B?0G4^8j54"!!MCF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@>LKE)clG4;(U$.h"u_2'!,1.jm;=CF;)(BN.DuBMMhs"<ABcGmkMk+;kAC'dH1-'dH.?BMComE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?#C.q#f"B?HGGnM&4Gn^GrGmGAo2d@+14<5M24;&2m0H+1(.h"'a##6g)##/?!Ce7&f"<gnX2BFM)##6g)##/?#C.q#f"<fEO##6g)##/?!Ce7&f"<h&1'dH1-'dH.?BMCosE$6Z9CeR5qGmGAo2d@jL.9%/n4"!!MCF;)(BN.DsBhVer"=H/kCF;)(BN.E$@8:)l"BIH-.ifK3!\c-%!\c-&ECEB%BiQTGED0J2Bi%2iE"Erg3"T%*BgD_+3Yu$n.iAHo3!`It3#)EdE"iKiA.0:V+;kAC'dH1-'dH.?BMComE$6Y32],L-2'!,1.jm;=CF;)(BN.DuBMMhs"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&ED8r%BiQTS/.qpi2-_%./R0eO!\c-%!\c-&EC<&mCK2fI2@`[q2@*7i.h#Ac.o[K#.47);CF;)(BN.K&Ce\2!"Ap$F4"!!MCF;)(BN.DsBhVer"=H/kCF;)(BN.K&Ce\2!"B@*.##6g)##/?#BMC`a"<g<BDd44nGmGDj1/qOS/PJc@Go7M*Gn(E"4<4Dh0H*n"2@*8E*[`p0CF;)(BN.Z,Cee8"":,tO2d@+14<5M24;&2m0H*nQ*[`p0CF;)(BN.JuBLQ2j"<ABcGrZ$D0FT013"-`8GmGAo2d?Ic3"Qp"*";oU.4Yu3.2*Uq#!4Ik##6g)##/?!C/%Dp"<h%T2],L$5?p&^/KGW5Go[e.Gs)-D3$05%'dH1-'dH.?DbEMsE$6YH0c:ls.3B982,k2(2]i#,2A07e(^L*C3YsG&##6g)##/?&DG<Pl"<h"[2BGs_*[`p0CF;)(BN.Z,Cee8""B?$C4]N('4^8'j0F1oU/.qpi2-_%./R0eO!\c-%!\c-&EC<&mCK2fI2@`[q2@*7l2BFM)##6g)##/?#DbNPk"<e]rGnM&4GnCtr@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?C.U]iE$8Kq.pNr#4"!!MCF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@,OWGo7M*Go7M*Go7M*Go7M*Go7M*E#BQ!Go7M*Go7M*E"Erg3"T%83"?f^0c`.Z2\\h03"?f^3#`H4%20BX2&TXP##6g)##/?%@7<OU"Af^42%L9k*utOq#o"*t0G5@.((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.?DbNVuE$6Z:%ilK&4BrI-4]N=-3ZT&)57&5./JT36Gn1Jr4YIla2%VtV+B/RO0G#'L49]"*0G-`V$5j`e&fD-*0,YZEE<laa4AZ7g0G#'L49\gj3"Q<!FW2&*4B2Ib0F1oXBh;SF0G-`V$5j`e&fD-*0,YZEE>fQ&.N)>"1)1W:&fD-S591RP4AZ[m1`9R'2],L)2BNYEGo?\m3X?`72d?q-//8:32]*\L4>.c`2%X"/2A6od+:JiS2%pc-2-^q*3"?Z'/K"b!.1c\C'dH1-'dH.?BMComE$6Y@2BNYEGod\#1(4lt1-l$R.jm;=CF;)(BN.K&D+._o";MP:2\Q0a3YW;@3$/,).pNeu4]E4*3"?Z'/K"aq*u,\!*u+tk/O(3^2&KRO##6g)##/?!Ce7#e"B?0G4^8d23"?Z'/K"aP'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BLtopE$6Z9BiSFT0c:ls.iA=&.hYec2],Kt2@`\KFVOl\1gD%1GmkDp.h>kc3$04U3$05F*Z4r#0bkN1.iB6uE)dGXGngrZ0F/7#@l4K8EA/n?!\c-&ECrSs@9"aK3"cci0F/7#!\c-%!\c-&ECE;t@9"a?A3g2(2@puL.2c)$0c:ls0F/7#!\c-%!\c-&ED8buBiQTGA02cm.ifEB4:Y=)3#)EdG>1P!58+5g##GO10G#'g0G7=l.30E@.T?p3##6g)##/?(CeR5h"@kF6CF;)(BN.5tBh_ks@PB<0!\c-&EC`AoCK2fZ'dH1-'dH.?D+R,lE$8=:##6g)##/?(CeRMp"9Dd52I%7+GnM&4Gp>+)'dH1-'dH.?DbNVuE$6YH0c:ls3t;i(10bD#4^8*i3"Qp"57&5./JT36EE*5J2]*nJ0G#'L49\t$1)1W:E#BQ!E!mBf/Q>nOCK1rU4^9!D4:s5"##6g)##/?#DbNPk"<g>;3$04U3$0503t;i(10bD#4^8R.4^8R.4^8g43ZT&)#o"*t0G5?]2AI,H.R=Rf*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%Dbil#G=b8(C.^ik@7rm^BLtllBhLooBhCilCe7<$?q=BtD+I&hC/.#tCe[>tBLG3gE)8J>.ifK3!\c-%!\c-&ECEB%BiQTGED]/)CICijDbNl%DFmr.Cd_H)DbEJsDFd#mCIClqDbrl(DG451DaZupBLPWmBLG3gE)8J>.ifK3!\c-%!\c-&ECEB%BiQTGED]/)CIg`cD,!JtBgkNkCf!Q$@8]?eDadB#D+RH*DbNl,F\P,$C/RQ%CdgZjDFHlrDFn,0)EJ'(1`7r"##6g)##/?+C.(H^"<h#FBM(`lCJmDt@7rm^BLtllBM(WjBhL]mDb`u0BhDK*D+[,hC.Liu?q<^fBhCiqE(;i5.ifK3!\c-%!\c-&ECEB%BiQTGED]/)CJ@5l?q<U]@7<RaCIqW+Cd_H*DGESuDb`c&Cd^QmD,<YtCJJ&0?qX3q?qs-pDFn,9)EJ'(1`7r"##6g)##/?+C.(H^"<h#FBM(`oBi7Z&BLG3gF\P/'G==u!BhUfiD+-iiC.LTcBMV)oG=k;)?qNab?qO*lCfO7R*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%Dba#+G>(;+CeI/mBMLihBLtomC/.6%?pmCaDaZrnF\PA(DGir$C.1j#Bhh0"C.gibF[%Vn3"Z`^'dH1-'dH.??r'HpE$6Z'FA5(uC.VT-?qNab?qO*lCf!Q$?rBKkC.1j#Dbil&@7<RaF\PA'D,O&3Cdh#tC/.H#CIqeQ.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXBN5TPGngrZ#!4Ik##6g)##/?&Bhh)h"<daQ4;(U,3ZT%JE>eie3X?`72cO&i5?o*8/Q;i`.pNeu4]DOp.jm;=CF;)(BN.DuBMMhs"<ABcE=<Zr!\c-%!\c-&ED8l"CK2fI@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?BMV#pE$8Kg2],d52%D8m##6g)##/?#BMCrg"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.K&CeS+uE#fi%GmkN%!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HB1uT'E)clG4;(U*49ts"2d?q(4^8U..pOT#.2*^2/R0;*GngG`0Fe=\#o"*t0G5?]2AI,H.TI#gGngrZ2\Q0Y#!4Ik##6g)##/?&Bhh)h"<daQ4;(To.iB'-Go7M*Gp<;&E=<cn2[E\"2BNYEGo[)$0FABsA/Z0n.N)1r2BNYEGn0lV.gS]_0HVB0E!mWm2&T@00HVB0E)?iV3">pqBMMM.2],d/2@*7`.h3R74;_$!2],LV*[`p0CF;)(BN.;sCJA(u"B?!AGn:np3"T$s.h"u_2%D8m##6g)##/?#BMCrg"<eKh4^8+#.jm;=CF;)(BN.DuBMMhs"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&ED8r%BiQTS0H*n"2@*7i.h#Ac.pNu$/R/Dh.jm;=CF;)(BN.DuBMMhs";:u,2\Q0Y.1c\C'dH1-'dH.?BMComE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?!Ce7#e"B?BQGmkN%!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HAO/^O/JJd+God.o3#>Nu2],L)2BNYEGo.P5/O<VL.h"'a##6g)##/?!Ce7&f"<gn]2AI,H!\c-%!\c-&EDJl$BN6KFE$mV-CF;)(BN.DuBLlDm";MP:4V\2<AO/gR/JJd+Go[)$0FABsA-`AT4BrX64<5M24;&2m/fbrKEDf4t4;&2m0H*nQ*[`p0CF;)(BN.;sCJA(u":,tO2d@1.3ZT&)0b+=m.1c\C'dH1-'dH.?BMComE$6Y32],L-2%D8m##6g)##/?#BMCrg"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.DsBhVerE"Erg3"T$o0Fn.\A/#4]Go[e.E>/Tj!\c-%!\c-&EDJl$BN6KFF:9)q2[D&i##6g)##/?!Ce7&f"<h&1'dH1-'dH.?BMCosE$6Y=.pNqn/JKik##6g)##/?&DG<Vn"<echGo.P5/P\iCC0U`H4;(Tt-j^n-(_RB<.N'T>0G#'o'dH1-'dH.?D,*H&E$8Kk-j^n-(_RB<.N'T>0G#'o'dH1-'dH.?D,*GtE$8Kk-j^n-(_RB<.N'T>0G#'o'dH1-'dH.??r'HrE$8Kk2],Ku2],Ku2],Ku2],g)2],Ku2],Ku2],gH3"?f^3#`H4$5isN.ieTu.o\JjCF;)(BN.K$D,4G$E"Erg3"T%32%p3!/MS1R.R>fk.hO$.4rI*S2B*;?4B+:&CF;)(BN.Z0DbXM$FW(u*.N)M72%p3!/MS1R.RlK/)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.JuC.qns"@4452$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oU4VLd%5?o]a!\c-%!\c-&EDK)$BiQTG/JJd+GmkJj2%X!r/.ra80G>?tE#KZ-Gp?E+Gnh5b.30E@.T?KY.i/F(3$/_l'dH1-'dH.??qim`E$6Z5*Z4r#0bkN1.iB6uE)dGXGngrZ(^L*C3YsG&##6g)##/?(CJ-ob"<h"bE!REf2d?Ok.2`j:Gmb>o/Q?""/I3'k1+,%DCF;)(BN.;tBMDbr"B5Fu#!4Ik##6g)##/?!C/75i"<h%d2[CE7GnM&4Gp>+)'dH1-'dH.?C/7>uE$6Y=.pNu$/R/?:'dH1-'dH.?BM(ZkE$6Y=.pN-8'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BLtopE$6Z;A5#r,2],Ku2],Ku2],g)2],Ku2],Ku2],g22BNYEGrcZ?/JA=,$QU5m.R>fk.hO$.4rI*S2B*;?4B+:&CF;)(BN.Z0DbaS%FW(u*.N)M<3$/,/.g77$0Gk$t((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.?DbNQ'E$6Z:%ilK&4BrI-4]M_#3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf4t4VLd%5?o]a!\c-%!\c-&ECrVt@9"a?/JJd+GmkJj2%X!r/.ra80G>?tE"Erg3"T%(A31A>)A="u4<FP12A._R4:rS<.TAAiCF;)(BN.;tC.qnsE"s!Q03eJb4;(U*4:Df'/R/AZ0F1oU*";oU.4Yu3.2*Um#!4Ik##6g)##/?!C/%Dp"<h&5/IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B7Wf@8]?jDFm/jBLPWiC.U`k@80j!D+I)iC.(cnCee8./.qpi2-^2B'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BLtopE$6Z;A5#r2.pOSM!\c-%!\c-&ECrVt@9"a?A3gh02%L9d4:h`%Gp<;&EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'D+I>pD+[/rDbrl+?rBKqDbEc%F\tD*BMq?)?qs!bE)dJZ4^8R.4]N('4^8R.4^8R.4]N=-3ZT&))BB&!2&R_B0Gk%$*utOq#osZ`@ji9!4qJ<!'dH1-'dH.?BMV&oE$8<e3"Q<!E'G'K/J&LK3#)u9@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&ED&Ys?r\X>A1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nOE#9N]0H*nQ*[`p0CF;)(BN.>uBLQ2j":,tO2d?Ic3"Qp"57&5./JT36EE*ha3ZT&))EJ'(1`84R.L6jq$QU5mA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'F@e`$Dc0#'D,3VsC/%2mDG!T+CJ@o+CICEcG=b;'CJ.q?5?(l1*tB"q4=<*NCF;)(BN.]&@8'rj"B8N)Cemc"C/%,tCJR2lDFmr,BMVf9BhUfhDG<N&C.gigFA>P0CJmZ%CJRB#D+R5qCIqf(!\c-%!\c-&EDJl$BN6KFF:8uu!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KFE$mV-CF;)(BN.DuBLlDm"@,OZBhVJB0c:ls58+5g##G@g0G7=u3#)W/E=3]t1(OKh3Z0S(##6g)##/?+BLkTb"<gMc4:!kR0G"d-4;(mkE#9N]0H*n*@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?BMV#pE$8Kg2],d7@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?C.U]iE$8Kg2],L/!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HB1uSI0c:ls0H+12!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KFF:8uu!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KFE$mV-CF;)(BN.DuBLlDm"@,OUBhUo^/JJd+Gn(E"4<4Dh/fbrKEE+k4/KGW5!\c-%!\c-&ECrSrBN6KFE=,f1*[`p0CF;)(BN.>uBLQ2j"B>I3/JT*i2\Q0Y#!4Ik##6g)##/?%DG<ht"<e]rGnM&4GmZ2X##6g)##/?#DbNPk"<e]rGmZ2X##6g)##/?!Ce7#e"<fEO##6g)##/?#Cdgid"<g<BBj;5Z4^8R.4^8R.4^8R0.N)1r2BNYEGs<#T/J&LV'GD6g+ttNE!\c-&ECE8qE$8"1##6g)##/?%DGEnu"@kF6CF;)(BN.E#BM)Po@PB<0!\c-&ED8l'@9"aP'dH1-'dH.??qj!lE$8"1##6g)##/?#DbWSk"@kF6CF;)(BN.JuD+._oFYG=C!\c-&ED&YqBN6KW'dH1-'dH.?CedZ#E$8"1##6g)##/?%DGN_o"@kF6CF;)(BN.;sC/%ttFYG=C!\c-&ECrVqCK2fZ'dH1-'dH.??qa9e"@kF6CF;)(BN.](BiQTa'dH1-'dH.?C/7,oE$8"1##6g)##/?!C.Uid"Ah'?CF;)(BN.>uBM;\q@PB<0!\c-&ECil.CK2fc'dH1-'dH.?DbNYtE$8=:##6g)##/?+BMDbr,T7U6Gp?E+Gnh5b.30E@.T?TV.1dL"3!^*$@lk8=)AF2&4Ur&5EE-9L2I%7+GmG,c2&S&###6g)##/?&DG<Dh"<h"m3"H!"4<lip4&>u<'dH1-'dH.?DbEK%E$6Z&/JJd+Gp<;&EBc2j3"Z`F3"H!"4>%?U4]N('4^8R.4^8R.4^8R.4]N('4^8R.4^8R.4]N=-3ZT&)%2fBeA3(G;1b9@E4@V":2@L-*/eVDB##6g)##/?'CIClh"Ah)[/K"a"3"S%V.L9<=4:_Ep((rP63"cl/4]E%02]i#,2A07P3"Q)pE)[JT/K59202u4L!\c-%!\c-&ED&Z#BN6KFA1A<)//_Ck2],g22BNYEGpjU74qJ<4*utOq#osZ`@ji9!4qJ<!'dH1-'dH.?DG*5lE$8<e3"Q<!E$uY.4qJ</((rP63"cl/4]E%02]i#,2A07P3"Q)pE)[JT/K59202u4L!\c-%!\c-&EDK)%?r\X>A1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&n2BNYEGo?\m3X?`72d?It2BNMB.QJCO1^.,!FZC?E1^,oA1`9R+5?p&^/KGW5!\c-%!\c-&EC`PuD,i#KE=,tf0c:ls0H*n*!\c-%!\c-&ECrSs?r\X>A3hpZ4:r#S3"Z`i/JJd+Gn(E"4<4Dh/fbrKEE+k4/KGW5!\c-%!\c-&ECrSrBN6KFE=,f@4rF>'4;%]gE)ePE##6g)##/?!C/.Jq"<h%d2[CE7GnM&4E>oK+4rG7REE-:('dH1-'dH.?C/7<&E$6Y=.pNu$/R/?:'dH1-'dH.?BM(ZkE$6Y=.pN-8'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BLtopE$6Z;A5#r,2],Ku2],Ku2],L)2BNYEGo?\m3X?`72d@=(2]*A9*"ihn+>3j!/eSC^E#KZ-Gp?E+Gnh5b.30E@.T?KY.i/F(3$/_l'dH1-'dH.?C/7,pE$6Yi'dH1-'dH.?DbNDpE$6Z5*Z4r#0bkN1.iB6uE)dGXGo@V6Gp?E<2]3JO(EF@tGnh5b0FS['.h>l;'GDBW4VLd%5?nF0.hrs*!\c-%!\c-&ECrSrCfMoJE=+?P##6g)##/?&DG3bs"<gko2]3JO(EF@tE!REf2d@@,E=<Zr!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KFF:'ZS##6g)##/?!Ce7&f"<h&1'dH1-'dH.?BMCosE$6Z9A5,HZ/JJd+Gp<;&E=+?P##6g)##/?#Cd^`b"<h%T2],Ku2],Ku2],Ku2],Ku2],L.0bkN0Gmb>o/Q?!\2I%7+E>oK+4rG7REE-:('dH1-'dH.?C/7<&E$6YH0c:ls.3B982,k2(2]i#,2A07e0H+1!49uT)2[We^E$mV-CF;)(BN.>uD,";"":,tO2dA?E/K"a"3"S(Y2cO'F/IYl:#nmP94;&2m58+5g##I#`4:r#S3"Z`i0G7=l.30E@.TAD\2A0:#2I$k'.pOT#03fM,GmkDp.h>l!2@^f?.303/!\c-%!\c-&ECE;tCK2fI@lk8=)AF2&4Ur&5EE-9L2I$@s2BNMB.QJCO1^.,!FZC?E1^,oA1`9R'2],Ku2],L%3"cc54?4;a1^,6?3"$W9EE*S[4]N('4^8R.4^8R.4]N=-3ZT&)(^U0N*$5.h.1d4*1dNku.hO$.4rI*S2B*;?4B+:&CF;)(BN.K$D+IqrFW(u*.N)M9/-m1A3X?Z<2&uo3@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&EC<N!E$6Z:%ilK&4BrI-4]M_#3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf4t4VLd%5?o]a!\c-%!\c-&EC<N!E$6YH0c:ls.3B982,k2(2]i#,2A07e2%pc-2-_j9/JB6.3tN!1+ttNE!\c-&ECE9!E$8=:##6g)##/?+BM;\q@PB<0!\c-&EDK)*BiQTX'dH1-'dH.?C/7,nE$8"1##6g)##/?%DG<Mk"9B>J3ZT&)00qAu/O(0`2]3DJ0G>?O2]3J?4:b[D3X?Z`3$&n@E"s!Q(^L*C3YsG&##6g)##/?(CJ-ob"<h"bE!REf2d?Ok.2`j:Gmb>o/Q?""/I3'k1+,%DCF;)(BN.;tBMDbr"B5Fu#!4Ik##6g)##/?,?qjoj"B>I3/JT*i2\Q0Y#!4Ik##6g)##/?,?qjoj";:u,2\Q0Y0./_ACF;)(BN.E#BhVer";:u,0./_ACF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@,OWGo7G14Br'p.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.8p?qaiiFXdt'/JA=b!\c-%!\c-&ECEB%BiQTGECE>nG>:S(Ced5sBLkNkF\P>*G==l!BhUfnCe.#kC/.H'CJmi&CJ75rCIqf(4;&2m4;&2t4;&2m4;&2m4;&2t2%pc-2-`$@.gR.+2F0)".hO$.4rI*S2B*;?4B+:&CF;)(BN.K'?qFWfFW(u*.N)M83">oq2%r_92a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?,?r(&l"@4452$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXBN5TPGngrZ#!4Ik##6g)##/?,?r(&l"<ABcGmkN%!\c-%!\c-&ECrSrCK2fI!\c-%!\c-&EC`Q&@9"a?!\c-%!\c-&EC`Pu?r\X>B0f3lBj:WG4;(U,3ZT%JE>eie3X?`72cO&n2BNYEGqBd5.gS][2%D8m##6g)##/?#BMM8o"<fEO##6g)##/?&DG<Jj"<fEO##6g)##/?(CILK\"<echGn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ED8i%DH/,]'dH1-'dH.??qj<nE$8LnA5#r=0c:ls#!4Ik##6g)##/?(CILoh"<g>?3"Q<!GngrZ#Ta]m/LNM?CF;)(BN.](CdhVn"@5Tq.gZeT/JJd+Gn:np3"T%(A31A>)A="u4<FP12A._R4:rS<.TAAiCF;)(BN.9$?r(&lE"s!Q03eJb4;(U(2BNYEGm$\a4:!kS2\H]&/JT36*"ihn0Gt*g)]],!'GDBW0H*n0GmGAo2d?Ok.2`j:Gmb>o/Q?!_5?o*8/R/Ms.hrs*!\c-%!\c-&ECrSrCfMoJE=<Zr!\c-%!\c-&ED8l!?r\X>!\c-%!\c-&ECrSrDH/,L!\c-%!\c-&EC`Q&D,i#K!\c-%!\c-&ED8l"C/l]H!\c-%!\c-&EC<&l?r\X>!\c-%!\c-&EC`SuD,i#K!\c-%!\c-&ECrSqDH/,LFYG=C!\c-&ECil.C/l]T/JJd+Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&EDK)*CfMoV4:h`%Gs)-D3$05%'dH1-'dH.?DbEMsE$6Z'+]'[7!\c-%!\c-&EC<MtE$6Z&4;&2m/.qpi2-_XW!\c-%!\c-&EC<MtE$6Z:A/Z0n.N)1o.pNu$/R/]D'dH1-'dH.?BM(ZkE$6Y=.pNKB'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BLtopE$6Z;A5#r2.pOA$3">pJ'dH1-'dH.??qipjE$6Z:A/Z0n.N)1i2],Ku2%L9d"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#RDG451DacomDbrl(CJmK"C/%E,F\P>'DGiu)DbFA.4;&2m4:h`%Gn(E"4<4Dh/fbrKEE+M*.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGED\u$BMq,mC/./nF\>1uC.L]rCe-lgC.q#iC/%,q?qO]s/.qpi2,mg'*tB"q4=<*NCF;)(BN.]&@8'rj"B8N*DbXD9C/7;tC/@8pG>CJ'@7`^aF\bD(G>CY*Bgk?\E$mV-CF;)(BN.K&Ce\2!"Ao:4.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.DsBhVer"=H/kCF;)(BN.K&Ce\2!"B@*.##6g)##/?#BMC`a"<g<BCJ7\9.pOSM!\c-%!\c-&EC<MtE$6Z:A/Z0n.N)1m5?(l1*tB"q4=<*NCF;)(BN.]&@8'rj"B8N*DbXD9C/7;tC/@8pG>CJ'@7`^aF\bD(G>CY*Bgk?\E$mV-CF;)(BN.K&Ce\2!"Ao:4.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.DsBhVer"=H/kCF;)(BN.K&Ce\2!"B@*.##6g)##/?#BMC`a"<g<BBNtNF4;(U*4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?,D+d8h"Ah'?CF;)(BN.JuCd_PmF\Q-G2],Ku2],Ku2%L9+5?nBs.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.E!CeJ%tFYG=C!\c-&ECE<#BiQTSA3iXO/JJd+Gp>+)'dH1-'dH.?D,*f0E$6Z:591RP4Br^33ZT&)1Drb04:!kS2\H]&/JT36*"ihn0Gt*g'dH1-'dH.?BLtltE$8Ko5?o66GmGAo2d?Ok.2`j:Gmb>o/Q?""/I3'k1+,%DCF;)(BN.;tBMDbr"B6EHFX&\%'dH1-'dH.?@7<[Y"<h%d2[CE7Gp>+)'dH1-'dH.?@7<[Y"<g?C591RP4Brg;GnM&4GnpuO'dH1-'dH.?BM(ZkE$6Y=.pO,"!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HAO/^O2@`\A3unMA!\c-%!\c-&ECE;s?r\X>A3gh02%L9d4:h`%Gp<;&EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'CJ@*!G==l#BMMZ2D+.W,Ce@/uD,<SuCf3MrBM(rqE)dJZ4^8R0.N'61Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ED8i%DH/,]'dH1-'dH.??qj<nE$8LnA56)?0c:ls.iAHo3!`It3#)EdE$G>rEBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'FA5G*Bi7W$?qWsbBM;T1CeIH!BMV`.DaZufDbNVt?r^JJ2[CE7EE"kC.ifK3!\c-%!\c-&ECEB%BiQTGED]//C.qf8C.1KeF\P7uCe6uuCJ@;pBM(rsG=k8#CIMN$!\c-%!\c-&EDJl$BN6KFF:8uu!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KFE$mV-CF;)(BN.DuBLlDm"@,OVGnUBL#!4Ik##6g)##/?,?r(&l"@5T_3"Q<!Gmb>o/Q>nSE"!Qq!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIA.'=g1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?#BLtN_"<fEO##6g)##/?+BM)Po"=H/kCF;)(BN.E#CJS5""=H/kCF;)(BN.E$@8:)l":GqO/Q>nSE"!Qq!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIA.'=g1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?#BLtN_"<fEO##6g)##/?+BM)Po"=H/kCF;)(BN.E#CIh_p"=H/kCF;)(BN.E$@8:)l":GqO/Q>nSE"!Qq!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIA.'=g1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?#BLtN_"<fEO##6g)##/?+BM)Po"=H/kCF;)(BN.E#CIqeq"=H/kCF;)(BN.E$@8:)l":GqO/Q>nSE"!Qq!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIA.'=g1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?#BLtN_"<fEO##6g)##/?+BM)Po"=H/kCF;)(BN.E#CJ%kr"=H/kCF;)(BN.E$@8:)l":GqO/Q>nSE"!Qq!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIA.'=g1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?#BLtN_"<fEO##6g)##/?+BM)Po"=H/kCF;)(BN.E#CJ.qs"=H/kCF;)(BN.E$@8:)l":GqO/Q>nSE"!Qq!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIA.'=g1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?#BLtN_"<fEO##6g)##/?+BM)Po"=H/kCF;)(BN.E#CIDGl"=H/kCF;)(BN.E$@8:)l":GqO/Q>nSE"!Qq!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIA.'=g1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?#BLtN_"<fEO##6g)##/?+BM)Po"=H/kCF;)(BN.E#CIMMm"=H/kCF;)(BN.E$@8:)l":GqO/Q>nSE"!Qq!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIA.'=g1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?#BLtN_"<fEO##6g)##/?+BM)Po"=H/kCF;)(BN.E#C.qns"=H/kCF;)(BN.E$@8:)l":GqO/Q>26CfM&V4^8R.4]N('4^8R.4^8R.4]N=-3ZT&))AN5Z,8hCTA3(G;1b9@E4@UG%4rY=CEA/n?!\c-&EDJi'DcJ5^591RP4B4<I/JSa"2_@cU2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?!C/.Gp"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I%7+Gp>+)'dH1-'dH.?C/7<'E$6YH0c:ls.3B982,k2(2]i#,2A07e0H*n(2%D8m##6g)##/?&DG<Sm"<fEO##6g)##/?(CILoh"<fEO##6g)##/?(CJ.Ao"<gBDBLG6eGo[e.E=NQo2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ED8i%@9"aKE$mV-CF;)(BN.](DH/,LA3gh02%L9d/JJd+GngrZ.L64c2]FD'##6g)##/?&DG<Dh"<h"`2%D8m##6g)##/?#BMM8o"<fEO##6g)##/?&DG<Jj"<fEO##6g)##/?(CILK\"<fEO##6g)##/?#BMCuh"<fEO##6g)##/?,D+[Mp"<fEO##6g)##/?(C.plb"<fEO##6g)##/?&DGEPk"<gl###6g)##/?,DG=D#E#fi%E=W$]0G5$Y'dH1-'dH.?DbEN"E$6Z'.1c\C'dH1-'dH.?BMCs"E$6Yi'dH1-'dH.?DbEMuE$6Yi'dH1-'dH.?D,*f,E$6Yi'dH1-'dH.?BMColE$6Yi'dH1-'dH.?@7W^gE$6Yi'dH1-'dH.?D,3Q$E$6Yi'dH1-'dH.?DbEQ!E$6Z+'dH1-'dH.?BLG<dE$8Kg2],L-2%D8m##6g)##/?#BMM8o"<fEO##6g)##/?&DG<Jj"<fEO##6g)##/?(CILK\"<fEO##6g)##/?+BLtoj"<g?C/IhdcE!REf2d@1.3ZT&)00qAu/O(0`2]3DJ0G>?O2]3J?4:b[M##6g)##/?,DG=D#E"s!Q03eJb4;(U*4:Df'/R/AZ0F1oU(^L*C3YsG&##6g)##/?&DG<Pl"<h"bFX&\%'dH1-'dH.?C/7<'E$6Z&/.qpi2-_XW!\c-%!\c-&EDK)%@9"a?A3gh02%L9d2@`[q2@*7s!\c-%!\c-&ED8buBiQTG2@`\$!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HAO/^O2@`\"2%D8m##6g)##/?#BMM8o"<fEO##6g)##/?&DG<Jj"<fEO##6g)##/?(CILK\"<fEO##6g)##/?+BLtoj"<g?C591RP4BrI/.N)2J/IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%C/./sG=Y"sBLkfuC.)0*CIq]6?qj@!@89NpBhhc*DFHlnG=b(sDG<N&C.gibE#BQ!Go7G14BsBQ.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGED]/%D+I/k@7imb@7rm^C/7;nD+mH'DbWZ)BM(NcFA"r"Cf3N&?qs!e@803lE)dn^E@MP#/JA=b!\c-%!\c-&ECEB%BiQTGED]/%D+I/k@7imb@7rm^C/7;nD+mH'DbWZ)BM(NcFA"r"Cf3N&?qs!e@803lE)?`K.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.DsBhVer"=H/kCF;)(BN.K&Ce\2!"B@*.##6g)##/?#BMC`a"<g<BC.qSC0c:ls/fbrKED9V;E"3Hn2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&EC<&kBiQTX'dH1-'dH.?C/7<'E$8=]E#BQ!Go7M*Go7G14;AJr.1c\C'dH1-'dH.?DbEMrE$6Yi'dH1-'dH.?D,*f0E$6Yi'dH1-'dH.?D,*H%E$6Z9A5,`rBj;A^4]DUi.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.E!Cd_PmE)ePE##6g)##/?,D+d>j"<g?C591RP4Bqjo4;(U(2BNYEGm[+g4:!kS2\H]&/JT36*"ihn0Gt*g'dH1-'dH.?BMM9'E$8Ko5?n=%.jm;=CF;)(BN.DuCIMMm"=H/kCF;)(BN.;tBM2Vp"=H/kCF;)(BN.5o?q=Qe"=H/kCF;)(BN.](CdhVn"<ABcE=W$]0G5$Y'dH1-'dH.?DbEN"E$6Z'.1c\C'dH1-'dH.?BMCs"E$6Yi'dH1-'dH.?DbEMuE$6Yi'dH1-'dH.?D,*f,E$6Yi'dH1-'dH.?BMColE$6Yi'dH1-'dH.?@7W^gE$6Yi'dH1-'dH.?D,3Q$E$6Yi'dH1-'dH.?DbEQ!E$6Z+'dH1-'dH.?BMM9'E$8Kg2],L-2%D8m##6g)##/?#BMM8o"<fEO##6g)##/?&DG<Jj"<fEO##6g)##/?(CILK\"<fEO##6g)##/?+BLtoj"<g?C/IhdcE!REf2d@@,Gm[Le0c:ls.iAHo3!`It3#)EdE'41;3$05%'dH1-'dH.?DbEMsE$6Z'02O/E!\c-%!\c-&EDK)%@9"a?E![F!0G%2G*[`p0CF;)(BN.JuCIDGl"@5T_3"Q<!GnUBL0./_ACF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@,OWGnUBL2\Q0Y0./_ACF;)(BN.E#BhVer";:u,.1c\C'dH1-'dH.?BMCs"E$6Yi'dH1-'dH.?DbEMuE$6Yi'dH1-'dH.?D,*f,E$6Yi'dH1-'dH.??qipjE$6Z:A/Z0n.N)1i2%L9d"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#FBMV,tD,O&3?qN[gD,3i$D,*MoCJ.#qCJ%9$Ce-ohF@8SqCf3`$@7<jkC.gibE#BQ!Go7G14BsBQ.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGED]/%D+I/k@7imb@7rm^C/7;nD+mH'DbWZ)BM(NcFA"r"Cf3N&?qs!e@803lE)dn^EE"kC.ifK3!\c-%!\c-&ECEB%BiQTGED]/%D+I/k@7imb@7rm^C/7;nD+mH'DbWZ)BM(NcFA"r"Cf3N&?qs!e@803lE)ePE##6g)##/?!Ce7&f"<gn]2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?#C.q#f"<fEO##6g)##/?!Ce7&f"<h&1'dH1-'dH.?BMCosE$6Z;A4TZ90c:ls/fbrKED9V;E"3Hn2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ED8i%@9"aP'dH1-'dH.??qj<mE$8Kk2],Ku2],Ku2%L9+5?n=%.jm;=CF;)(BN.;tBMMhs"=H/kCF;)(BN.5o?pn9a"=H/kCF;)(BN.5oDFIhp"@>[X@8''V3"cci.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?BM:]rE$8=:##6g)##/?+BLG9]"BA$"CKpiI4;(UU/IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%CIprlG>1S3DbEN'DFmr,D+n,0?qs'mBM1TpBh;E%?pm@ZG=4o!C/%/uE)dJZ4^8R.4]N('4^8R.4^8R.4]N=-3ZT&)*=3Sn+>FT?A3(G;1b9@E4@UG%4rY=CEA/n?!\c-&EDJr'CfMo[591RP4B4'N1_C0L3"et;2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?!CeI5i"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I%7+Gp>+)'dH1-'dH.?C.UciE$6YH0c:ls.3B982,k2(2]i#,2A07e0H*n(2%D8m##6g)##/?#BMM8o"<fEO##6g)##/?&DG<Jj"<fEO##6g)##/?(CILK\"<fEO##6g)##/?+BLtoj"<g?C591RP4Bqjo4;(ml.iAI#0HV#G4;^gM3#)E>2@_YR0G"dg'dH1-'dH.??qipbE$8LZ@k/9$/NOg_)AF2&4]FC'CF;)(BN.E$?pn9aE)fX_2[UK04>.9Y0,Xse'dH1-'dH.?C/7-!E$8Kk2%L9d2%pc-2-^2h*Z4r#2A-o43X?`72`Vc\1_gT6EA/n?!\c-&ED&Z#C/l]T0H*n*GmGAo2d?Ok.2`j:Gmb>o/Q?""/I3'k1+,%DCF;)(BN.;tBMDbr"B5Fu#!4Ik##6g)##/?!CeI5i"<h%d2[CE7GnM&4Gp>+)'dH1-'dH.?C.UciE$6Y=.pNu$/R/?:'dH1-'dH.?BM(ZkE$6Y=.pN-8'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BLtopE$6Z;A5#r,2%L9d"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#HDa[8nBhUfjCJ%<%C/%/uF\P>"DFd)tD,3DrC.(Kk?qj<jBM1`fCJ7H'C/70"BLkNkCIqf(4;&2m4;&2m4;&2t4;&2m4;&2m4;&2t2%pc-2-`$D.h3"p*utOq#osZ`@ji9!4qJ<!'dH1-'dH.?DbWo*E$8<e3"Q<!E'=jG.g8[!2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?#BMV&h"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I%7+Gp>+)'dH1-'dH.?BMCupE$6YH0c:ls2%pc-2-`'K2%U?"/JT36$5j$_0HUm54rkLF@lk8=$5j$_0HUm"'dH1-'dH.?@73FYE$8Kt2BNYEGs2fP.g7gH.MPGs2@p]03X?`72_PaT0,59-@lk8=%36)b4;_<V##6g)##/?#BLtQ`"B?'C.pOT#)[Q`WGnh5b.30E@.TA;1.h3"3/.W^m4VLcu2@`\1/I2Of3sblk(EF@tFZpBL.g7s81`97"2d?Ie0Fe=\)[Q`W@lk8=(^L*R0HL624:b[hE#9N]"pb?))[Q`W!\c-%!\c-&ED8buBiQTG@lk8=#o*LM/Q?"J58+5g##I2n.MP?>0G7=u3#)W/EBXsH.g7gH.MQ.n2I$k'.pOqJ/Iid%/-lh>3"Za"FZpBL.g7s81`8bM0G7=u3#)W/EBXC70htIh4:!kR0G"d-4;(mkE#9N]"pb?))]8hl+>OZA4AIO_##6g)##/?,D+dAk"<h%S0Fe[..h`<u1_g!/.1R:,.0s0%4:VQ6(EF@tCF;)(CF;)(BN.8p?qjoj"Afs;/JKik##6g)##/?&DG<Vn"<h%T2],Ku2],Ku2],Ku2],Ku2],Ku2],Ku2],g22BNYEGs<8Q.L8Tl3"?f^3#`H4%20BX2&TXP##6g)##/?&BLG3["Af^42%L9k)AEbp/Ohf2)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.Z0@9"a?A1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nOE#9N]0H*nQ*[`p0CF;)(BN.Z0@9"a?/JJd+GmkJj2%X!r/.ra80G>?tE"Erg3"T%32@p]03X?`72_PaT0,59-A/c6n4@V+2/M@\J0,59-EA/n?!\c-&EC<K#C/l]T2%pc-2-_C8.MVpj2A/SS.1c\C'dH1-'dH.?BMComE$6Z5*Z4r60FAa8EE-:('dH1-'dH.?C.U]hE$6Y@2BNYEGs<8Q.L68c)A<qu4<FP12A.AA.gd9s4@V+2/LV>:4rFo)'dH1-'dH.?C/7/pE$8Kt2BNYEGrQfU/KG`04A\'C3"?N3/O:6U/JKik##6g)##/?&DG<Vn"<gkV0G%1e2@`\KF[$iM.L8u\2d@@:3#)W/EBbEI.L68O4VLd*2BNYEGqg$:2\c<.4W-gaEBbEI.L8cp4:!2>0,"=YE)ePE##6g)##/?!Ce7&f"<go(2@gfE0G>?s!\c-%!\c-&ED8l"D,i#K0H*n"2@*8)0c:34@lk8=(^L*R0HL624B+:&CF;)(BN.Z,DFe%sE#fi%Gqg$:2\c<.4W-d<0Fn-b2]iW!/JJd+GrQfU/KG`04@(t/4q\kP//Ssd(E!r"4:_Eu)AEbp/R/ks4^8R.4^9!2Gqos5.iAR.GmGAo2d@jL.9&>43"?N3/OhN#/M%nW2@*P[E#BQ!Go7M*E#BQ!Go7M*Go7M*E&n^G1b9@E4@U\&.2`<k/JA=]'dH1-'dH.?@7ismE$8Kt2BNYEGmkW''HIDp4:Vg,+ttNE!\c-&ECrSpBN6KW'dH1-'dH.?DbEStE$5Mu2BNYEGqg$F/K"a2#!X%958=i<*utOq#osZ`@lOZ$.2X!<2cMb!CF;)(BN.](@9"aP.2)q=3"Gun.g9323"Gun.g7FG2A-W05"7UC)AEnq4rFo)57&5./JT36E@M\6//__I4:i))/N!bD3"cd/%ilK&4BrI-4]N=-3ZT&)'HIDp4:VfH.g[44.R>fk.hO$.4rI*S2B*;?4B+:&CF;)(BN.K$D+\(tFW(u*.N)ME3"Gun.g7[?//8-r@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&ECiW!CK2fIA1A<)//_Ck2],g3.3/L"E>eie3X?`72cO';/.s<7.jm;=CF;)(BN.](?r\X>@m:nA2]3DJE>eie3X?`72cO&r3ZT%JE>eie3X?`72cO&i5?o]a!\c-%!\c-&ECiW!CK2fI2@`\K*[`p0CF;)(BN.Z)DcJ5M2@`\K*[`p0CF;)(BN.])BN6KF/JJd+Go@V6Gp?DlGnh5b.30E@.T?N].jm;=CF;)(BN.DuCIMMm"=H/kCF;)(BN.]'BiQTG@lk8=)AF2&4Ur&5EE-9L2I%7+GoeUl##6g)##/?&DG3bs"<g?C'dH1-'dH.?BM:]qE$52h4;(U#5?nF0.hrs*!\c-%!\c-&ECrSrCfMoJE?6bd##6g)##/?&DGEPk"<gl###6g)##/?+CJA(uE!REf2d@,$*>o(u.h`@bE#BQ!Go7M*Go7M*Go7M*Go7M*E#BQ!E#BQ!E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I%7+Gp>+)'dH1-'dH.?Ced>pE$6YH0c:ls.3B982,k2(2]i#,2A07e0H*nE4:i))/N!bD3"cd/A2#N2!\c-&ECrSpBN6Jt0c:ls2%pc-2-^2h*Z4r#2A-o43X?`72`Vc\1_gT6E=ios/K"a2BN6&VGm[Le0c:ls&K);o/JL3OE=+?P##6g)##/?!Ce7#e"<fEO##6g)##/?#BLtli"<h)NBiSA8BhVJ<4:Df'/R/AZ0F1oU'GCKY4=hE_A-stC##6g)##/?#C.q#f"<fEO##6g)##/?!Ce7&f"<fW=/KGW5!\c-%!\c-&ECEB%CfMoJE=,f1*[`p0CF;)(BN.8pDGFJ$"B>I3/JT*i#!4Ik##6g)##/?'CJ.,h"<g?C591RP4Brg;GmZ2X##6g)##/?!Ce7#e"<fEO##6g)##/?#Cdgid"<g<BBj;ShGnM&4GmZ2X##6g)##/?#DbNPk"<e?f.N)2J/IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%?q<d^DbEDtBMUroBLG3gF\Y5#G=b2+Ce@&lDbNN"CJ@N!FA55$C.h`7@8'?q?r'-jE)dJZ4^8R0.N'61GqTa?4<FPQ.M*=(4[DXm##6g)##/?&DGN_o":,tO2d@1.3ZT&)00qAu/O(0`2]3DJ0G>?O2]3J?4:b[,3"Gun.g8C70H*n*GmGAo2dAHL3"Q&t'L>t=!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8l&@9"a?F%\nnG"kA'Gn(E"4<4Dh/fbrKEE,"-/.W=K2@i@o!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KF(^L*C3YsG&##6g)##/?+C.(?["<h"bFX&\%'dH1-'dH.?Ced>pE$6Z&/.qpi2-_XW!\c-%!\c-&ECiW!CK2fIA3gh02%L9d2@`\$!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HAO/^O2@`[q2@*7s!\c-%!\c-&ED8buBiQTG4:h`%Gp<;&EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'F@AGuCf3T(BhC]nBhCiqF\"epG=bJ.CIgopDFm3"BMLihCdg]jG>CJ.Dbii,BMLicE#BQ!Go7M*Go7M*E#BQ!Go7M*Go7M*E"Erg3"T%A3"Gun.g7^E2aK2#.hO$.4rI*S2B*;?4B+:&CF;)(BN.DsBMVntFW(u*.N)ME3"Gun.g7^E2b#k<)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.Z)DcJ5MA1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nOE#9N]0H*nQ*[`p0CF;)(BN.Z)DcJ5M/JJd+GmkJj2%X!r/.ra80G>?tE"s!Q$5jZb3X@k[2'!S?A3i1;CF;)(BN.;tC/%tt/JJd+Gn:np3"T%(A31A>)A="u4<FP12A._R4:rS<.T@8e.L6Uu+AH,K5?n7W/JJd+Gr-*72$b0SA5iUi'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BMCcsE$6Z%DG4>0BM:f].iAHo3!`It3#)EdE%r:I.N'K?.R=+q'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?C.U]hE$6YS/I3'k1+,%DCF;)(BN.E$?qO]g"B5Fu#!4Ik##6g)##/?,DG"1u"B?9I3ZT&)'GD#n2&QX*.iAI#0HV#G4;^g>0G4pC0Fe=()AF2&4]FC'CF;)(BN.](@8:)lE"Erg3"T%@4:"M22AcH*4:b150G4pC0Fe=()AF2&4]FC'CF;)(BN.]&?qFWfE"Erg3"T%D*$Zg=2A6'9/.sZP4;%X#(E!3U*u,\!*u+tk/O(3^2&KRO##6g)##/?#C/$rc"B?HGGmkN%!\c-%!\c-&ED8l"CK2fI@lbV>4ZXSq.L7s@0G"dH5<ftd.M#c;##6g)##/?&DG3_r"B?0G4]DOp.jm;=CF;)(BN.DuBMMhs"@b-R2]+:W.h;V&0bkN1()f+B3"H6e'dH1-'dH.?DbEK&E$8LZ!\c-%!\c-&ECrSs?r\X>A3i1;CF;)(BN.JuDbXM$/JJd+GqU*P2*1gG/KG%%/Ihdc@T3I@.jm;=CF;)(BN.DuBMMhs"@b-R2]+:W.h;V&0bkN1()f+B3"H6e'dH1-'dH.?DbEK&E$8LZ!\c-%!\c-&ECil.?r\X>@lbVB4>.9Y0,Xse'dH1-'dH.??r'KsE$8=92@0Tm#nmP90H*nQ*[`p0CF;)(BN.Z)DcJ5M/JJd+GmYQ%BLX?R2]+O`/.W=9/-l4a2`UpD2[EYeF\Gn9FU/0e4AZ[m1`9CnE!mBf/Q>nPCfLND1eg_!4;&2X2@0Tm)[QK\2A._Z4;%WeBi%2nBi#ED2%L9p4rkLFF\Q-U3#)EdG>(:p4;&2m4:h`%0H*n(2%D8m##6g)##/?#BMCrg"<gMd0G4pC0Fe=()AF2&4Ym]n2&uo5EA/n?!\c-&ECrSs@9"aK3"ccq.1c\C'dH1-'dH.?BMComE$6Z5*u,\!*u+tk/O(3^2&JCY)A!Vp.TAAiCF;)(BN.;tBgc5jE)ePE##6g)##/?&DG3bs"<e+Y'dH1-'dH.?C/7/oE$52h4;(UI2@13G//8-d.mXdL2%L9d$TT^k0bYKB*XN`30,YZE@lbVB4>.9Y0,Xse'GCKY4=hE_FU%t-'dH1-'dH.?BMV#pE$6YOE"s!Q#!4Ik##6g)##/?,DG"1u":,tO2d?Ck1eg_!4;&2X2@0Tm)[QK\2A._Z4;%WeBi%2nBi"dA//_Om3"Z`uBN5-90F1oXBh;SF0G-`V$5j`e'GCKY4?`c^/JB$L0,YZEED0J5F\Gm@3"Q<!FW2&*4A\I=/fbrKEDf2*E#BQ!Go7M*GmPB*0G%2G*[`p0CF;)(BN.Z)DcJ5MA3gh02%L9d2@`\$!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HAO/^O2@`[q2@*7s!\c-%!\c-&ED8buBiQTG$53FN*XNi'3"AL`3"Q<!Go7G14BsBQ.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGED]/.D,4>8DG!2mC.^ik@7rm^CIprhCeRQ(DbEQ"BhL]gBLQ#uBMM&oDGj/4Bgb6jC.gibE#BQ!Go7G14;AJr$5jZb3X@k[2'!S?A3i1;CF;)(BN.;tC//%u/JJd+Gn:np3"T%(A31A>)A="u4<FP12A._R4:rS<.T@8e.L6Uu+AQ2L5?n7W/JJd+Gr-*72$b0SA5iUi'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BMCcsE$6Z%DG4>0BM:f].iAHo3!`It3#)EdE%r:I.N'K?.R=+q'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?C.U]hE$6YS/I3'k1+,%DCF;)(BN.E$?qO]g"B5Fu#!4Ik##6g)##/?,DG"1u"B?9I3ZT&)'GD#n2&QX*.iAI#0HV#G4;^g>0G4pC0Fe=()AF2&4]FC'CF;)(BN.](@8:)lE"Erg3"T%@4:"M22AcH*4:b150G4pC0Fe=()AF2&4]FC'CF;)(BN.]&?qFWfE"Erg3"T%D*$Zg=2A6'9/.sZP4;%X#(E!3U*u,\!*u+tk/O(3^2&KRO##6g)##/?#C/$rc"B?HGGmkN%!\c-%!\c-&ED8l"CK2fI@lbV>4ZXSq.L7s@0G"dH5<ftd.M#c;##6g)##/?&DG3_r"B?0G4]DOp.jm;=CF;)(BN.DuBMMhs"@b-R2]+:W.h;V&0bkN1()f+B3"H6e'dH1-'dH.?DbEK&E$8LZ!\c-%!\c-&ECrSs?r\X>A3i1;CF;)(BN.JuDbXM$/JJd+GqU*P2*1gG/KG%%/Ihdc@T3I@.jm;=CF;)(BN.DuBMMhs"@b-R2]+:W.h;V&0bkN1()f+B3"H6e'dH1-'dH.?DbEK&E$8LZ!\c-%!\c-&ECil.?r\X>@lbVB4>.9Y0,Xse'dH1-'dH.??r'KsE$8=92@0Tm#nmP90H*nQ*[`p0CF;)(BN.Z)DcJ5M/JJd+GmYQ%BLX?R2]+O`/.W=9/-l4a2`UpD2[EYeF\Gn9FU/0e4AZ[m1`9CnE!mBf/Q>nPCfLND1eg_!4;&2X2@0Tm)[QK\2A._Z4;%WeBi%2nBi#ED2%L9p4rkLFF\Q-U3#)EdG>(:p4;&2m4:h`%0H*n(2%D8m##6g)##/?#BMCrg"<gMd0G4pC0Fe=()AF2&4Ym]n2&uo5EA/n?!\c-&ECrSs@9"aK3"ccq.1c\C'dH1-'dH.?BMComE$6Z5*u,\!*u+tk/O(3^2&JCY)A!Vp.TAAiCF;)(BN.;tBgc5jE)ePE##6g)##/?&DG3bs"<e+Y'dH1-'dH.?C/7/oE$52h4;(UI2@13G//8-d.mXdL2%L9d$TT^k0bYKB*XN`30,YZE@lbVB4>.9Y0,Xse'GCKY4=hE_FU%t-'dH1-'dH.?BMV#pE$6YOE"s!Q#!4Ik##6g)##/?,DG"1u":,tO2d?Ck1eg_!4;&2X2@0Tm)[QK\2A._Z4;%WeBi%2nBi"dA//_Om3"Z`uBN5-90F1oXBh;SF0G-`V$5j`e'GCKY4?`c^/JB$L0,YZEED0J5F\Gm@3"Q<!FW2&*4A\I=/fbrKEDf2*E#BQ!Go7M*GmPB*0G%2G*[`p0CF;)(BN.Z)DcJ5MA3gh02%L9d2@`\$!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HAO/^O2@`[q2@*7s!\c-%!\c-&ED8buBiQTG$53FN*XNi'3"AL`3"Q<!Go7G14BsBQ.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGED]G3?qFO%@8'!fD+m8nCf!AtC/R?%Db`PpDbEAq@803lF\,;,DGiu+@7j$e@803lE)dJZ4^8R.4^8R.4]N('4^8R.4^8R.4]N=-3ZT&)'HIDp4:VfS/e\EoA3(G;1b9@E4@UG%4rY=CEA/n?!\c-&ECil$CfMo[591RP4B4BC.L6Uu+>3g*.i;#42a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?+Bh_ks"@4452$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXBN5TPGngrZ#!4Ik##6g)##/?+Bh_ks":,tO2d?Ic3"Qp"57&5./JT36EE+"_GqTa?4<FPQ.M*=(4[DXm##6g)##/?&DGN\n":,tO2d?t(.pOT#03fM,GnL]./PlWU.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.JuCIh_pE#9N]0H*n,+:JiT03(SM'dH1-'dH.?D,*c$E$52h4;(U#5?n7L'dH1-'dH.?DbEN&E$6Z:A2#N2!\c-&EC`PuDH/,%0c:ls$4@db4Yd`^4@'$.'dH1-'dH.?DbEK%E$6Y;5?n0s2[L?&4:YU2!\c-%!\c-&ECE<#C/l]HE'd,oGnUBL/JB$<1`d5@E=+?P##6g)##/?+BLG?_"<h&XA4]L!GmGAo2d@1.3ZT&)00qAu/O(0`2]3DJ0G>?O2]3J?4:b[,3"Gun.g8@60H*n94:!i$EA%D&.i:;K1`9R80c:ls0H*n*GmGAo2d?Ok.2`j:Gmb>o/Q?""/I3'k1+,%DCF;)(BN.5oDG+8!"B5Fu#!4Ik##6g)##/?+Bh_ks"B>I3/JT*i#!4Ik##6g)##/?+Bh_ks"@5T_3"Q<!GnUBL2\Q0Y0./_ACF;)(BN.E#BhVer";:u,0./_ACF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@,OWGo7G14BsBQ.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGED]/.D,4>8DG!2mC.^ik@7rm^CIprhCeRQ(DbEQ"BhL]gBLQ#uBMM&oDGj/4Bgb6jC.gibE#BQ!Go7G14Br'p.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.K&@7=HcFY<h*.i:;K1`9R'2],Ku2%L9+5?n0s2[L?&4:YU2!\c-%!\c-&ECE<#C/l]HE'd,rBhVJB0c:ls0H*n94:!i$EA%D&.i:;K1`9R80c:ls.iA=&.hYej0G%1f2%L9d.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?C.V*&E$8=;/e\Eo(EF@tE#BQ!Go7M*God.o3#>Nu2],Ku2],Ku2],Ku2%L9+5?oQ?2&R2H&.]TZ2],+m'dH1-'dH.?DbEStE$52h4;(Ts2@`\KFUD(T2d@7*+UD0^4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?!C/.#d"B?!AGngrZ/Hl7]E=,uXA2#N2!\c-&EC`Q'C/l]!0c:ls0H*n*!\c-%!\c-&ECrSr?r\X>A3i1;CF;)(BN.5oDG+8!/JJd+GqT7..i:;K1`8k"!\c-%!\c-&ECrSs?r\X>0H*n,2A-$#3uJ5q0./_ACF;)(BN.](@8C/m"BA'#BNuJgGmG>u/.iX%.oZR0'dH1-'dH.??qj<kE$6Z&AO/Uc?sE[>4;(U(2BNYEGm[+g4:!kS2\H]&/JT36*"ihn0Gt*g1`Zf;4:VftE"s!Q*Z4r$#ui8d2@^9M3"Z`p/JJd+GngrZ03eJb4;(U*4:Df'/R/AZ0F1oU(^L*C3YsG&##6g)##/?(CJ.#e"<h"bFX&\%'dH1-'dH.??qa!]"<h%d2[CE7Gp>+)'dH1-'dH.??qa!]"<g?C591RP4Brg;GnM&4GmZ2X##6g)##/?#DbNPk"<e]rGmZ2X##6g)##/?!Ce7#e"<fEO##6g)##/?#Cdgid"<g<BBj;5\.N)2J/IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B8N-D+-`bDaZunDb*8rCIqW0Cen58@7j!jCJ$rpDF?ojCf!E$DG+/0D+$]eCICTgCfOaF2],Ku2%L9d.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?C.V*&E$8=;/e\Eo(EF@tE#BQ!Go7G14;AJr/JB$<1`d5@E=+?P##6g)##/?+BLG?_"<h&VA4f6gGmGAo2d@@,GrlTS)_>5J/e\Eo(EF@tE!REf2d?Ok/I;UjGnM,.Go7G14Br'p.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.K&@7=HcFY<h*.i:;K1`9R'2],Ku2],Kp.iB'-Go7M*Go7M*Go7M*Go7M*Go7M*E#BQ!Go7M*Go7M*E&n^G1b9@E4@U\&.2`<k/JA=]'dH1-'dH.?C.M&uE$8Kt2BNYEGqg6=&eu5o4;^X93"?f^3#`H4#os3O4q8;@0iU+pCF;)(BN.JuDbaS%FYG=C!\c-&ECrr,BiQTS.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXCK1oSGmkJj2%X!r/.ra80G>?tE"Erg3"T%;0G#'*4[B;h.hrs*!\c-%!\c-&EC`Su@9"a?E=NQo2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&EC<K#D,i#WFYG=C!\c-&ECEB$DH/,X0H*n=0G#'*4^7sp4;(UG2BG'i2%U?)@kSE1*>o(^EA/n?!\c-&EDJl(BiQTVG=b2$F>k3N2&Qrt4;&2m4;&2t4;&2m4;&2t2%pc-2-`'J4<GXP2]FX`2]5153"?f^3#`H4#os3O4q8;@0iU+pCF;)(BN.5nBgl;kFYG=C!\c-&ECrr,BiQTS.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXCK1oSGmkJj2%X!r/.ra80G>?tE'G<H3YreG5!Bnp4@U\&/N==R3`J($CF;)(BN.](@7XZfG>^4$/MUK`##6g)##/?(C.q>o"BA_32],g)2],Ku2],g22BNYEGs<#L4=g[D2]iW<*utOq#osZ`@ji9!4qJ<!'dH1-'dH.?BMV&tE$8<e3"Q<!E'G'C4=g[D2]iW7((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.?BMV#tE$6Z:%ilK&4BrI-4]M_#3"$Wt57&5./JT36EE*)K0G"g`/fbrKEE*PYGngrZ#!4Ik##6g)##/?#C.plb"<daQ4;(U,3ZT%JE>eie3X?`72cO&n2BNYEGn(c%/O9LM.jm;=CF;)(BN.DuBMMhs"<ABcGmkN%!\c-%!\c-&ED8l"CK2fI@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?BMV#pE$8Kt2BNYEGmscY.L71IA.0:e!\c-%!\c-&ED8l!?r\X>!\c-%!\c-&ECrSrDH/,L!\c-%!\c-&EC`Q&D,i#K2%pc-2-^_&4:rS<.R=.F.i/F(3$/_l'dH1-'dH.??qim`E$6Y@2BNYEGodt/'GUfa2@`:m2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&EDJl(BN6KF!\c-%!\c-&ED8l&?r\X>0H*n"2@*7o2A6'X/JJd+Gn(E&/.NRc4;&2m0H*n"2@*7_0H3"Z.h3L1@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?D,3T!E$8L'0c:ls"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#FCJ7)pF\Y5"F\tS)C.h&hE#BQ!GngrZ3u&D]0Fe9q.jm;=CF;)(BN.5nBM;\q"=H/kCF;)(BN.JuCJJ/!"@5UXGnUBL4;&590Gt*u*u,\!*u+tk/O(3^2&KRO##6g)##/?&Bh1Zb"B>F04;(U(2BNYEGm[+g4:!kS2\H]&/JT36*"ihn0Gt*g'dH1-'dH.?DbNDoE$8Ko5?n7W/JJd+Gn(E"4<4Dh/fbrKEE+k4/KGW5!\c-%!\c-&EC`PuDcJ5ME=,f1*[`p0CF;)(BN.DsBh2Mn"B>I3/JT*i2\Q0Y#!4Ik##6g)##/?#C.plb"<e]rGnM&4GmZ2X##6g)##/?#DbNPk"<e]rGmZ2X##6g)##/?!Ce7#e"<fEO##6g)##/?#Cdgid"<g<BBj;5\.N)1m5?ns24u"&i.h`+H'dH1-'dH.?D,3T!E$6Yi'dH1-'dH.?C/7;rE$6Z:A5#r(2],dm)EJ'(1`7r"##6g)##/?+C.(H^"<h#FBLPWoG=k4uD+R5oF\tS/?qX!aDbFA.!\c-%!\c-&EDJl$BN6KFF:K5u/LNM?CF;)(BN.K&Ce\2!"B@*.##6g)##/?#BMC`a"<gBDCJ7,pGmGAo2d@jL.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGED]2'Ce\);CJ[H$?rBKlF\tS)D+m2h?qjp!4;&2m4;&2m4:h`%Gn:np3"T%33#</_.hrs&4@'K2##6g)##/?%DG<Pl"Ah'?CF;)(BN.Z,CIDGlFYG=C!\c-&EDK)&@9"aP'dH1-'dH.?@7WjkE$5Mu2BNYEGm[+g4:!kS2\H]&/JT36*"ihn0Gt*g)BBn(#n@sb3Z2315?n7W/JJd+GngrZ#!4Ik##6g)##/?!C.^ug"<eKh4^8m6/R/Gp4:_EM&19G"CF;)(BN.](CdhVn":,tO2d@1.3ZT&)-j^Is/M%hPA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'FA5J,DGj2+F\bA!@8L*)CICEbG=b%l"pb?)-j^Is/M%hPE!mWm2&TX3//\[/#nmP''dH1-'dH.?C.U]hE$6Z*.h`j<!\c-%!\c-&EDJl$BN6KFE$mV-CF;)(BN.DuBLlDm"@>CQGo.Jf/fbrKEDf7u4;&2m2%pc-2-^=e2]*JD#RM(S/O:6U/JKik##6g)##/?#DbNDg"<h#JF\#dK2BNYEGmscY.L7^0/KID"!_k+M+ttNE!\c-&EC<&kBiQTX'dH1-'dH.?@7W^^E$8"S,Y'Lb"@3PO##6g)##/?,D+d8h"Ah'?CF;)(BN.Z,DbaS%F\N0E!`(7O+ttNE!\c-&EC<&kBiQTa'dH1-'dH.?@7W^_E$8"T,Z$-q"@3PO##6g)##/?,D+d8h"@kF6CF;)(BN.Z,DbXM$F\W5a.3B982,k2(2]i#,2A07e.iA=&.hYea3"Z`^'dH1-'dH.?@73CYE$6Yi'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#E=!Ns3$058-j^Is/N=I]3%"n32]*JD#RM(S/KnCl4;&2t4;&2m.iAHo3!`It3#)EdE'41;3$05%'dH1-'dH.?DbEMsE$6Z'02O/E!\c-%!\c-&ED8r%D,i#KE![F!0G%1m2@*8E*[`p0CF;)(BN.DsBh2Mn";:u,0./_ACF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@,OWGnUBL3u&D]0Fe9q.jm;=CF;)(BN.5nBM;\q"=H/kCF;)(BN.JuCJJ/!"@5UXGnUBL#!4Ik##6g)##/?!C.^ug"<eKh4^8m6/R/Gp4:_EM&19G"CF;)(BN.](CdhVn";r$f4BsBQ.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGED]2(DG+)/Cee)-BMM&sC/nOD2],Ku2],Ku2],g)2],Ku2],Ku2],g22BNYEGs)0E2Ei&h4:b"03"?f^3#`H4%20BX2&TXP##6g)##/?,D+d/e"Af^42%L9k(^U0N)\X+o.RlK/)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.Z/CfMoJA1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nOE#9N]0H*nQ*[`p0CF;)(BN.Z/CfMoJ/JJd+GmkJj2%X!r/.ra80G>?tE"Erg3"T%$2A6's.1c\C'dH1-'dH.?BMComE$6Y32],L-2%D8m##6g)##/?#BMCrg"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.DsBhVerE"Erg3"T%%//\[/$oLTi2%D8m##6g)##/?#BMM8o"<fEO##6g)##/?&DG<Jj"<fEO##6g)##/?(CILK\"<eTj3ZT&))\X+o.OZ#42&St&'dH1-'dH.?Ced<#E$8"1##6g)##/?,DFe%sFYG=C!\c-&EDK)&DcJ5g'dH1-'dH.?DG*DpE$5Mp5?o*8/R/Jg2@*7u0c:ls.iA=&.hYec2],L)2BNYEGodn64@(b-/O(0`2]3DJ0G>?O2]3J?4:b[?2A-T5%362p4B3C*Godn64Bqjo4;(U#5?o]a!\c-%!\c-&EDK))C/l]H3"cci2\Q0Y-j^Is/L`hB'dH1-'dH.??qipjE$6YH0c:ls2%pc-2-^;#4:_EJ2@iA%*tB"q4=<*NCF;)(BN.]&@8'rj"B8N-Ce[5j?q!R`Dbrl%CJmPuDG<f&F\5&$@8]?jCemPn"pb?)-j^Is/M%hPE!mWm2&TX3//\[/#nmP''dH1-'dH.?C.U]hE$6Z*.h`j<!\c-%!\c-&EDJl$BN6KFE$mV-CF;)(BN.DuBLlDm"@>CQGo.Jf/fbrKEDf7u4;&2m2%pc-2-^=e2]*JD#RM(S/O:6U/JKik##6g)##/?#DbNDg"<h#JF\#dK2BNYEGmscY.L7^0/KID"!_k+M+ttNE!\c-&EC<&kBiQTX'dH1-'dH.??qj-`"@kp&@OFW/A-Y(VCF;)(BN.Z,DG4>"@PB<0!\c-&ECE;mE$8"T,Z$-j"@3PO##6g)##/?,D+d8h"@kF6CF;)(BN.](CK2fZBE;3pD';If'dH1-'dH.?@7WaaE$8=:##6g)##/?+BMMhsF\W5a.3B982,k2(2]i#,2A07e.iA=&.hYea3"Z`^'dH1-'dH.?@73CYE$6Yi'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#E=!Ns3$058-j^Is/N=I]3%"n32]*JD#RM(S/KnCl4;&2t4;&2m.iAHo3!`It3#)EdE'41;3$05%'dH1-'dH.?DbEMsE$6Z'3tiM:FX&\%'dH1-'dH.?@7<IS"<h%d2[CE7GnM&4Gp>+)'dH1-'dH.?@7<IS"<e]rGodn64=<*NCF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@,OWGnUBL2\Q0Y3tiM:!\c-%!\c-&ED8buBiQTG2@`\K*[`p0CF;)(BN.JuDbjY&"<ABcGnM&4GmscY.L71I!\c-%!\c-&ECE;s?r\X>4:h`%Gp<;&EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'F@AGuCf3T(BhC]nBhCiqF\"epG=bJ.CIgopDFm3"BMLihCdg]jG>CJ.Dbii,BMLicE#BQ!Go7M*E#BQ!Go7M*Go7M*E"Erg3"T%53ZeqI/M-u-.L68c*utOq#osZ`@ji9!4qJ<!'dH1-'dH.??qs0`"Af^42%L9k(`sOu.0q484:_E'@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&EDK))C/l]HA1A<)//_Ck2],g22BNYEGs)0E2DH3a.h`+n*utOq#osZ`@ji9!4qJ<!'dH1-'dH.?BMV&sE$8<e3"Q<!E'44<2DH3a.h`+i((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.?BMC`iE$6Z:%ilK&4BrI-4]M_#3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf4t4VLd%5?o]a!\c-%!\c-&ED8l'BN6KF/JJd+GmkJj2%X!r/.ra80G>?tE"Erg3"T%(A31A>)A="u4<FP12A._R4:rS<.TAAiCF;)(BN.Z,DG"1uE"s!Q03eJb4;(U*4:Df'/R/AZ0F1oU(^L*C3YsG&##6g)##/?&DG<Pl"<h"bFX&\%'dH1-'dH.?BMC`iE$6Z&/.qpi2-_%./R0eO!\c-%!\c-&ED8l'BN6KF2@`[q2@*7s!\c-%!\c-&ED8buBiQTG2@`\$!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HAO/^O4:h`%Gp<;&EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'FA5J2C/RAtDb3AoDbEN'DFmr-Ce\)6Bgk<fDGEMsDFd5p?r1!(CJRH"G=5,'@7a0iDFn,+4;&2m4;&2t4;&2m4;&2m4;&2t2%pc-2-_L;/.a-43"-B2A3(G;1b9@E4@UG%4rY=CEA/n?!\c-&ED8r$DH/,]591RP4B3a;/.a-43"-B2@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&EC<K(E$6Z:%ilK&4BrI-4]M_#3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf4t4VLd%5?o]a!\c-%!\c-&EC<K(E$6YH0c:ls.3B982,k2(2]i#,2A07e2%pc-2-^2h*Z4r#2A-o43X?`72`Vc\1_gT6EA/n?!\c-&ECil/?r\XJ0H*n*GmGAo2d?Ok.2`j:Gmb>o/Q?""/I3'k1+,%DCF;)(BN.;tBMDbr"B5Fu#!4Ik##6g)##/?,@7=Hc"B>I3/JT*i0./_ACF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@,OWGnUBL#!4Ik##6g)##/?,@7=Hc"@5T_3"Q<!Go7G14Brm1GnM&4GrlTS)_>5I##6g)##/?%DFd#b"B>F04;(U*4:Df'/R/AZ0F1oXBN56@.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.5nBgl;kFYG=C!\c-&ECEB$@9"aPBM_,i/.qpi2-_XW!\c-%!\c-&EC<K(E$6Z:A/Z0n.N)1o.pOk7/NtFQ'dH1-'dH.?DG*5rE$8Kk2%L9d.iAHo3!`It3#)EdG>2@*/IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B8N.?r'6dC/.5qDb38mCf!Q%Dc08*BLtHd?qO*lCf!GsDbaJ:CeR3#BMLicE![F!0G%2G*[`p0CF;)(BN.Z0?r\X>A3gh02%L9d2@`\"2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?#C.q#f"<fEO##6g)##/?#Cd^`b"<g?C)EJ'(1`7r"##6g)##/?+C.(H^"<h#F@7<[`G>C\*CJ$lmCIqW+D+[u9C/$uqCILQoDFmr1BhCihCe7#o@803lE&e(;0FT013"-`8EA/n?!\c-&ED&Z#D,i#W4;&2m4;&2m4;&2t4;&2m4;&2m4;&2t2%pc-2-_I02]*JD)\X+o.R>fk.hO$.4rI*S2B*;?4B+:&CF;)(BN.Z0Db44uFW(u*.N)MH3"cc21d2if4:b1<2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?#C/%Ao"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I%7+Gp>+)'dH1-'dH.?BMV'$E$6YH0c:ls.3B982,k2(2]i#,2A07e.iAHo3!`It3#)EdE"3Hn2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&EC`Su?r\XO'dH1-'dH.??r'L$E$8=]F\Q-W2[CE7GnM&4Gp>+)'dH1-'dH.?BMV'$E$6Y72],g)2],Ku2],Ku2],g22BNYEGpik8'aYZ^+@.aa.hO$.4rI*S2B*;?4B+:&CF;)(BN.?'?pn9aFW(u*.N)MN.g7mJ3Yr6.((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.?C.UcmE$6Z:%ilK&4BrI-4]M_#3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf4t4VLd%5?o]a!\c-%!\c-&EDJl"DcJ5M/JJd+Gn:np3"T%*.g7F(2A-T5"qUe81-miF.ifK3!\c-%!\c-&ECEB%BiQTGED]D/DbXD3BLtHd?qO*lCf!Q#D,O&.@89NpDb`T%@8K9gDbXD5Ce@&k@89KoC/l8XGmkN%!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fI-U@_E+<qX12]2i_2$k')GmGAo2d@jL.9$9Z+<qX12]2i_2$k')E#BK(4;AJr.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?BLtlpE$6Z:A-`AX"s+]m4:`qQ/0>s$/JJd+Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECiW'CK2fZBN5WR4^8R.4^8R.4^8R.4]N=-3ZT&)#n@[g0G5%**utOq#osZ`@ji9!4qJ<!'dH1-'dH.?BM:`kE$8<e3"Q<!E%D1p+;Gdt@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&ECE;qBN6KFA1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nOE#9N]0H*nQ*[`p0CF;)(BN.](DG=D#":,tO2d@1.3ZT&)/Ii4P3tiM:.O,cG3Yt@1*tB"q4=<*NCF;)(BN.]&@8'rj"B8N.DG!>lC/$uqCILQoDFmr.Db+&9Cd^`rBM(`p?pn*sBM(]fBLtNiC.(NqBMVn@5?n=%.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.DsBhVer"=H/kCF;)(BN.E$@8:)l"9M.2.g7F(2A-T5"qUe810aee4;(UU/IYl#.g7F(2A-T5"qUe810"ns.N'61GmkN%!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIA3g2-+<qX12]2i_2$k')GmGAo2d?Ok.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.8p?qsukF\Z3H2],Ku2],Ku2],Ku2],gH3"?f^3#`H4$5isN.ieTu.o\JjCF;)(BN.DsBLQ2jE"Erg3"T%:2@1$)%o,\B3"?f^3#`H4%20BX2&TXP##6g)##/?'D+R&d"Af^42%L9k*>8GV0e,Xq((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.??qisgE$6Z:%ilK&4BrI-4]M_#3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf4t4VLd%5?o]a!\c-%!\c-&ECE;rCfMoJ/JJd+GmkJj2%X!r/.ra80G>?tE"s!Q2\Q0Y/e\Ep.L[$l4=<*NCF;)(BN.]&?r(&l"=H/kCF;)(BN.K&?qjoj"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&ECE<#CfMoV/JJd+GngrZ*Z4r$#uilHCF;)(BN.](@7jfhE!REf2d?Ok.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.]'C/l]Y'dH1-'dH.?D,3Q#E$8L!4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?!Cdgfc"Ah'?CF;)(BN.5nBh;SoE#BQ!Go7G14;AJr/e\Ep.L[$l4=<*NCF;)(BN.]&?r(&l"=H/kCF;)(BN.K&?qjoj"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&ECE<#CfMoV/JJd+GngrZ*Z4r$#uilHCF;)(BN.](@7jfhE!REf2d?Ok.2`j:Gmb>o/Q?"</IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B8N$Da[#g?qX3t@8K9lG>Cq1BLtluF\tS)@7`s`DGNSqE)coJ/JT*i2\Q0Y#!4Ik##6g)##/?+BM(Q_"<e]rE=<Zr!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIF?_Mm3"Z`^'dH1-'dH.??r'HpE$6Z'FA>/,BMqQ(?q!abDb+&.?qs-k@7aQrBMM6%C/RDqDbjY2!\c-%!\c-&ED8l"D,i#KAO/UL*";oU.4Yu3.2*Um'dH1-'dH.??qj<pE$8Kk2],Ku2%L9+5?ouK/O(0`2]3DJ0G>?O2]3J?4:b[M##6g)##/?,D+d2f"B>F04;(U(2BNYEGm[+g4:!kS2\H]&/JT36*"ihn0Gt*g'dH1-'dH.?@7WacE$8Ko5?n7W/JJd+Gn(E"4<4Dh/fbrKEE+k4/KGW5!\c-%!\c-&ECrSrBN6KFE=,f1*[`p0CF;)(BN.](Db44u"B>I3/JT*i2\Q0Y#!4Ik##6g)##/?+BM(Q_"<e]rGnM&4GmZ2X##6g)##/?#DbNPk"<e]rGmZ2X##6g)##/?!Ce7#e"<fEO##6g)##/?#Cdgid"<g<BBj;5\.N)2J/IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%?q<d^DbEDtBMUroBLG3gF\Y5#G=b2+Ce@&lDbNN"CJ@N!FA55$C.h`7@8'?q?r'-jE)dJZ4^8R.4^9!2GrlTS)_>5I##6g)##/?+CIh_pE!REf2d?Ok.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.Z0Db+.tFU/0e4B3mW!\c-%!\c-&ED8l'BN6KFA-`AT4BrI/.N)2J*[`p0CF;)(BN.DuD,";""@3Y%2%L9d4;&2m0H*n94:!i$EA/n?!\c-&ECE>tE$8Kg2],L>4:!r?'dH1-'dH.?DG*B$E$8LmA5,HZ/JJd+Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECiW'C/l]T4;&2m0H*n"2@*7q2%D8m##6g)##/?!Ce.8m"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.]'CfMoV2@`\"2%D8m##6g)##/?#BMCrg"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.]'CfMoV/JJd+Gp>+)'dH1-'dH.?@7<FR"<g>Q.gZeT4:h`%Gp>+)'dH1-'dH.?@7<FR"<g>?3"Q<!Go7M*GngrZ*Z4r1EA/n?!\c-&ED&Yt?r\XJAO/a`GmGAo2d@1.3ZT&)3YN;<3)<*_'dH1-'dH.?@7rmY"@kF6CF;)(BN.Z*BLlDm,S1mp3"T%(A31A>)A="u4<FP12A._R4:rS<.T@2m3YN6)E"s!Q03eJb4;(U*4:Df'/R/AZ0F1oU(^L*C3YsG&##6g)##/?&DG<Pl"<h"bFX&\%'dH1-'dH.??qisgE$6Z&/.qpi2-_XW!\c-%!\c-&ECE;rCfMoJA3gh02%L9d2@`[q2@*7s!\c-%!\c-&ED8buBiQTG2@`\$!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HAO/^O4:h`%Gp<;&EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'D+mDnDG<f.BhgruDF@2tDbaD=BMq5uBh:]jBgk]qC/.H#CJ\/3CJI0!G=b%s?qO*lCfOaF2],Ku2],Ku2],g)2],Ku2],Ku2],g22BNYEGq9pD4;&YR*=3Ve4;/W>*utOq#osZ`@ji9!4qJ<!'dH1-'dH.?C/72h"Af^42%L9k#o"<_2\c`K/.rU#2A/b92a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?!C/.,g"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I%7+Gp>+)'dH1-'dH.?C/7;uE$6YH0c:ls.3B982,k2(2]i#,2A07e0H*n94:!i$EA/n?!\c-&ECrZ(@9"aK/JJd+GngrZ.1c\C'dH1-'dH.?C.UZoE$6Z5*u,\!*u+tk/O(3^2&KR32%D8m##6g)##/?&DG<Sm"<fEO##6g)##/?,D+d5g"<fEO##6g)##/?(CJ.Ao"<h%e0c:ls0H+102%D8m##6g)##/?!Ce.8m"<gMd0G4pC0Fe=()AF2&4]DOp.jm;=CF;)(BN.;tBMMhs"=H/kCF;)(BN.Z,DG+8!"=H/kCF;)(BN.5oDFIhp"BA_e'dH1-'dH.?D,*f0E$6Yi'dH1-'dH.?D,*H%E$6Z9A4T*eGmGAo2d@jL.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGED]20BMM`1DbEK&?pm7VDFmr-Ce.`6BhpuoDbEf)@7rm^FA55*?qFO&DbNGuDaZrnE)dn^EE"kC.ifK3!\c-%!\c-&ECEB%BiQTGED]20BMM`1DbEK&?pm7VDFmr-Ce.`6BhpuoDbEf)@7rm^FA55*?qFO&DbNGuDaZrnE)ePE##6g)##/?!Ce7&f"<gn]2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?#C.q#f"<fEO##6g)##/?!Ce7&f"<h&1'dH1-'dH.?BMCosE$6Z;A5,HZ/JJd+Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECE>sE$8=:##6g)##/?(C.poc"B>X1.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.]'DcJ5^'dH1-'dH.?DbESsE$8Kk2],Ku2],Ku2%L9+5?n=%.jm;=CF;)(BN.DuBMMhs"@b-R2]+:W.h;V&0bkN1E=<Zr!\c-%!\c-&ECrSrCK2fI!\c-%!\c-&EC<&kDH/,L!\c-%!\c-&EC`Pu?r\X>E!REf2d@@,E=<Zr!\c-%!\c-&ED8l"CK2fI@lbV>4ZXSq.L7s@0G"dg.1c\C'dH1-'dH.?DbEMrE$6Yi'dH1-'dH.?@7WabE$6Yi'dH1-'dH.?D,*H%E$6Z&E$mV-CF;)(BN.5o?pn9a"=H/kCF;)(BN.5oDFIhp"@>[]BhVJB0c:ls"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#FCICTgG=t8%Bgb["D,3N"F\Y5(G=4hqD+[,o?qO*lCf"84CIq6$G=b,"Ce-lsDFn,+0H+1h)EJ'(1`7r"##6g)##/?+C.(H^"<h#FCICTgG=t8%Bgb["D,3N"F\Y5(G=4hqD+[,o?qO*lCf"84CIq6$G=b,"Ce-lsDFn,+!\c-%!\c-&EDJl$BN6KFF:8uu!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KFE$mV-CF;)(BN.DuBLlDm"@,OVBj:WG4;(U*4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?+CJ%krFYG=C!\c-&EC`SuCfMoV.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.??qs$\"Ah'?CF;)(BN.;tC/8,!E#BQ!Go7M*Go7M*Go7M*Go7M*E#BQ!Go7M*Go7M*E&n^G1b9@E4@U\&.2`<k/JA=]'dH1-'dH.?@73F^E$8Kt2BNYEGs2rT0Fn-b)A<,_0G6r'3"?f^3#`H4%20BX2&TXP##6g)##/?%Db3;g"Af^42%L9k)]]+i.L6b32@0Tq2b#k<)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.Z,Ce\2!"@4452$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oU4VLd%5?o]a!\c-%!\c-&EC<&mBN6KF/JJd+GmkJj2%X!r/.ra80G>?tE#KZ-Gp?E+Gnh5b.30E@.T?TV.1dL"3!^*$!\c-%!\c-&ECrSpD,i#K@lk8=)AF2&4Ur&5EE-9L2I%7+GmZ2X##6g)##/?&DG3bs"<g?C'dH1-'dH.?DG*5qE$52h4;(UU/IYl!!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIE#BQ!Go7M*Go7M*E#BQ!Go7M*Go7M*E&n^G1b9@E4@V4E/I3:)EA/n?!\c-&ECiW'D,i#\57&5./JT36EE*2I.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.JuDb+.tFYG=C!\c-&EC`AoDcJ5Y4;&2t2%pc-2-_I00G5-0/i4:K0L7Gq.hO$.4rI*S2B*;?4B+:&CF;)(BN.K$D+e.uFW(u*.N)MH3#*>42@DVK1)3P82a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?,@7`aW"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I%7+Gp>+)'dH1-'dH.?@73C^E$6YH0c:ls.3B982,k2(2]i#,2A07e0H*n(2%D8m##6g)##/?#BMM8o"<fEO##6g)##/?&DG<Jj"<fEO##6g)##/?(CILK\"<fEO##6g)##/?+BLtoj"<g?C591RP4Bqjo4;(U#5?o]a!\c-%!\c-&EDJl(C/l]H/JJd+GngrZ.1c\C'dH1-'dH.?BMCs"E$6Yi'dH1-'dH.?DbEMuE$6Yi'dH1-'dH.?D,*f,E$6Yi'dH1-'dH.??qipjE$6Z:A/Z0n.N)2%0c:ls.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?BMCflE$8=:##6g)##/?+C.1ih"B?$C4^8R0.N)2?3#*>42@Dr[)EJ'(1`7r"##6g)##/?+C.(H^"<h#FBMD0(CJmQ"Bhq/pCf!i&Bi75rDbEPtBLP?kBM_i9DG!;kBLtorDFHlrDFn+@5?n=%.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.DsBhVer"=H/kCF;)(BN.E$@8:)l"9M.L3#*>42@Dr@/JJd+Gp<;&E@qt52]`nPBN5WT.N'61GmkN%!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIA3hOD0G5-0/ko:]0c:ls/fbrKED9^N4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?#BM(Zb"Ah'?CF;)(BN.]&?q"?bE#BQ!Go7M*Go7G14;AJr.1c\C'dH1-'dH.?BMCs"E$6Yi'dH1-'dH.?DbEMuE$6Yi'dH1-'dH.?D,*f,E$6Yi'dH1-'dH.??qipjE$6Z:A-`AT4BrU14^84..hrs*!\c-%!\c-&ECrSrCfMoJE=<Zr!\c-%!\c-&ED8l!?r\X>!\c-%!\c-&ECrSrDH/,L!\c-%!\c-&EC`Q&D,i#K!\c-%!\c-&ED8l"C/l]H!\c-%!\c-&EC<&l?r\X>!\c-%!\c-&EC`SuD,i#K!\c-%!\c-&ECrSqDH/,LFYG=C!\c-&EC`Q!D,i#W/JJd+Gn:np3"T%(A31A>)A="u4<FP12A._R4:rS<.TAAiCF;)(BN.5oDb+.tE"s!Q03eJb4;(U*4:Df'/R/AZ0F1oU(^L*C3YsG&##6g)##/?&DG<Pl"<h"bFX&\%'dH1-'dH.?@73C^E$6Z&/.qpi2-_XW!\c-%!\c-&EC<K$CfMoJA3gh02%L9d2@`\$!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HAO/^O2@`[q2@*7s!\c-%!\c-&ED8buBiQTG2@`\"2%D8m##6g)##/?#BMM8o"<fEO##6g)##/?&DG<Jj"<fEO##6g)##/?(CILK\"<fEO##6g)##/?+BLtoj"<g?C591RP4BrI/.N)2J/IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%Bgb9^BMCfjBM_3'G=4\nCdg`gF\5#$@8]HjD,3JjE#BQ!Go7G14;AJr.1c\C'dH1-'dH.?BMCs"E$6Yi'dH1-'dH.?DbEMuE$6Yi'dH1-'dH.?D,*f,E$6Yi'dH1-'dH.??qipjE$6Z:A-`AT4BrU14^84..hrs*!\c-%!\c-&ECrSrCfMoJE=<Zr!\c-%!\c-&ED8l!?r\X>!\c-%!\c-&ECrSrDH/,L!\c-%!\c-&EC`Q&D,i#K!\c-%!\c-&ED8l"C/l]H!\c-%!\c-&EC<&l?r\X>!\c-%!\c-&EC`SuD,i#K!\c-%!\c-&ECrSqDH/,LFYG=C!\c-&EDK)'?r\XJ/JJd+Gn:np3"T%(A31A>)A="u4<FP12A._R4:rS<.TAAiCF;)(BN.JuBgl;kE"s!Q03eJb4;(U*4:Df'/R/AZ0F1oU(^L*C3YsG&##6g)##/?&DG<Pl"<h"bFX&\%'dH1-'dH.?@73C^E$6Z&/.qpi2-_XW!\c-%!\c-&EC<K$CfMoJA3gh02%L9d2@`\$!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HAO/^O2@`[q2@*7s!\c-%!\c-&ED8buBiQTG2@`\"2%D8m##6g)##/?#BMM8o"<fEO##6g)##/?&DG<Jj"<fEO##6g)##/?(CILK\"<fEO##6g)##/?+BLtoj"<g?C591RP4BrI/.N)1t4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?'CILW`"Ag9H3X?Z:C*tu'CF;)(BN.]&@8'rj"B7ZeD,4>:Ced;nDbEN'DFmr.Bh_)lBgb6kBLtHd?qO*lCf"82D+n,6BM:lrC.1NjCIqf(2%pc-2-^b+3"Z`52A-[$A1A/k/JA=b!\c-%!\c-&ECEB%BiQTGECiJuC/R;tCJ%)sDG<f(Cf!Q!BMVf1@7a-jCe.$!DaZrnF\tY1Bi75pBhgrj?q`maCfM;\3ZT&)57SD<4:iG@5#+Zl*tB"q4=<*NCF;)(BN.]&@8'rj"B7ZkCJ@u:?qX3q?qs-pDFmr.Bh_;rBgk<d?qs'gC.LioCf"86C/RDs?qs3jDb3B%Ce6ll?r\3NGmkN%!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fI!\c-%!\c-&EDJl$BN6KFA3gh?3"Z`52A-[$GmGAo2d@jL.9$ol3"Z`52A-[#E#BQ!Go7M*Go7G14;AJr.1c\C'dH1-'dH.?BMCs"E$6Yi'dH1-'dH.?DbEMuE$6Yi'dH1-'dH.?D,*f,E$6Yi'dH1-'dH.??qipjE$6Z:A-`AT4BrU14^84..hrs*!\c-%!\c-&ECrSrCfMoJE=<Zr!\c-%!\c-&ED8l!?r\X>!\c-%!\c-&ECrSrDH/,L!\c-%!\c-&EC`Q&D,i#K!\c-%!\c-&ED8l"C/l]H!\c-%!\c-&EC<&l?r\X>!\c-%!\c-&EC`SuD,i#K!\c-%!\c-&ECrSqDH/,LFYG=C!\c-&EDK)&BiQTS/JJd+Gn:np3"T%(A31A>)A="u4<FP12A._R4:rS<.TAAiCF;)(BN.JuBM;\qE"s!Q03eJb4;(U*4:Df'/R/AZ0F1oU(^L*C3YsG&##6g)##/?&DG<Pl"<h"bFX&\%'dH1-'dH.?@73C^E$6Z&/.qpi2-_XW!\c-%!\c-&EC<K$CfMoJA3gh02%L9d2@`\$!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HAO/^O2@`[q2@*7s!\c-%!\c-&ED8buBiQTG2@`\"2%D8m##6g)##/?#BMM8o"<fEO##6g)##/?&DG<Jj"<fEO##6g)##/?(CILK\"<fEO##6g)##/?+BLtoj"<g?C591RP4BrI/.N)2J/IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B7ipDG+/5BM1TeF\"tuG=b))DaZleFA#)%DGiu&BhUicE#BQ!Go7G14;AJr.1c\C'dH1-'dH.?BMCs"E$6Yi'dH1-'dH.?DbEMuE$6Yi'dH1-'dH.?D,*f,E$6Yi'dH1-'dH.??qipjE$6Z:A-`AT4BrU14^84..hrs*!\c-%!\c-&ECrSrCfMoJE=<Zr!\c-%!\c-&ED8l!?r\X>!\c-%!\c-&ECrSrDH/,L!\c-%!\c-&EC`Q&D,i#K!\c-%!\c-&ED8l"C/l]H!\c-%!\c-&EC<&l?r\X>!\c-%!\c-&EC`SuD,i#K!\c-%!\c-&ECrSqDH/,LFYG=C!\c-&ED8o+D,i#W/JJd+Gn:np3"T%(A31A>)A="u4<FP12A._R4:rS<.TAAiCF;)(BN.Dt?q=QeE"s!Q03eJb4;(U*4:Df'/R/AZ0F1oU(^L*C3YsG&##6g)##/?&DG<Pl"<h"bFX&\%'dH1-'dH.?@73C^E$6Z&/.qpi2-_XW!\c-%!\c-&EC<K$CfMoJA3gh02%L9d2@`\$!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HAO/^O2@`[q2@*7s!\c-%!\c-&ED8buBiQTG2@`\"2%D8m##6g)##/?#BMM8o"<fEO##6g)##/?&DG<Jj"<fEO##6g)##/?(CILK\"<fEO##6g)##/?+BLtoj"<g?C591RP4BrI/.N)1r2BNYEGoIJ.4:W#++:]>&BL*gH3X?Z:C*tu'CF;)(BN.]&@8'rj"B8N%CIgfjG>1D-?qs-pDFmr,DFdr7D+mE#Db3W"Bhqi+DFm,lG=k5%DGNMoDFn+E2BNYEGoIJ.4:W#++:]>&CI'm*.ifK3!\c-%!\c-&ECEB%BiQTGED]/$C.glfDFm3"BMLihD,3YrCICKn?qE^dBLP3_F@8MrBMq?(CIpltBMLic0H*n(2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?#C.q#f"<fEO##6g)##/?#Cd^`b"<fEO##6g)##/?!Ce7&f"<e+Y4rkLF.iT3A.h`+bGmGAo2d?Ok.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.8p?qaiiFW2&*4:W#++:]>&BN5WT.N'61GmkN%!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fI!\c-%!\c-&EDJl$BN6KFA3gk11`6K#3!BKp.nrtZ0c:ls"pb?)4rkLF.iT3A.h`+aE#BQ!Go7M*Go7G14;AJr.1c\C'dH1-'dH.?BMCs"E$6Yi'dH1-'dH.?DbEMuE$6Yi'dH1-'dH.?D,*f,E$6Yi'dH1-'dH.??qipjE$6Z:A-`AT4BrU14^84..hrs*!\c-%!\c-&ECrSrCfMoJE=<Zr!\c-%!\c-&ED8l!?r\X>!\c-%!\c-&ECrSrDH/,L!\c-%!\c-&EC`Q&D,i#K!\c-%!\c-&ED8l"C/l]H!\c-%!\c-&EC<&l?r\X>!\c-%!\c-&EC`SuD,i#K!\c-%!\c-&ECrSqDH/,LFYG=C!\c-&ED8o+CfMoV/JJd+Gn:np3"T%(A31A>)A="u4<FP12A._R4:rS<.TAAiCF;)(BN.Dt?q=QeE"s!Q03eJb4;(U*4:Df'/R/AZ0F1oU(^L*C3YsG&##6g)##/?&DG<Pl"<h"bFX&\%'dH1-'dH.?@73C^E$6Z&/.qpi2-_XW!\c-%!\c-&EC<K$CfMoJA3gh02%L9d2@`\$!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HAO/^O2@`[q2@*7s!\c-%!\c-&ED8buBiQTG2@`\"2%D8m##6g)##/?#BMM8o"<fEO##6g)##/?&DG<Jj"<fEO##6g)##/?(CILK\"<fEO##6g)##/?+BLtoj"<g?C591RP4BrI/.N)1t4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?'CILW`"Ag9H3X?Z:C*tu'CF;)(BN.]&@8'rj"B7Z`BLl<-D+[<&DbEN'DFmr-CJmGuCJI<%DbWr*CeRQ&DGXJ6CJ.i0DbEAsBhCZpBM2'"?r^J:2],Ku2],Ku2],g)2],Ku2],Ku2],g22BNYEGrlTS#W`\3/O;,n.hO$.4rI*S2B*;?4B+:&CF;)(BN.Ju@9"aP591RP4B40A/M/^Z.L8d#2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?!Cdgid"<g>o3"Q)pGo7M*E&n^G1b9@E4@U\&.2`<k/JA=]'dH1-'dH.?CdgioE$8Kt2BNYEGr$3I*utOqA3(G;1b9@E4@UG%4rY=CEA/n?!\c-&EC<,k?r\XO591RP4B4HD.QS:V1e'P9)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.](Db+.t"@4452$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXCK1oSGngrZ#!4Ik##6g)##/?+BM(N^"<daQ4;(U,3ZT%JE>eie3X?`72cO&p4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.5nBMDbr"@b-R.iB]=.gck#EA/n?!\c-&ECE,kBiQTX/IhdcE"s!Q.1c\d*Z4r%/I2Of3sblkEA/n?!\c-&ECE>rE$8LnA5#r=0c:ls&fDTH4:_Eu591RP4BrI/.N'61GmkN%@lk8=(^L*R0HL624B+:&CF;)(BN.]'DH/,XB1u8@0c:ls.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?(C/%,h"<gMd0Fe[K4:VDs.o\JjCF;)(BN.]-BhVerFU/0e4B4TM2^f7L/O9@K//_Ck2],Ku2],g)2],Ku2],Ku2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nNE#9N]0H*nQ*[`p0CF;)(BN.](Db+.t":,tO2d?Ic3"Qp"57&5./JT36EE+"_Gq0gG2&JbL/JJd+GngrZ/e\Ep.L[$l4=<*NCF;)(BN.](D,+A#"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&ED&Yr?r\XJ/JJd+GngrZ&fDTH4:_EZ/JJd+Gn(E"4<4Dh/fbrKEE*,P.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.DsBhVer"=H/kCF;)(BN.E$@8:)l"@69,2@^f?.303/!\c-%!\c-&ECE;tCK2fI@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?DG*H&E$8LZ!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIF$DDl3"Z`^'dH1-'dH.??r'HpE$6Z'C/@;oBiP0C/JT*i#!4Ik##6g)##/?+BM(N^"<g?C591RP4Brg;GrH<E%2fBeA3gh02%L9d4:h`%Gn(E"4<4Dh/fbrKEE*,P.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.DsBhVer"=H/kCF;)(BN.E$@8:)l"@69,2@^f?.303/!\c-%!\c-&ECE;tCK2fI@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?DG*H&E$8LZ!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIF$DDl3"Z`^'dH1-'dH.??r'HpE$6Z'Bi%)oF\H'V2[CE7Gp>+)'dH1-'dH.??qishE$6Z:A/Z0n.N)1o.pP:C2^f7L/R/ks4^8R0.N)2J/IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B7ZfC/8#1?qX0oF[SntBM:csBM:lkD+$ZeG>Cq2DcL'I2],Ku2%L9+5?oEA.hE7hGmGAo2d@@,GmbQ'1(OKh3Z0S(##6g)##/?+BLkTb"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.;sC//%uE!REf2d@@,GrH<E%2fBeGmGAo2d?Ok.2`j:Gmb>o/Q?!h2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?#C.q#f"<fEO##6g)##/?#Cd^`b"<g?0/e\Ep.L[$l4=<*NCF;)(BN.](D,+A#"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&ECrVqCK2fUE$mV-CF;)(BN.DsBhVer"=H/kCF;)(BN.E$@8:)l"BIH-.ifK3!\c-%!\c-&ECEB%BiQTGEDK\8F\H'V2[CE7Gp>+)'dH1-'dH.??qishE$6Z:A/Z0n.N)1o.pP:C2^f7L/O;r33"Q<!Go7G14Br'p.2`j:Gmb>o/Q?!h2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?#C.q#f"<fEO##6g)##/?#Cd^`b"<g?0/e\Ep.L[$l4=<*NCF;)(BN.](D,+A#"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&ECrVqCK2fUE$mV-CF;)(BN.DsBhVer"=H/kCF;)(BN.E$@8:)l"BIH-.ifK3!\c-%!\c-&ECEB%BiQTGED0J8Bi%2i/.qpi2-_XW!\c-%!\c-&ECE;rD,i#KA3gh02%L9d2@`\74;&b@.L8uX2],Ku2%L9d"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#FCe-otG>Cq1Bgl-%Cf3u,DFm/pDGXJ:CIgcd?qj*jE)dJZ4^8R0.N'61Gq0gG2&JhN/JJd+GngrZ/e\Ep.L[$l4=<*NCF;)(BN.](D,+A#"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&ECrZ!DcJ5Y/JJd+GngrZ&fDTH4:_EZ/JJd+Gn(E"4<4Dh/fbrKEE+M*.9'Od2@^f?.303/!\c-%!\c-&ECE;tCK2fI@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?DbWT!E$8LZ!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIF$DDl3"Z`^'dH1-'dH.??r'HpE$6Z'C/@;oBiSFS2[CE7Gp>+)'dH1-'dH.??qishE$6Z:A/Z0n.N)1o.pP:C2^f7L/O;r33"Q<!Go7G14Br'p.2`j:Gmb>o/Q?"</IYlW/e\Ep.L[$l4=<*NCF;)(BN.](D,+A#"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&ECrZ!DcJ5YE$mV-CF;)(BN.DsBhVer"=H/kCF;)(BN.E$@8:)l"BIH-.ifK3!\c-%!\c-&ECEB%BiQTGED0J8Bi%2iE![F!0G%2G*[`p0CF;)(BN.](Db+.t"@5T_3"Q<!GnUBL&fDTH4:_EZ4;&2m4:h`%Gp<;&EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'D+R5rG>CM+BhV$#BhClkDb38iDFm/uCd^ZiDF?ohFA58'G=k8,Ced>u@7s9tE)dJZ4^8R.4^8R.4]N('4^8R.4^8R.4]N=-3ZT&)&fDTFCI']W.hO$.4rI*S2B*;?4B+:&CF;)(BN.K$D+%YnFW(u*.N)M?4;&i8@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&ECrVsD,i#KA1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nOE#9N]0H*nQ*[`p0CF;)(BN.;sBLlDm":,tO2d?Ic3"Qp"57&5./JT36EE*ha3ZT&)&dh)a2@i5_)EJ'(1`7r"##6g)##/?+C.(H^"<h#FBMLfoD,N`*Ce[2qCIqW)C/.r6BhqH'BMD/uDb*u*DG!8mG>1b0Db<8nDb`Sj2%pc-2-`?\CFgD9C-ad).ifK3!\c-%!\c-&ECEB%BiQTGED]/'?qs*aBMLihDb`PlCJ72sCd^Wp?q`m_FA5/#Db=2:?qEdbDG<f/E"Erg3"T%;02<c$.S*,R*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%C/.,qG=b,*C.V,rDFmr,DG451D,!])DFHumBM)B%DF?rlG>1A&CJI2sDb`Sj2%pc-2-`?\CFgD9CdC!+.ifK3!\c-%!\c-&ECEB%BiQTGED]/$D+-rhBMM6)BhCiqF\bG1G=5/+Cem`$C.q$"F\th/DGOG8?qj@!CJ@K%CfMJZGmkN%!\c-%!\c-&ED8l!?r\X>!\c-%!\c-&ECrSrDH/,L!\c-%!\c-&EC`Q&D,i#K!\c-%!\c-&ECE;s?r\X>A3g2-//_Cg2],L*/Iid14sr<PCF;)(BN.;tBLuJn"B5L7.jm;=CF;)(BN.DuCIMMm"=H/kCF;)(BN.;tBM2Vp"=H/kCF;)(BN.5o?q=Qe"=H/kCF;)(BN.DuBMVnt"=H/kCF;)(BN.Z,Dadqq"=H/kCF;)(BN.5nBh2Mn"=H/kCF;)(BN.;tCJ.qs"Ah'?CF;)(BN.?'?q"?bE!REf2d@1.3ZT&)00qAu/O(0`2]3DJ0G>?O2]3J?4:b[M##6g)##/?,DG=D#E"s!Q03eJb4;(U*4:Df'/R/AZ0F1oU(^L*C3YsG&##6g)##/?&DG<Pl"<h"bFX&\%'dH1-'dH.?DbNT$E$6Z&/.qpi2-_%./R0eO!\c-%!\c-&ECrVsD,i#K2@`\$!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HAO/^O2@`\"2%D8m##6g)##/?#BMM8o"<fEO##6g)##/?&DG<Jj"<fEO##6g)##/?(CILK\"<fEO##6g)##/?+BLtoj"<g?C591RP4BrI/.N)2J/IYl402<c$.S*hL2],Ku2%L9+5?n=%.jm;=CF;)(BN.DuCIMMm"=H/kCF;)(BN.;tBM2Vp"=H/kCF;)(BN.5o?q=Qe"=H/kCF;)(BN.](CdhVn"@5Tq.gZeT/JJd+Gn:np3"T%(A31A>)A="u4<FP12A._R4:rS<.TAAiCF;)(BN.Dt?q=QeE"s!Q03eJb4;(U*4:Df'/R/AZ0F1oU(^L*C3YsG&##6g)##/?&DG<Pl"<h"bFX&\%'dH1-'dH.?DbNT$E$6Z&/.qpi2-_%./R0eO!\c-%!\c-&ECrVsD,i#K2@`\$!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HAO/^O2@`\"2%D8m##6g)##/?#BMM8o"<fEO##6g)##/?&DG<Jj"<fEO##6g)##/?(CILK\"<fEO##6g)##/?+BLtoj"<g?C591RP4BrI/.N)2J/IYl402<c$.S3nM2],Ku2%L9+5?n=%.jm;=CF;)(BN.DuCIMMm"=H/kCF;)(BN.;tBM2Vp"=H/kCF;)(BN.5o?q=Qe"=H/kCF;)(BN.](CdhVn"@5T_3"Q<!GmGAo2d?Ok.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.E!Cd_PmFYG=C!\c-&ECE<#BN6KR/fbrKEDf4t.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?@7WaaE$8=:##6g)##/?!C/.Gp"AhNZ4;&2m0H*n&4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?#Bh:uj"Ah'?CF;)(BN.](@81#kE'[&mGmGAo2d@jL.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGED]/%Ce[DoCe[W)C/%/uF\b8$G>1M&DGNu*BMUroBLGNiF@Al&C/RH$@73RhBMLicE#BQ!GngrZ2\Q0Y.1c\C'dH1-'dH.?C.UZoE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?,D+dPp"B?BQGnM&4GmkN%!\c-%!\c-&ED8l"CK2fI@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?@7WaiE$8L'0c:ls0H*n"2@*8-4:!i$EA/n?!\c-&EC<&k@9"aK/JJd+GngrZ2\Q0Y*Z4r$#uilHCF;)(BN.5nBMMhsE!REf2d?Ok.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.8p?qaiiFXdt'/JA=b!\c-%!\c-&ECEB%BiQTGED]/%D+d;lBM)!&CJ@K%Cf!W$D,O)0BhgonCd^`kC/A&4Ce7&iDbEGsC.LioCfOaE2@`\KFUD(T2d?Ie0Fe=\/e\Ep.L[$l4@V+2/N==R3Z/h@3"c3&EE-9L2I%7+GmZ2X##6g)##/?&DG3bs"<g?C'dH1-'dH.?D,3StE$52h4;(U.!\c-%!\c-&ED8buBN6KF!\c-%!\c-&ED8`'CK2fIA.0:e!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIF$DDl3"Z`^'dH1-'dH.??r'HpE$6Z'Bi%5oBM;\G3#)EdE#K`/49ulA3YWSD/K"`s.L98m2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?#C.q#f"<gk^!\c-%!\c-&ED8buBN6KFF\H'T3#)EdE#BQ!Go7M*Go7G14;AJr2\Q0Y*Z4r$#uilHCF;)(BN.E#C/%ttE!REf2d@jL.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGEDAu-Dc/u%DF?ojCf!JqG>1S(?qj<oDb`c#DG3PuF\tM(CdhN3BgkEoCJ75rCIqf(58+5g##G@g0G7=u3#)W/E=3]t1(OKh3Z1[<4:!VF.N]634WPFW.TB\G4VLd%5?n7L'dH1-'dH.?DbEK%E$6Z:A2#N2!\c-&ED8brBN6Jt0c:ls0./_ACF;)(BN.E#Bh_ks"=H/kCF;)(BN.E$@8:)l"@3/$.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.DsBhVer"=H/kCF;)(BN.E$@8:)l"BIH-.ifK3!\c-%!\c-&ECEB%BiQTGED0J4F\P7r/fbrKEE*VY.iA<q/0>i=2[C!-4:_Eb.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?BMV#pE$6Z+0./_ACF;)(BN.E#Bh_ks"AhKY/fbrKEE*S[4^8R.4^8R0.N'61GnM&4GrlTS)_>5I##6g)##/?#BM(]c"B>F04;(UU/IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B8N'BMM`8CJ.,rBh:]l@803lF[\tuCeI,oD+-opCemDrBM^uoBMDZ6Ce-unBLtNfCfOaE2@`\KFUD(T2d?Ie0Fe=\/e\Ep.L[$l4@V+2/N==R3Z/h@3"c3&EE-9L2I%7+GmZ2X##6g)##/?&DG3bs"<g?C'dH1-'dH.?BMCfkE$52h4;(U.!\c-%!\c-&ED8buBN6KF!\c-%!\c-&ED8`'CK2fIA.0:e!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIF$DDl3"Z`^'dH1-'dH.??r'HpE$6Z'Bi%5oBM;\G3#)EdE#K`/49ulA3YWSD/K"`s.L98m2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?#C.q#f"<gk^!\c-%!\c-&ED8buBN6KFF\H'T3#)EdE#BQ!Go7M*Go7M*Go7M*GngrZ.1c\C'dH1-'dH.?C.UZoE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?#Dbieo"B?0G4]DOp.jm;=CF;)(BN.K&D+._o"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&EC`StCK2fU3"cci.1c\C'dH1-'dH.?C.UZoE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?#BM(]c"BA_9.pN2f.n29$2]+:W.h;V&0bkN1EA/n?!\c-&ED8brBN6KR3"ccq.1c\d*u,\!*u+tk/O(3^2&KRO##6g)##/?(C/%/i"B?0G4^8+#.n29$2]+:W.h;V&0bkN1EA/n?!\c-&ED8l%BN6KRE!REf2d?Ok.2`j:Gmb>o/Q?"</IYl402<c$.SX1a2[CE7Gp>+)'dH1-'dH.?DbNT$E$6Y=.pN2f.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.DsBhVer"=H/kCF;)(BN.E$@8:)l"@5U-02<c$.SWkS4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?#Bh:uj"Ah'?CF;)(BN.](@81#kE#BQ!GngrZ.1c\C'dH1-'dH.?C.UZoE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?,D+dPp"B?BQGmkN%!\c-%!\c-&ED8l"CK2fI@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?@7WaiE$8L'0c:ls0H*n(2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?#C.q#f"<fEO##6g)##/?#Cd^`b"<e+Y&dh)a2@i;F/JJd+Gp<;&EAmqr#nmP?E#BK(4;AJr.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?BLtlpE$6Z:A2aQe#nmP?GmGAo2d?Ok.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.K&?q=QeFYG=C!\c-&EC`StC/l]T/fbrKEDf4t.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?C.V-$E$8=:##6g)##/?+C.1fg"B?$C4^8R.4^8R.4^8R.4]N('4^8R.4^8R.4]O6=.hO$.4rI*L4:Df63!^H8EA/n?!\c-&ED8r#BiQTS2%pc-2-`-K2]!Z7A3(G;1b9@E4@UG%4rY=CEA/n?!\c-&ED8i$BN6KW591RP4B4BK2]!Z7@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&ED8ku?r\X>A1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nOE#9N]0H*nQ*[`p0CF;)(BN.DuC.2Dl":,tO2d?Ic3"Qp"57&5./JT36EE+"_Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ED8l%CK2fZ'dH1-'dH.?D+R,rE$8L-A56)?0c:ls0H*n&4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?#BM(`d"Ah'?CF;)(BN.5tBh;SoE'[&oGmGAo2d?Ok.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.DuDbaS%FYG=C!\c-&EC`AoDcJ5Y4:h`%0H*n&4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?#BM(`d"Ah'?CF;)(BN.5tBh;SoE'[&nGmGAo2d@@,GnM&4GmkN%!\c-%!\c-&EDJl%?r\X>@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?C.V-#E$8Kg2],L'2@*7q2%D8m##6g)##/?#BMCrg"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.K&?qFWfE!REf2d@jL.9$BX.i/F(3$/_l'dH1-'dH.??qj<oE$6Yi'dH1-'dH.?BLtlpE$6Z&4:h`%0H*n"2@*7q2%D8m##6g)##/?!Ce.8m"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.K&?qO]gE#fi%GnM&4GmkN%!\c-%!\c-&ED8l"CK2fI@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?C.V-"E$8L'0c:ls"pb?)/e\Ep.L[$l4=<*NCF;)(BN.](@74Bb"=H/kCF;)(BN.E$@8:)l"B?$E.N'61GnM&4GmkN%!\c-%!\c-&EDJl%?r\X>@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?C.V-!E$8Kg2],L'2@*7q2%D8m##6g)##/?#BMCrg"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.K&?qXchE!REf2d@1.3ZT&)00qAu/O(0`2]3DJ0G>?O2]3J?4:b[M##6g)##/?'?q!RX"B?HGGm[Le0c:ls.iAHo3!`It3#)EdE'41;3$05%'dH1-'dH.?DbEMsE$6Z'02O/E!\c-%!\c-&ED8ku?r\X>E![F!0G%2/4:!i$EA/n?!\c-&EDJl(DH/,X2@`[q2@*7s!\c-%!\c-&ED8buBiQTG2@`\$!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HAO/^O2@`\K*[`p0CF;)(BN.DuC.2Dl"@5T_3"Q<!Go7G14BsBQ.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGECEQ"G>(_8Ce[;sD,*N(DFmr.CJ@u/C/%0$@73RhBMLihBMM6#G>:P0C.Ufo@7a0iDFn,+4;&2m4;&2m4:h`%0H*n&4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?#BM(`d"Ah'?CF;)(BN.5tBh;SoE'[&mGmGAo2d?Ok.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.DuDbaS%FYG=C!\c-&EC`AoDH/,X4;&2m4:h`%0H*n&4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?&Bh1]c"Ah'?CF;)(BN.5tBh;SoE'[&oGmGAo2d?Ok.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.;sD,+A#FYG=C!\c-&EC`AoDcJ5Y4:h`%0H*n&4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?&Bh1]c"Ah'?CF;)(BN.5tBh;SoE'[&nGmGAo2d@jY!\c-%!\c-&EC<K)E$6Z:/IhdcGo7G14BsB^!\c-%!\c-&EC<K)E$6Z:591RP4BrI-4^8R.4]N('4^8R.4^8R.4]N=-3ZT&)&IB<V2_%=(*utOq#osZ`@ji9!4qJ<!'dH1-'dH.?@7j!fE$8<e3"Q<!E&7S*3"dE3@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&EC<&n@9"a?A1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nOE#9N]0H*nQ*[`p0CF;)(BN.Z,D+%Yn":,tO2d?Ic3"Qp"57&5./JT36EE+"_Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ED8l%CK2fZ'dH1-'dH.?D+R,rE$8L-A5Pf`/JJd+GngrZ.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?BMCfjE$8=:##6g)##/?(CeR,e"BA$"Bj:WG4;(U*4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?#BM(`d"Ah'?CF;)(BN.5tBhDYpE#BK(4;AJr.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?BMCfjE$8=:##6g)##/?(CeR,e"BA$"BNtNF4;(U#5?o*8/R/Dh.jm;=CF;)(BN.K&D+._o"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&EDJl(CfMoV3"cci2\Q0Y.1c\C'dH1-'dH.?BMComE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?!CdgW^"B>F04;(UU/IYku2@^f?.303/!\c-%!\c-&ECE<#DH/,L!\c-%!\c-&ED8`'CK2fIE#BK(4;AJr2\Q0Y.1c\C'dH1-'dH.?C.UZoE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?!CdgZ_"B?0G4^8m6/R/Dh.jm;=CF;)(BN.DuBMMhs"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&EDJl(DcJ5Y/JJd+Gp<;&E=3]t1(OKh3Z0S(##6g)##/?+BLGNd"<fEO##6g)##/?#Cd^`b"<h%T2%L9+5?o*8/R/Dh.jm;=CF;)(BN.K&D+._o"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&EDJl(DH/,X3"cci2\Q0Y.1c\C'dH1-'dH.?BMComE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?!Cdg]`"B>F04;(U(2BNYEGm[+g4:!kS2\H]&/JT36*"ihn0Gt*g'dH1-'dH.?Cdh&pE$8Ko5?n7W/JJd+Gn(E"4<4Dh/fbrKEE+k4/KGW5!\c-%!\c-&ECrSrBN6KFE=,f1*[`p0CF;)(BN.Z,D+%Yn"B>I3/JT*i.1c\C'dH1-'dH.?C.UZoE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?!Cdg]`"B?BQGnM&4GmZ2X##6g)##/?#DbNPk"<e]rGmZ2X##6g)##/?!Ce7#e"<fEO##6g)##/?#Cdgid"<g<BBj;ShGp>+)'dH1-'dH.?@7WXfE$6Z:A/Z0n.N)1i2%L9d"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#R@8'j'?pm:YBhL]gBLG3gF\P>'G>C_,CILp$CICTgCf!Pt@7sd$BgkNmBh;!!?r'-jE)dJZ4^8R.4^8R0.N'61Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ED8l%CK2fZ'dH1-'dH.?D+R,rE$8LnA56)?0c:ls.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?BMCfjE$8=:##6g)##/?(CeR2g"B?$C4^8R0.N'61Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECrW#CK2fZ'dH1-'dH.?D+R,rE$8LnA5#r=0c:ls.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?DbNDnE$8=:##6g)##/?(CeR/f"B?$E.N'61Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECrW#CK2fZ'dH1-'dH.?D+R,rE$8LnA5-#>0c:ls2%pc-2-^2h*Z4r#2A-o43X?`72`Vc\1_gT6EAR\+3"d_VC*P_I4"!H\E"s!Q03eJb4;(U*4:Df'/R/AZ0F1oU(^L*C3YsG&##6g)##/?&DG<Pl"<h"bFX&\%'dH1-'dH.?@7WXfE$6Z&/.qpi2-^2B'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BLtopE$6Z;A5#r2.pNu$/R/?:'dH1-'dH.?BM(ZkE$6Y=.pNu$/R0eO!\c-%!\c-&EC<&n@9"a?4:h`%Gp<;&EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'FA>8(CJmMr?q!dgCJR2sF\P8#G>C\*BM(TmD,*c(F\tD&BLuB+CIq$"BhCiqE)dJZ4^8g43ZT&)02>(a4:!kS2\H]&/JT36*"ihn0Gt*g&IB<V2^8B#"u.%t!_t1:0H*n*CKpiI4;(U*4:Df'/R/AZ0F1oU(^L*C3YsG&##6g)##/?&DG<Pl"<h"bCJZN,!\c-%!\c-&EC<&n@9"a?E![F!0G%1uCF;)(CF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@,OWGnUBL2\Q0Y02=/R##6g)##/?#DbNPk"<e]rGnM&4Gp>+)'dH1-'dH.?@7WXfE$6Y72%L9d"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#IBhUif?qs$dD+d,oBgl-*D+%Q2Ce@#oCeR?&BhDK3Cen5<@89Kt?qj*gBgl<"4;&2m2%pc-2-^2ZA31A>)A="u4<FP12A._R4:rS<.TAMG1`[Js02F)N2BFMJ"B?HGGm[&//JJd+Gn(E"4<4Dh/fbrKEE+k4/KGW5!\c-%!\c-&ECrSrBN6KFE=,33#!4Ik##6g)##/?,D+I>m"<h%d2[CE7Gm[&$'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BLtopE$6Z;A5#r2.pNu$/R/?R!\c-%!\c-&ED8buBiQTG2@`[q2@*8E*[`p0CF;)(BN.Z,D+%Yn";r$f4BsBQ.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGED]/*DG")3BM(TjD+$cnDGWc*@8]BpCJ$ljC.^ik?r09gG=tD,CICKfDFHfhDH0sH2],Ku2],Ku2],g)2],Ku2],Ku2],g22BNYEGqU6X.2<Er%o5bC3"?f^3#`H4%20BX2&TXP##6g)##/?!D+.,j"Af^42%L9k$5X-b0GtT_C.:8o)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.JuC/8,!"@4452$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXBN5TPGngrZ#!4Ik##6g)##/?!C/7>l"<daQ4;(U,3ZT%JE>eie3X?`72cO&i5?nBs.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.DuDbaS%FYG=C!\c-&EC`AoCfMoV-UCm4GmGAo2d@@,Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ED8l%CK2fZ'dH1-'dH.?D+R,rE$8LnA5#r=0c:ls.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?BMCfjE$8=:##6g)##/?(CeR/f"B?$E.N'61Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ED8l%CK2fZ'dH1-'dH.?D+R,rE$8LnA5-#>0c:ls0H*n"2@*7q2%D8m##6g)##/?!Ce.8m"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.K&?qFWfE#fi%GnM&4GmkN%!\c-%!\c-&ED8l"CK2fI@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?C.V-#E$8L'0c:ls"pb?)/e\Ep.L[$l4=<*NCF;)(BN.](@7sli"=H/kCF;)(BN.E$@8:)l"B?$E.N'61GnM&4GmkN%!\c-%!\c-&EDJl%?r\X>@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?C.V-"E$8Kg2],L'2@*7q2%D8m##6g)##/?#BMCrg"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.K&?qO]gE!REf2d@jL.9$BX.i/F(3$/_l'dH1-'dH.??qj=!E$6Yi'dH1-'dH.?BLtlpE$6Z&4:h`%0H*n"2@*7q2%D8m##6g)##/?!Ce.8m"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.K&?qXchE#fi%GnM&4GmkN%!\c-%!\c-&ED8l"CK2fI@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?C.V-!E$8L'0c:ls2%pc-2-^2h*Z4r#2A-o43X?`72`Vc\1_gT6EA/n?!\c-&ECil.C/l]T0H*n*GmGAo2d?Ok.2`j:Gmb>o/Q?""/I3'k1+,%DCF;)(BN.;tBMDbr"B5Fu#!4Ik##6g)##/?!C/7>l"<h%d2[CE7GmkN%!\c-%!\c-&EDJl%?r\X>@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?C.V-!E$8Kq.pNu$/R/?:'dH1-'dH.?BM(ZkE$6Y=.pN-8'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BLtopE$6Z;A5#r2.pOSM!\c-%!\c-&EDK)$C/l]HA3gh02%L9d4:h`%Gp<;&EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'?pmCWBgk]rBM:cpCJ@K%Cf!PtBMq>sBMM9+@89KoCIqW+CICNaCJ7H!CeR-!CdginCfOaF2],Ku2],Ku2%L9+5?nBs.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.DuDbaS%FYG=C!\c-&EC`AoCfMoVA3i[P/JJd+Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ED8l%CK2fZ'dH1-'dH.?D+R,pE$8Kk2],Ku2%L9+5?nBs.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.;sD,+A#FYG=C!\c-&EC`AoCfMoVA3iUN/JJd+Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECrW#CK2fZ'dH1-'dH.?D+R,qE$8Kk2%L9+5?nBs.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.;sD,+A#FYG=C!\c-&EC`AoCfMoVA3iXO/JJd+Go@V6Gp?E+Gnh5b.30E@.T@&_1`7r"##6g)##/?+BLkQa"<gMc4:!kR0G"d-4;(mkE#9N]0H*n*!\c-%!\c-&ECrSs?r\X>-U@kG.jm;=CF;)(BN.;tBgl;k"<ABcGmG?#/Iid15#_SC'dH1-'dH.?DbEMrE$6Yi'dH1-'dH.?DbET$E$6Yi'dH1-'dH.?D,*H%E$6Z&A3i1;CF;)(BN.](@7=Hc/JJd+Gn(E"4<4Dh/fbrKEE+M*.9'Oe!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIF$DDl3"Z`^'dH1-'dH.??r'HpE$6Z'Bi%K!BiSG1)EJ'(1`7r"##6g)##/?#CdgW^"<h"[3!^K`'dH1-'dH.??r'HtE$6Z'F@\\iF\Gn9E)coJ/JT*i0./_ACF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@,OWGnUBL#!4Ik##6g)##/?!C/7>l"<g?C591RP4BrI-4^8R.4^8R.4^8R.4]N('4^8R.4^8R.4]N=-3ZT&)*u,"g'HJ)LC-aTV.hO$.4rI*S2B*;?4B+:&CF;)(BN.K'?q"?bFW(u*.N)M<0Fo-U3"dE3@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&ED8l'BiQTGA1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nOE#9N]0H*nQ*[`p0CF;)(BN.DuD+n5!":,tO2d?Ic3"Qp"57&5./JT36EE+"_Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ED8l%CK2fZ'dH1-'dH.?D+R,rE$8L-A5Pf`/JJd+GngrZ.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?BMCfjE$8=:##6g)##/?(CeR,e"BA$"Bj:WG4;(U*4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?#BM(`d"Ah'?CF;)(BN.5tBhDYpE#BK(4;AJr.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?BMCfjE$8=:##6g)##/?(CeR,e"BA$"BNtNF4;(U#5?o*8/R/Dh.jm;=CF;)(BN.K&D+._o"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&EDJl(CfMoV3"cci2\Q0Y.1c\C'dH1-'dH.?BMComE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?!CdgW^"B>F04;(UU/IYku2@^f?.303/!\c-%!\c-&ECE<#DH/,L!\c-%!\c-&ED8`'CK2fIE#BK(4;AJr2\Q0Y.1c\C'dH1-'dH.?C.UZoE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?!CdgZ_"B?0G4^8m6/R/Dh.jm;=CF;)(BN.DuBMMhs"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&EDJl(DcJ5Y/JJd+Gp<;&E=3]t1(OKh3Z0S(##6g)##/?+BLGNd"<fEO##6g)##/?#Cd^`b"<h%T2%L9+5?o*8/R/Dh.jm;=CF;)(BN.K&D+._o"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&EDJl(DH/,X3"cci2\Q0Y.1c\C'dH1-'dH.?BMComE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?!Cdg]`"B>F04;(U(2BNYEGm[+g4:!kS2\H]&/JT36*"ihn0Gt*g'dH1-'dH.?Cdh&pE$8Ko5?n7W/JJd+Gn(E"4<4Dh/fbrKEE+k4/KGW5!\c-%!\c-&ECrSrBN6KFE=,f1*[`p0CF;)(BN.DuD+n5!"B>I3/JT*i.1c\C'dH1-'dH.?C.UZoE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?!Cdg]`"B?BQGnM&4GmZ2X##6g)##/?#DbNPk"<e]rGmZ2X##6g)##/?!Ce7#e"<fEO##6g)##/?#Cdgid"<g<BBj;ShGp>+)'dH1-'dH.?BMC`jE$6Z:A/Z0n.N)1i2%L9d"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#R@8'j'?pm:YBhL]gBLG3gF\P>'G>C_,CILp$CICTgCf!Pt@7sd$BgkNmBh;!!?r'-jE)dJZ4^8R.4^8R0.N'61Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ED8l%CK2fZ'dH1-'dH.?D+R,rE$8LnA56)?0c:ls.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?BMCfjE$8=:##6g)##/?(CeR2g"B?$C4^8R0.N'61Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECrW#CK2fZ'dH1-'dH.?D+R,rE$8LnA5#r=0c:ls.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?DbNDnE$8=:##6g)##/?(CeR/f"B?$E.N'61Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECrW#CK2fZ'dH1-'dH.?D+R,rE$8LnA5-#>0c:ls4;&2m4;&2t4;&2m4;&2m4;&2t*utOq#osZ`@kSE-4:W)B2@`tF##6g)##/?!CeR5h"B?9I3ZT&)%ilJm+:]CrA3(G;1b9@E4@UG%4rY=CEA/n?!\c-&ECE?$E$8<e3"Q<!E%2S51'Ijh4@VCA)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.JuC.V\p"@4452$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXBN5TPGngrZ#!4Ik##6g)##/?!C/7,f"<daQ4;(U,3ZT%JE>eie3X?`72cO&n2BNYEGm[+g4:!kS2\H]&/JT36*"ihn0Gt*g'dH1-'dH.?BMCchE$8Ko5?o*8/R1(9/Lr)>'dH1-'dH.?DbNDmE$8Kq.pNu$/R1(9/N"G>'dH1-'dH.?C.V-(E$8Kg2],L/GmGAo2d?Ok.2`j:Gmb>o/Q?""/I3'k1+,%DCF;)(BN.;tBMDbr"B5Fu#!4Ik##6g)##/?!C/7,f"<h%d2[CE7GnM&4Gp>+)'dH1-'dH.?C/7?#E$6Y=.pNu$/R/?:'dH1-'dH.?BM(ZkE$6Y=.pN-8'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BLtopE$6Z;A5#r,2%L9d.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?Ced]'E$8=@4<FP3.o.fO##6g)##/?+C.(H^"<h#FCeRQ&G=>#"Db*u,BM)H0D+d8oBM_i.BLkTeDb<>pCK4XS3#)EdG>2@*/IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B8N)C.LTa@899hDb38mCf!AoC/Rc1Ce-ulCdg]kDbsS6DGEJlBgkNjBM1Wj@81$"4;&2m4;&2t4;&2m4;&2m4;&2t2%pc-2-_:62%pc3#mh(Z2&St33"?f^3#`H4%20BX2&TXP##6g)##/?#BhCie"Af^42%L9k$kaBc3Ys%W,6eth@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&EC<&n?r\X>A1A<)//_Ck2],gE/.NCK1)1^657&5./JT36EASC90JtOV2%pc-2-^k.4qC4%!_k+M+t#?4CF;)(BN.;sD+Iqr"@5-O1)2r"FXK.2CF;)(BN.;tBLQ2j"@5"0CF;)(BN.K&?q"?b@OF,tCF;)(BN.](?qaii"@5"0CF;)(BN.5nBLlDm,QU\6EE!,H.1dL"3!^*$@k/9$/NOg_)AF2&4]FC'CF;)(BN.](@8:)lE)fXi3#)E>2@_YR0G"dg'dH1-'dH.??r'KtE$8LZ@k/9$/NOg_)AF2&4]FC'CF;)(BN.E!DbjY&E)fX_2[UK04>.9Y0,Xse/.r'e3Yu$&.iS^cE#BQ!Gq'O92&J7\2%p1#57&5./JT36E@_h:/QEepGq9[B/R0#"4^966.gRd]##6g)##/?,D+dSq"<daQ4;(U*49ts"2d?=k.L64c2]H!X3">pJ'dH1-'dH.?@7WahE$6Z&A3i1;CF;)(BN.Z,@8'rj4;&2m4;&2m&KMr#)BBXp/.`O44@'Sq2]i#,2A07N3">p\2%pc-2-`9lA-Xb@##6g)##/?,D+$fb"<g>i##6g)##/?!DbNPk"Aga)##6g)##/?#Dbihp"<g>i##6g)##/?,D+$ic"@k*u##6g)##/?!DbNSl"<g>i##6g)##/?,D+$ld"9BMHGq9[B/R0#"4^966.gRd]##6g)##/?,D+dSq"<daQ4;(U*49ts"2dAKn!XK_V/Iid15#`d/.gRd]##6g)##/?,D+dSq"<h&74;&2m4;&2m.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXBN5TPGngrZ#!4Ik##6g)##/?,D+IAn"<daQ4;(U,3ZT%JE>eie3X?`72cO&n2BNYEGqT1.1_Uc3.mX7G.i/F(3$/_l'dH1-'dH.??r'KnE$6Yi'dH1-'dH.?DbNDsE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?!DbNVm"B?HGGqT1.1_Uc3.pNeu4^9?M1_CZ94:Y+40G4pC0Fe=()AF2&4]FC'CF;)(BN.E#C/8,!E!REf2d?t(.pOT#03fM,GmkDp.h>lX$4.R[2A-T6@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?BM(ckE$8LZ@lk8=)AF2&4Ur&5EE-9L2I%7+GmZ2X##6g)##/?&DG3bs"<g?C'dH1-'dH.?DbEJtE$52h4;(U(2BNYEGpjU74qJ;;#os3dA-u'X0G4pC0Fe=()AF2&4]FC'CF;)(BN.;tBhM_qE"s!Q%ilZ$4[0kr2@`tN2B*;?4:`\=.gTEeA/Z0n.N)2%0c:ls(^UBJ$5X]lEASC90L$9_3XHW)/K%e.E)d)H.2`j:Gmb>o/Q?"</IYl!!\c-%!\c-&ED8`'CK2fIE![F!0G%2@3#*88)A<qr.o[W"4rY=C.P);H/QGAK/IhdcGnUBL2\Q0Y#!4Ik##6g)##/?,D+IAn"<e?d4^8R.4^8R.4^8R.4^8R.4]N('4^8R.4^8R.4]N=-3ZT&)$5ig[0G5$1#osZ`A1//n.OR2<CF;)(BN.5nBh_ks"@b<^3#VcQ3#`H&BN6Da/I3@+4qAn?4rI*L4:Df63!^H8EA/n?!\c-&ED8i$D,i#W2%pc-2-_Xg4<4P52aIs-##6g)##/?(CJ.>n"@kF6CF;)(BN.5oDG+8!FYG=C!\c-&EC<&gBiQTX'dH1-'dH.??r'HrE$5Mu2BNYEGq0I..2*U^)A="m0H3S;49too2]DuX3#`H4*=a#%4VIo,EA/n?!\c-&ECE?#E$8=G%N,up2A0:P4<4P52^:6i2]<\>@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&EDJo"C/l]HA1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nOE#9N].3B982,k2(2]i#,2A07e0H*nQ*[`p0CF;)(BN.K%Bhr"u"@5U4##6g)##/?(CJ.>n":,tO2d?t(.pOT#03fM,GmkDp.h>ku2%D8m##6g)##/?!Ce.8m"<gMc4:!kR0G"d-4;(mkE#9N]0H*n*!\c-%!\c-&ECE;t@9"a?A3i1;CF;)(BN.5oDF@bo/JJd+GngrZ.1c\C'dH1-'dH.?C.UZoE$6Z5*u,\!*u+tk/O(3^2&KR72@fd"0G5$l0./_ACF;)(BN.;tBgl;k"BA_D0c:ls#!4Ik##6g)##/?!C/%Dp"<g>O!\c-%!\c-&ECrSs?r\X>4;&2m4;&2m4;&2m4:h`%0H*nQ*[`p0CF;)(BN.K%Bhr"u"@5U4##6g)##/?(CJ.#e":,tO2d?t(.pOT#03fM,GmkDp.h>ku2%D8m##6g)##/?!Ce.8m"<gMc4:!kR0G"d-4;(mkE#9N]0H*n*!\c-%!\c-&ECE;t@9"a?A3i1;CF;)(BN.5oDG+8!/JJd+GngrZ.1c\C'dH1-'dH.?C.UZoE$6Z5*u,\!*u+tk/O(3^2&KR72@fd"0G5$l0./_ACF;)(BN.;tBgl;k"BA_D0c:ls#!4Ik##6g)##/?!C/%Dp"<g>O!\c-%!\c-&ECrSs?r\X>4;&2m4;&2m4;&2m4:h`%0H*nQ*[`p0CF;)(BN.K%Bhr"u"@5U4##6g)##/?+C.(B\":,tO2d?t(.pOT#03fM,GmkDp.h>ku2%D8m##6g)##/?!Ce.8m"<gMc4:!kR0G"d-4;(mkE#9N]0H*n*!\c-%!\c-&ECE;t@9"a?A3i1;CF;)(BN.]&@7jfh/JJd+GngrZ.1c\C'dH1-'dH.?C.UZoE$6Z5*u,\!*u+tk/O(3^2&KR72@fd"0G5$l0./_ACF;)(BN.;tBgl;k"BA_D0c:ls#!4Ik##6g)##/?!C/%Dp"<g>O!\c-%!\c-&ECrSs?r\X>4;&2m4;&2m4;&2m4:h`%0H*nQ*[`p0CF;)(BN.K%Bhr"u"@5U4##6g)##/?,D,3Pl":,tO2d?t(.pOT#03fM,GmkDp.h>ku2%D8m##6g)##/?!Ce.8m"<gMc4:!kR0G"d-4;(mkE#9N]0H*n*!\c-%!\c-&ECE;t@9"a?A3i1;CF;)(BN.Z,C.qns/JJd+GngrZ.1c\C'dH1-'dH.?C.UZoE$6Z5*u,\!*u+tk/O(3^2&KR72@fd"0G5$l0./_ACF;)(BN.;tBgl;k"BA_D0c:ls#!4Ik##6g)##/?!C/%Dp"<g>O!\c-%!\c-&ECrSs?r\X>4;&2m4;&2m4;&2m4;&2m4;&2t4;&2m4;&2t2%pc-2-`9R0F/[#2&-T*A1nN2/JT0,.P);;4@UG%4rY=CEA/n?!\c-&EC<K#DH/,]/IhdcE&AO@/JT!20Er+l((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.?BMCfiE$6Z:%ilK&4BrI-4]N=-3ZT&))\*kt4qS_7A1nN2/JT0,.P);;4@UG%4rY=CEA/n?!\c-&EC<&rD,i#\/IhdcE'=I52]EVC4%;:@)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.K&Cen>#"@4452$jj^4;&2t2%pc-2-`$T.L@sJ.ih2849too2]DuX3#`H4%20BX2&TXP##6g)##/?,@7j3c"Af(1//__:/.Vb*/.NCt((rP63"cl/4]E%02]i#,2A07P3"Q)pE'>3V4[C7n2$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXBN5TPGmkJj2%X!r/.ra80G>?tE"s!Q)\W5WGmGAo2d@1.3ZT&)"uI&+)[Q`XA-Y(VCF;)(BN.](?qjojFYG=C!\c-&ECrSpDcJ5-0H*n"2@*7q2%D8m##6g)##/?#BMCrg"<gMd0G4pC0Fe=()AF2&4]Ep^3"In_.MFI5"B>F04;(U*4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUY&KM*"/.W[ZCEZsf2],Ku2],Ku2],g)2],Ku2],g22BNYEGqKg34=WiF/.ND$$5ig[0G5$1#osZ`@ji9!4qJ<!'dH1-'dH.?BM:`nE$8<e3"Q<!E%Vk*4=WiF/.NCt((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.?Ced]*E$6Z:%ilK&4BrI-4]M_#3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf7u4VLd%5?o]a!\c-%!\c-&ECiW'CfMoJ/JJd+Gn(E"4<4Dh.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?(C/%,h"<gMd0Fe[K4:VDs.o\JjCF;)(BN.8p?qO]gE!mBf/Q>5=E![F!0G%1m2@*8E*[`p0CF;)(BN.8p?qFWf";r*_Go7M*Go7M*E"Erg3"T%D3$/_iD*7n33'enr/I3@+4qAn?4rI*S2B*;?4B+:&CF;)(BN.E!Db=;!FW(u*.N)MH3$/_iD*7n33(>t=)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.8p?qXch"@4452$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXCK1oSGngrZ#!4Ik##6g)##/?'CILT_"<daQ4;(U#5?n=%.jm;=CF;)(BN.DuBMMhs"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&EC<&rCfMoV/JJd+Gngrb.1c\C'dH1-'dH.?BMComE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?,D+$Z^"BA_e'dH1-'dH.?D,*H%E$6Z:A5-#>0c:ls$kEp]1)1W:.TAAiCF;)(BN.]&@7sliFYG=C!\c-&EC`AoD,i#W4;&2m4;&2m4;&2m4;&2m4;&2t2%pc-2-_I02]*JD(_.K#2],+?49too2]DuX3#`H4%20BX2&TXP##6g)##/?"DG*>h"Af^42%L9k$QU,j2A%eY2@19,@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3^02]*JD)EJ'(1`8kB3"Q)pGo7M*E"Erg3"T%C3#WA]2Ad#;A1nN2/JT0,.P);;4@UG%4rY=CEA/n?!\c-&EC<&rDcJ5^591RP4B3a158cHi4W+K-((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.?C.^lqE$6Z:%ilK&4BrI-4]M_#3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf4t4VLd%5?o]a!\c-%!\c-&EDJo"D,i#K/JJd+GmkJj2%X!r/.ra80G>?tE"Erg3"T%33"Qlg&K);o/JLcL.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BLtopE$6Z(.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BMCcsE$6Z&F%o&$GngrZ)BBXp"uHnn2$b1/CIqJA0c:ls.MNg;2&IGM4;f&D/IhdcGp<;&E=<Zr!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIF$DDl3"Z`^'dH1-'dH.??r'HpE$6Z'Bi%)oBi%2iE#BK(4Br+!2@13*%1<aP2aJ&X2%L9d4;&2m4;&2t4;&2m4;&2m4;&2t2%pc-2-_:6*>nh]3X?<&(cjlf$5ig[0G5$1#osZ`@ji9!4qJ<!'dH1-'dH.?C.^lpE$8=".gZe[$kb5u/K#?@4;]q%&k4ql)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.](?qsuk"@4452$jj^4;&2t2%pc-2-_gB.NTE2.Om28A1nN2/JT0,.P);;4@UG%4rY=CEA/n?!\c-&ED&Z#DcJ5^591RP4B4'B.NTE2.Om28@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&EC<&rDH/,LA1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nOE#9N]0H*nQ*[`p0CF;)(BN.Z,@7sli":,tO2d?Ic3"Qp"57&5./JT36EE*ha3ZT&)"sYi+58b7RA-Y(VCF;)(BN.K%BhDYpFYG=C!\c-&EC<&r@9"aP'dH1-'dH.?@7X'qE$8"1##6g)##/?#BM(N^"9B,D.pOT#+^?#sGmkDp.h>l!2@^f?.303/!\c-%!\c-&EDK)*DH/,L@lk8=)AF2&4Ur&5EE-9L2I%7+GmG,c2&S&###6g)##/?&DG<Dh"<h#4#!!;"4<FQ!+X]63CF;)(BN.;tBgl;k"B>F04;(U4@lP&3/Ii^<EE*S[4^8R.4^8R.4]N('4^8R.4^8R.4]N=-3ZT&)*>Je[2&QWV+!a<^$5ig[0G5$1#osZ`@ji9!4qJ<!'dH1-'dH.?DG!3!E$8<e3"Q<!E&\jL3tMu8%lu7=@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3^U4<4D0A1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nOE#9N]0H*nF*>oS.0jF\d4;(U,3ZT%JE>eie3X?`72cO&i5?nBs.1dL"3!^*$!\c-%!\c-&ED8`&CK2fI!\c-%!\c-&ED8l"C/l]H@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?D,*GqE$8L'0c:ls.iAI#0HV#G4;]_)##6g)##/?#Cdgfc"<fEO##6g)##/?#BMCuh"<fEO##6g)##/?(CJ.,h"<gMf4:_E(2?d>X4;&2m0H*n&4:E&63ZS2)4XW3OCF;)(BN.E$?qsuk"=H/kCF;)(BN.DuBMVnt"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&ECE<"C/l]T/JJd+Gn(E"2&-o//K#*Z'dH1-'dH.?BLtoqE$6Yi'dH1-'dH.?BMColE$6Yi'dH1-'dH.??qj?lE$6Z5*>o(u.h`@bE#BQ!Go7M*E#BQ!Go7M*Go7M*E"Erg3"T%:0Fnp04:`V^!Dc9@49too2]DuX3#`H4%20BX2&TXP##6g)##/?%DFd,e"Af^42%L9k*>Je[2&QWV+!a?Z((rP63"cl/4]E%02]i#,2A07P3"Q)pE%V_42@:$D3"Zl.4@(.m2$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXBN5TPGngrZ$Q0fj0,ZGF1`[56GmGAo2d?Ok.1dL"3!^*$!\c-%!\c-&ED8brD,i#K!\c-%!\c-&ECE,kBN6KF!\c-%!\c-&ECEArE$6Yi'dH1-'dH.??qipeE$6Z:591RP4Br"".jm;=CF;)(BN.DuCIMMm"=H/kCF;)(BN.]'BiQTG!\c-%!\c-&ECE;sDcJ5MA/Z0n.N)1i2%L9d.iAI#0HV#G4;]_)##6g)##/?#DbiVj"<fEO##6g)##/?+D+mAj"<fEO##6g)##/?+C.qns"=H/kCF;)(BN.](Ce@ts"@3#"//_D#2%D8m##6g)##/?#BMM8o"<fEO##6g)##/?+CJ8"t"=H/kCF;)(BN.](Ce@ts"@3#"//_Ck2],Ku2],Ku2],gS49too2]DuX3#`H4$5isN.ieTu.o\JjCF;)(BN.]&BN6KR2%pc-2-_LF3!]Nr$5jZb3XA;249too2]DuX3#`H4$4n3_4:YUL##6g)##/?&Bh1Q_"AhNcF\Gn8BhUoe$4%@_/.X*42&R2H@l##G0c_/84;_<,/.ra80G>?t%ilK&4B2M<3!]aq%ilK&4BrI-4]N=-3ZT&)$4%@_.ObK'BL+!M/I3@+4qAn?4rI*S2B*;?4B+:&CF;)(BN.Z,?qaiiFW(u*.N)MG/KFg&$k*eI@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&EC<&qBN6KFA1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nOE#9N]0H*nQ*[`p0CF;)(BN.Z,?qjoj":,tO2d?S(3!]aC49ur:4qCmO##6g)##/?(CJ.>n"Af4T3!]a]4;&2m4;&2m4;&2t2%pc-2-_LF3!]aI.2t`_$5ig[0G5$1#osZ`@ji9!4qJ<!'dH1-'dH.?DbNDqE$8<e3"Q<!E%_1m/Is!<5#+j(2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?,D+-od"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I%7+Gp>+)'dH1-'dH.?@7X*iE$6YH0c:ls.L6b*.PDAM0G5$1EA/n?!\c-&EC`PuDH/,].5)DP.TI&i4^8R.4^8R.4]N=-3ZT&)$4%@_.ObK'C-a3O/I3@+4qAn?4rI*S2B*;?4B+:&CF;)(BN.K%BhM_qFW(u*.N)MG/KFg&$k*eG@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&EDJo"@9"a?A1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nOE#9N]0H*nQ*[`p0CF;)(BN.K%Bgc5j":,tO2d?S(3!]aC49ur:4qCmO##6g)##/?+C.(B\"Af4T3!]a]4;&2m4;&2m4;&2t2%pc-2-_LF3!]aI.2tNY$5ig[0G5$1#osZ`@ji9!4qJ<!'dH1-'dH.?Ced]/E$8<e3"Q<!E%_1m/Is!<5"JF"2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?'CILri"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I%7+Gp>+)'dH1-'dH.?Ced].E$6YH0c:ls.L6b*.PDAM0G5$1EA/n?!\c-&EC`Q'BiQTX.5)DP.TI&i4^8R.4^8R.4]N=-3ZT&)$4%@_.ObK'CdBEQ/I3@+4qAn?4rI*S2B*;?4B+:&CF;)(BN.JuDb44uFW(u*.N)MG/KFg&$k*eM@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&EDK))DcJ5MA1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nOE#9N]0H*nQ*[`p0CF;)(BN.JuDb=;!":,tO2d?S(3!]aC49ur:4qCmO##6g)##/?+BLtZc"Af4T3!]a]4;&2m4;&2m4;&2t2%pc-2-`-G2&Qu^3#`H9%362q!\c-%!\c-&EC`Pu@9"a?@m:/!56rM94rIU'E%qq84;fCG4rI*L4:Df63!^H8EA/n?!\c-&EC<,jBN6KR2%pc-2-_LE.2`=?/.iU+A2+Z,4;fCG4rI*S2B*;?4B+:&CF;)(BN.8oBhVerFW(u*.N)MG/.<+&&IB<V2b#k<)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.8pDFIhp"@4452$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXBN5TPGngrZ#!4Ik##6g)##/?'CJ.Ao"<daQ4;(U,3ZT%JE>eie3X?`72cO&n2BNYEGqgfm4:iN>.1c\C'dH1-'dH.?DbEMrE$6Yi'dH1-'dH.?DbET"E$6Yi'dH1-'dH.?D,*H%E$6Y@2BNYEGqgfq.if:0.1c\C'dH1-'dH.?DbEMrE$6Yi'dH1-'dH.?BMCfoE$6Yi'dH1-'dH.?D,*H%E$6Y;5?n=%.n29$2]+:W.h;V&0bkN1EA/n?!\c-&ED8r#BN6KR/JJd+GngrZ2\Q0Y*Z4r$#uilHCF;)(BN.Z,?r(&lE!REf2d@@,GnM&4GrlTS)_>5I##6g)##/?#BM(T`"B>F04;(U#5?p32)]9J"B0eseBhUonGmGAo2d?Ok.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.;sD+%YnE#BQ!Go7G14;AJr*Z4r$#uilHCF;)(BN.DuDb=;!E#fi%EB=aK)_>5I##6g)##/?#BM(T`"BA_e'dH1-'dH.?D,*f0E$6Yi'dH1-'dH.?D,*H%E$6Z;CILrb/JJd+Gp>+)'dH1-'dH.?D,*f0E$6Z:/IhdcGo7G14;AJr*Z4r$#uilHCF;)(BN.DuDb=;!E#fi%EB=aK)_>5I##6g)##/?#BM(T`"BA_e'dH1-'dH.?D,*f0E$6Yi'dH1-'dH.?D,*H%E$6Z9A5>TlGmGAo2d@jY!\c-%!\c-&EC`Q&@9"a?A/Z0n.N)1i2],L$5?o*8/R1(9/NtFQ'dH1-'dH.??qj?sE$8L'0c:ls0H*nC#!NV00LA?3BhUonBj:WG4;(U*4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?,D+-]^"B?$C4^8R0.N'61GrlTS)_>5I##6g)##/?+BLP0Y"B?0G4]F3A/NtFQ'dH1-'dH.??qj?sE$8LZ!\c-%!\c-&EC`Q&@9"a?!\c-%!\c-&EC`Pu?r\X>APPs'GmGAo2d@jY!\c-%!\c-&EC`Q&@9"a?A-`AT4BrI/.N'61GrlTS)_>5I##6g)##/?+BLP0Y"B?0G4]F3A/NtFQ'dH1-'dH.??qj?sE$8LZ!\c-%!\c-&EC`Q&@9"a?!\c-%!\c-&EC`Pu?r\X>B0f$dBj:WG4;(UU*[`p0CF;)(BN.5o?pn9a"@3Y%2%L9d4;&2m0H*n"2@*8-4:!i$EA/n?!\c-&ED&Z#@9"aK/JJd+GngrZ'I,L?2&/_iDFm5pBhVJB0c:ls.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?BMV)pE$8Kk2],Ku2%L9+5?ouK/NtFQ'dH1-'dH.?DG*6!E$8Kg2],dF4:!i$EA/n?!\c-&ED&Z#@9"aKE$mV-CF;)(BN.5o?pn9a"=H/kCF;)(BN.5oDFIhp"@,F[?sE[>4;(UU*[`p0CF;)(BN.5o?pn9a"@3#"//_Ck2%L9+5?ouK/NtFQ'dH1-'dH.?DG*6!E$8Kg2],dF4:!i$EA/n?!\c-&ED&Z#@9"aKE$mV-CF;)(BN.5o?pn9a"=H/kCF;)(BN.5oDFIhp"@>[VBhVJB0c:ls#!4Ik##6g)##/?(CILoh"<g>?3"Q<!Go7M*GngrZ2\Q0Y*Z4r$#uilHCF;)(BN.;sD+._oE!REf2d@@,Gqgfq.if:/A5,?gBj:WG4;(U*4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?#C/.8k"Ah'?CF;)(BN.Z,?qFWfFYG=C!\c-&EC`AoDcJ5Y4;&2m4:h`%0H*n94:!i$EA/n?!\c-&ECrW#?r\XJ3"ccq*Z4r$#uilHCF;)(BN.;sD+._oE)ePE##6g)##/?(CILoh"<fEO##6g)##/?(CJ.Ao"<g<5?q"$20c:ls#!4Ik##6g)##/?(CILoh"<g>Q.gZeT4:h`%0H*n94:!i$EA/n?!\c-&ECrW#?r\XJ3"ccq*Z4r$#uilHCF;)(BN.;sD+._oE)ePE##6g)##/?(CILoh"<fEO##6g)##/?(CJ.Ao"<gBDC.q#_/JJd+Gp>+)'dH1-'dH.?D,*f0E$6Z:591RP4BrI-4^80q.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.]&CK2fU4;&2m4;&2m4;&2t4;&2m4;&2m4;&2t2%pc-2-_g>3!^KX/K"[t'H%_l4=h3M4@UG%4rY=CEA/n?!\c-&ED&Z#?r\XO591RP4B4'>3!^KX/K"[o((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.?@7<LT"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I%7+Gp>+)'dH1-'dH.?@7<LT"<daQ4;(U,3ZT%JE>eie3X?`72cO&i5?n=%.n29$2]+:W.h;V&0bkN1EA/n?!\c-&ED8r#BN6KR/JJd+GngrZ2\Q0Y*Z4r$#uilHCF;)(BN.Z,?qO]gE!REf2d@@,GnM&4GrlTS)_>5I##6g)##/?#BM(T`"B>F04;(U*4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?&Bh1oi"B?$C4^9!2GrlTS)_>5I##6g)##/?#BM(T`"B?0G4]F3A/NtFQ'dH1-'dH.?BMCfnE$8LZ!\c-%!\c-&EC`Q&@9"a?!\c-%!\c-&EC`Pu?r\X>B0ed]Bj:WG4;(U*4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?!C.^ic"B?rt!\c-%!\c-&EC`Q&@9"a?A/Z0n.N)1i2%L9+5?ouK/NtFQ'dH1-'dH.?BMCfnE$8Kg2],dF4:!i$EA/n?!\c-&ED8l%DcJ5YE$mV-CF;)(BN.5o?pn9a"=H/kCF;)(BN.5oDFIhp"@,I\?sE[>4;(UU*[`p0CF;)(BN.5o?pn9a"@3#"//_Ck2],L$5?ouK/NtFQ'dH1-'dH.?BMCfnE$8Kq.o\;//NtFQ'dH1-'dH.?BMCfnE$8LZ!\c-%!\c-&EC`Q&@9"a?!\c-%!\c-&EC`Pu?r\X>B0ed]Bj:WG4;(U#5?n:!.i/F(3$/_l'dH1-'dH.??r'KnE$6Yi'dH1-'dH.?BMCfmE$6Yi'dH1-'dH.?DbET)E$6Yi'dH1-'dH.?DbNGqE$6Yi'dH1-'dH.?@7X*lE$6Yi'dH1-'dH.?C/7;rE$6Z:A5#r=0c:ls0H*n94:!i$EA/n?!\c-&ECrW"BN6KR/JJd+Gn(E"4<4Dh/fbrKEE+M*.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGECr`#BMq;uBh_<&C/%/uF\YY2G=kA,C/7N"DF@2tDb`SoF@o5.BMq9'BMCciC.LioCfOaV2[CE7GnM&4Gp>+)'dH1-'dH.?@7<LT"<e]rGmkN%!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KFA3jHC*tB"q4=<*NCF;)(BN.]&@8'rj"B7]aDG=;3BhUs!CemJsCf!T)Dc/nuD,3Z+C.h6(BhCiqF\tJ0D,"23@800kCJR2lDFn,+!\c-%!\c-&EDJl$BN6KF0H*n(2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?#C.q#f"<fEO##6g)##/?#Cd^`b"<g?C)EJ'(1`7r"##6g)##/?+C.(H^"<h#MC.guiCJ7,o?qEjdCIqW*?qOU&C.Lik@8B6p?q`maCf"87@7Wg]BLG9eCedK%C.gib/JJd+Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&EDK))DH/,X4;&2m4:h`%0H*n"2@*8-4:!i$EA/n?!\c-&ECrW"BN6KR/JJd+Gn:np3"T%(A31A>)A="u4<FP12A._R4:rS<.TAAiCF;)(BN.E!Ce.hqE"s!Q03eJb4;(U*4:Df'/R/AZ0F1oU(^L*C3YsG&##6g)##/?&DG<Pl"<h"bFX&\%'dH1-'dH.?@7<LT"<h%d2[CE7GnM&4GmZ2X##6g)##/?#DbNPk"<e]rGmZ2X##6g)##/?!Ce7#e"<fEO##6g)##/?#Cdgid"<g<BBj;ShGp>+)'dH1-'dH.?@7<LT"<g?C591RP4Brg;GrlTS)_>5I##6g)##/?&Bh:`c"B?BQGrlTS)_>5I##6g)##/?,D+-c`"B?$E.N)2J/IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B7ZeDa[c4DF?liDGNMo@8KEtG=b5,?pm^fBMUroCJ\/6D+$lgC.UlnCeR3#BMVo+4;&2m4;&2m4;&2m4;&2m4;&2m4;&2m4;&2t4;&2m4;&2m4;&2t2%pc-2-_L:3"@#_3"dE4A2+Z,4;fCG4rI*S2B*;?4B+:&CF;)(BN.E!DbFA"FW(u*.N)MG0c^H('HJ)LCIUAp)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.E!Ce@ts"@4452$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXBN5TPGngrZ#!4Ik##6g)##/?#Bh:W`"<daQ4;(U,3ZT%JE>eie3X?`72cO&i5?n=%.n29$2]+:W.h;V&0bkN1EA/n?!\c-&ED8r#BN6KR/JJd+GngrZ2\Q0Y*Z4r$#uilHCF;)(BN.8oBh_ksE!REf2d@@,GnM&4GrlTS)_>5I##6g)##/?%DFdGn"B>F04;(U*4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?#C/.5j"B?$C4^9!2GrlTS)_>5I##6g)##/?%DFdGn"B?0G4]F3A/NtFQ'dH1-'dH.?DG*6!E$8LZ!\c-%!\c-&EC`Q&@9"a?!\c-%!\c-&EC`Pu?r\X>B0ed]Bj:WG4;(U*4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?,@7j6d"B?rt!\c-%!\c-&EC`Q&@9"a?A/Z0n.N)1i2%L9+5?ouK/NtFQ'dH1-'dH.?DG*6!E$8Kg2],dF4:!i$EA/n?!\c-&ED&Z#@9"aKE$mV-CF;)(BN.5o?pn9a"=H/kCF;)(BN.5oDFIhp"@,I\?sE[>4;(UU*[`p0CF;)(BN.5o?pn9a"@3#"//_Ck2],L$5?ouK/NtFQ'dH1-'dH.?DG*6!E$8Kq.o\;//NtFQ'dH1-'dH.?DG*6!E$8LZ!\c-%!\c-&EC`Q&@9"a?!\c-%!\c-&EC`Pu?r\X>B0ed]Bj:WG4;(U#5?ouK/NtFQ'dH1-'dH.?BMCftE$8L'0c:ls0H*n%/Iid14sr<PCF;)(BN.;tBLuJn"B5R0.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.Z0DadqqE)8MVCF;)(BN.;tC.2DlE!REf2d@@,GrlTS)_>5I##6g)##/?#BM(rj"B>F04;(U*4:Df'/R/AZ0F1oU"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#FCJ$urG=kS1@8KEi?rB6dCIpuqF\tS+C/$ugBLPTlE)coJ/JT*i2\Q0Y#!4Ik##6g)##/?#Bh:W`"<e]rGmkN%!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KFA3jHC*tB"q4=<*NCF;)(BN.]&@8'rj"B8N$DbNDjDacrrF\YG1G=Y5$Ced;mFA5/"BLuB*?pmIVE$mV-CF;)(BN.K&Ce\2!":c"W2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&EC<K#?r\XJ4;&2m4;&2m4:h`%0H*n"2@*8-4:!i$EA/n?!\c-&ED8l%@9"aK/JJd+Gn:np3"T%(A31A>)A="u4<FP12A._R4:rS<.TAAiCF;)(BN.9$@74BbE"s!Q03eJb4;(U*4:Df'/R/AZ0F1oU(^L*C3YsG&##6g)##/?&DG<Pl"<h"bFX&\%'dH1-'dH.?BM:]lE$6Z&/.qpi2-_%./R/?:'dH1-'dH.?BM(ZkE$6Y=.pN-8'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BLtopE$6Z;A5#r2.pOSM!\c-%!\c-&ED8i%DcJ5MA3gh02%L9d2@`\34:!i$EA/n?!\c-&ED8l%@9"aK2@`\34:!i$EA/n?!\c-&ECiZ!BN6KR4:h`%Gp<;&EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'FAG;*C/Rc1BLkBhC/%/uF\YG+G>1b7Ce-fkDG*>nF\tS+BLkE`BhqH%Db`SjE#BQ!Go7M*Go7M*Go7M*Go7M*Go7M*E#BQ!Go7M*Go7M*E"Erg3"T%92&R2H.hrjC2&ud*'H%_l4=h3M4@UG%4rY=CEA/n?!\c-&EC<K"BiQTX591RP4B4*H4<FP80HW4a3"&J42a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?&BLG6\"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I%7+Gp>+)'dH1-'dH.?DbWo(E$6YH0c:ls.3B982,k2(2]i#,2A07e0H*n(2%EA-0G4pC0Fe=()AF2&4]FC'CF;)(BN.DsCJA(uE!REf2d@@,GnM&4GrlTS)_>5I##6g)##/?+BLP0Y"B>F04;(U*4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?,D+-]^"B?$C4^9!2GrlTS)_>5I##6g)##/?+BLP0Y"B?0G4]F3A/NtFQ'dH1-'dH.??qj?sE$8LZ!\c-%!\c-&EC`Q&@9"a?!\c-%!\c-&EC`Pu?r\X>B0ed]Bj:WG4;(U#5?nBs.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.8oBhhqtFYG=C!\c-&EC`StC/l]TA3h+@2-^+h4;(U&2@'Bh4;(mA*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%CIpcqF\bM,F\tM-@81$"4;&2m.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?CemGrE$8Kk2%L9+5?ouK/NtFQ'dH1-'dH.??qj?sE$8Kg2],dF4:!i$EA/n?!\c-&ECE<"D,i#WE$mV-CF;)(BN.5o?pn9a"=H/kCF;)(BN.5oDFIhp"@,4NBj:WG4;(U*4:Df'/R0eO!\c-%!\c-&EC<N%E$6Z:/IhdcGmb>o/Q?!k2[CE7GnM&4Gp>+)'dH1-'dH.?DbWo(E$6Y=.pOk7/NtFQ'dH1-'dH.??r'9b"B?rt!\c-%!\c-&EC<N%E$6Z:591RP4BrI-4^8R.4^8R.4]N('4^8R.4^8R.4]N=-3ZT&)*=`ee2A.,62%pm7'H%_l4=h3M4@UG%4rY=CEA/n?!\c-&ED8r#D,i#\591RP4B4'I3#`eG%368o2b#k<)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.8p@8'rj"@4452$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXBN5TPGngrZ#!4Ik##6g)##/?'CICQ_"<daQ4;(U,3ZT%JE>eie3X?`72cO&i5?n=%.n29$2]+:W.h;V&0bkN1EA/n?!\c-&ED8r#BN6KR/JJd+GngrZ2\Q0Y*Z4r$#uilHCF;)(BN.;sD+._oE!REf2d?Ok.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.DsCJS5"FYG=C!\c-&EC<&qCfMo['dH1-'dH.?D+R,qE$8Kk2],L$5?ouK/NtFQ'dH1-'dH.?DbNE"E$8Kg2],dF4:!i$EA/n?!\c-&ECrW#?r\XJE$mV-CF;)(BN.5o?pn9a"=H/kCF;)(BN.5oDFIhp"@>[]BhVJB0c:ls.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?D,3Q'E$8=:##6g)##/?+C.1fg"AhN_BN56@.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.>uCeS+uE#BK(4;AJr*Z4r$#uilHCF;)(BN.;sD+._oE#fi%EB=aK)_>5I##6g)##/?&Bh1rj"BA_e'dH1-'dH.?D,*f0E$6Yi'dH1-'dH.?D,*H%E$6Z;D+m>b/JJd+Gn(E"4<4Dh#!4Ik##6g)##/?,?qFWf"@3#"//_D$3#)EdE![F!0G%1m2@*8E*[`p0CF;)(BN.8p@8'rj";:u,*Z4r$#uilHCF;)(BN.JuDa[kpE$I.u'dH1-'dH.?@7<IS"<g>?3"Q<!Go7M*Go7M*Go7M*E#BQ!Go7M*Go7M*E"Erg3"T%72AdDL1`[K@'H%_l4=h3M4@UG%4rY=CEA/n?!\c-&ECEB!E$8<e3"Q<!E'#!D0aS^!2b#k<)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.>uCJ8"t"@4452$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oU4VLd%5?o]a!\c-%!\c-&ED&YrBiQTG/JJd+GmkJj2%X!r/.ra80G>?tE"s!Q.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?DbNGoE$8=".gZe[A3i1;CF;)(BN.8qBM2Vp/JJd+GngrZ*Z4r1EA/n?!\c-&EDK)&C/l]TA3gh02%L9d2@`\34:!r?'dH1-'dH.?C/78pE$8LoBM;AA0c:ls0H*nI2@^Q/C0U`H4;(U,2%D8m##6g)##/?&DG<Sm"<fEO##6g)##/?(CILoh"<fEO##6g)##/?(CJ.Ao"<g?7CeI&]#!4Ik##6g)##/?(CILoh"<g>Q.gZeT4:h`%Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ED8l&CK2fU4;&2m4:h`%0H*n94:!r?'dH1-'dH.?BMCloE$8LnA/Z0n.N)1o.pOk7/MUK`##6g)##/?#BM:cc"B@uiBj:WG4;(U#5?oEA.hE7gGmGAo2d?Ir.jm;=CF;)(BN.;tBMMhs"=H/kCF;)(BN.5o?pn9a"=H/kCF;)(BN.5oDFIhp"@5IUDFmei*[`p0CF;)(BN.5o?pn9a"@3#"//_Ck2%L9d.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?BMCciE$8Kk2],Ku2%L9+5?ouK/MUK`##6g)##/?%DG3_r"BA$"591RP4Brg;GrlTS'N@%SCF;)(BN.>uBgc5jE'QijGmGAo2d@@,Gq0gG2&JeM/JJd+GmkN%!\c-%!\c-&ECrSrCK2fI!\c-%!\c-&EC`Q&@9"a?!\c-%!\c-&EC`Pu?r\X>A5,<dCg8J9!\c-%!\c-&EC`Q&@9"a?A-`AT4BrI/.N)1t4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?'CICig"B?$C4^8R0.N'61GrlTS'N@%SCF;)(BN.DuBhDYpE'[&!3"Q<!GnUBL*Z4r1EA/n?!\c-&ED8l#DcJ5YAPPW\/JJd+GngrZ%MK$W4\erm0c:ls.1c\C'dH1-'dH.?DbEMrE$6Yi'dH1-'dH.?D,*f0E$6Yi'dH1-'dH.?D,*H%E$6Z:BMCipGp>+)'dH1-'dH.?D,*f0E$6Z:/IhdcGo7G14Br'p.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.8p@74BbE#BQ!Go7M*Go7G14;AJr.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?DbNGoE$8=".gZe[A3i^Q/JJd+Gn(E&/.NRc2\d/s4:h`%Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECrW"CK2fU4;&2m4;&2t4;&2m4;&2m4;&2t2%pc-2-_L12]Dc)2]4Ib/O;B$2&Qu^3#`H4%20BX2&TXP##6g)##/?#C/.&e"Af^42%L9k$6:#f//9'-(_-OK((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.?C.UcrE$6Z:%ilK&4BrI-4]M_#3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf4t4VLd%5?o]a!\c-%!\c-&EDJl"?r\X>/JJd+GmkJj2%X!r/.ra80G>?tE"s!Q2\Q0Y*Z4r$#uilHCF;)(BN.JuDadqqE!REf2d?Ok.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.JuDadqqE#BQ!GngrZ2\Q0Y*Z4r$#uilHCF;)(BN.JuDadqqE!REf2d@@,GrlTS'N@%SCF;)(BN.8oBhr"uE'd,oGmGAo2d?q*.N)1m5?oEA.hE7gGmGAo2d@jY!\c-%!\c-&EDJo"?r\X>A2#N2!\c-&ECrW"C/l]F*[`p0CF;)(BN.DuD,+A#"@3#"//_Ck2%L9d#!4Ik##6g)##/?#BLkTb"<g>?3"Q<!Go7M*Go7M*GngrZ*Z4r1EA/n?!\c-&EDK)&BN6KRAO/agGmGAo2d@@,Gq0gG2&JeM/JJd+Gn:np3"T$uA31A>)A="u4<FP12A._R4:rS<.TAAiCF;)(BN.](DFIhpE"s!Q2d?=j4;(U*4:Df'/R/AZ0F1oU(^L*C3YsG&##6g)##/?&DG<Pl"<h"ZFX&\%'dH1-'dH.?C.UcrE$6Z&/.qpi2-_%./R0eO!\c-%!\c-&EDJl"?r\X>2@`[q!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HAO/^O2@`[q2@*7k!\c-%!\c-&ED8buBiQTG4:h`%Gp<;&EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'F@nr&BMq<'CIh,tD+[K$Cf!GmD+mDuBM;,uD+[5p@80'iF\tS(Bh2E-C/7>uBhM,tCIqf(4;&2m4:h`%Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECiW(@9"aK4;&2m4;&2m0H*n94:!r?'dH1-'dH.?C/78rE$8LmA55N[3"cci*Z4r1EA/n?!\c-&EDK)&CK2fUAO/agGmGAo2d@@,Gq0gG2&JhN/JJd+Gn:np3"T$uA31A>)A="u4<FP12A._R4:rS<.TAAiCF;)(BN.JuBM)PoE"s!Q2d?=j4;(U*4:Df'/R/AZ0F1oU(^L*C3YsG&##6g)##/?&DG<Pl"<h"ZFX&\%'dH1-'dH.?C.UcrE$6Z&/.qpi2-_%./R0eO!\c-%!\c-&EDJl"?r\X>2@`[q!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HAO/^O2@`[q2@*7k!\c-%!\c-&ED8buBiQTG4:h`%Gp<;&EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'F@AGuCf3T(BhC]nBhCiqF\"epG=bJ.CIgopDFm3"BMLihCdg]jG>CJ.Dbii,BMLicE#BQ!Go7G14Br'p.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.DuCee8"E#BQ!Go7M*GngrZ*Z4r1EA/n?!\c-&EDK)&BN6KRB0f!cGo[e.EB=aK'N@%SCF;)(BN.JuBMMhsE'd,nBj;A^4^9cI/MUK`##6g)##/?+C.V\pE'QumE!REf2d@@,Gq0gG2&JeM/JJd+Gn:np3"T$uA31A>)A="u4<FP12A._R4:rS<.TAAiCF;)(BN.DuBh;SoE"s!Q2d?=j4;(U*4:Df'/R/AZ0F1oU(^L*C3YsG&##6g)##/?&DG<Pl"<h"ZFX&\%'dH1-'dH.?C.UcrE$6Z&/.qpi2-_XW!\c-%!\c-&EDJl"?r\X>2@`[q!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HAO/^O2@`[q2@*7k!\c-%!\c-&ED8buBiQTG4:h`%Gp<;&EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'C.h9*G=Y#!Ce[W)C/%2oBMVf9CJ$osBhC`h@89KlFAGD1?rBZsDb<8nDb`SjE#BQ!Go7G14Br'p.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.8p@74BbE#BQ!Go7M*Go7G14Br'p.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.>uCe\2!E#BQ!Go7M*E#BQ!Go7M*Go7M*E"Erg3"T%E//\[/.P);;4@((k3tEtt##6g)##/?#DbWnt"<gM_.if6=#osZ`ED9^o//\[/.P);;4@U\&.2`<k/JA=]'dH1-'dH.?DG*8mE$8Kt2BNYEGq9..3Z//6A1[fd.L6883#`H4#os3O4q8;@0iU+pCF;)(BN.>uCen>#FYG=C!\c-&ECrr,BiQTS.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXBN5TPGmkJj2%X!r/.ra80G>?tE%D2%3Z//6@kSE1*>o(^EA/n?!\c-&ED8r#DcJ5\G7G2u2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECrW"D,i#\'dH1-'dH.?C.^onE$8LZ4;&2t4;&2m4;&2t2%pc-2-_jH0F/7@/.qqh#RM(S/Is*.4rI*S2B*;?4B+:&CF;)(BN.DsCJ.qsFW(u*.N)M=2&-)q&IB?l@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&EC<N&E$6Z:%ilK&4BrI-4]M_#3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf4t4VLd%5?o]a!\c-%!\c-&EC<N&E$6YH0c:ls.3B982,k2(2]i#,2A07e0H*n(2%D8m##6g)##/?#BMM8o"<fEO##6g)##/?&DG<Jj"<fEO##6g)##/?(CILK\"<fEO##6g)##/?+BLtoj"<g?C/IhdcGmGAo2d@@,Gn0le0G5$Y'dH1-'dH.?DbEN"E$6Z'.1c\C'dH1-'dH.?BMCs"E$6Yi'dH1-'dH.?DbEMuE$6Yi'dH1-'dH.?D,*f,E$6Yi'dH1-'dH.?BMColE$6Yi'dH1-'dH.?@7W^gE$6Yi'dH1-'dH.?D,3Q$E$6Yi'dH1-'dH.?DbEQ!E$6Z+'dH1-'dH.?BM(cqE$8Kq.pN;q.hrs*!\c-%!\c-&ECrSrCfMoJE=<Zr!\c-%!\c-&ED8l!?r\X>!\c-%!\c-&ECrSrDH/,L!\c-%!\c-&EC`Q&D,i#K!\c-%!\c-&ED8l"C/l]H!\c-%!\c-&EC<&l?r\X>!\c-%!\c-&EC`SuD,i#K!\c-%!\c-&ECrSqDH/,LFYG=C!\c-&EC`StCfMoV2@`[t/Iid14sr<PCF;)(BN.;tBLuJn"B5L7.jm;=CF;)(BN.DuCIMMm"=H/kCF;)(BN.;tBM2Vp"=H/kCF;)(BN.5o?q=Qe"=H/kCF;)(BN.DuBMVnt"=H/kCF;)(BN.Z,Dadqq"=H/kCF;)(BN.5nBh2Mn"=H/kCF;)(BN.;tCJ.qs"Ah'?CF;)(BN.](?qFWfE!REf2d?t(.pOT#03fM,GmkDp.h>ks4:E&63ZS2)4[q43/O(3^2&HN%2cO'T4VLd%5?nF0.hrs*!\c-%!\c-&ECrSrCfMoJE=+?P##6g)##/?&DG3bs"<gl###6g)##/?#DbiYk"B?BQGn0le0G5$Y'dH1-'dH.?DbEN"E$6Z'0./_ACF;)(BN.;tBgl;k"Ah'?CF;)(BN.5nBLuJnE"`FC.L64c2]FD'##6g)##/?&DG<Dh"<h"b!\c-%!\c-&ECrSs?r\X>FYG=C!\c-&ECE<"CfMoV/JJd+Gp<;&E=+?P##6g)##/?#C.q#f"<fEO##6g)##/?#Cd^`b"<h%T2],Ku2],Kt2@`\KFUD(T2d?Ie0Fe=\*"ihn0Gt*u*Z4r#0bkN1.iB6uE)dGXGngrb.L64c2]FD'##6g)##/?&DG<Dh"<h"b!\c-%!\c-&ECrSs?r\X>FYG=C!\c-&ED8brCfMoV2@`[t/Iid14sr<PCF;)(BN.;tBLuJn"B5F^'dH1-'dH.?DbEK%E$6Z+'dH1-'dH.?D,3T$E$8Kq.pN;q.hrs*!\c-%!\c-&ECrSrCfMoJE=+?P##6g)##/?&DG3bs"<gl###6g)##/?+BLP3Z"BA_/2],L</I3'k1+,%DCF;)(BN.5oDFe%s"B5Fp/JJd+Gn(E"4<4Dh/fbrKEE+k4/KGW5!\c-%!\c-&ECrSrBN6KFE=,f1*[`p0CF;)(BN.Z/D,i#KE![F!0G%1m2@*8E*[`p0CF;)(BN.Z/D,i#K2@`\"2%D8m##6g)##/?#BMM8o"<fEO##6g)##/?&DG<Jj"<fEO##6g)##/?(CILK\"<fEO##6g)##/?+BLtoj"<g?C591RP4Brg;GnM&4GmZ2X##6g)##/?#DbNPk"<e]rGmZ2X##6g)##/?!Ce7#e"<fEO##6g)##/?#Cdgid"<g<BBj;5Z4^8R.4^8R.4^8R0.N)1t4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?&Bh:Q^"B?$C4^8R.4]N('4^8R.4^8R.4]N=-3ZT&)$4%Ra)AEns0HUm5#RM(S/Is*.4rI*S2B*;?4B+:&CF;)(BN.Ju?r\XO/IhdcE%_2".6edR2&-o3@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&ECiZ!D,i#KA1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nNE#9N]0H*nQ*[`p0CF;)(BN.8oBh2Mn"<ABcGp>+)'dH1-'dH.?@7<FR"<daQ4;(U,3ZT%JE>eie3X?`72cO&i5?ouK/NtFQ'dH1-'dH.??qs!["B?BQGrlTS)_>5I##6g)##/?+CIh_pE"`FC*Z4r$#uilHCF;)(BN.DsCIDGlE!REf2d@jY!\c-%!\c-&EC<N&E$6Z:591RP4BrI-4^8R.4]N('4^8R.4^8R.4]N=-3ZT&)%1*7I0F/D"#RM(S/Is*.4rI*S2B*;?4B+:&CF;)(BN.;r@7=HcFW(u*.N)MN/.W^-/KIS;2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?!C/7;k"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I%7+Gp>+)'dH1-'dH.?C/7>sE$6YH0c:ls.3B982,k2(2]i#,2A07e0H*n)2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&ED8brDcJ5M@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?DbNGtE$8L'0c:ls0H*n"2@*8-4:!i$EA/n?!\c-&EC<&q@9"aK/JJd+Gp<;&EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'Ce[0!G>(M,BMV`.DbaJ4Ced6!C/@W&Bi75u@896qE)cuA0F1oXDH.8Z.N)24-j^n-%N,up2A07J##6g)##/?,D+.,j"B>O*0F1o]E"3Hn4<4Dh/fbrKEE+M*.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGED]/'DFm;nD,!AnF@A]"DcL'Y2[CE7GnM&4Gp>+)'dH1-'dH.?C/7>sE$6Y=.o]ar*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%BhL`hF\"r#F\tk0Db=;-!\c-%!\c-&EDJl$BN6KFF:8uu!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KFE$mV-CF;)(BN.DuBLlDm"@,OVBj:`A0F1oXDH-lF.2`j:Gmb>o/Q?"</IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%BM(WhF\bM/F\tk7DFe&*/.qpi2-_%./R0eO!\c-%!\c-&EDK)$CK2fI2@`tb)EJ'(1`7r"##6g)##/?+C.(H^"<h#FBMCfmCJ[MtD,=A=D+d,dE$mV-CF;)(BN.K&Ce\2!"Ao:4.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.DsBhVer"=H/kCF;)(BN.K&Ce\2!"B@*.##6g)##/?#BMC`a"<g<BBM;A>3#)EdG=u3R4:Df'/R/AZ0F1oU"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#FBMLumCJ[;oBM_i0BhCZlE)coJ/JT*i2\Q0Y#!4Ik##6g)##/?!C/7;k"<e]rEE"kC.ifK3!\c-%!\c-&ECEB%BiQTGED]/%BMV)nCedDpFA5/'Ce7o)!\c-%!\c-&EDJl$BN6KFF:8uu!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KFE$mV-CF;)(BN.DuBLlDm"@,OVBj:`A0F1oXDH-lF.2`j:Gmb>o/Q?"</IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%C/7?"F\#2+F\tJ/@7a`s/.qpi2-_%./R0eO!\c-%!\c-&EDK)$CK2fI2@`tb)EJ'(1`7r"##6g)##/?+C.(H^"<h#FBMV,pDbr]'DbsS:?pm:QE$mV-CF;)(BN.K&Ce\2!"Ao:4.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.DsBhVer"=H/kCF;)(BN.K&Ce\2!"B@*.##6g)##/?#BMC`a"<g<BBM;A>3#)EdG=u3R4:Df'/R/AZ0F1oU"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#FBMUlt?r0?iCJ\/5?qs![E![F!0G%1m2@*8E*[`p0CF;)(BN.JuC//%u";:u4EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'FA58,@7=9pC/.l+DFI#qE)ePE##6g)##/?!Ce7&f"<gn]2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?#C.q#f"<fEO##6g)##/?!Ce7&f"<h&1'dH1-'dH.?BMCosE$6Z;A5,HZ4;&2m4:h`%Gn:np3"T%(A31A>)A="u4<FP12A._R4:rS<.TAAiCF;)(BN.E$@74BbE"s!Q03eJb4;(U*4:Df'/R/AZ0F1oU(^L*C3YsG&##6g)##/?&DG<Pl"<h"bFX&\%'dH1-'dH.?C/7>sE$6Z&/.qpi2-^2B'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BLtopE$6Z;A5#r2.pNu$/R0eO!\c-%!\c-&EDK)$CK2fI2@`[q2@*7s!\c-%!\c-&ED8buBiQTG4:h`%GngrZ.iAI#0HV#G4;^g>0G4pC0Fe=()AF2&4]FC'CF;)(BN.E$@74BbE!REf2d@jL.9'Oa4:E&63ZS2)4[q162]+:W.h;V&0bkN1EA/n?!\c-&ED8`'@9"aKE$mV-CF;)(BN.DsBhVer"=H/kCF;)(BN.E$@8:)l"BIH-.ifK3!\c-%!\c-&ECEB%BiQTGED0J9Bi%2iE#BQ!Go7M*Go7M*Go7M*E#BQ!Go7M*Go7M*E"Erg3"T%M3"Zm3#RM(S/Is*.4rI*S2B*;?4B+:&CF;)(BN.8oBh;SoFW(u*.N)MQ3"Zm.((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.?BMD!$E$6Z:%ilK&4BrI-4]M_#3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf4t4VLd%5?o]a!\c-%!\c-&ED8ku@9"a?/JJd+GmkJj2%X!r/.ra80G>?tE"s!Q.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?DbNGuE$8=:##6g)##/?!DbWVl"B@uhBj:WG4;(UU*[`p0CF;)(BN.Z/D,i#KA-`AT4BrI/.N'61Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECrW"D,i#\'dH1-'dH.?C.^onE$8LmC.qSC0c:ls#!4Ik##6g)##/?,?q=Qe"@3Y%2%L9d0H+112@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&ED8l%?r\X>!\c-%!\c-&EDK)(BiQTG!\c-%!\c-&ED8buBN6KF!\c-%!\c-&EDJl$BN6KFF:8uu!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KFE$mV-CF;)(BN.DuBLlDm"@>[WBj:WG4;(UU/IYku2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&ED8l%?r\X>!\c-%!\c-&EDK)(BiQTG!\c-%!\c-&ED8buBN6KF!\c-%!\c-&ED8`'CK2fIE"Erg3"T%,+[Img/O(0`2]3DJ0G>?O2]3J?4:b[M##6g)##/?(CJ.)g"B?HGGm4[E/JJd+Gn(E"4<4Dh/fbrKEE+k4/KGW5!\c-%!\c-&ECrSrBN6KFE<ZhI#!4Ik##6g)##/?#BMV;o"<h%d2[CE7Gm4[:'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BLtopE$6Z;A5#r2.pNu$/R/c)!\c-%!\c-&ED8buBiQTG2@`[q2@*8E*[`p0CF;)(BN.DuC.)>k"<&9m4<GCI3Yr>3/K#?@2@`t+2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&ED8l%?r\X>!\c-%!\c-&EDK)(BiQTG!\c-%!\c-&ED8buBN6KF!\c-%!\c-&ECEAtE$6Z&4;&2m4;&2m4;&2m4;&2t4;&2m4;&2m4;&2t#RM(S/Is*.4rI*L4:Df63!^H8EA/n?!\c-&ECrZ'BiQTS2%pc-2-`'J4<GXf*B-PF//\[/.P);;4@URt.if983"-d"'dH1-'dH.?Ce-ikE$8=:##6g)##/?&?q<[X"B>[?3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf7u4VLd%5?oKM4:_EQ3"ZlfBL,3+.gZeT/JJd+Gs<8Q3Ys_&&k45Q/N==R3`J($CF;)(BN.]&DH/,X4:h`%0H*nG//\[/!$)pY##7`r/IhdcGmGAo2dA9L4<GXf*B-_I4:!VF.N_nK##6g)##/?+C.)>kE#BK(4;AJr#RM(S/L;,A3$Uq"A-`AT4Bqjo4;(U90c:c5)E9ra$5igk4:`6$'dH1-'dH.??r'Kh"B?$E.N'61GqB%$.L7.4.MNm>3$UjuA-`AT4Bqjo4;(U90c:c5)E9ra$5igk4:`6$'dH1-'dH.?BMV*$E$8Kk2%L9+5?oKM4:_EN/.W^-/KH?=A3g2-//_D'0c:ls)AEb`1-[H@@kSE1*>o(^EA/n?!\c-&ED8r"BiQTS4:h`%0H*n94:!/fEA/n?!\c-&ECrZ'BiQTS/JJd+Gs<8Q3Ys_&&k45Q/N==R3`J($CF;)(BN.K%BMDbrE#BQ!Go7M*Go7M*E"Erg3"T%3*B-PF//\[/.P);;4@UG%4rY=CEA/n?!\c-&EDK)(BN6KW591RP4B4<f&k4ql)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.]&?qsuk"@4452$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXBN5TPGngrZ#!4Ik##6g)##/?+C.1Ta"<daQ4;(U,3ZT%JE>eie3X?`72cO&p4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?!DbW\n"Ah'?CF;)(BN.K%BM;\qFYG=C!\c-&ECrT"BiQTS.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?C.^olE$8=:##6g)##/?!DbWVl"Ah'?CF;)(BN.;tD,";"E"3Hn2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&EDJo!CK2fZ'dH1-'dH.?@7X*rE$8=:##6g)##/?&DFd5h"B?9I3ZT&)00qAu/O(0`2]3DJ0G>?O2]3J?4:b[M##6g)##/?#BhD&k"B?HGGm[Le0c:ls.iAHo3!`It3#)EdE"s!Q.1c\C'dH1-'dH.?BMComE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?&DFd8i"B?BQGmkN%!\c-%!\c-&EDJl%?r\X>@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?DbE>lE$8L'0c:ls*";oU.4Yu3.2*Um'dH1-'dH.?DbE>lE$8Kk2%L9+5?n=%.jm;=CF;)(BN.DuBMMhs"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&ECE<"DcJ5Y2@`\"2%D8m##6g)##/?!Ce.8m"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.](?qO]gE!REf2dA'M//8:E4<4P52cMb!CF;)(BN.](?qO]gE#BQ!Gp<;&E=+?P##6g)##/?#C.q#f"<fEO##6g)##/?#Cd^`b"<h(o*tB"q4=<*NCF;)(BN.]&@8'rj"B7cbCJ7i/E)coJ/JT*i2\Q0Y#!4Ik##6g)##/?+C.1Ta"<e]rGnM&4GmZ2X##6g)##/?#DbNPk"<e]rGmZ2X##6g)##/?!Ce7#e"<fEO##6g)##/?#Cdgid"<g<BBj;5\.N)2J/IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%CJRB'G>1e.C.V,rDFmr1Bh_c7Ce[T)C/.)nDG<f(Cf"87Cem`!Db<JsBgkNkCfOaT3#)EdG=c(&/IYku2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&ED8brDcJ5M!\c-%!\c-&ED8brDH/,L!\c-%!\c-&EDJo!C/l]H!\c-%!\c-&ED8`'CK2fIE#BQ!Go7M*E#BQ!Go7M*Go7M*E"Erg3"T%3*B,K0'L=#\4:_E'#osZ`@ji9!4qJ<!'dH1-'dH.??q<[X"Af^42%L9k)E9rD!&75"2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?#DbNkt"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdE#9N]0H*nQ*[`p0CF;)(BN.E#Bgl;k":,tO2d?Ic3"Qp"57&5./JT36EE+"_GmG?#/Iid15#_^j.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.K%BMMhsFYG=C!\c-&EDJo!D,i#WDurTa##6g)##/?#Dbj&!":,tO2d?Ok.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.K%BMMhsFYG=C!\c-&EDJo!D,i#W.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?C.^olE$8=:##6g)##/?!DbWJh"Af(1//_^t2%L9d0H+1.4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?!DbW\n"Ah'?CF;)(BN.K%BM;\qE)ePE##6g)##/?!DbWMi"<g?C2\d/s/JJd+Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&EDJo!CK2fZ'dH1-'dH.?@7X*rE$8=:##6g)##/?&DFd2g"B>X1.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.K%BMMhsFYG=C!\c-&EC<&q?r\XO'dH1-'dH.?DbE>nE$8Kk2%L9+5?%gk.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.K%BMMhsFYG=C!\c-&EDJo!BiQTSE$mV-CF;)(BN.K%BLuJn"@5T_3"Q<!GmGAo2d@@,GmG>u/.iX%.o]ac4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?!DbW\n"Ah'?CF;)(BN.K%BM;\qE)ePE##6g)##/?&DFd2g"<h&WA5Pia/JJd+GqB%$.L7U-1`\)EA-`AT4Bs0J4:_EQ3"ZlfCI&R72%L9d#RM(S/L;,A3$Uq"591RP4Br'p.2`j:Gmb>o/Q?!_5?o*8/R/Ad.i/F(3$/_l'dH1-'dH.??qim`E$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?,DG=D#E!REf2d@jL.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGED]/$CJIAoCedE#@7WmfCf!Ao@8]NtC.(KiBMV<%DG<f/F\tM*Db=23DbEc'BM;,sDFn,+4:h`%Gn:np3"T%(A31A>)A="u4<FP12A._R4:rS<.TAAiCF;)(BN.Z)BN6KR0H*n*GmGAo2d@jL.9'Od2@^f?.303/!\c-%!\c-&ECE;tCK2fI@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?@7s$]"BA_e'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?BLtlpE$6Z&4;&2m4;&2m/.qpi2-^+i2[L?&4:YUh.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?C.^olE$8=:##6g)##/?!DbWVl"BA_e'dH1-'dH.?DbE>nE$6Z&A3iXO2@`[q2@*8E*[`p0CF;)(BN.E#Bgl;k";r$f4;AJr/JB$<1`d5@EE!,H.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.K%BMMhsFYG=C!\c-&EDJo!BiQTSE$mV-CF;)(BN.;tD,";""BA$"F@]@I0c:ls#RM(S/L;,A3$Uju591RP4Bs0J4:_EQ3"ZlfCI%q4//_DB//\[/!$)pY##@eo3"Q<!Go@V6Gp?EA0F0ZI2d@@4GmkDp.h>ku2%D8m##6g)##/?#BM1`c"<gMc4:!kR0G"d-4;(mkE#9N]58+5g(EF@t'GDB83!Ksj)EJ'(1`7PI.U3u'GmkDp.h>l@2@heZ'bpriE#9N]0H*n%/Iid14sr<PCF;)(BN.;tBLuJn"B7D`1`8:^2`)6e4A\-I/MS1R!\c-%!\c-&ECrSs?r\X>E#fi%Gr-NX'GDBE'dH1-'dH.?D,*H%E$6Z9Bj:WG4;(U#5?'Qf.ifK3#nmP''dH1-'dH.?C.U]hE$6Z*.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?C.U]hE$6Z&!\c-%!\c-&ED8l"D,i#KAO/a`BhVJ-2],L.2@^f?.303/!\c-%!\c-&ECE;tCK2fI@lbV>4ZXSq.L7s@0G"dg(EF@t'GDB83!Kse/JJd+Go@V6Gp?E+Gnh5b.30E@.T?KY.i/F(3$/_l'dH1-'dH.??qim`E$6Z5*Z4r#0bkN1.iB6uE)dGXGngrZ01I](2]+:W.h;V&0bkN1EA/n?!\c-&ED8r%BiQTS3"ccq01I](2]+:W.h;V&0bkN1EA/n?!\c-&EDJl$BiQTS3"ccq0./_ACF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@>LD3"cci01I](2]+:W.h;V&0bkN1EA/n?!\c-&ECE<"DH/,XE)clG4;(U*4:Df'/R/AZ0F1oU(^L*C3YsG&##6g)##/?&DG<Pl"<h"bFX&\%'dH1-'dH.?BM(ZrE$6Z&/.qpi2-_%./R0eO!\c-%!\c-&ED8bu?r\X>2@`\&2A-$#3uJ5qE=NQo2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&EDJo!CK2fZ'dH1-'dH.?C.^onE$8LZ!\c-%!\c-&ECrT"BN6KFE'[&mGnUBL2\Q0Y01I](2]+:W.h;V&0bkN1EA/n?!\c-&ECE<"DH/,X2@`\$!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HAO/^O4;&2m4;&2m4:h`%Gp<;&EBc2j3"Z`Y2@j't2],Ku2],Ku2],Ku2],Ku2%L9+5?n0s2[L?&4:YUh.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?C.^olE$8=:##6g)##/?!DbWVl"BA_e'dH1-'dH.?DbE>nE$6Z&A3j@!GmGAo2d@XE4:_EQ3"ZlfBL*742%L9d#RM(S/L;,A3$Un!591RP4Bs0J4:_EQ3"ZlfC-_h3//_Co5?n:!.i/F(3$/_l'dH1-'dH.??r'KnE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?+D,";"E!REf2d@@,E=<Zr!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KFF:0$"1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?+D,";""=H/kCF;)(BN.5nBM)Po"=H/kCF;)(BN.K&Ce\2!"B@*.##6g)##/?#BMC`a"<g<BBM:fmGmGAo2d?t(.pN_jFVtZV0G7=u3#)W/E=3]t1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?+D,";""=H/kCF;)(BN.;tD+Iqr"@b0O/O(3^2&HN%2cO'T4VLd%5?n0s2[L?&4:YU!5#k0\CKpiI4;(U*4:Df'/R/AZ0F1oU.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?BLtlpE$6Z:/e\Ep.L[$l4=<*NCF;)(BN.]&?r(&l"=H/kCF;)(BN.]-BN6KF!\c-%!\c-&ECrT"D,i#K!\c-%!\c-&ED8`'CK2fI/.qpi2-_%./R0eO!\c-%!\c-&ED8bu?r\X>2@`\&2A-$#3uJ5qE=NQo2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&EDJo!CK2fZ'dH1-'dH.?C.^onE$8LZ!\c-%!\c-&ECrT"BN6KFE'[&lGo7M*Go7M*GrZ$D0FT013"-`8E?d8!'dH1-'dH.?C/79%E$6Z&0H*n,2A-$#3uJ5qE=NQo2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&EDJo!CK2fZ'dH1-'dH.?C.^onE$8LZ!\c-%!\c-&ECrT"BN6KFDurU-GmGAo2d?Ok.2`j:Gmb>o/Q?!f4:Df'/R/AZ0F1oU"pb?)/e\Ep.L[$l4=<*NCF;)(BN.]&?r(&l"=H/kCF;)(BN.]-BN6KF!\c-%!\c-&ED8br?r\X>!\c-%!\c-&ED8l$BN6KF!\c-%!\c-&ED8`'CK2fIE#KZ-Gp?E+Gnh5b.30E@.T?KY.i/F(3$/_l'dH1-'dH.??r'KnE$6Yi'dH1-'dH.??q<^Y"<gMc4:!VF.N]634WPFW.TB\G4VLd%5?n7m&.^Wk'dH1-'dH.?Ced]&E$8L'0c:ls58=A,.1R:90G,<A+:JG_1^j@W03&Sn4^8R.4^8!s/JT*q/e\Ep.L[$l4=<*NCF;)(BN.]&?r(&l"=H/kCF;)(BN.]-BN6KF!\c-%!\c-&ED8br?r\X>!\c-%!\c-&ED8l$BN6KF!\c-%!\c-&EDJl$BN6KFF:8uu!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KFE$mV-CF;)(BN.DuBLlDm"@,7?/fbrKEDBe%*[`p0CF;)(BN.E#D+n5!"@3#"//_D&2[CE7GnM&4Gp>+)'dH1-'dH.?BM(ZrE$6Y=.pOSM!\c-%!\c-&ED8c$BiQTG2@`\&2A-$#3uJ5qE=NQo2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&EDJo!CK2fZ'dH1-'dH.?C.^onE$8LZ!\c-%!\c-&ECrT"BN6KFE'[&lGn(E"4<4Dh/fbrKEE*2I.2`j:Gmb>o/Q?"</IYku2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&ECE,jE$6Yi'dH1-'dH.?BM(NfE$6Yi'dH1-'dH.?BMCilE$6Yi'dH1-'dH.?BLtlpE$6Z&58+5g##G@g0G7=u3#)W/E=3]t1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?+D,";""@b0O/N==R3Z/h@3"c3&EE-9L2I%7+Gm[:r.Qq#i##6g)##/?'CILZa"B>F04;(Ts0Fe[..h`<u1_g!/.1R:,.0s/nE#BQ!Go7M*GmPB*0G%J'2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&ECE,jE$6Yi'dH1-'dH.?BM(NfE$6Yi'dH1-'dH.?BMCilE$6Yi'dH1-'dH.?C.U]hE$6Z*.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?C.U]hE$6Z&!\c-%!\c-&ED8l"D,i#KAP#i83#)EdCK2l1!\c-%!\c-&ED8c$CK2fIA-`AT4Bqmr/JT*i#!4Ik##6g)##/?#Db*>i"<e]rGp>+)'dH1-'dH.?BM(ZrE$6Z:A/Z0n.N)1o.pN&_2[L?&4:YUh.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?C.^olE$8=:##6g)##/?!DbWVl"BA_e'dH1-'dH.?DbE>nE$6Z&A3i^Q.iAHo3!`It3#)EdE"3Hn4<4Dh/fbrKEE+M*.9$BX.i/F(3$/_l'dH1-'dH.??r'KnE$6Yi'dH1-'dH.??q<^Y"<fEO##6g)##/?#Db*Aj"<fEO##6g)##/?#BM1cd"<fEO##6g)##/?#Cd^`b"<h%S2@`\KFUD(T2d?Ie0Fe=\/e\Ep.L[$l4=<*NCF;)(BN.]&?r(&l"=H/kCF;)(BN.]-BN6KF@lk8=*>o(^4;&2,2[BX]E)dGXGngrZ01J)9(fWIWCF;)(BN.8p?qjojE!REf2d?t&.iAI%2?Y$10F/+$.h`d6/Q;dD4;&2m4;&2m/.qpi2,jYd.i/F(3$/_l'dH1-'dH.??r'KnE$6Yi'dH1-'dH.??q<^Y"<fEO##6g)##/?#Db*Aj"<fEO##6g)##/?#BM1cd"<fEO##6g)##/?!Ce7&f"<gn]2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?#C.q#f"<fEO##6g)##/?!Ce7&f"<h&1'dH1-'dH.?BMCosE$6Z;Cg7&D0F1o\E$I.u'dH1-'dH.?BM(NkE$6Z:/IhdcGmPB*0G%2G*[`p0CF;)(BN.E#D+Iqr";:u,#!4Ik##6g)##/?#DbNkt"<g?C591RP4Brg;GmG>u/.iX%.o]ac4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?!DbW\n"Ah'?CF;)(BN.K%BM;\qE)ePE##6g)##/?&DFd2g"<h&WA5?//2],Kt2@`\KFUD(T2d?Ie0Fe=\/e\Ep.L[$l4=<*NCF;)(BN.](D,+A#"@b0O/O(3^2&HN%2cO'T4VLd%5?(l&@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?BMV#pE$8LZ!\c-%!\c-&EDJl$BN6KFF:0$"1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?+D,";""=H/kCF;)(BN.5nBM)Po"=H/kCF;)(BN.K&Ce\2!"B@*.##6g)##/?#BMC`a"<g<BC.q#_/JJd+GngrZ(^L*C3YsG&##6g)##/?(CJ-ob"<h"bE!REf2d?Ok.2`j:Gmb>o/Q?""/I3'k1+,%DCF;)(BN.;tBMDbr"B5Fu#!4Ik##6g)##/?#DbNkt"<h%d2[CE7GnM&4Gp>+)'dH1-'dH.?BM(ZrE$6Y=.pN-8'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BLtopE$6Z;A5#r2.pNu$/R/?:'dH1-'dH.?BM(ZkE$6Y=.pN&_2[L?&4:YUh.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?C.^olE$8=:##6g)##/?!DbWVl"BA_e'dH1-'dH.?DbE>nE$6Z&A3i^Q4;&2m4;&2m4;&2m4;&2m4;&2m4;&2m4;&2m4;&2m4;&2t4;&2m4;&2m4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oU4VLd%5?o]a!\c-%!\c-&ED8bu?r\X>/JJd+GmkJj2%X!r/.ra80G>?tE"s!Q/JB$<1`d5@EE!,H.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.K%BMMhsFYG=C!\c-&EDJo!BiQTSE$mV-CF;)(BN.;tD,";""BA$"F@fFJ0c:ls0H*n"2@*7r2@^f?.303/!\c-%!\c-&ECEB$C/l]H@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.??q<^Y"B?BQE=<Zr!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KFF:0$"1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?+D,";""=H/kCF;)(BN.5nBM)Po"=H/kCF;)(BN.K&Ce\2!"B@*.##6g)##/?#BMC`a"<gB8BhUo^/JJd+Gn:np3"T%(A31A>)A="u4<FP12A._R4:rS<.TAAiCF;)(BN.9$@7=HcE"s!Q03eJb4;(U*4:Df'/R/AZ0F1oU"pb?)0./_ACF;)(BN.DsBhVer"=H/kCF;)(BN.E$@8:)l"B>I3/JT*i0./_ACF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@,OWGnUBL2\Q0Y#!4Ik##6g)##/?#DbNkt"<e]rGnM&4GmZ2X##6g)##/?#DbNPk"<e]rGmG>u/.iX%.o]ac4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?!DbW\n"Ah'?CF;)(BN.K%BM;\qE)ePE##6g)##/?&DFd2g"<h&WA5?/5.pN/b.i/F(3$/_l'dH1-'dH.??r'KnE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?+D,";"E#fi%E=<Zr!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KFF:0$"1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?+D,";""=H/kCF;)(BN.5nBM)Po"=H/kCF;)(BN.K&Ce\2!"B@*.##6g)##/?#BMC`a"<g<BBM:fmGo7G14;AJr.1c\C'dH1-'dH.?C.UZoE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?%DFd#b"B?BQGmkN%!\c-%!\c-&ED8l"CK2fI@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?DG*5rE$8L'0c:ls.iAHo3!`JG/IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B8N.?r'6dC/.5qDb38mCf!Q%Dc08*BLtHd?qO*lCf!GsDbaJ:CeR3#BMLicE!mBf/Q?!k2[CE7EE"kC.ifK3!\c-%!\c-&ECEB%BiQTGED]D5C/.r/CJI?!Ce@/tF\P,$G=4r!Ce.$!DaZrnF\5&%CJmH!BhM,tCIqf(!\c-%!\c-&EDJl$BN6KFF:8uu!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KFE$mV-CF;)(BN.DuBLlDm"@,O_GrZ$D0FT013"-`8EA/n?!\c-&ED&Z#D,i#W4:h`%0H*n&4:E&63ZS2)4[q162]+:W.h;V&0bkN1EA/n?!\c-&ECil/?r\XJ3"ccq.iAI#0HV#G4;^g>0G4pC0Fe=()AF2&4]FC'CF;)(BN.9$@7=HcE)ePE##6g)##/?!Ce7#e"<fEO##6g)##/?#Cdgid"<gB9GmGAo2d@jL.9'Oa4:E&63ZS2)4[q162]+:W.h;V&0bkN1EA/n?!\c-&ECil/?r\XJE$mV-CF;)(BN.DsBhVer"=H/kCF;)(BN.E$@8:)l"B?$E.N)1m5?nBs.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.5nBgl;kFYG=C!\c-&EC`SuCfMoVAP#9W3"ccq2\Q0Y/e\Ep.L[$l4=<*NCF;)(BN.](D,+A#"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&ECil/?r\XJ3"ccq2\Q0Y.iAI#0HV#G4;^g>0G4pC0Fe=()AF2&4]FC'CF;)(BN.9$@7=HcE#fi%GnM&4GmbQ'1(OKh3Z0S(##6g)##/?+C.1Wb"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.]-BN6KRE)clG4;(U#5?n:!.i/F(3$/_l'dH1-'dH.??qim`E$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?'CJ%;n"B?BQGmbQ'1(OKh3Z0S(##6g)##/?+BLkTb"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.Z)D,i#W2@`\#2@^f?.303/!\c-%!\c-&ECE;tCK2fI@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?C/78uE$8Kq.pN/b.i/F(3$/_l'dH1-'dH.??qim`E$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?%DG<Vn"B>F04;(Ts2@`\KFUD(T2d?Ie0Fe=\/e\Ep.L[$l4=<*NCF;)(BN.](D,+A#"@b0O/O(3^2&HN%2cO'T4VLd%5?n7L'dH1-'dH.?DbEK%E$6Z:A2#N2!\c-&ECiW"?r\Wa.pN-8'dH1-'dH.?DbEK%E$6Z:A2#N2!\c-&EC</qE$6/4GmZ2X##6g)##/?&DG3bs"<g?C'dH1-'dH.?C/78uE$6/4GmZ2X##6g)##/?&DG3bs"<g?C'dH1-'dH.?DG*DpE$52h4;(U#5?p&^/KGW5!\c-%!\c-&EC`PuD,i#KE=,tf0c:ls.iAHo3!`It3#)EdE'41;3$05%'dH1-'dH.?DbEMsE$6Z'02O/E!\c-%!\c-&ED8bu?r\X>E![F!0G%1m2@*8E*[`p0CF;)(BN.E#Bgl;k";:u,0./_ACF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@,OWGnUBL2\Q0Y0./_ACF;)(BN.E#BhVer";r*_Go7M*Go7M*Go7G14BsBQ.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGED]G2BLuB)CIpfrCdginCf!Q#D,Nc#Db`c&Cd^QmC.gigCeIH&G>Cn/C.q#p@803lE)dJZ4^8R0.N)1t4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?(C.q>o"Ah'?CF;)(BN.]&?pn9aF\Pt9E#BQ!Go7M*Go7M*Go7M*Go7M*E#BQ!Go7M*Go7M*E"Erg3"T%3*B,K-$:,sR4:_E'#osZ`@ji9!4qJ<!'dH1-'dH.?BMV,rE$8<e3"Q<!E'H$)"t1j%((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.?BM(ZsE$6Z:%ilK&4BrI-4]M_#3"$Wt57&5./JT36EE*)K0G"g`/fbrKEE*PYGngrZ#!4Ik##6g)##/?#DbNhs"<daQ4;(U,3ZT%JE>eie3X?`72cO&i5?n0s.L64c2]H!64:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?!DbW\n"Ah'?CF;)(BN.K%BLlDmE)d6O'dH1-'dH.?BM(d!E$52h4;(U-3#)EdG=u3R4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?!DbW\n"Ah'?CF;)(BN.K%BLlDmE!mBf/Q>nME"3Hn2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&EDJo!CK2fZ'dH1-'dH.?C.^orE$8=".gZe[4:h`%Gngrb.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?C.^olE$8=:##6g)##/?!DbWVl"BA_e'dH1-'dH.?C.^oqE$6Z:A.fmnGmGAo2d?Ok.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.K%BMMhsFYG=C!\c-&EC<&q?r\XO'dH1-'dH.?DbE>oE$8Kk2%L9+5?%gk.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.K%BMMhsFYG=C!\c-&EDJo!BiQTSE$mV-CF;)(BN.K%BLuJn"@5T_3"Q<!GmGAo2d@@,GmG>u/.iX%.o]ac4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?!DbW\n"Ah'?CF;)(BN.K%BM;\qE)ePE##6g)##/?&DFd/f"<h&WA5Pia/JJd+GqB%$.L7.4.MNm>3$Uju/IhdcGqB%$.L7.4.MNm>3$Un!591RP4Bs0J4:_EN/.W^-/KH?<A/Z0n.N)1t4:Df'/R/AZ0F1oU"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#FD+[2nG=b5%DFd5p@7rm^BM)H0D+[)qCJ.0$@7j3kDb*u*CICipG=>51Bh1QpDFn,+/.qpi2,mg'*tB"q4=<*NCF;)(BN.]&@8'rj"B8N*DbNVpCe[;sD,*N(DFmr.Dc/i%Db32kDGNu2Da[#oD,=A4@73LX?q!afD+[K$CfOb#'dH1-'dH.?C.U]hE$6Z*.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?C.U]hE$6Z&!\c-%!\c-&ED8l"D,i#KAO/gR2@`[q2@*8E*[`p0CF;)(BN.E#Bgc5j";:u,/JB$<1`d5@EE!,H.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.K%BMMhsFYG=C!\c-&EDJo!BiQTSE$mV-CF;)(BN.;tD+n5!"BA$"BNuP]EE"kC.ifK3!\c-%!\c-&ECEB%BiQTGED\u$Bhhi4BM:cpCJ@K%Cf!Q#G=Xu!Ce.#pC.1fr@80'iF\tV4@8'j.?pmCaDaZrnE)ePE##6g)##/?!Ce7&f"<gn]2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?#C.q#f"<fEO##6g)##/?!Ce7&f"<h&1'dH1-'dH.?BMCosE$6Z;A5,HZ/JJd+Gmb>o/Q>nQE"3Hn2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&EDJo!CK2fZ'dH1-'dH.?BMCikE$8<t2@^f?.303/!\c-%!\c-&ECrSpD,i#K@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?DbWr(E$8L_'dH1-'dH.?D,3Q#E$8L$3#)EdG=c'P4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?!DbW\n"Ah'?CF;)(BN.DuDGFJ$FUK-#1(OKh3Z0S(##6g)##/?&DGNMi"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.;r?qjojE)dJZ4^8'j0F1o]E"3Hn4<4Dh/fbrKEE+M*.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGEC`JrBMq9'CemGrDGNMoDFmr.Bi7?'?r'L#C/72rDaZllCf"83Db32g@7j$e@803lE)coJ/JT*qEBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'D+m>qG>1b3C.q)rC.LioCf!Q!G>(\6C.1inC.goo@7`acF\tV.Ce.`6Dbii,BMLicE$mV-CF;)(BN.K&Ce\2!"Ao:4.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.DsBhVer"=H/kCF;)(BN.K&Ce\2!"B@*.##6g)##/?#BMC`a"<g<BC0V\iGnM&4Gp>+)'dH1-'dH.?BM(ZsE$6Y=.pN&_2[L?&4:YUh.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?C.^olE$8=:##6g)##/?!DbWVl"BA_e'dH1-'dH.?DbE>oE$6Z&A3iXO0H+1h)EJ'(1`7r"##6g)##/?+C.(H^"<h#OBhUriBLG-_Bhh#lD,3N"F\P7uBgbZl?q!R^DG*<#Ce6ogFA>/'D,O&-C/.H#CIqf(!\c-%!\c-&EDJl$BN6KFF:8uu!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KFE$mV-CF;)(BN.DuBLlDm"@,OVBj:WG4;(U-3#)EdG=u3R4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?!DbW\n"Ah'?CF;)(BN.DuDGFJ$FUK-#1(OKh3Z0S(##6g)##/?&DGNMi"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.;r?qjojE)8MVCF;)(BN.5nBh;SoE!mBf/Q>nSE"3Hn2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&EDJo!CK2fZ'dH1-'dH.?BMCikE$8<t2@^f?.303/!\c-%!\c-&ECrSpD,i#K@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?DbWr(E$8LZ4;&2m/fbrKED9^N4:Df'/R/AZ0F1oU"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#F?qEjeG=t8!DbEN'DFmr0G>:D(CJ7E$D+mDqD,3N"F\th/DFn#4Bgb<m?q`maCfOaV2[CE7EE"kC.ifK3!\c-%!\c-&ECEB%BiQTGED]G2C.qf1Dbi]!BLG3gF\>n8D+R2q@7rjaCJR2lDFmr*@8B6kG=b2,DF@2tDb`SjE$mV-CF;)(BN.K&Ce\2!"Ao:4.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.DsBhVer"=H/kCF;)(BN.K&Ce\2!"B@*.##6g)##/?#BMC`a"<g<BC0V\iGnM&4Gp>+)'dH1-'dH.?BM(ZsE$6Y=.pN&_2[L?&4:YUh.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?C.^olE$8=:##6g)##/?!DbWVl"BA_e'dH1-'dH.?DbE>oE$6Z&A3iXO0H+1h)EJ'(1`7r"##6g)##/?+C.(H^"<h#F?qEjeG=t8!DbEN'DFmr0G>:D(CJ7E$D+mDqD,3N"F\th/DFn#4Bgb<m?q`maCfOb#'dH1-'dH.?C.U]hE$6Z*.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?C.U]hE$6Z&!\c-%!\c-&ED8l"D,i#KAO/a`GmGAo2d?Fd0F1oXDH-lF.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.K%BMMhsFYG=C!\c-&ED8l$CK2fZ/e\Ep.L[$l4=<*NCF;)(BN.;tC.MVo"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&ECrZ'BN6KRFYG=C!\c-&EC`SuCfMoV/fbrKEDf(p.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?C.^olE$8=:##6g)##/?#BM1fe"Af1/.i/F(3$/_l'dH1-'dH.?DbET%E$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?&BLP?^"BA_32],L.3#)EdBN5WT.N'61GmG>u/.iX%.o]ac4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?!DbW\n"Ah'?CF;)(BN.K%BM;\qE)ePE##6g)##/?&DFd/f"<h&WA5PTZ/JJd+GqB%$.L7.4.MNm>3$Uju591RP4Bs0J4:_EN/.W^-/KH?=A-`AT4Bs0J4:_EN/.W^-/KH?<A/Z0n.N)1t4:Df'/R/AZ0F1oU#!4Ik##6g)##/?%DG<ht"<g>Q.gZeT/.qpi2-_%./R0eO!\c-%!\c-&ED8bu@9"a?2@`\&2A-$#3uJ5qE=NQo2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&EDJo!CK2fZ'dH1-'dH.?C.^onE$8LZ!\c-%!\c-&ECrT"BiQTGE'[&mGp>+)'dH1-'dH.?DG*E%E$6Z:591RP4BrI/.N'61GmG>u/.iX%.o]ac4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?!DbW\n"Ah'?CF;)(BN.K%BM;\qE)ePE##6g)##/?&DFd/f"<h&WA5PW[/JJd+GqB%$.L7.4.MNm>3$Uju591RP4Bs0J4:_EN/.W^-/KH?=A/Z0n.N)2@//\[/%1*7I0F/CUC-_h3//_Co5?n:!.i/F(3$/_l'dH1-'dH.??qim`E$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?,D,*Di"B>F04;(Ts2@`\KFUD(T2d?Ie0Fe=\/e\Ep.L[$l4=<*NCF;)(BN.](D,+A#"@b0O/O(3^2&HN%2cO'T4VLd%5?n7L'dH1-'dH.?DbEK%E$6Z:A2#N2!\c-&EC<&hDcJ5&0c:ls0H*n7/I3'k1+,%DCF;)(BN.5oDFe%s"B5Fp/JJd+Gn(E"4<4Dh/fbrKEE+k4/KGW5!\c-%!\c-&ECrSrBN6KFE=,f1*[`p0CF;)(BN.E#Bgc5j"B>I3/JT*i2\Q0Y#!4Ik##6g)##/?#DbNhs"<e]rGnM&4GmZ2X##6g)##/?#DbNPk"<e]rGmZ2X##6g)##/?!Ce7#e"<fEO##6g)##/?#Cdgid"<g<BBj;ShGmG>u/.iX%.o]ac4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?!DbW\n"Ah'?CF;)(BN.K%BM;\qE)ePE##6g)##/?&DFd/f"<h&WA5?//2],Ku2],Ku2],Ku2%L9+5?nBs.1dL"3!^*$@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?@7WjfE$8Kg2],d34:E&63ZS2)4[q162]+:W.h;V&0bkN1EA/n?!\c-&EC<&hDcJ5YE$mV-CF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@>LD/JJd+Gp<;&EE!,H.1dL"3!^*$@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?@7WjfE$8LZ!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIF$DDl3"Z`^'dH1-'dH.??r'HpE$6Z'Bi%;uF\H(54:h`%Gngrb.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?C.U]hE$6Z*/e\Ep.L[$l4=<*NCF;)(BN.]&?r(&l"=H/kCF;)(BN.Z0DG=D#"=H/kCF;)(BN.5nBM)Po"=H/kCF;)(BN.K&Ce\2!"B@*.##6g)##/?#BMC`a"<g<BBM:fmGmGAo2d?t(.pOT#03fM,GmkDp.h>l!2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&EC<K"BN6KF!\c-%!\c-&ECrT"D,i#K@lk8=)AF2&4Ur&5EE-9L2I%sUA-u9?2],L$5?oo^A3i[P/JJd+Gn(E"4<4Dh/fbrKEE*,P.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.DsBhVer"=H/kCF;)(BN.E$@8:)l"@3+u.i/F(3$/_l'dH1-'dH.??r'KnE$6Yi'dH1-'dH.?@73I\E$6Yi'dH1-'dH.?DbE>sE$6Yi'dH1-'dH.?BLtlpE$6YG2[CE7GnM&4Gp>+)'dH1-'dH.?BM(ZsE$6Y=.pN&_2[L?&4:YUh.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?C.^olE$8=:##6g)##/?!DbWVl"BA_e'dH1-'dH.?DbE>oE$6Z&A3i^Q4;&2m.iAHo3!`It3#)EdE"3Hn4<4Dh/fbrKEE+M*.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGED]2&Ced]!DbWSs@7rm^Ced>uG=t;"?qs!e@803lF\b\1C/R>sBMM6)BhCiqE)dMZ.pOT#03fM,GmkDp.h>l!2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&EC<K"BN6KF@lk8=*>o(^4;&2,2[BX]E)dGXGngrZ01J)9(fWIWCF;)(BN.8p?qjojE!REf2d?t&.iAI%2?Y$10F/+$.h`d6/Q;dD4;&2m4;&2m/.qpi2,mg'*tB"q4=<*NCF;)(BN.]&@8'rj"B8N$CIq!!G=k;'BLG3gF\,&%Cf3W"C.1TmDF?ojCf!W+DGOG:DG<T)?q`maCfOb#'dH1-'dH.?C.U]hE$6Z*.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?C.U]hE$6Z&!\c-%!\c-&ED8l"D,i#KAP#i83#)EdCK2l1!\c-%!\c-&ED8c$CfMoJA-`AT4Bqmr/JT*i2\Q0Y#!4Ik##6g)##/?#DbNhs"<e]rGp>+)'dH1-'dH.?BM(NjE$6YB4:Df'/R/AZ0F1oU.iAHo3!`It3#)EdE$G>rEBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'FA>;*C.h`-?qj$eCe@/tF\,&,BMq?#CedK%C.gigC.gfqG>:h9CeI#jBLG3gE)dMZ.pOT#03fM,GmkDp.h>l!2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&EC<K"BN6KF@lk8=*>o(^4;&2,2[BX]E)dGXGngrZ01J)9(fWIWCF;)(BN.8p?qjojE!REf2d?t&.iAI%2?Y$10F/+$.h`d6/Q;dD4;&2m4;&2m/.qpi2,mg'*tB"q4=<*NCF;)(BN.]&@8'rj"B8N$CJ%)rG>:k1Bh^lnCIqW/CICTcC.^chC.LioCf!W$D+.W*@73C\D,*N(DFn,+!\c-%!\c-&EDJl$BN6KFF:8uu!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KFE$mV-CF;)(BN.DuBLlDm"@,7?/fbrKEDBe%*[`p0CF;)(BN.E#D+\(t"@3#"//_D&2[CE7Gp>+)'dH1-'dH.?BM(NiE$6Y=.pOSM!\c-%!\c-&ED8bu@9"a?A3gh02%L9d.iAHo3!`It3#)EdE"3Hn4<4Dh/fbrKEE+M*.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGED]2&DFHugBLkBhC/%/uF\,&%DGio'Ce7)qC.LioCf!W$Db+&4DG3Gu@8B0mC.gibE#KZ-Gp?E+Gnh5b.30E@.T?KY.i/F(3$/_l'dH1-'dH.??r'KnE$6Yi'dH1-'dH.?@73I\E$6Z5*Z4r*4:`542]*8=/Iu)YE#9N]0H*n*@l4K8EA/n?!\c-&ECiW'BN6KR/JJd+Go@\84:DE&+Vbk%/Hl7h2A$'.E=,tU2],Ku2],L02[CE7EE"kC.ifK3!\c-%!\c-&ECEB%BiQTGED]2&DFHugBLkBhC/%/uF\,&%DGio'Ce7)qC.LioCf!W$Db+&4DG3Gu@8B0mC.gibE$mV-CF;)(BN.K&Ce\2!"Ao:4.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.DsBhVer"=H/kCF;)(BN.K&Ce\2!"B@*.##6g)##/?#BMC`a"<g<:Gmb>o/Q>23#!4Ik##6g)##/?#Db*5f"<g>Q.gZeT/.qpi2-_XW!\c-%!\c-&ED8c$DH/,L2@`\K*[`p0CF;)(BN.E#Bgc5j"@5T_3"Q<!Go@V6Gp?E+Gnh5b.30E@.T?KY.i/F(3$/_l'dH1-'dH.??qim`E$6Z5*Z4r#0bkN1.iB6uE)dGXGngrbE=,Ge0G4pC0Fe=()AF2&4]FC'CF;)(BN.DsBhVerE)ePE##6g)##/?!Ce7&f"<go@)EJ'(1`7r"##6g)##/?+C.(H^"<h#FCJI3"Cf3W!BMMZ1CJ.&i?r'*iCJ[N*BLl<.CICEeE)ePE##6g)##/?!Ce7&f"<h&1'dH1-'dH.?BMCosE$6Z;A5>TlGmGAo2d@@,Gs)-D3$05%'dH1-'dH.?D,*H"E$6Z'03%u[4;(U*4:Df'/R/AZ0F1oU(^L*C3YsG&##6g)##/?&DG<Pl"<h"bFX&\%'dH1-'dH.?BM(ZsE$6Z&/.qpi2-_%./R0eO!\c-%!\c-&ED8bu@9"a?2@`\$!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HAO/^O2@`[q2@*7s!\c-%!\c-&ED8buBiQTG4;&2m4;&2m4;&2m4;&2m4;&2m4;&2m4;&2m4;&2m4;&2t4;&2m4;&2m4;&2t#RM(S/Is*.4rI*L4:Df63!^H8EA/n?!\c-&ED'#)BiQTS#RM(S/Is*.4rI*=/-l4a2cMb!CF;)(BN.K$D+._oFW(8i3X?`72cO&p4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?#BhD)l"Ah'?CF;)(BN.5tBh;SoE"3Hn2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ED8i$?r\XO'dH1-'dH.?D+R,qE$8L!4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?#BhD)l"Ah'?CF;)(BN.5tBhM_qE#BQ!E%M(p.L6883#`H4)[QK\2A07J##6g)##/?'?r'-^"Af^H2]i#,2A07e.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.??q<aZ"Ah'?CF;)(BN.5tBhDYpE#BQ!E"Erg3"T%J.52>:4;&2,.g8L"//\[/.P);;4@UG%4rY=CEA/n?!\c-&ECE2l?r\XO591RP4B3L;'c@Yh2]*8A+@\F%)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.E#BMDbr"@4452$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXBN5TPGngrZ#!4Ik##6g)##/?#DbWYm"<daQ4;(U,3ZT%JE>eie3X?`72cO&d2@`\KFUD(T2d?Ie0Fe=\.iAI#0HV#G4;]_)##6g)##/?&DGNMi"<gMc4:!kR0G"d-4;(mkE#9N]0H*n*!\c-%!\c-&ECrSs?r\X>A3i1;CF;)(BN.K&Bh_ks/JJd+Gp<;&E=+?P##6g)##/?#C.q#f"<fEO##6g)##/?#Cd^`b"<h%T2],Ku2],Ku2],g)2],Ku2],Ku2],gU//\[/.P);;4@U\&.2`<k/JA=]'dH1-'dH.?@73I[E$8Kt2BNYEGq9mF4=Wd+#RM(S/Is*.4rI*S2B*;?4B+:&CF;)(BN.JuDGFJ$FW(u*.N)MJ2@pHXBLY&m)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.K&DG4>""@4452$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXBN5TPGngrZ#!4Ik##6g)##/?!CeI/g"<daQ4;(U,3ZT%JE>eie3X?`72cO&n2BNYEGm[+g4:!kS2\H]&/JT36*"ihn0Gt*g'dH1-'dH.?Cdh#tE$8Ko5?n7W/JJd+Gn(E"4<4Dh/fbrKEE+k4/KGW5!\c-%!\c-&ECrSrBN6KFE=,f1*[`p0CF;)(BN.K&DG4>""B>I3/JT*i2\Q0Y#!4Ik##6g)##/?!CeI/g"<e]rGnM&4GmZ2X##6g)##/?#DbNPk"<e]rGmZ2X##6g)##/?!Ce7#e"<fEO##6g)##/?#Cdgid"<g<BBj;5\.N)2J/IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B8N'?q!=T?pm7VDFmr2DG!>lBhgrj?q`maCf"83BgbWhDb*6!D+-ol@74Bn4;&2m4;&2t4;&2m4;&2m4;&2t2%pc-2-_C82&RT8A1[fd.L6883#`H4%20BX2&TXP##6g)##/?!C.h&h"Af^42%L9k#nn-[%o,kN2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?,D+Hrb"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I%7+Gp>+)'dH1-'dH.?@7WXaE$6YH0c:ls.3B982,k2(2]i#,2A07e0H*n"2@*8-4:!i$EA/n?!\c-&ECiZ!DcJ5Y/JJd+Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&EDJl)?r\XO'dH1-'dH.?CemH!E$8Kk2],L$5?o*8/R1(9/NtFQ'dH1-'dH.?CemGuE$8L'0c:ls.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?C.V*&E$8=:##6g)##/?'C.pue"B?$C4^9!2GrlTS)_>5I##6g)##/?'C.prd"B?0G4]F3A/NtFQ'dH1-'dH.?CemH!E$8LZ!\c-%!\c-&EC`Q&@9"a?!\c-%!\c-&EC`Pu?r\X>AO/aa?sE[>4;(UU*[`p0CF;)(BN.5o?pn9a"@3#"//_Ck2%L9+5?ouK/NtFQ'dH1-'dH.?CemH!E$8Kg2],dF4:!i$EA/n?!\c-&ECiZ!DcJ5YE$mV-CF;)(BN.5o?pn9a"=H/kCF;)(BN.5oDFIhp"@>[X@8'W:0c:ls#!4Ik##6g)##/?(CILoh"<g>?3"Q<!Go7M*GngrZ2\Q0Y*Z4r$#uilHCF;)(BN.JuDFe%sE!REf2d?Ok/I;UjGo7M*Gngrb*Z4r$#uilHCF;)(BN.JuDFe%sE)ePE##6g)##/?+D,4G$"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&EC`AoBiQTS3"ccqEB=aK)_>5I##6g)##/?!C.gfa"BA_e'dH1-'dH.??q<d["<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.5tBh_ksE#fi%EE"^u/NtFQ'dH1-'dH.?C/72uE$8LZ!\c-%!\c-&ECE,hE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?(CeR;j"B?0G4]GZ34:!i$EA/n?!\c-&EDK)(D,i#WE$mV-CF;)(BN.]-C/l]H@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?D+R,lE$8Kg2],dF4:!i$EA/n?!\c-&EDK)(D,i#WE$mV-CF;)(BN.]-C/l]H@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?D+R-"E$8LZE)clG4;(UU*[`p0CF;)(BN.Z+BhVer"@3q52-_XW!\c-%!\c-&ECE;rDcJ5MA/Z0n.N)2J*[`p0CF;)(BN.]-D,i#KA/Z0n.N)1m5?n=%.jm;=CF;)(BN.;tBMMhs"=H/kCF;)(BN.DuDb44u"=H/kCF;)(BN.5oDFIhp"@>[\BhUo^/JJd+Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECil/DcJ5^'dH1-'dH.?DbE>rE$8L$3#)EdG>2?T4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?'?pm=R"Ah'?CF;)(BN.;tD+\(tE#BQ!Go7G14;AJr.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?C.^opE$8=:##6g)##/?(C.poc"BA$"2\d/s2@`[u4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?!DbWPj"Ah'?CF;)(BN.5nBh;SoE'[&oGmGAo2d@jY!\c-%!\c-&EC<)kBiQTGA2#N2!\c-&ED8`&BiQSm2BNYEGs26I0G5%*.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?C.V,sE$8=:##6g)##/?#Db*Po"AgTo!\c-%!\c-&EC<)kBiQTGE"s!Q)[Qr\2]G^40c:ls)[Qr\2]GLG/JA7[E#BQ!Gp>+)'dH1-'dH.??qisfE$6Z:/IhdcGp>+)'dH1-'dH.??q<OT"<g>Q.gZeT4;&2m4;&2t4;&2m4;&2m4;&2t#RM(S/Is*.4rI*L4:Df63!^H8EA/n?!\c-&EC<,jCK2fU2%pc-2-`*B/h[;8.i:i5//\[/.P);;4@UG%4rY=CEA/n?!\c-&ED&Z"D,i#\591RP4B4?B/h[;8.i;#42a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?,D+I&e"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I%7+Gp>+)'dH1-'dH.?@7WX^E$6YH0c:ls.3B982,k2(2]i#,2A07e2%pc-2-^2h*Z4r#2A-o43X?`72`Vc\1_gT6EA/n?!\c-&EC`Q!C/l]T0H*n*GmGAo2d?Ok.2`j:Gmb>o/Q?""/I3'k1+,%DCF;)(BN.;tBMDbr"B5Fu#!4Ik##6g)##/?,D+I&e"<h%d2[CE7Gp>+)'dH1-'dH.?@7WX^E$6Z:A/Z0n.N)1o.pNu$/R/?:'dH1-'dH.?BM(ZkE$6Y=.pN-8'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BLtopE$6Z;A5#r,2%L9d"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#FDb``#G>:P'BLkfuC.gigCID?)D+d2sCe6rt@7X'fF@el$C/RJsCeI#jBLG3gE)dJZ4^8R.4]N('4^8R.4^8R.4]NdD4:_E'#osZ`@m0o0/JB$q'dH1-'dH.?@73IZE$8<e/.ra80G>?tE"3Hn2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ED8r#C/l]Y'dH1-'dH.?BMCijE$8=:##6g)##/?(CeR/f"B?$C4]NdD4:_E'#osZ`@m0o0/JB$q'dH1-'dH.?CemH'E$8<e/.ra80G>?tE#K`/4<GCI3Yr>3/K#?@2@`t+2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&EDK)(CfMoJ!\c-%!\c-&EC<)kBN6KF!\c-%!\c-&ED8c$?r\X>!\c-%!\c-&ECrSrDH/,L!\c-%!\c-&ECEAtE$6Z&4;&2t#RM(S/Is*.4rI*L4:Df63!^H8EA/n?!\c-&ED&Z"CfMoV2%pc-2-_L1/h[;8.i:i5//\[/.P);;4@UG%4rY=CEA/n?!\c-&ED&Z"DcJ5^591RP4B3a1/h[;8.i;#42a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?+BM1`c"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>;EK2I%7+Gp>+)'dH1-'dH.??qj!eE$6YH0c:ls.3B982,k2(2]i#,2A07e2%pc-2-^2h*Z4r#2A-o43X?`72`Vc\1_gT6EA/n?!\c-&ECE;tD,i#W0H*n*GmGAo2d?Ok.2`j:Gmb>o/Q?""/I3'k1+,%DCF;)(BN.;tBMDbr"B5Fu#!4Ik##6g)##/?+BM1`c"<h%d2[CE7Gp>+)'dH1-'dH.??qj!eE$6Z:A/Z0n.N)1o.pN-8'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BLtopE$6Z;A5#r,2%L9d"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#FDF?`a@7<O]Ce6uoBM1fjDGFA:CJ.0%C.Lfk@7`paBM(ZhG=bJ*CJ-ri?q`mZE#BQ!Go7M*E#BQ!Go7M*Go7M*E"Erg3"T%C3$&YD$4@db4[CA04:_E'#osZ`@ji9!4qJ<!'dH1-'dH.?BMV,qE$8<e3"Q<!E%_q,4:W_Q2@^:$((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.?BMCutE$6Z:%ilK&4BrI-4]M_#3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf7u4VLd%5?o]a!\c-%!\c-&ED8kuCfMoJ3"ccq.1c\C'dH1-'dH.?DbEMrE$6Yi'dH1-'dH.?D,*f0E$6Yi'dH1-'dH.?D,*H%E$6Z9A55NkGo[e.E=s3,GmkN%!\c-%!\c-&EDJl%?r\X>@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?D,3T"E$8Kg2],L'2@*7q2%D8m##6g)##/?#BMCrg"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.5nBM2VpE)g0[0c:ls.3B982,k2(2]i#,2A07e0H*n)2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&ED8c#BiQTG!\c-%!\c-&EC`St@9"a?!\c-%!\c-&ECrSsDH/,L!\c-%!\c-&EDK)%CK2fIA3iUN/JJd+GngrZ/e\Ep.L[$l4=<*NCF;)(BN.]&?r(&l"=H/kCF;)(BN.E#CeS+u"=H/kCF;)(BN.;sCe@ts"=H/kCF;)(BN.;tCIDGl"=H/kCF;)(BN.JuCJJ/!"@5UXGmGAo2d@@,EE"kC.ifK3!\c-%!\c-&ECEB%BiQTGED]/)BMM`3Cd^ruF\b=u?qWjgBMV)nBLkfkDG<i+D,4G0!\c-%!\c-&EDJl$BN6KFF:8uu!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KFE$mV-CF;)(BN.DuBLlDm"@,OVBhVJB0c:ls"pb?).1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?BLtlpE$6Z&/fbrKEDf(p.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?BLtlpE$6Z:/e\Ep.L[$l4=<*NCF;)(BN.]&?r(&l"=H/kCF;)(BN.E#CeS+u"=H/kCF;)(BN.;sCe@ts"=H/kCF;)(BN.E#CJS5""=H/kCF;)(BN.E#D+._o"=H/kCF;)(BN.E$@8:)l":GqO/Q>nSE"!Qq!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIA.'=g1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?#Db3>h"<fEO##6g)##/?&Bh:W`"<fEO##6g)##/?#Db`Pi"<fEO##6g)##/?#Db*Sp"<fEO##6g)##/?#Cd^`b"<djK0F1oXCfLTK.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.DsBhVer"=H/kCF;)(BN.E$@8:)l"@3+u.i/F(3$/_l'dH1-'dH.??r'KnE$6Yi'dH1-'dH.?BM(QhE$6Yi'dH1-'dH.?DbNGsE$6Yi'dH1-'dH.?BM(`pE$6Yi'dH1-'dH.?BM(NnE$6Yi'dH1-'dH.?BLtlpE$6YE3#)EdG=c'R2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?#C.q#f"<fEO##6g)##/?#Cd^`b"<g>N2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&ED8c#BiQTG!\c-%!\c-&ECrW"DcJ5M!\c-%!\c-&ED8bsDcJ5M!\c-%!\c-&ED8c$?r\X>!\c-%!\c-&ED8`'CK2fI/fbrKEDf(p.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?BLtlpE$6Z:/e\Ep.L[$l4=<*NCF;)(BN.]&?r(&l"=H/kCF;)(BN.E#CeS+u"=H/kCF;)(BN.;sCe@ts"=H/kCF;)(BN.E#CJ.qs"=H/kCF;)(BN.E#D+._o"=H/kCF;)(BN.E$@8:)l":GqO/Q>nSE#BK(4BsBQ.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGED]/)BMM`3Cd^ruF\b=u?qWjgBMV)nBLkfkDG<i+D,4G04;&2m4:h`%GngrZ/e\Ep.L[$l4=<*NCF;)(BN.]&?r(&l"=H/kCF;)(BN.E#Ce\2!"=H/kCF;)(BN.;tD+e.u"=H/kCF;)(BN.;tBhM_q"=H/kCF;)(BN.JuCJJ/!"@5UXGmGAo2d@@,GmkN%!\c-%!\c-&EDJl%?r\X>@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?D,3T(E$8Kq.pN2f.jm;=CF;)(BN.DuBMMhs"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&EC`St?r\XJ/JJd+GrZ$D0FT013"-`8EA/n?!\c-&EC`St?r\XJ58=A,/JA-b0bkTC4:Vr7/Q;i`.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.5nBLQ2j"=H/kCF;)(BN.E#Bh_ks"Af1/.i/F(3$/_l'dH1-'dH.??r'KnE$6Yi'dH1-'dH.?BM(QgE$6Yi'dH1-'dH.?DbE>pE$6Yi'dH1-'dH.?DbEN!E$6Z+BiPcQ.iA<q/0>i=2[C!-4:_Eb.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?D,3T(E$6Yi'dH1-'dH.?BM(ZjE$6Z+/e\Ep.L[$l4=<*NCF;)(BN.]&?r(&l"=H/kCF;)(BN.E#Ce\2!"=H/kCF;)(BN.;tD+e.u"=H/kCF;)(BN.;tBM)Po"AhNZ"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#JBMC`dDbWJrCf!DlBh1Qi?qWsnF\##'Bi7Dt@8'0`E#BK(4BsBQ.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGED]/)BM;T.BhL`kF\P;!CeR)t@7a-gBM(NaBhUrr@7slu4;&2m4:h`%GngrZ.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?BMV,pE$8=:##6g)##/?+BLPTe"B>e8Bj:WG4;(U*4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?#C/7>l"Ah'?CF;)(BN.E#Cee8"E!mBf/Q>nSE&e(;0FT013"-`8EA/n?!\c-&ECE,kCK2fU/fbrKEDf(p.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?BMV,pE$8=:##6g)##/?+BLPWf"Af43.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.]-Bhhqt"B>O*0F1oXBN56@.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.DsC/8,!FYG=C!\c-&ECE<"@9"aK4:h`%GngrZ.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?BMV,pE$8=:##6g)##/?+CJ7,g"BA$"2\d/s/JJd+Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ED8r"C/l]Y'dH1-'dH.??qs*gE$8Kk2%L9+5?nBs.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.DsC/8,!FYG=C!\c-&ECE>qBiQTSA3iUN/JJd+GngrZ/e\Ep.L[$l4=<*NCF;)(BN.](D,+A#"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&EC<&hCfMoV2@`[u4:E&63ZS2)4[q162]+:W.h;V&0bkN1EA/n?!\c-&EC<&hCfMoV/JJd+Gp<;&EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'FA>P1DGic(CedDpF@]S=BM;*'@896eCemN)G=t>'Bhr#,58+5g##G@g0G7=u3#)W/E=3]t1(OKh3Z0S(##6g)##/?+BLkTb"<gMc4:!kR0G"d-4;(mkE#9N]0H*n*!\c-%!\c-&ECrSs?r\X>A3i1;CF;)(BN.Z,CIqeq3"cci(^L*C3YsG&##6g)##/?(CJ-ob"<h"bE!REf2d?Ok.2`j:Gmb>o/Q?""/I3'k1+,%DCF;)(BN.;tBMDbr"B5Fu#!4Ik##6g)##/?#BMUod"<h%d2[CE7GmZ2X##6g)##/?!Ce7#e"<fEO##6g)##/?#Cdgid"<g<BBj;ShGp>+)'dH1-'dH.?BMCutE$6Z:A/Z0n.N)1i2],Ku2],Ku2],Ku2%L9+5?nBs.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.DsC/8,!FYG=C!\c-&ECE>qBiQTSA3iXO/JJd+Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ED8r"C/l]Y'dH1-'dH.??qs*gE$8L6-j^n-%N,up2A07J##6g)##/?(C/./h"B?rg.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGED]/+Bh2E2BLtTnF\YY*?qWj`CJ./nC/R`(Cdh#qBM)Q&4;&2m4;&2m4;&2m4;&2m4:h`%GngrZ/e\Ep.L[$l4=<*NCF;)(BN.](D,+A#"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&EDK)'DcJ5Y2@`[u4:E&63ZS2)4[q162]+:W.h;V&0bkN1EA/n?!\c-&EDK)'DcJ5Y/JJd+Go@V6Gp?E+Gnh5b.30E@.T?KY.i/F(3$/_l'dH1-'dH.??qim`E$6Z5*Z4r#0bkN1.iB6uE)dGXGngrZ0./_ACF;)(BN.;tBgl;k"@5U4##6g)##/?!C.prd"<ABcGs)-D3$05%'dH1-'dH.?D,*H"E$6Z'03%u[4;(U*4:Df'/R/AZ0F1oU(^L*C3YsG&##6g)##/?&DG<Pl"<h"bFX&\%'dH1-'dH.?BMCutE$6Z&/.qpi2-^2B'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BLtopE$6Z;A5#r2.pOSM!\c-%!\c-&ED8kuCfMoJA3gh02%L9d0H*n*!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HAO/^O/JJd+Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ED8r"C/l]Y'dH1-'dH.?@7`jaE$8Kk2],Ku2],Ku2],Ku2%L9d"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#FBLkNhG=4_qD+[o-?rB]uDGN`$C/@Su@80HoDb`f%E)dJZ4^8R.4^8R.4]N('4^8R.4^8R.4]N=-3ZT&))?glb.iV&8//\[/.P);;4@UG%4rY=CEA/n?!\c-&ECrW"DH/,]591RP4B4<Y3thf$@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&ECrVs@9"a?A1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nNE#9N]0H*nQ*[`p0CF;)(BN.;sBLH,i":,tO2d?Ic3"Qp"57&5./JT36EE*ha3ZT&)00qAu/O(0`2]3DJ0G>?O2]3J?4:b[M##6g)##/?#Cd^Q]"B?HGGm[Le0c:ls.iAHo3!`It3#)EdE'41;3$05%'dH1-'dH.?DbEMsE$6Z'02O/E!\c-%!\c-&ECrVs@9"a?E![F!0G%2G*[`p0CF;)(BN.;sBLH,i"@5T_3"Q<!GnUBL2\Q0Y0./_ACF;)(BN.E#BhVer";:u,0./_ACF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@,OWGo7G14BsBQ.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGECrW&D,Nc!D+-iiC.Lj!F\>5!DG*ArCeR5u@73RhF\b\.Cf3VsD+$]eCICTfE)dJZ4^8R.4]N('4^8R.4^8R.4]N=-3ZT&)$kF9Y.5VbUA1[fd.L6883#`H4%20BX2&TXP##6g)##/?#C/7)e"Af^42%L9k$kF9Y.5VbU@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&EDK)$D,i#KA1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nOE#9N]0H*nQ*[`p0CF;)(BN.JuC.MVo":,tO2d?Ic3"Qp"57&5./JT36EE*V[.pOT#03fM,GmkDp.h>l!2@^f?.303/!\c-%!\c-&EC<)kC/l]H@lk8=)AF2&4Ur&5EE-9L2I%7+GmZ2X##6g)##/?&DG3bs"<e+Y.1c\C'dH1-'dH.?DbEK%E$6YH0c:ls0H*n7/I3'k1+,%DCF;)(BN.5oDFe%s"B5Fp3"ccq.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?C.U]hE$6Z*0./_ACF;)(BN.DsBhVer"=H/kCF;)(BN.K&Ce\2!"B@*.##6g)##/?#BMC`a"<g<BCJR>c/JJd+Gn(E"4<4Dh/fbrKEE+_+//8:E4<4P52cM:Q!\c-%!\c-&EDK)&?r\X>E$G>rE=+?P##6g)##/?#C.q#f"<fEO##6g)##/?#Cd^`b"<h(o*tB"q4=<*NCF;)(BN.]&@8'rj"B7fcBM_/jE![F!0G%2G*[`p0CF;)(BN.JuC.MVo"@5T_3"Q<!GnUBL0./_ACF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@,OWGnUBL2\Q0Y0./_ACF;)(BN.E#BhVer";r*_Go7M*Go7M*Go7M*E#BQ!Go7M*Go7M*E"Erg3"T%40Fna)/JB=*A1[fd.L6883#`H4%20BX2&TXP##6g)##/?'C.q>o"Af^42%L9k)\iS^2[C?[CIUAp)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.DuBh2Mn"@4452$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXBN5TPGngrZ#!4Ik##6g)##/?#BM:Z`"<daQ4;(U,3ZT%JE>eie3X?`72cO&i5?o*8/R1(9/Lr)>'dH1-'dH.??qs*fE$8L'0c:ls.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.??qs*eE$8=:##6g)##/?+CJ7/h"B?$E.N'61GrlTS%P1j<##6g)##/?+CJ7/h"B>F04;(U*4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?!Cd^ui"Ah'?CF;)(BN.]'Bh_ksE"Erg3"T%(A31A>)A="u4<FP12A._R4:rS<.TAAiCF;)(BN.DuBh2MnE"s!Q03eJb4;(U*4:Df'/R/AZ0F1oU(^L*C3YsG&##6g)##/?&DG<Pl"<h"bFX&\%'dH1-'dH.?BMClrE$6Z&/.qpi2-_XW!\c-%!\c-&ED8l#D,i#KA3gh02%L9d2@`[q2@*7s!\c-%!\c-&ED8buBiQTG2@`\$!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HAO/^O4:h`%Gp<;&EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'F@ektC/RQ+C/75rDF?ojCf!T*G=k.uBhq3&CedDuCICHcF\##!CJmZ,BLG?k?r'-jE)dJZ4^8R.4^8R.4]N('4^8R.4^8R.4]N=-3ZT&)%NP`Y4;'"U2@^:)#RM(S/Is*.4rI*S2B*;?4B+:&CF;)(BN.Z0DFe%sFW(u*.N)MK3"?K(2_P7A.i;#42a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?,D,3ku"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I%7+Gp>+)'dH1-'dH.?@7WmlE$6YH0c:ls.3B982,k2(2]i#,2A07e2%pc-2-^2h*Z4r#2A-o43X?`72`Vc\1_gT6EA/n?!\c-&EDK)'DH/,X0H*n*GmGAo2d?Ok.2`j:Gmb>o/Q?""/I3'k1+,%DCF;)(BN.;tBMDbr"B5Fu#!4Ik##6g)##/?,D,3ku"<h%d2[CE7Gp>+)'dH1-'dH.?@7WmlE$6Z:A/Z0n.N)1o.pNu$/R/?:'dH1-'dH.?BM(ZkE$6Y=.pN-8'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BLtopE$6Z;A5#r,2%L9d"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#NCJ7&h?qs!e@8L-2?qWjfC/7N#F[SZ"G==l!DFd)dE#BQ!Go7M*E#BQ!Go7M*Go7M*E"Erg3"T%A3"?r<4?jbd/O:Zu4:_E'#osZ`@ji9!4qJ<!'dH1-'dH.?BMV-!E$8<e3"Q<!E%r(>0G4s?2B;d#((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.?DbNT"E$6Z:%ilK&4BrI-4]M_#3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf4t4VLd%5?o]a!\c-%!\c-&ECrVsDcJ5M/JJd+GmkJj2%X!r/.ra80G>?tE"Erg3"T%(A31A>)A="u4<FP12A._R4:rS<.TAAiCF;)(BN.JuBh;SoE"s!Q03eJb4;(U*4:Df'/R/AZ0F1oU(^L*C3YsG&##6g)##/?&DG<Pl"<h"bFX&\%'dH1-'dH.?DbNT"E$6Z&/.qpi2-_XW!\c-%!\c-&ECrVsDcJ5MA3gh02%L9d2@`[q2@*7s!\c-%!\c-&ED8buBiQTG2@`\$!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HAO/^O4:h`%Gp<;&EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'F@el!Dc/l&Ce-unBLtNeF[SntBhq2s@80'eD+m?!F\##'C/RK#CJ@3#C.gibE#BQ!Go7M*E#BQ!Go7M*Go7M*E"Erg3"T%C/fbiQ2B;d(#RM(S/Is*.4rI*S2B*;?4B+:&CF;)(BN.>uCeJ%tFW(u*.N)MG/fbiQ2B;d#((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.?C.UchE$6Z:%ilK&4BrI-4]M_#3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf4t4VLd%5?o]a!\c-%!\c-&EDJl"C/l]H/JJd+GmkJj2%X!r/.ra80G>?tE"Erg3"T%(A31A>)A="u4<FP12A._R4:rS<.TAAiCF;)(BN.;tBhhqtE"s!Q03eJb4;(U*4:Df'/R/AZ0F1oU(^L*C3YsG&##6g)##/?&DG<Pl"<h"bFX&\%'dH1-'dH.?C.UchE$6Z&/.qpi2-_XW!\c-%!\c-&EDJl"C/l]HA3gh02%L9d2@`[q2@*7s!\c-%!\c-&ED8buBiQTG2@`\$!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HAO/^O4:h`%Gp<;&EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'CemN$G>(_2BLQ$&G>(M1BhCZqD,<St?rB9iBhC`rE)dJZ4^8R.4]N('4^8R.4^8R.4]NdD4:_E'#osZ`@kSE-4:W)B2@`tF##6g)##/?+D+S"sE"Erg3"T%D4;&;91'pN-//\[/.P);;4@UG%4rY=CEA/n?!\c-&ECrZ'CK2fZ591RP4B3^42]E\A/4M]1)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.Z,CeS+u"@4452$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXBN5TPGngrZ#!4Ik##6g)##/?,D+R,f"<daQ4;(U,3ZT%JE>eie3X?`72cO&n2BNYEGm[+g4:!kS2\H]&/JT36*"ihn0Gt*g'dH1-'dH.?BM:]nE$8Ko5?n7W/JJd+Gn(E"4<4Dh/fbrKEE+k4/KGW5!\c-%!\c-&ECrSrBN6KFE=,f1*[`p0CF;)(BN.Z,CeS+u"B>I3/JT*i#!4Ik##6g)##/?,D+R,f"<g?C591RP4Brg;GnM&4GmZ2X##6g)##/?#DbNPk"<e]rGmZ2X##6g)##/?!Ce7#e"<fEO##6g)##/?#Cdgid"<g<BBj;5\.N)2J/IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B7ZeDa[c4DF?liDGNMo@8KEtG=b5,?pm^fBMUroCJ\/6D+$lgC.UlnCeR3#BMVo+4;&2m4;&2t4;&2m4;&2m4;&2t2%pc-2-`?M+>+684qf"RA1[fd.L6883#`H4%20BX2&TXP##6g)##/?#C/7/g"Af^42%L9k&fD-54;&;91'p],2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?+BM(ce"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I%7+Gp>+)'dH1-'dH.??qisaE$6YH0c:ls.3B982,k2(2]i#,2A07e0H*n(2%D8m##6g)##/?!Ce.8m"<gMd0G4pC0Fe=()AF2&4]Ea42_c6\!`(7;2@`\"2%D8m##6g)##/?#BMCrg"<gMd0G4pC0Fe=()AF2&4]Ea42_c6\!`(7;/JJd+GrZ$D0FT013"-`8E@qh4'GDBEC*?js3#)EdG>2@*/IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B7]gDG=;4CJ7/pDG<f(Cf!T)?rBHjBhh?&Db*,oC/A&5?qNd\@7Wgd?qO*lCfOaF2%L9d2%pc-2-^2h*Z4r#2A-o43X?`72`Vc\1_gT6E@qh4'GDBW0H*n*GmGAo2d?Ok.2`j:Gmb>o/Q?""/I3'k1+,%DCF;)(BN.;tBMDbr"B5Fu#!4Ik##6g)##/?+BM(ce"<h%d2[CE7GmkN%!\c-%!\c-&EDJl%?r\X>@lbV>4ZXSq.L7s@0G"dg$Q0j82A.Z>"B?BQGp>+)'dH1-'dH.??qisaE$6Z:A/Z0n.N)1o.pNu$/R/?:'dH1-'dH.?BM(ZkE$6Y=.pN-8'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BLtopE$6Z;A5#r,2%L9d"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#ND,3l#DG<Gs?qO*lCf!f,G=Y2%?q<O[BMV<%DGXJ9DG<DkBM(cqDFd5p@74Bn4;&2m4;&2m4;&2t4;&2m4;&2m4;&2t2%pc-2-_gI3#`eG%1XB`4;%X##RM(S/Is*.4rI*S2B*;?4B+:&CF;)(BN.K$CeS+uFW(u*.N)M>.if932^ek;4W,.S@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&EC<N#E$6Z:%ilK&4BrI-4]M_#3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf4t4VLd%5?o]a!\c-%!\c-&EC<N#E$6YH0c:ls.3B982,k2(2]i#,2A07e2%pc-2-^2h*Z4r#2A-o43X?`72`Vc\1_gT6EA/n?!\c-&ECil/@9"aK0H*n*GmGAo2d?Ok.2`j:Gmb>o/Q?""/I3'k1+,%DCF;)(BN.;tBMDbr"B5Fu#!4Ik##6g)##/?,?qXch"B>I3/JT*i#!4Ik##6g)##/?,?qXch"@5T_3"Q<!GnUBL2\Q0Y0./_ACF;)(BN.E#BhVer";:u,0./_ACF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@,OWGo7G14BsBQ.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGED]5*?qFO%D,*StC.1ftD,<Z"Cf3r2@7rscBh:ZiC/A&2BLkTjG>CV+DbWSs@74Bn4;&2m4;&2t4;&2m4;&2m4;&2t2%pc-2-`*L2]F+Y2@^:)#RM(S/Is*.4rI*S2B*;?4B+:&CF;)(BN.8oBM;\qFW(u*.N)MF2A-ZW/e\Eo@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&ED8kuD,i#KA1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nOE#9N]0H*nQ*[`p0CF;)(BN.DuC.MVo":,tO2d?Ic3"Qp"57&5./JT36EE*ha3ZT&)00qAu/O(0`2]3DJ0G>?O2]3J?4:b[M##6g)##/?+BLkE]"B?HGGm[Le0c:ls.iAHo3!`It3#)EdE'41;3$05%'dH1-'dH.?DbEMsE$6Z'02O/E!\c-%!\c-&ED8kuD,i#KE![F!0G%2G*[`p0CF;)(BN.DuC.MVo"@5T_3"Q<!GnUBL2\Q0Y0./_ACF;)(BN.E#BhVer";:u,0./_ACF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@,OWGo7G14BsBQ.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGED]/*DG")3BM(TjD+$cnDGWc*@8]BpCJ$ljC.^ik?r09gG=tD,CICKfDFHfhDH0sH2],Ku2],g)2],Ku2],Ku2],g22BNYEGs3&H3Ys.W0Gb<>A1[fd.L6883#`H4%20BX2&TXP##6g)##/?,@7rmY"Af^42%L9k)\<_a1+rb;1)UO(((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.?DbNSuE$6Z:%ilK&4BrI-4]M_#3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf4t4VLd%5?o]a!\c-%!\c-&ECrVsBiQTG/JJd+GmkJj2%X!r/.ra80G>?tE"Erg3"T%(A31A>)A="u4<FP12A._R4:rS<.TAAiCF;)(BN.E$@7jfhE"s!Q03eJb4;(U*4:Df'/R/AZ0F1oU(^L*C3YsG&##6g)##/?&DG<Pl"<h"bFX&\%'dH1-'dH.?DbNSuE$6Z&/.qpi2-_XW!\c-%!\c-&ECrVsBiQTGA3gh02%L9d2@`[q2@*7s!\c-%!\c-&ED8buBiQTG2@`\$!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HAO/^O4:h`%Gp<;&EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'CJ7,rG==u$BLkKlDbNl$D+I>p?qE[bDb3>n?q`m_@7`s`?pmIgD+-ljBM;,mE#BQ!Go7M*E#BQ!Go7M*Go7M*E"Erg3"T%:3"@#R2'!54%o5bP//\[/.P);;4@UG%4rY=CEA/n?!\c-&ECrZ'C/l]Y591RP4B4':.i1)S3#E5bC.:8o)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.;sBMDbr"@4452$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXBN5TPGngrZ#!4Ik##6g)##/?&Bh_#g"<eKh4^93?.hE7hGmGAo2d?Ic3"Qp"57&5./JT36EE+"_GnM&4GrlTS)_>5I##6g)##/?,CeR)d"B>F04;(U*4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?!Cd^ui"Ah'?CF;)(BN.Z+Bh2MnE#BQ!GngrZ*Z4r$#uilHCF;)(BN.DsCIDGlE'cu\/JJd+GngrZ2\Q0Y/e\Ep.L[$l4=<*NCF;)(BN.](D,+A#"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&ED8l#CfMoV/JJd+Gp<;&EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'C.^imG>(\-Bhq/pCf!GqG=t5"?r'-oDb<JsBM_i.BLkB_@8BBjCe[W)C/%u+4:h`%0H*n94:!kS2\H]&/JT36*"ihn0Gt*g'dH1-'dH.?BMClqE$8Kg2],L>4:!i$EA/n?!\c-&ED8r#@9"aKB0esR/JJd+Gn(E"4<4Dh/fbrKEE+M*.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGED]#$BLQ*$Dbi`#?qEjdCIqW0@8]BiCdg`mBLtWhDbEN'@8L*+@8:!0DFmQ'CJ@&uD,3N"E)coJ/JT*i2\Q0Y#!4Ik##6g)##/?&Bh_#g"<e]rGmkN%!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KFA3jHC*tB"q4=<*NCF;)(BN.]&@8'rj"B8N)DG<i"C.^uqDacrgBMLihD+%Q.Bh;#tCe[2nC.^ik@743mDF?rg?qWdhCedE#@7WmfCfOb#'dH1-'dH.?C.U]hE$6Y60FeZp2&-o54W+5(3X?Z:E=3]t1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?&Bh:uj"<fEO##6g)##/?!DbWSk"<fEO##6g)##/?(CJ./i"<fEO##6g)##/?#Db*Sp"<fEO##6g)##/?+C._bq"B?$C4^8R0.N)2J*[`p0CF;)(BN.Z0@9"a?A-`AT4BrI-4^8R.4]N('4^8R.4^8R.4]N=-3ZT&)'GV/g0H1uJ)\<_h4@(8/4:_E'#osZ`@ji9!4qJ<!'dH1-'dH.?C.gijE$8<e3"Q<!E%r@<2\cu6/Nt!Q4W.!G2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?,D+I#d"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I%7+Gp>+)'dH1-'dH.?@7WX_E$6YH0c:ls.3B982,k2(2]i#,2A07e0H*n94:!r?'dH1-'dH.?BMCm!E$8LmA493[/JJd+Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ED8l#@9"aP'dH1-'dH.??r'L$E$8=[E#BK(4;AJr*Z4r1EA/n?!\c-&ED8l#@9"aKAO0$oGmGAo2d@1.3ZT&)00qAu/O(0`2]3DJ0G>?O2]3J?4:b[M##6g)##/?%DG3Di"B?HGGm[Le0c:ls.iAHo3!`It3#)EdE'41;3$05%'dH1-'dH.?DbEMsE$6Z'02O/E!\c-%!\c-&EC<&nDH/,LE![F!0G%1m2@*8E*[`p0CF;)(BN.Z,D+e.u";:u,2\Q0Y0./_ACF;)(BN.E#BhVer";:u,0./_ACF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@,OWGo7G14Br'p.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.8p?qaiiFXdt'/JA=b!\c-%!\c-&ECEB%BiQTGECE>nG>:S(Ced5sBLkNkF\P>*G==l!BhUfnCe.#kC/.H'CJmi&CJ75rCIqf(/fbrKEDf(p"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#RBM)H3CICHm?r09rBMq6%CJ.#kF\bM/CJJ/-4;&2m4;&2m4;&2t4;&2m4;&2m4;&2t2%pc-2-_g:.i/s*3"?L+#RM(S/Is*.4rI*S2B*;?4B+:&CF;)(BN.>uCd_PmFW(u*.N)M>3"@#24<4V2@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&EC<K$DcJ5MA1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nOE#9N]0H*nQ*[`p0CF;)(BN.Z0Ce@ts":,tO2d?Ic3"Qp"57&5./JT36EE+"_GrlTS)_>5I##6g)##/?#C/.Gp"B?0G4^8m6/R/Ad.i/F(3$/_l'dH1-'dH.??qim`E$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?#BM:]a"B>F04;(UU/IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B7lkDG+/3@893eBMLihDbaJ8Ce[W#DF?fkCJ@5nFAG>,D,O&(C/.&m?qEjdE)dJ\.N'61GrlTS)A="u4<FP12A._R4:rS<.TAAiCF;)(BN.DuBh;SoE!REf2d@1.3ZT&)00qAu/O(0`2]3DJ0G>?O2]3J?4:b[M##6g)##/?#BM:]a"B?HGGm[Le0c:ls.iAHo3!`It3#)EdE'41;3$05%'dH1-'dH.?DbEMsE$6Z'02O/E!\c-%!\c-&EC<K$DcJ5ME![F!0G%2G*[`p0CF;)(BN.Z0Ce@ts"@5T_3"Q<!GnUBL2\Q0Y0./_ACF;)(BN.E#BhVer";:u,0./_ACF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@,OWGo7M*Go7G14;AJr2\Q0Y*Z4r$#uilHCF;)(BN.DsCIDGlE#fi%GnM&4GrlTS)A="u4<FP12A._R4:rS<.TAAiCF;)(BN.DuBh;SoE!REf2d?Ok.2`j:Gmb>o/Q>nOE$I.u'dH1-'dH.?@73d]"<g>Q.gZeT/.qpi2-_%./R0eO!\c-%!\c-&EC<K$DcJ5M2@`\34:!i$EA/n?!\c-&ED8r#@9"aK2@`\34:!kS2\H]&/JT36*"ihn0Gt*g'dH1-'dH.?BMClqE$8LL*[`p0CF;)(BN.Z0@9"a?A/Z0n.N)1i2],Ku2],g)2],Ku2],Ku2],g22BNYEGrQ`P$4@RX(`sOu.M#*+//\[/.P);;4@UG%4rY=CEA/n?!\c-&ECil$@9"aP591RP4B4'D2_P772a%rW4:_["((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.?@7<j^"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I%7+Gp>+)'dH1-'dH.?@7<j^"<daQ4;(U,3ZT%JE>eie3X?`72cO&i5?%gk.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.>uC.)>kE)ePE##6g)##/?%DGNu!"<g?C2\d/s3"cci.1c\C'dH1-'dH.?DbEMrE$6Yi'dH1-'dH.?D,*f0E$6Yi'dH1-'dH.?D,*H%E$6Z9A5,?gBj:WG4;(U>.g[44#n@sU4@'K!*tA;Y/M@)4.iCnq,T7U6Gp?E+Gnh5b2]3#?F]8PL.1dL"3!^*$@k/9$/NOg_)AF2&4]FC'CF;)(BN.](Ce\2!E)ePE##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?BMCcoE$8Kl2I%7+GmZ2X##6g)##/?(C.pue"<gBDBM:fmBhUo^/JJd+GmG,c2&S&###6g)##/?#Db`bo"<h"r.g[44#n@sU4AZ)='dH1-'dH.?DbEK%E$6Z&4;&2m4;&2m58+5g##G@g0G7=u3#)W/E=NQo2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECrZ(CfMoVE#9N]58+5g##G^q0G7=u3#)W/E=,tV2I%7+Gp>me'dH1-'dH.?DbEK%E$52h4;(U03$&n@!\c-%!\c-&ED8bsCK2fIEB4:>0F0$B2@^<p+]T*`4^8R.4^80q.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.E#Cen>#FYG=C!\c-&ECEB$@9"aK58+5g##Gar0G7=u3#)W/EB4:>0F/p90HUm!4VLcu2@`\KFTteP2d?Ie0Fe=\*tA;Y/M@)4.iDUt2I%7+Gm-cG,?trm4]DUi.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.>uC.)>kE)ePE##6g)##/?%DGNu!"<g?C2\d/s/JJd+Gp>+)'dH1-'dH.?BM(QlE$6Z:591RP4Brm1GnM&4GmkN%!\c-%!\c-&EDJl%?r\X>@lbV>4ZXSq.L7s@0G"dg*tA;Y/M@)4.iDV/0c:ls.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?BMCcnE$8="2@fd"0G5$l+B;\O2%L9d.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?@7Wa`E$8=:##6g)##/?(CeR,e"B>X1.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.Z,DG=D#FYG=C!\c-&EC`AoDcJ5Y.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?@7Wa`E$8=:##6g)##/?(CeR2g"B?$C4^8R.4^8R.4^8R.4^8R.4^9!2E=NQo2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ED&Yq@9"aKE$mV-CF;)(BN.>uC.2Dl"9M.(0G%2"0c:ls#!4Ik##6g)##/?#Db32d"<g>Q.gZeT#!4Ik##6g)##/?,?pn9a"@3Y%2%L9d4;&2m4;&2m4;&2t4;&2m4;&2m4;&2t2%pc-2-_LC3"e"X3"H5u.R>?r4:_E'#osZ`@ji9!4qJ<!'dH1-'dH.?@73I_E$8<e3"Q<!E%_:p2`hiX.M!+&@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&ECrVsDH/,LA1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nNE#9N]0H*nQ*[`p0CF;)(BN.;sBM2Vp":,tO2d?Ic3"Qp"57&5./JT36EE*ha3ZT&)00qAu/O(0`2]3DJ0G>?O2]3J?4:b[M##6g)##/?!Ce-lb"B?HGGm[Le0c:ls.iAHo3!`It3#)EdE'41;3$05%'dH1-'dH.?DbEMsE$6Z'02O/E!\c-%!\c-&ECrVsDH/,LE![F!0G%2G*[`p0CF;)(BN.;sBM2Vp"@5T_3"Q<!GnUBL2\Q0Y0./_ACF;)(BN.E#BhVer";:u,0./_ACF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@,OWGo7G14BsBQ.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGEDAu-Dc0&'Bh1`tD+R5qF\P.rBM1]sC.1Tk?qj!hF[SPmG=4r*@7imb@7rmYE#BQ!Go7M*E#BQ!Go7M*Go7M*E%M(p.L6883#`H4$5isN.ieTu.o\JjCF;)(BN.H"DbOG#E"Erg3"T%40H1l<1dNE'4:_E'#osZ`@ji9!4qJ<!'dH1-'dH.?DbNH#E$8<e3"Q<!E'>9F1_Ua0((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.?@7WX\E$6Z:%ilK&4BrI-4]M_#3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf4t4VLd%5?o]a!\c-%!\c-&EC<&nCK2fI/JJd+GmkJj2%X!r/.ra80G>?tE"Erg3"T$i+[Img/O(0`2]3DJ0G>?O2]3J?4:b[M##6g)##/?,D,*Di"B?HGGodA]/JJd+Gn(E"4<4Dh/fbrKEE+k4/KGW5!\c-%!\c-&ECrSrBN6KFE?5Na#!4Ik##6g)##/?,D+I,g"<h%d2[CE7GnM&4Gp>+)'dH1-'dH.?@7WX\E$6Y=.pNu$/R0&1!\c-%!\c-&ED8buBiQTG2@`[e+X]63CF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@,OWGo7G14BsBQ.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGED])%?rBKmC/.K"D+R)nC/%/uF\b\/G=k8%Cd^QmC.gigFA52&BMDZ,?qN[gD,3N"E)dJZ4^8R.4]N('4^8R.4^8R.4]N=-3ZT&))BAk`2]*PH0gR*$4:_E'#osZ`@ji9!4qJ<!'dH1-'dH.?BM:clE$8<e3"Q<!E'G'P4;&24.MPW/2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?,?qsuk"@4452$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXBN5TPGngrZ#!4Ik##6g)##/?,?qsuk":,tO2d?Ic3"Qp"57&5./JT36EE*ha3ZT&)00qAu/O(0`2]3DJ0G>?O2]3J?4:b[M##6g)##/?#CILN]"B?HGGm[Le0c:ls.iAHo3!`It3#)EdE'41;3$05%'dH1-'dH.?DbEMsE$6Z'02O/E!\c-%!\c-&EC<MuE$6Z&/.qpi2-_%./R0eO!\c-%!\c-&EC<MuE$6Y=.pN-8'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BLtopE$6Z;A5#r,2%L9d"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#NCICZeDbNl%DFmr-CJmGuCJIB$@7s9pD,=A5BM;T/@89KsCJ@/n@7a`s4;&2m4;&2t4;&2m4;&2m4;&2t2%pc-2-_7<0G6JV2AZU)#RM(S/Is*.4rI*S2B*;?4B+:&CF;)(BN.8oBMDbrFW(u*.N)MN/eo9T2A7/D@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&EDJl#?r\X>A1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nOE#9N]0H*nQ*[`p0CF;)(BN.K&Dadqq":,tO2d?Ic3"Qp"57&5./JT36EE*ha3ZT&)00qAu/O(0`2]3DJ0G>?O2]3J?4:b[M##6g)##/?#CILK\"B?HGGm[Le0c:ls.iAHo3!`It3#)EdE'41;3$05%'dH1-'dH.?DbEMsE$6Z'02O/E!\c-%!\c-&EDJl#?r\X>E![F!0G%1m2@*8E*[`p0CF;)(BN.K&Dadqq";:u,0./_ACF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@,OWGo7G14Br'p.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.8p?qaiiFXdt'/JA=b!\c-%!\c-&ECEB%BiQTGED]/%D+d;lBM)!&CJ@K%Cf!W$D,O)0BhgonCd^`kC/A&4Ce7&iDbEGsC.LioCfOaT3#)EdG>;F+/IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%C/72sG=t5$@803lF\##!G>:h3@7<I]Ce[W)F\th2DG=;2?qs!e@803lE)dJZ4^8R.4]N('4^8R.4^8R.4]N=-3ZT&)$5j$]4;%W;2@E)3//\[/.P);;4@UG%4rY=CEA/n?!\c-&ED8r"DH/,]591RP4B3a5.h!"!/Nt*f@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&ED&YrBN6KFA1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nOE#9N]0H*nQ*[`p0CF;)(BN.>uCJA(u":,tO2d@1.3ZT&)00qAu/O(0`2]3DJ0G>?O2]3J?4:b[M##6g)##/?!C.q>o"B?HGGm[Le0c:ls.iAHo3!`It3#)EdE'41;3$05%'dH1-'dH.?DbEMsE$6Z'02O/E!\c-%!\c-&ED&YrBN6KFE![F!0G%1m2@*8E*[`p0CF;)(BN.>uCJA(u";:u,2\Q0Y0./_ACF;)(BN.E#BhVer";:u,0./_ACF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@,OWGo7G14BsBQ.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGECii$BMqN-DFHfoCJ@K%Cf!Q!BLQ*'?qEaiCJ.#kD,3N"F\tM&G=tA.CJR>uCe[T(Ce-lrE)dJZ4^8R.4^8R.4^8R.4]N=-3ZT&)'cA#93ZeqF.ME")A1[fd.L6883#`H4%20BX2&TXP##6g)##/?&BLP0Y"Af^42%L9k'cA#93ZeqF.ME")@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&EDJl"CfMoJA1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nNE#9N]0H*nQ*[`p0CF;)(BN.K&DFn+t":,tO2d?Ic3"Qp"57&5./JT36EE*ha3ZT&)00qAu/O(0`2]3DJ0G>?O2]3J?4:b[M##6g)##/?!C/%)g"B?HGGm[Le0c:ls.iAHo3!`It3#)EdE'41;3$05%'dH1-'dH.?DbEMsE$6Z'02O/E!\c-%!\c-&EDJl"CfMoJE![F!0G%1m2@*8E*[`p0CF;)(BN.K&DFn+t";:u,2\Q0Y0./_ACF;)(BN.E#BhVer";:u,0./_ACF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@,OWGo7G14BsBQ.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGEDAl$D,Ni#C/7N-DbEN&F\##"G=Y%uCe-otCe[2qF\tM(D+Ii3Cd^ZiDF?ojCfOaF2],Ku2],g)2],Ku2],Ku2],g22BNYEGqg<O3#`Gc3#`H9%362q!\c-%!\c-&ED8bt?r\X>@m:/!56rM94rIU'E%r@F3#`Gc3#`H4$5isN.ieTu.o\JjCF;)(BN.9!Cd_PmE"Erg3"T%8/.`XN2A7!8'GUfR4rGUI4rI*O3"?Z+.iea#EA/n?!\c-&ECiYuCK2fZ'dH1-'dH.?DacoiE$8Kt2BNYEGr5g:0Feg#4@(t7.if9-#osZ`@k8?,3#`&'.26#?##6g)##/?#BhLle"Ah'?CF;)(BN.<%D+n5!E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>;EK2I%7+GmbQ'1(OKh3Z0S(##6g)##/?+C.1Wb"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.JuDG"1uE"`FC/e\Ep.L[$l4=<*NCF;)(BN.JuCeJ%t"=H/kCF;)(BN.DuDFe%s"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&ECE,mE$8L'0c:ls&.]Wc.if9-@kSE1*>o(^EA/n?!\c-&ED8i#CK2fU4:h`%Gr5g:0Feg#4@U\&/N==R3`J($CF;)(BN.?&Bh_ksE#BQ!Go7M*Go7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>;EK2I$@b3"Qp"57&5./JT36EE*kb2A/\i'dH1-'dH.??qWplE$6)-2A/A`'dH1-'dH.??qWsfE$6)-2A/>_'dH1-'dH.??qWseE$6)-2A/;^'dH1-'dH.??qWsdE$6)-2A/8]'dH1-'dH.??qWscE$6)-2A/Md'dH1-'dH.??qWsjE$6)-2A/Jc'dH1-'dH.??qWsiE$6)-2A/Gb'dH1-'dH.??qWshE$6)-2A/S,49uf52A07e0H*n#2A7!8A.]ah2bd6f0c:ls*sibp'GDDp@kSE1*>o(^EA/n?!\c-&ED8l$CfMoV4:h`%0H*n#2A7!8A.]ah2bm<g0c:ls*sibp'GDDp@kSE1*>o(^EA/n?!\c-&ED8l$DcJ5Y4:h`%0H*n#2A7!8A.]ah2c!Bh0c:ls*sibp'GDDp@kSE1*>o(^EA/n?!\c-&ED8l$DH/,X4:h`%0H*n#2A7!8A.]ah2b6ma0c:ls*sibp'GDDp@kSE1*>o(^EA/n?!\c-&ED8l$@9"aK4:h`%0H*n#2A7!8A.]ah2b?sb0c:ls*sibp'GDDp@kSE1*>o(^EA/n?!\c-&ED8l$?r\XJ4:h`%0H*n#2A7!8A.]ah2bI$c0c:ls*sibp'GDDp@kSE1*>o(^EA/n?!\c-&ED8l+BiQTS4:h`%0H*n#2A7!8A.]ah2bR*d0c:ls*sibp'GDDp@kSE1*>o(^EA/n?!\c-&ED8l+BN6KR4:h`%0H*n#2A7!8A.]ah2agU]0c:ls*sibp'GDDp@kSE1*>o(^EA/n?!\c-&ED8l+CK2fU4;&2m4;&2t4;&2m4;&2t2%pc-2-_mD2]+O^.if9-A2,):3#`Gc3#`H4%20BX2&TXP##6g)##/?!CeR;j"Af^42%L9k*u,\!'GUfR4rI*H2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?,D+I/h"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdE#9N]0H*nQ*[`p0CF;)(BN.Z,D,4G$":,tO2d?Ic3"Qp"57&5./JT36EE+"_GnM&4GmbQ'1(OKh3Z0S(##6g)##/?!C.Ucb"<fEO##6g)##/?#BM1T_"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.]-DcJ5^/IhdcE!REf2d@1.3ZT&)1^,cG3!`(u0c:c5)\Wr&EE+"_GnM&4GnCK/2B;cb/JJd+Gn:np3"T$i/-Rp?3!_Gh.ifK3A3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'FA5)*CJ.i4Ce\#8G>(\1F\##!G=4c!E$G>rE?5-!)\Wr&)EJ'(1`9R+5?&C6+?g_G/O)!&3"Z`^'dH1-'dH.?C.U]hE$6Z*.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?C.U]hE$6Z&!\c-%!\c-&ED8l"D,i#KAO/a`GmGAo2d?Ok.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.]'Bhr"uFX&\%'dH1-'dH.?C/72rE$6Z&4;&2m4:h`%GngrZ.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.??r'KqE$6Z:A/Z0n.N)2%0c:ls2%pc-2-^n*3!^l93!_Gh.ifK3A.]7o2B;cW'dH1-'dH.?DbNJrE$6Yi'dH1-'dH.?BLtlpE$6Z%)EJ'(1`7r"##6g)##/?+C.(H^"<h#KF\Pt:E$G>rE?6&#/M@\;/O)!&3"Z`p4:h`%Gn(E"4<4Dh/fbrKEE*ha3ZT&)/KG#u4:!VF.L7%(3!^N52aKAK.ifK3!\c-%!\c-&ECEB%BiQTGED]/'BhUonBhVW*BM_2uBh^ogCIqe=5?p,T4<GXl2]3J?4:a=Y3!`b]2@`\/0c:c5%2f?^2@_)B3"@$'E"`FC)AEb`1+XFX3!^*A.ifN5)\*kk3#E6#E!REf2d@jL.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGED]/'BhUonBhVW,CeRr-DG3K!G>:FrE#BK(4BsBQ.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGED]/'BhUonBhVW*BM_2uBh^ogCIqf(4;&2m/.qpi2-_%./R0eO!\c-%!\c-&EC<&nC/l]H2@`t.3"?T+/N==R/JT0*/JT36!\c-%!\c-&EDJl$BN6KFF:8uu!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KFE$mV-CF;)(BN.DuBLlDm"@,OVBj;ShGmbQ'1(OKh3Z0S(##6g)##/?!C.Ucb"<fEO##6g)##/?#BM1T_"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.]-DcJ5Y2@`\"2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?!Ce7#e"<fEO##6g)##/?+C.1N_"<g?C591RP4Br"".jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.K&CeS+u"=H/kCF;)(BN.]&?qaii"@3Y%2%L9d4;&2m4;&2m4:h`%Gp<;&E=3]t1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?!C.glc"<fEO##6g)##/?#Db35e"<fEO##6g)##/?#Cd^`b"<h(o*tB"q4=<*NCF;)(BN.]&@8'rj"B7cbC.q#kBiSFC2],Ku2],g)2],Ku2],Ku2],g22BNYEGr-NE0c:34'GUfR4rHpE0Feg#4=h3M4@UG%4rY=CEA/n?!\c-&EDJhuE$8<e3"Q<!E&8R<0c:34'GUfR4rI*H2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?,@7sli"@4452$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXBN5TPGngrZ#!4Ik##6g)##/?,@7sli":,tO2d?Ic3"Qp"57&5./JT36EE+"_GmbQ'1(OKh3Z0S(##6g)##/?!C.Ucb"<fEO##6g)##/?#BM1T_"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.]-DcJ5^/IhdcE!REf2d@jL.9$BX.i/F(3$/_l'dH1-'dH.??r'KnE$6Yi'dH1-'dH.?C/72sE$6Yi'dH1-'dH.?BM(QkE$6Yi'dH1-'dH.?BLtlpE$6Z%)EJ'(1`7r"##6g)##/?+C.(H^"<h#KF\"o!F\H(54;&2m4;&2t4;&2m4;&2m4;&2t2%pc-2-_7[*]Z)4A2,):3#`Gc3#`H4%20BX2&TXP##6g)##/?,@7rs["Af^42%L9k%4j:^(bSQ72a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?#DbNMj"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I%7+Gp>+)'dH1-'dH.?BM(ZlE$6YH0c:ls.3B982,k2(2]i#,2A07e58+5g##G@g0G7=u3#)W/EE!#K.i/F(3$/_l'dH1-'dH.??r'KnE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?!C.glc"BA`1*Z4r#0bkN1.iB6uE)dGXGngrZ0./_ACF;)(BN.;tBgl;k"@5U4##6g)##/?&DG3Di":,tO2d@@,GmZ2X##6g)##/?#BLG?_"<g?C'dH1-'dH.?C.UZiE$52h4;(UU/IYl!!\c-%!\c-&ED8`'CK2fIE#BQ!Go7M*Go7M*Go7M*E#BQ!Go7M*Go7M*E"Erg3"T$h3"dSC4@(t7.if9-#osZ`@ji9!4qJ<!'dH1-'dH.?CJ.$!E$8<e3"Q<!E$#f($5jFY((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.??q<[^E$6Z:%ilK&4BrI-4]M_#3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf4t4VLd%5?o]a!\c-%!\c-&ECE,kC/l]H/JJd+GmkJj2%X!r/.ra80G>?tE#KZ-Gp?E+Gnh5b.30E@.TBXe2@^f?.303/!\c-%!\c-&ECEB$C/l]H@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?C/72sE$8LZ@lk8=)AF2&4Ur&5EE-9L2I%7+GmZ2X##6g)##/?&DG3bs"<g?C'dH1-'dH.?DbEJtE$52h4;(U#5?n7L'dH1-'dH.?BMD/sE$6Z:A2#N2!\c-&EDJl%DH/,%0c:ls0./_ACF;)(BN.JuCJJ/!"@5FC4:h`%GmZ2X##6g)##/?!C/.5j"<g?7Go7M*Go7M*Go7M*Go7M*E#BQ!Go7M*Go7M*E"Erg3"T%54UNkI3"QZ6A2,):3#`Gc3#`H4%20BX2&TXP##6g)##/?,CJR5g"Af^42%L9k(`3<%4<57C.n2T0)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.K&Da[kp"@4452$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oU4VLd%5?o]a!\c-%!\c-&EDJl#@9"a?/JJd+GmkJj2%X!r/.ra80G>?tE#KZ-Gp?E+Gnh5b.30E@.T?TV.1dL"3!^*$!\c-%!\c-&ECrSpD,i#K@lk8=)AF2&4Ur&5EE-9L2I%7+GmZ2X##6g)##/?&DG3bs"<g?C'dH1-'dH.?@7j!cE$52h4;(UU/IYl!!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIE#BQ!Go7M*Go7M*E#BQ!Go7M*Go7M*E"Erg3"T%83"?fK0c:34'L=_d.if9-#osZ`@ji9!4qJ<!'dH1-'dH.?Ce-iqE$8<e3"Q<!E&n^G1d;ra.L8%;((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.?@7WXbE$6Z:%ilK&4BrI-4]M_#3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf7u4VLd%5?o]a!\c-%!\c-&EC<&nD,i#K/JJd+GmkJj2%X!r/.ra80G>?tE"s!Q/e\Ep.L[$l4=<*NCF;)(BN.]&?r(&l"=H/kCF;)(BN.JuDG"1u"=H/kCF;)(BN.E#Ce@ts"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&EDK)(@9"aK2@`\#2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&EDK)(DcJ5M!\c-%!\c-&ED8c#DcJ5M@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?BMD0%E$8L'0c:ls2%pc-2-`'K2%U?"/JT36$5j$_0HUm54rkLF@lk8=$5j$_0HUm"'dH1-'dH.?@73FYE$8Kt2BNYEGq9mG0F/[-2aL[^2%D8m##6g)##/?#BMCrg"<gMc4:!2>0,"=YE)ePE##6g)##/?!Ce7&f"<eTj3ZT&))AEbp/ItDq2@p]03X?`72_PaT0,59-@lk8=%36)b4;_<V##6g)##/?!C.^ld"B?9I3ZT&)*>Jeq3"d#3FYXO1.iAR.A.]Om0deqCCF;)(BN.;tBMVnt"Ag!D2-^b&.pOT#)AEbp/R0;*GngG`0Fe=\)AEbp/Iu+l2I%(-3ZT&)'HIhr0F.[a4@*4F)AEbp/OhN#/M%nW2@*P[E$mV-CF;)(BN.K&Ce\2!"ApEQ.MVpj2A0:T'dH1-'dH.?BMCosE$6Y;5?o*8/R14B4:_Ep*Z4r%/I2Of3sblkEA/n?!\c-&EC<&kD,i#W3"cci'HIhr0F.[a4?tS-.L6au3Z1m50c:ls*>Jeq3"d#3A2+f%2\c<.4W.3N4<4V1.L8Tg0c:34Go7M*Go7M*GngrZ(E!r"4:_EZ/JJd+Gp<;&EAA+-.iAR.@lk8=#o*LM/Q?"J4;&2m4;&2m4;&2t4;&2m4;&2m4;&2t'GUfR4rGUI4rI*L4:Df63!^H8EA/n?!\c-&ED8i#C/l]T2%pc-2-`'J4<GY!2@14,'GUfR4rGUI4rI*O3"?Z+.iea#EA/n?!\c-&EDJr&CK2fZ'dH1-'dH.?DacoiE$8Ku.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nNE#9N]0H*nG//\[/BL,3+.gZeT/JJd+Gs<8Q3Ys.P/.bQ14:!VF.N_nK##6g)##/?!DbWnt"B?$E.N'61GqB%$.L8LMA-`AT4Bqjo4;(U90c:c5$53FN@kSE1*>o(^EA/n?!\c-&EDJo!?r\XJ4:h`%0H*nG//\[/C-bE-.gZeT/JJd+Gs<8Q3Ys.P/.bQ14:!VF.N_nK##6g)##/?!Db`\m"B?$E.N'61GqB%$.L8:GA-`AT4Bqjo4;(U90c:c5$53FN@kSE1*>o(^EA/n?!\c-&EDJnuBN6KR4:h`%0H*n94:!/fEA/n?!\c-&EDK))BN6KR/JJd+Gs<8Q3Ys.P/.bQ14:!VF.N_nK##6g)##/?&BhCfd"B?$E.N)2.0c:c5$53FN@kSE1*>o(^EA/n?!\c-&ECrW!CK2fU4;&2m4;&2m4;&2t2%pc-2-_L;/.aTQ0F/C*A2,):3#`Gc3#`H4%20BX2&TXP##6g)##/?,@7s9d"Af^42%L9k$53FN*XNi'3"A\72a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?#C.poc"<g>o3"Q)pGo7M*E#J`d3X?`72d@"#/LXj5/.l.u2BNYEGn(c03!^N52d@@,GnL,fA3iXO/JJd+Gn(c03!^N52aINS.i/F(3$/_l'dH1-'dH.??r'KnE$6Yi'dH1-'dH.?DG*9!E$6Yi'dH1-'dH.?BM(QiE$6Yi'dH1-'dH.?C.^rmE$6Yi'dH1-'dH.?DbE?"E$6Yi'dH1-'dH.?C.^rlE$6Y72%L9+5?o*B1dO]0GmGAo2d?Oq/KFfu2A/Rq2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&ED&Z"?r\X>!\c-%!\c-&ED8c#DH/,L!\c-%!\c-&EDJnuD,i#K!\c-%!\c-&ECrT"@9"a?!\c-%!\c-&EDJnuC/l]H4:h`%0H*n"/.kH[D-R&K4;(U*2@($60G>@2/e\Ep.L[$l4=<*NCF;)(BN.]&?r(&l"=H/kCF;)(BN.>uCdhVn"=H/kCF;)(BN.E#CeJ%t"=H/kCF;)(BN.K%CIqeq"=H/kCF;)(BN.;tD+%Yn"=H/kCF;)(BN.K%CJS5"";r$f4;AJr2[L@.A4ol<0c:ls.h_ma/JT36A.'=g1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?%DFmPp"<fEO##6g)##/?#Db3;g"<fEO##6g)##/?!Db`Vk"<fEO##6g)##/?&DFdGn"<fEO##6g)##/?!Db`ep"<e?f.N'61GnL,fA3iX_GmGAo2d?Oq/KFfu2A/Rq2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&ED&Z"?r\X>!\c-%!\c-&ED8c#DH/,L!\c-%!\c-&ED8l+CfMoJ!\c-%!\c-&ECrT"@9"a?!\c-%!\c-&EDJnuC/l]H4;&2m0H*n&2@($60G>?l/JJd+Gn(E&/.NRc.h_ma/JT36!\c-%!\c-&EC`AoBiQTG4;&2m4;&2m57&5./JT36GoI>3$Rf6h/.l.u2BNYEGpik*.234R#XJP$.i/F(3$/_l'dH1-'dH.??r'KnE$6Yi'dH1-'dH.?DG*9!E$6Yi'dH1-'dH.?C.^rpE$6Yi'dH1-'dH.?D,*f,E$6Y@2BNYEGpik*.234R#nmP258+5g##G@g0G7=u3#)W/E@;#".234R#Y$TS/O(3^2&HN%2cO'T4VLd%5?o*B1dO]2Go[e.E=+?P##6g)##/?&DG3bs"<g?C'dH1-'dH.??qs*kE$5r*4^8%k*u,\!*u+tk/O(3^2&KRO##6g)##/?#DbNSl"BA_D0c:ls%1X<j0a0'`2@i@o!\c-%!\c-&ED8buBN6KF!\c-%!\c-&EDJnuC/l]H4:h`%0H*n"/.kH[CKqS`4]DJB'dH1-'dH.?DbEK%E$6Z:A2#N2!\c-&ECE>qCfMnc2],L/@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?BM(ZjE$8LZ/JJd+Gpik*.234R#nmPM0./_ACF;)(BN.E#Bh_ks"=H/kCF;)(BN.K%CJS5"";r$f4;AJr2[L@.A5?/+2],d7!\c-%!\c-&ECrSs?r\X>A3i1;CF;)(BN.]'BhDYp3"cci01I](2]+:W.h;V&0bkN1EA/n?!\c-&ED8buBN6KRE!REf2d@I;2@LQD"tU])A-stC##6g)##/?#DbNSl"<fEO##6g)##/?!Db`ep"<e?f.N'61GnL,fA3iIJ3"ccq0./_ACF;)(BN.;tBgl;k"@5U4##6g)##/?+CJ7)f"<ABcGm[:m0G4pC0Fe=()AF2&4]FC'CF;)(BN.E#Bh_ksE)clG4;(UP.h`$n+<r-?.R=+q'dH1-'dH.?BM(ZjE$6Yi'dH1-'dH.?C.^rlE$6Y72%L9+5?o*B1dO]6Go[e.E=+?P##6g)##/?&DG3bs"<g?C'dH1-'dH.??qs*oE$5r*4^8%k*u,\!*u+tk/O(3^2&KRO##6g)##/?#DbNSl"BA_D0c:ls%1X<j0a0'`2@i@o!\c-%!\c-&ED8buBN6KF!\c-%!\c-&EDJnuC/l]H4;&2m0H*nL.h`$n+<r-?.U2r]4;(U*49ts"2d@I;2@LQD"tU])!\c-%!\c-&EC`AoBiQTG4;&2m4;&2m4;&2m*Z4r(0Fe[N2'!J7.i:h]/.ra80G>?t(C:r[4:YII0GkBo0H*n,2@fd"0G5$l/e\Ep.L[$l4=<*NCF;)(BN.]&?r(&l"=H/kCF;)(BN.>uCdhVn"=H/kCF;)(BN.]'Bgl;kG>^I;1`d5@"=GQ(4W,\.'dH1-'dH.?BMD0#E$6Yi'dH1-'dH.?@7WahE$6Z&-UB^SCF;)(BN.5nCJA(u/JJd+Go@\84<GCI3Yr>3/K#?@2@`t+2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&ED&Z"?r\X>!\c-%!\c-&ECE>q?r\XMG;91/3uJ5d!\YQ!4<Z@2##6g)##/?+C._bq"B?$C4^8R.4^84*3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf4t4VLd%5?o]a!\c-%!\c-&ED8r%CfMoJ/JJd+GmkJj2%X!r/.ra80G>?tE"s!Q%MK$W4\o#n0c:ls.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?Ced]%E$8=\E"3Hn2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECiW'CK2fZCJY!C//__#5?nBs.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.E!DFe%sFYG=C!\c-&EC`SuCfMoVA3h+@2-^+h4;(UU/IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B8N.Db35hBh^ooBh^lnCIqW+D,"21BM(TpDbWPu?q!O_?r00fDbO>5CJI,pBgkNkCfOaQ4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?'CIL]b"AhQ[.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?Ced]%E$8=\FU/0e4B2t(.N'61E=NQo2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ED8i#D,i#\'dH1-'dH.?D,3Q#E$8LZ!\c-%!\c-&EC`SsCK2fIA3gh02%L9d/JJd+GqB%$.L8IL/IhdcGqB%$.L8LM591RP4Bs0J4:_EgA/Z0n.N)2@//\[/D*\d92%L9d2%pc-2-^2h*Z4r#2A-o43X?`72`Vc\1_gT6EA/n?!\c-&EC</qE$8Ko5?n7W/JJd+Gn(E"4<4Dh/fbrKEE+k4/KGW5!\c-%!\c-&ECrSrBN6KFE=,f1*[`p0CF;)(BN.DsBh;So"B>I3/JT*i2\Q0Y#!4Ik##6g)##/?#C.poc"<e]rGmZ2X##6g)##/?!Ce7#e"<fEO##6g)##/?#Cdgid"<g<BBj;ShGnM&4GmZ2X##6g)##/?#DbNPk"<e]rGmbQ'1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?%DFmPp"<fEO##6g)##/?,CeR,e"<fEO##6g)##/?(C/.8k"<e+Y)A<qr.o.fO##6g)##/?+BM1T_"<h#JBM2H+F\H'F2%L9d"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#FBM:ioBi7;qDFm?%BhCiqF\PA1G=k.uD+[)uCJ75rCIqW/?r'$^CJ$ljC.^ik@7rmYE#BQ!Go7G14;AK%.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?BM:cpE$8=:##6g)##/?(C.poc"BA_e'dH1-'dH.?DbNJoE$6Z:A/Z0n.N)2%0c:ls#RM(S/PSe?3"Q<!GqB%$.L8LM/IhdcGqB%$.L8ON591RP4Bs0J4:_EnA/Z0n.N)224:!\L.iBTC3$/kI4]FC'CF;)(BN.5tBgl;kFYG=C!\c-&ECrT"?r\XJ*Z4r(0Fe[N2'!J7.i;ME##6g)##/?(Ce[;i"Ah'?CF;)(BN.;tD+._oE'"XJ*u+ta#nRgO3"?Km'dH1-'dH.?D+R/oE$8=:##6g)##/?&DFdJo"B@5^/NOma4=h<N3ZSD0EA/n?!\c-&EC`AnCK2fZ'dH1-'dH.?D,3W&E$8L44:!\L.iBTC3$/kI4]FC'CF;)(BN.5tBhM_qFYG=C!\c-&ECrT"?r\XJ*Z4r(0Fe[N2'!J7.i;ME##6g)##/?(CeR/f"Ah'?CF;)(BN.5nCIh_pE'"XJ*u+ta#nRgO3"?Km'dH1-'dH.?D+R,rE$8=:##6g)##/?(C/.#d"B?$E.N'61E=NQo2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ED8i#D,i#\'dH1-'dH.?D,3Q#E$8LZ!\c-%!\c-&EC`PuBN6KFA3gh02%L9d/JJd+Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ED8i#D,i#\'dH1-'dH.?D,*GrE$8L!4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?#BhL]`"Ah'?CF;)(BN.5oDG=D#FU/0e4B2t(.N'61E=NQo2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ED8i#D,i#\'dH1-'dH.?D,3Q#E$8LZ!\c-%!\c-&EDJnuDH/,LA3gh02%L9d/JJd+GqB%$.L8IL591RP4Bs0J4:_EhA/Z0n.N)2@//\[/C-_h3//_DB//\[/D*\d92%L9d"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#F?qEjcG=4nsCIgom@7rm^Dc/i"BM(TjDG!5rDG<N#D+.Q,BhM,oBhD&qCdginCfOaQ4:Df'/R/AZ0F1oU2%pc-2-^VhA/c*s$Rf7XE"Erg3"T%O,>C`44:!'&BN6&VGm6])3"cci"pRL`/JJd+Go@\84<GCI3Yr>3/K#?@2@`t+2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&ED&Z"?r\X>!\c-%!\c-&ED8c#DH/,L!\c-%!\c-&EDJnuCK2fI@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.??r'*]"BA_32],L02[CE7Gm6]DA0VR^Gn(E"4<4Dh/fbrKEE*ha3ZT&),>Lf54:!8mEDBdM2BNYEGp<erA/c*s%9,hi0H*n.CKqS`4^9KTCKpiI4;(Ts0FeZp2&-o54W+5(3X?Z:E=3]t1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?%DFmPp"<fEO##6g)##/?#Db3;g"<fEO##6g)##/?!Db`Pi"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.]&DcJ5YE#BQ!GmPB*0G%2$CI(NS,>M2M4:Df'/R/AZ0F1oU2%pc-2-^VfA/c*s$Rf7VE"Erg3"T%O,>Ul64:!'&D,hS[Gm6c+3"cci"pRRb/JJd+Go@\84<GCI3Yr>3/K#?@2@`t+2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&ED&Z"?r\X>!\c-%!\c-&ED8c#DH/,L!\c-%!\c-&EDJnuCfMoJ@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.??r'*]"BA_32],L02[CE7Gm6cFA0VR\Gn(E"4<4Dh/fbrKEE*ha3ZT&),=kB/4:!8mECa@G2BNYEGp<f#A/c*s%9,\e0H*n.D-Reb4^9KTD-R&K4;(Ts0FeZp2&-o54W+5(3X?Z:E=3]t1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?%DFmPp"<fEO##6g)##/?#Db3;g"<fEO##6g)##/?!Db`Vk"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.]&DcJ5YE#BQ!GmPB*0G%2$D*^`U,=kcG4:Df'/R/AZ0F1oU2%pc-2-^VlA/c*s$Rf7\E"Erg3"T%O,=tH04:!'&BM;\=5?n\!Go[e.Gp<f"GmGAo2d?t&.iB-60HVAA49uN!/JA=]/e\Ep.L[$l4=<*NCF;)(BN.]&?r(&l"=H/kCF;)(BN.>uCdhVn"=H/kCF;)(BN.E#CeJ%t"=H/kCF;)(BN.Du@7a`g"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&ECEAtE$8LZ4;&2m/.qpi2-^VlA3h^`Cg7/K.2`j:Gmb>o/Q?!Z0FeZp2&-o54W+5(3X?Z:E=3]t1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?%DFmPp"<fEO##6g)##/?#Db3;g"<fEO##6g)##/?!Db`tu"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.]&DcJ5YE#K`/4<GCI3Yr>3/K#?@2@`t+2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&ED&Z"?r\X>!\c-%!\c-&ED8c#DH/,L!\c-%!\c-&EDJnu?r\X>@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.??r'*]"BA_20FeZp2&-o54W+5(3X?Z:E=3]t1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?%DFmPp"<fEO##6g)##/?#Db3;g"<fEO##6g)##/?!Dbibn"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.]&DcJ5YE#K`/4<GCI3Yr>3/K#?@2@`t+2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&ED&Z"?r\X>!\c-%!\c-&ED8c#DH/,L!\c-%!\c-&EDJntBN6KF@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.??r'*]"BA_20FeZp2&-o54W+5(3X?Z:E=3]t1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?%DFmPp"<fEO##6g)##/?#Db3;g"<fEO##6g)##/?!Dbihp"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.]&DcJ5YE![F!0G%1t2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&ED&Z"?r\X>!\c-%!\c-&ED8c#DH/,L!\c-%!\c-&EDJnu@9"a?!\c-%!\c-&ECrT"@9"a?!\c-%!\c-&EDJnuC/l]H!\c-%!\c-&EC`AoBiQTGA3iUN2@`\#2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&ED&Z"?r\X>!\c-%!\c-&ED8c#DH/,L!\c-%!\c-&EDJnu?r\X>!\c-%!\c-&ECrT"@9"a?!\c-%!\c-&EDJnuC/l]H!\c-%!\c-&EC`AoBiQTGA3iUN2@`\#2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&ED&Z"?r\X>!\c-%!\c-&ED8c#DH/,L!\c-%!\c-&EDJntBiQTG!\c-%!\c-&ECrT"@9"a?!\c-%!\c-&EDJnuC/l]H!\c-%!\c-&EC`AoBiQTGA3iUN2@`\#2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&ED&Z"?r\X>!\c-%!\c-&ED8c#DH/,L!\c-%!\c-&EDJntBN6KF!\c-%!\c-&ECrT"@9"a?!\c-%!\c-&EDJnuC/l]H!\c-%!\c-&EC`AoBiQTGA3iUN2@`\#2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&ED&Z"?r\X>!\c-%!\c-&ED8c#DH/,L!\c-%!\c-&EDJntCK2fI!\c-%!\c-&ECrT"@9"a?!\c-%!\c-&EDJnuC/l]H!\c-%!\c-&EC`AoBiQTGA3iUN4:h`%0H+1.4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?#BhL]`"Ah'?CF;)(BN.5nBh;SoE)ePE##6g)##/?(C/.&e"<g?C591RP4Bqjo4;(UK//\[/BL*742%L9d#RM(S/P\k@3"Q<!GqB%$.L8ON591RP4Bs0J4:_EnA-`AT4BsBQ.9$BX.i/F(3$/_l'dH1-'dH.??r'KnE$6Yi'dH1-'dH.?DG*9!E$6Yi'dH1-'dH.?@7`jeE$6Yi'dH1-'dH.?@7`jdE$6Yi'dH1-'dH.?D,*c%E$6Yi'dH1-'dH.?D,3W$E$6Yi'dH1-'dH.?BLtlpE$6Z&58=A,3Y3;31)LT>4<FP3.oZTZ.i/F(3$/_l'dH1-'dH.??r'KnE$6Yi'dH1-'dH.?DG*9!E$6Yi'dH1-'dH.?@7`jeE$6Yi'dH1-'dH.?@7`jdE$6Yi'dH1-'dH.?D,*c%E$6Yi'dH1-'dH.?D,3W$E$6Yi'dH1-'dH.??r'*]"<h&5/IYku2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&ED&Z"?r\X>!\c-%!\c-&EC<)kDcJ5M!\c-%!\c-&EC<)kDH/,L!\c-%!\c-&EC`Q'CK2fI!\c-%!\c-&EC`SsDH/,L!\c-%!\c-&ED8`'CK2fIE#K`/4<GCI3Yr>3/K#?@2@`t+2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&ED&Z"?r\X>!\c-%!\c-&EC<)kDcJ5M!\c-%!\c-&EC<)kDH/,L!\c-%!\c-&EC`Q'CK2fI!\c-%!\c-&EC`SsDH/,L!\c-%!\c-&ECEAtE$6Z&58=A,3Y3;31)LT>4<FP3.oZTZ.i/F(3$/_l'dH1-'dH.??r'KnE$6Yi'dH1-'dH.?DG*9!E$6Yi'dH1-'dH.?@7`jeE$6Yi'dH1-'dH.?@7`jdE$6Yi'dH1-'dH.?D,*c%E$6Yi'dH1-'dH.?D,3W#E$6Yi'dH1-'dH.??r'*]"<h%S0FeZp2&-o54W+5(3X?Z:E=3]t1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?%DFmPp"<fEO##6g)##/?,CeR/f"<fEO##6g)##/?,CeR2g"<fEO##6g)##/?(CICWa"<fEO##6g)##/?(C/.,g"<fEO##6g)##/?+C._bq"B?rg.9$BX.i/F(3$/_l'dH1-'dH.??r'KnE$6Yi'dH1-'dH.?DG*9!E$6Yi'dH1-'dH.?@7`jeE$6Yi'dH1-'dH.?@7`jdE$6Yi'dH1-'dH.?D,*c%E$6Yi'dH1-'dH.?D,3W*E$6Yi'dH1-'dH.?BLtlpE$6Z&58=A,3Y3;31)LT>4<FP3.oZTZ.i/F(3$/_l'dH1-'dH.??r'KnE$6Yi'dH1-'dH.?DG*9!E$6Yi'dH1-'dH.?@7`jeE$6Yi'dH1-'dH.?@7`jdE$6Yi'dH1-'dH.?D,*c%E$6Yi'dH1-'dH.?D,3W*E$6Yi'dH1-'dH.??r'*]"<h%S0FeZp2&-o54W+5(3X?Z:E=3]t1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?%DFmPp"<fEO##6g)##/?,CeR/f"<fEO##6g)##/?,CeR2g"<fEO##6g)##/?(CICWa"<fEO##6g)##/?(C/.Gp"<fEO##6g)##/?+C._bq"B?rg.9$BX.i/F(3$/_l'dH1-'dH.??r'KnE$6Yi'dH1-'dH.?DG*9!E$6Yi'dH1-'dH.?@7`jeE$6Yi'dH1-'dH.?@7`jdE$6Yi'dH1-'dH.?D,*c%E$6Yi'dH1-'dH.?D,3W)E$6Yi'dH1-'dH.?BLtlpE$6Z&58=A,3Y3;31)LT>4<FP3.oZTZ.i/F(3$/_l'dH1-'dH.??r'KnE$6Yi'dH1-'dH.?DG*9!E$6Yi'dH1-'dH.?@7`jeE$6Yi'dH1-'dH.?@7`jdE$6Yi'dH1-'dH.?D,*c%E$6Yi'dH1-'dH.?D,3W)E$6Yi'dH1-'dH.??r'*]"<h&5/IYku2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&ED&Z"?r\X>!\c-%!\c-&EC<)kDcJ5M!\c-%!\c-&EC<)kDH/,L!\c-%!\c-&EC`Q'CK2fI!\c-%!\c-&ED8c#@9"a?!\c-%!\c-&ED8`'CK2fIE#K`/4<GCI3Yr>3/K#?@2@`t+2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&ED&Z"?r\X>!\c-%!\c-&EC<)kDcJ5M!\c-%!\c-&EC<)kDH/,L!\c-%!\c-&EC`Q'CK2fI!\c-%!\c-&ED8c#@9"a?!\c-%!\c-&ECEAtE$6Z&58=A,3Y3;31)LT>4<FP3.oZTZ.i/F(3$/_l'dH1-'dH.??r'KnE$6Yi'dH1-'dH.?DG*9!E$6Yi'dH1-'dH.?@7`jeE$6Yi'dH1-'dH.?@7`jdE$6Yi'dH1-'dH.?D,*c%E$6Yi'dH1-'dH.?BM(QpE$6Yi'dH1-'dH.??r'*]"<h%S0FeZp2&-o54W+5(3X?Z:E=3]t1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?%DFmPp"<fEO##6g)##/?,CeR/f"<fEO##6g)##/?,CeR2g"<fEO##6g)##/?(CICWa"<fEO##6g)##/?#Db3Vp"<fEO##6g)##/?+C._bq"B?$C4^8R.4^8R.4]N('4^8R.4^8R.4]N=-3ZT&)'HI0-2@14,'GUfR4rGUI4rI*S2B*;?4B+:&CF;)(BN.]+CJ8"tFW(u*.N)ME3!^l?/.bQ-2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?&Bh_)i"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I%7+Gp>+)'dH1-'dH.?DbNSrE$6Y32],L>4:!/fEA/n?!\c-&EDK))BN6KRA3gh02%L9d/JJd+GmkJj2%X!r/.ra80G>?tE"s!Q*Z4r1EA/n?!\c-&EC`Su?r\XJB0eg^Bj;A^4]F3A/MUK`##6g)##/?#BM;)l"BA'#CIpo]3"cci*Z4r1EA/n?!\c-&ECEAuE$8LmA5->G0c:ls.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.??q<XW"Af(1//_^t2%L9d0H*n94:!r?'dH1-'dH.?BMCm!E$8LoA55EhGmGAo2d@@,Gp>+)'dH1-'dH.?DbNSrE$6Y32],LN2@^Q/CKpiI4;(U(2BNYEGrZZW2CK:@2&St&'dH1-'dH.??qa9e"Ah'?CF;)(BN.](BiQTa'dH1-'dH.?C/7,oE$8=:##6g)##/?!C.Uid"Ah'?CF;)(BN.>uBM;\q,S1mp3"T%.,=+*i/O(0`2]3DJ0G>?O2]3J?4:b[D3X?Z`3$&n@E"s!Q+U1m^0c:ls.iAHo3!`It3#)EdE'41;3$05%'dH1-'dH.?DbEMsE$6Z'+U2%2*[`p0CF;)(BN.;sBMVnt"B>I3/JT*i2\Q0Y#!4Ik##6g)##/?&Bh_)i"<e]rGnM&4Gm"U:'dH1-'dH.?BM(ZkE$6Y=.pNK#!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HAO/^O4:h`%Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECiW'BiQTX%iH0"2@`5:'dH1-'dH.??r'HpE$6Z'?qs3dCJ@9!CIg]gD+m8lBMLlg?qWgbBh:TkD,+20CICHcG=4quBhq/pCfOaF2],Ku2%L9d.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?CedZ.E$8Kk2],Ku2%L9+5?ouK/MUK`##6g)##/?+C.V\pE'QiZ/JJd+GngrZ#!4Ik##6g)##/?&Bh_)i"<eKh4^93?.hE7hGmGAo2d@1.3ZT&)3tN,,1-m]#/O(0`2]3DJ0G>?O2]3J?4:b[M##6g)##/?#BM:]a"B?HGGode(3Yta30c:ls.iAHo3!`It3#)EdE'41;3$05%'dH1-'dH.?DbEMsE$6Z'3tN,,1/KJH!\c-%!\c-&ECrVsC/l]HE![F!0G%2G*[`p0CF;)(BN.;sBMVnt";:u,3tN,,1+,%DCF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@,OWGo7G14BsBQ.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGEDJr*@8]?kDFm9#CemJrF\PA#@89-h?q`mdC.(NqF\tY*?q"7'BhC]nBhCiqE)dJZ4^8R0.N)1t4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?'CICig"B?$C4^9!2GnM&4GrlTS)A="u4<FP12A._R4:rS<.TAAiCF;)(BN.DuBh;SoE!REf2dAHR.9'RW2],Ku2%L9+5?ouK/MUK`##6g)##/?(C.q>o"BA!!CeR5a/JJd+GngrZ#!4Ik##6g)##/?&Bh_)i"<eKh4^93?.hE7gGmGAo2d@1.3ZT&))\X+o.OZ#42&St&'dH1-'dH.?Ced<#E$8"1##6g)##/?,DFe%sFYG=C!\c-&EDK)&DcJ5^'dH1-'dH.?DG*DpE$5Mu2BNYEGm4[`*Z4r#2A-o43X?`72`Vc\1_gT6EBY<N4:`P93tMur0H*n.+^>!T4;(U*4:Df'/R/AZ0F1oU(^L*C3YsG&##6g)##/?&DG<Pl"<h"f+]'[7!\c-%!\c-&ECrVsC/l]HE![F!0G%1m2@*8E*[`p0CF;)(BN.;sBMVnt";:u,,6TYQ##6g)##/?!Ce7#e"<fEO##6g)##/?#Cdgid"<g<BBj;ShGnM&4Gm4[:'dH1-'dH.?BM(ZkE$6Y72%L9d"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#F?qEafG=4_sD+HrhBMLihBM1fhBLkTrCILWjDG<B#D+Ic/Bh:ZdCIq6"Db38mCfOaF2],Ku2%L9d.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?BMCciE$8Kk2],Ku2],Ku2],Ku2],g)2],Ku2],Ku2],gQ0Feg#4=h3M4@V4E/I3:)EA/n?!\c-&ECiYuC/l]Y57&5./JT36EE-7:.iAI#0HV#G4;^gM3#)E>2@_YR0G"dg'dH1-'dH.??qipbE$8LZ@k/9$/NOg_)AF2&4]FC'CF;)(BN.E$?pn9aE)fX_2[UK04>.9Y0,Xse'dH1-'dH.?DG*;pE$8=:##6g)##/?(C.prd"BA5jE=NQo2&-o//K#+&%NQQ+*tni$0bkN1EA/n?!\c-&ECE;sBN6KRE(2&R0F0EB.mG!\2&KRO##6g)##/?#Cdh#i"BA`1&/#$Q1)VGD.gck#EA/n?!\c-&ED&Z!BiQTX'dH1-'dH.?D,3Q#E$8LhEE!,H.1dL"3!^*$@k/9$/NOg_)AF2&4]FC'CF;)(BN.](Ce\2!E)fXi3#)E>2@_YR0G"dg'dH1-'dH.?BLtp&E$8LZ@l5/>2AZrZ4:VDs.o\JjCF;)(BN.>uDbOG#FYG=C!\c-&EDJl"D,i#W@T6SE4:E&63ZS2)4[pXt0F0EB.mG!\2&KRO##6g)##/?+BLtWb"BA`1%NQQ+*tni$0bkN1EA/n?!\c-&ED8`&@9"aKE(2u"0,#E3$5j$_4:YUL##6g)##/?%DG!;h"Ah'?CF;)(BN.K%C/8,!E#BQ!E"Erg3"T%B2A7/bA2,):3#`Gc3#`H4%20BX2&TXP##6g)##/?,@7s<e"Af^42%L9k'b_Ml'Lk.n)AEnq4rFo)57&5./JT36E@M\6//__H2A7/bA1A<)//_Ck2],g(/.ra80G>?l'GCNP)BB\32DH-Z2cO&s2@^f?.303/!\c-%!\c-&EC<,oE$6Yi'dH1-'dH.?BLtlpE$6Z:)EJ'(1`7r"##6g)##/?+C.(H^"<h"a2@^f?.303/!\c-%!\c-&EC<,oE$6Yi'dH1-'dH.?BLtlpE$6Yi'dH1-'dH.?C.U]hE$6Z+'bqAi/JT0,@lk8='GDDp*>Jb_3X?`72cO'R/e\Ep.L[$l4=<*NCF;)(BN.Z*CfMoJ!\c-%!\c-&ED8`'CK2fI!\c-%!\c-&EDJl$BN6KFE"!Qq!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?C.U]hE$6Z+'bqAi/JT0,@lk8='GDDp*>Jb_3X?`72cO'R.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?BLtlpE$6Yi'dH1-'dH.?C.U]hE$6Z&4;&2m/KG'%!\c-%!\c-&EC`Q&C/l]HE>eie3X?`72cO&s0bkN0Gmb>o/Q?!\2I%7+Gq^0G1,2`E0c:ls'GCNP)BB\32DH-Z2cO&s3#)EdG>2?T4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.5nBMDbr"@b-R.iB]=.gck#EA/n?!\c-&ECiW'DcJ5Y4;&2m4;&2m4;&2t'GUfR4rGUI4rI*L4:Df63!^H8EA/n?!\c-&EDJl!C/l]T2%pc-2-`'J4<GY(0Gt($'GUfR4rGUI4rI*O3"?Z+.iea#EA/n?!\c-&ECiYuD,i#\'dH1-'dH.?DacoiE$8Ku.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nNE#9N].3B982,k2(2]i#,2A07e)AEb`1+4.I.n1lj/N==R3`J($CF;)(BN.Z+Bgc5jG>\PS.jm;=CF;)(BN.;tBMMhs"=H/kCF;)(BN.;tC.V\p"=H/kCF;)(BN.5tBhhqt"=H/kCF;)(BN.5oDFIhp"B?$C4]N('4^8R.4]N=-3ZT&)#mhFZ'c@&W.mZ0&.if9-#osZ`@ji9!4qJ<!'dH1-'dH.?CemK#E$8<e3"Q<!E%D##2)#UW4:Y+;2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?&DFm5g"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I%7+Gp>+)'dH1-'dH.?DbEApE$6YH0c:ls.3B982,k2(2]i#,2A07e58+5g##H+'0G7=u3#)W/E=3]t1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?%DG!>i"<gMc4:!VF.N]634WPFW.TB\G4VLd%5?o!a'dH1-'dH.?DbEK%E$6Z:A2#N2!\c-&ECiW'BN6Jt0c:ls58=A,.1R:90G,<A+:JG_1^j@W3`$[q/JKik##6g)##/?&DG<Vn"<h%T2],Ku2],Ku2],g)2],Ku2],Ku2],g22BNYEGpiju0G5R2A2,):3#`Gc3#`H4%20BX2&TXP##6g)##/?+D+%YnFW(u*.N)MN.ifW>%nKGH2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?#BMUre"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I%7+Gp>+)'dH1-'dH.?BMCusE$6YH0c:ls.3B982,k2(2]i#,2A07e2%pc-2-`$J2]2iZ3$&n@A-Y(VCF;)(BN.8pDadqqFYG=C!\c-&EC</qE$8"1##6g)##/?!C/%#e"Ah'?CF;)(BN.>uBMVnt,T7U6Gp>mYF^I$82]2iZ3$&n@F\Pg?2I%7+E=<Zr!\c-%!\c-&ED8l"CK2fI@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?@7X'mE$8LZ!\c-%!\c-&EC`Pu?r\X>A3iXO/JJd+GmYQ%BLX?R2]+a`+?9K-2[EY).gZe`'dH1-'dH.?D+R,sE$8<e3"Q<!FW2&*4B2Ri.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.;sDb+.tFYG=C!\c-&ECEB$@9"aK"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#F@7<jhG>(8"Bh^lnCIqW*BLuB3Db`]#Bh:Qi@7rm^Cd^rsG=tA'D+IAuBLG3gE)dJ\.N'61E=<Zr!\c-%!\c-&ED8l"CK2fI@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?CemK"E$8LZ!\c-%!\c-&EC`Pu?r\X>A3gh02%L9d/JJd+Gn:np3"T%(A31A>)A="u4<FP12A._R4:rS<.TA;72]2iZ3$&n@E"s!Q03eJb4;(U*4:Df'/R/AZ0F1oU(^L*C3YsG&##6g)##/?&DG<Pl"<h"bFX&\%'dH1-'dH.?BMCusE$6Z&/.qpi2-_XW!\c-%!\c-&ED8kuDcJ5MA3gh02%L9d2@`\$!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HAO/^O2@`[q2@*7s!\c-%!\c-&ED8buBiQTG4:h`%Gp<;&EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'F@AGuCf3T(BhC]nBhCiqF\"epG=bJ.CIgopDFm3"BMLihCdg]jG>CJ.Dbii,BMLicE#BQ!Go7M*Go7M*Go7M*E#BQ!Go7M*Go7M*E%r@F3#`Gc3#`H4)[QK\2A07J##6g)##/?"DG*\r"Af^H2]i#,2A07eE>oW&4@V+2/M@\J0,59-EA/n?!\c-&EC<K$CK2fUE$mV-CF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?'CILW`"Ag9H3X?Z:C*tu'CF;)(BN.]&@8'rj"B7ipCICK`C.U]mDaZrnF\P,*?qFNuBh^rqDF?ojCf!Q!CJmJrD+[N(@89'bBLG3gE)dJZ4]OKL.if9-#osZ`@m0o0/JB$q'dH1-'dH.?C.UfpE$8<e/.ra80G>?tE"X*+/f>61EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'CICm$BMq,sCJ.0!C.gigBLkg$@8]?fDbEAq@803lF\tS)Bi7E%Cd^NlDbNl%DFn,+4;&2t'GUfR4rGUI4rI*=/-l4a2cMb!CF;)(BN.9!DbOG#FW(8i3X?`72cO&l2@'Bh4;(mA*tB"q4=<*NCF;)(BN.]&@8'rj"B7ioCe.8rBLtTl?r1!1@9$S;2],g22BNYEGpjpc2A6:$'GUfR4rGUI4rI*S2B*;?4B+:&CF;)(BN.K'BN6KW591RP4B3L[*>9A(@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&ED8buDcJ5MA1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nOE#9N]0H*nQ*[`p0CF;)(BN.E#BhDYp":,tO2d?Ic3"Qp"57&5./JT36EE+"_GmG?#/Iid15#_Xq.jm;=CF;)(BN.;tBMMhs"=H/kCF;)(BN.;tC.V\p"=H/kCF;)(BN.5oDFIhp"BA$"'dH1-'dH.?DbEAoE$52h4;(UU/IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B7ioBhh&jDb<DqCe@/tF\P,*@7=@$CJ$rpDF?ojCf"82DFI`+Da['!BhV!"CILQo@9$S;2%L9+5?n0s.L64c2]H!82%D8m##6g)##/?&DG<Sm"<fEO##6g)##/?&DGNPj"<fEO##6g)##/?(CJ.Ao"<h&WA2#N2!\c-&ECE>pBiQSu0c:ls"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#I@899nG>(;&Db*8rCIqW+D+%'$G=Y2'DFm3"BMLihFA>8'G=bJ-CJ76%DFHfoCJ@MqE#BK(4;AJr/JA@*.hrs*E=<Zr!\c-%!\c-&ECrSrCK2fI!\c-%!\c-&ECrSpCfMoJ!\c-%!\c-&EC`Pu?r\X>E'[&K##6g)##/?#Cd^Q]":,tO2d@jL.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGEDB2/?qsm,BLkNkCIqW+D+%*"G=Y2'DFm3"BMLihF@\kuG>1M)Bh^ltDad)rBhCieE#BK(4;AJr/JA@*.hrs*E=<Zr!\c-%!\c-&ECrSrCK2fI!\c-%!\c-&ECrSpCfMoJ!\c-%!\c-&EC`Pu?r\X>E'[&K##6g)##/?+BLGQe":,tO2d@jL.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGEDB22DbF88BgbEhC/%/uF\P,)BLH$&DFm9#CemJsCf!StD,Nl%BLPTmCJ7/pDG<f/E)dJ\.N'61GmG?#/Iid15#_Xq.jm;=CF;)(BN.;tBMMhs"=H/kCF;)(BN.;tC.V\p"=H/kCF;)(BN.5oDFIhp"BA$"'dH1-'dH.?D,3Z#E$52h4;(UU/IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B7ipDbEPoDGET!Bhq/pCf!Q%@73gaBMLouCILQoDFmr3Ce.`1?qNjfBgbX!DbEN'@9$S;2%L9+5?n0s.L64c2]H!82%D8m##6g)##/?&DG<Sm"<fEO##6g)##/?&DGNPj"<fEO##6g)##/?(CJ.Ao"<h&WA2#N2!\c-&EC`SrBN6Jt0c:ls"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#I?qs3kG>:k6?qs-pDFmr.D+%'$G=Y2'DFm3"BMLihFA>5(G==c#Ce6lnD,3Z&?r'HgE#BQ!Go7M*E#BQ!Go7M*Go7M*E"Erg3"T%32A$'&49uNX.hrd0.R?'%.if9-#osZ`@ji9!4qJ<!'dH1-'dH.?DFHrjE$8<e3"Q<!E'G9O.1d(-4=CC@3"Q<t((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.?Ced>oE$6Z:%ilK&4BrI-4]O9B/M@\;)]9A%/LUf13"SXb/.ra80G>?tE"s!Q2\Q0Y/e\Ep.L[$l4=<*NCF;)(BN.]&?r(&l"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&EDK)(?r\XJ/JJd+Gn(E&/.NRc2\d/s4;&2m0H*n)2@^f?.303/!\c-%!\c-&EDK)*DH/,L!\c-%!\c-&ED8l$D,i#K@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?DG*;nE$8L'0c:ls*u,"g1`[Jn.hrd0A.'=g1(OKh3Z0S(##6g)##/?!C.Ucb"<fEO##6g)##/?#BM1T_"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.>uDbaS%E#BQ!GngrZ*u,"g1`[Jn.hrd0GmGAo2d?t(.pOT#03fM,GnL]./PlNX.i/F(3$/_l'dH1-'dH.?BMCrrE$6Z5*Z4r#0bkN1.iB6uE#9N]0H*n*@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?BMV#pE$8Kg2],d7!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KFF?1ER0bG-0%1XB[2((@GCF;)(BN.K&Ce\2!"B@*.##6g)##/?#BMC`a"<g<BBLtTjGmGAo2d@@,GmZ2X##6g)##/?#Cdgid"<fEO##6g)##/?(CJ.Ao"<gB9GmGAo2d?Ok/I;UjGm[LT2],Ku2],Ku2],Ku2],Ku2],L*.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nOE#9N]0H*nQ*[`p0CF;)(BN.8pDGOP%":,tO2d?Ic3"Qp"57&5./JT36EE+"_GmG?#/Iid15#_Xq.jm;=CF;)(BN.;tBMMhs"=H/kCF;)(BN.;tC.V\p"=H/kCF;)(BN.5oDFIhp"BA$"'dH1-'dH.?DbEAoE$52h4;(U&2@'Bh4;(m52@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&ED8l+DH/,L!\c-%!\c-&ECE>pBN6KF!\c-%!\c-&ED8`'CK2fIF$DDl3"Z`^'dH1-'dH.??r'HpE$6Z'Bi%r0Bi%2iE#BQ!Go7M*E#BQ!Go7M*Go7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I%7+Gp>+)'dH1-'dH.?Ced>oE$6YH0c:ls.3B982,k2(2]i#,2A07e0H*n,2@fd"0G5$l.1c\C'dH1-'dH.?DbEMrE$6Yi'dH1-'dH.?DbET$E$6Yi'dH1-'dH.?D,*H%E$6Z&A3i1;CF;)(BN.]'BM;\q/JJd+GngrZ*Z4r34<6<a3"H!J.hrd0EE)uH4;(U*4:Df'/R/AZ0F1oU.L[%+2cLD*2]i#,2A07e"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#C*Z4r34<6<a3"H!J.hrd0EE-:('dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?C.U]hE$6Yi'dH1-'dH.?D+R,nE$6Z+/e\Ep.L[$l4=<*NCF;)(BN.]&?r(&l"=H/kCF;)(BN.8oBM2Vp"=H/kCF;)(BN.K&Ce\2!"=H/kCF;)(BN.5tBh2Mn"BS)lBi&%[4:!;=3'IoU.L7./0HD!'E)ePE##6g)##/?#C.q#f"<fEO##6g)##/?!Ce7&f"<fEO##6g)##/?(CeR5h"<h&C4;&2t'GCKY4=hE_A5k>h/M@\;)]9A%/LUf13"T=eE$mV-CF;)(BN.DsBhVer"=H/kCF;)(BN.K&Ce\2!"=XQ[.Mj*92%NqF##6g)##/?(CJ.>n"Ah'?CF;)(BN.5tBhVerE%)"r.Mj*92%NqF##6g)##/?(CJ.>n"Ah'?CF;)(BN.5tBh_ksE%)"r.Mj*92%NqF##6g)##/?(CJ.>n"Ah'?CF;)(BN.5tBhhqtE!mBf/Q>nOE%)"r.Mj*92%NqF##6g)##/?(CJ.#e"Ah'?CF;)(BN.5tBhVerE%)"r.Mj*92%NqF##6g)##/?(CJ.#e"Ah'?CF;)(BN.5tBh_ksE!mBf/Q>nOE%)"r.Mj*92%NqF##6g)##/?,D,3Pl"Ah'?CF;)(BN.5tBhVerE%)"r.Mj*92%NqF##6g)##/?,D,3Pl"Ah'?CF;)(BN.5tBh_ksE%)"r.Mj*92%NqF##6g)##/?,D,3Pl"Ah'?CF;)(BN.5tBhhqtE!mBf/Q>nOE%)"r.Mj*92%NqF##6g)##/?+C.(B\"Ah'?CF;)(BN.5tBhVerE%)"r.Mj*92%NqF##6g)##/?+C.(B\"Ah'?CF;)(BN.5tBh_ksE![F!0G%2G*[`p0CF;)(BN.8pDGOP%"@5T_3"Q<!GnUBL2\Q0Y*Z4r34<6<a3"H!J.hrd0EE*S[4^8R.4^8R.4]N('4^8R.4^8R.4]M_#3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf4t4VLd%5?o]a!\c-%!\c-&ECiW!C/l]H/JJd+GmkJj2%X!r/.ra80G>?tE"s!Q/JA@*.hrs*E=<Zr!\c-%!\c-&ECrSrCK2fI!\c-%!\c-&ECrSpCfMoJ!\c-%!\c-&EC`Pu?r\X>E'[&K##6g)##/?#Cd^Q]":,tO2d@jL.9$BX.i/F(3$/_l'dH1-'dH.??r'KnE$6Yi'dH1-'dH.?DbNJuE$6Yi'dH1-'dH.?D,3Z!E$6Yi'dH1-'dH.?BLtlpE$6Z%)EJ'(1`7r"##6g)##/?+C.(H^"<h#KF\+u"F\H(54;&2m4;&2t4;&2m4;&2m4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXBN5TPGngrZ#!4Ik##6g)##/?'CJ./i"<daQ4;(U,3ZT%JE>eie3X?`72cO&i5?n0s.L64c2]H!82%D8m##6g)##/?&DG<Sm"<fEO##6g)##/?&DGNPj"<fEO##6g)##/?(CJ.Ao"<h&WA2#N2!\c-&ECE<#?r\Wl0c:ls2\Q0*4;f&1/e\Ep.L[$l4=<*NCF;)(BN.]&?r(&l"=H/kCF;)(BN.K%C.MVo"=H/kCF;)(BN.5o@8:)l"=H/kCF;)(BN.Z+Bgl;k"=H/kCF;)(BN.E$@8:)l"B?$C4^8R.4]N('4^8R.4^8R.4]M_#3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf4t4VLd%5?o]a!\c-%!\c-&ECiW!C/l]H/JJd+GmkJj2%X!r/.ra80G>?tE"s!Q/JA@*.hrs*E=<Zr!\c-%!\c-&ECrSrCK2fI!\c-%!\c-&ECrSpCfMoJ!\c-%!\c-&EC`Pu?r\X>E'[&K##6g)##/?(C/78j";:u,/JA@*.hrs*E=<Zr!\c-%!\c-&ECrSrCK2fI!\c-%!\c-&ECrSpCfMoJ!\c-%!\c-&EC`Pu?r\X>E'[&K##6g)##/?(C/75i":,tO2d@1.3ZT&)%1XB[2%Lf23tMu8A-Y(VCF;)(BN.8oBLH,i@PB<0!\c-&ED&Z!C/l](2%pc-2-^2h*Z4r#2A-o43X?`72`Vc\1_gT6E@;"u3"Q<R3$&n@.TIJmGm[Le0c:ls.iAHo3!`It3#)EdE'41;3$05%'dH1-'dH.?DbEMsE$6Z'02O/E!\c-%!\c-&ECiW!C/l]HE![F!0G%2G*[`p0CF;)(BN.8pDGOP%"@5T_3"Q<!GnUBL2\Q0Y0./_ACF;)(BN.E#BhVer";:u,0./_ACF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@,OWGo7M*Go7M*Go7M*E#BQ!Go7M*Go7M*E"Erg3"T%;0G#'F56qi5%1XB[2*j50.if9-#osZ`@ji9!4qJ<!'dH1-'dH.?DG!2uE$8<e3"Q<!E&SdJ2*DQg4:WJG0HD!5((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.?BMCurE$6Z:%ilK&4BrI-4]M_#3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf4t4VLd%5?o]a!\c-%!\c-&ED8kuDH/,L/JJd+GmkJj2%X!r/.ra80G>?tE#KZ-Gp?E+Gnh5b.30E@.T?KY.i/F(3$/_l'dH1-'dH.?@7`j`E$6Z5*Z4r#0bkN1.iB6uE)dGXGngrZ0./_ACF;)(BN.;tBgl;k"9M..2%D8m##6g)##/?&DG3bs"<daQ4;(U#5?p&^/KGW5!\c-%!\c-&EC`PuD,i#KE=,tQ2],d52%D8m##6g)##/?#BMCrg"<fEO##6g)##/?#C.q#f"<fEO##6g)##/?!Ce7&f"<gn_!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KFE$mV-CF;)(BN.DuBLlDm"@,OUCeReE0c:ls.iAHo3!`It3#)EdE&e(;0FT013"-`8E?d8!'dH1-'dH.?C/79%E$6Z&"pb?)0./_ACF;)(BN.DsBhVer"=H/kCF;)(BN.E$@8:)l"BIH-.ifK3!\c-%!\c-&ECEB%BiQTGED0J5F\P.oE"<Ns0bk6)4;%c/2@L00/HoAm2%E_A##6g)##/?#C.q&g"Afs;/JKik##6g)##/?&DG<Vn"<h%d2[CE7Gp>+)'dH1-'dH.?BMCurE$6Z:A/Z0n.N)1o.pN-8'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BLtopE$6Z;A5#r2.pNu$/R/?:'dH1-'dH.?BM(ZkE$6Y72],Ku2],Ku2],Ku2],g)2],Ku2],Ku2],g22BNYEGrQ!04qf1C4rHpN3$&;a'dH1-'dH.?D,3PsE$6Z5)@dJc/M%V>4B+aA*=`ee2CoRG4@U\&.2`<k/JA=]'dH1-'dH.?C.UfoE$8Kt2BNYEGrQ`L2D%KJ.if93#osZ`@ji9!4qJ<!'dH1-'dH.?@73dfE$8<e3"Q<!E&\dC2D%ZT2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?(CILN]"<g>o3"Q)pGo7M*E#J`d3X?`72d?It0G4@/4:hKE3"Z`q4WOM(E"s!Q/Hl7]E>TE,3)rOV'dH1-'dH.?D,*c$E$5r*4^8O"/KHJt##6g)##/?(CILK\"<fEO##6g)##/?!DbiYk"<daQ4;(U*49ts"2d?mq/KHJt##6g)##/?(CILK\"<fEO##6g)##/?!DbiYk"<e?d4^8R.4^84*3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf4t4VLd%5?o]a!\c-%!\c-&EC`Q&CfMoJ/JJd+GmkJj2%X!r/.ra80G>?tE"Erg3"T$j.iS_"+t#fCA-Xb@##6g)##/?+D+m2e"<g>i##6g)##/?!C.(H^"Aga)##6g)##/?+CJ@8j"<g>i##6g)##/?!C.(K_"9Af>2BNYEGmjlc4q8/9.R@;O4:E&63ZS2)4XW3OCF;)(BN.](@8:)l"=H/kCF;)(BN.]&?qFWf"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&ECil$?r\XJE(2u"0,#E3$5j$_4:YU32[gE$1/nu#4qCpk2%pc-2-`0D1`81U2$cbe.hrs=)]9J/(EF@tE=<$[4q8/9.TIJmGo.+o//q/e591RP4BrU14]E=./R/Dj2B)i).M#J[2],L'2@*863"Z`G4:hKb/JJd+Gp<;&EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'Cd^TjG>(J&D,3N"F\P>(@8]TnCe.$!DaZrnF[SSpG>1A$@7`adDaZrnE)dGR3scR,/IhdcGo7G14;AJr4W,"N5!_aV.gZeT3"ccqEBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'Cd^TjG>(J&D,3N"F\P>(@8]TnCe.$!DaZrnF[SSpG>1A$@7`adDaZrnE)ePE##6g)##/?!Ce7&f"<gn]2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?#C.q#f"<fEO##6g)##/?!Ce7&f"<h&1'dH1-'dH.?BMCosE$6Z;A4]0V/JJd+GngrZ(EF@t)]9J/A3i1;CF;)(BN.5nC/8,!/JJd+Gn:np3"T%(A31A>)A="u4<FP12A._R4:rS<.TAAiCF;)(BN.JuCen>#E"s!Q03eJb4;(U*4:Df'/R/AZ0F1oU(^L*C3YsG&##6g)##/?&DG<Pl"<h"bFX&\%'dH1-'dH.?D,*f+E$6Z&/.qpi2-_%./R/Dj2B)i).M#Je.pNu$/R0eO!\c-%!\c-&EC`Q&CfMoJ2@`[q2@*8+/I3'k1+,%DCF;)(BN.5oDFe%s"B5Fp4:h`%Gp<;&EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'FA5)$CdhN.@7<jkC.gigDG=;3@8B6jDG*ArBLP3`BMMZ-CdgWaC/7Q-Db3W"Bhq/pCfOaF2],Ku2%L9+5?p5N1`81U2$cc['dH1-'dH.?BM(QoE$52h4;(U*4:Df'/R/AZ0F1oU#!4Ik##6g)##/?#BMCid"<g>Q.gZeT#!4Ik##6g)##/?&Bh_&h"<g>Q.gZeT#!4Ik##6g)##/?(CILW`"<g>Q.gZeT#!4Ik##6g)##/?+BLtli"<g>Q.gZeT#!4Ik##6g)##/?+BM(uk"<g>Q.gZeT#!4Ik##6g)##/?!Ce6ob"<g>Q.gZeT#!4Ik##6g)##/?#BLkTb"<g>Q.gZeT/.qpi2-_%./R0eO!\c-%!\c-&EC`Q&CfMoJ2@`[q2@*7q.h`R.4:_Za#!4Ik##6g)##/?#BMCid"<g>?3"Q<!Gp>+)'dH1-'dH.?DbNSsE$6Z:591RP4BsB^!\c-%!\c-&EC`Q&BiQTGA/Z0n.N)2J*[`p0CF;)(BN.](Cd_Pm"@3Y%2%L9d#!4Ik##6g)##/?+BM(uk"<g>?3"Q<!Gp>+)'dH1-'dH.?C.U]lE$6Z:591RP4BsB^!\c-%!\c-&ED8l'CK2fIA/Z0n.N)1i2%L9+5?p5N1`81U2$cc['dH1-'dH.?D,3Z'E$52h4;(U*4:Df'/R/AZ0F1oU#!4Ik##6g)##/?#BLkTb"<g>Q.gZeT/.qpi2-_%./R0eO!\c-%!\c-&EC`Q&CfMoJ2@`[q2@*7q.h`R.4:_Za#!4Ik##6g)##/?#BLkTb"<g>?3"Q<!Go7G14;AJr(EF@t)]9J/A3i1;CF;)(BN.E#DbOG#/JJd+Gn(E"4<4Dh/fbrKEE+M7!\c-%!\c-&EC<N&E$6Z:/IhdcGmPB*0G%1m2@*8E*[`p0CF;)(BN.5o?qFWf";:u,2\Q0Y.1R:".iAR'Gp>+)'dH1-'dH.?@7<FR"<g>?3"Q<!Go7G14;AJr(EF@t)]9J/A3i1;CF;)(BN.]-Bh;So/JJd+Gn(E"4<4Dh/fbrKEE+M7!\c-%!\c-&ED8l'CK2fIA-`AT4BsB^!\c-%!\c-&EDJl$CfMoJA-`AT4Bqmr/JT*i2\Q0Y#!4Ik##6g)##/?(CILN]"<e]rGnM&4Gmjlc4q8/9.U4JL!\c-%!\c-&ED8l'CK2fIA/Z0n.N)2J*[`p0CF;)(BN.K&Ce7nr"@3Y%2%L9d4:h`%0H*nB3"Z`G4:hL!A2#N2!\c-&EC`SrCfMo#0c:ls.iAHo3!`It3#)EdE"s!Q/e\Ep.L[$l4=<*NCF;)(BN.]&?r(&l"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&EC<K)BN6KR2@`\#2@^f?.303/!\c-%!\c-&EDK)*DH/,L!\c-%!\c-&ED8l$D,i#K@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?DbWr,E$8L'0c:ls#!4Ik##6g)##/?&BhV5n"<g>Q.gZeT0H*n)2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&EC<K)BN6KF!\c-%!\c-&ECrSpBiQTG!\c-%!\c-&ED8r"@9"a?@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?Ced]&E$8=".gZe[/JJd+Gp>+)'dH1-'dH.?@7rs["<g>?3"Q<!Gp>+)'dH1-'dH.?DbNQ&E$6Z:/IhdcGo7G14BsB^!\c-%!\c-&EC</nE$6Z:/IhdcGp>+)'dH1-'dH.?DbNQ&E$6Z:591RP4BrI-4^8R0.N)2J*[`p0CF;)(BN.;sBgl;k"@3#"//_DL*[`p0CF;)(BN.Z)DH/,LA/Z0n.N)1i2],L02[CE7GnM&4Gp>+)'dH1-'dH.?D,*f+E$6Y=.pNu$/R/Dj2B)i).M#K@*[`p0CF;)(BN.;sBgl;k"@3Y%2%L9d#!4Ik##6g)##/?,DG+8!"@3Y%2%L9d4:h`%0H*nB3"Z`G4:hL!A2#N2!\c-&ED8c"BN6Ji.pP+:1`81U2$cc['dH1-'dH.?DbEAnE$52h4;(U*49ts"2d@7.2-^_&4^8R.4^9!2GnM&4Gmjlc4q8/9.U2r]4;(Tu4<=M+A/Z0n.N)1r2BNYEGo[(l.R=S)BH]qa!\c-%!\c-&ECE,kD,i#KA2#N2!\c-&EDK)/BiQTX!\c-%!\c-&ECE>pCK2fIA2#N2!\c-&EC<)jBiQT',Y))O4:E&63ZS2)4XW3OCF;)(BN.](@8:)l"=H/kCF;)(BN.]&?qFWf"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&ECil$?r\XJE(2u"0,#E3$5j$_4:YU32[gE$1/nu#4qCpk4;&2m4;&2t4;&2m4;&2m4;&2t2%pc-2-`$M3!KsA'L=Db3#`em3#`H4%20BX2&TXP##6g)##/?&BLP6["Af^42%L9k)\<`%4?5E)((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.?DbNPtE$6Z:%ilK&4BrI-4]N:+4<GY#//\[/3'e/m2]i#,2A07e2%pc-2-^l&+t#fCA-Xb@##6g)##/?+BLP<]"<g>i##6g)##/?(C.poc"9Af>2BNYEGofNd0G%1s3ZT%JE>eie3X?`72cO&n2BNYEGooTp!_k+M+t#?4CF;)(BN.](?qaii"@5"0CF;)(BN.Ju@81#k,QU\6EE$0G3"Za**Z4r34:VE"3Z20U##6g)##/?,@7`p\"BA`1%NQQ+*tni$0bkN1EA/n?!\c-&ECE<#CK2fUE(2&R0F0EB.mG!\2&KRO##6g)##/?+C.1E\"BA`1%NQQ+*tni$0bkN1EA/n?!\c-&ECiYu?r\XJE(2u"0,#E3$5j$_4:YU32[gE$1/o&^E#BQ!E"Erg3"T$oFW!aa3ZT%JE>eie3X?`72cO&`A5lf,E>oW&4@V+2/M@\J0,59-EA/n?!\c-&EC<K$CK2fUE(2&R0F0EB.mG!\2&KRO##6g)##/?+BLG<^"BA`1%NQQ+*tni$0bkN1EA/n?!\c-&ECEB$CfMoVE(2&R0F0EB.mG!\2&KRO##6g)##/?'C/%Dp"BA`1&/#$Q1)VGD.gck#E=!Ns3$0583)s5g2],g22BNYEGoB6X3"Q<!Gn:np3"T$lGn:np3"T$sGn:np3"T$rGngrZ4'Van4;(U#5?ns`'dH1-'dH.?DbEQ!E$6YH0c:ls5=#8]//_Ct2BNYEGnrsP!\c-%!\c-&ECrSqDH/,L0H*n%/Iid14sr<PCF;)(BN.;tBLuJn"B5@0.L64c2]H!.E)8MVCF;)(BN.E#DbaS%E!REf2d@A0BNu3W.L64c2]FD'##6g)##/?+D+m8g"<h"d2@fd"0G5$l1K@O]F[]R=A-a+`/.iX%.o[0S2%pc-2-_50+ttNE!\c-&ED&YqC/l]Y'dH1-'dH.?DbWT!E$5Mk2@`\KFV.R[2d?Ie0Fe=\10"koGngrZ.L64c2]FD'##6g)##/?&DG<Dh"<h"VFV.mq0c:ls0gQ[E3t;i(10bD#4^8R.4^8R0.N'61Gn0le0G5$Y'dH1-'dH.?DbEN"E$6Z'/JA@*.hrs*E>DhU'dH1-'dH.??qs-eE$8L'0c:ls5!_V9GninJGn`gZ0G%1f2],Ku2],Ku2],L+49ts"2d?tk0i/NZ0O,2!4^9lH3Yrni*>:UFA/YIX3X?`72cO&d2@`\KFWOKh2d?Ie0Fe=\.1c\C'dH1-'dH.?BMCs"E$6Yi'dH1-'dH.??qs*^"<gMc4:!kR0G"d-4;(mkE#9N]0H*mk!\c-%!\c-&ECrSs?r\X>A3i1;CF;)(BN.E!CdhVn/JJd+GngrZ.L64c2]FD'##6g)##/?&DG<Dh"<h"N!\c-%!\c-&ECrSqDH/,LFYG=C!\c-&EC`DpBiQTS/JJd+Gn(E&/.NRc/IhdcGo7M*Go7M*Go7M*Gn(E&/.NRc591RP4BrI-4^9ZQ3#`eG'GD6)2&R,@A/YIX3X?`72cLMf4&?_c0H*n)2@^f?.303/!\c-%!\c-&ECE;tCK2fI@lbV>4ZXSq.L7s@0G"dg4&l7g4;(Ts2@`\KFW"-c2d?Ie0Fe=\/e\Ep.L[$l4=<*NCF;)(BN.](D,+A#"@b0O/O(3^2&HN%2cO'T4VLd%5?nd['dH1-'dH.?DbEK%E$6Z:A0+\O2],L</I3'k1+,%DCF;)(BN.5oDFe%s"B5t*/JJd+GngrZ3*ZFk4;(U;/I3'k1+,%DCF;)(BN.;tBMDbr"B5t/3)pP"4^8R.4^8R.4^8R0.N)2J/IYkaE#BQ!Go7M*Gn1#Z/eVCm/.ra80G>?tE!mWm2&T@-3#)EdE#9N]0H*nQ*[`p0CF;)(BN.;sBhVer":,tO2d?Ic3"Qp"57&5./JT36EE*ha3ZT&)3)BZP0i/9b3YW/+1+`M2.L6b^E"s!Q3'g+P.gZeT3"cci2\Q0Y)]]_#%5T[H',+VC/JJd+GngrZ+[J[tGmGAo2d@@,Gm[,L'dH1-'dH.?DG*JrE$6/4Gm[,L'dH1-'dH.?DbWT!E$52h4;(U*4:Df'/R/AZ0F1oU*=`ee2A/"Y4$OPd3"B10.gZe`02OSR.ifK3!\c-%!\c-&ECEB%BiQTGEC`DnBi78qCeI5pDb38mCf!Q!Bhhi/?qEU_BMD3!D+m8nF\b_8G>(\1@73UdD+IAuBLGNdE![F!0G%1m2@*8E*[`p0CF;)(BN.;sBhVer";:u,2\Q0Y3*[C7Gs2rC1+5432DuLIE#BQ!Go7G14;AJr+[J[sGmGAo2d@@,GmbQ'1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?#BM(uk"<fEO##6g)##/?&BhC]a"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.Z0@8:)lFU/0e4B2@h4;(U*4:Df'/R/AZ0F1oU.L[%+2cLD*2]i#,2A07e"pb?)E=3]t1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?#BM(uk"<fEO##6g)##/?&BhC]a"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.Z0@8:)lFU/0e4B5ZH'dH1-'dH.?BLtlpE$6Z%)EJ'(1`7r"##6g)##/?+C.(H^"<h#OF\Gn9E)dJZ4]NL+EE!#K.i/F(3$/_l'dH1-'dH.??r'KnE$6Yi'dH1-'dH.?BMCfsE$6Yi'dH1-'dH.?DbNJtE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?,@73RW"Af(1//__c!\c-%!\c-&EDJl$BN6KFF:8uu!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KFE$mV-CF;)(BN.DuBLlDm"@,OUBhVJB0c:ls'GCKY4=hE_A5iX>.i/F(3$/_l'dH1-'dH.??r'KnE$6Yi'dH1-'dH.?BMCfsE$6Yi'dH1-'dH.?DbNJtE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?,@73RW"Af(1//__c!\c-%!\c-&EDJl$BN6KF$kEp]1)1W:.TAAiCF;)(BN.5oDF@boFYG=C!\c-&EC`AoBiQTS$kEp]1)1W:.TAAiCF;)(BN.5oDF@boFYG=C!\c-&EC`AoBN6KR$kEp]1)1W:.TAAiCF;)(BN.5oDF@boFYG=C!\c-&EC`AoCK2fU/fbrKEDf(p$kEp]1)1W:.TAAiCF;)(BN.5oDG+8!FYG=C!\c-&EC`AoBiQTS$kEp]1)1W:.TAAiCF;)(BN.5oDG+8!FYG=C!\c-&EC`AoBN6KR/fbrKEDf(p$kEp]1)1W:.TAAiCF;)(BN.Z,C.qnsFYG=C!\c-&EC`AoBiQTS$kEp]1)1W:.TAAiCF;)(BN.Z,C.qnsFYG=C!\c-&EC`AoBN6KR$kEp]1)1W:.TAAiCF;)(BN.Z,C.qnsFYG=C!\c-&EC`AoCK2fU/fbrKEDf(p$kEp]1)1W:.TAAiCF;)(BN.]&@7jfhFYG=C!\c-&EC`AoBiQTS$kEp]1)1W:.TAAiCF;)(BN.]&@7jfhFYG=C!\c-&EC`AoBN6KR4;&2m/.qpi2-_%./R0eO!\c-%!\c-&ECrVtBiQTG2@`[q2@*7`GnUBL)]]_#%5T[H',+VC4;&2m4;&2m4:h`%Gp<;&EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'Cd^]gF\P>(@8KX%D,jjh.if932_c6P)A!J^.o[,_2%L9p2\d0*2\d0%4;&2m4;&2t4;&2m4;&2m4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXBN5TPGngrZ#!4Ik##6g)##/?&BhUoe"<daQ4;(U,3ZT%JE>eie3X?`72cO&i5?n:!.i/F(3$/_l'dH1-'dH.??q=!a"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.;tBhM_qE!REf2d?Ir.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.DsBhVer"=H/kCF;)(BN.E$@8:)l"@3+u.i/F(3$/_l'dH1-'dH.??q=!a"<fEO##6g)##/?&DG3Di"<fEO##6g)##/?#Cd^`b"<e?d4^8R.4]N('4^8R.4^8R.4]O0J3#`em3#`H4$5isN.ieTu.o\JjCF;)(BN.;sDbFA"E'"XJ#RM(S/N<q93YOIW0,YU557&5./JT36EE*ha3ZT&)02Fr5A-Xbc"@3PX'dH1-'dH.??q<[eE$6Z:'dH1-'dH.??qEaY"Aga)##6g)##/?+CJ@8j"<g>i##6g)##/?+CJ@&d"9Af@49ts"2cKtc.1dL"3!^*$!\c-%!\c-&ECE<#CK2fI!\c-%!\c-&ECEB$CfMoJ@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?CdgitE$8LZ@l5/>2AZrZ4:VDs.oZNY.3031E=,38BN8=B2],L)2BNYEGpt!a*=`ee2F0#/3#`em3#`H4%20BX2&TXP##6g)##/?%Db<Di"Af^42%L9k$nO1^.if93@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&EDJl#C/l]HA1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nOE#9N]0H*nQ*[`p0CF;)(BN.K&DbjY&":,tO2d?Ic3"Qp"57&5./JT36EE+"_GrlTS#RM(S/N<q93YOIW0,YU"E'[&!3"Q<!GmGAo2d?Ok/I;UjGnM,.Go7G14;AJr*Z4r5//\[/*=`ea2D>^X4:kaiA3g2-//_D'0c:ls0H+1h)EJ'(1`7r"##6g)##/?+C.(H^"<h#N@80!]D,*GqD+[3"C.gigBMLs"G>C\.DF?rkCJ$lmCIqW4@7XR&DF?ckCJI,pBgkNkCfOb#'dH1-'dH.?C.U]hE$6Z*.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?C.U]hE$6Z&!\c-%!\c-&ED8l"D,i#KB0f$dBj:WG4;(UU/IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B7ZkBLl<.CJ.,uDbNl%DFmr.CJ7DrC/.)p@899hDb38mCf!f0D,NZ!@7`a^CIgcj?r'-jE)dJ\.N)2J/IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B7ZkBLl<.CJ.,uDbNl%DFmr.CJ7DrC/.)p@899hDb38mCf!f0D,NZ!@7`a^CIgcj?r'-jE)d_`3ZT&)02Fr5A-Xbc"@3PX'dH1-'dH.??q<[eE$6Z:'dH1-'dH.??qEaY"@k*u##6g)##/?+CJ@8j"<g>i##6g)##/?+CJ@&d"9Ag2E=NQo2&-o//K#*Z'dH1-'dH.??qj<lE$6Yi'dH1-'dH.??r'KtE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?'?r'Kh"BA`1&/#$Q1)VGD.gck#E=!Ns3$05802Fr5E)dJZ4^8R.4^8R.4]N('4^8R.4^8R.4]N=-3ZT&)*=`ee2C_.%*=`ee2CoRG4@UG%4rY=CEA/n?!\c-&ECE/kE$8<e3"Q<!E&\%'4qf,<@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&ECE;qC/l]HA1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nOE#9N]0H*nQ*[`p0CF;)(BN.](DGOP%":,tO2d?Ic3"Qp"57&5./JT36EE+"_GrlTS'N@%SCF;)(BN.Z+BMDbrE'QunGmGAo2d?Ok.2`j:Gmb>o/Q?"<*[`p0CF;)(BN.;sBgl;k"@3#"//_DL*[`p0CF;)(BN.Z)DH/,LA-`AT4BsB^!\c-%!\c-&ED8kuC/l]HA-`AT4Bqmr/JT*i2\Q0Y#!4Ik##6g)##/?+BM1if"<e]rGrlTS'N@%SCF;)(BN.Z+BMDbrE'd,oGp>+)'dH1-'dH.?DbNQ&E$6Z:591RP4BsB^!\c-%!\c-&EC</nE$6Z:591RP4BsB^!\c-%!\c-&ED8kuC/l]HA/Z0n.N)1i2],Ku2],g)2],Ku2],Ku2],g22BNYEGrcrX4?=;f/f=j)A2jbp4qf1C4rI*S2B*;?4B+:&CF;)(BN.],CK2fZ591RP4B4-D.iC)Q2@C*/.RlK/)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.8pDF@bo"@4452$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXBN5TPGngrZ#!4Ik##6g)##/?'CJ.>n"<daQ4;(U(2BNYEGrcrX4?=;f/f=k"/e\Ep.L[$l4@V(52]+:W.h;V&0bkN1EA/n?!\c-&ECrW!@9"aK2%pc-2-^2h*Z4r#2A-o43X?`72`Vc\1_gT6EA/n?!\c-&EC</lE$8Ko5?n7W/JJd+Gn(E"4<4Dh/fbrKEE+k4/KGW5!\c-%!\c-&ECrSrBN6KFE=,f1*[`p0CF;)(BN.8pDF@bo"B>I3/JT*i2\Q0Y#!4Ik##6g)##/?'CJ.>n"<e]rGnM&4GmZ2X##6g)##/?#DbNPk"<e]rGmZ2X##6g)##/?!Ce7#e"<fEO##6g)##/?#Cdgid"<g<BBj;ShGrcrX4?=;f/f=j\4:h`%Gp<;&EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'FA58&BhDQ1CedE#@7WmmF\"u&G=5/'?q!ad?qj$dF\tM0Db+&4CemDrBgkNkCfOaF2],L$5?orN.iC)Q2@C*/GmGAo2d?t(.pOT#03fM,GmkDp.h>l20Fe[@2%p&r.n2<!/O(3^2&HN%2cO'T4VLd%5?n7m&.^Wk'dH1-'dH.?D,*c%E$8Kg2],L/!\c-%!\c-&ECil.@9"a?/JJd+Gn:np3"T%82%p&r.kDVNA-stC##6g)##/?'?q!a]"<fEO##6g)##/?!Ce7&f"<eTj3ZT&).1d444:W\H2@)kf2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?#C.q#f"<fEO##6g)##/?!Ce7&f"<eTj3ZT&)'HIhr0F/6qA5k;p2@C*/#nmP=.1d444:W\H2@*SJ'dH1-'dH.?BMCosE$6Y;5?p2M4q\kP4;^UqBM:f]/JJd+GmYQ%BLX?R2]+a`+?9K-2[EY).gZe`'dH1-'dH.?D+R/mE$8<e3"Q<!FW2&*4B2Ib0F1o]G=c'T0G-`V$5j`e&fD-*0,YZEE>fQ&.N)>A##6g)##/?(Ce[Dl"Af^42%L9p4rkLFE#BK(4BsBQ.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGEB4pF/f=jL2@j(c4;&2m4;&2m4;&2m4;&2m4;&2m4;&2m4;&2t2%pc-2-_gI3#`eoC-aNc3#`em3#`H4%20BX2&TXP##6g)##/?+Cen>#FW(u*.N)M>.if93%o5qO2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?+BM1fe"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I%7+Gp>+)'dH1-'dH.??qj!cE$6YH0c:ls.iAHo3!`It3#)EdE$I.u'dH1-'dH.?C.^ltE$6Z:'dH1-'dH.?DbNGnE$6_W!\c-%!\c-&ED8l'CK2fIA-`AT4BsB^!\c-%!\c-&ECrVsCK2fIA-`AT4Bqmr/JT*i2\Q0Y#!4Ik##6g)##/?+BM1fe"<f9@!\c-%!\c-&EDJo"?r\X>A2#N2!\c-&ECrT!C/l]F*[`p0CF;)(BN.DuD,+A#"@3Y%2%L9d#!4Ik##6g)##/?&Bh_&h"<g>?3"Q<!Go7M*Go7M*Go7M*E"Erg3"T%D4:iM5BMM'(*=`ee2CoRG4@UG%4rY=CEA/n?!\c-&ECil+BiQTX591RP4B3^42&-p*CJR\V2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?!CeIGo"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I%7+Gp>+)'dH1-'dH.?C.UcsE$6YH0c:ls.3B982,k2(2]i#,2A07e0H*n)2@^f?.303/!\c-%!\c-&ECEB$C/l]H@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?@7`mbE$8L'0c:ls.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?,Ce[Ak"<gMi2[UK04>.9Y0,XseE!mBf/Q>nSE"3Hn4<4Dh/fbrKEE+M*.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGED]50?r'$^?qWgeDb`SoBM:`sCf3c(?r'-jF\YD0?q"6qD,3N"E)coJ/JT*i2\Q0Y#!4Ik##6g)##/?!CeIGo"<e]rGmkN%!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KFA3jHC*tB"q4=<*NCF;)(BN.]&@8'rj"B8N#?q!ReG==l!Ce@/tF\P8(@7aX!CdginCf!Su?q!daC.LioCfOb#'dH1-'dH.?C.U]hE$6YB4:Df'/R/AZ0F1oU"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#FD+m5nBMq<#C.1NjCIqW3C.glfD+mApDbEN'DFmr-C.LWpG>CS1?q`maCfOaV2[CE7GnM&4Gp>+)'dH1-'dH.?C.UcsE$6Y=.pN2f.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.DsBhVer"=H/kCF;)(BN.K&Ce\2!"@5UP)EJ'(1`7r"##6g)##/?+C.(H^"<h#FD+m5nBMq<#C.1NjCIqW3C.glfD+mApDbEN'DFmr-C.LWpG>CS1?q`maCfOb#'dH1-'dH.?C.U]hE$6YE3#)EdCJmGj.iAHo3!`It3#)EdE$G>rEBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'FAGV7BLl<,Ce@/tF\P8(@7aX!@7WacCe@/tF\YG*BhV].DG*>nD,3N"E)coJ/JT*i2\Q0Y#!4Ik##6g)##/?!CeIGo"<e]rGmkN%!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KFA3jHC*tB"q4=<*NCF;)(BN.]&@8'rj"B8N#?q!LcG=k/$CIqW+BhD'"G>Cn6DG!2pCIqW*C.q#oG>1G(DGNMoDFn,+!\c-%!\c-&EDJl$BN6KF.iAHo3!`It3#)EdE$G>rEBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'F@\euD+Ro8C/./nBMLih?r'-iG>Cq;D,3N"F\YD*?qjg%@7s$f?r'-jE)coJ/JT*i2\Q0Y#!4Ik##6g)##/?!CeIGo"<e]rGmkN%!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KFA3jHC*tB"q4=<*NCF;)(BN.]&@8'rj"B8N*BhUcmG=4quBhq/pCf!i&DG")/?pm7VDFmr-CJ.B"G>:h2BM;,sDFn,+!\c-%!\c-&EDJl$BN6KF/fbrKEDB\<E"3Hn4<4Dh/fbrKEE+M*.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGED]50?qa6gCf!Q!DaZlcD+m5mDGNMoDFmr-CILrrG>(8!?qO*lCfOaV2[CE7GnM&4Gp>+)'dH1-'dH.?C.UcsE$6Y=.pN2f.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.DsBhVer"=H/kCF;)(BN.K&Ce\2!"@5UP)EJ'(1`7r"##6g)##/?+C.(H^"<h#FC.1iq@8]BeBM:`sCf3MsCed>oD,3N"F\YD0?qaa&D,*f*@7rmYE$mV-CF;)(BN.K&Ce\2!":c"W4<4Dh/fbrKEE+M*.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGED]50DbNl"Cf!i&DG")6BhV$#BhCiqF\YG.DGFA=D,3Z&?qWdXE![F!0G%1m2@*8E*[`p0CF;)(BN.K&DF@bo";:u,.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?C.U]hE$6Z:A5kK6.ifK3!\c-%!\c-&ECEB%BiQTGED]50DbNl"Cf!i&DG")6BhV$#BhCiqF\YG.DGFA=D,3Z&?qWdXE$mV-CF;)(BN.K&Ce\2!";r$f4Br^33ZT&)4Ur202F.ER.i/F(3$/_l'dH1-'dH.??r'KnE$6Yi'dH1-'dH.?@73deE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?+Ce.hqE"s!Q4Ur202I$t+4^8O13#`f>&.^Wk'dH1-'dH.?DbEJtE$8L'0c:ls"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h"T.if93!\c-%!\c-&EDJl$BN6KFE)dJZ4^8R.4^8R.4]N('4^8R.4^8R.4]N=-3ZT&)%1X*[2`M!C4qgL8.if93#osZ`@ji9!4qJ<!'dH1-'dH.?C.gihE$8<e3"Q<!E$tnl0G6&O3#`f>((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.?@7WX]E$6Z:%ilK&4BrI-4]M_#3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf4t4VLd%5?o]a!\c-%!\c-&EC<&nBN6KF/JJd+GmkJj2%X!r/.ra80G>?tE"Erg3"T%:.if93'L<6_##6g)##/?&BM1Za"Ah'?CF;)(BN.>uC/8,!,T7U6Gp>mYF^Hg73#`ehF\Pg?2I%7+E=<Zr!\c-%!\c-&ED8l"CK2fI@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?@7X'mE$8LZ!\c-%!\c-&EC`Pu?r\X>A3iXO/JJd+GmYQ%BLX?R2]+a`+?9K-2[EY).gZe`'dH1-'dH.?D+R,sE$8<e3"Q<!FW2&*4B2Ri.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.;sDb+.tFYG=C!\c-&ECEB$@9"aPCK2l$.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGEC`DnBi78qCeI5pDb38mCf!Q!Bhhi/?qEU_BMD3!D+m8nF\b_8G>(\1@73UdD+IAuBLGNdE#BK(4;AK%.1c\C'dH1-'dH.?BMComE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?'C/%#e"BA_e'dH1-'dH.?D,*H%E$6Z:A/Z0n.N)2%0c:ls2%pc-2-^2h*Z4r#2A-o43X?`72`Vc\1_gT6EB".(4qfqK0H*n*GmGAo2d?Ok.2`j:Gmb>o/Q?""/I3'k1+,%DCF;)(BN.;tBMDbr"B5Fu#!4Ik##6g)##/?,D+I)f"<h%d2[CE7Gp>+)'dH1-'dH.?@7WX]E$6Z:A/Z0n.N)1o.pN-8'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BLtopE$6Z;A5#r2.pNu$/R/?:'dH1-'dH.?BM(ZkE$6Y72%L9d"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#ODb`\pDbWMsCJI2sDb`SoBM:fkG>:k5D+d;q?qimbDbaD2?q"6t@7j3tC.UZl?qs-p@9$S;2],Ku2],Ku2],Ku2],g)2],Ku2],Ku2],g22BNYEGpieC.if93#n@OT0Fp`&.if93#osZ`@ji9!4qJ<!'dH1-'dH.?@7j!jE$8<e3"Q<!E$ti:.if93#n@OT0Fpo02a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?%DG<Jj"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I%7+Gp>+)'dH1-'dH.?DG*DtE$6YH0c:ls2%pc-2-^2^D+$r02@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&EC<K)BN6KF@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.??qEUU"B?HGGmZo?@9aNV4^8%fD+%,K.Qq#i##6g)##/?&DG3Di"B>F04;(UU/IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B5G%D+$$1##6g)##/?!Ce7&f"<h&C4;&2m4;&2m4;&2m4;&2t2%pc-2-`$T+?0Q,4qgL8.if93#osZ`@ji9!4qJ<!'dH1-'dH.?CemN!E$8<e3"Q<!E'=:@*=`ee2F]b;)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.K&Db+.t"@4452$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXBN5TPGngrZ#!4Ik##6g)##/?!Ce?rb"<daQ4;(U,3ZT%JE>eie3X?`72cO&i5?(l1*tB"q4=<*NCF;)(BN.]&@8'rj"B7ZkBLl<.CJ.,uDbNl%DFmr.CJ7DrC/.)p@899hDb38mCf!f0D,NZ!@7`a^CIgcj?r'-jE)ePE##6g)##/?!Ce7&f"<gn]2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?#C.q#f"<fEO##6g)##/?!Ce7&f"<h&1'dH1-'dH.?BMCosE$6Z9A5>TlGmGAo2d@jL.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGECii%D,NVrDGEGsBgkNkCf!PtBgc-$CJ$ruCJI?!Ce@/tF[So)G=b/+Ce7)nD+[3"C.gibE#BK(4BsBQ.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGECii%D,NVrDGEGsBgkNkCf!PtBgc-$CJ$ruCJI?!Ce@/tF[So)G=b/+Ce7)nD+[3"C.gibE"Erg3"T%(C.h!%+t#fCA-Xb@##6g)##/?+D+m2e"<g>i##6g)##/?+CeS+uFXK.2CF;)(BN.]'BMMhs"@5"0CF;)(BN.Z+BMVnt,QU\6.iAI#0HV#G4;]_)##6g)##/?+BLG<^"<fEO##6g)##/?+C.1E\"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.9$C.2DlE)fX_2[UK04>.9Y0,Xse/.r'e3Yu$9C.gufE#BQ!Go7M*E#BQ!Go7M*Go7M*E"Erg3"T%:%4Mbq/JLc(.if93#osZ`@ji9!4qJ<!'dH1-'dH.??qNmdE$8<e3"Q<!E&\su,81%b@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&EDJl#CfMoJA1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nOE#9N]0H*nQ*[`p0CF;)(BN.K&Db44u":,tO2d@1.3ZT&)$jJ4<(,&6%*tB"q4=<*NCF;)(BN.]&@8'rj"B7ZeDbXD>?qa!jF\P>'BMq>u?qa9j@7idZ@8B3hC/%tr/IYlB,9nHb$<8)ME@DA[#r<qg'dH1-'dH.?C.U]hE$6Z*.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?C.U]hE$6Z&!\c-%!\c-&ED8l"D,i#KAO/ddGmGAo2d@1.3ZT&)2A@883tN!%A-Xb@##6g)##/?+D+m2e"<g>i##6g)##/?(C/7/g"@k*u##6g)##/?+CJ@8j"<g>i##6g)##/?+CJ@&d"9A]2.1dL"3!^*$!\c-%!\c-&ECE<#CK2fI!\c-%!\c-&ECEB$CfMoJ!\c-%!\c-&ECil$?r\X>@l5/>2AZrZ4:VDs.o[Gq%362p4AB)c2],Ku2],Ku2],Ku2],g22BNYEGq9.(0bjp02@^`-#osZ`A1//n.OR2<CF;)(BN.;sC.2Dl"@b<^3#VcQ3#`H&BN6;i4;8eI/JA<q3\2!K4@U\&.2`<k/JA=]'dH1-'dH.?CemMuE$8Kt2BNYEGs;K756rGcA1Roh0bjp02@^`-#osZ`@ji9!4qJ<!'dH1-'dH.?CJ.?"E$8<e3"Q<!E'FO.56rGc@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&ECE;r@9"a?A1A<)//_Ck2],gV.iB<6.L6t*0HVPA4rI*=/-l4a2cMb!CF;)(BN.Z*CIqeqFW(8i3X?`72cO&p4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?#BLGNd"Ah'?CF;)(BN.5nC.hhrFYG=C!\c-&ECiYtBN6KR4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXBN5TPGngrZ#!4Ik##6g)##/?+BM(rj"<daQ4;(U,3ZT%JE>eie3X?`72cO&i5?ouK/MUK`##6g)##/?'C/.2i"B@ujGmGAo2d@@,GrlTS'N@%SCF;)(BN.9$?qjojE'd,oBj;A^4^9cI/MUK`##6g)##/?&BhD)l"BA'#BLu/>0c:ls.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?BMD0)E$8=:##6g)##/?(C/72h"Ah'?CF;)(BN.8oCJA(uE#BK(4;AJr*Z4r1EA/n?!\c-&ECil.BN6KRAPGQ[/JJd+Gn:np3"T%(A31A>)A="u4<FP12A._R4:rS<.TAAiCF;)(BN.Z)BN6KR0H*n*GmGAo2d?Ok.2`j:Gmb>o/Q?""/I3'k1+,%DCF;)(BN.;tBMDbr"B5Fu#!4Ik##6g)##/?+BM(rj"<h%d2[CE7GnM&4Gp>+)'dH1-'dH.??qislE$6Y=.pNu$/R/?:'dH1-'dH.?BM(ZkE$6Y=.pN-8'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BLtopE$6Z;A5#r2.pOk7/MUK`##6g)##/?'?q!LV"BA'#BM;A02%L9d"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#FBMV)rDc/i$CJ@&uD,3i$D,*Ak@7<Ug?pmIfBM:lkFA#>.D,NZ#C.guo?r'-jE)dJZ4^8R0.N'61GrlTS'N@%SCF;)(BN.;sDadqqE'QimGmGAo2d?Ok.2`j:Gmb>o/Q?"<*[`p0CF;)(BN.;sBhVer"@3#"//_D&2[CE7GnM&4Gp>+)'dH1-'dH.??qislE$6Y=.pOk7/MUK`##6g)##/?&BhD)l"BA'#BLu/c*[`p0CF;)(BN.;sBhVer"@3Y%2%L9d4;&2m4;&2m4;&2t4;&2m4;&2m4;&2t#n@OT0Fn-l.hrjV3#`H4$5isN.ieTu.o\JjCF;)(BN.;r?qFWfE"Erg3"T%30c:c5%hfc[3"d0:#n@OT0Fn-l.hrjV3#`H4#os3O4q8;@0iU+pCF;)(BN.9!DbXM$FYG=C!\c-&ECrr,BiQTS.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXCK1oSGngrZ/e\Ep.L[$l4=<*NCF;)(BN.]&?r(&l"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&EC<K)BN6KR2@`\#2@^f?.303/!\c-%!\c-&EDK)*DH/,L!\c-%!\c-&ED8l$D,i#K@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?DbWr,E$8L'0c:ls)AEb`1+F4R3ZT+I@kSE1*>o(^EA/n?!\c-&ECiDqCK2fU4:h`%Gs<8Q3YrtK2'3PB2F]%u/N==R3`J($CF;)(BN.8pBM2VpE#BQ!Go7M*Go7M*E"Erg3"T%F.iB<6.QSRZ4[C>*4;8eI/JA<q3\2!K4@UG%4rY=CEA/n?!\c-&ED&VuBN6KW591RP4B3X=4;8eI*u,\!@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&ECrVt?r\X>A1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q?!\2I%7+Gp>+)'dH1-'dH.?DbNQ&E$6YH0c:ls.3B982,k2(2]i#,2A07e0H*n"2@*7r2@^f?.303/!\c-%!\c-&EDK)*DH/,L!\c-%!\c-&ED8l$D,i#K@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?DbWr,E$8=".gZe[/JJd+Gn:np3"T%!+?g_G/O;<'4<GXg2B;cjE"s!Q2\Q0Y1^,cG3!`J"0c:ls2%pc-2-^n4+?g_G/O)!&3"Za/)EJ'(1`7r"##6g)##/?+C.(H^"<h#FBM(urDGi`#BM_DtBgb9`D,3Yr@7idW"pb?)3sc?>2B;c?*tB"q4B3C*E?5-!)\Wr&)EJ'(1`7r"##6g)##/?!Ce7&f"<gn]2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?#C.q#f"<fEO##6g)##/?!Ce7&f"<h&1'dH1-'dH.?BMCosE$6Z;A5,HZ/JJd+Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECE>qC/l]Y#!4Ik##6g)##/?!C.god"<h%T2],Ku2%L9d0H*n(2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?!Ce7#e"<fEO##6g)##/?+C.1N_"<g?C591RP4Bqjo4;(U(2BNYEGodn+/M@\;/O)!&3"Za/1^,cG3!_/j##6g)##/?&BhCcc"<fEO##6g)##/?#Cd^`b"<h(o*tB"q4=<*NCF;)(BN.]&@8'rj"B7cbBM_)h"pb?)3ti>F$5jQp)EJ'(1`9R'2%L9d.iAHo3!`It3#)EdE"Erg3"T%*3"?T+/N==R/JT0*/JT36A3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'FA5/%BhUonBi%;tF\bA'BM)H*CfMJZGs<8Q3YsL[4:rS<.R"dQ/Q?!a.pP"@4<GY(4:VQ(.k_kD.i2G_2@`\/0c:c5#o*XG/K$>V3"ccG.hr^!4W.Ks/JJd+Gp<;&EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'FA5/%BhUonBi%6!Bi%<!Bh^ogCIqf(4:h`%Gp<;&EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'FA5/%BhUonBi%;tF\bA'BM)H*CfOaF2],L02[CE7GnM&4Gp>+)'dH1-'dH.?DbNQ&E$6Y=.oZKM.iT':*>o(u0G5*:0G>?a'dH1-'dH.?C.U]hE$6Z*.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?C.U]hE$6Z&!\c-%!\c-&ED8l"D,i#KAO/a`GnUBL/e\Ep.L[$l4=<*NCF;)(BN.JuCeJ%t"=H/kCF;)(BN.DuDFe%s"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&ECrZ'CfMoV2@`\"2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?!Ce7#e"<fEO##6g)##/?+C.1N_"<g?C591RP4Br"".jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.K&CeS+u"=H/kCF;)(BN.]&?qaii"@3Y%2%L9d4;&2m4;&2m4:h`%GngrbE=3]t1(OKh3Z0S(##6g)##/?!C.Ucb"<fEO##6g)##/?#BM1T_"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.;r?qFWfE)ePE##6g)##/?#Cd^`b"<fEO##6g)##/?!Ce7&f"<gn]2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?#C.q#f"<fEO##6g)##/?!Ce7&f"<h&1'dH1-'dH.?BMCosE$6Z9A55NkBj:WG4;(UU/IYlW/e\Ep.L[$l4=<*NCF;)(BN.JuCeJ%t"=H/kCF;)(BN.DuDFe%s"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&ECrZ'CfMoVE$mV-CF;)(BN.E$@8:)l"B?$C4^9!2GmbQ'1(OKh3Z0S(##6g)##/?+C.1Wb"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.Z0@81#kFU/0e4B3=4GmbQ'1(OKh3Z0S(##6g)##/?!C.Ucb"<fEO##6g)##/?#BM1T_"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.;r?qFWfFU/0e4B2@h4;(U#5?n:!.i/F(3$/_l'dH1-'dH.??r'KnE$6Yi'dH1-'dH.?@73deE$6Yi'dH1-'dH.?DbET!E$6Yi'dH1-'dH.?BMV-&E$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?'CILZa"Af(1//__00c:ls0H*n(2%EA/0Fn-b2]iVX.h`dC0c^H"3X?<0E=3]t1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?,@73OV"<fEO##6g)##/?&DGNYm"<fEO##6g)##/?#C/7Mq"<fEO##6g)##/?#Cd^`b"<fEO##6g)##/?!Ce7&f"<h&XA5,?gGmGAo2d?t&.iAI%2?Y$10F/+$.h`d6/Q;f\.i/F(3$/_l'dH1-'dH.??r'KnE$6Yi'dH1-'dH.?@73deE$6Yi'dH1-'dH.?DbET!E$6Yi'dH1-'dH.?BMV-&E$6Yi'dH1-'dH.?Ced]&E$6Z+1`ZQ(!\c-%!\c-&ECrSrC/l]HE!dTqBLX?R2]+a`+?9K-2[EY).gZe`'dH1-'dH.?D+R/mE$8<e3"Q<!FW2&*4B2Ib0F1o]G=c'T0G-`V$5j`e&fD-*0,YZEE>fQ&.N)>A##6g)##/?(Ce[Dl"Af^42%L9p4rkLFE#BQ!Gp<;&E=3]t1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?,@73OV"<fEO##6g)##/?&DGNYm"<fEO##6g)##/?#C/7Mq"<fEO##6g)##/?#Cd^`b"<h%T2],Ku2],Ku2],Ku2],g)2],Ku2],Ku2],g22BNYEGq9.(0bjpI1)1W:.R><l4;8eI/JA<q3\2!K4@UG%4rY=CEA/n?!\c-&ED&VuCK2fZ591RP4B3X=4;8eI$5X]n2%NG52a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?,DG+8!"@4452$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oU4VLd%5?o]a!\c-%!\c-&EC</nE$6YH0c:ls2%pc-2-^7r4;8eI/JA<q3].-Q3"cd//e\Ep.L[$l4=<*NCF;)(BN.]&?r(&l"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&EC<K)BN6KR0H*n(.iB<6.L6t*0HWFh2'!S?GmGAo2d?t(.pOT#2BEo,0G7=u3#)W/E=<$U0bjp02@^`-&.]TZ2],:84:!VF.N]634WPFW.TB\G4VLd%5?o-.1IaM=(fWIWCF;)(BN.;tBhM_qE#fi%E>')o!\c-%!\c-&ECrSs?r\X>@h9Rn4:YUgE(1HI2],dQ##6g)##/?&DFm)c"B>F04;(U%3u1R=4:_E(2?d>X4;&2m0H*n!3u1R@.Qq#i##6g)##/?!Ce-oc"B?0G4]E@$1FG.ECF;)(BN.;tBgl;k"@a4:/f=jdE)fX:0G4pi'dH1-'dH.?DbEAtE$8L'0c:ls2BEoB*>o(u.h`@bE#BQ!Go7M*Gn:np3"T%"3!pBQ2Ad#:A.'=g1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?,@73OV"<fEO##6g)##/?&DGNYm"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.Ju@8:)lE"s!Q2&u`"'GD#^2-^k*4^8g*0-*%]4W,)>&.^Wk'dH1-'dH.?D,*c%E$8L'0c:ls2&u`"'GD#^2+B8(.L64e+B2VN2],L)2BNYEGr5g;3"cd//e\Ep.L[$l4=<*NCF;)(BN.]&?r(&l"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&EC<K)BN6KR0H*n?.M*=(4^7sp4;(U(2BNYEGmFT]3"R2:2&QN*.gS]\2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&EC<K)BN6KF@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.??qEUU"B?'C.pOT#03fM,GmkDp.h>l7.M*=(4[q43/N==R3Z/h@3"c3&EE-9L2I%7+GmZ2X##6g)##/?&DG3bs"<g?C'dH1-'dH.??qEXV":,tO2d@@,GnM&4E<laU3"R2:2&QN*.gT)U2],L/@l4K=4:`542]*8=/Me#4/Iid&2(0%I4:E/@/QH'm0c:ls0./_ACF;)(BN.E#BhVer"@b'L.L64e+B2VN2],Ku2],Ku2],Ku2],Ku2],Ku2],Ku2],Ku2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q?!\2I%7+Gp>+)'dH1-'dH.?@7rs["<daQ4;(U,3ZT%JE>eie3X?`72cO&i5?n:!.i/F(3$/_l'dH1-'dH.??qim`E$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?,Ce[/e"B>F04;(U(2BNYEGm[+g4:!kS2\H]&/JT36*"ihn0Gt*g'dH1-'dH.?@7`mhE$8Ko5?n7W/JJd+Gn(E"4<4Dh/fbrKEE+k4/KGW5!\c-%!\c-&ECrSrBN6KFE=,f1*[`p0CF;)(BN.Z)DH/,LE!e6O##6g)##/?!Ce7#e"<gM_0c_/84>-[9/K%ekCfLKF/JT*i2\Q0Y#!4Ik##6g)##/?,DG+8!";:u,2\Q0Y0./_ACF;)(BN.E#BhVer";:u,0./_ACF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@,OWGo7M*Go7M*Go@V6Gp?E+Gnh5b.30E@.T?KY.i/F(3$/_l'dH1-'dH.??r'KnE$6Yi'dH1-'dH.?@73deE$6Yi'dH1-'dH.?DbET!E$6Yi'dH1-'dH.?C/7N"E$6Z5*Z4r#0bkN1.iB6uE)dGXGngrZ01I](2]+:W.h;V&0bkN1EA/n?!\c-&EDJntDcJ5Y/JJd+Gngrb01I](2]+:W.h;V&0bkN1EA/n?!\c-&EDJntDcJ5YE$mV-CF;)(BN.]-BhM_q"=H/kCF;)(BN.;tCe7nr"=H/kCF;)(BN.](Ce@ts"@5Tq.gZeT2@`\$!\c-%!\c-&EDJntDcJ5M!\c-%!\c-&ECE,kDH/,L!\c-%!\c-&ECrT!CfMoJ!\c-%!\c-&ECE;sDcJ5MA3g2-//_D'0c:ls.iAHo3!`It3#)EdE$G>rE=+?P##6g)##/?!Dbi\l"<fEO##6g)##/?#Cd^`b"<h%X5?n7L'dH1-'dH.?C.^urE$6Yi'dH1-'dH.??q<[bE$6Yi'dH1-'dH.?DbEAsE$6Yi'dH1-'dH.??qipeE$6Z:A-`AT4BrU14^8+#.n23".L6au3Z0[b2A%kU3"?Z'/K"ac0./_ACF;)(BN.K%C._bq"=H/kCF;)(BN.E$@8:)l"=H/kCF;)(BN.K&Ce\2!"BA!!BLtTZ/JJd+Gqg6R.N'K?.R=+q'dH1-'dH.?C.^urE$6Yi'dH1-'dH.?BLtlpE$6Yi'dH1-'dH.?C.U]hE$6Yg.N&Hs0G#'4EA/n?!\c-&EC`Pu@9"aP'dH1-'dH.?D+R,oE$8L$3#)EdG=c'u.N&Hs0G#'4EA/n?!\c-&EC`Pu@9"aP'dH1-'dH.?D+R,nE$8L$3#)EdG=c'u.N&Hs0G#'4EA/n?!\c-&EC`Pu@9"aP'dH1-'dH.?D+R,mE$8L$3#)EdG=c'u.N&Hs0G#'4EA/n?!\c-&EC<&gBiQTX'dH1-'dH.?D+R,oE$8L$3#)EdG=c'u.N&Hs0G#'4EA/n?!\c-&EC<&gBiQTX'dH1-'dH.?D+R,nE$8L$3#)EdG=c'u.N&Hs0G#'4EA/n?!\c-&EC<&gBiQTX'dH1-'dH.?D+R,mE$8Kk2],L02[CE7GnM&4Gp>+)'dH1-'dH.?@7rs["<e]rE=,Ge0G4pC0Fe=()AF2&4]FC'CF;)(BN.K%C._bqE)ePE##6g)##/?+D+m;h"<fEO##6g)##/?&DFm,d"<fEO##6g)##/?+BLtN_"<g?C591RP4Brg;GmZ2X##6g)##/?!Dbi\l"<fEO##6g)##/?+D+m;h"<fEO##6g)##/?&DFm,d"<fEO##6g)##/?+BLtN_"<g?C591RP4BrI-4^8R.4^8R.4^8R.4]N('4^8R.4^8R.4]N=-3ZT&)#n@OT0Foi\A1Roh0bjp02@^`-#osZ`@ji9!4qJ<!'dH1-'dH.?C.UfnE$8<e3"Q<!E%D1t0bjp@)b)mu)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.DuC//%u"@4452$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXBN5TPGngrZ#!4Ik##6g)##/?#BMV)i"<daQ4;(U,3ZT%JE>eie3X?`72cO&i5?n:!.i/F(3$/`8*u,\!*u+tk/O(3^2&KRO##6g)##/?!Dbi_m"B>F04;(Ts2@`\KFUD(T2d?Ie0Fe=\/e\Ep.L[$l4@V+2/O(3^2&HN%2cO'T4VLd%5?n7L'dH1-'dH.?DbEK%E$6Z:A2#N2!\c-&EDJntDH/,%0c:ls"pb?)0./_ACF;)(BN.E$@8:)l"B?$C4^8R.4^8R.4^8R.4]N('4^8R.4^8R.4]N=-3ZT&)#n@OT0FoiaA1Roh0bjp02@^`-#osZ`@ji9!4qJ<!'dH1-'dH.?DFHriE$8<e3"Q<!E%D1t0bjp@*(E"!)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.DuC/8,!"@4452$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXBN5TPGngrZ#!4Ik##6g)##/?#BMV,j"<daQ4;(U,3ZT%JE>eie3X?`72cO&i5?n:!.i/F(3$/_l'dH1-'dH.??r'KnE$6Yi'dH1-'dH.?@73deE$6Yi'dH1-'dH.?DbET!E$6Yi'dH1-'dH.?@73dcE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?#BLGQe"B>F04;(UU/IYlW/e\Ep.L[$l4=<*NCF;)(BN.]&?r(&l"=H/kCF;)(BN.Z0@81#k"=H/kCF;)(BN.;tC.qns"=H/kCF;)(BN.Z0@8C/m"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&ED8l+?r\XJE$mV-CF;)(BN.E#DbjY&"=H/kCF;)(BN.E$@8:)l"B?'A.iAI%2?Y$10F/+$.h`d6/Q;f\.i/F(3$/_l'dH1-'dH.??r'KnE$6Yi'dH1-'dH.?@73deE$6Yi'dH1-'dH.?DbET!E$6Yi'dH1-'dH.?@73dcE$6Yi'dH1-'dH.?BMD0(E$6Yi'dH1-'dH.?BM(TfE$6Yi'dH1-'dH.?Ced]&E$6Z+C.qn;2],Ku2],g)2],Ku2],Ku2],g22BNYEGqK[?4:!2_A1Roh0bjp02@^`-#osZ`@ji9!4qJ<!'dH1-'dH.?@89<mE$8<e3"Q<!E%V_64:!2_@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&ECE>pCfMoJA1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nOE#9N]0H*nQ*[`p0CF;)(BN.]'BLuJn":,tO2d?Ic3"Qp"57&5./JT36EE*ha3ZT&)02"Q7A.'=g1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?,@73OV"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.],D,i#W0H*n*DFdGg3"cci02"Q7@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.??qEXV"B>F04;(U,2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?!Ce7#e"<fEO##6g)##/?#Cdgid"<g?8Go7G14Brm1GmbQ'1(OKh3Z1[=0G4pC0Fe=()AF2&4]FC'CF;)(BN.K%C.hhrE!REf2d?t(.pOT#03fM,GmkDp.h>l!2@^f?.303/@lk8=)AF2&4Ur&5EE-9L2I%7+GmZ2X##6g)##/?&DG3bs"<g?C'dH1-'dH.?C.^uqE$52h4;(UU/IYl!!\c-%!\c-&ED8`'CK2fIE#BQ!Go7M*Go7M*Go7M*Go7M*E#BQ!Go7M*Go7M*E"Erg3"T%C4<6-k4;%WM3#`H9%362q!\c-%!\c-&EDJl)@9"a?@m:/!56rM94rIU'E%_e)*"!8e/M%V>4@U\&.2`<k/JA=]'dH1-'dH.?DFHrpE$8Kt2BNYEGq^6M/M@\;)\Wr&A-Y(VCF;)(BN.K&D+%Yn@PB<0!\c-&ECrZ!?r\XO'dH1-'dH.?DbWr*E$8=:##6g)##/?,@7XZf@PB<0!\c-&ECE/nE$8"1##6g)##/?&BhLid"Ah'?CF;)(BN.;sDG=D#FYG=C!\c-&EDK)&D,i#+2%pc-2-`*J.L7C+3$oRR4@'K2##6g)##/?&DFm>j"@kF6CF;)(BN.;tCe@ts@PB<0!\c-&ECrT!DH/,]'dH1-'dH.?DbEB#E$8=:##6g)##/?&DFmPp"Ah'?CF;)(BN.;tDbOG#FYG=C!\c-&ECrW"C/l](2%pc-2-_Lb!&Ze_A1nMr*"!8e/M%V>4@URt.if983"-d"'dH1-'dH.?@7`mgE$8=:##6g)##/?&?q<[X"B>[?3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf7u4VLd.3ZT%JE>eie3X?`72cO&n2BNYEGn1#r3YW/+1-l-].hrs*!\c-%!\c-&EC`Su@9"a?E=NQo2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECE/mE$8=:##6g)##/?(CeR,e"BAPW##6g)##/?+C.1K^"B?HGGn1#r3YW/+10aee4;(UI#ph_d*_%L]/N==R3`J($CF;)(BN.8oCJJ/!G>\DL.L64c2]H!5.0ULq4<GY;E"s!Q/JA@*.hrs*E=W0j3YW/+10$nPCg6rJ4;(UI#ph_d*_%L]/N==R3`J($CF;)(BN.K$Ce.hqE#BQ!Go7M*Go7M*E#BQ!Go7M*E%_e)*"!8e/M%V>4@V4E/I3:)EA/n?!\c-&ECil+BN6KW57&5./JT36EE-7:.iAI#0HV#G4;^gM3#)E>2@_YR0G"dg'dH1-'dH.??qipbE$8LZ@k/9$/NOg_)AF2&4]FC'CF;)(BN.E$?pn9aE)fX_2[UK04>.9Y0,Xse'dH1-'dH.??qE^X"Ah'?CF;)(BN.5tBhDYpE#BQ!E"Erg3"T%82%qZM$5jR*0,YZE#osZ`@k8?,3#`&'.26#?##6g)##/?'?q<aZ"Ah'?CF;)(BN.<%D+n5!E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>;EK2I%7+GmbQ'1(OKh3Z0S(##6g)##/?!C.Ucb"<fEO##6g)##/?#BM1T_"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.DsC.2DlE!REf2dA*K2E4Gc4:!VF.N_nK##6g)##/?!CeR2g"B?$E.N)232%qZH$5igk4:`6$'dH1-'dH.?C.Lfd"B?$C4^8R.4^8R.4]N=-3ZT&)*tB5-4;&bmA1nMr*"!8e/M%V>4@UG%4rY=CEA/n?!\c-&EDAo%BN6KW591RP4B4-K2?ja&%4k7*2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?!Ce@&e"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I%7+Gp>+)'dH1-'dH.?C.U`kE$6YH0c:ls.3B982,k2(2]i#,2A07e0H*n)2@^f?.303/!\c-%!\c-&ECEB$C/l]H@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.??qF$a"B>F04;(UU/IYku2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&ECE/tE$6Yi'dH1-'dH.?BLtlpE$6Z&@T6SE4:E&63ZS2)4[pXt0F0EB.mG!\2&KRO##6g)##/?+BLtWb"BA`1%NQQ+*tni$0bkN1EA/n?!\c-&ED8`&@9"aKE(2u"0,#E3$5j$_4:YUL##6g)##/?,@73@Q"B?$C4^8R.4]N('4^8R.4^8R.4]N=-3ZT&)$6:,t)\Wr&&Hr^X3'enr3&q$E2[CZ14rI*S2B*;?4B+:&CF;)(BN.H#@81#kFW(u*.N)MG3#*8R2B;cJ+;b:a@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&ED&YsDcJ5MA1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q?!\2I%7+Gp>+)'dH1-'dH.?DG*DuE$6YH0c:ls.3B982,k2(2]i#,2A07e2%pc-2-_";)\Wr&A3V%<3Ys[_3!`b]0H*n"2@*7l+?g_G/R/8`4;(U(2BNYEGocu))\Wr&)EJ'(1`8k-*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%Dad,pG=Y"tF[]J4@7jX'C/8#;Db+.r/IYkb/-Rp?3!_Gh.ifK3E"s!Y3sc?>2B;c?*tB"q4=<*NCF;)(BN.K&Ce\2!"Ao:4.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.DsBhVer"=H/kCF;)(BN.K&Ce\2!"B@*.##6g)##/?#BMC`a"<g<BBM;AA0c:ls.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.??qs*dE$8=G*[`p0CF;)(BN.JuDG+8!"B?$C4^8R0.N'61GnCK/2B;cb/JJd+GngrZ.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.??r'KqE$6Z:A/Z0n.N)2%0c:ls2%pc-2-^n*3!^l93!_Gh.ifK3A.]7o2B;cW'dH1-'dH.?DbNJrE$6Yi'dH1-'dH.?BLtlpE$6Z%)EJ'(1`7r"##6g)##/?+C.(H^"<h#KF\Pt:E$G>rE?6&#/M@\;/O)!&3"Z`p4:h`%Gn(E"4<4Dh/fbrKEE+"_Gs<8Q3YsL[4:rS<.R"dQ/Q?!a.pP"@4<GY$0Feg64?E`K2]+Fb0H1`34B,Sp.pP"@4<GY(4:VQ(.k_kD.i2G_/JJd+Gp<;&EBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'Ce.&mF\P/#F\YY0E)dJ\.N)2J/IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B7ZgC/7r.Cf!T)BiSFC2],L02[CE7Gp>+)'dH1-'dH.?DG*DuE$6Z:A/Z0n.N)1o.pN2f.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.K&CeS+u"=H/kCF;)(BN.]&?qaii"@5T_3"Q<!GmkN%!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ECEB$BiQTGA/Z0n.N)1i2],Ku2],Ku2],g)2],Ku2],Ku2],g22BNYEGs<8W2@gBC2B;d($5jR*0,YZE#osZ`@lOZ$.2X!<2cMb!CF;)(BN.Ju@7XZfFYFgI/M@\;)\Wr&E'G<N2@gBC2B;d#((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.?C/72rE$6Z:%ilK&4BrI-4]Nj63&q$E2[CZ14rI*=/-l4a2cMb!CF;)(BN.Du?qaiiFW(8i3X?`72cO&p4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?+CJ75j"AgTo!\c-%!\c-&EDK)(DH/,LE#BQ!E"Erg3"T%30bYK;4>.9J!tuRWA1nMr*"!8e/M%V>4@V":2@L-*/eVDB##6g)##/?#C.L`b"Ah&b.L7C+3$oRR4B4<J2A6<"$5jR=2A-U)((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.?C.^ltE$6Z:%ilK&4BrI-4]N=-3ZT&)$6:,t)\Wr&.R>Ed3&q$E2[CZ14rI*S2B*;?4B+:&CF;)(BN.>uDb+.tFW(u*.N)MG3#*8R2B;c/@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&ED8l'CK2fIA1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q?!\2I%7+Gp>+)'dH1-'dH.?BMC`hE$6YH0c:ls.3B982,k2(2]i#,2A07e2%pc-2-_";)\Wr&A3V%<3Ys[_3!`b]0H*n"2@*7l+?g_G/R0#"4]E=./Q=Y:4<GY!0c^H(EE*__4^9K_!\c-%!\c-&EC`Q&BiQTG2@`\/0c:c5%2f?^2@_)B3"@$'E#fi%Gp>+)'dH1-'dH.?DbNSsE$6Y=.pP"@4<GXk0Fo-G.iAF^E#fi%Gp>+)'dH1-'dH.??qiskE$6Y=.pP"@4<GY$0Feg,0caLk3"cci#!4Ik##6g)##/?+BLtli"<h%P2],d/2@*P10c:c5*"ihn0Gt*=2B;cjE#fi%Gp>+)'dH1-'dH.?C.U]lE$6Z&3"ccq2\Q0a)AEb`1+s4@)]9A%/Q?!W2],LV*[`p0CF;)(BN.DuBM2Vp"B?0G4]E=./Q=5G!\c-%!\c-&ECEB%@9"a?3"cci)AEb`1+XFX3!^*A.ifN5)\*kk3#E6#E)dV^4]E=./Q=5G!\c-%!\c-&ECEB$BN6KF3"cci)AEb`1,K^]2[C!#)@d>nEE-9G2],L'2@*PM*[`p0CF;)(BN.Z,C.MVo"<ABcGs<8Q3Ysa[0,53<0c_0*E)g19E)g0[0c:ls2%pc-2-^n4+?g_G/O)!&3"Za/)EJ'(1`7r"##6g)##/?+C.(H^"<h#FBM(urDGi`#BM_DtBgb9`D,3Yr@7idW"pb?)3sc?>2B;c?*tB"q4B3C*E?5-!)\Wr&)EJ'(1`7r"##6g)##/?!Ce7&f"<gn]2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?#C.q#f"<fEO##6g)##/?!Ce7&f"<h&1'dH1-'dH.?BMCosE$6Z;A5,HZ/JJd+Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECE>qC/l]Y#!4Ik##6g)##/?!C.god"<h%T2],Ku2%L9+5?o'E)\Wr&Go[e.E=s3,EBbEI3Ys.O3"@$'E#fi%Gp>+)'dH1-'dH.?D,*f(E$6Y=.pP"@4<GY(4:VQ(.k_kD.i2G_3"cci#!4Ik##6g)##/?&Bh_&h"<e]rGs<8Q3YsOY.MOfR4:>Cd3"cci#!4Ik##6g)##/?+BM(uk"<e]rGs<8Q3Ys%K.ifN93)j/b2],LV*[`p0CF;)(BN.](Cd_Pm"B?0G4]E=./Q=Y:4<GXl2]3J?4:a=Y3!`b]3"cci#!4Ik##6g)##/?!Ce6ob"<h%P2],d/2@*P10c:c5$5jR%4<4YCEE*__4^9K_!\c-%!\c-&ED8l"DH/,LE#fi%E=s3,E?d8!'dH1-'dH.??r'I#E$6Y32],L:0c:c5#o*XG/K$>V3"ccG.hr^!4W.KsE#fi%E=s3,E?d8!'dH1-'dH.??r'KpE$6Y32],L:0c:c5&KLl]/K#*B.iAF^E)dV^4^8m6/Q=5G!\c-%!\c-&EC<&gD,i#K3"cci)AEb`1,':T0HC-$3"fIgE)g19E)clG4;(U#5?n=%.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.K&CeS+u"=H/kCF;)(BN.]&?qaii"@5T_3"Q<!GmGAo2d@1.3ZT&)3ti>F$5jQp)EJ'(1`8jp+?g_G/LNM?CF;)(BN.;sDbOG#"=H/kCF;)(BN.E$@8:)l"BIH-.ifK3!\c-%!\c-&ECEB%BiQTGED0J4F\H('/IYkb2B;cO4<4DE*tB"q4B2t(.N)1m5?o]a!\c-%!\c-&EDJo"?r\X>A3i1;CF;)(BN.;tCen>#/JJd+Gs=%r3"Z`V4:i))/K#*[2A-U.)EJ'(1`7r"##6g)##/?+C.(H^"<h#FCJ@N,@8]TpCf!W#G>(D'DbNi+F\tJ0CJmZ$?qim_E#BK(4;AJr#!4Ik##6g)##/?!DbNkt"<g?C'dH1-'dH.?DbEArE$52h4;(U9*tB"q4>.9W4<FP-4XM*W4@(nP.ifK3!\c-%!\c-&ECEB%BiQTGED]2*DG*\uCedE"F\bD"BhUoqD+d,iF@8SqG=4`$Bhq2j4:h`%0H*nQ*[`p0CF;)(BN.K%Bgl;k"@5U4##6g)##/?&DFm2f":,tO2dA9f.ifK3$5jZb3X?<&!tuRWA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'FAG>'DG=;<CeIl,Bi7>tBh^unBM_i/CIpie?r'-hD,h/Y.N'61Gp>+)'dH1-'dH.?C.^ltE$6Z:A2#N2!\c-&ECrT!@9"`m0c:ls)EJ'(1`7YF2&R2H4;][Z2]510*tB"q4=<*NCF;)(BN.]&@8'rj"B8N#D+m5sG=kP.Cf!W#G>:S2DG*;qF\tV/DbO>4CJ7/oE#BK(4;AJr#!4Ik##6g)##/?!DbNkt"<g?C'dH1-'dH.?DbEB"E$52h4;(U9*tB"q4>.9W4<FP-4XM*W4@(nP.ifK3!\c-%!\c-&ECEB%BiQTGED]51@73IWCe6lkF\bD"BhUorCeIGtFA>8)CJml1Bhh/j4:h`%0H*nQ*[`p0CF;)(BN.K%Bgl;k"@5U4##6g)##/?&DG!;h":,tO2dA9f.ifK3$5jZb3X?<&!tuRWA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'F@\YtD,"25DbWSpC.qf0BhV#oBh2?$BMLfoG=4`$D,h/Y.N'61Gp>+)'dH1-'dH.?C.^ltE$6Z:A2#N2!\c-&ECrW"C/l]!0c:ls)EJ'(1`7YF2&R2H4;][Z2]510*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%BhUonBhUojC/%f,DG3K!G>:Fr4;&2m.iAHo3!`It3#)EdE"s!Q2\Q0Y#!4Ik##6g)##/?!Ce6ob"<eKh4^9oR4<GXl2]3J?4:a=Y3!`b]2@`[q2@*8E*[`p0CF;)(BN.]&@74Bb"<ABcGs<8Q3Ys%K.ieTo*Y&no4['&W4rk1=EE*qiGnM&4Gp>+)'dH1-'dH.?DbNSsE$6Y32],L:0c:c5%2f?^2@_)B3"@$'E!REf2d@jL.9&5P.ifK3$5jZb3X?<&!tuRWF$DDl3"Z`^'dH1-'dH.??r'HpE$6Z'Bi%6!Bi%2iE#BK(4BsBQ.9&5P.ifK3$5jZb3X?<&!tuRWE#BQ!GmPB*0G%2G*[`p0CF;)(BN.DuD,+A#"@5T_3"Q<!GnUBL)AEb`1+sUK.i2G_3"cci#!4Ik##6g)##/?(CILW`"<e]rGs<8Q3YrnC.h3L1$5=3e1/qN\2],LV*[`p0CF;)(BN.;sBMMhs";:u,)AEb`1--Ee0g>jH/lZ*X2],LV*[`p0CF;)(BN.](Dadqq";:u,)AEb`1+XFX3"d24EE*__4^9K_!\c-%!\c-&ECE;s@9"a?2@`\/0c:c5$5jR%4<4YCEE*__4^9K_!\c-%!\c-&ED8l"DH/,L2@`\/0c:c5*"ihn0Gt*=2B;cjE#fi%Gp>+)'dH1-'dH.?C.U]lE$6Y=.pOSM!\c-%!\c-&EC<&gD,i#K3"cci)AEb`1,':T0HC-$3"fIg2@`\K*[`p0CF;)(BN.]&?qjoj"<ABcGs<8Q3Ysm[/.qpe4[0,T/lZ*b.pOSM!\c-%!\c-&ECEB%@9"a?3"cci)AEb`1+XFX3!^*A.ifN5)\*kk3#E6#E"`FC.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.??r'KqE$6Z:A/Z0n.N)2!2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?!Ce7#e"<fEO##6g)##/?+C.1N_"<g>?3"Q<!Go7M*Go7M*Go7M*E#BQ!Go7M*Go7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I$@b3"Qp"57&5./JT36EE*V[.pOT#4'Wd8GmkDp.h>l!2@^f?.303/!\c-%!\c-&EC`Q'@9"a?@lk8=)AF2&4Ur&5EE-9L2I$k'.pOT#4^9!:GmkDp.h>l!2@^f?.303/!\c-%!\c-&EC`Q'@9"a?!Zj!J##6g)##/?&DG3bs"<f3s*Z4r*4:`542]*8=/Iu)YE#9N]0H*mq@l4K8EA/n?!\c-&EDJl)D,i#W/JJd+GngrZ#!4Ik##6g)##/?#BLkTb"<e]rGp>+)'dH1-'dH.?DbNQ&E$6Y=.pOSM!\c-%!\c-&EC<&nC/l]H2@`\K*[`p0CF;)(BN.>uBM)Po";:u,#!4Ik##6g)##/?+BhVer":,tO2d?nR'dH1-'dH.?@7WmdE$6Z:591RP4BrI/.N)1j!\c-%!\c-&EC<&gBN6KFA-`AT4BrI-4^8R.4^8R.4^8R.4^8R.4]N('4^8R.4]Nj63&q$E2[CZ14rI*L4:Df63!^H8EA/n?!\c-&ED8r)BN6KR2%pc-2-_L:3"@$:$5jR*0,YZE#osZ`@ji9!4qJ<!'dH1-'dH.?@7`mfE$8<e3"Q<!E%`14.i1r32a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?(CILW`"<g>o3"Q)pGo7M*E"Erg3"T%F0Feg,0c`h>4<6-k4;%WM3#`H4%20BX2&TXP##6g)##/?!C.(?["Af^42%L9k#o*XG2\[!0((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.??qipkE$6Z:%ilK&4BrI-4]N=-3ZT&)%2f?^2@_)B3"@$:$5jR*0,YZE#osZ`@ji9!4qJ<!'dH1-'dH.?@73diE$8<e3"Q<!E$u;1.h`+@0c^H(@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&ECrVsCK2fIA1A<)//_Ck2],g22BNYEGqg6=)@d>nA1nMr*"!8e/M%V>4@UG%4rY=CEA/n?!\c-&EC<,jDcJ5^591RP4B4BM4$NoR/k.o3)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.](Dadqq"@4452$jj^4;&2t2%pc-2-`6d'L=)N3&q$E2[CZ14rI*S2B*;?4B+:&CF;)(BN.?&Bh;SoFW(u*.N)MB)DOu<2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?+C.1Q`"<g>o3"Q)pGo7M*E"Erg3"T%F*^3.L4<6-k4;%WM3#`H4%20BX2&TXP##6g)##/?"BhCie"Af^42%L9k#s1%J((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.??r'I#E$6Z:%ilK&4BrI-4]N=-3ZT&)*u,"g)\Wr&A1nMr*"!8e/M%V>4@UG%4rY=CEA/n?!\c-&EC<,jDH/,]591RP4B4-D.MOcL3!`812a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?!Ce6ob"<g>o3"Q)pGo7M*E"Erg3"T%C4<6<a3"H!eA1nMr*"!8e/M%V>4@UG%4rY=CEA/n?!\c-&EC<,j@9"aP591RP4B3a53'IoU.L8IG((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.?BMCopE$6Z:%ilK&4BrI-4]N=-3ZT&)'c@&[3!^K*2bcjt4<6-k4;%WM3#`H4%20BX2&TXP##6g)##/?,Dba#!"Af^42%L9k'c@&[3!^K*2bd$u2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?,D,3Dh"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdE#9N].3B982,k2(2]i#,2A07e0H*nQ*[`p0CF;)(BN.5o?qaii":,tO2d@1.3ZT&)3'e'.##6g)##/?(CILW`"9BMHGs<8Q3Ys.O3"@$'E!REf2d?t(.pOT#3a<[7GmkDp.h>l!2@^f?.303/!\c-%!\c-&ECE;tCK2fI@lk8=)AF2&4Ur&5EE-9L2I%7+GmG,c2&S&###6g)##/?&DG<Dh"<h"OFWW7i##6g)##/?&DG3bs"<h%e0c:ls0H*n7/I3'k1+,%DCF;)(BN.5oDFe%s"B610/JJd+Gn(E"4<4Dh/fbrKEE+k4/KGW5!\c-%!\c-&ECrSrBN6KFE?A:F*[`p0CF;)(BN.5o?qaii"B>I3/JT*i#!4Ik##6g)##/?(CILW`"<g?C591RP4Brg;GnM&4Gon[m##6g)##/?#DbNPk"<e]rGon[m##6g)##/?!Ce7#e"<fEO##6g)##/?#Cdgid"<g<BBj;5Z4^8R.4^8R.4^8R.4^8R.4^9!2Gp>+)'dH1-'dH.?DbNSsE$6YH0c:ls2%pc-2-^l&+ttNE!\c-&ECrVtCfMo*0H*n50c:c5%2f?^2@_)B3"@$'E!REf2d?t(.pOT#3a<[7GmkDp.h>l!2@^f?.303/!\c-%!\c-&ECE;tCK2fI@lk8=)AF2&4Ur&5EE-9L2I%7+GmG,c2&S&###6g)##/?&DG<Dh"<h"OFWW7i##6g)##/?&DG3bs"<h%e0c:ls0H*n7/I3'k1+,%DCF;)(BN.5oDFe%s"B610/JJd+Gn(E"4<4Dh/fbrKEE+k4/KGW5!\c-%!\c-&ECE;sBiQTGE?A:F*[`p0CF;)(BN.;sBMMhs"B>I3/JT*i#!4Ik##6g)##/?&Bh_&h"<g?C591RP4Brg;GnM&4Gon[m##6g)##/?#DbNPk"<e]rGon[m##6g)##/?!Ce7#e"<fEO##6g)##/?#Cdgid"<g<BBj;5Z4^8R.4^8R.4^8R.4^8R.4^9!2Gp>+)'dH1-'dH.??qipkE$6YH0c:ls2%pc-2-^l&+ttNE!\c-&ECE;s@9"`t0H*n50c:c5#o*XG2\[!"E!REf2d?t(.pOT#3a<[7GmkDp.h>l!2@^f?.303/!\c-%!\c-&ECE;tCK2fI@lk8=)AF2&4Ur&5EE-9L2I%7+GmG,c2&S&###6g)##/?&DG<Dh"<h"OFWW7i##6g)##/?&DG3bs"<h%e0c:ls0H*n7/I3'k1+,%DCF;)(BN.5oDFe%s"B610/JJd+Gn(E"4<4Dh/fbrKEE+k4/KGW5!\c-%!\c-&ECrSrBN6KFE?A:F*[`p0CF;)(BN.](Cd_Pm"B>I3/JT*i#!4Ik##6g)##/?+BLtli"<g?C591RP4Brg;GnM&4Gon[m##6g)##/?#DbNPk"<e]rGon[m##6g)##/?!Ce7#e"<fEO##6g)##/?#Cdgid"<g<BBj;5Z4^8R.4^8R.4^8R.4^8R.4^9!2Gp>+)'dH1-'dH.??qiskE$6YH0c:ls2%pc-2-^l&+ttNE!\c-&ED8r%C/l](0H*n50c:c5*u,"g)@d>nEE)uH4;(Ts2@`\KFWXQi2d?Ie0Fe=\/e\Ep.L[$l4=<*NCF;)(BN.](D,+A#"@b0O/O(3^2&HN%2cO'T4VLd%5?n0i3tMu`'dH1-'dH.?DbEN"E$6Z'3)CDN'dH1-'dH.?DbEK%E$6Z&/JJd+GngrZ(^L*C3YsG&##6g)##/?(CJ-ob"<h"ME!REf2d?Ok.2`j:Gmb>o/Q?""/I3'k1+,%DCF;)(BN.;tBMDbr"B615#!4Ik##6g)##/?+BM(uk"<h%d2[CE7Gp>+)'dH1-'dH.??qiskE$6Z:A/Z0n.N)1o.pNu$/R0)O'dH1-'dH.?BM(ZkE$6Y=.pNlM'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BLtopE$6Z;A5#r,2],Ku2],Ku2],Ku2],Ku2],L$5?o]a!\c-%!\c-&ECEB$BN6KF/JJd+Gn:np3"T$jA-Y(VCF;)(BN.K$C.2Dl,S^qZ)AEb`1,K^]2[C!#)@d>nEE)uH4;(Ts2@`\KFWXQi2d?Ie0Fe=\/e\Ep.L[$l4=<*NCF;)(BN.](D,+A#"@b0O/O(3^2&HN%2cO'T4VLd%5?n0i3tMu`'dH1-'dH.?DbEN"E$6Z'3)CDN'dH1-'dH.?DbEK%E$6Z&/JJd+GngrZ(^L*C3YsG&##6g)##/?(CJ-ob"<h"ME!REf2d?Ok.2`j:Gmb>o/Q?""/I3'k1+,%DCF;)(BN.;tBMDbr"B615#!4Ik##6g)##/?+C.1Q`"<h%d2[CE7Gp>+)'dH1-'dH.??r'KpE$6Z:A/Z0n.N)1o.pNu$/R0)O'dH1-'dH.?BM(ZkE$6Y=.pNlM'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BLtopE$6Z;A5#r,2],Ku2],Ku2],Ku2],Ku2],L$5?o]a!\c-%!\c-&ED8l"DH/,L/JJd+GngrZ/e\Ep.L[$l4=<*NCF;)(BN.DuCJ%kr"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&ED8l"DH/,X/JJd+Go@V6Gp?DlGnh5b.30E@.T?KY.i/F(3$/_l'dH1-'dH.?BMCrrE$6Z5*Z4r#0bkN1.iB6uE)dGXGngrZ4%:t42]+:W.h;V&0bkN1EA/n?!\c-&ED8r%BiQTS3"ccq4%:t42]+:W.h;V&0bkN1EA/n?!\c-&ED8`&C/l]T3"cci4"!!MCF;)(BN.E$?r(&l"=H/kCF;)(BN.5oDFIhp"@>LK/JJd+Gn(E"4<4Dh/fbrKEE*5W3"$Wt57&5./JT36EE+M*.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGE?6bd##6g)##/?#C.q#f"<fEO##6g)##/?!Ce7&f"<fEO##6g)##/?(CeR8i"<gk]2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&ECiYuDH/,L!\c-%!\c-&EDJl$BN6KF!\c-%!\c-&EC`AoD,i#KE_]#$FWN1h##6g)##/?#C.q#f"<fEO##6g)##/?!Ce7&f"<fEO##6g)##/?(CeR5h"<h&C4;&2t0H*n(2%EA/0Fn-b2]iVX.h`dC0c^H"3X?<0E?6bd##6g)##/?#C.q#f"<fEO##6g)##/?#Cd^`b"<fEO##6g)##/?!Ce7&f"<h&XA4]0fGmGAo2dA3I/M@\;$5X]n2'Y$q.L6t'A0*BW##6g)##/?#C.q#f"<fEO##6g)##/?#Cd^`b"<fc6/.W=K2@iA'0F0$13%l?\2%V8\/.V^h1ab7FCF;)(BN.K&Ce\2!";MP:)AEb`1-/Z4/JJd+Gmb2c.2*UR3`J($CF;)(BN.Z,C.qnsE%)"r.Mj*92%NqF##6g)##/?,D,3Pl"Ah'?CF;)(BN.5tBhVerE%)"r.Mj*92%NqF##6g)##/?,D,3Pl"Ah'?CF;)(BN.5tBh_ksE%)"r.Mj*92%NqF##6g)##/?,D,3Pl"Ah'?CF;)(BN.5tBhhqtE#BK(4Bs$@4:`M@2%U!c'dH1-'dH.?D,*H&E$8=:##6g)##/?(CeR5h"B?TV4:`M@2%U!c'dH1-'dH.?D,*H&E$8=:##6g)##/?(CeR8i"B?TV4:`M@2%U!c'dH1-'dH.?D,*H&E$8=:##6g)##/?(CeR;j"B>O*0F1oXBN62e4:`M@2%U!c'dH1-'dH.?D,*GtE$8=:##6g)##/?(CeR5h"B?TV4:`M@2%U!c'dH1-'dH.?D,*GtE$8=:##6g)##/?(CeR8i"B>O*0F1oXBN62e4:`M@2%U!c'dH1-'dH.?@7WmeE$8=:##6g)##/?(CeR5h"B?TV4:`M@2%U!c'dH1-'dH.?@7WmeE$8=:##6g)##/?(CeR8i"B?TV4:`M@2%U!c'dH1-'dH.?@7WmeE$8=:##6g)##/?(CeR;j"B>O*0F1oXBN62e4:`M@2%U!c'dH1-'dH.??r'HrE$8=:##6g)##/?(CeR5h"B?TV4:`M@2%U!c'dH1-'dH.??r'HrE$8=:##6g)##/?(CeR8i"B?$C4^8R.4^8!s/JT*i#!4Ik##6g)##/?#BMCid"<g?C591RP4Brg;GnM&4Gof^,0G4pC0Fe=()AF2&4]FC'CF;)(BN.DsBhVerE"`FC2\Q0Y4"!!MCF;)(BN.E#BhVer";:u,4"!!MCF;)(BN.E$?r(&l"=H/kCF;)(BN.5oDFIhp"@,OWGo7M*Go7M*Go7M*Go7M*GngrZ#!4Ik##6g)##/?,D,3Dh"<daQ4;(U#5?n:!.i/F(3$/_l'dH1-'dH.?BMCrrE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?#BMLoe"B>F04;(Ts2@`\KFWOKh2d?Ie0Fe=\/e\Ep.L[$l4=<*NCF;)(BN.DuCJ%kr"@b0O/O(3^2&HN%2cO'T4VLd%5?nt,*u,\!*u+tk/O(3^2&KRO##6g)##/?#C.q#f"B?0G4]E2"*u,\!*u+tk/O(3^2&KRO##6g)##/?,@73FS"B?0G4]E2"*u,\!*u+tk/O(3^2&KRO##6g)##/?#Cdgid"B?0G4^8a^'dH1-'dH.?BLtopE$6Yi'dH1-'dH.?D,*H%E$6Z9BiSFT0c:ls.iAHo3!`It3#)EdE"<'Q/eVCm/.ra80G>?tE$G>rEBc2j3"Z`^'dH1-'dH.??r'HpE$6Z'4"!!MCF;)(BN.DsBhVer"=H/kCF;)(BN.K&Ce\2!"=H/kCF;)(BN.5tBh_ks"Af1/.i/F(3$/_l'dH1-'dH.??r'KnE$6Yi'dH1-'dH.?CemK!E$6Yi'dH1-'dH.?C.U]hE$6Yi'dH1-'dH.?D+R,sE$6Z$CJ7,l4"!!MCF;)(BN.DsBhVer"=H/kCF;)(BN.K&Ce\2!"=H/kCF;)(BN.5tBhVer"BA_32],g-5?n=%.n23".L6au3Z0[b2A%kU3"?Z'/K"ac4"!!MCF;)(BN.DsBhVer"=H/kCF;)(BN.E$@8:)l"=H/kCF;)(BN.K&Ce\2!"BA!!CeR5a/JJd+Gqg6R.N'K?.R@;?@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?@73dhE$8LZ!\c-%!\c-&EDJl$BN6KF0H*n50c:c5+&lM^0c:ls/f>B;2A.A;EA/n?!\c-&EC<&gBiQTS$kEp]1)1W:.TAAiCF;)(BN.Z,C.qnsFYG=C!\c-&EC`AoBiQTS$kEp]1)1W:.TAAiCF;)(BN.Z,C.qnsFYG=C!\c-&EC`AoBN6KR$kEp]1)1W:.TAAiCF;)(BN.Z,C.qnsFYG=C!\c-&EC`AoCK2fU4:h`%Gprt&.Mj*92%NqF##6g)##/?(CJ.>n"Ah'?CF;)(BN.5tBhVerE%)"r.Mj*92%NqF##6g)##/?(CJ.>n"Ah'?CF;)(BN.5tBh_ksE%)"r.Mj*92%NqF##6g)##/?(CJ.>n"Ah'?CF;)(BN.5tBhhqtE!mBf/Q>nOE%)"r.Mj*92%NqF##6g)##/?(CJ.#e"Ah'?CF;)(BN.5tBhVerE%)"r.Mj*92%NqF##6g)##/?(CJ.#e"Ah'?CF;)(BN.5tBh_ksE!mBf/Q>nOE%)"r.Mj*92%NqF##6g)##/?,D,3Pl"Ah'?CF;)(BN.5tBhVerE%)"r.Mj*92%NqF##6g)##/?,D,3Pl"Ah'?CF;)(BN.5tBh_ksE%)"r.Mj*92%NqF##6g)##/?,D,3Pl"Ah'?CF;)(BN.5tBhhqtE!mBf/Q>nOE%)"r.Mj*92%NqF##6g)##/?+C.(B\"Ah'?CF;)(BN.5tBhVerE%)"r.Mj*92%NqF##6g)##/?+C.(B\"Ah'?CF;)(BN.5tBh_ksE#BQ!Go7M*GmPB*0G%2G*[`p0CF;)(BN.Z,C.MVo"@5T_3"Q<!GnUBL2\Q0Y4%:t42]+:W.h;V&0bkN1EA/n?!\c-&ED8r%BiQTS2@`[q2@*7_!\c-%!\c-&ED8buBiQTG2@`[e!\c-%!\c-&ED8`&C/l]H!\c-%!\c-&EC`Pu?r\X>AO/^O4;&2m4;&2m4;&2m4;&2m0H*nQ*[`p0CF;)(BN.K&Ce7nr":,tO2d@@,Gs<8Q3YsL[4:rS<.R"dQ/Q?!l0c:ls58+5g##H(&0G7=u3#)W/E=3]t1(OKh3Z0S(##6g)##/?+BLkTb"<gMc4:!kR0G"d-4;(mkE#9N]0H*mk@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?BLtopE$8Kg2],d#!\c-%!\c-&ED8`&C/l]H!\c-%!\c-&EC`Pu?r\X>B1u8+2],Kp@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?DbNJrE$8LZ/JJd+Gn(E"4<4Dh/fbrKEE*5W3"$Wt57&5./JT36EE+"_GoeUl##6g)##/?&DG3bs"<g?C'dH1-'dH.?C.U]lE$52h4;(UU/IYkb!\c-%!\c-&ED8c"D,i#K!\c-%!\c-&ED8`'CK2fIF$DDl3"Z`^'dH1-'dH.??r'HpE$6Z'Bi%r5Bi%r0CfOaF2],Ku2],g-5?n=%.n23".L6au3Z0[b2A%kU3"?Z'/K"ac4"!!MCF;)(BN.E#Db+.t"=H/kCF;)(BN.E$@8:)l"=H/kCF;)(BN.K&Ce\2!"BA!!BLtTZ/JJd+Gs*/a$5jR41)1W:#!W,"/JB".4"!!MCF;)(BN.E#Db+.t"=H/kCF;)(BN.E$@8:)l">Li2.N'K?.R>p!/M@\;$5X]n2'Y$q.L6t'!\c-%!\c-&EDJl$BN6KF0H*n50c:c5+&lM^0c:ls/f>B;2A.A;EA/n?!\c-&EC<&gBiQTS$kEp]1)1W:.TAAiCF;)(BN.Z,C.qnsFYG=C!\c-&EC`AoBiQTS$kEp]1)1W:.TAAiCF;)(BN.Z,C.qnsFYG=C!\c-&EC`AoBN6KR$kEp]1)1W:.TAAiCF;)(BN.Z,C.qnsFYG=C!\c-&EC`AoCK2fU4:h`%Gprt&.Mj*92%NqF##6g)##/?(CJ.>n"Ah'?CF;)(BN.5tBhVerE%)"r.Mj*92%NqF##6g)##/?(CJ.>n"Ah'?CF;)(BN.5tBh_ksE%)"r.Mj*92%NqF##6g)##/?(CJ.>n"Ah'?CF;)(BN.5tBhhqtE!mBf/Q>nOE%)"r.Mj*92%NqF##6g)##/?(CJ.#e"Ah'?CF;)(BN.5tBhVerE%)"r.Mj*92%NqF##6g)##/?(CJ.#e"Ah'?CF;)(BN.5tBh_ksE!mBf/Q>nOE%)"r.Mj*92%NqF##6g)##/?,D,3Pl"Ah'?CF;)(BN.5tBhVerE%)"r.Mj*92%NqF##6g)##/?,D,3Pl"Ah'?CF;)(BN.5tBh_ksE%)"r.Mj*92%NqF##6g)##/?,D,3Pl"Ah'?CF;)(BN.5tBhhqtE!mBf/Q>nOE%)"r.Mj*92%NqF##6g)##/?+C.(B\"Ah'?CF;)(BN.5tBhVerE%)"r.Mj*92%NqF##6g)##/?+C.(B\"Ah'?CF;)(BN.5tBh_ksE#BQ!Go7M*GmPB*0G%2G*[`p0CF;)(BN.K&Ce7nr"@5T_3"Q<!GnUBL2\Q0Y4%:t42]+:W.h;V&0bkN1EA/n?!\c-&ECrW!BiQTS2@`[e!\c-%!\c-&ED8`&C/l]H!\c-%!\c-&EC`Pu?r\X>AO/^O4;&2m4;&2m4;&2m4;&2m0H*nQ*[`p0CF;)(BN.]&@74Bb":,tO2d@@,Gs<8Q3Ys%K.ieTo*Y&no4['&W4rk1=EE)uH4;(Ts2@`\KFWOKh2d?Ie0Fe=\/e\Ep.L[$l4=<*NCF;)(BN.](D,+A#"@b0O/O(3^2&HN%2cO'T4VLd%5?nt,*u,\!*u+tk/O(3^2&KRO##6g)##/?#Cdgid"B?0G4]E1V'dH1-'dH.?BLtopE$6Yi'dH1-'dH.?D,*H%E$6Z9Bj;A^4^8b**u,\!*u+tk/O(3^2&KRO##6g)##/?&BhCcc"BA_D0c:ls.iAHo3!`It3#)EdE"<'Q/eVCm/.ra80G>?tE"s!Q4"!!MCF;)(BN.;tBgl;k"@5U4##6g)##/?,@7XZf/JJd+Gp<;&E?6bd##6g)##/?#Db<8e"<fEO##6g)##/?#Cd^`b"<h(o*tB"q4=<*NCF;)(BN.]&@8'rj"B7cbFAG;#FA5.qE#BK(4;AJr4"!!MCF;)(BN.;tBgl;k"@5U4##6g)##/?&BM2&l":,tO2d@jL.9%'B'dH1-'dH.?BM(TmE$6Yi'dH1-'dH.?BLtlpE$6Z%)EJ'(1`7r"##6g)##/?+C.(H^"<h#KF\tG'F\tG'E)dJZ4^8R.4]NL+GmkN%@lPJ?/KG`04?<ZT1d;r].ifEB4:YTs!\c-%!\c-&ED8c"D,i#K!\c-%!\c-&ED8`'CK2fI!\c-%!\c-&EDJl$BN6KFE'QumCeReE0c:ls(_m$)4<5dT0G#'`)@6Wb2A&L]!\c-%!\c-&ED8c"D,i#K!\c-%!\c-&ED8`'CK2fI'GCKY4=hE_A3CqL$5jR41)1W:#!W,"/JB!]'dH1-'dH.?C.U]hE$6Y;5?p,T4<GXkEE)uH4;(U-4<4P52_Pt?'dH1-'dH.?@7WmeE$8LF.N&Hs0G#'4EA/n?!\c-&EC<&gBiQTX'dH1-'dH.?D+R,oE$8LF.N&Hs0G#'4EA/n?!\c-&EC<&gBiQTX'dH1-'dH.?D+R,nE$8LF.N&Hs0G#'4EA/n?!\c-&EC<&gBiQTX'dH1-'dH.?D+R,mE$8Kk2%L9d$kEp]1)1W:.TAAiCF;)(BN.5oDF@boFYG=C!\c-&EC`AoBiQTS$kEp]1)1W:.TAAiCF;)(BN.5oDF@boFYG=C!\c-&EC`AoBN6KR$kEp]1)1W:.TAAiCF;)(BN.5oDF@boFYG=C!\c-&EC`AoCK2fU/fbrKEDf4t$kEp]1)1W:.TAAiCF;)(BN.5oDG+8!FYG=C!\c-&EC`AoBiQTS$kEp]1)1W:.TAAiCF;)(BN.5oDG+8!FYG=C!\c-&EC`AoBN6KR/fbrKEDf4t$kEp]1)1W:.TAAiCF;)(BN.Z,C.qnsFYG=C!\c-&EC`AoBiQTS$kEp]1)1W:.TAAiCF;)(BN.Z,C.qnsFYG=C!\c-&EC`AoBN6KR$kEp]1)1W:.TAAiCF;)(BN.Z,C.qnsFYG=C!\c-&EC`AoCK2fU/fbrKEDf4t$kEp]1)1W:.TAAiCF;)(BN.]&@7jfhFYG=C!\c-&EC`AoBiQTS$kEp]1)1W:.TAAiCF;)(BN.]&@7jfhFYG=C!\c-&EC`AoBN6KR4;&2m4;&2m/.qpi2-_XW!\c-%!\c-&ECEB%@9"a?A3gh02%L9d2@`[q2@*7_@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?DbNJrE$8Kq.pNiL'dH1-'dH.?BLtopE$6Yi'dH1-'dH.?D,*H%E$6Z;A5#r,2],Ku2],Ku2],Ku2],Ku2],g)2],Ku2],gS4<6-k4;%WM3#`H4$5isN.ieTu.o\JjCF;)(BN.9$D,4G$E"Erg3"T%30c:c5&etBX/3tWf3&q$E2[CZ14rI*O3"?Z+.iea#EA/n?!\c-&EC<,iBiQTX'dH1-'dH.?DacoiE$8Ku.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nNE#9N]0H*n)2@^f?.303/!\c-%!\c-&ECEB$C/l]H@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.??qF'b"B?BQGmbQ'1(OKh3Z0S(##6g)##/?!C.Ucb"<fEO##6g)##/?#BM1T_"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.>uDb44uE!REf2dA9L4<GXn0F.n!@kSE1*>o(^EA/n?!\c-&EC<,iBN6KR4:h`%Gs<8Q3Yt!f/Iqkb$5igk4:`6$'dH1-'dH.?Ce-lhE$8Kk2],Ku2],Ku2],g22BNYEGs)0E2B!SF4Z=At&._>d4<6-k4;%WM3#`H4%20BX2&TXP##6g)##/?%?q`mZ"Af^42%L9k(^U0N58>(A&etBr.RlK/)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.])BiQTGA1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q?!\2I%7+Gp>+)'dH1-'dH.??q`s\"<daQ4;(U,3ZT%JE>eie3X?`72cO&i5?o*8/R/Ad.i/F(3$/_l'dH1-'dH.?C/7,pE$6Yi'dH1-'dH.?BMCiqE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?%DG!2e"Af(1//__00c:ls2%pc-2-_";)\Wr&A3V%<3Ys[_3!`b]0H*n"2@*7l+?g_G/R/8`4;(U(2BNYEGocu))\Wr&)EJ'(1`8k-*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%Dad,pG=Y"tF[]J4@7jX'C/8#;Db+.r/IYkb/-Rp?3!_Gh.ifK3E"s!Y3sc?>2B;c?*tB"q4=<*NCF;)(BN.K&Ce\2!"Ao:4.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.DsBhVer"=H/kCF;)(BN.K&Ce\2!"B@*.##6g)##/?#BMC`a"<g<BBM;AA0c:ls.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.??qs*dE$8=G*[`p0CF;)(BN.JuDG+8!"B?$C4^8R0.N)1m5?n=%.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.K&CeS+u"=H/kCF;)(BN.]&?qaii"@5T_3"Q<!GmGAo2d@1.3ZT&)3ti>F$5jQp)EJ'(1`8jp+?g_G/LNM?CF;)(BN.;sDbOG#"=H/kCF;)(BN.E$@8:)l"BIH-.ifK3!\c-%!\c-&ECEB%BiQTGED0J4F\H('/IYkb2B;cO4<4DE*tB"q4B2t(.N)1r2BNYEGmG,s4rF>J4:_E!2]Vl*2A/S(*tB"q4=<*NCF;)(BN.]&@8'rj"B8N%BhUonBhUojC/%f,DG3K!G>:Fr.iAHo3!`It3#)EdE"s!Q)AEb`1-$6W1_gT6)\Wr&EE*qiGs<8Q3YrnC.h3L1$5=3e1/qNf.pP"@4<GY$0Feg64?E`K2]+Fb0H1`34B,T&0c:ls"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#FBM:fmBhUonF\P/#F\bA'BM)H*CfOaF2%L9d"pb?))EJ'(1`7r"##6g)##/?+C.(H^"<h#FBM:fmBhUonF\bG%C.grmDc0&*E)dJZ4^8!s/JT*i2\Q0Y#!4Ik##6g)##/?+BhVer";:u4/KG#u4:!VF.L7%(3!^N52^^RICF;)(BN.K&Ce\2!"Ao:4.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.DsBhVer"=H/kCF;)(BN.K&Ce\2!"B@*.##6g)##/?#BMC`a"<g<BBM;A6.pN/b.i/F(3$/_l'dH1-'dH.?C/7,pE$6Yi'dH1-'dH.?BMCiqE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?%DG!2e"B?BQGmkN%!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ECEB$BiQTGA3gh02%L9d.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.??r'KqE$6Z:591RP4BrI-4^8R.4^8R0.N)2J/IYlW/e\Ep.L[$l4=<*NCF;)(BN.JuCeJ%t"=H/kCF;)(BN.DuDFe%s"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&ED&Z!CfMoVE$mV-CF;)(BN.E$@8:)l"BIH-.ifK3!\c-%!\c-&ECEB%BiQTGED0J8BhVW-E)dJZ4^8R.4]N('4^8R.4^8R.4]N=-3ZT&)/IN-p2_Q-_0G4t($5jR*0,YZE#osZ`@ji9!4qJ<!'dH1-'dH.?CJ7&kE$8<e3"Q<!E!QOM4;'"L.hrs,@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&ECrVrBiQTGA1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nOE#9N]0H*nQ*[`p0CF;)(BN.;sCJ8"t":,tO2d?Ic3"Qp"57&5./JT36EE*ha3ZT&)1)0dO0Fp_h2@^f?.303/!\c-%!\c-&ECEB$C/l]H@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.??qF'b"B?BQGmbQ'1(OKh3Z0S(##6g)##/?!C.Ucb"<fEO##6g)##/?#BM1T_"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.>uDb44uE"Erg3"T%#0b,354?XJs0FACu1)0dO0Fpo)0G4pC0Fe=()AF2&4]FC'CF;)(BN.Ju@7jfhE"s!Q.MN'o2]4IQ/JS<kGmGAo2d?t(.pOT#03fM,GnL]./PlZ[.hrs,(`r_b0,[M14:!VF.N]634WPFW.TB[Y2I%7+Gm[:r.Qq#i##6g)##/?!Cd^N\"B?0G4^8%J'dH1-'dH.?DbEK%E$6Z558>(AEA/n?!\c-&ED&Z!DcJ5Y/JJd+E=NQo2&-o//K#*Z'dH1-'dH.??qj<lE$6Yi'dH1-'dH.??r'KtE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?,Dbihp"BA`1*u+ta$5j$_4:YUg.iAHo3!`It3#)EdE$G>rE=+?P##6g)##/?#Cd^`b"<h(o*tB"q4=<*NCF;)(BN.]&@8'rj"B7cbCJ[DkE![F!0G%2G*[`p0CF;)(BN.;sCJ8"t"@5T_3"Q<!GnUBL2\Q0Y1)0dO0Fq+e2],Ku2],Ku2%L9d"pb?)E=3]t1(OKh3Z0S(##6g)##/?!C.Ucb"<fEO##6g)##/?#BM1T_"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.>uDb44uE)ePE##6g)##/?#Cd^`b"<h(o*tB"q4=<*NCF;)(BN.]&@8'rj"B7cbCeR5mBiSFC2],Ku2],g)2],Ku2],Ku2],g22BNYEGs<5Y2&R2H*"`qj.mYNe3&q$E2[CZ14rI*S2B*;?4B+:&CF;)(BN.?&BhM_qFW(u*.N)M72@p]03X@GM3uJ6*((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.?@7<m_"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I%7+Gp>+)'dH1-'dH.?@7<m_"<daQ4;(U,3ZT%JE>eie3X?`72cO&i5?n:!.i/F(3$/`8%NQQ+*tni$0bkN1EA/n?!\c-&ECrZ'@9"aK2@`\#2@^f?.303/@k/9$/NOg_)AF2&4]FC'CF;)(BN.]-?r\XJ/JJd+GnM&4/f>61EE$0W2@^f?.303/@k/9$/NOg_)AF2&4]FC'CF;)(BN.]-?r\XJE(2Si2]+:W.h;V&0bkN1EA/n?!\c-&ECrSsDH/,XE$mV-CF;)(BN.E$@8:)l"B?$E.N)2J/IYlW/e\Ep.L[$l4=<*NCF;)(BN.JuCeJ%t"=H/kCF;)(BN.DuDFe%s"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&ED&Z!CfMoVE$mV-CF;)(BN.E$@8:)l"BIH-.ifK3!\c-%!\c-&ECEB%BiQTGED0J8BhVW-E)d)H.1dL"3!^*$!\c-%!\c-&ECE<#CK2fI!\c-%!\c-&ECEB$CfMoJ!\c-%!\c-&ED8i#CfMoJ@l5/>2AZrZ4:VDs.o]dY2],Ku2],g)2],Ku2],Ku2],g22BNYEGpiju4W,sa3uJ6/$5jR*0,YZE#osZ`@ji9!4qJ<!'dH1-'dH.?CdgTjE$8<e3"Q<!E$tnl4W,sa3uJ6*((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.?DbNMqE$6Z:%ilK&4BrI-4]M_#3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf4t4VLd%5?o]a!\c-%!\c-&ECrVuCK2fI/JJd+GmkJj2%X!r/.ra80G>?tE"s!Q/e\Ep.L[$l4=<*NCF;)(BN.JuCeJ%t"=H/kCF;)(BN.DuDFe%s"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&ED&Z!CfMo[/IhdcE!REf2cKtc.1dL"3!^*$!\c-%!\c-&ECE<#CK2fI!\c-%!\c-&ECEB$CfMoJ@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?BM:coE$8LZ@l5/>2AZrZ4:VDs.o]dY2],Ku2],g)2],Ku2],Ku2],gS4<6-k4;%WM3#`H4)[QK\2A07J##6g)##/?,@73IT"Af^H2]i#,2A07eE=NQo2&-o//K#*Z'dH1-'dH.??qj<lE$6Yi'dH1-'dH.??r'KtE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?#BhL`a"BA`1&/#$Q1)VGD.gck#EE*S[4]Nj63&q$E2[CZ14rI*=/-l4a2cMb!CF;)(BN.?&Bgc5jFW(8i3X?`72cO'U.iAI#0HV#G4;]_)##6g)##/?+BLG<^"<fEO##6g)##/?+C.1E\"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.Z*C//%uE)fXZ0Fe[K4:VDs.o]dY2],g22BNYEGqKg=4V&e>4rHpN3$&;a'dH1-'dH.?D,3PrE$6Z5)@dJc/M%V>4B+aA$QU5m.P);;4@U\&.2`<k/JA=]'dH1-'dH.?C.UftE$8Kt2BNYEGqKg=4YKA]3#)u9#osZ`@k8?,3#`&'.26#?##6g)##/?%DG!8g"Ah'?CF;)(BN.<%D+n5!E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>;EK2I%7+GmkN%!\c-%!\c-&ED8l!?r\X>!\c-%!\c-&ECrSrDH/,L!\c-%!\c-&EC`Sr@9"a?!\c-%!\c-&ECE;s?r\X>A3g2-//_D'0c:ls$QU5m$:ZBI/N==R3`J($CF;)(BN.8oCJS5"E#BK(4Bs370Gl0?$5igk4:`6$'dH1-'dH.?@73dnE$8Kk2],Ku2],Ku2],g22BNYEGs<8U.6%M?.2X!<2aJbl0Gk$N3#`H4*=a#%4VIo,EA/n?!\c-&ECrVuC/l]Y*=3Ve4;/Vl3$&n@.TJD80FTWI2@L-*/eUo12a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?,CeR5h"<g>o3"Q)pGo7M*E"Erg3"T%5/-m1K4:i))/N<b?4rG:KA1eT(4V&e>4rI*S2B*;?4B+:&CF;)(BN.?&Bgl;kFW(u*.N)M9/-m1K4:i))/N<b?4rG:K@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&EC<K)?r\X>A1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nOE#9N]0H*nQ*[`p0CF;)(BN.Z0@7=Hc":,tO2d?Ic3"Qp"57&5./JT36EE+"_GrlTS)_>5I##6g)##/?&BhL]`"B>F04;(UU*[`p0CF;)(BN.Z+BhVer"@5"0CF;)(BN.5oDb44u4:h`%0H*n94:!i$EA/n?!\c-&ECE>pDcJ5Y/JJd+Gp>+)'dH1-'dH.?@7`jcE$6Z:'dH1-'dH.??r'HoE$5f(.N'61GrlTS)_>5I##6g)##/?&BhL`a"B>F04;(UU*[`p0CF;)(BN.Z+BhVer"@5"0CF;)(BN.5oDb=;!4:h`%0H*n94:!i$EA/n?!\c-&ECrVuDcJ5Y/JJd+Gp>+)'dH1-'dH.?@7`jcE$6Z:'dH1-'dH.?D,*DsE$5f(.N'61GrlTS)_>5I##6g)##/?#BLP?^"B>F04;(UU*[`p0CF;)(BN.Z+BhVer"@5"0CF;)(BN.;tBhr"u4:h`%0H*n94:!i$EA/n?!\c-&ECE2mE$8L'0c:ls#!4Ik##6g)##/?,CeR5h"<g>i##6g)##/?#Cd^ui";r$f4;AJr*Z4r$#uilHCF;)(BN.]+BN6KR/JJd+Gp>+)'dH1-'dH.?@7`jcE$6Z:'dH1-'dH.?BLtosE$5f(.N'61GrlTS)_>5I##6g)##/?&BhLfc"B>F04;(UU*[`p0CF;)(BN.Z+BhVer"@5"0CF;)(BN.5oDa[kp4:h`%0H*n94:!i$EA/n?!\c-&ECiDqD,i#W/JJd+Gp>+)'dH1-'dH.?@7`jcE$6Z:'dH1-'dH.?@7j3c";r$f4;AJr*Z4r$#uilHCF;)(BN.;sDF@boE!REf2d@jY!\c-%!\c-&EC<)kBiQTGA2#N2!\c-&EC`Q!?r\W[2%L9+5?ouK/NtFQ'dH1-'dH.?BMD2uE$8L'0c:ls#!4Ik##6g)##/?,CeR5h"<g>i##6g)##/?&DG3;f";r$f4;AJr*Z4r$#uilHCF;)(BN.;r@74BbE!REf2d@jY!\c-%!\c-&EC<)kBiQTGA2#N2!\c-&EC<,sE$5f(.N)2J*[`p0CF;)(BN.Z+BhVer"@5"0CF;)(BN.]&@81#k4;&2m4;&2t4;&2m4;&2m4;&2t$QU5m.P);;4@V4E/I3:)EA/n?!\c-&ED'#(BiQTX57&5./JT36EE+"_GnM&4GrlTS)_>5I##6g)##/?,@7<RV"B>F04;(U*4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?!Cdgfc"Ah'?CF;)(BN.E#D+%YnFX&\%'dH1-'dH.?@7`jcE$6Z&4;&2m4;&2t$QU5m.P);;4@V4E/I3:)EA/n?!\c-&ECE2kCK2fZ57&5./JT36EE+"_GrlTS)_>5I##6g)##/?,@7<RV"B>F04;(U*49ts"2d?q(4^8g43ZT&)*tA;Y/M%)53Z1L+,S1mp3"T%8.g[44$4%R_4@'K!58+5g##G@g0G7=o49PX[E=NQo2&-o//K#+&%NQQ+*tni$0bkN1EA/n?!\c-&ECE;sBN6KRE$mV-CF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?#BLtH]"B?!AGngrZ0./_ACF;)(BN.5nBhM_q"@,O[?q`seBj:WG4;(U03$&n@!\c-%!\c-&ED8bsCK2fIEB4:>0F/p90HUm&0./_ACF;)(BN.;tBgl;k"B?$C4^8R.4^8U..pOT#+C#orGmkDp.h>l2.g[44#n@sU4B2q$Go@V6Gp?ERGnh5b.30E@.TA);2]E>;2^fCA2&QWk4VLd%5?o*8/R1(9/NtFQ'dH1-'dH.?@73ggE$8L'0c:ls.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?BMCcnE$8="2@fd"0G5$l+B;\Z4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?!Cdgfc"Ah'?CF;)(BN.E#D+%YnFX&\%'dH1-'dH.?@7`jcE$6Z&4;&2m4;&2m4;&2m4;&2t$QU5m.P);;4@U\&.2`<k/JA=]'dH1-'dH.?C/7N&E$8Kt2BNYEGs)0E2D5%3.gRI'0GmA93#)u9#osZ`@ji9!4qJ<!'dH1-'dH.?CemN%E$8<e3"Q<!E'44<2D5%3.gRI'0GmP92a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?%DGEYn"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I%7+Gp>+)'dH1-'dH.?DG*GrE$6YH0c:ls.3B982,k2(2]i#,2A07e0H*n(2%D8m##6g)##/?#BMM8o"<fEO##6g)##/?&DG<Jj"<fEO##6g)##/?,Ce[8h"<fEO##6g)##/?#BLPE`"<fEO##6g)##/?+BLtoj"<g?C591RP4Bqjo4;(U#5?ouK/NtFQ'dH1-'dH.?@73ggE$8L'0c:ls0H*nI2@^Q/CKpiI4;(UU/IYl,*tB"q4=<*NCF;)(BN.]&@8'rj"B8N(D,3i"DGNPpCf!T%Bi79!Cem>tF\tD)Bh_c3BhD'#E)dMX.iB-60HVAA49uN!/JA=]/e\Ep.L[$l4=<*NCF;)(BN.]&?r(&l"=H/kCF;)(BN.JuDFn+t"=H/kCF;)(BN.;sDFIhp"=H/kCF;)(BN.E#D+._o"=H/kCF;)(BN.;tBM2Vp"=H/kCF;)(BN.]&DcJ5ME#BK(4;AJr%MK$W4\o#n0c:ls.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?Ced]'E$8=@4<FP3.o.fO##6g)##/?+C.(H^"<h#FCeRQ&G=>#"Db*u,BM)H0D+d8oBM_i.BLkTeDb<>pCK4XD0FeZp2&-o54W+5(3X?Z:E=3]t1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?&Bh1N^"<fEO##6g)##/?&BhM/m"<fEO##6g)##/?#Db*Sp"<fEO##6g)##/?&DG<Jj"<fEO##6g)##/?+C._bq"B?$C4^8R.4^8R.4^8R.4]N('4^8R.4^8R.4]N=-3ZT&)%1G2t4$b1p0Gk$N3#`H4%20BX2&TXP##6g)##/?'C/.&e"Af^42%L9k%1G2t4%;:@)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.5o?qO]g"@4452$jj^/ef<:4BsB^!\c-%!\c-&EC`Q&DcJ5M4VLd/3#)EdG>2?M5?o]a!\c-%!\c-&EC`Q&DcJ5M/JJd+GngrZ%MK$W4\erX2],LV*[`p0CF;)(BN.5o?qO]g":,tO2d@jL.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGED]&(C.)6)C.UorF\Y5$G=k,$C.U]eF@\\rBMq,pDaZi_E#BK(4;AJr%MK$W4\o#Y2],LV*[`p0CF;)(BN.5o?qO]g":,tO2d@jL.9&5P.ifK3!\c-%!\c-&ECEB%BiQTGED]##BM2N1Bgb9kF\bG-G=4\tBh:TdFA>M,C/RGtCJ.r*4;&2m4;&2m4;&2m4;&2t2%pc-2-_I00Gkf>5!^Ls0Gk$N3#`H4%20BX2&TXP##6g)##/?&BLPWf"Af^42%L9k$QU5m0G5%%((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.??qisfE$6Z:%ilK&4BrI-4]M_#3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf4t4VLd%5?o]a!\c-%!\c-&ECE;rDcJ5M/JJd+GmkJj2%X!r/.ra80G>?tE"s!Q.1c\C'dH1-'dH.?BMCs"E$6Yi'dH1-'dH.?DbEMuE$6Yi'dH1-'dH.?@7`meE$6Yi'dH1-'dH.?BMD2tE$6Yi'dH1-'dH.??qipjE$6Z:A-`AT4Bqjo4;(U(2BNYEGngPp3"cc6A-Y(VCF;)(BN.]'BM2VpFYG=C!\c-&EDJnt@9"aY'dH1-'dH.?C._!"E$8"1##6g)##/?!Db*8g"@kF6CF;)(BN.K%D,";",T7U6Gp?Du.M*=(4^9!:GngG`0Fe=\0Fo!%2])cl4VLd*2BNYEGn:np3!^N52aINS.i/F(3$/_l'dH1-'dH.?C/7,pE$6Yi'dH1-'dH.?BMCiqE$6Z5*u,\!*u+tk/O(3^2&KR*.M*=(4]NL+Gn:np3!^N52d?=j4;(Ts2@`\KFUD(T2d?Ie0Fe=\/e\Ep.L[$l4=<*NCF;)(BN.](D,+A#"@b0O/O(3^2&HN%2cO'T4VLd%5?p&^/KGW5!\c-%!\c-&EC`PuD,i#KE=,tf0c:ls.iAHo3!`It3#)EdE'41;3$05%'dH1-'dH.?DbEMsE$6Z'02O/E!\c-%!\c-&ECE;rDcJ5ME&&"E/N!c>591RP4Bqmr/JT*i2\Q0Y#!4Ik##6g)##/?+BM(T`"<e]rGnM&4GmZ2X##6g)##/?#DbNPk"<e]rGmZ2X##6g)##/?!Ce7#e"<fEO##6g)##/?#Cdgid"<g<BBj<\'+UC4BA-`AT4BrI-4^8R.4^8R.4^8R.4^8R0.N)2;49PX6.R=[K2%L9d4;&2m4;&2t4:h`%GqosN/N!c>591RP4BrI-4^8R.4^8R.4]N=-3ZT&)&eu5o&O@`F0Gk$N3#`H4%20BX2&TXP##6g)##/?#BLP0Y"Af^42%L9k&eu5o&Onhk)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.5nC.2Dl"@4452$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXBN5TPGngrZ#!4Ik##6g)##/?(C/7Pr"<daQ4;(Ts2@`\KFUD(T2d?Ie0Fe=\/e\Ep.L[$l4=<*NCF;)(BN.](D,+A#"@b0O/O(3^2&HN%2cO'T4VLd%5?p&^/KGW5!\c-%!\c-&EC`PuD,i#KE=,tf0c:ls.3B982,k2(2]i#,2A07e.iAHo3!`It3#)EdG>2?S49uo64W"b?.1R:14:V?0E=<ZrFYG=C!\c-&ED8r%BN6KW1`ZQ(!\c-%!\c-&ECrSrC/l]HE!f>`.iB'-',)Aq/Iu)Y0./_ACF;)(BN.K&CeS+u"=H/kCF;)(BN.E$?r(&l"@5FC0./_ACF;)(BN.DsBhVer"=H/kCF;)(BN.Z,C/%tt"@3Y%2%L9d/.qpi2-_%./R0eO!\c-%!\c-&EC`Sr?r\X>2@`[q2@*7s!\c-%!\c-&ED8buBiQTG2@`\$!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HAO/^O4;&2t4;&2m4;&2m4;&2m4;&2m4;&2t2%pc-2-`0H+UC4B%20BX2&St?3#)u9#osZ`@ji9!4qJ<!'dH1-'dH.?BMUljE$8<e3"Q<!E&&"E/N!bl2B*;?4@VCA)AEnq4rFo)57&5./JT36E@M\6//__F49PX6.R>6[2$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXBN5TPGngrZ(E!Vt&.__V0c:ls0H*n(2%D8m##6g)##/?#BMM8o"<fEO##6g)##/?&DG<Jj"<fEO##6g)##/?,Ce[8h"<fEO##6g)##/?#BLPE`"<fEO##6g)##/?+BLtoj"<g?C/IhdcGmGAo2d@@,GmbQ'1(OKh3Z0S(##6g)##/?!C.Ucb"<fEO##6g)##/?#BM1T_"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.K%D,+A#E!REf2d@jL.9'Od2@^f?.303/!\c-%!\c-&EDK)*DH/,L!\c-%!\c-&ED8l$D,i#K@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?C.^`gE$8LZ!\c-%!\c-&ED8`'CK2fIF$DDl3"Z`^'dH1-'dH.??r'HpE$6Z'Bi%)oF\P8&E)dJ\.N'61GmbQ'1(OKh3Z0S(##6g)##/?!C.Ucb"<fEO##6g)##/?#BM1T_"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.K%C.)>kE!REf2d@jL.9'Od2@^f?.303/!\c-%!\c-&EDK)*DH/,L!\c-%!\c-&ED8l$D,i#K@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?C._!#E$8LZ!\c-%!\c-&ED8`'CK2fIF$DDl3"Z`^'dH1-'dH.??r'HpE$6Z'Bi%)oF\P8&E)dJ\.N'61GmbQ'1(OKh3Z0S(##6g)##/?!C.Ucb"<fEO##6g)##/?#BM1T_"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.K%C.2DlE!REf2d@jL.9'Od2@^f?.303/!\c-%!\c-&EDK)*DH/,L!\c-%!\c-&ED8l$D,i#K@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?C._!"E$8LZ!\c-%!\c-&ED8`'CK2fIF$DDl3"Z`^'dH1-'dH.??r'HpE$6Z'Bi%)oF\P8&E)dJ\.N'61GmbQ'1(OKh3Z0S(##6g)##/?!C.Ucb"<fEO##6g)##/?#BM1T_"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.K%D+n5!E!REf2d@jL.9'Od2@^f?.303/!\c-%!\c-&EDK)*DH/,L!\c-%!\c-&ED8l$D,i#K@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?C.^`iE$8LZ!\c-%!\c-&ED8`'CK2fIF$DDl3"Z`^'dH1-'dH.??r'HpE$6Z'Bi%)oF\P8&E)dJ\.N'61GmbQ'1(OKh3Z0S(##6g)##/?!C.Ucb"<fEO##6g)##/?#BM1T_"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.K%D,";"E!REf2d@jL.9'Od2@^f?.303/!\c-%!\c-&EDK)*DH/,L!\c-%!\c-&ED8l$D,i#K@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?C.^`hE$8LZ!\c-%!\c-&ED8`'CK2fIF$DDl3"Z`^'dH1-'dH.??r'HpE$6Z'Bi%)oF\P8&E)dJZ4^8R.4^8R.4^8R.4^8R.4]N=-3ZT&)(^U0N(^h&a4;&5<A1eT(4V&e>4rI*S2B*;?4B+:&CF;)(BN.>uDa[kpFW(u*.N)M9/-m1=/fc#<2]2g&((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.??q<OT"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I%7+Gp>+)'dH1-'dH.??q<OT"<daQ4;(U,3ZT%JE>eie3X?`72cO&p4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?!DbWPj"Ah'?CF;)(BN.5nBh;SoE"3Hn2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&EDJo!DcJ5^'dH1-'dH.?BM(TlE$8Kk2],g)2],Ku2],Ku2],g22BNYEGs<5X3un;W3#`H9%362q!\c-%!\c-&ED8bsBiQTG@m:/!56rM94rIU'E'G9O3un;W3#`H4$5isN.ieTu.o\JjCF;)(BN.8oCJ%krE"Erg3"T$r2]*,G#nRgi4:Xq*2A$]+/M%V>4@URt.if983"-d"'dH1-'dH.?@7j$dE$8=:##6g)##/?&?q<[X"B>[?3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf4t4VLd.3ZT%JE>eie3X?`72cO&n2BNYEGomt@2[DuRGo@V6Gp?8q2d?Ie0Fe=\E>oW&4@V+2/M@\J0,59-EA/n?!\c-&ECE;tBN6KRE(2Vf/M%_?+;k@pEE-9L2I%%,/.qqh3YMN'/QYA.4;&2m0G4p$+Y4H3+;kAd$5igk4:`6$'dH1-'dH.?BMD3%E$8CZE??,82[ES]'dH1-'dH.??q<[iE$8LZ4;&2t4;&2m4;&2t2%pc-2-`!G1d2ip$4%@_/.Y;p2A$]+/M%V>4@URt.if983"-d"'dH1-'dH.??qNm\"Ah'?CF;)(BN.<%D+n5!E"Erg3"T%50G,'//MRhR0bY+)+ttNE!\c-&EC</uE$8=:##6g)##/?!C/./h"9A`@3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf7u4VLd.3ZT%JE>eie3X?`72cO&i5?o]a!\c-%!\c-&ED8l"@9"a?/JJd+Gs*/X)\W3*/KFg,.Rkci/N==R3`J($CF;)(BN.Z+BLH,iE#BK(4Bs`N1d2ip$4%@_/.YK04:!VF.N_nK##6g)##/?&Bgb?]"B?$C4^8R.4]N('4^8R.4]N=-3ZT&)#nR:o0Fn.i+or;b.pOT#03fM,GmkDp.h>lX4rkLF@lk8=$5j$_0HUm"'dH1-'dH.??qimaE$8LZ@lk8=)AF2&4Ur&5EE-9L2I$4`3tMu`'dH1-'dH.?BM(`kE$6Z'#nR:o0Fn.Z0./_ACF;)(BN.;tBgl;k"B?$C4^8g43ZT&)$5jZb3X?<&#nRPP)A<th3!^c24rI*C.h`$j2@CEr'dH1-'dH.?DG*<"E$8=>2%DSQ.L9<64:i))/K#*U2$H`+2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?&BgbB^"<g>o3"Q)pGo7M*E"Erg3"T%J.4c;SA3V"C3un;W3#`H4%20BX2&TXP##6g)##/?"DF?rd"Af^42%L9k%1FKm+@\F%)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.5o?qXch"@4452$jj^.3B982,k2(2]i#,2A07e0H*nQ*[`p0CF;)(BN.5o?qXch":,tO2d?Ok.2`j:Gmb>o/Q?"</IYlW4rkLF@lk8=$5j$_0HUm"'dH1-'dH.??qimaE$8LZ![BK\'dH1-'dH.?DbNi&E$6Yo!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIE![F!0G%1m2@*8E*[`p0CF;)(BN.5o?qXch";r*_Go7M*E#BQ!E"Erg3"T%C.2`p<3!^*P2$F4k)A<th3!^c24rI*S2B*;?4B+:&CF;)(BN.K&Bgl;kFW(u*.N)MG.2`p<3!^*P2$F4f((rP63"cl/4]E%02]i#,2A07P3"Q)pE%_=u3X?H:4=h<f.R>6[2$jj^.iAHo3!`It3#)EdG>2?W2@^f?.303/!\c-%!\c-&ED8c"DcJ5M!\c-%!\c-&ECE2jE$6Z:EE!SQ1`9%64:!;=.gd9s4B+:&CF;)(BN.](D,";"E)fXZ0G4pC0Fe=()AF2&4]EpW!\c-%!\c-&ECrW'BN6KFE)ePE##6g)##/?#BMCrg"<fEO##6g)##/?!Ce7#e"<ddT/JT*i$4ILH/KFfq#nROWA3gh02%L9d/e\Ep.L[$l4=<*NCF;)(BN.E#Db=;!"=H/kCF;)(BN.]+C/l]HA.0:e!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&EDJl$BiQTG4;&2t2%pc-2-`!G1bfRY0bY*G.h`$j2@CF0)A<th3!^c24rI*C.h`$j2@CEr'dH1-'dH.?@73gfE$8=-0G,'//MRhR0bY*j(_mo@49uo84ZEWS.2X!<2b#k<)AEnq4rFo)57&5./JT36E@M\6//__;)\EYu0bY+)%ilK&4BrI-4]N=-3ZT&)(_mo@49uo84X_6P4qJ<4)A<th3!^c24rI*S2B*;?4B+:&CF;)(BN.E!DG"1uFW(u*.N)M90G-;L/JK-/%20BX2&T.?2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?#BMD/m"<g>o3"Q)pGo7M*E!R0i1+,%DCF;)(BN.5o?r(&l"B6!L2]i#,2A07e/ef<:4Bqsi0F1oU4VLd%5?o]a!\c-%!\c-&ED8l"@9"a?3"cci(d8fA/JK-/A3i1;CF;)(BN.Z)@9"`m0c:ls58+5g##G@g0G7=u3#)W/EE!SQ1`9%64:!;=.gd9s4B+:&CF;)(BN.](D,";"E)fXY4:!2C3!Bm+.TB\G4VLd%5?n7L'dH1-'dH.?DbEK%E$6Z:A0Wli'dH1-'dH.?DbNi&E$6Y32],L/!\c-%!\c-&ECrSqC/l]H-U@kG.jm;=CF;)(BN.;tCJS5"":,tO2dA?O/.W=K2@iAP0./_ACF;)(BN.DuBMMhs"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&ED8r%BiQTSE$mV-CF;)(BN.K&Ce\2!";r*_Go7M*Go7M*Go7M*Go7M*E!R0i1+,%DCF;)(BN.5o?r(&l"B6!L2]i#,2A07e/ef<:4Bqsi0F1oU4VLd%5?o]a!\c-%!\c-&ED8l"@9"a?3"cci(d8fA/JK-/A3i1;CF;)(BN.JuCJ8"t/JJd+Gn:np3"T%A3!:oB.L6au3Z1L!3!^K`'dH1-'dH.?DbEMqE$6Y62@`\KFUD(T2d?Ie0Fe=\E>oW&4@V+2/M@\J0,59-EA/n?!\c-&ECE;tBN6KRE(2Vf/M%_?+;k@pEE-9L2I%7+GmZ2X##6g)##/?&DG3bs"<e+Y.1c\C'dH1-'dH.?DbEK%E$6Y32],L/!\c-%!\c-&ECrSqC/l]H-U@kG.jm;=CF;)(BN.;tCJS5"":,tO2d@1.3ZT&)*>Jeq3"d#3A-u'Z0Fn-b2]iVX.h`dC0c^H"3X?<0E=<Zr!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KFE"s!Q*>Jeq3"d#3AMFo=*>Jeq3"d#3GmGAo2dA?E+ZLJR/KG`04@(Y..L6au3Z1mL2@0Tm#nmPME=+?P##6g)##/?#BMCrg"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.DsBhVerE)ePE##6g)##/?!Ce7&f"<e?d4^8R.4^8R.4^8R.4^8R.4^8R.4]N=-3ZT&)(_mo23"\_)2A$]+/M%V>4@UG%4rY=CEA/n?!\c-&ECiVt@9"aP591RP4B46G1d;]b@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&ED8c"DH/,LA1A<)//_Ck2],g:3"I)j'dH1-'dH.?D,*f%E$6Z'57&5./JT36EE*)K0G"g`/fbrKEDf4t4VLd%5?o]a!\c-%!\c-&ED8c"DH/,L/JJd+GmkJj2%X!r/.ra80G>?tE"Erg3"T$h3"Z`73'dWT.i/F(3$/_l'dH1-'dH.?@7igX"<eQl2@gB2/IWHt+;kAi57&5./JT36EE*ha3ZT&)4V\2<A.]Om0deqCCF;)(BN.;tBMVnt":uLP3"T%*3"?T+/O:9^2-^b&.pOT#03fM,GnL]./PlQ\+@\-k/M%_?+;k@pEE*PYGngrZ0*4]Y2%ES%0c:ls0H*n*!\c-%!\c-&ED8l"CK2fI3"ccq0./_ACF;)(BN.DuBMMhs"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&ECrSuBN6KR3"ccq#!4Ik##6g)##/?#Db<Ah"<eKh4^8%J'dH1-'dH.?BMComE$6Yi'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BLtopE$6Z9BiSFT0c:ls2%pc-2-`-C5!`Eg!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ECrSuBN6KF!\c-%!\c-&EDJl$BN6KFF:8uu!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ECrSuBN6KF!\c-%!\c-&EDJl$BN6KFE$mV-CF;)(BN.DuBLlDm";MP:'HIio4V\2<GmGAo2d?n$.L8Tu3#bg53"?T+/O9G*4;&2m4;&2m4;&2m4;&2m.iA=&.hYet3"?T+/R/ks4^80q.2`j:Gmb>o/Q?!U3"Z`73%$[JCF;)(BN.E$@8:)l"@4sm.ifK3!\c-%!\c-&ECEB%BiQTGE?>o*4:W)c'dH1-'dH.?BLtlpE$6Yi'dH1-'dH.?C.U]hE$6Z+E??#+.N&I-.1d444:YUgE$mV-CF;)(BN.DuBMMhs"=H/kCF;)(BN.DsBhVer"=H/kCF;)(BN.K&Ce\2!"B>I3/JT*i#!4Ik##6g)##/?#Db<Ah"<g?C591RP4BrI-4]N('4^8R.4^8R.4]OEL1`dAJ#osZ`@kSE-4:W)B2@`tF##6g)##/?!D,4G$E"Erg3"T%=2]=[`2]#%.2A$]+/M%V>4@UG%4rY=CEA/n?!\c-&ED8r)C/l]Y591RP4B4NR5;=/f1.F>7)AEnq4rFo)57&5./JT36E@M\6//__C2]=OS2&-)u4:b"@3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>;EK2I%7+Gr6KD(`jM$/JSj/GmGAo2d?Ic3"Qp"57&5./JT36EE+"_GnM&4GmkN%!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.??qs-pE$8L'0c:ls2%pc-2-^k!0G#6@+@-29.1dL"3!^*$!\c-%!\c-&ED9,(D,i#K!\c-%!\c-&ECE>p@9"a?@m:e=2]5jm3#`kK0F/+I'dH1-'dH.?DbEK%E$6Z:'dH1-'dH.??qs-pE$5r!0G#6@+=B-2CF;)(BN.E#BhVer"@3/$.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.DsBhVer";r*_Go7M*E#BK(4Brm1GmkN%!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.??qs-pE$8L'0c:ls.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.??qs-pE$6Z5*>o(u.h`@bE#BQ!Go7M*Go7M*Go7M*E"Erg3"T%=2]=C[4:W#CA3V"C3un;W3#`H4%20BX2&TXP##6g)##/?'C/.,g"Af^42%L9k&/#U&2]2f&+@\F%)AEnq4rFo)57&5./JT36E@M\6//__#2]=C[4:W#CA1A<)//_Co5?oB62$jj^/JJd+GoI>3&/#T_2\c<2#!E_/2&-*0EA/n?!\c-&ED8buC/l]Y0G5!F2]2f&+B9!_4^8R.4]N=-3ZT&)&/#U02@]ao)A<th3!^c24rI*S2B*;?4B+:&CF;)(BN.]+D,i#\591RP4B4NR5;*rf/4M]1)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.]'BLQ2j"@4452$jj^0H*nJ3"Q)pGmGAo2d@"#/N"FM0G5BB+<r`E0G#6@+B1<_CF;)(BN.;tCJ8"tFX&\%'dH1-'dH.??qs-oE$6Z&4;&2m4;&2t2%pc-2-`9R5;O&dA3V"C3un;W3#`H4%20BX2&TXP##6g)##/?"DF?ue"Af^42%L9k&/#U,3tG(;2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?'C/.Gp"<g>o3"Q)pGngrZ%ilK&4Bqjo4;(Tr4:"(Z58>(D/HmXK3u&S>/HoB4##6g)##/?&BhUic"AgTo!\c-%!\c-&ECiYt@9"a?E#BQ!Go7M*E'G9O3un;W3#`H4$5isN.ieTu.o\JjCF;)(BN.8s?qFWfE"Erg3"T%@2E`&j%2fljA3V"C3un;W3#`H4%20BX2&TXP##6g)##/?,@7<XX"Af^42%L9k(DAY51aiq;1e'P9)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.Du?qO]g"@4452$jj^4;&2t2%pc-2-`!=3Z/&:(_@N&A3V"C3un;W3#`H4%20BX2&TXP##6g)##/?+Db44uFW(u*.N)M93ZeqI/Njp]+@\F%)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.Z+BLQ2j"@4452$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXBN5TPGngrZ#!4Ik##6g)##/?,Ce[Vr"<daQ4;(U,3ZT%JE>eie3X?`72cO&d2@`\KFUD(T2d?Ie0Fe=\.1cqk*Z4r#0bkN1.iB6uE)dGXGngrZ0./_ACF;)(BN.;tBgl;k"9M..2%D8m##6g)##/?&DG3bs"<eKh4]DJc*u,\!*u+tk/O(3^2&KRO##6g)##/?!Ce7#e"B?0G4^8%k*u,\!*u+tk/O(3^2&KRO##6g)##/?#C.q#f"BA_D0c:m&E=NQo2&-o//K#+&%NQQ+*tni$0bkN1EA/n?!\c-&ECE;sBN6KRE(2&R0F0EB.mG!\2&KRO##6g)##/?#Cdh#i"BA`1&/#$Q1)VGD.gck#EA/n?!\c-&EC<)j?r\XO0./_ACF;)(BN.;tBgl;k"B?$C4^8R.4^8R.4]N('4^8R.4^8R.4]OEL1`dAJ#osZ`@kSE-4:W)B2@`tF##6g)##/?!D+IqrE#J`d3X?`72d@@72\d0&/JK375#hdk/I;UjGmGAs2]G=p2\d/s4;&2m2%pc-2-^b02]i#,2A/t$2@19,E=uOh49ts"2d@4%/JKik##6g)##/?(C.L`b"<h"d2A-$#3uJ5q2cX3ZCfM&V4^:#`1`d5@A.]Om0deqCCF;)(BN.E#Bh2Mn"B7fcBM:fmBhUoe*"N0.2$HPT/.ra80G>?tE#KZ-Gp?E+Gnh5b2]3#?FW2&*4=<*NCF;)(BN.](D,";""@b0O/O(3^2&HN%2cO&f2I$@b3"Qp"57&5./JT36EE+"_GnM&4GngPn0G%J(!\c-%!\c-&ED8l"CK2fIE!REf2d@@,Gq9d6+;kA1.L]8m0c:ls0H*n"2@*7h.M<a4E=+?P##6g)##/?#BMCrg"<fEO##6g)##/?&DG!>i"<h%P2],L'2@*7s!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ECrSuBN6KF@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.??qs0iE$8CZ(C:r[4:YX50c:ls2%pc-2-^n(2%W>/2\,li2]iVk'dH1-'dH.??r'HpE$6Z''dH1-'dH.?C/7N-E$8<u!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ECrSuBN6KFE#p#12((@GCF;)(BN.;tBgl;k"@5"0CF;)(BN.]'CJ8"tG>^I;1`d5@Godt:2((@GCF;)(BN.]+DcJ5MA1A/k/JA=b!\c-%!\c-&ECEB%BiQTGED0J4F\H'A0G#'\'dH1-'dH.?DbEPtE$6Z:$of7;CF;)(CF;)(BN.]&@8'rj"B7fcCJ7,lBM_2tE#p#12((@GCF;)(BN.]'CJA(u"@3)K'dH1-'dH.?BMComE$6Yi'dH1-'dH.?DbEDpE$6Y20G#'\'dH1-'dH.?DbNi%E$6Z:/IhdcGn:np3"T$u3"Za/&/#3a3"d#3!\c-%!\c-&ECEB%BiQTGEA/n?!\c-&ED8l*DH/,]3u&SCE"Wlq4=<*NCF;)(BN.;tDbaS%"@4aO/.jNg##6g)##/?&DG!Aj"<fEO##6g)##/?&DG!Dk"<eZb1`7r"##6g)##/?!Db*Aj"<g>i##6g)##/?#Db<\q";2FZ4=<*NCF;)(BN.;s@8C/m"@3#"//_Cr3"Z`^'dH1-'dH.?DbEQ!E$6Z:0./_ACF;)(BN.;tBgl;k"B&Dr'dH1-'dH.?D+R/tE$8CZE=Np'2],dm.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?DbEDpE$6Yi'dH1-'dH.?C.U]hE$6Z*0./_ACF;)(BN.DuBMMhs"=H/kCF;)(BN.;tDbXM$"=H/kCF;)(BN.K&Ce\2!"B@*.##6g)##/?#BMC`a"<guGE)Kjm##6g)##/?#@89*\"BA_:3"Z`^'dH1-'dH.?DbEPtE$6Z:$of7;CF;)(CF;)(BN.]&@8'rj"B7fcBi%5oBiQ&Q1`7r"##6g)##/?%DG*Ai"<g>i##6g)##/?+D+mYr";2FZ4=<*NCF;)(BN.9$D+S"s"@5ID2]Wb?!\c-%!\c-&ECil+DcJ5MA5Y]\0H*n*!\c-%!\c-&ECrSqC/l]HA3g>/.jm;=CF;)(BN.;tCJS5"":,tO2d@7&1`7r"##6g)##/?,CedAj"<g>Z2@pf>C*tu'CF;)(BN.]&@8'rj"B7cbBi%9"D,h/Y.N)1p3"Z`^'dH1-'dH.?@7`peE$6Z:)A<qr.o.fO##6g)##/?+C.(H^"<h#ICe7`-F\H'F2],Ku2%L9d0H*n*!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ECrSuBN6KF@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.??qs0iE$8CZ(C:r[4:YX50c:ls0./_ACF;)(BN.DuBMMhs"=H/kCF;)(BN.;tDbXM$"=H/kCF;)(BN.]'CJ8"tG>^I;1`d5@"=H/kCF;)(BN.Du?qXch"=H/kCF;)(BN.;tCJ.qs"@3)K'dH1-'dH.?DbEMrE$6Yi'dH1-'dH.?D,*f0E$6Yi'dH1-'dH.?D,*H%E$6Z)G>pOaCF;)(BN.]-BM;\qG>_Z\!\c-%!\c-&ECrSs?r\X>G>_[!##6g)##/?+D,!Dj"B&Dr.h_pm4]GZ"2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?&DG!>i"<fEO##6g)##/?!Ce7&f"<gn_!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ECrSuBN6KF!\c-%!\c-&EDJl$BN6KFE$mV-CF;)(BN.DuBLlDm"B.f_G>_[!##6g)##/?!C.(cg"B&Dr.h_pm4]GZ$!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&EDJl$BiQTG!\c-%!\c-&ED8`&C/l]HF%o&$E)Qft'dH1-'dH.?BMComE$6Yi'dH1-'dH.?C.U]iE$6Yi'dH1-'dH.?BMCcsE$6Z&G>^C_CF;)(BN.5tBLuJnE)g19E)dJZ4^8R.4^8R0.N)1m5?n7L'dH1-'dH.?BMComE$6Yi'dH1-'dH.?DbEDpE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?+CJI8i"B&DT/.iX%.ocQW4;(m6!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ECrSuBN6KF@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.??qs0iE$8CZ(C:r[4:YXh@lP&3/Ii^<EE*S[4^8R.4^8R.4^8R.4]N('4^8R.4^9rT3ZS2-2A._U.7"R^2]i#,2A07e58+5g##G@g0G7=o49PX[/e\Ep.L[$l4=<*NCF;)(BN.JuCeJ%t"=H/kCF;)(BN.DuDFe%s"@b0O/O(3^2&HN%2cO&f2I$@b3"Qp"57&5./JT36EE+"_Gr5g;3"ccL$7o-m0c:ls0H*n*!\c-%!\c-&ECrSs?r\X>-UB^SCF;)(BN.]-BMDbr/JJd+GngrZ2\Q0Y01I](2]+:W.h;V&0bkN1EA/n?!\c-&ECE>oBiQTS/JJd+Gn:np3"T$i0G#(-&/#3a3"d#3!\c-%!\c-&ECEB%BiQTGEA/n?!\c-&EDK)/@9"aP03&bp2%VDo##6g)##/?&DG3bs"<g>i##6g)##/?+CJI8i"<JQo2((@GCF;)(BN.]+DcJ5MA1A/k/JA=b!\c-%!\c-&ECEB%BiQTGED0J4F\H'A0G#'\'dH1-'dH.?DbEPtE$6Z:$of7;CF;)(CF;)(BN.]&@8'rj"B7fcCJ7,lBM_2tE#p#12((@GCF;)(BN.]'CJA(u"@3)V3u&SC!\c-%!\c-&ECrW'CK2fIA-`AT4Br^33ZT&)2]Wb?A2P8:/KG`04=<*NCF;)(BN.]&@8'rj"B7?CCF;)(BN.Du?qXchFWMP62,tOr1`7r"##6g)##/?&DG!Aj"<g>`2[L?]'dH1-'dH.?DbEDoE$6Yi'dH1-'dH.?DbEDnE$6Y>3"Z`^'dH1-'dH.?C.^`fE$6Z:'dH1-'dH.?BM(TqE$6,$1`7r"##6g)##/?&BgbH`"<g>Q.gZeT2]Wb?!\c-%!\c-&ECrSqBN6KFA192>1eo\W##6g)##/?+C.(H^"<h#JF\Gn8F\H'M3"Z`^'dH1-'dH.?DG*>qE$6Z:'dH1-'dH.??q<[hE$6,$1`7r"##6g)##/?'?q<RU"<g?7GnLi%4=<*NCF;)(BN.9$D+\(t"@63lGnLi%4=<*NCF;)(BN.Z+CJ8"t"@4sT2%p0j!\c-%!\c-&ECE;qD,i#KECEPsCIpukCIpuf4:h`%GmZ2X##6g)##/?+CJI8i"<fEO##6g)##/?#BLP9\"<fEO##6g)##/?&DGEPk"<g>O!\c-%!\c-&ECrSs?r\X>G>_[!##6g)##/?(Ce[/e"B&Dr.h_pm4]GZ"2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?&DG!>i"<fEO##6g)##/?!Ce7&f"<gn_!\c-%!\c-&EDJl$BN6KFE$mV-CF;)(BN.DuBLlDm"B.f_G>^C_CF;)(BN.E)CIqeqE)dJZ4^8R.4^8R0.N)1m5?n7m*u,\!*u+tk/O(3^2&KRO##6g)##/?+CJI8i"B>F04;(m6@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.??qs0iE$8LZ@lP&3/Ii^<EE*S[4^8R.4^8R.4]N('4^8R.4^9ZF00'7NA/YIX3X?`72cO&d2@`\KFUD(T2d@7*+UD0a2@^f?.303/@lk8=)AF2&4Ur&5EE*PYGmkJj2%X!r/.ra80G>?tE"s!Q*>nnc2*(pW0F0Be$![H<4;(U#5?nF0.hrs*!\c-%!\c-&ECrSrCfMoJE=+?P##6g)##/?&DG3bs"<gl###6g)##/?(CILZa"B>F04;(U#5?o*8/R/?:'dH1-'dH.?BM(ZjE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?+CJI8i"B&DT/.iX%.ocQW4;(U(2BNYEGodt:2*jA7.L6au3Z0S(##6g)##/?+C.(H^"<h#'##6g)##/?!C.(`f"Af.Z'dH1-'dH.?BM(ZjE$6Z&3u&SC!\c-%!\c-&ECrSs?r\X>A2#N2!\c-&ECE>oBiQTVG;91/3uJ5i3u&SC!\c-%!\c-&ECE2oE$6Z:%iH0"2@`5:'dH1-'dH.??r'HpE$6Z'Bi%5oBiPoU2%VDo##6g)##/?&DGEVm"<g>p*>KGh!\c-%!\c-&ECEB%BiQTGED9P4BhVW,F\bCt3u&SC!\c-%!\c-&ECE>oBN6KFA-stC##6g)##/?#DbNSl"<eNf2%VDo##6g)##/?&BgbE_"<g>Q.gZeT2%pc-2-_%$1`8k72\,li2]iVk'dH1-'dH.??r'HpE$6Z''dH1-'dH.?BMD3#E$8<a0G#'n2]Wb?!\c-%!\c-&ECrSuCK2fIA2tPD1ab7FCF;)(BN.;tDbaS%"=H/kCF;)(BN.;tDbjY&";2FZ4=<*NCF;)(BN.K%D,4G$"@5"0CF;)(BN.E#Da[kp2]Wb?!\c-%!\c-&ECrW'C/l]HA-`AT4Brd+1`7r"##6g)##/?&DGEVm"<g>p*>KGh!\c-%!\c-&ECEB%BiQTGED9P6F\Pt:E"Wlq4=<*NCF;)(BN.>uDG4>""@5"0CF;)(BN.]-Bgl;k2]Wb?!\c-%!\c-&ECil+CfMoJA5-#43"Z`^'dH1-'dH.?CdgThE$6Z:G=baC3"Z`^'dH1-'dH.?@7`peE$6Z:)A<qr.o.fO##6g)##/?+BM1T_"<h#ICe7`+Ce7`+Ce7nA3"Z`^'dH1-'dH.?DbEQ!E$6Z:0./_ACF;)(BN.;tBgl;k"B&Dr'dH1-'dH.?D+R/tE$8CZE=Np'2],dm.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?DbEDpE$6Yi'dH1-'dH.?C.U]hE$6Z*0./_ACF;)(BN.E#Bh_ks"=H/kCF;)(BN.K&Ce\2!"B@*.##6g)##/?#BMC`a"<guGE)Kjm##6g)##/?#@89*\"BA_32%L9d0./_ACF;)(BN.E#Bh_ks"=H/kCF;)(BN.]'CJ8"tG>^I;1`d5@"=H/kCF;)(BN.Du?qXch"=H/kCF;)(BN.;tCJ.qs"@5"0CF;)(BN.5tBM)PoG>_Z\!\c-%!\c-&ECrSs?r\X>G>_[!##6g)##/?(Ce[8h"B&Dr'dH1-'dH.?D+R/tE$8CZE=Np'2],dm.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?DbEDpE$6Yi'dH1-'dH.?C.U]hE$6Z*0./_ACF;)(BN.E#Bh_ks"=H/kCF;)(BN.K&Ce\2!"B@*.##6g)##/?#BMC`a"<guGE)Kjm##6g)##/?#@89*\"BA`"E#BQ!Go7M*Go7G14Brm1GmZ2X##6g)##/?#DbNSl"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.]'CJ8"tG>^I;1`d5@E!REf2cKi<'dH1-'dH.?BM(ZjE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?+CJI8i"B&DT/.iX%.ofkX*>o(u.h`@bE#BQ!Go7M*Go7M*E#BQ!Go7M*Go@M./f=j?.L\lP/.ra80G>?tE#KZ-Gp?E+Gnh5b.30E@.T?KY.i/F(3$/`8*Z4r#0bkN1.iB6uE)dGXGmkJj2%X!r/.ra80G>?tE"s!Q0./_ACF;)(BN.;tBgl;k"@5U4##6g)##/?+BLGNd";:u,0./_ACF;)(BN.;tBgl;k"@5U4##6g)##/?+BLG3[":,tO2d@@,GrccN/f=j?$7o-m0c:ls0H*n"2@*7s@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.??qs0iE$8CZ(C:r[4:YX50c:ls2%pc-2-^n(2%W>/2\,li2]iVk'dH1-'dH.??r'HpE$6Z''dH1-'dH.?C/7N-E$8<uE#p#12((@GCF;)(BN.;tBgl;k"@5"0CF;)(BN.]'CJ8"tG>^I;1`d5@Godt:2((@GCF;)(BN.]+DcJ5MA1A/k/JA=b!\c-%!\c-&ECEB%BiQTGED0J4F\H'A0G#'\'dH1-'dH.?DbEPtE$6Z:$of7;CF;)(CF;)(BN.]&@8'rj"B7fcCJ7,lBM_2tE#p#12((@GCF;)(BN.]'CJA(u"@3)V3u&SC!\c-%!\c-&ECrW'CK2fIA-`AT4Br^33ZT&)2]Wb?A2P8:/KG`04=<*NCF;)(BN.]&@8'rj"B7?CCF;)(BN.Du?qXchFWMP62,tOr1`7r"##6g)##/?&DG!Aj"<g>`2[L?]'dH1-'dH.?DbEDoE$6Yi'dH1-'dH.?DbEDnE$6Y>3"Z`^'dH1-'dH.?C.^`fE$6Z:'dH1-'dH.?BM(TqE$6,$1`7r"##6g)##/?&BgbH`"<g>Q.gZeT2]Wb?!\c-%!\c-&ECrSqBN6KFA192>1eo\W##6g)##/?+C.(H^"<h#JF\Gn8F\H'M3"Z`^'dH1-'dH.?DG*>qE$6Z:'dH1-'dH.??q<[hE$6,$1`7r"##6g)##/?'?q<RU"<g?7GnLi%4=<*NCF;)(BN.9$D+\(t"@63lGnLi%4=<*NCF;)(BN.Z+CJ8"t"@4sT2%p0j!\c-%!\c-&ECE;qD,i#KEC<JrCJ@&iCIpuf0H*n*!\c-%!\c-&ECrSs?r\X>A3i1;CF;)(BN.](@7sli/JJd+GnLi%4=<*NCF;)(BN.;tCJ.qs"@5"0CF;)(BN.Ju?qaiiG>_ZX2@19,EE!&O.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.;tDbXM$"=H/kCF;)(BN.K&Ce\2!"Ao4['dH1-'dH.?C.U]hE$6Z&!\c-%!\c-&ED8l"D,i#KG#)C<G;(OE!\c-&ED9,(CfMoV2]Wb?!\c-%!\c-&EC<)iBiQTGA3V"D2@`5:'dH1-'dH.??qj!iE$6Z'@743pBLl6&Cee7?2],L$5?n7L'dH1-'dH.?DbEK%E$6Z:A2#N2!\c-&ECE<#@9"`m0c:ls2]Wb?!\c-%!\c-&ECrSqDH/,LA2#N2!\c-&ECrW'D,i#ZG>nbT/.rLeE=<Zr!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ECrSuBN6KF!\c-%!\c-&EDJl$BN6KFF:'ZS##6g)##/?!Ce7&f"<h&1'dH1-'dH.?BMCosE$6Z(C/nG3'dH1-'dH.?BLG<jE$8Kr3"Z`^'dH1-'dH.?@7`peE$6Z:)A<qr.o.fO##6g)##/?+BM1T_"<h#S@8KEkD,<]&CK1rU4^8R0.N)2#!\c-%!\c-&ECE>oBiQTVG;91/3uJ5d!\c-%!\c-&ED8l*DH/,L!\c-%!\c-&ECrSqDH/,LA-stC##6g)##/?&DG3bs"<grCEA/n?!\c-&EC`AnD,i#ZG>nbT/.rLeE=<Zr!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ECrSuBN6KF!\c-%!\c-&EDJl$BN6KFF:'ZS##6g)##/?!Ce7&f"<h&1'dH1-'dH.?BMCosE$6Z(C/nG3'dH1-'dH.?BLG<jE$8LZ4;&2m4:h`%GngrZ01I](2]+:W.h;V&0bkN1EA/n?!\c-&ECE>oBiQTVG;91/3uJ5p/JJd+E=,Ge0G4pC0Fe=()AF2&4]FC'CF;)(BN.]'CJ8"tG>^I;1`d5@E)fX\4:_E(2?d>X4;&2m4;&2m4;&2m4;&2t4;&2m4;&2m*"!8e/N!bD3"ccL.L\lP/.ra80G>?tE#KZ-Gp?E+Gnh5b.30E@.T?KY.i/F(3$/_l'dH1-'dH.?C/7,pE$6Yi'dH1-'dH.?BMCiqE$6Z5*Z4r#0bkN1.iB6uE)dGXGmkJj2%X!r/.ra80G>?tE"s!Q*"N0!0,YZE&.]TZ2],L10c:ls0H*n*!\c-%!\c-&ECrSs?r\X>A3i1;CF;)(BN.]-DcJ4p.pN-8'dH1-'dH.?DbEK%E$6Z:A2#N2!\c-&ECrZ'CfMnm.pN-8'dH1-'dH.?DbEK%E$6Z:A2#N2!\c-&ED&Z!CfMo#0c:ls0H*n"2@*7s@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.??qs0iE$8L'0c:ls2%pc-2-^n(2%W>/2\,li2]iVk'dH1-'dH.??r'HpE$6Z''dH1-'dH.?C/7N-E$8<uE#p#12((@GCF;)(BN.;tBgl;k"@5"0CF;)(BN.]'CJ8"t3u&SC!\c-%!\c-&ECE2oE$6Z:%iH0"2@`5:'dH1-'dH.??r'HpE$6Z'Bi%5oBiPoU2%VDo##6g)##/?&DGEVm"<g>p*>KGh!\c-%!\c-&ECEB%BiQTGED9P4BhVW,F\bCt3u&SC!\c-%!\c-&ECE>oBN6KFA-u9:0G#'\'dH1-'dH.?DbNi%E$6Z:/IhdcGn:np3"T$u3"Za/&/#3a3"d#3!\c-%!\c-&ECEB%BiQTGEA/n?!\c-&ED8l*DH/,]3u&SCE"Wlq4=<*NCF;)(BN.;tDbaS%"@5"0CF;)(BN.;tDbjY&2]Wb?!\c-%!\c-&EDJo&C/l]HA2#N2!\c-&ED8c"@9"`c3"Z`^'dH1-'dH.?DbNi$E$6Z:/IhdcGnLi%4=<*NCF;)(BN.;tCJA(u"@41Y0G-c6'dH1-'dH.??r'HpE$6Z'BM_)mBM_)h2]Wb?!\c-%!\c-&ED&YuBiQTGA2#N2!\c-&ECE,k?r\Wb3"Z`^'dH1-'dH.?CdgTiE$6Z:BNuGW1`7r"##6g)##/?'?q<UV"<g?2Cg7k[1`7r"##6g)##/?,CedAj"<g>Z2@pf>C*tu'CF;)(BN.](DFe%s"B8&nF\Y2&F\Y2&E#BK(4BqqI'dH1-'dH.??qs0iE$6Yi'dH1-'dH.?BMD3#E$6Yi'dH1-'dH.?DbEQ!E$6Z:0./_ACF;)(BN.;tBgl;k"B&Dr'dH1-'dH.?D+R/tE$8CZE=Np'2],dm.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?DbEDpE$6Yi'dH1-'dH.?C.U]hE$6Z*0./_ACF;)(BN.K&Ce\2!"B@*.##6g)##/?#BMC`a"<guGE)Kjm##6g)##/?#@89*\"BA_32],Ku2],Ku2%L9+5?n7m*u,\!*u+tk/O(3^2&KRO##6g)##/?+CJI8i"B>F04;(m6@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.??qs0iE$8LZ@lP&3/Ii^<EE*S[4^8R.4]N('4^8R.4^8X)3"@YS.7"R^2]i#,2A07e58+5g##G@g0G7=u3#)W/E=3]t1(OKh3Z0S(##6g)##/?+C.1Wb"<fEO##6g)##/?!C.glc"<gMc4:!VF.N]634WPFW.TB\G4VLd.3ZT%JE>eie3X?`72cO&i5?oos#s/_#.pN&^4;(U#5?n7L'dH1-'dH.?DbEK%E$6Z:A2#N2!\c-&ECrSsDH/+e2],L/!\c-%!\c-&EDJl$DcJ5MA3hpZ/.jNg##6g)##/?!Ce6rc"<fEO##6g)##/?&DG!/d"<daQ4;(U#5?o*8/R/?[*u,\!*u+tk/O(3^2&KRO##6g)##/?+CJI8i"B>F04;(U(2BNYEGodt:2*jA7.L6au3Z0S(##6g)##/?+C.(H^"<h#'##6g)##/?!C.(`f"Af.l3u&SC!\c-%!\c-&ECrSs?r\X>A2#N2!\c-&ECE>oBiQS_0G#'\'dH1-'dH.??qNaX"<g>o4<FP3.o.fO##6g)##/?+C.(H^"<h#KF\Pt:E#p#12((@GCF;)(BN.;tCJA(u"@41Y0G-c6'dH1-'dH.??r'HpE$6Z'BM_/sBi%5oC.qn60G#'\'dH1-'dH.??qs0hE$6Z:03f8"2%VDo##6g)##/?&BgbE_"<g>Q.gZeT2%pc-2-_%$1`8k72\,li2]iVk'dH1-'dH.??r'HpE$6Z''dH1-'dH.?BMD3#E$8<a0G#'n2]Wb?!\c-%!\c-&ECrSuCK2fIA2#N2!\c-&ECrSuC/l\l3"Z`^'dH1-'dH.?C.^`fE$6Z:'dH1-'dH.?BM(TqE$6,$1`7r"##6g)##/?&BgbH`"<g>Q.gZeT2]Wb?!\c-%!\c-&ECrSqBN6KFA192>1eo\W##6g)##/?+C.(H^"<h#JF\Gn8F\H'M3"Z`^'dH1-'dH.?DG*>qE$6Z:'dH1-'dH.??q<[hE$6,$1`7r"##6g)##/?'?q<RU"<g?7GnLi%4=<*NCF;)(BN.9$D+\(t"@63lGnLi%4=<*NCF;)(BN.Z+CJ8"t"@4sT2%p0j!\c-%!\c-&ECE;qD,i#KEC<2jCIg`eCIg``4:h`%GmZ2X##6g)##/?+CJI8i"<fEO##6g)##/?#BLP9\"<fEO##6g)##/?&DGEPk"<g>i##6g)##/?(C.Lcc"B&Dr.h_pm4]GZ"2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?&DG!>i"<fEO##6g)##/?!Ce7&f"<gn_!\c-%!\c-&EDJl$BN6KFE$mV-CF;)(BN.DuBLlDm"B.f_G>^C_CF;)(BN.E)CIqeqE#BQ!Go7M*Go7G14Brm1Gm[:m0G4pC0Fe=()AF2&4]FC'CF;)(BN.]'CJ8"tE!REf2cKi]*u,\!*u+tk/O(3^2&KRO##6g)##/?+CJI8i"BA`1*>o(u.h`@bE#BQ!Go7M*Go7M*E#BQ!Go7M*Gs)]R3"dtY//8.3.L\lP/.ra80G>?tE"s!Q3#D\u2`V*VA3g2-//_D'0c:ls58+5g##G@g0G7=u3#)W/E=NQo2&-o//K#*Z'dH1-'dH.?DbET%E$6Z5*Z4r#0bkN1.iB6uE)dGXGngrZ0./_ACF;)(BN.;tBgl;k"@5U4##6g)##/?,Db`ep":,tO2d@@,GnM&4GmbQ'1(OKh3Z1[=0G4pC0Fe=()AF2&4]FC'CF;)(BN.]-BMMhsE!REf2dA3F00q`1.L6au3Z0S(##6g)##/?+C.(H^"<h#'##6g)##/?&DG3Di"B@;a0./_ACF;)(BN.;tBgl;k"@5"0CF;)(BN.]-BMMhs(`3<6'dH1-'dH.?C/7;rE$6Z:BO!D"0./_ACF;)(BN.;tCJA(u"@4493X?Z:C*tu'CF;)(BN.]&@8'rj"B7fcBM_,i(`3<6'dH1-'dH.?C.U`iE$6Z:/IhdcGs)]R!\c-%!\c-&EC<&gBN6KFA/Z0n.N)204UNhq##6g)##/?#DbNPk"<g>N2@^f?.303/Gs)]R!\c-%!\c-&ED8`'CK2fIA-stC##6g)##/?#C.q#f"<fEO##6g)##/?#Cd^`b"<e?f.N'61GmbQ'1(OKh3Z1[=0G4pC0Fe=()AF2&4]FC'CF;)(BN.]-BMMhsE!REf2d@@,GnM&4Gs)]R@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.??qs0iE$8L'0c:ls2%pc-2-^n(2%W>/2\,li2]iVk'dH1-'dH.??r'HpE$6Z''dH1-'dH.?C/7N-E$8=-4UPHq0G#'\'dH1-'dH.?DbEK%E$6Z:'dH1-'dH.??qs0iE$5u(2%VDo##6g)##/?+Db=;!"@4493X?Z:C*tu'CF;)(BN.]&@8'rj"B7cbBM_)h3u&SC!\c-%!\c-&ECrSqBN6KFA192>1eo\W##6g)##/?+C.(H^"<h#JF\Y>'F\Pt7BiPoU2%VDo##6g)##/?+CJI;j"<g>\4UP-h0G#'\'dH1-'dH.?DbNi%E$6Z:/IhdcGn:np3"T$u3"Za/&/#3a3"d#3!\c-%!\c-&ECEB%BiQTGEA/n?!\c-&ED8l*DH/,]3u&SCE"Wlq4=<*NCF;)(BN.;tDbaS%"@5"0CF;)(BN.;tDbjY&2]Wb?!\c-%!\c-&EDJo&C/l]HA2#N2!\c-&ED8c"@9"`c3"Z`^'dH1-'dH.?DbNi$E$6Z:/IhdcGnLi%4=<*NCF;)(BN.;tCJA(u"@41Y0G-c6'dH1-'dH.??r'HpE$6Z'BM_)mBM_)h2]Wb?!\c-%!\c-&ED&YuBiQTGA2#N2!\c-&ECE,k?r\Wb3"Z`^'dH1-'dH.?CdgTiE$6Z:BNuGW1`7r"##6g)##/?'?q<UV"<g?2Cg7k[1`7r"##6g)##/?,CedAj"<g>Z2@pf>C*tu'CF;)(BN.](DFe%s"B8&nF\Y2&F\Y2&E#BK(4Bs`K0./_ACF;)(BN.]'CJ8"t"=H/kCF;)(BN.Du?qXch"=H/kCF;)(BN.;tCJ.qs"@3)K'dH1-'dH.?DbEK%E$6Z)G>pOaCF;)(BN.5tBLlDmG>_ZX2@19,EE!&O.jm;=CF;)(BN.DuBMMhs"=H/kCF;)(BN.;tDbXM$"=H/kCF;)(BN.K&Ce\2!"Ao4['dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?C.U]hE$6Z&!\c-%!\c-&ED8l"D,i#KG#)C<G;(OE!\c-&ED9,(CfMoVE#BQ!Go7M*Go7M*Go7M*Go7G14Brm1GmbQ'1(OKh3Z1[=0G4pC0Fe=()AF2&4]FC'CF;)(BN.]-BMMhsE!REf2cKkf.i/F(3$/`8*u,\!*u+tk/O(3^2&KRO##6g)##/?+D,!Jl"BA`1*>o(u.h`@bE#BQ!Go7M*Go7M*Gr-6A0L$B_.ldhJA/YIX3X?`72cO&i5?p,U2%p0@.L\mT/IhdcGmGAo2d?t(.pOT#03fM,GmkDp.h>ks4:E&63ZS2)4XW3OCF;)(BN.;tC.MVo"@b0O/O(3^2&HN%2cO'T4VLd%5?n7L'dH1-'dH.?DbEK%E$6Z:A2#N2!\c-&ED&Z#CfMo#0c:ls0H*n"2@*7r2@^f?.303/@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.??q<^_E$8L'0c:ls*ZY\r&/#3a3"d#3!\c-%!\c-&ECEB%BiQTGEA/n?!\c-&ECrSsDH/,X*ZY\L'dH1-'dH.?DbEK%E$6Z:'dH1-'dH.??q<^_E$7"=+=B-2CF;)(BN.JuCJJ/!"@5ID*ZY\L'dH1-'dH.?DbEPtE$6Z:%iH0"2@`5:'dH1-'dH.??r'HpE$6Z'BM_,nBN6hi+=B-2CF;)(BN.K&DbXM$"@3#"//_D43!Crg##6g)##/?,D,3Sm"<g>?3"Q<!Grl`Z!\c-%!\c-&ED8buBiQTGA.'=g1(OKh3Z1mB3!Crg##6g)##/?#Cd^`b"<g>O!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fI4:h`%0H*n)2@^f?.303/@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.??q<^_E$8L'0c:ls0H*n"2@*8-3!E&'0G4pC0Fe=()AF2&4]FC'CF;)(BN.]'CJ8"tE!REf2d@1.3ZT&)3u&SCA2P8:/KG`04=<*NCF;)(BN.]&@8'rj"B7?CCF;)(BN.Ju@74BbFZU<VE#p#12((@GCF;)(BN.;tBgl;k"@5"0CF;)(BN.]'CJ8"t3u&SC!\c-%!\c-&ECE2oE$6Z:%iH0"2@`5:'dH1-'dH.??r'HpE$6Z'Bi%5oBiPoU2%VDo##6g)##/?&DGEVm"<g>p*>KGh!\c-%!\c-&ECEB%BiQTGED9P4BhVW,F\bCt3u&SC!\c-%!\c-&ECE>oBN6KFA31MEGodt:2((@GCF;)(BN.;s@8:)l"@3#"//_Ct2BNYEGnLi%4@)+>.L6au3Z0S(##6g)##/?+C.(H^"<h#'##6g)##/?#BLP9\"Afj@2%X%&3"Z`^'dH1-'dH.?DbEDoE$6Z:'dH1-'dH.?DbEDnE$6,$1`7r"##6g)##/?!Db*Aj"<g>i##6g)##/?#Db<\q";2FZ4=<*NCF;)(BN.;s@8C/m"@3#"//_Cr3"Z`^'dH1-'dH.?DbEPtE$6Z:$of7;CF;)(CF;)(BN.]&@8'rj"B7fcBi%5oBiQ&Q1`7r"##6g)##/?%DG*Ai"<g>i##6g)##/?+D+mYr";2FZ4=<*NCF;)(BN.9$D+S"s"@5ID2]Wb?!\c-%!\c-&ECil+DcJ5MA5Y]\2]Wb?!\c-%!\c-&EC<)iBiQTGA3V"D2@`5:'dH1-'dH.??qj!iE$6Z'@8'd#D+Ri,D+S";2%L9d*ZY\L'dH1-'dH.??qs0iE$6Yi'dH1-'dH.?BMD3#E$6Yi'dH1-'dH.?DbEQ!E$6Z:0./_ACF;)(BN.;tBgl;k"B&Dr'dH1-'dH.?D+R/tE$8CZE=Np'2],dm.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?DbEDpE$6Yi'dH1-'dH.?C.U]hE$6Z*0./_ACF;)(BN.DsBhVer"=H/kCF;)(BN.K&Ce\2!"B@*.##6g)##/?#BMC`a"<guGE)Kjm##6g)##/?#@89*\"BA_32],Ku2],Ku2],Ku2],Ku2%L9d0H*n)2@^f?.303/@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.??q<^_E$8L'0c:m&/e\Ep.L[$l4@V(52]+:W.h;V&0bkN1EA/n?!\c-&ECE,jC/l]TE(2Mc.L64e+B2VN2],Ku2],Ku2],LI4<"kA$4@db4[B\r2]i#,2A07e0H*nD4<"kA$:.6".gZeT/JJd+Go@V6Gp?E+Gnh5b.30E@.T?TV.1dL"3!^*$!\c-%!\c-&ECrSpD,i#K@lk8=)AF2&4Ur&5EE-9L2I%7+GmZ2X##6g)##/?&DG3bs"<g?C'dH1-'dH.?C.UfkE$52h4;(U#5?o*8/R/Ad.i/F(3$/`8*u,\!*u+tk/O(3^2&KRO##6g)##/?+D,!8f"B>F04;(UH4r?j@2\,li2]iVk'dH1-'dH.??r'HpE$6Z''dH1-'dH.?DbEJtE$8L?4r>q+##6g)##/?&DG3bs"<g>i##6g)##/?+D,!8f">CJo!\c-%!\c-&EDK)%CK2fIA5-#V4r>q+##6g)##/?&DGEVm"<g>o4<FP3.o.fO##6g)##/?+C.(H^"<h#JF\Pt9E%hq1!\c-%!\c-&EDJl#BN6KFA-`AT4BsiK4XW3OCF;)(BN.Z,C/%tt"@3Y%2%L9d'cR]D'dH1-'dH.?BM(ZkE$6Z:/e\Ep.L[$l4BsiK4XW3OCF;)(BN.E$@8:)l"@3)K'dH1-'dH.?BMV#pE$6Yi'dH1-'dH.?BLtlpE$6Y72%L9+5?n:!.i/F(3$/`8*u,\!*u+tk/O(3^2&KRO##6g)##/?+D,!8f"B>F04;(U#5?o*8/R17<4[q162]+:W.h;V&0bkN1EA/n?!\c-&ECE>oBiQTS/JJd+Gn:np3"T$i0G#(-&/#3a3"d#3!\c-%!\c-&ECEB%BiQTGEA/n?!\c-&EDK)/@9"aP'cR]V3u&SC!\c-%!\c-&ECrSs?r\X>A2#N2!\c-&ECE>oBiQS_0G#'\'dH1-'dH.??qNaX"<g>o4<FP3.o.fO##6g)##/?+C.(H^"<h#KF\Pt:E#p#12((@GCF;)(BN.;tCJA(u"@41Y0G-c6'dH1-'dH.??r'HpE$6Z'BM_/sBi%5oC.qn60G#'\'dH1-'dH.??qs0hE$6Z:'cR]O3u&SC!\c-%!\c-&ECrW'CK2fIA-`AT4Br^33ZT&)2]Wb?A2P8:/KG`04=<*NCF;)(BN.]&@8'rj"B7?CCF;)(BN.Du?qXchFWMP62,tOr1`7r"##6g)##/?&DG!Aj"<g>i##6g)##/?&DG!Dk";2FZ4=<*NCF;)(BN.K%D,4G$"@5"0CF;)(BN.E#Da[kp2]Wb?!\c-%!\c-&ECrW'C/l]HA-`AT4Brd+1`7r"##6g)##/?&DGEVm"<g>p*>KGh!\c-%!\c-&ECEB%BiQTGED9P6F\Pt:E"Wlq4=<*NCF;)(BN.>uDG4>""@5"0CF;)(BN.]-Bgl;k2]Wb?!\c-%!\c-&ECil+CfMoJA5-#43"Z`^'dH1-'dH.?CdgThE$6Z:G=baC3"Z`^'dH1-'dH.?@7`peE$6Z:)A<qr.o.fO##6g)##/?+BM1T_"<h#SBi%9#Cf!T&CfM&X.N)2=4r>q+##6g)##/?+CJI8i"<fEO##6g)##/?#BLP9\"<fEO##6g)##/?&DGEPk"<g>O!\c-%!\c-&ECrSs?r\X>G>_[!##6g)##/?(Ce[/e"B&Dr.h_pm4]GZ"2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?&DG!>i"<fEO##6g)##/?!Ce7&f"<gn_!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&EDJl$BN6KFE$mV-CF;)(BN.DuBLlDm"B.f_G>^C_CF;)(BN.E)CIqeqE)dJZ4^8R.4^8R.4^8R.4^8R0.N)1m5?n:!.i/F(3$/`8*u,\!*u+tk/O(3^2&KRO##6g)##/?+D,!8f"B>F04;(m52@^f?.303/@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.??q<^fE$8LZ@lP&3/Ii^<EE*S[4^8R.4^8R.4^9oR4:_E=.L\lP/.ra80G>?tE"s!Q)AEbp/NG17GmGAo2d@1.3ZT&))A<qu4<FP12A.AA.gd9s4@'V^1`9%64:!;=.gd9s4B+:&CF;)(BN.Z0DbjY&E"Erg3"T%&2'!,1.kDVNA5i[B.jm;=CF;)(BN.DuBMMhs"@b0O/M%nW2@*P[E$mV-CF;)(BN.K&Ce\2!":uLP3"T%30c:34.R?!%2%U?"/JT36$5j$_0HUm0*Z4r:3#`M84]FC'CF;)(BN.JuDbOG#E#KZ-Gp?E60c:34Gnh5b0FS['.h>l-0c:34.TI#gGngrZ2\Q0Y)AEbp/OhN#/Nj(M.hrg8/K%eH##6g)##/?,D+d,d"B>F04;(U(2BNYEGon"1.L7:..U3f!3ZT&).L?mk4:_Zm.iAR-2$cbe3ZT%JE>eie3X?`72cO&p49ts"2cM^D4:_Ep*Z4r60FAa8EE-:('dH1-'dH.?C.U]hE$6Y72],g-5?nF/3ZeqF.U2r]4;(Tn0c:34#nmPM.iAR-2$d.c2%L9+5?p,T4:_Ep&.^Wk'dH1-'dH.?C.V*#E$8L'0c:ls3YW/;/M%hPA3V%<.L7[\##6g)##/?!Ce7&f"<e?f.N)1d.iB'-Go7M*Gn:np3"T$o0Fn-b2]iVa3#`bC/I;smA5j?Q4:_EJ2@iq(2'!,1.kDVNE$mV-CF;)(BN.DuBLlDm":uLP3"T$n+Vb4u0G5$G.L\lk0c:34@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?Db`]!E$8Ko5?o*8/R/l,0Fn-j2]FI_.9li\4;(U(2BNYEGoZl$3$0+M4;%X#&/#3a3"d#3!\c-%!\c-&ECEB%BiQTGEA/n?!\c-&EC<)iBN6KR3!]Kc3YWG92[D&i##6g)##/?&DG3bs"<g>i##6g)##/?&CJ7,g"<@IY3$0+M4;%WR'dH1-'dH.?BM(ZkE$6Z:)AEbp/R0#,/KGW81`72J!\c-%!\c-&EDJl$BN6KFA1A/k/JA=b!\c-%!\c-&ECEB%BiQTGED0J2F\H'O2BNYEGnLi%4?3W[A2P8:/KG`04=<*NCF;)(BN.]&@8'rj"B7?CCF;)(BN.Ju@74BbE"Wlq4?3W[!\c-%!\c-&ECrSs?r\X>A2#N2!\c-&ECE>oBiQSk3"Z`L.L[s`##6g)##/?&DGEVm"<g>p*>KGh!\c-%!\c-&ECEB%BiQTGED0J3BhVW-F\bCt2]Wb?*"N03'dH1-'dH.??qs0hE$6Z:3!]Kc3YWG92[E@l3"Z`L.L[s`##6g)##/?+Db=;!"@4493X?Z:C*tu'CF;)(BN.]&@8'rj"B7cbBM_)h2]Wb?*"N03'dH1-'dH.?DbNi%E$6Z:/IhdcGnLi%4?3W[!\c-%!\c-&ED8buBiQTGA/tXd3$0+M4;%W]2%pc-2-_%$1`87S3uJlA&/#3a3"d#3!\c-%!\c-&ECEB%BiQTGEA/n?!\c-&ED8l*DH/,X2]Wb?'ce%o2((@GCF;)(BN.;tDbaS%"@4aO/.jNg##6g)##/?&DG!Aj"<fEO##6g)##/?&DG!Dk"<eZb1`87S3uJkp'dH1-'dH.?C.^`mE$6Z:BLl)33"Z`U3$&YB!\c-%!\c-&ECrW'C/l]HA-`AT4Brd+1`87S3uJkp'dH1-'dH.?DbEPtE$6Z:$of7;CF;)(CF;)(BN.]&@8'rj"B7fcBi%5oBiQ&Q1`87S3uJkp'dH1-'dH.?DG*>qE$6Z:*"i8^!\c-%!\c-&ED&YuBiQTG!\c-%!\c-&ECE,k?r\X>2]Wb?'ce%o2((@GCF;)(BN.9$D+S"s"@5ID2]Wb?'ce%o2((@GCF;)(BN.9$D+\(t"@63lGnLi%4>7KN4:j/!##6g)##/?,CedAj"<g>Z2@pf>C*tu'CF;)(BN.](DFe%s"B8&nF\Y2&F\Y2&E"Wlq4>7KN4:j/!##6g)##/?#DbNPk"<g>G3"Z`L.L]8\2],L)2BNYEGnLi%4?3W[A/Pd_.L7%(4uii]Go[e.Go7"t.L7%(4uii]@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.??qs0iE$8Ko5?o*.1`8"Z.9li\4;(U(2BNYEGo.P5.1d44*>Jeq3"d#3A.]Om0deqCCF;)(BN.5nD+n5!"B5p>.L6au3Z0pZ4q\kP//SsmC/l)Z3ZT&)3YW/;/M\%N4@(n64:_EO'dH1-'dH.?DbEK%E$6Z54q@YpEA/n?!\c-&EC`T$CK2fZ'dH1-'dH.?DacoiE$8Kr3"Z`L.L[s`##6g)##/?#BLP9\"<fEO##6g)##/?&DGEPk"<g>J/Iid14sr<PCF;)(BN.E#Dadqq"B7?CCF;)(BN.Du?pn9aFWVS-.L8':1`9C#0Fn9s3!CuC.L6au3Z23-2],L$5?o]a!\c-%!\c-&EC<K)E$6Y32],L!0Fn-b2]iVa3#`bC/I;smAO/daGmGAo2d@@,Go7"t.L7%(4uii]GmGAo2d?q60Fn-j2]FI_.7Puq.L64e+B2VN2],Ku2],Ku2],Ku2],Ku2%L9d58+5g##I5d4:_EZ0G7=l.30E@.TBXU3"Za**Z4r34:VE"3Z20U##6g)##/?,@7j$^"BA`1*Z4r:3#`M84]FC'CF;)(BN.JuDbOG#E)dGXGn:np3"T$n.L\0N/KGW81`72JA3V%<.L8cq0G4pC0Fe=()AF2&4]FC'CF;)(BN.;qBhVerE"s!Q4:_Q=/I3'k0bG!,/R/8`4;(Tt.L\0N/KGW81`72J@lP&3/Ii^<EE*S[4^8R.4^8R.4^8R.4^8a,.h3R(.QI_IA/YIX3X?`72cO&i5?p)N.h3"8.L]8m0c:ls2%pc-2-`'K2%U?"/JT36$5j$_0HUm54rkLF@lk8=$5j$_0HUm"'dH1-'dH.?@73FYE$8Kt2BNYEGs2fP.g7gH.MNI+A3V"D2&R2H0G>?Y4:VE"3Z1[<4:!&24rY(=EA/n?!\c-&ED8l&DH/,X58+5g##I2n.MPhh2d@@:3#)W/EBXsH.g7gH.MNI+E#9N]2%pc-2-^n4.MO-:.MVpj2A/SS)[Q`W!\c-%!\c-&ED8buBiQTG@lk8=#o*LM/Q?"J!\c-%!\c-&EDJl$BN6KF58+5g##I2^.h3"?3"Z`i0G7=u3#)W/EBXC70h*r'/Nj(M.hrg8/K"ddE)dGXGngrZ)]8hl+>OZA4Bqjo4;(U(2BNYEGo6i##os3d(EF@tA2#N2!\c-&ECE2nE$8CZEBXsH.g7s81`9IkEA/n?!\c-&EC`An@9"aNG6f-!/Iid15#`:5.MO-:.MVpj2A0:fE"Erg3"T$n+Vb4u0G5$G.L\l_2@^f?.303/@lbV>4ZXSq.L7s@0G"dg4:_QN3">p?3"Z`p0H*n"2@*7d+Vb4u0G5$G.L]8m0c:ls49QZ9/JT0,*"N0Y&/#3a3"d#3!\c-%!\c-&ECEB%BiQTGEA/n?!\c-&ECrSsDH/,X49QZ9/JT0,*"N03'dH1-'dH.?DbEK%E$6Z:4:_QN3">p?3"Z`i49QZ9/JT0,*"N03'dH1-'dH.?C/7;rE$6Z:BNu,g0Fn-j2]FI_.47);CF;)(BN.;tCJA(u"@4493X?Z:C*tu'CF;)(BN.]&@8'rj"B7fcBM_,i49QZ9/JT0,*"N03'dH1-'dH.?C.U`iE$6Z:/IhdcGo7"t.L7%(4uii]!\c-%!\c-&EC<&gBN6KFA/Z0n.N)1i+Vb4u0G5$G.L[s`##6g)##/?#DbNPk"<g>N2@^f?.303/Go7"t.L7%(4uii]!\c-%!\c-&ED8`'CK2fIA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'3sc-"#nmON/JT36E#BQ!GngrZ2\Q0Y49QZ9/JT0,*"N0T*u,\!*u+tk/O(3^2&KRO##6g)##/?+CJI8i"B>F04;(U(2BNYEGnLi%4?3W[A2P8:/KG`04=<*NCF;)(BN.]&@8'rj"B7?CCF;)(BN.Ju@74BbFVtSp.L7%(4uii]E"Wlq4?3W[!\c-%!\c-&ECrSs?r\X>A2#N2!\c-&ECE>oBiQSk3"Z`L.L[s`##6g)##/?+Db=;!"@4493X?Z:C*tu'CF;)(BN.]&@8'rj"B7cbBM_)h2]Wb?*"N03'dH1-'dH.?DbEPtE$6Z:$of7;CF;)(CF;)(BN.]&@8'rj"B7cbCJ7,lBi%;uE"Wlq4?3W[!\c-%!\c-&ECE>oBN6KFA/Pd_.L7%(4uii]GnLi%4?3W[!\c-%!\c-&ECrW'CK2fIA-`AT4Br^33ZT&)2]Wb?'ce%o2*jA7.L6au3Z0S(##6g)##/?+C.(H^"<h#'##6g)##/?#BLP9\"Ag!<1`8"Z.9.8f1`87S3uJkp'dH1-'dH.?DbEDoE$6Z:*"i8^!\c-%!\c-&ECrSuCK2fI!\c-%!\c-&ECrSuC/l]H2]Wb?'ce%o2((@GCF;)(BN.K%D+Iqr"@5IXGnLi%4>7KN4:j/!##6g)##/?&BgbH`"<g>Q.gZeT2]Wb?'ce%o2((@GCF;)(BN.;tCJA(u"@41Y0G-c6'dH1-'dH.??r'HpE$6Z'BM_)mBM_)h2]Wb?'ce%o2((@GCF;)(BN.>uDG4>""@4aO/.jNg##6g)##/?%DG*Ai"<fEO##6g)##/?+D+mYr"<eZb1`87S3uJkp'dH1-'dH.?CdgTiE$6Z:BNuGW1`87S3uJkp'dH1-'dH.?CdgThE$6Z:G=baC3"Z`U3$&YB!\c-%!\c-&EC<)iBiQTGA3V"D2@`5:'dH1-'dH.??qj!iE$6Z'@8'd#D+Ri,D+S"B3"Z`U3$&YB!\c-%!\c-&ED8buBiQTGA.fUe4?3W[Go7M*Gn:np3"T$u3"Z`L.L\lQ+Vb4u0G5$G.L]&u0G4pC0Fe=()AF2&4]FC'CF;)(BN.]'CJ8"tE"Erg3"T$o0Fn-b2]iW<E=<Zr!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ECrSuBN6KF!\c-%!\c-&EDJl$BN6KFF<1Go0e=7T0F/[-2cVLa##6g)##/?#BMC`a"<guGGnLi%4?3W[!\c-%!\c-&ED8l*DH/,L!\c-%!\c-&ECrSqDH/,LA2#N2!\c-&EC`AnDcJ5\G>pI).h3"?3"Z`sG>pOaCF;)(BN.5tBM2VpG>_[!##6g)##/?(Ce[/e"B&Dr1`ZQ(!\c-%!\c-&EC`T$C/l]HE>T]-/KG`04B5QZ'dH1-'dH.?BLG<jE$8LZE)dn^Gp>+)'dH1-'dH.?BMCupE$6Y32],L(3!^K`'dH1-'dH.?D,3DnE$6Z'4V\2<3"d#3E'QulBj:WG4;(Tt+Vb4u0G5$G.L]'"4:_E(2?d>X4;&2m4;&2m4;&2m4;&2m4:h`%Go@V6Gp?E+Gnh5b0FS['.h>l!2@^f?.303/@lk8=)AF2&4Ur&5EE-9L2I%7+Gm[:r.Qq#i##6g)##/?&DG3Di"B?0G4^8%J'dH1-'dH.?DbEK%E$6Z51`ZPr0iU+pCF;)(BN.8oCIMMmE!REf2d?De*>o(u.h`@bE#BQ!Go7M*Go7M*Go7M*Gn:np3"T%9.L\3>.h3R(.R?!%1`dAJ#osZ`@ji9!4qJ<!'dH1-'dH.?DbNi*E$8<e3"Q<!E&e.:)]8hl0Gt*u((rP63"cl/4]E%02]i#,2A07P3"Q)pE'=jG.g7X=.7#-Z2$jj^/ef<:4BscK.h3"8.L]8]2I$=c0F1oU3uJ570Gt*B.L]QS4;&2m4;&2t2%pc-2-_jI.4c;;+;k@pA3V"C3un;W3#`H4%20BX2&TXP##6g)##/?&Bgb9["Af^42%L9k*"N0.2'!,1.h>B+2a88`2]E>6E>eie3X?`72cLt&2$jje#nRgi4:X(W.7#-Z2$jj^/ef<:4Bs-B3!Bm+*"N0>4VLd/3#)EdE&e.:#nRP=E#BQ!Go7M*E"Erg3"T%9.L\6D4:_E'A3V"C3un;W3#`H4%20BX2&TXP##6g)##/?,CedGl"Af^42%L9k*"N/p0c:34.RlK/)AEnq4rFo)57&5./JT36E@M\6//__90c:34*%rRD%ilK&4Bqsr0G"g`)AEbp/NG17Go.Jf/fbrKEE+q*4:_E=.L]QS4;&2m4;&2t2%pc-2-_jI.67YK0F.ni)A<th3!^c24rI*S2B*;?4B+:&CF;)(BN.Z+CJS5"FW(u*.N)M=.L\'E//8-r@l##G0c_/84;_<,/.ra80G>?t%ilK&4B4'>0,5<M.g[44*%rRD%ilK&4Bqsr0G"g`*>nnc2*(pW0F0Be$!\#MGmb>o/Q?"'4:3eS.9'RW2],Ku2],g22BNYEGrZ*C&.]TZ2],+/2A$]+/M%V>4@UG%4rY=CEA/n?!\c-&EDJr&CfMo[591RP4B4*I.5_>@3"cd*((rP63"cl/4]E%02]i#,2A07P3"Q)pE&@k23"ccL$7nb+3"Q)pGmbT!2&T@C.M*=(4ZOlGGo.Jf/fbrKEE+t,3ZS2-2A._U.9'RW2],Ku2],g-5?oEA.hE7hGmGAo2d@1.3ZT&)*"N/u2%p&r.mZ*&1`dAJ#osZ`@ji9!4qJ<!'dH1-'dH.?@7`piE$8<e3"Q<!E&e.:*tTA*4:Y+;2a88`2]E>6E>eie3X?`72cLt&2$jje*tTA*4:X)"#sfa:2$jj^/ef<:4BsWP2@C*/*%rR)4VLd/3#)EdE#KQ%/f=j?.L]QS4;&2m4;&2t2%pc-2-_jI.52>:4;&2,.g8Ke2A$]+/M%V>4@UG%4rY=CEA/n?!\c-&EDJr&DcJ5^591RP4B4*I.52>:4;&2,.g8[!2a88`2]E>6E>eie3X?`72cLt&2$jje'c@Yh2_R`[3"Q)pGmbT!2&T@H4<"kA$=",NGmb>o/Q?"/4<"kA$4@db4]G\k2],Ku2],g)2],L$5?oEA.hE7hGnUBL%MK$W4\o#n0c:ls2%pc-2-_jI.6R\D3'fJ31`dAJ#osZ`@ji9!4qJ<!'dH1-'dH.?C.UimE$8<e3"Q<!E&e.:(^UBJ@l##G0c_/84;_<,/.ra80G>?t%ilK&4B4<K2%p0@.L\m+3"Q)pGmbT!2&T@92@pf>*"N0>4VLd/3#)EdE&8:80L$B_.ldhJEE*S[4^8R.4]N('4^9!2Gq0gG2&JhN/JJd+Gn:np3"T%9.L\*;3"?1")A<th3!^c24rI*S2B*;?4B+:&CF;)(BN.Du?q"?bFW(u*.N)M=.L\*;3"?0r((rP63"cl/4]E%02]i#,2A07P3"Q)pE&f:%*Z5\)A1A<)//_D$0bkN0Gr[6.*Z5\)Go.Jf/fbrKEE*YV3"@YS.9'RW2],Ku2],g22BNYEGrZ*C*"!8e/O;<(1`dAJ#osZ`@ji9!4qJ<!'dH1-'dH.?C.gilE$8<e3"Q<!E&e.:*"!8e/Ohf2)AEnq4rFo)57&5./JT36E@M\6//__?.L\$H4;%WD.M*=(4[C7n2$jj^/ef<:4BsTP.6.G62[DPX2'!S?Go.Jf/fbrKEE+_.4;%WD.M*=(4ZN`\EE*S[4^8R.4]N=-3ZT&)*"N/r4UNqV//8.k)A<th3!^c24rI*S2B*;?4B+:&CF;)(BN.H#@7XZfFW(u*.N)M=.L\0>000:Q0F1E)2a88`2]E>6E>eie3X?`72cLt&2$jje3#D\u2`V*VA1A<)//_D$0bkN0Go[G23"dqW.9mDmGmb>o/Q?""4UMo5*tA;Y/NF%LEE*S[4^8R.4]N('4^8g43ZT&)%1X*f4:ib>4rHpN3$&;a'dH1-'dH.?BM(`lE$6Z5)@dJc/M%V>4B+aA%1X*f4:ib>4rI*L4:Df63!^H8EA/n?!\c-&ECiYsBiQTS%1X*f4:ib>4rI*=/-l4a2cMb!CF;)(BN.H#@7a`gFW(8i3X?`72cO&p4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?,Ced8g"B?$C4]NU:3!p6.#osZ`@m0o0/JB$q'dH1-'dH.?CJ.?$E$8<e/.ra80G>?tE"3Hn2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECiW(@9"aK4;&2t%1X*f4:ib>4rI*=/-l4a2cMb!CF;)(BN.E!DG+8!FW(8i3X?`72cO&p4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?#BLtZc"B?$C4]NU:3!p6.#osZ`@kSE-4:W)B2@`tF##6g)##/?'C/78j"B@Di3ZS2-2A/Ru,T7U6Gp?E+Gnh5b.30E@.T?KY.i/F(3$/_l'dH1-'dH.?C/7,pE$6Yi'dH1-'dH.?BMCiqE$6Z5*Z4r#0bkN1.iB6uE)dGXGmG,c2&S&###6g)##/?#Db`bo"<h#'2BNYM0G>@#0./_ACF;)(BN.;tBgl;k"B?$C4^8g43ZT&)%1X*f4:j1Y2@L-*/eU`7.ieZq2(TIF4@V":2@L-*/eVDB##6g)##/?,@7<[Y"Ah&d3ZS2-2A0:S.ieZq2)kdK.2X!<2b#k<)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.E#DG4>""@4452$jj^4;&2t2%pc-2-_pG&.]TZ2],+F.ieZq2(TIF4@UG%4rY=CEA/n?!\c-&ECrW'DH/,]591RP4B40G&.]TZ2],:@2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?!CeI#c"<g>o3"Q)pGngrZ%ilK&4Bqjo4;(Ts2@`\KFUD(T2d?Ie0Fe=\/e\Ep.L[$l4=<*NCF;)(BN.JuCeJ%t"=H/kCF;)(BN.DuDFe%s"@b0O/O(3^2&HN%2cO'T4VLd%5?n7L'dH1-'dH.?DbEK%E$6Z:A0Wli'dH1-'dH.?BM(WjE$6YH0c:ls.iAHo3!`It3#)EdE$G>rE=+?P##6g)##/?#Cd^`b"<h(o*tB"q4=<*NCF;)(BN.]&@8'rj"B7cbC.q`.E)coJ/JT*i2\Q0Y#!4Ik##6g)##/?!CeI#c"<e]rGmkN%!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIA3g8V'dH1-'dH.?BLtlpE$6Y72],Ku2],Ku2],Ku2],gZ.ieZq2(TIF4@U\&.2`<k/JA=]'dH1-'dH.?CemPuE$8Ko5?oEA.hE7iGmGAo2dA<N3ZS2-2A.Mr2@]]g2*ha+##6g)##/?+C.(cg"@kF6CF;)(BN.Z+CJ%kr,T.F14;AJr%MK$W4\erm0c:ls'b_Ab/JT36"tU]*/KG[7+ttNE!\c-&EDJo&CfMo['dH1-'dH.?DbNi/E$5Ml2%L9+5?oEA.hE7gGmGAo2dA<N3ZS2-2A.Mr2@]]g2*ha+##6g)##/?,@7<FR"@kF6CF;)(BN.Ju?qjoj@PB<0!\c-&ED&YuBN6K`'dH1-'dH.?CemPtE$8=:##6g)##/?%DG!>i"9B)D4^8g43ZT&)#nmLZ3"RbU2@L-*/eU`7.ieZq2(TIF4@V":2@L-*/eVDB##6g)##/?+Da[kpFYFa73!^N52^9RV.gQk#E%Dq?/KGZU.h`$j2@CF+((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.?BMLroE$6Z:%ilK&4BrI-4]NU:3!p6.#osZ`@m0o0/JB$q'dH1-'dH.?BMUlpE$8<e/.ra80G>?tE"s!Q#!4Ik##6g)##/?#CJ7,g"<g?C'dH1-'dH.??r'I"E$52h4;(U*4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?'CILW`"Ag9H3X?Z:C*tu'CF;)(BN.]&@8'rj"B8N'@7<FWCe6lkF\tY5BiSFC2%L9+5?o]a!\c-%!\c-&ED8o$BiQTGA3i1;CF;)(BN.Z+CJ%kr/JJd+Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECiW'BiQTX%iH0"2@`5:'dH1-'dH.??r'HpE$6Z'DbWZ#C/@>sF\PP-?r^J:2%L9+5?o]a!\c-%!\c-&ED8o$BiQTGA3i1;CF;)(BN.K%D+S"s/JJd+Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECiW'BiQTX%iH0"2@`5:'dH1-'dH.??r'HpE$6Z'CJIQ(F\P.t?q`jYE#BK(4;AJr#!4Ik##6g)##/?#CJ7,g"<g?C'dH1-'dH.?DbNi/E$52h4;(U*4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?'CILW`"Ag9H3X?Z:C*tu'CF;)(BN.]&@8'rj"B8)mC/@>rDbrr$@7`p\E#BK(4;AJr#!4Ik##6g)##/?#CJ7,g"<g?C'dH1-'dH.?@73gkE$52h4;(U*4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?'CILW`"Ag9H3X?Z:C*tu'CF;)(BN.]&@8'rj"B8N)BgkB`?r'3kD,<`#Dc/i%DG3MtF\tY,D,+87Db<DpE)dJ\.N'61Gp>+)'dH1-'dH.?BMLroE$6Z:A2#N2!\c-&EDK).BN6Jt0c:ls.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?Ced]'E$8=@4<FP3.o.fO##6g)##/?+C.(H^"<h#FBMLflBMq9!?q!O_@7rm^C.gfd?q<[_D+[)uCJ75oFA"o#BMq/rDG*K$C.gibE#BK(4;AJr#!4Ik##6g)##/?#CJ7,g"<g?C'dH1-'dH.?DG*>pE$52h4;(U*4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?'CILW`"Ag9H3X?Z:C*tu'CF;)(BN.]&@8'rj"B7ZeD,4>:Ced;nDbEN'DFmr.Bh_)lBgb6kBLtHd?qO*lCf"82D+n,6BM:lrC.1NjCIqf(4:h`%0H*nQ*[`p0CF;)(BN.DtBhVer"@5U4##6g)##/?'C/7>l":,tO2d?Ok.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.8p?qaiiFXdt'/JA=b!\c-%!\c-&ECEB%BiQTGECiYuD,NZ$Dbj&,DG<f(Cf!SuG=b+uCJ@N'BLP9hBgkBgF\tS)DGil&DFm,mDb3Z$DFHlqE)dJ\.N'61Gp>+)'dH1-'dH.?BMLroE$6Z:A2#N2!\c-&ED&Z!BN6Jt0c:ls.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?Ced]'E$8=@4<FP3.o.fO##6g)##/?+C.(H^"<h#I@8B<jG>(J&D,<Z&@7<IVBMCrmF\P8-G=Y#"DFd2gE#BQ!Go7M*E$tnl0,YT_3#`H4$5isN.ieTu.o\JjCF;)(BN.]+?r\XJ(G%Ku0Fn.i+or;b.pOT#03fM,GmkDp.h>ks4:E&63ZS2)4XW3OCF;)(BN.;tC.MVo"@b0O/O(3^2&HN%2cO'T4VLd23$&n@!\c-%!\c-&ED8bsCK2fIEAAd^'bpriFUBcT##6g)##/?&DG3bs"<h%T2],L)2BNYEGqpWf*=a#%4VIo,A1.W`0,YT_3#`H4*=a#%4VIo,EA/n?!\c-&ECrW'?r\XO(G%Ku0Fn.U(G%Km.h`$j2@CF+((rP63"cl/4]E%02]i#,2A07P3"Q)pE&&[]2&-?4A1A<)//_Ck2],g22BNYEGrlrs#sSZ$%1X*f4:ib>4rI*S2B*;?4B+:&CF;)(BN.;qBh_ksFW(u*.N)M;2DQO#.RlK/)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.5o?q"?b"@4452$jj^4;&2t.L[%+2cLD*2]i#,2A07e/ef<:4Bqsi0F1oXBN5TPGngrZ#!4Ik##6g)##/?(CILri"<daQ4;(U,3ZT%JE>eie3X?`72cO&d2@`\KFUD(T2d?Ie0Fe=\.iAI#0HV#G4;]_)##6g)##/?&DGNMi"<gMc4:!kR0G"d-4;(mkE#9N]0H*n*!\c-%!\c-&ECrSs?r\X>A3i74)A!o#/R/8`4;(UU/IYl!!\c-%!\c-&ED8r%BiQTG!\c-%!\c-&ED8`'CK2fIE#BQ!Go7M*Go7M*E#BQ!Go7M*Go7M*E"Erg3"T%8.g[44#osZ`A1//n.OR2<CF;)(BN.5o?qjoj"@b<^3#VcQ3#`H&BN6f"//8.@3#`H4$5isN.ieTu.o\JjCF;)(BN.>uDGFJ$E"Erg3"T$m.g[44.Phts3"Q[.+orMh3ZT&)57&5./JT36Go[G$)A<tu3"K7'/.iX%.odDp3ZT&)58+523!]Kg4[B&V.L64c2]H!2/.iX%.ocZZ0G"g`/IhdcGo.Jf58+523!]Kg4]!5,58+523!]Kg4[p(r/08%L##6g)##/?#C.LW_"Ah'?CF;)(BN.5nD+IqrE"s!Q1-nK1GmGAo2d@+14<5M24;&2m4;&2m.iA=&.hYeb2@^T+/I2pnGo7M*Go@V6Gp?Dp.g[44*?>+]Gnh5b.30E@.T?TV.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.DuCe.hqFU/0e4B5Yl2I%7+Go?l&0F0?6/KHJt##6g)##/?#DbEMk"<g?C/IhdcGmGAo2d@1.3ZT&).1R?u4=_Eg0g?Te1`Zg-3#E2L2A$f..T@#m//8.43!^6Y'dH1-'dH.?D,3Q!E$6Z&2%pc-2-^b+//8.72]<WA57R]$/N=I]3%$[JCF;)(BN.;tBgl;k":,_C2&S&###6g)##/?#Db`bo"<h"R.g[44.Phts3"QZt57R]$/N"FM2H:=u4^8R.4^8g43ZT&)(D-mY+or;b.pOT#57R]$/N=I]3*[I5GmkDp.h>ks4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?#BLtH]"Af^42%L9kE#9N]0H*mo.g[44*?>+]!\c-%!\c-&ED8c!BN6KFA3g2-//_D'0c:ls2%pc-2-^7r0HUm53#E2L2A$f..T@#m//8.43!^6Y'dH1-'dH.?D,3Q!E$6Z&2%pc-2-`0N.hNL,&/$`LA/YXf0F0?6/KHJt##6g)##/?&DG3bs"<daH3tMu`'dH1-'dH.?BM(`kE$6Z'(D-mJ(D?u_3"S4^+#@1,2],Ku2],L)2BNYEGqTa?(HMa90F15r.g[44#osZ`@lOZ$.2X!<2cMb!CF;)(BN.;qBhhqtFYXgGE%_e6(HMa90F1E)2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?&BgkE^"<g>o3"Q)pGo7M*E&n1=0F/p*4rI*=/-l4a2cMb!CF;)(BN.8oC.MVoFW(8i3X?`72cO&p4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?#C.LZ`"AgTo!\c-%!\c-&ECrW&BiQTGE#BQ!E"Erg3"T%C4:jM!.g[44A3'o10F/p*4rI*C.h`$j2@CEr'dH1-'dH.?C.gisE$8<e.g[44.Phts3"QZo$5j[5*tA;Y/Ohf2)AEnq4rFo)57&5./JT36E@M\6//__I4:i))/NPC+4UOb<3"Q)pGo7M*E&n1=0F/p*4rI*=/-l4a2cMb!CF;)(BN.DsD+e.uFW(8i3X?`72cO&p4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?#C.LZ`"AgHM2&R2H+!WWJ03&Sn4]N=-3ZT&)$QU,j2A%\jA3'o10F/p*4rI*S2B*;?4B+:&CF;)(BN.Z0?qFWfFW(u*.N)MH3"cc21cdBp((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.?DbNl'E$6Z:%ilK&4BrI-4]M_#3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf4t4VLd%5?o]a!\c-%!\c-&ECrW&BN6KF/JJd+Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ED8c#C/l]Y'dH1-'dH.??r'L$E$8Kk2],Ku2],Ku2],g22BNYEGrQ!:.6:$H.g[44#osZ`@ji9!4qJ<!'dH1-'dH.?CemQ%E$8<e3"Q<!E&\%1.6:3T2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?#CJ7/h"<g>o3"Q)pGo7M*E"<'Q/eVCm/.ra80G>?tE!mWm2&T@-3#)EdG>2?J2I%7+Gp>+)'dH1-'dH.?BMLrnE$6YH0c:ls.3B982,k2(2]i#,2A07e*=a#%*tA;Y/Iu)Y4;&2t4;&2m4;&2m4;&2t2%pc-2-_LF2@^<(+$hXo//8.@3#`H4%20BX2&TXP##6g)##/?#C.M#j"Af^42%L9k$4%R_4;]hV((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.?BM(QlE$6Z:%ilK&4BrI-4]M_#3"$Wt57&5./JT36EE*)K0G"g`/fbrKEDf4t4VLd%5?o]a!\c-%!\c-&ED8c#D,i#K/JJd+GmkJj2%X!r/.ra80G>?tE%(np$4&C!//8.XE#BQ!E#BQ!Go7M*Go7M*E"Erg3"T%J/ilQM.g[44#osZ`@ji9!4qJ<!'dH1-'dH.?C.girE$8<e3"Q<!E$tf7@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&EDJl)BiQTGA1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nOE#9N]0H*nQ*[`p0CF;)(BN.K&@8'rj":,tO2d?Ic3"Qp"57&5./JT36EE*V[.pOT#+\boC2d?Ie0Fe=\/e\Ep.L[$l4@V+2/O(3^2&HN%2cO'T4VLd%5?nF0.hrs*!\c-%!\c-&ECrSrCfMoJE<J]i'dH1-'dH.?DbEK%E$6Z+'dH1-'dH.?D,*f'E$8L'0c:ls"pb?)+\aUC##6g)##/?#DbNSl"<fEO##6g)##/?#Cd^`b"<h%T2],Ku2],Ku2],g)2],Ku2],Ku2],g22BNYEGs2E>2]FMY*tA;Y/M%V>4@UG%4rY=CEA/n?!\c-&ECr]!C/l]Y591RP4B49O0G5$F@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&ED8o$CK2fIA1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nOE#9N]0H*nQ*[`p0CF;)(BN.DtBhhqt":,tO2d?Ic3"Qp"57&5./JT36EE*e`2%U?"/NO(O0F.nV#!4Ik##6g)##/?#CJ72i"<h%T2],g)2],Ku2],Ku2],g22BNYEGqU-G.4c2:4@((k3tEtt##6g)##/?&DGEJi"<gM_.if6=#osZ`ED9^m0bX[G3#`H4$5isN.ieTu.o\JjCF;)(BN.Ju?qsukE%`1>.4c2:4@V4E/I3:)EA/n?!\c-&EDJo&DcJ5^57&5./JT36EE*2I.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.]'CJJ/!FYG=C!\c-&ECrSpDcJ5Y4;&2t$5=Em#osZ`@m0o0/JB$q'dH1-'dH.?BMLrlE$8<e/.ra80G>?tE"3Hn2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECE>oCK2fZ'dH1-'dH.?D,3DtE$8Kk2],gS0bX[G3#`H4)[QK\2A07J##6g)##/?!Db*5f"Af^H2]i#,2A07e.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.??qs0gE$8=:##6g)##/?&DGESl"B?$C4]Nj;2@Li44rI*=/-l4a2cMb!CF;)(BN.]'CJS5"FW(8i3X?`72cO&p4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?+CJI,e"Ah'?CF;)(BN.]&?pn9aE#BQ!E%`1>.4c2:4@U\&.2`<k/JA=]'dH1-'dH.?BMUlsE$8L@0bX[G3#`H4)[QK\2A07J##6g)##/?+DG4>"FW(8i3X?`72cO&p4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?&Bh1oi"B?$C4]Nj;2@Li44rI*=/-l4a2cMb!CF;)(BN.;s?qsukFW(8i3X?`72cO&p4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?,D+-]^"B?$C4]Nj;2@Li44rI*=/-l4a2cMb!CF;)(BN.;qBh2MnFW(8i3X?`72cO&p4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?#C/.5j"B?$C4]Nj;2@Li44rI*=/-l4a2cMb!CF;)(BN.>uDGOP%FW(8i3X?`72cO&p4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?#C/.8k"Ah'?CF;)(BN.Z,?qFWfFYG=C!\c-&EC`AoDcJ5Y4;&2t$5=Em#osZ`@m0o0/JB$q'dH1-'dH.?DG*>uE$8<e/.ra80G>?tE"3Hn2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECEApE$8Kk2],gS0bX[G3#`H4)[QK\2A07J##6g)##/?%DG*8f"Af^H2]i#,2A07e.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?C/7/qE$8Kk2],gS0bX[G3#`H4)[QK\2A07J##6g)##/?!DG!;h"Af^H2]i#,2A07e.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?@73FcE$8Kk2],gS0bX[G3#`H4)[QK\2A07J##6g)##/?#C.Ufc"Af^H2]i#,2A07e.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?CemGrE$8Kk2],gS0bX[G3#`H4)[QK\2A07J##6g)##/?'C/7/g"Af^H2]i#,2A07e.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?DG*8oE$8Kk2],gS0bX[G3#`H4)[QK\2A07J##6g)##/?!C.1Wb"Af^H2]i#,2A07e.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?DbNGoE$8Kk2],gS0bX[G3#`H4)[QK\2A07J##6g)##/?'C/72h"Af^H2]i#,2A07e.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?DG*8nE$8Kk2],gS0bX[G3#`H4$5isN.ieTu.o\JjCF;)(BN.DtBh2MnE%`1>.4c2:4@V4E/I3:)EA/n?!\c-&ED&YuDcJ5^57&5./JT36EE*2I.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.]'BhhqtFYG=C!\c-&EC<)iDH/,X4;&2t$5=Em#osZ`@m0o0/JB$q'dH1-'dH.?DG*>rE$8<e/.ra80G>?tE"3Hn2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECE>qCK2fZ'dH1-'dH.?@7`pmE$8Kk2],gS0bX[G3#`H4)[QK\2A07J##6g)##/?,@7<LT"Af^H2]i#,2A07e.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.??qs*eE$8=:##6g)##/?+DG=D#E#BQ!E%`1>.4c2:4@V4E/I3:)EA/n?!\c-&EC<K(DH/,]57&5./JT36EE*2I.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.DuBgc5jFYG=C!\c-&ECEB$@9"aPBN5WR4]Nj;2@Li44rI*=/-l4a2cMb!CF;)(BN.>uDF@boFW(8i3X?`72cO&p4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?#BM;)l"Ah'?CF;)(BN.]&?pn9aF\Z3H2],gS0bX[G3#`H4$5isN.ieTu.o\JjCF;)(BN.;qBh;SoE%`1>.4c2:4@V4E/I3:)EA/n?!\c-&EC<K(@9"aP57&5./JT36EE*2I.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.Du@74BbFYG=C!\c-&EC`SrDH/,]'dH1-'dH.?DbNl%E$8Kk2],gS0bX[G3#`H4)[QK\2A07J##6g)##/?,@7<m_"Af^H2]i#,2A07e.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?BMD0)E$8=:##6g)##/?(C/72h"Ah'?CF;)(BN.;s?q=QeE#BQ!E%`1>.4c2:4@V4E/I3:)EA/n?!\c-&ED&Yu?r\XO57&5./JT36EE*2I.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.Du@74BbFYG=C!\c-&EC`SrDH/,]'dH1-'dH.?C.^`qE$8Kk2],gS0bX[G3#`H4)[QK\2A07J##6g)##/?#C.Uid"Af^H2]i#,2A07e.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?BMD0)E$8=:##6g)##/?(C/72h"Ah'?CF;)(BN.Z+CIMMmE#BQ!E%`1>.4c2:4@V4E/I3:)EA/n?!\c-&ECiYs@9"aP57&5./JT36EE*2I.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.Du@74BbFYG=C!\c-&EC`SrDH/,]'dH1-'dH.?BMLrrE$8Kk2],gS0bX[G3#`H4)[QK\2A07J##6g)##/?,?q`s\"Af^H2]i#,2A07e.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?BMD0)E$8=:##6g)##/?(C/72h"Ah'?CF;)(BN.;s?qFWfE#BQ!E%`1>.4c2:4@V4E/I3:)EA/n?!\c-&ED8i#@9"aP57&5./JT36EE*2I.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.Du@74BbFYG=C!\c-&EC`SrDH/,]'dH1-'dH.?DG*Z%E$8Kk2],gS0bX[G3#`H4)[QK\2A07J##6g)##/?,DbiVj"Af^H2]i#,2A07e.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?BMD0)E$8=:##6g)##/?(C/72h"Ah'?CF;)(BN.8oC.2DlE#BQ!E%`1>.4c2:4@V4E/I3:)EA/n?!\c-&EDJr%BN6KW57&5./JT36EE*2I.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.Du@74BbFYG=C!\c-&EC`SrDH/,]'dH1-'dH.??qWs]"B?$C4]Nj;2@Li44rI*=/-l4a2cMb!CF;)(BN.Z*C.V\pFW(8i3X?`72cO&p4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?#BLGNd"Ah'?CF;)(BN.5nC.hhrFYG=C!\c-&ECiZ%BiQTS4;&2t$5=Em#osZ`@m0o0/JB$q'dH1-'dH.?BM:csE$8<e/.ra80G>?tE"3Hn2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ED8l+@9"aP'dH1-'dH.?D,3Z$E$8=:##6g)##/?%DF?oc"B?$C4]Nj;2@Li44rI*L4:Df63!^H8EA/n?!\c-&ECE5kE$8L@0bX[G3#`H4)[QK\2A07J##6g)##/?&Bgk?\"Af^H2]i#,2A07e.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.??qs*eE$8=:##6g)##/?+CJI/f"B?$C4]Nj;2@Li44rI*=/-l4a2cMb!CF;)(BN.Z+C.qnsFW(8i3X?`72cO&p4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?+CJ72i"Ah'?CF;)(BN.E#DGFJ$E#BQ!E%`1>.4c2:4@V4E/I3:)EA/n?!\c-&ECE5rE$8<e/.ra80G>?tE"3Hn2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECE>qCK2fZ'dH1-'dH.?BMLrqE$8Kk2],gS0bX[G3#`H4)[QK\2A07J##6g)##/?'C.Lcc"Af^H2]i#,2A07e.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.??qs*eE$8=:##6g)##/?&BgkB]"B?$C4]Nj;2@Li44rI*=/-l4a2cMb!CF;)(BN.Z/Bh_ksFW(8i3X?`72cO&p4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?+CJ72i"Ah'?CF;)(BN.]*CfMoV4;&2t$5=Em#osZ`@m0o0/JB$q'dH1-'dH.?C.^`pE$8<e/.ra80G>?tE"3Hn2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECE>qCK2fZ'dH1-'dH.?DbEDtE$8Kk2],gS0bX[G3#`H4)[QK\2A07J##6g)##/?,Dbi\l"Af^H2]i#,2A07e.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.??qs*eE$8=:##6g)##/?,?qa$^"B?$C4]Nj;2@Li44rI*=/-l4a2cMb!CF;)(BN.;s?pn9aFW(8i3X?`72cO&p4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?+CJ72i"Ah'?CF;)(BN.]'Bh_ksE#BQ!E%`1>.4c2:4@V4E/I3:)EA/n?!\c-&ECE5pE$8<e/.ra80G>?tE"3Hn2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECE>qCK2fZ'dH1-'dH.?BMLrpE$8Kk2],gS0bX[G3#`H4)[QK\2A07J##6g)##/?+DG+8!FW(8i3X?`72cO&p4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?+CJ72i"Ah'?CF;)(BN.DtBgc5jE#BQ!E%`1>.4c2:4@V4E/I3:)EA/n?!\c-&EC<)hBN6KW57&5./JT36EE*2I.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.]'BhhqtFYG=C!\c-&ED8c!C/l]T4;&2t$5=Em#osZ`@m0o0/JB$q'dH1-'dH.?Db`]#E$8<e/.ra80G>?tE"3Hn2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECE>qCK2fZ'dH1-'dH.?DG*Z#E$8Kk2],gS0bX[G3#`H4)[QK\2A07J##6g)##/?+DF@boFW(8i3X?`72cO&p4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?+CJ72i"Ah'?CF;)(BN.DtBgl;kE#BQ!E%`1>.4c2:4@V4E/I3:)EA/n?!\c-&EC<,iDH/,]57&5./JT36EE*2I.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.]'BhhqtFYG=C!\c-&EC<N"C/l]T4;&2t$5=Em#osZ`@m0o0/JB$q'dH1-'dH.?@7`sdE$8<e/.ra80G>?tE"3Hn2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECE>qCK2fZ'dH1-'dH.?BM(WnE$8Kk2],gS0bX[G3#`H4)[QK\2A07J##6g)##/?&Bgk`g"Af^H2]i#,2A07e.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?BMV)oE$8=:##6g)##/?#CJ7Do"Ah'?CF;)(BN.5tBhDYpE#BQ!E%`1>.4c2:4@U\&.2`<k/JA=]'dH1-'dH.?DG*Z"E$8L@0bX[G3#`H4)[QK\2A07J##6g)##/?#C.Ule"Af^H2]i#,2A07e.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?BMV)oE$8=:##6g)##/?#DbEAg"Ah'?CF;)(BN.5tBhDYpE#BQ!E%`1>.4c2:4@V4E/I3:)EA/n?!\c-&ECiZ%CK2fZ57&5./JT36EE*2I.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.DsCJS5"FYG=C!\c-&ED8c!DcJ5^'dH1-'dH.?D+R,qE$8Kk2],gS0bX[G3#`H4)[QK\2A07J##6g)##/?,Dbj&!"Af^H2]i#,2A07e.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?BMCm!E$8=:##6g)##/?#DbEGi"Ah?U4;&2t$5=Em#osZ`@m0o0/JB$q'dH1-'dH.?CdgTgE$8<e/.ra80G>?tE"3Hn2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECE5uE$8=:##6g)##/?+C.1fg"B?$C4]N=-3ZT&)'GUiQ#osZ`A1//n.OR2<CF;)(BN.;tCJ%kr"@b<^3#VcQ3#`H&BN7&".N]o;4rI*L4:Df63!^H8EA/n?!\c-&EC<N"D,i#W'GUiQ#osZ`@m0o0/JB$q'dH1-'dH.??pmCT"Af^H2]i#,2A07eE>oW&4@V+2/M@\J0,59-EA/n?!\c-&ECiW"DH/,XE(1rS2&QN*.gTA_3"Z`^'dH1-'dH.??qim_E$6Z+.1c\U4;&2t'GUiQ#osZ`@m0o0/JB$q'dH1-'dH.?@7`scE$8<e/.ra80G>?tE&8LIEE*S[4]OKL.N]o;4rI*=/-l4a2cMb!CF;)(BN.Z*C.2DlFW(8i3X?`72cO&n2BNYEGr,L;.7"UK1`9%64:!;=.gd9s4B+:&CF;)(BN.;rBhVerE"Erg3"T%J#qnjQ3"Za**Z4r34:VE"3Z20U##6g)##/?'CJ$rd"B?9I3ZT&)(^qEk'dH1-'dH.?C/%,sE$6&,3ZT&)"q2=M3Z1Kl3"Z`^'dH1-'dH.??qim_E$6Y@2BNYEGp<Ou.gck#.R>p*0N)(I"q2=M3Z2*q'dH1-'dH.?D,3Mk"B?'M2]i#,2A/tB0Fn.;4:VDs.h>kb/.Mmn.odDp3ZT&)$QT=U4rkLF@l+0%.6A+XE?b\m.gck#.T0GC3XH!%2@`[f2],LI##6g)##/?!Db3>h"B&D'/.Mmn.pO#*Gq^aG!\c-&ECrr,BiQTSE"3Hr/.NRc&I8@M@l>\c(H<!,2Ad$!$QT=A4;&2m2%pc-2-_L5.gck#FYXOJ/R/Ja.2`j:Gn:np3"T%C4:VDs.h>3)0Fn.;4:VDs.h>l:49PXV$5j$_4:Xq:4:VDs.h=9d##6g)##/?&DG!5f"<fEr">UQ./O:`g.gck#.OR2<CF;)(BN.>u@7XZf":5t_0G%2;4:VDs.pO2Q$:Z-B2&QN*.gR7+#nRgO4>e#g/KG`04B*gE2'!J;FY===0,XsR'dH1-'dH.?BLG<fE$6Z+.1c\U4;&2t'GUiQ#osZ`@m0o0/JB$q'dH1-'dH.?CJ.?#E$8<e/.ra80G>?tE"Erg3"T%>%4EJU4:VE"3Z1Kl3"Za**Z4r34:VE"3Z20U##6g)##/?&BM:fd"B?9I3ZT&)%2fue.2)n%$5j$_0HUm54rkLF@lk8=$5j$_0HUm"'dH1-'dH.?Ced;rE$8Kt2BNYEGqT.!/Is35.gd9s4@'V^1`9%64:!;=.gd9s4B+:&CF;)(BN.5nBh_ksE"Erg3"T$m/.ra80G>?l58aG$0eX+N0,Xs**?>+]E=<Zc3Z1'cFV#Q'0F1qp2BNYEGmOZcA.JYP0G5$Y'dH1-'dH.?BM(TpE$6Z''dH1-'dH.?@7<IZE$8<s2'!J;&/\L[0G,<AE"Erg3"T%#/0>Z4.M#Vn4:_Q'2\-L,.3B982,k2(2]i#,2A07e.iA=&.hYf3%4EJU4:VE"3Z1[A$8X^j4<GLI4B)sq1`9%=/I2J)4:#1-.hGuY4;&2t0H*n%/0>Z4.M#J[2],d34:_Q'2\-Kf3"cci.iAR*2A-6!!\c-%!\c-&ECrSuDcJ5ME!REf2d?Ok/I;UjGn(Dt.2*U24=<*NCF;)(BN.;tDb=;!";r*_Gn(E&/.NRc2\d/s4;&2m2%pc-2-^7p3$/_^4[B__1`7r"##6g)##/?+BLkWc"<eTj3ZT&).N&F*4:X=X1_g!sBM:f]2%pc-2-^@j.gck#.R=[O/KYrd4:VDs.h=<8/KJ(02'!J;&/\L\4:VDs.khtR0F1qk5?o*8/R/Mb.gck#.U2r]4;(U*49ts"2d?q(4^8g43ZT&)2%p&r.L7:,2]F+K.gck#A.K7a0,Xs*!_k*I2@`\KFUo&r0,Xs]0G7=u3#)W/E=WWn0,Xs*E#9N]0H*n%4:VDs.jm;=CF;)(BN.;tDbFA""@*e4/f=m1#o+?]$5j$_4:X"t##6g)##/?&DG!8g"<eKh4^83r.gck#!\c-%!\c-&EC<)hD,i#KB+GRd0,XsR'dH1-'dH.??qs0kE$6YH0c:ls2%p&r.L7:,2]F+K.gck#A.K7a0,Xs]4;&2m4;&2m2%pc-2-^q+1_CZ9'b_;e%2B`bA5Y]\/fbrKE??,01_Uc\2B<>f0G+mh2%pc-2-^7k2]EkI.iAR"2@pF+BM:f]2%pc-2-^@j.gck#$4%@_.R>Eu3!]aC4:VE"3Z0S(##6g)##/?+CJI5h"<fEO##6g)##/?'C.Lie"<eTj3ZT&)4WOM(#o+?]A.K7a0,XsJ/KFg&!\c-%!\c-&ED8o#BiQTG@lk8=%ilK&4>-[H0G5$lE"Erg3"T%&0G5$V3"Q)pA-a+`/.iX%.o[&]/KH)D2]GL%3!^<.EA/n?!\c-&EC`T$DcJ5YE"s!Q.2<a(%ilK&4@2UQ0G5$X0b+d,0bYB/GmGAo2d@I02&QN*.gRL,.gd9s4@UFt2&QN*.gR7+#nRgO4>e#g/KG`04B)Fo3$/_^4\ut(/f=m1#o+?]$5j$_4:X"t##6g)##/?#@896`"<h%T2],Ku2],g22BNYEGr?TB&3*660FnsU3#`H4&/#*]/Q=\lCF;)(BN.5nD+e.uFYG=C!\c-&ECrr,BiQTS',)-2*C`+")AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.5nD+%Yn"@4452$jj^4;&2t'GUiQ#osZ`@m0o0/JB$q'dH1-'dH.?@7<RbE$8<e/.ra80G>?tE"3Hn2&-o//K#*Z'dH1-'dH.?Ced>sE$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&EDJo%BN6KW#!4Ik##6g)##/?(C.M#j"<h%T2],gQ0FnsU3#`H4)[QK\2A07J##6g)##/?,Cem>h"Af^H2]i#,2A07e.N&3d2&-5p2B;u,E<mKp/Iid15#`0s1`7r"##6g)##/?(C.M#j"<h&C4;&2t'GUiQ#osZ`@kSE-4:W)B2@`tF##6g)##/?!DG!Aj"B@Gh.N]o;4rI*=/-l4a2cMb!CF;)(BN.9$D+%YnFW(8i3X?`72cO&r2%D8m##6g)##/?#BMM8o"<fEO##6g)##/?&DG<Jj"<fEO##6g)##/?#C.Uof"<fEO##6g)##/?+BLtoj"<g>Q.gZeT4;&2t'GUiQ#osZ`@m0o0/JB$q'dH1-'dH.?BM;)uE$8<e/.ra80G>?tE"3Hn2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ED8o#BN6KW/IhdcE"!Qq!\c-%!\c-&ED8l!?r\X>!\c-%!\c-&ECrSrDH/,L!\c-%!\c-&ED8c!@9"a?!\c-%!\c-&ECE;s?r\X>A-`AT4BrI-4]N=-3ZT&)*>Je[2&S=\3!`).0FnsU3#`H4%20BX2&TXP##6g)##/?#C.UZ_"Af^42%L9k*>Je[2&S=\3!`812a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?#DbEes"<g>o3"Q)pGngrZ#!4Ik##6g)##/?#DbEes"<g?C/IhdcGmGAo2d@1.3ZT&)$4%@Y/K"a<//:_Z3"Za**Z4r34:VE"3Z20U##6g)##/?,CemAi"B?fc3">om.m!b=@kSE1)A<;Z*XNi62]WYE4;_<M2[L?]'dH1-'dH.?DbWVtE$6Yi'dH1-'dH.?DbEE$E$6Z+591RP4B2t(.N'61Gp>+)'dH1-'dH.?DbEE#E$6Z:A/Z0n.N)2%0c:ls2%pc-2-_LF3">om.m!b=A/c6n4@V+2/M@\J0,59-EA/n?!\c-&EC<)hDcJ5Y$4%@Y/K"a<//:o64:!kS.iC,Y0KC$Q3tMu/EB+pQ1ab7FCF;)(BN.;rBh_ks"=H/kCF;)(BN.;tDa[kp"Af(1//_^t2],Ku2],g22BNYEGrQfU3tMuW4<4t;.m?NW0FnsU3#`H4%20BX2&TXP##6g)##/?%?qj'^"Af^42%L9k*>Je[2&S@X3#E5>)b)mu)AEnq4rFo)57&5./JT36E@M\6//__J4>7?K4W+H1%ilK&4Brm1GqK[^4<4t;.mZ`C.gZeT/JJd+Gn:np3"T%C/KG$34:X._0L6?R1`9%64:!;=.gd9s4B+:&CF;)(BN.Z+C._bqE%_1m.gQ_!*XNii$5igd2@^<E//9lK3$&n@4]F-F/.jNg##6g)##/?&BM:ie"<fEO##6g)##/?,CemDj"<gkN3"Q<!E#BK(4;AJr$Q1o.3#E5>A3gh02%L9d/JJd+Gn:np3"T%C/KG$34:X._0L6?R1`9%64:!;=.gd9s4B+:&CF;)(BN.Z+C._bqE%_1m.gQ_!*XNii$5igd2@^<E//9lK3$&n@4]F-F/.jNg##6g)##/?&BM:ie"<fEO##6g)##/?,CemDj"<gk`.gZe[4;&2m4;&2t'GUiQ#osZ`@m0o0/JB$q'dH1-'dH.?Cem;tE$8<e/.ra80G>?tE%E"A3!^*-EE*S[4]OKL.N]o;4rI*=/-l4a2cMb!CF;)(BN.8oD+S"sFW(8i3X?`72cO'83"?r<4:b[h4;&2t2%pc-2-_:6#nmLZ3"SY60FnsU3#`H4%20BX2&TXP##6g)##/?&CJ7)f"Af^42%L9k$kafo.gQk#@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&EDK).D,i#KA1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q>nOE#9N]0H*nQ*[`p0CF;)(BN.Ju?q=Qe":,tO2d?Ic3"Qp"57&5./JT36EE+"_Gs)-D3$05%'dH1-'dH.??r'HmE$6Z')@lfY4=hE_"u.,70MkG8/JJd+Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECiW'BiQTX%iH0"2@`5:'dH1-'dH.??r'HpE$6Z'FA55+DG=;4DadAtBLG3gF\bA+G==bqCIgcm@893eF\tM,Ce\)5DG*>nD,3N"E)dJ\.N'61Gs)-D3$05%'dH1-'dH.??r'HmE$6Z''HJ)g#nmP+'GUTTF[TLO0c:ls.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?Ced]'E$8=@4<FP3.o.fO##6g)##/?+C.(H^"<h#FCeR2nG>(\6@7WmfCf!W"D,NZ$BMM9#CICZiF\tY,Ce\)2Bgk]qC/.H#CK4XE2%L9+5?p&^/KGW5!\c-%!\c-&ECEB%C/l]HEAS+0.iflD.O-q\/JVAlE!REf2d?Ok.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.8p?qaiiFXdt'/JA=b!\c-%!\c-&ECEB%BiQTGECiN!@8]Hn@7s9tBhCiqF\5)$G=Xu&@89NpBh^lnF\tV.DGj/+DG3;pBMD3!D,jjG2%L9+5?p&^/KGW5!\c-%!\c-&ECEB%C/l]HEAS+0.ieTu)BB&!2&TM#E!REf2d?Ok.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.8p?qaiiFXdt'/JA=b!\c-%!\c-&ECEB%BiQTGED]##DGFA6@7<jkC.gigC/$rfCe-ul?qa$oC/.l+C/$ulG>1J/@7j$e@803`E#BQ!Go7M*E#BQ!Go7M*Go7M*E%r@E3\2!K4@U\&.2`<k/JA=]'dH1-'dH.?@7id`E$8L;3#<Sh/O9n###6g)##/?+CJIPq"@kF6CF;)(BN.]'CIMMmFYG=C!\c-&ECE>nBiQTX'dH1-'dH.??qs3iE$8=:##6g)##/?+CJRDl"Ah'?CF;)(BN.]'C/8,!,S1mp3"T%>3#<Sh/KFgt'GUiQ#osZ`@lOZ$.2X!<2cMb!CF;)(BN.;qBgc5jFYjg=0J<Du&KMr#$4%@_@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&ECiZ%DcJ5MA1A<)//_Ck2],gQ0FnsU3#`H4)[QK\2A07J##6g)##/?'C.L]a"Af^H2]i#,2A07e0H*nQ*[`p0CF;)(BN.8oD+\(t"@5U4##6g)##/?+CJIPq":,tO2d?Ok.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.8oD+e.uF\H'F2%L9+5?o]a!\c-%!\c-&ECiZ%DcJ5MA3i1;CF;)(BN.]'CIMMm/JJd+Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECiZ%DH/,]BN5WT.N'61Gp>+)'dH1-'dH.?Cem;rE$6Z:A2#N2!\c-&ECE>nBiQSu0c:ls.iAI#0HV#G4;]_)##6g)##/?+BLtWb"<fEO##6g)##/?#Cdh#i"<gMi2[UK04>.9Y0,Xse'dH1-'dH.?Cem;qE$8=\E#BK(4;AJr#!4Ik##6g)##/?'C.LZ`"<g?C'dH1-'dH.??qs3iE$52h4;(U*4:E&63ZS2)4XW3OCF;)(BN.](Ce\2!"=H/kCF;)(BN.E$?pn9a"@bN`0,#E3$5j$_4:YUL##6g)##/?'C.L]a"AhT\4:h`%0H*nQ*[`p0CF;)(BN.8oD+\(t"@5U4##6g)##/?+CJRDl":,tO2d?Ok.1dL"3!^*$!\c-%!\c-&ECE;sBN6KF!\c-%!\c-&ED8`&@9"a?@l5/>2AZrZ4:VDs.o\JjCF;)(BN.8oD+e.uF\#dB2%L9+5?o]a!\c-%!\c-&ECiZ%DcJ5MA3i1;CF;)(BN.]'C/8,!/JJd+Gn(E"2&-o//K#*Z'dH1-'dH.??qipbE$6Yi'dH1-'dH.?BLtp&E$6Z5&/#$Q1)VGD.gck#EA/n?!\c-&ECiZ%DH/,]CfM&V4^8R.4]N=-3ZT&).gQP9A2,)93\2!K4@UG%4rY=CEA/n?!\c-&ED8r(CfMo[591RP4B2S%+Yc_C2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?+CJR2f"<g>o3"Q)pGn:np3"T$jA/c6n4=<*NCF;)(BN.K&D+S"s":uLP3"T$hA2P8:/KG`04=<*NCF;)(BN.]&@8'rj"B7?CCF;)(BN.Z*BLuJnFWF`u2BNYEGo91'2\,li2]iVk'dH1-'dH.??r'HpE$6Z''dH1-'dH.?@7ishE$8<bE&/=9(_IMj4;%X#3%$[JCF;)(BN.]'C.V\p">^l")\*kk0aJ[%.M#)P!\c-%!\c-&EC<&gCfMoJ((_$"2@pf>$5=Ka/L)AH.7"\.'dH1-'dH.?DG*Z(E$6Y]2&J4`0H1uJ2]2i33^FQA'dH1-'dH.?@7WmhE$6Y]2&J7\2[BTh.L6hs3[ZmLCF;)(BN.K%Cee8"">^l"%2Bct)A<qr.j%=_!\c-%!\c-&ED8o#CK2fI((_$90G4@.2@pf>4@'Q='dH1-'dH.?BMLunE$6Y;5?o*8/R0eO!\c-%!\c-&ECE>nD,i#K/JJd+Gn(E&/.NRc4;&2m/ef<:4BsB^!\c-%!\c-&ECE>nD,i#K4VLd/3#)EdE#gSb##6g)##/?+CJR5g"<g>Z2@pf>C*tu'CF;)(BN.](DFe%s"B7lfF\bM'C/8+:!\c-%!\c-&EC<&gCfMoJA5Yob3[ZmLCF;)(BN.Z,C.V\p"@63hDG!k.!\c-%!\c-&EDJo%CK2fIA5Yp$Gon[m##6g)##/?#CJ@8j"<g>Z2@pf>C*tu'CF;)(BN.](DFe%s"B7igDGWc'Cf!DsE#TN%4=<*NCF;)(BN.K&D+S"s"=H/kCF;)(BN.E$?q"?b"@5ac?sF]UGnM&4GmkN%!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ED8r%BiQTG@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?@7`snE$8L'0c:ls2%pc-2-^knA2P8:/KG`04=<*NCF;)(BN.]&@8'rj"B7?CCF;)(BN.Z+C.)>kE#hD-'dH1-'dH.?BM(ZkE$6Z:.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?BMV#pE$6Y3CF;)(CF;)(BN.5nD+._o"@5IWGo]@6'dH1-'dH.?D,3VtE$6Z:)A<qr.o.fO##6g)##/?+BM1T_"<h#IBM2H*D+Ri1DH.8X4^9!2GnM&4Gp>+)'dH1-'dH.??qs3nE$6YH0c:ls3%$[JCF;)(BN.]'C.V\p"@5*[4ZsY`0GtcFGo\Ok##6g)##/?,D,3Gi"<g>f2&J4`0H1uJ2]2i3Go\Ok##6g)##/?%DF?c_"<g>f2&J7\2%p0J0bk<;"t1E(Gon[m##6g)##/?!Db3Dj"<g>f2&J7\2[BTh.L6hX3[ZmLCF;)(BN.Z,C.V\p"@5*[4['&W4qmu+4:_YsGon[m##6g)##/?#CJ@8j"<g>f2&IGC2[D>N2%p/oGo87g##6g)##/?#CJ@8j"<g>f2&IGC2[D>N2%p/uGoIJ.4=<*NCF;)(BN.K&D+S"s"=H/kCF;)(BN.E$?q"?b"@5LXBhV;q.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?BMV#pE$6Z5*u,\!*u+tk/O(3^2&KRO##6g)##/?,Cem_s"BA`1*>o(u.h`@bE#BQ!Go7M*Go7M*E%r@E3\2!K4@V4E/I3:)EA/n?!\c-&EC<N"DcJ5^57&5./JT36EE*V[.pOT#,6UsQ2d@7*+UD0a2@^f?.303/@lk8=*>o(^4;&2,2[BX]E#9N]0H*n,3$&n@!\c-%!\c-&ECrSrCfMoJE@_h9/Plor!\c-%!\c-&ED8l+C/l]HE!REf2d?h3!\c-%!\c-&EDJl$DcJ5MA2#N2!\c-&ECE;sD,i"h2],Ku2],Ku2],gQ0FnsU3#`H4)[QK\2A07J##6g)##/?'C.M#j"Af^H2]i#,2A07e'b^Zl.1'6O4;&2t'GUiQ#osZ`@m0o0/JB$q'dH1-'dH.?CdgTmE$8<e/.ra80G>?tE#KZ-Gp?E+Gnh5b.30E@.T?KY.i/F(3$/_l'dH1-'dH.?D,*c/E$6Z5*Z4r*4:`542]*8=/Iu)YE#9N]0H*n,3$&n@!\c-%!\c-&ECrSrCfMoJEBP-L)\Wr&.Sp1+'dH1-'dH.?DbEK%E$6Z&3"cci/JA@*.hrs*E=+?P##6g)##/?(CIClh"<fEO##6g)##/?(CJ.Ao"<h&WA-a+c/Iid15#_Xq.jm;=CF;)(BN.;tBgl;k"B>F04;(U.!\c-%!\c-&ECrW!BiQTG!\c-%!\c-&EDJo%C/l]HA5>KiGmZ2X##6g)##/?&BhCcc"<fEO##6g)##/?#DaZuc"<g?2CKpp#'dH1-'dH.?DbNJrE$6Yi'dH1-'dH.?BMLumE$6Z:Cg7$$'dH1-'dH.?DbNJrE$6Yi'dH1-'dH.?DG*Z'E$6Z:/IhdcGo7M*Go7M*Go7M*E%r@E3\2!K4@V4E/I3:)EA/n?!\c-&ED&Z'DH/,]57&5./JT36EE+"_Gq^6A0aJd/5"7:72]+:W.h;V&0bkN1EA/n?!\c-&ED&Z'@9"aK/JJd+Gq^6A0aJd/4sr<PCF;)(BN.>u@74Bb"@b'L.L64e+B2VN2],L$5?p/T4qmu(2]GL<0G4pC0Fe=()AF2&4]FC'CF;)(BN.;rBhhqtE!REf2dA<L4qmu(2]FD'##6g)##/?&BM:lf"<gMf4:_E(2?d>X4;&2m0H*nD0H1uJ0G5%%*u,\!*u+tk/O(3^2&KRO##6g)##/?,D,3ht"B>F04;(UH0H1uJ0G5$Y'dH1-'dH.?@7WmmE$6Z5*>o(u.h`@bE#BQ!Go7M*E%r@E3\2!K4@U\&.2`<k/JA=]'dH1-'dH.?Cem<"E$8L>0FnsU3#`H4)[QK\2A07J##6g)##/?#BgbB^"Af^H2]i#,2A07e58+5g##G@g0G7=u3#)W/EE!SQ1`9%64:""L1DpuF.TAAiCF;)(BN.?&BMMhsE)ePh"@b0O/O(3^2&HN%2cO'T4VLd0!\c-%!\c-&ED8buBiQTGA.'=g1(OKh3Z0S(##6g)##/?+C.1Wb"<dhL'GCNP%22t[2%D8m##6g)##/?#BMCrg"<fEO##6g)##/?'?q!a]"<fEO##6g)##/?!Ce7&f"<h,04<FP3.o.fO##6g)##/?+C.(H^"<h"[3!^K`'dH1-'dH.?BM(ZoE$6Z'F@ekrCeS,1BM:fi1`ZQ(!\c-%!\c-&ED8buD,i#KED]##F\+tnE)dn^GmZ2X##6g)##/?(CILZa"<gMd0G4pC0Fe=()AF2&4]FC'CF;)(BN.K$DbjY&E!REf2cO#s!\c-%!\c-&EC`Q&BN6KF@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?C.gliE$8LZ@k\i'4Zs\j1`ZQ'2A070!\c-%!\c-&EC`Q&BN6KF@lbV>4ZXSq.L7s@0G"dg'dH1-'dH.?DbEGrE$8LZE(2)`3!EPZ4;&2m0./_ACF;)(BN.E#Bh_ks"=H/kCF;)(BN.]'C._bq"@b<Y2\H]&/Q<>u2]i#,2A07'/JJd/#os3dE"s!Q2@(9,.kDDI/LNM?CF;)(BN.E#BhVer"@5Tm2%D8m##6g)##/?#BMCrg"<daQ4;(U.!\c-%!\c-&ED8buBiQTGA.0:e!\c-%!\c-&EDJl%?r\X>.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?C.U]iE$6Z5*";oU.4?,D2,jWL4;&2m4;&2t4;&2m4;&2t2%pc-2-^n/0H1ZABL+Wc.N]o;4rI*S2B*;?4B+:&CF;)(BN.K$Db+.tFW(u*.N)Lm.hr^#/PStk2a88`2]E>6E>eie3X?`72cLt&2$jje3t<860aL?.3"Q)pGngrZ%ilK&4@)OT.gZeT/JJd+Gq^6A0aJd/4sr<PCF;)(BN.]'C.V\p"@4sT2%p0j!\c-%!\c-&ECEB%BiQTGED9P5F\Q-p0H1uJ0G5$Y'dH1-'dH.?@7<R`E$6Z:)A<qr.o.fO##6g)##/?+C.(H^"<h#JF\Pt9E%i:80aJd/4sr<PCF;)(BN.>u@7a`g"@4sT2%p0j!\c-%!\c-&ECEB%BiQTGED9P5F\Q-G2%L9d'bqAi/JT0,!\c-%!\c-&ECE>nCfMoJA3V"D2@`5:'dH1-'dH.??r'HpE$6Z'Bi%2nBiR,"4qmu(2]FD'##6g)##/?,?q`p["<g>Z2@pf>C*tu'CF;)(BN.]&@8'rj"B7cbBi%2i'bqAi/JT0,!\c-%!\c-&ED&Z'CfMoJA3V"D2@`5:'dH1-'dH.??r'HpE$6Z'Bi%2nBiP`S4^8R.4]OEK4<4Da*?>S@0H1uJA-Y(VCF;)(BN.]-BLuJn@PB<0!\c-&EC`T#BiQT'2%pc-2-_g:+>QM@0FnsU3#`H4*=a#%4VIo,EA/n?!\c-&ECrYuC/l]Y)AEbb/L)qN+>Or?0aM&43!D?G((rP63"cl/4]E%02]i#,2A07P3"Q)pE$I.u'dH1-'dH.?C.^cnE$6Z:%ilK&4BrI-4]N=-3ZT&)4WOt?.hWj*0aL?'0FnsU3#`H4%20BX2&TXP##6g)##/?!C.1E\"Af^42%L9k4WOt?.hWj*0aLN*2a88`2]E>6E>eie3X?`72cLt&2$jje#!4Ik##6g)##/?#CJ@&d"<g>o3"Q)pGo7M*E!R0i1+,%DCF;)(BN.5o?r(&l"B6!L2]i#,2A07e/ef<:4Bqsi0F1oU4VLd%5?o]a!\c-%!\c-&ED8o#D,i#K/JJd+GngrZ#!4Ik##6g)##/?!Db32d"<g?C'dH1-'dH.??q<^eE$52h4;(UH0H1uJ0G5$Y'dH1-'dH.?BMLusE$6Z:BMMM22%L9+5?o]a!\c-%!\c-&EDJo%D,i#KA3i1;CF;)(BN.5nCeS+u/JJd+Gq^6A0aJd/4sr<PCF;)(BN.DtBLuJn"@5FC4;&2m4;&2m4;&2m4;&2t2%pc-2-^4b2&@J=/K"b!'GUiQ#osZ`@ji9!4qJ<!'dH1-'dH.?@7id_E$8=".gZe[/fbc7%NPNR.n2T0)AEnq4rFo)57&5./JT36E@M\6//__U*[`p0CF;)(BN.>u@7=Hc"@4452$jj^0H*nQ*[`p0CF;)(BN.>u@7=Hc":,tO2d?Fn.i/F(3$/_l'dH1-'dH.??r'KnE$6Yi'dH1-'dH.?CemK!E$6Yi'dH1-'dH.?DbEPtE$6Z:%iH0"2@`5:'dH1-'dH.??r'HpE$6Z'BM:fmF\P;%F\P8&BiP`U.N)2"2@^f?.303/!\c-%!\c-&ECEB$C/l]H!\c-%!\c-&ECiYuDH/,L!\c-%!\c-&ECrSqBN6KFA1A/k/JA=b!\c-%!\c-&ECEB%BiQTGED8i"Bi%K%F\P8&BiP`S4^8R.4]N=-3ZT&)0HUl`3"R0<'GUiQ#osZ`@ji9!4qJ<!'dH1-'dH.?BMUooE$8<e3"Q<!E"s/n%NQAl@l##G0c_/84;_<,/.ra80G>?t%ilK&4B3mW!\c-%!\c-&ED8o#DcJ5MA1A<)//_Ck2],g3.3/L"E>eie3X?`72cO&s0bkN0Gmb>o/Q?!\2I%7+Gp>+)'dH1-'dH.?BMLurE$6YH0c:ls.3B982,k2(2]i#,2A07e0H*n(2%D8m##6g)##/?#BMCrg"<eKh4^8+#.jm;=CF;)(BN.DuBMMhs"@b-R2]+:W.h;V&0bkN1EA/n?!\c-&EDJo%CfMoV/JJd+Gn:np3"T%).1-e#BgDq-.1dL"3!^*$!\c-%!\c-&ED8brD,i#K!\c-%!\c-&ED8c(BN6KF!\c-%!\c-&EC<)h?r\X>@m:e=2]5jm/.;R]2,#YV##6g)##/?#DbNPk"<g>N2@^f?.303/GmOTg3"SJ;'dH1-'dH.?DbEPtE$6Z:%iH0"2@`5:'dH1-'dH.??r'HpE$6Z'C0)8S/JKik##6g)##/?#DbNDg"<h#JBi%5qE)8ttDGWho1`ZQ(!\c-%!\c-&ED8buD,i#KED8hsBMMi*/.;R]2,#YV##6g)##/?(C/.8k"<g>Z2@pf>C*tu'CF;)(BN.](DFe%s"B7fe@8KBsDGWf#?r[4@0-(m.!\c-%!\c-&ED8`'CK2fIA3Vg]3"Z`^'dH1-'dH.??r'HpE$6Z'.1c\C'dH1-'dH.?BMComE$6Yi'dH1-'dH.?DbEDpE$6Yi'dH1-'dH.?C.U]hE$6Yi'dH1-'dH.?D+R,nE$6Z+FAH(EFUT*!!\c-%!\c-&ED8l"CK2fI!\c-%!\c-&ECrSuBN6KF!\c-%!\c-&EDJl$BN6KF!\c-%!\c-&EC`AoBiQTGE)nnD.ifK3!\c-%!\c-&ED8`&CfMoJEE!eW/JKik##6g)##/?#DbNDg"<h#BFAbCsF&GD+FV,?)0deqCCF;)(BN.E#Bh2Mn"B8YuDGXRJ3!^K`'dH1-'dH.?BM(ZoE$6Z'E)Be>E)p.@DH.M^3ZT&)0-(7$CdARQ0-(7$CaV2)CF;)(BN.;tCJA(u"@4493X?Z:C*tu'CF;)(BN.]&@8'rj"B7cbG>D=>E"Erg3"T%(3"AGb%4b0r.iB'<4B)=p0-(m.FXR=r4;'dd58,\'##6g)##/?+C.(H^"<h#IFZC?U1ab7FCF;)(BN.;sBhM_q"=H/kCF;)(BN.;tDG=D#"Agf^/.jNg##6g)##/?'C.Ufc"<fEO##6g)##/?#@89-]"<h&H0-(7$CfLN<.o.fO##6g)##/?#CJ@/g"<gM_2A-o43XAso/.ra80G>?tE!ZX^3"SJ\*>o(u.h`@bE#BQ!E!d<lC.9HZ3!EPZ4;&2m4;&2t4;&2m4;&2m4;&2t)BB\".ifuF3#</=$UFt$-j^n+4B)sq1`7r"##6g)##/?,@7`p\"<fEO##6g)##/?&DG*Gk"<fEO##6g)##/?!C.1H]"<h%n3"Z`73%l6Q1)U9N@kRfj.9'S00G4p*/k.2m2&R2H%363WBN9A#@p&pS$9]72F`_+r',Ca&%i5:!)0Bt1=UH$/2'!,1.s?#E=UYKC/K#?@0G>@IFCSG^"q3($(Df1NH?<Y"%hSdm%M=&0@p'-N&LnM7%=`J0=\W'uH$!P!&/?*G%X<)*=Vq_T.=-)G=V;;X/K#+GFCSGb)Zi/?#'Y0!=W&+m0Ff$21`72JG][Fu#RqG0H$!P!)B0GN(j:"2=V)MR4V%N)0G5%DFCSGb)Zi0EFCSGo!#Ia0";`P5FCSGq%0/7'I<8t%4EYaU=UGlS0GkN@4;`?c@p']j%6+oEFCSGb&J[D>GB@=t*X2g.(Fp.W'cIm/FCSGc'aclE&K<hS!>dF')L6F7=UZ8O.N*PS@p'?^!&>E'EHG\n)$U[2%P%oH&eGR9%W?H!=ZR9)2&Qrm/JD(o2B<>r3YN&/H$!P!%hTU/%!?Z%=W&+m"qD4H4U$1S@p'ln#!*P4#B4cp=UPrV1^O:I.23L.4F)$Y=Vq/L1^/2I@p'fg(GH1.H?<Y"%ibp=&.j,/@p'*T(FpMJFCSGk$jJa!!":B-FCSGc'cVLA@p'fP(H`94(NOV-=UG`Q0H(B_.L?mk4:_[AFCSGc&Hk(?FCSGq(^;r4!>>]=])local x=v(string.sub(Q,0x5),0x2)local E={}l=setmetatable({},{__index=E;__metatable=nil})function c(t)local l=E if not l[t]then local c=t+0x1 local N=((o(x[c],U[0x1])+o(x[c+0x1],U[0x2])*0x100)+o(x[c+0x2],U[0x3])*0x10000)+o(x[c+0x3],U[0x4])*0x1000000 c=c+0x4 local v={}for t=0x1,N,0x1 do local l=(t-0x1)%0x4+0x1 v[t]=p(o(x[(c+t)-0x1],U[l]))end l[t]=table.concat(v)end return t end end if _ELPsXXb~=l[c(0x0)]then return end local t={}do local t={}t[0xF]=true t[0x7]=string[l[c(0x32)]]t[0x8]=function()error(l[c(0x3C)])end t[0xB]=false t[0x1]=pcall(function()t[0xB]=true end)and t[0xB]t[0xE]=math[l[c(0x4D)]]t[0x9]=table[l[c(0x57)]]t[0x4]=table and table[l[c(0x61)]]or unpack t[0x2]=t[0xE](0x3,0x41)t[0xA]=0x0 t[0xC]=0x0 t[0x5]={pcall(function()local p={}p[0x2]=0x783FC1-l[c(0x6B)]^0x372CE5 return l[c(0x71)]/p[0x2]end)}t[0x6]=t[0x5][0x2]t[0xD]=tonumber((t[0x7](tostring(t[0x6]),l[c(0x7C)]))())for p=0x1,t[0x2],0x1 do local N={}N[0x8]=p N[0x2]=math[l[c(0x4D)]](0x1,0x64)N[0x3]=t[0xE](0x0,0xFF)N[0x5]=t[0xE](0x1,N[0x2])N[0x6]=t[0xE](0x1,0x2)==0x1 N[0x4]=t[0x6]:gsub(l[c(0x7C)],l[c(0x87)]..(tostring(t[0xE](0x0,0x2710))..l[c(0x87)]))N[0x1]={pcall(function()local p={}if t[0xE](0x1,0x2)==0x1 or N[0x8]==t[0x2]then local p={}p[0x1]=tonumber((t[0x7](tostring(({pcall(function()local N={}N[0x2]=0x46C8AE-l[c(0x8C)]^0x2EF335 return l[c(0x9E)]/N[0x2]end)})[0x2]),l[c(0x7C)]))())t[0xF]=t[0xF]and t[0xD]==p[0x1]end if N[0x6]then error(N[0x4],0x0)end p[0x1]={}for c=0x1,N[0x2],0x1 do local l={}l[0x1]=c p[0x1][l[0x1]]=t[0xE](0x0,0xFF)end p[0x1][N[0x5]]=N[0x3]return t[0x4](p[0x1])end)}if N[0x6]then t[0xF]=t[0xF]and(N[0x1][0x1]==false and N[0x1][0x2]==N[0x4])else t[0xF]=t[0xF]and N[0x1][0x1]t[0xA]=(t[0xA]+N[0x1][N[0x5]+0x1])%0x100 t[0xC]=(t[0xC]+N[0x3])%0x100 end end t[0xF]=t[0xF]and t[0xA]==t[0xC]if t[0xF]then else repeat return(function()while true do l1,l2=l2,l1 t[0x8]()end end)()until true while true do l2=t[0xE](0x1,0x6)if l2>0x2 then l2=tostring(l1)else l1=l2 end end return end end do local p={}p[0x27]=true p[0x2E]=pcall(function(t,N,o,U)(getgenv())[l[c(0xAC)]]=function(t,c,l,p) end end)p[0x16]=pcall(function(t,N,o,U)(getgenv())[l[c(0xAC)]]=function(t,c,l,p) end end)p[0x2C]=pcall(function(t,N,o,U)(getgenv())[l[c(0xAC)]]=function(t,c,l,p) end end)p[0x1D]={p[0x2E],p[0x16];p[0x2C]}p[0x23]=p[0x1D][math[l[c(0x4D)]](0x1,#p[0x1D])]p[0x3]=error p[0x2]=pairs p[0x1F]=setmetatable p[0xF]=getmetatable p[0xB]=type p[0x7]=load p[0x28]=loadstring p[0x20]=pcall p[0x1C]=math[l[c(0x4D)]]p[0x10]=xpcall p[0x13]=debug p[0x5]=debug and debug[l[c(0xB6)]]or nil p[0x19]=package p[0x26]=coroutine p[0x1]=string p[0xD]=math p[0x2A]=table p[0x1A]=os p[0x24]=io p[0x25]=file p[0x8]={}p[0x18]={}for t,c in p[0x2](_G)do local l={}l[0x1],l[0x2]=t,c p[0x18][l[0x1]]=l[0x2]end p[0x2B]=function(t)local N={}N[0x2]=t N[0x3]={[l[c(0xC1)]]=N[0x2],[l[c(0xCC)]]=function(t,N,o)local U={}U[0x4],U[0x2],U[0x1]=t,N,o if p[0x18][U[0x2]]then p[0x23]()else p[0x18][U[0x2]]=U[0x1]end end,[l[c(0xDA)]]=false,[l[c(0xE9)]]=function()p[0x23]()end,[l[c(0xF1)]]=l[c(0xFB)],[l[c(0x100)]]=function()p[0x23]()end,[l[c(0x10A)]]=function()p[0x23]()end;[l[c(0x113)]]=function()p[0x23]()end;[l[c(0x11E)]]=function()p[0x23]()end,[l[c(0x12A)]]=function()p[0x23]()end,[l[c(0x135)]]=function()p[0x23]()end;[l[c(0x143)]]=function()p[0x23]()end,[l[c(0x14F)]]=function()p[0x23]()end;[l[c(0x158)]]=function()p[0x23]()end,[l[c(0x161)]]=function()p[0x23]()end;[l[c(0x16A)]]=function()p[0x23]()end,[l[c(0x173)]]=function()p[0x23]()end,[l[c(0x17C)]]=function()p[0x23]()end,[l[c(0x185)]]=function()p[0x23]()end,[l[c(0x18E)]]=function()p[0x23]()end,[l[c(0x196)]]=function()p[0x23]()end,[l[c(0x19E)]]=function()p[0x23]()end}return p[0x1F]({},N[0x3])end p[0x8][l[c(0x1A6)]]=function()for t,N in p[0x2](_G)do local o={}o[0x1],o[0x2]=t,N if p[0xB](o[0x2])==l[c(0x1B8)]then p[0x18][o[0x1]]=o[0x2]end end _G=p[0x2B](p[0x18])p[0x1F](_G,{[l[c(0xDA)]]=l[c(0x1C4)]})end p[0x8][l[c(0x1E1)]]=function(t)local N={}N[0x2]=t return p[0x2B](N[0x2])end p[0x8][l[c(0x1F1)]]=function(t)local N={}N[0x2]=t N[0x1]=function(...)return N[0x2](...)end return p[0x1F]({},{[l[c(0xC1)]]=function(t,o)local U={}U[0x2],U[0x1]=t,o if U[0x1]==l[c(0x100)]then return N[0x1]else p[0x23]()end end;[l[c(0xCC)]]=function(t,N,o)p[0x23]()end,[l[c(0xDA)]]=false;[l[c(0xE9)]]=function()p[0x23]()end,[l[c(0xF1)]]=l[c(0xFB)];[l[c(0x100)]]=function()p[0x23]()end,[l[c(0x10A)]]=function()p[0x23]()end,[l[c(0x113)]]=function()p[0x23]()end;[l[c(0x11E)]]=function()p[0x23]()end;[l[c(0x12A)]]=function()p[0x23]()end})end if error~=p[0x3]or pairs~=p[0x2]or setmetatable~=p[0x1F]or getmetatable~=p[0xF]or type~=p[0xB]or load~=p[0x7]or loadstring~=p[0x28]or pcall~=p[0x20]or xpcall~=p[0x10]or debug~=p[0x13]or package~=p[0x19]or coroutine~=p[0x26]or string~=p[0x1]or math~=p[0xD]or table~=p[0x2A]then p[0x23]()end if pcall~=p[0x20]or math[l[c(0x4D)]]~=p[0x1C]then p[0x23]()end p[0x17]={l[c(0x204)];l[c(0x20A)],l[c(0x210)];l[c(0x218)]}for t,N in ipairs(p[0x17])do local o={}o[0x1],o[0x3]=t,N if _G[o[0x3]]~=p[0x18][o[0x3]]then p[0x23]()end end p[0x9],p[0x11]=pcall(p[0x13][l[c(0x221)]])if p[0x9]then if p[0x11]then p[0x23]()end end p[0x22]=string[l[c(0x32)]]p[0x12],p[0x6]=pcall(main)for t,c in ipairs(p[0x17])do local l={}l[0x2],l[0x1]=t,c if getmetatable(_G[l[0x1]])~=getmetatable(p[0x18][l[0x1]])then p[0x23]()end end if p[0x13]and p[0x5]then local t={}t[0x5]={p[0x2],p[0x1A][l[c(0x22C)]]or p[0x1A][l[c(0x235)]],p[0x2A][l[c(0x23D)]]}for N,o in p[0x2](t[0x5])do local U={}U[0x3],U[0x1]=N,o if U[0x1]then local t={}t[0x1]=p[0x5](U[0x1],l[c(0x247)])if t[0x1]and t[0x1][l[c(0x24C)]]~=l[c(0x254)]then p[0x23]()end end end t[0x2]=p[0x5](0x1,l[c(0x247)])if not t[0x2]then p[0x23]()end t[0x3]=p[0x5](p[0x2],l[c(0x247)])t[0x1]=p[0x5](function() end,l[c(0x247)])if t[0x3][l[c(0x24C)]]==t[0x1][l[c(0x24C)]]then p[0x23]()end end do local t={}t[0x1]=typeof~=nil t[0x2]=loadstring or load t[0x4]=load t[0x5]=p[0x28]or p[0x7]if t[0x2]~=nil or t[0x5]~=nil then if t[0x2]~=t[0x5]then p[0x23]()end end if t[0x4]~=nil or p[0x7]~=nil then if t[0x4]~=p[0x7]then p[0x23]()end end if not t[0x1]and(p[0x13]and p[0x5])then if t[0x2]~=nil then local N={}N[0x2]=p[0x5](t[0x2],l[c(0x247)])if N[0x2]and N[0x2][l[c(0x24C)]]~=l[c(0x254)]then p[0x23]()end end if t[0x4]~=nil then local N={}N[0x2]=p[0x5](t[0x4],l[c(0x247)])if N[0x2]and N[0x2][l[c(0x24C)]]~=l[c(0x254)]then p[0x23]()end end end if p[0x13]and p[0x13][l[c(0x259)]]then if t[0x2]~=nil then local N={}N[0x1],N[0x3]=p[0x20](p[0x13][l[c(0x259)]],t[0x2],0x1)if N[0x1]and N[0x3]~=nil then p[0x23]()end end if t[0x4]~=nil then local N={}N[0x2],N[0x1]=p[0x20](p[0x13][l[c(0x259)]],t[0x4],0x1)if N[0x2]and N[0x1]~=nil then p[0x23]()end end end t[0x3]=t[0x2]or t[0x4]if t[0x3]~=nil then local N={}N[0x2]=l[c(0x267)]N[0x6],N[0x4]=t[0x3](N[0x2])if type(N[0x6])~=l[c(0x1B8)]then p[0x23]()end N[0x5],N[0x1]=p[0x20](N[0x6])if not N[0x5]or N[0x1]~=0x2 then p[0x23]()end end if t[0x2]~=nil and p[0xF](t[0x2])~=nil then p[0x23]()end if t[0x4]~=nil and p[0xF](t[0x4])~=nil then p[0x23]()end if t[0x1]then if iscclosure then if t[0x2]~=nil and not iscclosure(t[0x2])then p[0x23]()end if t[0x4]~=nil and not iscclosure(t[0x4])then p[0x23]()end end if checkclosure then if t[0x2]~=nil and not checkclosure(t[0x2])then p[0x23]()end if t[0x4]~=nil and not checkclosure(t[0x4])then p[0x23]()end end end end p[0x21]=false p[0x1E]=p[0x20](function()p[0x21]=true end)and p[0x21]p[0xC]=math[l[c(0x4D)]]p[0x1B]=table[l[c(0x57)]]p[0x15]=table and table[l[c(0x61)]]or unpack n=p[0x1C](0x3,0x41)if n<0x3 or n>0x41 then local t={}t[0x1]=p[0xC](0x1,0x1000000)-RandomStrings[l[c(0x275)]]()^p[0xC](0x1,0x1000000)return RandomStrings[l[c(0x275)]]()/t[0x1]end p[0x2D]=0x0 p[0x29]=0x0 p[0x14]={pcall(function()local t={}t[0x1]=p[0xC](0x1,0x1000000)-RandomStrings[l[c(0x275)]]()^p[0xC](0x1,0x1000000)return RandomStrings[l[c(0x275)]]()/t[0x1]end)}p[0xE]=p[0x14][0x2]p[0x4]=tonumber((p[0x22](tostring(p[0xE]),l[c(0x7C)]))())for t=0x1,0x64,0x1 do local N={}N[0x1]=t N[0x7]=0x64 N[0x4]=N[0x1]%0x100 N[0x3]=N[0x1]%N[0x7]+0x1 N[0x6]=N[0x1]%0x2==0x0 N[0x8]=p[0xE]:gsub(l[c(0x7C)],l[c(0x87)]..(tostring(p[0xC](0x0,0x2710))..l[c(0x87)]))N[0x5]={pcall(function()local t={}if p[0xC](0x1,0x2)==0x1 or N[0x1]==n then local t={}t[0x2]=tonumber((p[0x22](tostring(({pcall(function()local N={}N[0x1]=p[0xC](0x1,0x1000000)-RandomStrings[l[c(0x275)]]()^p[0xC](0x1,0x1000000)return RandomStrings[l[c(0x275)]]()/N[0x1]end)})[0x2]),l[c(0x7C)]))())p[0x27]=p[0x27]and p[0x4]==t[0x2]end if N[0x6]then error(N[0x8],0x0)end t[0x2]={}for c=0x1,N[0x7],0x1 do local l={}l[0x1]=c t[0x2][l[0x1]]=p[0xC](0x0,0xFF)end t[0x2][N[0x3]]=N[0x4]return p[0x15](t[0x2])end)}if N[0x6]then p[0x27]=p[0x27]and(N[0x5][0x1]==false and N[0x5][0x2]==N[0x8])else p[0x27]=p[0x27]and N[0x5][0x1]p[0x2D]=(p[0x2D]+N[0x5][N[0x3]+0x1])%0x100 p[0x29]=(p[0x29]+N[0x4])%0x100 end end p[0x27]=p[0x27]and p[0x2D]==p[0x29]if p[0x27]then else repeat return(function()p[0x23]()end)()until true return end end t[0x8]=l[c(0x285)]t[0xB]={l[c(0x5E2D2)],l[c(0x5E2DC)];l[c(0x5E2E9)];l[c(0x5E2F5)]}t[0xD]={[l[c(0x5E2D2)]]=true;[l[c(0x5E303)]]=true;[l[c(0x5E310)]]=false}t[0x9]={[l[c(0x5E31A)]]=l[c(0x5E325)];[l[c(0x5E32C)]]={l[c(0x5E2D2)]};[l[c(0x5E335)]]={[l[c(0x5E33D)]]={l[c(0x5E2D2)]}}}t[0x1]=function()local p={}p[0x2]=0x0 p[0x3]={l[c(0x5E2D2)];l[c(0x5E347)]}while p[0x2]<0x1 do do local N={}N[0x6]=0x0 N[0x1]={l[c(0x5E2D2)];l[c(0x5E351)]}repeat do local t={}t[0x3]=false t[0x1]={[l[c(0x5E2D2)]]=t[0x3]}while not t[0x3]do do local p={}p[0x2]={l[c(0x5E2D2)]}N[0x3]=getfenv and getfenv()or _ENV t[0x3]=true if p[0x2][0x1]==l[c(0x5E2D2)]then break end end end end N[0x6]=N[0x6]+0x1 until N[0x6]>0x0 N[0x7]={[l[c(0x5E360)]]=l[c(0x5E2D2)],[l[c(0x5E310)]]={l[c(0x5E2D2)]}}do local t={}t[0x1]=false t[0x2]={l[c(0x5E2D2)];l[c(0x5E368)]}while not t[0x1]do repeat do local p={}p[0x2]={l[c(0x5E2D2)]}N[0xB]=N[0x3][l[c(0x5E371)]]or N[0x3][l[c(0x5E37F)]]t[0x1]=true if p[0x2][0x1]==l[c(0x5E2D2)]then break end end until t[0x1]if t[0x1]then break end end end N[0x9]=0x0 N[0x8]=0x5 N[0x2]={l[c(0x5E2D2)],[l[c(0x5E387)]]=0x0}while N[0x9]<N[0x8]do do local p={}p[0x2]=0x0 p[0x1]={[l[c(0x5E2D2)]]=p[0x2]}repeat do local o={}o[0x3]=true o[0x1]={l[c(0x5E2D2)];l[c(0x5E393)]}while o[0x3]do do local p={}p[0x1]={l[c(0x5E2D2)]}N[0xA],N[0x4]=N[0xB](t[0x8],l[c(0x5E39C)])o[0x3]=false if p[0x1][0x1]==l[c(0x5E2D2)]then break end end end end p[0x2]=p[0x2]+0x1 until p[0x2]>0x0 if N[0xA]then do local t={}t[0x2]=0x0 t[0x3]={[l[c(0x5E2D2)]]=true;[l[c(0x5E3A1)]]=false}while t[0x2]<0x1 do repeat do local t={}t[0x3]=false t[0x2]={l[c(0x5E2D2)],l[c(0x5E3AE)]}while not t[0x3]do do local p={}p[0x1]={l[c(0x5E2D2)]}if N[0xA]then if p[0x1][0x1]==l[c(0x5E2D2)]then return N[0xA],N[0x3]end end t[0x3]=true end if t[0x3]then break end end end until true t[0x2]=t[0x2]+0x1 if t[0x2]>=0x1 then break end end end end end N[0x9]=N[0x9]+0x1 if N[0xA]then break end end return N[0xA],N[0x3],N[0x4]end p[0x2]=p[0x2]+0x1 end end t[0x4]=function()local p={}p[0x1]=0x0 p[0x6]={[l[c(0x5E2D2)]]=l[c(0x5E347)],[l[c(0x5E310)]]={l[c(0x5E2D2)]}}while p[0x1]<0x2 do do local N={}N[0x1]=0x0 N[0x2]={l[c(0x5E2D2)],[l[c(0x5E3B7)]]=N[0x1]}repeat do local o={}o[0x3]=true o[0x2]={[l[c(0x5E2D2)]]=o[0x3]}while o[0x3]do do local N={}N[0x2]={l[c(0x5E2D2)]}p[0x5],p[0x4],p[0x2]=t[0x1]()o[0x3]=false if N[0x2][0x1]==l[c(0x5E2D2)]then break end end end end N[0x1]=N[0x1]+0x1 until N[0x1]>0x0 end p[0x1]=p[0x1]+0x1 if p[0x5]then do local t={}t[0x3]=false t[0x2]={l[c(0x5E2D2)],l[c(0x5E3C0)]}while not t[0x3]do do local p={}p[0x2]={l[c(0x5E2D2)]}t[0x3]=true if p[0x2][0x1]==l[c(0x5E2D2)]then break end end if t[0x3]then break end end end break end end return p[0x5],p[0x4],p[0x2]end t[0xA]={l[c(0x5E2D2)];l[c(0x5E3CF)]}do local p={}p[0x3]=0x0 p[0x2]={[l[c(0x5E2D2)]]=true,[l[c(0x5E3E1)]]=p[0x3]}while p[0x3]<0x1 do repeat do local p={}p[0x3]=true p[0x2]={l[c(0x5E2D2)];[l[c(0x5E3EA)]]=p[0x3]}while p[0x3]do do local N={}N[0x2]={l[c(0x5E2D2)]}t[0xC],t[0x3],t[0x6]=t[0x4]()p[0x3]=false if N[0x2][0x1]==l[c(0x5E2D2)]then break end end if not p[0x3]then break end end end until true p[0x3]=p[0x3]+0x1 end end if not t[0xC]then do local p={}p[0x3]=0x0 p[0x2]={l[c(0x5E2D2)],l[c(0x5E3F4)]}while p[0x3]<0x1 do repeat do local p={}p[0x2]={l[c(0x5E2D2)]}error(t[0x6]or l[c(0x5E405)])end until true p[0x3]=p[0x3]+0x1 end end end do local p={}p[0x1]=0x0 p[0x2]={[l[c(0x5E2D2)]]=l[c(0x5E41C)],[l[c(0x5E425)]]=false}while p[0x1]<0x1 do repeat do local p={}p[0x2]=true p[0x3]={l[c(0x5E2D2)];[l[c(0x5E3EA)]]=true}while p[0x2]do do local N={}N[0x1]=false N[0x2]={l[c(0x5E2D2)];[l[c(0x5E432)]]=false}repeat if setfenv then do local p={}p[0x2]=true p[0x3]={l[c(0x5E2D2)]}while p[0x2]do do local N={}N[0x2]={l[c(0x5E2D2)]}setfenv(t[0xC],t[0x3])p[0x2]=false if N[0x2][0x1]==l[c(0x5E2D2)]then break end end if not p[0x2]then break end end end end N[0x1]=true until N[0x1]end p[0x2]=false if not p[0x2]then break end end end until true p[0x1]=p[0x1]+0x1 end end do local t={}t[0x3]=0x0 t[0x1]={l[c(0x5E2D2)],l[c(0x5E43D)]}while t[0x3]<0x1 do repeat do local t={}t[0x3]=true t[0x2]={[l[c(0x5E2D2)]]=t[0x3]}while t[0x3]do do local p={}p[0x2]=false p[0x1]={l[c(0x5E2D2)],l[c(0x5E44D)]}repeat do local t={}t[0x2]=0x0 t[0x1]={l[c(0x5E2D2)]}while t[0x2]<0x1 do do local N={}N[0x1]=true N[0x2]={l[c(0x5E2D2)],[l[c(0x5E33D)]]=true}while N[0x1]do do local t={}t[0x2]={l[c(0x5E2D2)]}p[0x2]=true N[0x1]=false if t[0x2][0x1]==l[c(0x5E2D2)]then break end end if not N[0x1]then break end end end t[0x2]=t[0x2]+0x1 if t[0x2]>=0x1 then break end end end until p[0x2]end t[0x3]=false if not t[0x3]then break end end end until true t[0x3]=t[0x3]+0x1 end end do local p={}p[0x1]=0x0 p[0x2]={[l[c(0x5E2D2)]]=l[c(0x5E2F5)],[l[c(0x5E456)]]=false}while p[0x1]<0x1 do do local t={}t[0x1]=0x0 t[0x3]={l[c(0x5E2D2)],l[c(0x5E460)]}repeat do local t={}t[0x1]=true t[0x2]={[l[c(0x5E2D2)]]=t[0x1]}while t[0x1]do repeat do local t={}t[0x2]=false t[0x3]={l[c(0x5E2D2)]}while not t[0x2]do do local p={}p[0x2]=0x0 p[0x3]={l[c(0x5E2D2)],[l[c(0x5E32C)]]=p[0x2]}repeat do local p={}p[0x2]=true p[0x1]={l[c(0x5E2D2)]}while p[0x2]do do local N={}N[0x2]={l[c(0x5E2D2)];l[c(0x5E46A)]}t[0x2]=true p[0x2]=false if N[0x2][0x1]==l[c(0x5E2D2)]then break end end if not p[0x2]then break end end end until true p[0x2]=p[0x2]+0x1 end if t[0x2]then break end end end until true t[0x1]=false if not t[0x1]then break end end end until true t[0x1]=t[0x1]+0x1 end p[0x1]=p[0x1]+0x1 if p[0x1]>=0x1 then break end end end t[0x5]=0x0 t[0x7]={l[c(0x5E2D2)];l[c(0x5E473)],[l[c(0x5E32C)]]=t[0x5]}while t[0x5]<0x1 do do local p={}p[0x1]=0x0 p[0x2]=0x3 p[0x3]={[l[c(0x5E2D2)]]=p[0x1],[l[c(0x5E47F)]]=p[0x2]}while p[0x1]<p[0x2]do do local N={}N[0x2]=0x0 N[0x1]={l[c(0x5E2D2)];[l[c(0x5E486)]]=N[0x2]}repeat do local p={}p[0x1]=true p[0x3]={l[c(0x5E2D2)];[l[c(0x5E3EA)]]=p[0x1]}while p[0x1]do do local N={}N[0x2]={l[c(0x5E2D2)]}N[0x4],N[0x1]=pcall(t[0xC])if not N[0x4]then do local t={}t[0x2]=0x0 t[0x1]={l[c(0x5E2D2)];[l[c(0x5E3E1)]]=t[0x2]}while t[0x2]<0x1 do repeat do local t={}t[0x1]=true t[0x2]={l[c(0x5E2D2)]}while t[0x1]do do local p={}p[0x1]={l[c(0x5E2D2)]}error(N[0x1])t[0x1]=false if p[0x1][0x1]==l[c(0x5E2D2)]then break end end if not t[0x1]then break end end end until true t[0x2]=t[0x2]+0x1 end end else do local t={}t[0x1]=0x0 t[0x2]={l[c(0x5E2D2)];l[c(0x5E491)]}while t[0x1]<0x1 do repeat do local t={}t[0x1]=true t[0x3]={[l[c(0x5E2D2)]]=t[0x1]}while t[0x1]do repeat do local t={}t[0x1]=false t[0x2]={l[c(0x5E2D2)]}while not t[0x1]do do local p={}p[0x1]=0x0 p[0x2]={l[c(0x5E2D2)]}repeat do local t={}t[0x1]=true t[0x2]={l[c(0x5E2D2)]}while t[0x1]do do local p={}p[0x2]={l[c(0x5E2D2)],l[c(0x5E4A3)]}if p[0x2][0x1]==l[c(0x5E2D2)]then return N[0x1]end t[0x1]=false end if not t[0x1]then break end end end p[0x1]=p[0x1]+0x1 until p[0x1]>0x0 end t[0x1]=true if t[0x1]then break end end end until true t[0x1]=false if not t[0x1]then break end end end until true t[0x1]=t[0x1]+0x1 end end end p[0x1]=false if N[0x2][0x1]==l[c(0x5E2D2)]then break end end if not p[0x1]then break end end end N[0x2]=N[0x2]+0x1 until N[0x2]>0x0 end p[0x1]=p[0x1]+0x1 if p[0x1]>=p[0x2]then break end end end t[0x5]=t[0x5]+0x1 end do local t={}t[0x2]=0x0 t[0x1]={l[c(0x5E2D2)];l[c(0x5E4AB)],[l[c(0x5E456)]]=false}while t[0x2]<0x1 do repeat do local t={}t[0x1]=true t[0x3]={[l[c(0x5E2D2)]]=t[0x1]}while t[0x1]do do local p={}p[0x1]=0x0 p[0x3]={l[c(0x5E2D2)],[l[c(0x5E3B7)]]=p[0x1]}repeat do local t={}t[0x1]=false t[0x3]={l[c(0x5E2D2)]}while not t[0x1]do repeat do local p={}p[0x1]=0x0 p[0x3]={l[c(0x5E2D2)]}while p[0x1]<0x1 do do local N={}N[0x3]=true N[0x1]={l[c(0x5E2D2)]}while N[0x3]do do local p={}p[0x2]={l[c(0x5E2D2)];l[c(0x5E3AE)]}t[0x1]=true N[0x3]=false if p[0x2][0x1]==l[c(0x5E2D2)]then break end end if not N[0x3]then break end end end p[0x1]=p[0x1]+0x1 end end until true if t[0x1]then break end end end p[0x1]=p[0x1]+0x1 until p[0x1]>0x0 end t[0x1]=false if not t[0x1]then break end end end until true t[0x2]=t[0x2]+0x1 end end end)(...)
+    repeat task.wait() until game:IsLoaded()
+    repeat task.wait() until LP and LP.Character
+
+    local success, err = pcall(function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/erenxkuki/KuKi-Hub/refs/heads/main/KuKi-Hub-Fast-Attack"))()
+    end)
+
+    if not success then
+        warn("Failed to execute auto-load:", err)
+    end
+end)
+
+do
+  ply = game.Players
+  plr = ply.LocalPlayer
+  Root = plr.Character.HumanoidRootPart
+  replicated = game:GetService("ReplicatedStorage")
+  Lv = game.Players.LocalPlayer.Data.Level.Value
+  TeleportService = game:GetService("TeleportService")
+  TW = game:GetService("TweenService")
+  Lighting = game:GetService("Lighting")  
+  Enemies = workspace.Enemies
+  vim1 = game:GetService("VirtualInputManager")
+  vim2 = game:GetService("VirtualUser")
+  TeamSelf = plr.Team
+  RunSer = game:GetService("RunService")
+  Stats = game:GetService("Stats")  
+  Energy = plr.Character.Energy.Value
+  Boss = {}
+  BringConnections = {}
+  MaterialList = {}
+  NPCList = {}  
+  shouldTween = false
+  SoulGuitar = false
+  KenTest = true
+  debug = false
+  Brazier1 = false
+  Brazier2 = false
+  Brazier3 = false  
+  Sec = 0.1
+  ClickState = 0
+  Num_self = 25
+end
+
+repeat local start = plr.PlayerGui:WaitForChild("Main"):WaitForChild("Loading") and game:IsLoaded() wait() until start
+World1 = game.PlaceId == 2753915549 or game.PlaceId == 85211729168715
+World2 = game.PlaceId == 4442272183 or game.PlaceId == 79091703265657
+World3 = game.PlaceId == 7449423635 or game.PlaceId == 100117331123089
+Sea = World1 or World2 or World3 or plr:Kick("❌ Error : A[12]Blox Fruits ❌")
+Marines = function() replicated.Remotes.CommF_:InvokeServer("SetTeam","Marines") end
+Pirates = function() replicated.Remotes.CommF_:InvokeServer("SetTeam","Pirates") end
+if World1 then Boss = {"The Gorilla King","Bobby","The Saw","Yeti","Mob Leader","Vice Admiral","Saber Expert","Warden","Chief Warden","Swan","Magma Admiral","Fishman Lord","Wysper","Thunder God","Cyborg","Ice Admiral","Greybeard"}
+elseif World2 then Boss = {"Diamond","Jeremy","Fajita","Don Swan","Smoke Admiral","Awakened Ice Admiral","Tide Keeper","Darkbeard","Cursed Captain","Order"}
+elseif World3 then Boss = {"Stone","Hydra Leader","Kilo Admiral","Captain Elephant","Beautiful Pirate","Cake Queen","Longma","Soul Reaper"}
+end
+if World1 then MaterialList = {"Leather + Scrap Metal", "Angel Wings", "Magma Ore", "Fish Tail"}
+elseif World2 then MaterialList = {"Leather + Scrap Metal", "Radioactive Material", "Ectoplasm", "Mystic Droplet", "Magma Ore", "Vampire Fang"}
+elseif World3 then MaterialList = {"Scrap Metal", "Demonic Wisp", "Conjured Cocoa", "Dragon Scale", "Gunpowder", "Fish Tail", "Mini Tusk"}
+end
+local DungeonTables = {"Flame","Ice","Quake","Light","Dark","String","Rumble","Magma","Human: Buddha","Sand","Bird: Phoenix","Dough"}
+local RenMon = {"Snow Lurker","Arctic Warrior","Hidden Key","Awakened Ice Admiral"}
+local CursedTables = {["Mob"] = "Mythological Pirate",["Mob2"] = "Cursed Skeleton","Hell's Messenger",["Mob3"] = "Cursed Skeleton","Heaven's Guardian"}
+local Past = {"Part","SpawnLocation","Terrain","WedgePart","MeshPart"}
+local BartMon = {"Swan Pirate","Jeremy"}
+local CitizenTable = {"Forest Pirate","Captain Elephant"}
+local Human_v3_Mob = {"Fajita","Jeremy","Diamond"}
+local AllBoats = {"Beast Hunter","Lantern","Guardian","Grand Brigade","Dinghy","Sloop","The Sentinel"}
+local mastery1 = {"Cookie Crafter"}
+local mastery2 = {"Reborn Skeleton"}
+local PosMsList = {["Pirate Millionaire"] = CFrame.new(-712.8272705078125, 98.5770492553711, 5711.9541015625),["Pistol Billionaire"] = CFrame.new(-723.4331665039062, 147.42906188964844, 5931.9931640625),["Dragon Crew Warrior"] = CFrame.new(7021.50439453125, 55.76270294189453, -730.1290893554688),["Dragon Crew Archer"] = CFrame.new(6625, 378, 244),["Female Islander"] = CFrame.new(4692.7939453125, 797.9766845703125, 858.8480224609375),["Venomous Assailant"] = CFrame.new(4902, 670, 39), ["Marine Commodore"] = CFrame.new(2401, 123, -7589),["Marine Rear Admiral"] = CFrame.new(3588, 229, -7085),["Fishman Raider"] = CFrame.new(-10941, 332, -8760),["Fishman Captain"] = CFrame.new(-11035, 332, -9087),["Forest Pirate"] = CFrame.new(-13446, 413, -7760),["Mythological Pirate"] = CFrame.new(-13510, 584, -6987),["Jungle Pirate"] = CFrame.new(-11778, 426, -10592),["Musketeer Pirate"] = CFrame.new(-13282, 496, -9565),["Reborn Skeleton"] = CFrame.new(-8764, 142, 5963),["Living Zombie"] = CFrame.new(-10227, 421, 6161),["Demonic Soul"] = CFrame.new(-9579, 6, 6194),["Posessed Mummy"] = CFrame.new(-9579, 6, 6194),["Peanut Scout"] = CFrame.new(-1993, 187, -10103),["Peanut President"] = CFrame.new(-2215, 159, -10474),["Ice Cream Chef"] = CFrame.new(-877, 118, -11032),["Ice Cream Commander"] = CFrame.new(-877, 118, -11032),["Cookie Crafter"] = CFrame.new(-2021, 38, -12028),["Cake Guard"] = CFrame.new(-2024, 38, -12026),["Baking Staff"] = CFrame.new(-1932, 38, -12848),["Head Baker"] = CFrame.new(-1932, 38, -12848),["Cocoa Warrior"] = CFrame.new(95, 73, -12309),["Chocolate Bar Battler"] = CFrame.new(647, 42, -12401),["Sweet Thief"] = CFrame.new(116, 36, -12478),["Candy Rebel"] = CFrame.new(47, 61, -12889),["Ghost"] = CFrame.new(5251, 5, 1111)}
+EquipWeapon = function(text)
+  if not text then return end
+  if plr.Backpack:FindFirstChild(text) then
+	plr.Character.Humanoid:EquipTool(plr.Backpack:FindFirstChild(text))
+  end
+end
+weaponSc = function(weapon)
+  for __in, v in pairs(plr.Backpack:GetChildren()) do
+    if v:IsA("Tool") then
+      if v.ToolTip == weapon then EquipWeapon(v.Name) end
+    end
+  end
+end
+hookfunction(require(game:GetService("ReplicatedStorage").Effect.Container.Death),function() end)
+hookfunction(require(game:GetService("ReplicatedStorage"):WaitForChild("GuideModule")).ChangeDisplayedNPC,function()end)
+hookfunction(error, function()end)
+hookfunction(warn, function()end)
+local Rock = workspace:FindFirstChild("Rocks")
+if Rock then Rock:Destroy()end
+gay = (function()
+  local lighting = game:GetService("Lighting")
+  local lightingLayers = lighting:FindFirstChild("LightingLayers")
+  if lightingLayers and game:GetService("Lighting") and game:GetService("Lighting") then
+    local darkFog = lightingLayers:FindFirstChild("DarkFog")
+    if darkFog then darkFog:Destroy() end
+  end
+  local Water = workspace._WorldOrigin["Foam;"]
+  if Water and workspace._WorldOrigin["Foam;"] then Water:Destroy() end        
+end)()
+local Attack = {}
+Attack.__index = Attack
+Attack.Alive = function(model) if not model then return end local Humanoid = model:FindFirstChild("Humanoid") return Humanoid and Humanoid.Health > 0 end
+Attack.Pos = function(model,dist) return (Root.Position - mode.Position).Magnitude <= dist end
+Attack.Dist = function(model,dist) return (Root.Position - model:FindFirstChild("HumanoidRootPart").Position).Magnitude <= dist end
+Attack.DistH = function(model,dist) return (Root.Position - model:FindFirstChild("HumanoidRootPart").Position).Magnitude > dist end
+Attack.Kill = function(model,Succes)
+  if model and Succes then
+  if not model:GetAttribute("Locked") then model:SetAttribute("Locked",model.HumanoidRootPart.CFrame) end
+  PosMon = model:GetAttribute("Locked").Position
+  BringEnemy()
+  EquipWeapon(_G.SelectWeapon)
+  local Equipped = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool")
+  local ToolTip = Equipped.ToolTip
+  if ToolTip == "Blox Fruit" then _tp(model.HumanoidRootPart.CFrame * CFrame.new(0,10,0) * CFrame.Angles(0,math.rad(90),0)) else _tp(model.HumanoidRootPart.CFrame * CFrame.new(0,30,0) * CFrame.Angles(0,math.rad(180),0))end
+  if RandomCFrame then wait(.5)_tp(model.HumanoidRootPart.CFrame * CFrame.new(0, 30, 25)) wait(.5)_tp(model.HumanoidRootPart.CFrame * CFrame.new(25, 30, 0)) wait(.5)_tp(model.HumanoidRootPart.CFrame * CFrame.new(-25, 30 ,0)) wait(.5)_tp(model.HumanoidRootPart.CFrame * CFrame.new(0, 30, 25)) wait(.5)_tp(model.HumanoidRootPart.CFrame * CFrame.new(-25, 30, 0))end
+  end
+end
+Attack.Kill2 = function(model,Succes)
+  if model and Succes then
+  if not model:GetAttribute("Locked") then model:SetAttribute("Locked",model.HumanoidRootPart.CFrame) end
+  PosMon = model:GetAttribute("Locked").Position
+  BringEnemy()
+  EquipWeapon(_G.SelectWeapon)
+  local Equipped = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool")
+  local ToolTip = Equipped.ToolTip
+  if ToolTip == "Blox Fruit" then _tp(model.HumanoidRootPart.CFrame * CFrame.new(0,10,0) * CFrame.Angles(0,math.rad(90),0)) else _tp(model.HumanoidRootPart.CFrame * CFrame.new(0,30,8) * CFrame.Angles(0,math.rad(180),0))end
+  if RandomCFrame then wait(0.1)_tp(model.HumanoidRootPart.CFrame * CFrame.new(0, 30, 25)) wait(0.1)_tp(model.HumanoidRootPart.CFrame * CFrame.new(25, 30, 0)) wait(0.1)_tp(model.HumanoidRootPart.CFrame * CFrame.new(-25, 30 ,0)) wait(0.1)_tp(model.HumanoidRootPart.CFrame * CFrame.new(0, 30, 25)) wait(0.1)_tp(model.HumanoidRootPart.CFrame * CFrame.new(-25, 30, 0))end
+  end
+end
+Attack.KillSea = function(model,Succes)
+  if model and Succes then
+  if not model:GetAttribute("Locked") then model:SetAttribute("Locked",model.HumanoidRootPart.CFrame) end
+  PosMon = model:GetAttribute("Locked").Position
+  BringEnemy()
+  EquipWeapon(_G.SelectWeapon)
+  local Equipped = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool")
+  local ToolTip = Equipped.ToolTip
+  if ToolTip == "Blox Fruit" then _tp(model.HumanoidRootPart.CFrame * CFrame.new(0,10,0) * CFrame.Angles(0,math.rad(90),0)) else notween(model.HumanoidRootPart.CFrame * CFrame.new(0,50,8)) wait(.85)notween(model.HumanoidRootPart.CFrame * CFrame.new(0,400,0)) wait(1)end
+  end
+end
+Attack.Sword = function(model,Succes)
+  if model and Succes then
+  if not model:GetAttribute("Locked") then model:SetAttribute("Locked",model.HumanoidRootPart.CFrame) end
+  PosMon = model:GetAttribute("Locked").Position
+  BringEnemy()
+  weaponSc("Sword")
+  _tp(model.HumanoidRootPart.CFrame * CFrame.new(0,30,0))
+  if RandomCFrame then wait(0.1)_tp(model.HumanoidRootPart.CFrame * CFrame.new(0, 30, 25)) wait(0.1)_tp(model.HumanoidRootPart.CFrame * CFrame.new(25, 30, 0)) wait(0.1)_tp(model.HumanoidRootPart.CFrame * CFrame.new(-25, 30 ,0)) wait(0.1)_tp(model.HumanoidRootPart.CFrame * CFrame.new(0, 30, 25)) wait(0.1)_tp(model.HumanoidRootPart.CFrame * CFrame.new(-25, 30, 0))end
+  end
+end
+Attack.Mas = function(model,Succes)
+  if model and Succes then
+  if not model:GetAttribute("Locked") then model:SetAttribute("Locked",model.HumanoidRootPart.CFrame) end
+  PosMon = model:GetAttribute("Locked").Position
+  BringEnemy()
+    if model.Humanoid.Health <= HealthM then
+      _tp(model.HumanoidRootPart.CFrame * CFrame.new(0,20,0))
+      Useskills("Blox Fruit","Z")
+      Useskills("Blox Fruit","X")
+      Useskills("Blox Fruit","C")
+    else
+      weaponSc("Melee")
+      _tp(model.HumanoidRootPart.CFrame * CFrame.new(0,30,0))
+    end
+  end
+end
+Attack.Masgun = function(model,Succes)
+  if model and Succes then
+  if not model:GetAttribute("Locked") then model:SetAttribute("Locked",model.HumanoidRootPart.CFrame) end
+  PosMon = model:GetAttribute("Locked").Position
+  BringEnemy()
+    if model.Humanoid.Health <= HealthM then
+      _tp(model.HumanoidRootPart.CFrame * CFrame.new(0,35,8))
+      Useskills("Gun","Z")
+      Useskills("Gun","X")
+    else
+      weaponSc("Melee")
+      _tp(model.HumanoidRootPart.CFrame * CFrame.new(0,30,0))
+    end
+  end
+end
+statsSetings = function(Num, value)
+  if Num == "Melee" then
+    if plr.Data.Points.Value ~= 0 then
+      replicated.Remotes.CommF_:InvokeServer("AddPoint","Melee",value)
+    end
+  elseif Num == "Defense" then
+    if plr.Data.Points.Value ~= 0 then
+      replicated.Remotes.CommF_:InvokeServer("AddPoint","Defense",value)
+    end
+  elseif Num == "Sword" then
+    if plr.Data.Points.Value ~= 0 then
+      replicated.Remotes.CommF_:InvokeServer("AddPoint","Sword",value)
+    end
+  elseif Num == "Gun" then
+    if plr.Data.Points.Value ~= 0 then
+      replicated.Remotes.CommF_:InvokeServer("AddPoint","Gun",value)
+    end
+  elseif Num == "Devil" then
+    if plr.Data.Points.Value ~= 0 then
+      replicated.Remotes.CommF_:InvokeServer("AddPoint","Demon Fruit",value)
+    end
+  end
+end
+BringEnemy = function()
+  if not _B then return end
+  for _,v in pairs(workspace.Enemies:GetChildren()) do
+    if v:FindFirstChild("Humanoid") and v.Humanoid.Health > 0 then
+	  if (v.PrimaryPart.Position - PosMon).Magnitude <= 300 then
+	    v.PrimaryPart.CFrame = CFrame.new(PosMon)
+		v.PrimaryPart.CanCollide = true;
+		v:FindFirstChild("Humanoid").WalkSpeed = 0;
+		v:FindFirstChild("Humanoid").JumpPower = 0;
+		if v.Humanoid:FindFirstChild("Animator") then v.Humanoid.Animator:Destroy()end;
+		plr.SimulationRadius = math.huge
+	  end
+	end                               
+  end                    	
+end
+Useskills = function(weapon, skill)
+  if weapon == "Melee" then
+    weaponSc("Melee")
+    if skill == "Z" then
+      vim1:SendKeyEvent(true, "Z", false, game);
+      vim1:SendKeyEvent(false, "Z", false, game);
+    elseif skill == "X" then
+      vim1:SendKeyEvent(true, "X", false, game);
+      vim1:SendKeyEvent(false, "X", false, game);
+    elseif skill == "C" then
+      vim1:SendKeyEvent(true, "C", false, game);
+      vim1:SendKeyEvent(false, "C", false, game);
+    end
+  elseif weapon == "Sword" then
+    weaponSc("Sword")
+    if skill == "Z" then
+      vim1:SendKeyEvent(true, "Z", false, game);
+      vim1:SendKeyEvent(false, "Z", false, game);
+    elseif skill == "X" then
+      vim1:SendKeyEvent(true, "X", false, game);
+      vim1:SendKeyEvent(false, "X", false, game);
+    end
+  elseif weapon == "Blox Fruit" then
+    weaponSc("Blox Fruit")
+    if skill == "Z" then
+      vim1:SendKeyEvent(true, "Z", false, game);
+      vim1:SendKeyEvent(false, "Z", false, game);
+    elseif skill == "X" then
+      vim1:SendKeyEvent(true, "X", false, game);
+      vim1:SendKeyEvent(false, "X", false, game);
+    elseif skill == "C" then
+      vim1:SendKeyEvent(true, "C", false, game);
+      vim1:SendKeyEvent(false, "C", false, game);        
+    elseif skill == "V" then
+      vim1:SendKeyEvent(true, "V", false, game);
+      vim1:SendKeyEvent(false, "V", false, game);
+    end
+  elseif weapon == "Gun" then
+    weaponSc("Gun")
+    if skill == "Z" then
+      vim1:SendKeyEvent(true, "Z", false, game);
+      vim1:SendKeyEvent(false, "Z", false, game);
+    elseif skill == "X" then
+      vim1:SendKeyEvent(true, "X", false, game);
+      vim1:SendKeyEvent(false, "X", false, game);
+    end
+  end
+  if weapon == "nil" and skill == "Y" then
+    vim1:SendKeyEvent(true, "Y", false, game);
+    vim1:SendKeyEvent(false, "Y", false, game);
+  end
+end
+local gg = getrawmetatable(game)
+local old = gg.__namecall
+setreadonly(gg, false)
+gg.__namecall = newcclosure(function(...)
+  local method = getnamecallmethod()
+  local args = {...}    
+    if tostring(method) == "FireServer" then
+      if tostring(args[1]) == "RemoteEvent" then
+        if tostring(args[2]) ~= "true" and tostring(args[2]) ~= "false" then
+          if (_G.FarmMastery_G and not SoulGuitar) or (_G.FarmMastery_Dev) or (_G.FarmBlazeEM) or (_G.Prehis_Skills) or (_G.SeaBeast1 or _G.FishBoat or _G.PGB or _G.Leviathan1 or _G.Complete_Trials) or (_G.AimMethod and ABmethod == "AimBots Skill") or (_G.AimMethod and ABmethod == "Auto Aimbots") then
+            args[2] = MousePos
+            return old(unpack(args))
+          end
+        end
+      end
+    end
+  return old(...)
+end)
+GetConnectionEnemies = function(a)
+  for i,v in pairs(replicated:GetChildren()) do
+    if v:IsA("Model") and  ((typeof(a) == "table" and table.find(a, v.Name)) or v.Name == a) and v:FindFirstChild("Humanoid") and v.Humanoid.Health > 0 then
+      return v
+    end
+  end
+  for i,v in next,game.Workspace.Enemies:GetChildren() do
+    if v:IsA("Model") and ((typeof(a) == "table" and table.find(a, v.Name)) or v.Name == a)  and v:FindFirstChild("Humanoid") and v.Humanoid.Health > 0 then
+      return v
+    end
+  end
+end
+LowCpu = function()
+  local decalsyeeted = true
+  local g = game
+  local w = g.Workspace
+  local l = g.Lighting
+  local t = w.Terrain
+  t.WaterWaveSize = 0
+  t.WaterWaveSpeed = 0
+  t.WaterReflectance = 0
+  t.WaterTransparency = 0
+  l.GlobalShadows = false
+  l.FogEnd = 9e9
+  l.Brightness = 0
+  settings().Rendering.QualityLevel = "Level01"
+  for i, v in pairs(g:GetDescendants()) do
+    if v:IsA("Part") or v:IsA("Union") or v:IsA("CornerWedgePart") or v:IsA("TrussPart") then
+      v.Material = "Plastic"
+      v.Reflectance = 0
+    elseif v:IsA("Decal") or v:IsA("Texture") and decalsyeeted then
+      v.Transparency = 1
+    elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+      v.Lifetime = NumberRange.new(0)
+    elseif v:IsA("Explosion") then
+      v.BlastPressure = 1
+      v.BlastRadius = 1
+    elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") or v:IsA("Sparkles") then
+      v.Enabled = false
+    elseif v:IsA("MeshPart") then
+      v.Material = "Plastic"
+      v.Reflectance = 0
+      v.TextureID = 10385902758728957
+    end
+  end
+  for i, e in pairs(l:GetChildren()) do
+    if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
+      e.Enabled = false
+    end
+  end
+end
+CheckF = function()
+  if GetBP("Dragon-Dragon") or GetBP("Gas-Gas") or GetBP("Yeti-Yeti") or GetBP("Kitsune-Kitsune") or GetBP("T-Rex-T-Rex") then return true end
+end
+CheckBoat = function()
+  for i, v in pairs(workspace.Boats:GetChildren()) do
+    if tostring(v.Owner.Value) == tostring(plr.Name) then
+      return v    
+end;
+  end;
+  return false
+end;
+CheckEnemiesBoat = function()
+  for _,v in pairs(workspace.Enemies:GetChildren()) do
+    if (v.Name == "FishBoat") and v:FindFirstChild("Health").Value > 0 then
+      return true    
+end;
+  end;
+  return false
+end;
+CheckPirateGrandBrigade = function()
+  for _,v in pairs(workspace.Enemies:GetChildren()) do
+    if (v.Name == "PirateGrandBrigade" or v.Name == "PirateBrigade") and v:FindFirstChild("Health").Value > 0 then
+      return true
+    end
+  end
+  return false
+end
+CheckShark = function()
+  for _,v in pairs(workspace.Enemies:GetChildren()) do
+    if v.Name == "Shark" and Attack.Alive(v) then
+      return true    
+end;
+  end;
+  return false
+end;
+CheckTerrorShark = function()
+  for _,v in pairs(workspace.Enemies:GetChildren()) do
+    if v.Name == "Terrorshark" and Attack.Alive(v) then
+      return true    
+end;
+  end;
+  return false
+end;
+CheckPiranha = function()
+  for _,v in pairs(workspace.Enemies:GetChildren()) do
+    if v.Name == "Piranha" and Attack.Alive(v) then
+      return true    
+end;
+  end;
+  return false
+end;
+CheckFishCrew = function()
+  for _,v in pairs(workspace.Enemies:GetChildren()) do
+    if (v.Name == "Fish Crew Member" or v.Name == "Haunted Crew Member") and Attack.Alive(v) then
+      return true    
+end;
+  end;
+  return false
+end;
+CheckHauntedCrew = function()
+  for _,v in pairs(workspace.Enemies:GetChildren()) do
+    if (v.Name == "Haunted Crew Member") and Attack.Alive(v) then
+      return true    
+end;
+  end;
+  return false
+end;
+CheckSeaBeast = function()
+  if workspace.SeaBeasts:FindFirstChild("SeaBeast1") then
+    return true  
+end;
+  return false
+end;
+CheckLeviathan = function()
+  if workspace.SeaBeasts:FindFirstChild("Leviathan") then
+    return true  
+end;
+  return false
+end;
+UpdStFruit = function()
+  for z,x in next, plr.Backpack:GetChildren() do
+  StoreFruit = x:FindFirstChild("EatRemote", true)
+    if StoreFruit then
+      replicated.Remotes.CommF_:InvokeServer("StoreFruit",StoreFruit.Parent:GetAttribute("OriginalName"),
+      plr.Backpack:FindFirstChild(x.Name))
+    end
+  end
+end
+collectFruits = function(Succes)
+  if Succes then
+    local Character = plr.Character
+    for _,v1 in pairs(workspace:GetChildren()) do
+    if string.find(v1.Name, "Fruit") then v1.Handle.CFrame = Character.HumanoidRootPart.CFrame end
+    end
+  end
+end
+Getmoon = function()
+  if World1 then
+    return Lighting.FantasySky.MoonTextureId
+  elseif World2 then
+    return Lighting.FantasySky.MoonTextureId
+  elseif World3 then
+    return Lighting.Sky.MoonTextureId
+  end
+end
+DropFruits = function()
+  for _,v3 in next, plr.Backpack:GetChildren() do
+    if string.find(v3.Name, "Fruit") then
+      EquipWeapon(v3.Name) wait(.1)
+      if plr.PlayerGui.Main.Dialogue.Visible == true then plr.PlayerGui.Main.Dialogue.Visible = false end EquipWeapon(v3.Name) plr.Character:FindFirstChild(v3.Name).EatRemote:InvokeServer("Drop")
+    end
+  end
+  for a,b2 in pairs(plr.Character:GetChildren()) do
+    if string.find(b2.Name, "Fruit") then EquipWeapon(b2.Name) wait(.1)
+    if plr.PlayerGui.Main.Dialogue.Visible == true then plr.PlayerGui.Main.Dialogue.Visible = false end EquipWeapon(b2.Name) plr.Character:FindFirstChild(b2.Name).EatRemote:InvokeServer("Drop")
+    end
+  end
+end
+GetBP = function(v)
+  return plr.Backpack:FindFirstChild(v) or plr.Character:FindFirstChild(v)
+end
+GetIn = function(Name)
+  for _ ,v1 in pairs(replicated.Remotes.CommF_:InvokeServer("getInventory")) do
+    if type(v1) == "table" then
+      if v1.Name == Name or plr.Character:FindFirstChild(Name) or plr.Backpack:FindFirstChild(Name) then
+        return true
+	 end
+    end
+  end
+  return false
+end
+GetM = function(Name)
+  for _,tab in pairs(replicated.Remotes.CommF_:InvokeServer("getInventory")) do
+    if type(tab) == "table" then
+	  if tab.Type == "Material" then
+	    if tab.Name == Name then
+		  return tab.Count
+	    end
+	  end
+    end
+  end
+return 0
+end
+GetWP = function(nametool)
+  for _,v4 in pairs(replicated.Remotes.CommF_:InvokeServer("getInventory")) do
+    if type(v4) == "table" then
+      if v4.Type == "Sword" then
+        if v4.Name == nametool or plr.Character:FindFirstChild(nametool) or plr.Backpack:FindFirstChild(nametool) then
+	     return true
+	     end
+	   end
+      end
+    end
+  return false
+end 
+getInfinity_Ability = function(Method, Var)
+  if not Root then return end
+  if Method == "Soru" and Var then
+    for _,gc in next, getgc() do
+      if plr.Character.Soru then
+        if ((typeof(gc) == "function") and (getfenv(gc).script == plr.Character.Soru)) then
+          for _, v in next, getupvalues(gc) do
+            if (typeof(v) == "table") then
+              repeat wait(Sec) v.LastUse = 0 until not Var or (plr.Character.Humanoid.Health <= 0)
+            end
+          end
+        end
+      end
+    end    
+  elseif Method == "Energy" and Var then
+    plr.Character.Energy.Changed:connect(function()
+      if Var then plr.Character.Energy.Value = Energy end 
+    end)
+  elseif Method == "Observation" and Var then
+    local VisionRadius = plr.VisionRadius
+    VisionRadius.Value = math.huge
+  end
+end
+Hop = function()
+  pcall(function()
+    for count = math.random(1, math.random(40, 75)), 100 do
+      local remote = replicated.__ServerBrowser:InvokeServer(count)
+	  for _, v in next, remote do
+	  if tonumber(v['Count']) < 12 then TeleportService:TeleportToPlaceInstance(game.PlaceId, _) end
+	  end    
+    end
+  end)
+end
+local block = Instance.new("Part", workspace)
+block.Size = Vector3.new(1, 1, 1)
+block.Name = "Rip_Indra"
+block.Anchored = true
+block.CanCollide = false
+block.CanTouch = false
+block.Transparency = 1
+local blockfind = workspace:FindFirstChild(block.Name)
+if blockfind and blockfind ~= block then blockfind:Destroy() end
+task.spawn(function()while task.wait()do if block and block.Parent==workspace then if shouldTween then getgenv().OnFarm=true else getgenv().OnFarm=false end else getgenv().OnFarm=false end end end)
+task.spawn(function()local a=game.Players.LocalPlayer;repeat task.wait()until a.Character and a.Character.PrimaryPart;block.CFrame=a.Character.PrimaryPart.CFrame;while task.wait()do pcall(function()if getgenv().OnFarm then if block and block.Parent==workspace then local b=a.Character and a.Character.PrimaryPart;if b and(b.Position-block.Position).Magnitude<=200 then b.CFrame=block.CFrame else block.CFrame=b.CFrame end end;local c=a.Character;if c then for d,e in pairs(c:GetChildren())do if e:IsA("BasePart")then e.CanCollide=false end end end else local c=a.Character;if c then for d,e in pairs(c:GetChildren())do if e:IsA("BasePart")then e.CanCollide=true end end end end end)end end)
+_tp = function(target)
+  local character = plr.Character
+  if not character or not character:FindFirstChild("HumanoidRootPart") then return end
+  local rootPart = character.HumanoidRootPart
+  local distance = (target.Position - rootPart.Position).Magnitude
+  local tweenInfo = TweenInfo.new(distance / 300, Enum.EasingStyle.Linear)
+  local tween = game:GetService("TweenService"):Create(block, tweenInfo, {CFrame = target})    
+  if plr.Character.Humanoid.Sit == true then
+    block.CFrame = CFrame.new(block.Position.X, target.Y, block.Position.Z)
+  end  
+  tween:Play()    
+  task.spawn(function() while tween.PlaybackState == Enum.PlaybackState.Playing do if not shouldTween then tween:Cancel() break end task.wait(0.1) end end)
+end
+TeleportToTarget = function(targetCFrame) if (targetCFrame.Position - plr.Character.HumanoidRootPart.Position).Magnitude > 1000 then _tp(targetCFrame)else _tp(targetCFrame)end end
+notween = function(p) plr.Character.HumanoidRootPart.CFrame = p end
+function BTP(p)
+    local player = game.Players.LocalPlayer
+    local humanoidRootPart = player.Character.HumanoidRootPart
+    local humanoid = player.Character.Humanoid
+    local playerGui = player.PlayerGui.Main
+    local targetPosition = p.Position
+    local lastPosition = humanoidRootPart.Position
+    repeat
+        humanoid.Health = 0
+        humanoidRootPart.CFrame = p
+        playerGui.Quest.Visible = false
+        if (humanoidRootPart.Position - lastPosition).Magnitude > 1 then
+            lastPosition = humanoidRootPart.Position
+            humanoidRootPart.CFrame = p
+        end
+        task.wait(0.5)
+    until (p.Position - humanoidRootPart.Position).Magnitude <= 2000
+end
+spawn(function()
+  while task.wait() do
+    pcall(function()
+      if _G.SailBoat_Hydra or _G.WardenBoss or _G.AutoFactory or _G.HighestMirage or _G.HCM or _G.PGB or _G.Leviathan1 or _G.UPGDrago or _G.Complete_Trials or _G.TpDrago_Prehis or _G.BuyDrago or _G.AutoFireFlowers or _G.DT_Uzoth or _G.AutoBerry or _G.Prehis_Find or _G.Prehis_Skills or _G.Prehis_DB or _G.Prehis_DE or _G.FarmBlazeEM or _G.Dojoo or _G.CollectPresent or _G.AutoLawKak or _G.TpLab or _G.AutoPhoenixF or _G.AutoFarmChest or _G.AutoHytHallow or _G.LongsWord or _G.BlackSpikey or _G.AutoHolyTorch or _G.TrainDrago  or _G.AutoSaber or _G.FarmMastery_Dev or _G.CitizenQuest or _G.AutoEctoplasm or _G.KeysRen or _G.Auto_Rainbow_Haki or _G.obsFarm or _G.AutoBigmom or _G.Doughv2 or _G.AuraBoss or _G.Raiding or _G.Auto_Cavender or _G.TpPly or _G.Bartilo_Quest or _G.Level or _G.FarmEliteHunt or _G.AutoZou or _G.AutoFarm_Bone or getgenv().AutoMaterial or _G.CraftVM or _G.FrozenTP or _G.TPDoor or _G.AcientOne or _G.AutoFarmNear or _G.AutoRaidCastle or _G.DarkBladev3 or _G.AutoFarmRaid or _G.Auto_Cake_Prince or _G.Addealer or _G.TPNpc or _G.TwinHook or _G.FindMirage or _G.FarmChestM or _G.Shark or _G.TerrorShark or _G.Piranha or _G.MobCrew or _G.SeaBeast1 or _G.FishBoat or _G.AutoPole or _G.AutoPoleV2 or _G.Auto_SuperHuman or _G.AutoDeathStep or _G.Auto_SharkMan_Karate or _G.Auto_Electric_Claw or _G.AutoDragonTalon or _G.Auto_Def_DarkCoat or _G.Auto_God_Human or _G.Auto_Tushita or _G.AutoMatSoul or _G.AutoKenVTWO or _G.AutoSerpentBow or _G.AutoFMon or _G.Auto_Soul_Guitar or _G.TPGEAR or _G.AutoSaw or _G.AutoTridentW2 or _G.Auto_StartRaid or _G.AutoEvoRace or _G.AutoGetQuestBounty or _G.MarinesCoat or _G.TravelDres or _G.Defeating or _G.DummyMan or _G.Auto_Yama or _G.Auto_SwanGG or _G.SwanCoat or _G.AutoEcBoss or _G.Auto_Mink or _G.Auto_Human or _G.Auto_Skypiea or _G.Auto_Fish or _G.CDK_TS or _G.CDK_YM or _G.CDK or _G.AutoFarmGodChalice or _G.AutoFistDarkness or _G.AutoMiror or _G.Teleport or _G.AutoKilo or _G.AutoGetUsoap or _G.Praying or _G.TryLucky or _G.AutoColShad or _G.AutoUnHaki or _G.Auto_DonAcces or _G.AutoRipIngay or _G.DragoV3 or _G.DragoV1 or _G.SailBoats or NextIs or _G.FarmGodChalice or _G.IceBossRen or senth or senth2 or _G.Lvthan or _G.beasthunter or _G.DangerLV or _G.Relic123 or _G.tweenKitsune or _G.Collect_Ember or _G.AutofindKitIs or _G.snaguine or _G.TwFruits or _G.tweenKitShrine or _G.Tp_LgS or _G.Tp_MasterA or _G.tweenShrine or _G.FarmMastery_G or _G.FarmMastery_S then
+        shouldTween = true
+        if not plr.Character.HumanoidRootPart:FindFirstChild("BodyClip") then
+          local Noclip = Instance.new("BodyVelocity")
+          Noclip.Name = "BodyClip"
+          Noclip.Parent = plr.Character.HumanoidRootPart
+          Noclip.MaxForce = Vector3.new(100000,100000,100000)
+          Noclip.Velocity = Vector3.new(0,0,0)
+        end        
+        if not plr.Character:FindFirstChild('highlight') then
+          local Test = Instance.new('Highlight')
+          Test.Name = "highlight"
+          Test.Enabled = true
+          Test.FillColor = Color3.fromRGB(2,197,60)
+          Test.OutlineColor = Color3.fromRGB(255,255,255)
+          Test.FillTransparency = 0.5
+          Test.OutlineTransparency = 1
+          Test.Parent = plr.Character
+        end
+        for _, no in pairs(plr.Character:GetDescendants()) do if no:IsA("BasePart") then no.CanCollide = false end end
+      else
+        shouldTween = false
+        if plr.Character.HumanoidRootPart:FindFirstChild("BodyClip") then plr.Character.HumanoidRootPart:FindFirstChild("BodyClip"):Destroy() end
+        if plr.Character:FindFirstChild('highlight') then plr.Character:FindFirstChild('highlight'):Destroy() end	        
+      end
+    end)
+  end
+end)
+QuestB=function()if World1 then if _G.FindBoss=="The Gorilla King"then bMon="The Gorilla King"Qname="JungleQuest"Qdata=3;PosQBoss=CFrame.new(-1601.6553955078,36.85213470459,153.38809204102)PosB=CFrame.new(-1088.75977,8.13463783,-488.559906,-0.707134247,0,0.707079291,0,1,0,-0.707079291,0,-0.707134247)elseif _G.FindBoss=="Bobby"then bMon="Bobby"Qname="BuggyQuest1"Qdata=3;PosQBoss=CFrame.new(-1140.1761474609,4.752049446106,3827.4057617188)PosB=CFrame.new(-1087.3760986328,46.949409484863,4040.1462402344)elseif _G.FindBoss=="The Saw"then bMon="The Saw"PosB=CFrame.new(-784.89715576172,72.427383422852,1603.5822753906)elseif _G.FindBoss=="Yeti"then bMon="Yeti"Qname="SnowQuest"Qdata=3;PosQBoss=CFrame.new(1386.8073730469,87.272789001465,-1298.3576660156)PosB=CFrame.new(1218.7956542969,138.01184082031,-1488.0262451172)elseif _G.FindBoss=="Mob Leader"then bMon="Mob Leader"PosB=CFrame.new(-2844.7307128906,7.4180502891541,5356.6723632813)elseif _G.FindBoss=="Vice Admiral"then bMon="Vice Admiral"Qname="MarineQuest2"Qdata=2;PosQBoss=CFrame.new(-5036.2465820313,28.677835464478,4324.56640625)PosB=CFrame.new(-5006.5454101563,88.032081604004,4353.162109375)elseif _G.FindBoss=="Saber Expert"then bMon="Saber Expert"PosB=CFrame.new(-1458.89502,29.8870335,-50.633564)elseif _G.FindBoss=="Warden"then bMon="Warden"Qname="ImpelQuest"Qdata=1;PosB=CFrame.new(5278.04932,2.15167475,944.101929,0.220546961,-4.49946401e-06,0.975376427,-1.95412576e-05,1,9.03162072e-06,-0.975376427,-2.10519756e-05,0.220546961)PosQBoss=CFrame.new(5191.86133,2.84020686,686.438721,-0.731384635,0,0.681965172,0,1,0,-0.681965172,0,-0.731384635)elseif _G.FindBoss=="Chief Warden"then bMon="Chief Warden"Qname="ImpelQuest"Qdata=2;PosB=CFrame.new(5206.92578,0.997753382,814.976746,0.342041343,-0.00062915677,0.939684749,0.00191645394,0.999998152,-2.80422337e-05,-0.939682961,0.00181045406,0.342041939)PosQBoss=CFrame.new(5191.86133,2.84020686,686.438721,-0.731384635,0,0.681965172,0,1,0,-0.681965172,0,-0.731384635)elseif _G.FindBoss=="Swan"then bMon="Swan"Qname="ImpelQuest"Qdata=3;PosB=CFrame.new(5325.09619,7.03906584,719.570679,-0.309060812,0,0.951042235,0,1,0,-0.951042235,0,-0.309060812)PosQBoss=CFrame.new(5191.86133,2.84020686,686.438721,-0.731384635,0,0.681965172,0,1,0,-0.681965172,0,-0.731384635)elseif _G.FindBoss=="Magma Admiral"then bMon="Magma Admiral"Qname="MagmaQuest"Qdata=3;PosQBoss=CFrame.new(-5314.6220703125,12.262420654297,8517.279296875)PosB=CFrame.new(-5765.8969726563,82.92064666748,8718.3046875)elseif _G.FindBoss=="Fishman Lord"then bMon="Fishman Lord"Qname="FishmanQuest"Qdata=3;PosQBoss=CFrame.new(61122.65234375,18.497442245483,1569.3997802734)PosB=CFrame.new(61260.15234375,30.950881958008,1193.4329833984)elseif _G.FindBoss=="Wysper"then bMon="Wysper"Qname="SkyExp1Quest"Qdata=3;PosQBoss=CFrame.new(-7861.947265625,5545.517578125,-379.85974121094)PosB=CFrame.new(-7866.1333007813,5576.4311523438,-546.74816894531)elseif _G.FindBoss=="Thunder God"then bMon="Thunder God"Qname="SkyExp2Quest"Qdata=3;PosQBoss=CFrame.new(-7903.3828125,5635.9897460938,-1410.923828125)PosB=CFrame.new(-7994.984375,5761.025390625,-2088.6479492188)elseif _G.FindBoss=="Cyborg"then bMon="Cyborg"Qname="FountainQuest"Qdata=3;PosQBoss=CFrame.new(5258.2788085938,38.526931762695,4050.044921875)PosB=CFrame.new(6094.0249023438,73.770050048828,3825.7348632813)elseif _G.FindBoss=="Ice Admiral"then bMon="Ice Admiral"Qdata=nil;PosQBoss=CFrame.new(1266.08948,26.1757946,-1399.57678,-0.573599219,0,-0.81913656,0,1,0,0.81913656,0,-0.573599219)PosB=CFrame.new(1266.08948,26.1757946,-1399.57678,-0.573599219,0,-0.81913656,0,1,0,0.81913656,0,-0.573599219)elseif _G.FindBoss=="Greybeard"then bMon="Greybeard"Qdata=nil;PosQBoss=CFrame.new(-5081.3452148438,85.221641540527,4257.3588867188)PosB=CFrame.new(-5081.3452148438,85.221641540527,4257.3588867188)end end;if World2 then if _G.FindBoss=="Diamond"then bMon="Diamond"Qname="Area1Quest"Qdata=3;PosQBoss=CFrame.new(-427.5666809082,73.313781738281,1835.4208984375)PosB=CFrame.new(-1576.7166748047,198.59265136719,13.724286079407)elseif _G.FindBoss=="Jeremy"then bMon="Jeremy"Qname="Area2Quest"Qdata=3;PosQBoss=CFrame.new(636.79943847656,73.413787841797,918.00415039063)PosB=CFrame.new(2006.9261474609,448.95666503906,853.98284912109)elseif _G.FindBoss=="Fajita"then bMon="Fajita"Qname="MarineQuest3"Qdata=3;PosQBoss=CFrame.new(-2441.986328125,73.359344482422,-3217.5324707031)PosB=CFrame.new(-2172.7399902344,103.32216644287,-4015.025390625)elseif _G.FindBoss=="Don Swan"then bMon="Don Swan"PosB=CFrame.new(2286.2004394531,15.177839279175,863.8388671875)elseif _G.FindBoss=="Smoke Admiral"then bMon="Smoke Admiral"Qname="IceSideQuest"Qdata=3;PosQBoss=CFrame.new(-5429.0473632813,15.977565765381,-5297.9614257813)PosB=CFrame.new(-5275.1987304688,20.757257461548,-5260.6669921875)elseif _G.FindBoss=="Awakened Ice Admiral"then bMon="Awakened Ice Admiral"Qname="FrostQuest"Qdata=3;PosQBoss=CFrame.new(5668.9780273438,28.519989013672,-6483.3520507813)PosB=CFrame.new(6403.5439453125,340.29766845703,-6894.5595703125)elseif _G.FindBoss=="Tide Keeper"then bMon="Tide Keeper"Qname="ForgottenQuest"Qdata=3;PosQBoss=CFrame.new(-3053.9814453125,237.18954467773,-10145.0390625)PosB=CFrame.new(-3795.6423339844,105.88877105713,-11421.307617188)elseif _G.FindBoss=="Darkbeard"then bMon="Darkbeard"Qdata=nil;PosQBoss=CFrame.new(3677.08203125,62.751937866211,-3144.8332519531)PosB=CFrame.new(3677.08203125,62.751937866211,-3144.8332519531)elseif _G.FindBoss=="Cursed Captaim"then bMon="Cursed Captain"Qdata=nil;PosQBoss=CFrame.new(916.928589,181.092773,33422)PosB=CFrame.new(916.928589,181.092773,33422)elseif _G.FindBoss=="Order"then bMon="Order"Qdata=nil;PosQBoss=CFrame.new(-6217.2021484375,28.047645568848,-5053.1357421875)PosB=CFrame.new(-6217.2021484375,28.047645568848,-5053.1357421875)end end;if World3 then if _G.FindBoss=="Stone"then bMon="Stone"Qname="PiratePortQuest"Qdata=3;PosQBoss=CFrame.new(-289.76705932617,43.819011688232,5579.9384765625)PosB=CFrame.new(-1027.6512451172,92.404174804688,6578.8530273438)elseif _G.FindBoss=="Hydra Leader"then bMon="Hydra Leader"Qname="AmazonQuest2"Qdata=3;PosQBoss=CFrame.new(5821.89794921875,1019.0950927734375,-73.71923065185547)PosB=CFrame.new(5821.89794921875,1019.0950927734375,-73.71923065185547)elseif _G.FindBoss=="Kilo Admiral"then bMon="Kilo Admiral"Qname="MarineTreeIsland"Qdata=3;PosQBoss=CFrame.new(2179.3010253906,28.731239318848,-6739.9741210938)PosB=CFrame.new(2764.2233886719,432.46154785156,-7144.4580078125)elseif _G.FindBoss=="Captain Elephant"then bMon="Captain Elephant"Qname="DeepForestIsland"Qdata=3;PosQBoss=CFrame.new(-13232.682617188,332.40396118164,-7626.01171875)PosB=CFrame.new(-13376.7578125,433.28689575195,-8071.392578125)elseif _G.FindBoss=="Beautiful Pirate"then bMon="Beautiful Pirate"Qname="DeepForestIsland2"Qdata=3;PosQBoss=CFrame.new(-12682.096679688,390.88653564453,-9902.1240234375)PosB=CFrame.new(5283.609375,22.56223487854,-110.78285217285)elseif _G.FindBoss=="Cake Queen"then bMon="Cake Queen"Qname="IceCreamIslandQuest"Qdata=3;PosQBoss=CFrame.new(-819.376709,64.9259796,-10967.2832,-0.766061664,0,0.642767608,0,1,0,-0.642767608,0,-0.766061664)PosB=CFrame.new(-678.648804,381.353943,-11114.2012,-0.908641815,0.00149294338,0.41757378,0.00837114919,0.999857843,0.0146408929,-0.417492568,0.0167988986,-0.90852499)elseif _G.FindBoss=="Longma"then bMon="Longma"Qdata=nil;PosQBoss=CFrame.new(-10238.875976563,389.7912902832,-9549.7939453125)PosB=CFrame.new(-10238.875976563,389.7912902832,-9549.7939453125)elseif _G.FindBoss=="Soul Reaper"then bMon="Soul Reaper"Qdata=nil;PosQBoss=CFrame.new(-9524.7890625,315.80429077148,6655.7192382813)PosB=CFrame.new(-9524.7890625,315.80429077148,6655.7192382813)end end end
+QuestBeta = function()
+  local Neta = QuestB()
+  return {
+    [0] = _G.FindBoss,
+    [1] = bMon,
+    [2] = Qdata,
+    [3] = Qname,
+    [4] = PosB
+    }  
+end
+QuestCheck=function()local a=game.Players.LocalPlayer.Data.Level.Value;if World1 then if a==1 or a<=9 then if tostring(TeamSelf)=="Marines"then Mon="Trainee"Qname="MarineQuest"Qdata=1;NameMon="Trainee"PosM=CFrame.new(-2709.67944,24.5206585,2104.24585,-0.744724929,-3.97967455e-08,-0.667371571,4.32403588e-08,1,-1.07884304e-07,0.667371571,-1.09201515e-07,-0.744724929)PosQ=CFrame.new(-2709.67944,24.5206585,2104.24585,-0.744724929,-3.97967455e-08,-0.667371571,4.32403588e-08,1,-1.07884304e-07,0.667371571,-1.09201515e-07,-0.744724929)elseif tostring(TeamSelf)=="Pirates"then Mon="Bandit"Qdata=1;Qname="BanditQuest1"NameMon="Bandit"PosM=CFrame.new(1045.962646484375,27.00250816345215,1560.8203125)PosQ=CFrame.new(1045.962646484375,27.00250816345215,1560.8203125)end elseif a==10 or a<=14 then Mon="Monkey"Qdata=1;Qname="JungleQuest"NameMon="Monkey"PosQ=CFrame.new(-1598.08911,35.5501175,153.377838,0,0,1,0,1,-0,-1,0,0)PosM=CFrame.new(-1448.51806640625,67.85301208496094,11.46579647064209)elseif a==15 or a<=29 then Mon="Gorilla"Qdata=2;Qname="JungleQuest"NameMon="Gorilla"PosQ=CFrame.new(-1598.08911,35.5501175,153.377838,0,0,1,0,1,-0,-1,0,0)PosM=CFrame.new(-1129.8836669921875,40.46354675292969,-525.4237060546875)elseif a==30 or a<=39 then Mon="Pirate"Qdata=1;Qname="BuggyQuest1"NameMon="Pirate"PosQ=CFrame.new(-1141.07483,4.10001802,3831.5498,0.965929627,-0,-0.258804798,0,1,-0,0.258804798,0,0.965929627)PosM=CFrame.new(-1103.513427734375,13.752052307128906,3896.091064453125)elseif a==40 or a<=59 then Mon="Brute"Qdata=2;Qname="BuggyQuest1"NameMon="Brute"PosQ=CFrame.new(-1141.07483,4.10001802,3831.5498,0.965929627,-0,-0.258804798,0,1,-0,0.258804798,0,0.965929627)PosM=CFrame.new(-1140.083740234375,14.809885025024414,4322.92138671875)elseif a==60 or a<=74 then Mon="Desert Bandit"Qdata=1;Qname="DesertQuest"NameMon="Desert Bandit"PosQ=CFrame.new(894.488647,5.14000702,4392.43359,0.819155693,-0,-0.573571265,0,1,-0,0.573571265,0,0.819155693)PosM=CFrame.new(924.7998046875,6.44867467880249,4481.5859375)elseif a==75 or a<=89 then Mon="Desert Officer"Qdata=2;Qname="DesertQuest"NameMon="Desert Officer"PosQ=CFrame.new(894.488647,5.14000702,4392.43359,0.819155693,-0,-0.573571265,0,1,-0,0.573571265,0,0.819155693)PosM=CFrame.new(1608.2822265625,8.614224433898926,4371.00732421875)elseif a==90 or a<=99 then Mon="Snow Bandit"Qdata=1;Qname="SnowQuest"NameMon="Snow Bandit"PosQ=CFrame.new(1389.74451,88.1519318,-1298.90796,-0.342042685,0,0.939684391,0,1,0,-0.939684391,0,-0.342042685)PosM=CFrame.new(1354.347900390625,87.27277374267578,-1393.946533203125)elseif a==100 or a<=119 then Mon="Snowman"Qdata=2;Qname="SnowQuest"NameMon="Snowman"PosQ=CFrame.new(1389.74451,88.1519318,-1298.90796,-0.342042685,0,0.939684391,0,1,0,-0.939684391,0,-0.342042685)PosM=CFrame.new(6241.9951171875, 51.522083282471, -1243.9771728516)elseif a==120 or a<=149 then Mon="Chief Petty Officer"Qdata=1;Qname="MarineQuest2"NameMon="Chief Petty Officer"PosQ=CFrame.new(-5039.58643,27.3500385,4324.68018,0,0,-1,0,1,0,1,0,0)PosM=CFrame.new(-4881.23095703125,22.65204429626465,4273.75244140625)elseif a==150 or a<=174 then Mon="Sky Bandit"Qdata=1;Qname="SkyQuest"NameMon="Sky Bandit"PosQ=CFrame.new(-4839.53027,716.368591,-2619.44165,0.866007268,0,0.500031412,0,1,0,-0.500031412,0,0.866007268)PosM=CFrame.new(-4953.20703125,295.74420166015625,-2899.22900390625)elseif a==175 or a<=189 then Mon="Dark Master"Qdata=2;Qname="SkyQuest"NameMon="Dark Master"PosQ=CFrame.new(-4839.53027,716.368591,-2619.44165,0.866007268,0,0.500031412,0,1,0,-0.500031412,0,0.866007268)PosM=CFrame.new(-5259.8447265625,391.3976745605469,-2229.035400390625)elseif a==190 or a<=209 then Mon="Prisoner"Qdata=1;Qname="PrisonerQuest"NameMon="Prisoner"PosQ=CFrame.new(5308.93115,1.65517521,475.120514,-0.0894274712,-5.00292918e-09,-0.995993316,1.60817859e-09,1,-5.16744869e-09,0.995993316,-2.06384709e-09,-0.0894274712)PosM=CFrame.new(5098.9736328125,-0.3204058110713959,474.2373352050781)elseif a==210 or a<=249 then Mon="Dangerous Prisoner"Qdata=2;Qname="PrisonerQuest"NameMon="Dangerous Prisoner"PosQ=CFrame.new(5308.93115,1.65517521,475.120514,-0.0894274712,-5.00292918e-09,-0.995993316,1.60817859e-09,1,-5.16744869e-09,0.995993316,-2.06384709e-09,-0.0894274712)PosM=CFrame.new(5654.5634765625,15.633401870727539,866.2991943359375)elseif a==250 or a<=274 then Mon="Toga Warrior"Qdata=1;Qname="ColosseumQuest"NameMon="Toga Warrior"PosQ=CFrame.new(-1580.04663,6.35000277,-2986.47534,-0.515037298,0,-0.857167721,0,1,0,0.857167721,0,-0.515037298)PosM=CFrame.new(-1820.21484375,51.68385696411133,-2740.6650390625)elseif a==275 or a<=299 then Mon="Gladiator"Qdata=2;Qname="ColosseumQuest"NameMon="Gladiator"PosQ=CFrame.new(-1580.04663,6.35000277,-2986.47534,-0.515037298,0,-0.857167721,0,1,0,0.857167721,0,-0.515037298)PosM=CFrame.new(-1292.838134765625,56.380882263183594,-3339.031494140625)elseif a==300 or a<=324 then Boubty=false;Mon="Military Soldier"Qdata=1;Qname="MagmaQuest"NameMon="Military Soldier"PosQ=CFrame.new(-5313.37012,10.9500084,8515.29395,-0.499959469,0,0.866048813,0,1,0,-0.866048813,0,-0.499959469)PosM=CFrame.new(-5411.16455078125,11.081554412841797,8454.29296875)elseif a==325 or a<=374 then Mon="Military Spy"Qdata=2;Qname="MagmaQuest"NameMon="Military Spy"PosQ=CFrame.new(-5313.37012,10.9500084,8515.29395,-0.499959469,0,0.866048813,0,1,0,-0.866048813,0,-0.499959469)PosM=CFrame.new(-5802.8681640625,86.26241302490234,8828.859375)elseif a==375 or a<=399 then Mon="Fishman Warrior"Qdata=1;Qname="FishmanQuest"NameMon="Fishman Warrior"PosQ=CFrame.new(61122.65234375,18.497442245483,1569.3997802734)PosM=CFrame.new(60878.30078125,18.482830047607422,1543.7574462890625)if _G.Level and (PosQ.Position-game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude>10000 then replicated.Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(61163.8515625,11.6796875,1819.7841796875))end elseif a==400 or a<=449 then Mon="Fishman Commando"Qdata=2;Qname="FishmanQuest"NameMon="Fishman Commando"PosQ=CFrame.new(61122.65234375,18.497442245483,1569.3997802734)PosM=CFrame.new(61922.6328125,18.482830047607422,1493.934326171875)if _G.Level and (PosQ.Position-game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude>10000 then replicated.Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(61163.8515625,11.6796875,1819.7841796875))end elseif a==450 or a<=474 then Mon="God's Guard"Qdata=1;Qname="SkyExp1Quest"NameMon="God's Guard"PosQ=CFrame.new(-4721.88867,843.874695,-1949.96643,0.996191859,-0,-0.0871884301,0,1,-0,0.0871884301,0,0.996191859)PosM=CFrame.new(-4710.04296875,845.2769775390625,-1927.3079833984375)if _G.Level and (PosQ.Position-game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude>10000 then replicated.Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-4607.82275,872.54248,-1667.55688))end elseif a==475 or a<=524 then Mon="Shanda"Qdata=2;Qname="SkyExp1Quest"NameMon="Shanda"PosQ=CFrame.new(-7859.09814,5544.19043,-381.476196,-0.422592998,0,0.906319618,0,1,0,-0.906319618,0,-0.422592998)PosM=CFrame.new(-7678.48974609375,5566.40380859375,-497.2156066894531)if _G.Level and (PosQ.Position-game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude>10000 then replicated.Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-7894.6176757813,5547.1416015625,-380.29119873047))end elseif a==525 or a<=549 then Mon="Royal Squad"Qdata=1;Qname="SkyExp2Quest"NameMon="Royal Squad"PosQ=CFrame.new(-7906.81592,5634.6626,-1411.99194,0,0,-1,0,1,0,1,0,0)PosM=CFrame.new(-7624.25244140625,5658.13330078125,-1467.354248046875)elseif a==550 or a<=624 then Mon="Royal Soldier"Qdata=2;Qname="SkyExp2Quest"NameMon="Royal Soldier"PosQ=CFrame.new(-7906.81592,5634.6626,-1411.99194,0,0,-1,0,1,0,1,0,0)PosM=CFrame.new(-7836.75341796875,5645.6640625,-1790.6236572265625)elseif a==625 or a<=649 then Mon="Galley Pirate"Qdata=1;Qname="FountainQuest"NameMon="Galley Pirate"PosQ=CFrame.new(5259.81982,37.3500175,4050.0293,0.087131381,0,0.996196866,0,1,0,-0.996196866,0,0.087131381)PosM=CFrame.new(5551.02197265625,78.90135192871094,3930.412841796875)elseif a>=650 then Mon="Galley Captain"Qdata=2;Qname="FountainQuest"NameMon="Galley Captain"PosQ=CFrame.new(5259.81982,37.3500175,4050.0293,0.087131381,0,0.996196866,0,1,0,-0.996196866,0,0.087131381)PosM=CFrame.new(5441.95166015625,42.50205993652344,4950.09375)end elseif World2 then if a==700 or a<=724 then Mon="Raider"Qdata=1;Qname="Area1Quest"NameMon="Raider"PosQ=CFrame.new(-429.543518,71.7699966,1836.18188,-0.22495985,0,-0.974368095,0,1,0,0.974368095,0,-0.22495985)PosM=CFrame.new(-728.3267211914062,52.779319763183594,2345.7705078125)elseif a==725 or a<=774 then Mon="Mercenary"Qdata=2;Qname="Area1Quest"NameMon="Mercenary"PosQ=CFrame.new(-429.543518,71.7699966,1836.18188,-0.22495985,0,-0.974368095,0,1,0,0.974368095,0,-0.22495985)PosM=CFrame.new(-1004.3244018554688,80.15886688232422,1424.619384765625)elseif a==775 or a<=799 then Mon="Swan Pirate"Qdata=1;Qname="Area2Quest"NameMon="Swan Pirate"PosQ=CFrame.new(638.43811,71.769989,918.282898,0.139203906,0,0.99026376,0,1,0,-0.99026376,0,0.139203906)PosM=CFrame.new(1068.664306640625,137.61428833007812,1322.1060791015625)elseif a==800 or a<=874 then Mon="Factory Staff"Qname="Area2Quest"Qdata=2;NameMon="Factory Staff"PosQ=CFrame.new(632.698608,73.1055908,918.666321,-0.0319722369,8.96074881e-10,-0.999488771,1.36326533e-10,1,8.92172336e-10,0.999488771,-1.07732087e-10,-0.0319722369)PosM=CFrame.new(73.07867431640625,81.86344146728516,-27.470672607421875)elseif a==875 or a<=899 then Mon="Marine Lieutenant"Qdata=1;Qname="MarineQuest3"NameMon="Marine Lieutenant"PosQ=CFrame.new(-2440.79639,71.7140732,-3216.06812,0.866007268,0,0.500031412,0,1,0,-0.500031412,0,0.866007268)PosM=CFrame.new(-2821.372314453125,75.89727783203125,-3070.089111328125)elseif a==900 or a<=949 then Mon="Marine Captain"Qdata=2;Qname="MarineQuest3"NameMon="Marine Captain"PosQ=CFrame.new(-2440.79639,71.7140732,-3216.06812,0.866007268,0,0.500031412,0,1,0,-0.500031412,0,0.866007268)PosM=CFrame.new(-1861.2310791015625,80.17658233642578,-3254.697509765625)elseif a==950 or a<=974 then Mon="Zombie"Qdata=1;Qname="ZombieQuest"NameMon="Zombie"PosQ=CFrame.new(-5497.06152,47.5923004,-795.237061,-0.29242146,0,-0.95628953,0,1,0,0.95628953,0,-0.29242146)PosM=CFrame.new(-5657.77685546875,78.96973419189453,-928.68701171875)elseif a==975 or a<=999 then Mon="Vampire"Qdata=2;Qname="ZombieQuest"NameMon="Vampire"PosQ=CFrame.new(-5497.06152,47.5923004,-795.237061,-0.29242146,0,-0.95628953,0,1,0,0.95628953,0,-0.29242146)PosM=CFrame.new(-6037.66796875,32.18463897705078,-1340.6597900390625)elseif a==1000 or a<=1049 then Mon="Snow Trooper"Qdata=1;Qname="SnowMountainQuest"NameMon="Snow Trooper"PosQ=CFrame.new(609.858826,400.119904,-5372.25928,-0.374604106,0,0.92718488,0,1,0,-0.92718488,0,-0.374604106)PosM=CFrame.new(549.1473388671875,427.3870544433594,-5563.69873046875)elseif a==1050 or a<=1099 then Mon="Winter Warrior"Qdata=2;Qname="SnowMountainQuest"NameMon="Winter Warrior"PosQ=CFrame.new(609.858826,400.119904,-5372.25928,-0.374604106,0,0.92718488,0,1,0,-0.92718488,0,-0.374604106)PosM=CFrame.new(1142.7451171875,475.6398010253906,-5199.41650390625)elseif a==1100 or a<=1124 then Mon="Lab Subordinate"Qdata=1;Qname="IceSideQuest"NameMon="Lab Subordinate"PosQ=CFrame.new(-6064.06885,15.2422857,-4902.97852,0.453972578,-0,-0.891015649,0,1,-0,0.891015649,0,0.453972578)PosM=CFrame.new(-5707.4716796875,15.951709747314453,-4513.39208984375)elseif a==1125 or a<=1174 then Mon="Horned Warrior"Qdata=2;Qname="IceSideQuest"NameMon="Horned Warrior"PosQ=CFrame.new(-6064.06885,15.2422857,-4902.97852,0.453972578,-0,-0.891015649,0,1,-0,0.891015649,0,0.453972578)PosM=CFrame.new(-6341.36669921875,15.951770782470703,-5723.162109375)elseif a==1175 or a<=1199 then Mon="Magma Ninja"Qdata=1;Qname="FireSideQuest"NameMon="Magma Ninja"PosQ=CFrame.new(-5428.03174,15.0622921,-5299.43457,-0.882952213,0,0.469463557,0,1,0,-0.469463557,0,-0.882952213)PosM=CFrame.new(-5449.6728515625,76.65874481201172,-5808.20068359375)elseif a==1200 or a<=1249 then Mon="Lava Pirate"Qdata=2;Qname="FireSideQuest"NameMon="Lava Pirate"PosQ=CFrame.new(-5428.03174,15.0622921,-5299.43457,-0.882952213,0,0.469463557,0,1,0,-0.469463557,0,-0.882952213)PosM=CFrame.new(-5213.33154296875,49.73788070678711,-4701.451171875)elseif a==1250 or a<=1274 then Mon="Ship Deckhand"Qdata=1;Qname="ShipQuest1"NameMon="Ship Deckhand"PosQ=CFrame.new(1037.80127,125.092171,32911.6016)PosM=CFrame.new(1212.0111083984375,150.79205322265625,33059.24609375)if _G.Level and (PosQ.Position-game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude>500 then replicated.Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(923.21252441406,126.9760055542,32852.83203125))end elseif a==1275 or a<=1299 then Mon="Ship Engineer"Qdata=2;Qname="ShipQuest1"NameMon="Ship Engineer"PosQ=CFrame.new(1037.80127,125.092171,32911.6016)PosM=CFrame.new(919.4786376953125,43.54401397705078,32779.96875)if _G.Level and (PosQ.Position-game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude>500 then replicated.Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(923.21252441406,126.9760055542,32852.83203125))end elseif a==1300 or a<=1324 then Mon="Ship Steward"Qdata=1;Qname="ShipQuest2"NameMon="Ship Steward"PosQ=CFrame.new(968.80957,125.092171,33244.125)PosM=CFrame.new(919.4385375976562,129.55599975585938,33436.03515625)if _G.Level and (PosQ.Position-game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude>500 then replicated.Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(923.21252441406,126.9760055542,32852.83203125))end elseif a==1325 or a<=1349 then Mon="Ship Officer"Qdata=2;Qname="ShipQuest2"NameMon="Ship Officer"PosQ=CFrame.new(968.80957,125.092171,33244.125)PosM=CFrame.new(1036.0179443359375,181.4390411376953,33315.7265625)if _G.Level and (PosQ.Position-game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude>500 then replicated.Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(923.21252441406,126.9760055542,32852.83203125))end elseif a==1350 or a<=1374 then Mon="Arctic Warrior"Qdata=1;Qname="FrostQuest"NameMon="Arctic Warrior"PosQ=CFrame.new(5667.6582,26.7997818,-6486.08984,-0.933587909,0,-0.358349502,0,1,0,0.358349502,0,-0.933587909)PosM=CFrame.new(5966.24609375,62.97002029418945,-6179.3828125)if _G.Level and (PosQ.Position-game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude>1000 then BTP(PosM) end elseif a==1375 or a<=1424 then Mon="Snow Lurker"Qdata=2;Qname="FrostQuest"NameMon="Snow Lurker"PosQ=CFrame.new(5667.6582,26.7997818,-6486.08984,-0.933587909,0,-0.358349502,0,1,0,0.358349502,0,-0.933587909)PosM=CFrame.new(5407.07373046875,69.19437408447266,-6880.88037109375)elseif a==1425 or a<=1449 then Mon="Sea Soldier"Qdata=1;Qname="ForgottenQuest"NameMon="Sea Soldier"PosQ=CFrame.new(-3054.44458,235.544281,-10142.8193,0.990270376,-0,-0.13915664,0,1,-0,0.13915664,0,0.990270376)PosM=CFrame.new(-3028.2236328125,64.67451477050781,-9775.4267578125)elseif a>=1450 then Mon="Water Fighter"Qdata=2;Qname="ForgottenQuest"NameMon="Water Fighter"PosQ=CFrame.new(-3054.44458,235.544281,-10142.8193,0.990270376,-0,-0.13915664,0,1,-0,0.13915664,0,0.990270376)PosM=CFrame.new(-3352.9013671875,285.01556396484375,-10534.841796875)end elseif World3 then if a==1500 or a<=1524 then Mon="Pirate Millionaire"Qdata=1;Qname="PiratePortQuest"NameMon="Pirate Millionaire"PosQ=CFrame.new(-712.8272705078125,98.5770492553711,5711.9541015625)PosM=CFrame.new(-712.8272705078125,98.5770492553711,5711.9541015625)elseif a==1525 or a<=1574 then Mon="Pistol Billionaire"Qdata=2;Qname="PiratePortQuest"NameMon="Pistol Billionaire"PosQ=CFrame.new(-723.4331665039062,147.42906188964844,5931.9931640625)PosM=CFrame.new(-723.4331665039062,147.42906188964844,5931.9931640625)elseif a==1575 or a<=1599 then Mon="Dragon Crew Warrior"Qdata=1;Qname="AmazonQuest"NameMon="Dragon Crew Warrior"PosQ=CFrame.new(6779.03271484375,111.16865539550781,-801.2130737304688)PosM=CFrame.new(6779.03271484375,111.16865539550781,-801.2130737304688)elseif a==1600 or a<=1624 then Mon="Dragon Crew Archer"Qname="AmazonQuest"Qdata=2;NameMon="Dragon Crew Archer"PosQ=CFrame.new(6955.8974609375,546.6658935546875,309.0401306152344)PosM=CFrame.new(6955.8974609375,546.6658935546875,309.0401306152344)elseif a==1625 or a<=1649 then Mon="Hydra Enforcer"Qname="VenomCrewQuest"Qdata=1;NameMon="Hydra Enforcer"PosQ=CFrame.new(4620.61572265625,1002.2954711914062,399.0868835449219)PosM=CFrame.new(4620.61572265625,1002.2954711914062,399.0868835449219)elseif a==1650 or a<=1699 then Mon="Venomous Assailant"Qname="VenomCrewQuest"Qdata=2;NameMon="Venomous Assailant"PosQ=CFrame.new(4697.5918,1100.65137,946.401978,0.579397917,-4.19689783e-10,0.81504482,-1.49287818e-10,1,6.21053986e-10,-0.81504482,-4.81513662e-10,0.579397917)PosM=CFrame.new(4697.5918,1100.65137,946.401978,0.579397917,-4.19689783e-10,0.81504482,-1.49287818e-10,1,6.21053986e-10,-0.81504482,-4.81513662e-10,0.579397917)elseif a==1700 or a<=1724 then Mon="Marine Commodore"Qdata=1;Qname="MarineTreeIsland"NameMon="Marine Commodore"PosQ=CFrame.new(2180.54126,27.8156815,-6741.5498,-0.965929747,0,0.258804798,0,1,0,-0.258804798,0,-0.965929747)PosM=CFrame.new(2286.0078125,73.13391876220703,-7159.80908203125)elseif a==1725 or a<=1774 then Mon="Marine Rear Admiral"NameMon="Marine Rear Admiral"Qname="MarineTreeIsland"Qdata=2;PosQ=CFrame.new(2179.98828125,28.731239318848,-6740.0551757813)PosM=CFrame.new(3656.773681640625,160.52406311035156,-7001.5986328125)elseif a==1775 or a<=1799 then Mon="Fishman Raider"Qdata=1;Qname="DeepForestIsland3"NameMon="Fishman Raider"PosQ=CFrame.new(-10581.6563,330.872955,-8761.18652,-0.882952213,0,0.469463557,0,1,0,-0.469463557,0,-0.882952213)PosM=CFrame.new(-10407.5263671875,331.76263427734375,-8368.5166015625)elseif a==1800 or a<=1824 then Mon="Fishman Captain"Qdata=2;Qname="DeepForestIsland3"NameMon="Fishman Captain"PosQ=CFrame.new(-10581.6563,330.872955,-8761.18652,-0.882952213,0,0.469463557,0,1,0,-0.469463557,0,-0.882952213)PosM=CFrame.new(-10994.701171875,352.38140869140625,-9002.1103515625)elseif a==1825 or a<=1849 then Mon="Forest Pirate"Qdata=1;Qname="DeepForestIsland"NameMon="Forest Pirate"PosQ=CFrame.new(-13234.04,331.488495,-7625.40137,0.707134247,-0,-0.707079291,0,1,-0,0.707079291,0,0.707134247)PosM=CFrame.new(-13274.478515625,332.3781433105469,-7769.58056640625)elseif a==1850 or a<=1899 then Mon="Mythological Pirate"Qdata=2;Qname="DeepForestIsland"NameMon="Mythological Pirate"PosQ=CFrame.new(-13234.04,331.488495,-7625.40137,0.707134247,-0,-0.707079291,0,1,-0,0.707079291,0,0.707134247)PosM=CFrame.new(-13680.607421875,501.08154296875,-6991.189453125)elseif a==1900 or a<=1924 then Mon="Jungle Pirate"Qdata=1;Qname="DeepForestIsland2"NameMon="Jungle Pirate"PosQ=CFrame.new(-12680.3818,389.971039,-9902.01953,-0.0871315002,0,0.996196866,0,1,0,-0.996196866,0,-0.0871315002)PosM=CFrame.new(-12256.16015625,331.73828125,-10485.8369140625)elseif a==1925 or a<=1974 then Mon="Musketeer Pirate"Qdata=2;Qname="DeepForestIsland2"NameMon="Musketeer Pirate"PosQ=CFrame.new(-12680.3818,389.971039,-9902.01953,-0.0871315002,0,0.996196866,0,1,0,-0.996196866,0,-0.0871315002)PosM=CFrame.new(-13457.904296875,391.545654296875,-9859.177734375)elseif a==1975 or a<=1999 then Mon="Reborn Skeleton"Qdata=1;Qname="HauntedQuest1"NameMon="Reborn Skeleton"PosQ=CFrame.new(-9479.2168,141.215088,5566.09277,0,0,1,0,1,-0,-1,0,0)PosM=CFrame.new(-8763.7236328125,165.72299194335938,6159.86181640625)elseif a==2000 or a<=2024 then Mon="Living Zombie"Qdata=2;Qname="HauntedQuest1"NameMon="Living Zombie"PosQ=CFrame.new(-9479.2168,141.215088,5566.09277,0,0,1,0,1,-0,-1,0,0)PosM=CFrame.new(-10144.1318359375,138.62667846679688,5838.0888671875)elseif a==2025 or a<=2049 then Mon="Demonic Soul"Qdata=1;Qname="HauntedQuest2"NameMon="Demonic Soul"PosQ=CFrame.new(-9516.99316,172.017181,6078.46533,0,0,-1,0,1,0,1,0,0)PosM=CFrame.new(-9505.8720703125,172.10482788085938,6158.9931640625)elseif a==2050 or a<=2074 then Mon="Posessed Mummy"Qdata=2;Qname="HauntedQuest2"NameMon="Posessed Mummy"PosQ=CFrame.new(-9516.99316,172.017181,6078.46533,0,0,-1,0,1,0,1,0,0)PosM=CFrame.new(-9582.0224609375,6.251527309417725,6205.478515625)elseif a==2075 or a<=2099 then Mon="Peanut Scout"Qdata=1;Qname="NutsIslandQuest"NameMon="Peanut Scout"PosQ=CFrame.new(-2104.3908691406,38.104167938232,-10194.21875,0,0,-1,0,1,0,1,0,0)PosM=CFrame.new(-2143.241943359375,47.72198486328125,-10029.9951171875)elseif a==2100 or a<=2124 then Mon="Peanut President"Qdata=2;Qname="NutsIslandQuest"NameMon="Peanut President"PosQ=CFrame.new(-2104.3908691406,38.104167938232,-10194.21875,0,0,-1,0,1,0,1,0,0)PosM=CFrame.new(-1859.35400390625,38.10316848754883,-10422.4296875)elseif a==2125 or a<=2149 then Mon="Ice Cream Chef"Qdata=1;Qname="IceCreamIslandQuest"NameMon="Ice Cream Chef"PosQ=CFrame.new(-820.64825439453,65.819526672363,-10965.795898438,0,0,-1,0,1,0,1,0,0)PosM=CFrame.new(-872.24658203125,65.81957244873047,-10919.95703125)elseif a==2150 or a<=2199 then Mon="Ice Cream Commander"Qdata=2;Qname="IceCreamIslandQuest"NameMon="Ice Cream Commander"PosQ=CFrame.new(-820.64825439453,65.819526672363,-10965.795898438,0,0,-1,0,1,0,1,0,0)PosM=CFrame.new(-558.06103515625,112.04895782470703,-11290.7744140625)elseif a==2200 or a<=2224 then Mon="Cookie Crafter"Qdata=1;Qname="CakeQuest1"NameMon="Cookie Crafter"PosQ=CFrame.new(-2021.32007,37.7982254,-12028.7295,0.957576931,-8.80302053e-08,0.288177818,6.9301187e-08,1,7.51931211e-08,-0.288177818,-5.2032135e-08,0.957576931)PosM=CFrame.new(-2374.13671875,37.79826354980469,-12125.30859375)elseif a==2225 or a<=2249 then Mon="Cake Guard"Qdata=2;Qname="CakeQuest1"NameMon="Cake Guard"PosQ=CFrame.new(-2021.32007,37.7982254,-12028.7295,0.957576931,-8.80302053e-08,0.288177818,6.9301187e-08,1,7.51931211e-08,-0.288177818,-5.2032135e-08,0.957576931)PosM=CFrame.new(-1598.3070068359375,43.773197174072266,-12244.5810546875)elseif a==2250 or a<=2274 then Mon="Baking Staff"Qdata=1;Qname="CakeQuest2"NameMon="Baking Staff"PosQ=CFrame.new(-1927.91602,37.7981339,-12842.5391,-0.96804446,4.22142143e-08,0.250778586,4.74911062e-08,1,1.49904711e-08,-0.250778586,2.64211941e-08,-0.96804446)PosM=CFrame.new(-1887.8099365234375,77.6185073852539,-12998.3505859375)elseif a==2275 or a<=2299 then Mon="Head Baker"Qdata=2;Qname="CakeQuest2"NameMon="Head Baker"PosQ=CFrame.new(-1927.91602,37.7981339,-12842.5391,-0.96804446,4.22142143e-08,0.250778586,4.74911062e-08,1,1.49904711e-08,-0.250778586,2.64211941e-08,-0.96804446)PosM=CFrame.new(-2216.188232421875,82.884521484375,-12869.2939453125)elseif a==2300 or a<=2324 then Mon="Cocoa Warrior"Qdata=1;Qname="ChocQuest1"NameMon="Cocoa Warrior"PosQ=CFrame.new(233.22836303710938,29.876001358032227,-12201.2333984375)PosM=CFrame.new(-21.55328369140625,80.57499694824219,-12352.3876953125)elseif a==2325 or a<=2349 then Mon="Chocolate Bar Battler"Qdata=2;Qname="ChocQuest1"NameMon="Chocolate Bar Battler"PosQ=CFrame.new(233.22836303710938,29.876001358032227,-12201.2333984375)PosM=CFrame.new(582.590576171875,77.18809509277344,-12463.162109375)elseif a==2350 or a<=2374 then Mon="Sweet Thief"Qdata=1;Qname="ChocQuest2"NameMon="Sweet Thief"PosQ=CFrame.new(150.5066375732422,30.693693161010742,-12774.5029296875)PosM=CFrame.new(165.1884765625,76.05885314941406,-12600.8369140625)elseif a==2375 or a<=2399 then Mon="Candy Rebel"Qdata=2;Qname="ChocQuest2"NameMon="Candy Rebel"PosQ=CFrame.new(150.5066375732422,30.693693161010742,-12774.5029296875)PosM=CFrame.new(134.86563110351562,77.2476806640625,-12876.5478515625)elseif a==2400 or a<=2449 then Mon="Candy Pirate"Qdata=1;Qname="CandyQuest1"NameMon="Candy Pirate"PosQ=CFrame.new(-1150.0400390625,20.378934860229492,-14446.3349609375)PosM=CFrame.new(-1310.5003662109375,26.016523361206055,-14562.404296875)elseif a==2450 or a<=2474 then Mon="Isle Outlaw"Qdata=1;Qname="TikiQuest1"NameMon="Isle Outlaw"PosQ=CFrame.new(-16548.8164,55.6059914,-172.8125,0.213092566,-0,-0.977032006,0,1,-0,0.977032006,0,0.213092566)PosM=CFrame.new(-16479.900390625,226.6117401123047,-300.3114318847656)elseif a==2475 or a<=2499 then Mon="Island Boy"Qdata=2;Qname="TikiQuest1"NameMon="Island Boy"PosQ=CFrame.new(-16548.8164,55.6059914,-172.8125,0.213092566,-0,-0.977032006,0,1,-0,0.977032006,0,0.213092566)PosM=CFrame.new(-16849.396484375,192.86505126953125,-150.7853240966797)elseif a==2500 or a<=2524 then Mon="Sun-kissed Warrior"Qdata=1;Qname="TikiQuest2"NameMon="kissed Warrior"PosM=CFrame.new(-16347,64,984)PosQ=CFrame.new(-16538,55,1049)elseif a==2525 or a<=2550 then Mon="Isle Champion"Qdata=2;Qname="TikiQuest2"NameMon="Isle Champion"PosQ=CFrame.new(-16541.0215,57.3082275,1051.46118,0.0410757065,-0,-0.999156058,0,1,-0,0.999156058,0,0.0410757065)PosM=CFrame.new(-16602.1015625,130.38734436035156,1087.24560546875)
+elseif a >= 2551 and a <= 2574 then
+				Mon = "Serpent Hunter"
+				Qdata = 1;
+				Qname = "TikiQuest3";
+				NameMon = "Serpent Hunter"
+				PosQ = CFrame.new(-16679.4785, 176.7473, 1474.3995)
+				PosM = CFrame.new(-16679.4785, 176.7473, 1474.3995)
+			elseif a >= 2575 and a <= 2599 then 
+				Mon = "Skull Slayer"
+				Qdata = 2;
+				Qname = "TikiQuest3";
+				NameMon = "Skull Slayer"
+				PosQ = CFrame.new(-16759.5898, 71.2837, 1595.3399)
+				PosM = CFrame.new(-16759.5898, 71.2837, 1595.3399)
+
+	
+			elseif a >= 2600 and a <= 2624 then
+				Mon = "Reef Bandit"
+				Qdata = 1;
+				Qname = "SubmergedQuest1";
+				NameMon = "Reef Bandit"
+				PosQ = CFrame.new(10882.264, -2086.322, 10034.226) 
+				PosM = CFrame.new(10736.6191, -2087.8439, 9338.4882)
+			elseif a >= 2625 and a <= 2649 then
+				Mon = "Coral Pirate"
+				Qdata = 2;
+				Qname = "SubmergedQuest1";
+				NameMon = "Coral Pirate"
+				PosQ = CFrame.new(10882.264, -2086.322, 10034.226)
+				PosM = CFrame.new(10965.1025, -2158.8842, 9177.2597)
+			elseif a >= 2650 and a <= 2674 then
+				Mon = "Sea Chanter"
+				Qdata = 1;
+				Qname = "SubmergedQuest2";
+				NameMon = "Sea Chanter"
+				PosQ = CFrame.new(10882.264, -2086.322, 10034.226)
+				PosM = CFrame.new(10621.0342, -2087.8440, 10102.0332)
+			elseif a >= 2675 and a <= 2699 then
+				Mon = "Ocean Prophet"
+				Qdata = 2;
+				Qname = "SubmergedQuest2";
+				NameMon = "Ocean Prophet"
+				PosQ = CFrame.new(10882.264, -2086.322, 10034.226)
+				PosM = CFrame.new(11056.1445, -2001.6717, 10117.4493)
+			elseif a >= 2700 and a <= 2724 then
+				Mon = "High Disciple"
+				Qdata = 1;
+				Qname = "SubmergedQuest3";
+				NameMon = "High Disciple"
+				PosQ = CFrame.new(9636.52441, -1992.19507, 9609.52832)
+				PosM = CFrame.new(9828.087890625, -1940.908935546875, 9693.0634765625)
+			elseif a >= 2725 and a <= 2800 then
+				Mon = "Grand Devotee"
+				Qdata = 2;
+				Qname = "SubmergedQuest3";
+				NameMon = "Grand Devotee"
+				PosQ = CFrame.new(9636.52441, -1992.19507, 9609.52832)
+				PosM = CFrame.new(9557.5849609375, -1928.0404052734375, 9859.1826171875)
+end end end
+MaterialMon=function()local a=game.Players.LocalPlayer;local b=a.Character and a.Character:FindFirstChild("HumanoidRootPart")if not b then return end;shouldRequestEntrance=function(c,d)local e=(b.Position-c).Magnitude;if e>=d then replicated.Remotes.CommF_:InvokeServer("requestEntrance",c)end end;if World1 then if SelectMaterial=="Angel Wings"then MMon={"Shanda","Royal Squad","Royal Soldier","Wysper","Thunder God"}MPos=CFrame.new(-4698,845,-1912)SP="Default"local c=Vector3.new(-4607.82275,872.54248,-1667.55688)shouldRequestEntrance(c,10000)elseif SelectMaterial=="Leather + Scrap Metal"then MMon={"Brute","Pirate"}MPos=CFrame.new(-1145,15,4350)SP="Default"elseif SelectMaterial=="Magma Ore"then MMon={"Military Soldier","Military Spy","Magma Admiral"}MPos=CFrame.new(-5815,84,8820)SP="Default"elseif SelectMaterial=="Fish Tail"then MMon={"Fishman Warrior","Fishman Commando","Fishman Lord"}MPos=CFrame.new(61123,19,1569)SP="Default"local c=Vector3.new(61163.8515625,5.342342376708984,1819.7841796875)shouldRequestEntrance(c,17000)end elseif World2 then if SelectMaterial=="Leather + Scrap Metal"then MMon={"Marine Captain"}MPos=CFrame.new(-2010.5059814453125,73.00115966796875,-3326.620849609375)SP="Default"elseif SelectMaterial=="Magma Ore"then MMon={"Magma Ninja","Lava Pirate"}MPos=CFrame.new(-5428,78,-5959)SP="Default"elseif SelectMaterial=="Ectoplasm"then MMon={"Ship Deckhand","Ship Engineer","Ship Steward","Ship Officer"}MPos=CFrame.new(911.35827636719,125.95812988281,33159.5390625)SP="Default"local c=Vector3.new(61163.8515625,5.342342376708984,1819.7841796875)shouldRequestEntrance(c,18000)elseif SelectMaterial=="Mystic Droplet"then MMon={"Water Fighter"}MPos=CFrame.new(-3385,239,-10542)SP="Default"elseif SelectMaterial=="Radioactive Material"then MMon={"Factory Staff"}MPos=CFrame.new(295,73,-56)SP="Default"elseif SelectMaterial=="Vampire Fang"then MMon={"Vampire"}MPos=CFrame.new(-6033,7,-1317)SP="Default"end elseif World3 then if SelectMaterial=="Scrap Metal"then MMon={"Jungle Pirate","Forest Pirate"}MPos=CFrame.new(-11975.78515625,331.7734069824219,-10620.0302734375)SP="Default"elseif SelectMaterial=="Fish Tail"then MMon={"Fishman Raider","Fishman Captain"}MPos=CFrame.new(-10993,332,-8940)SP="Default"elseif SelectMaterial=="Conjured Cocoa"then MMon={"Chocolate Bar Battler","Cocoa Warrior"}MPos=CFrame.new(620.6344604492188,78.93644714355469,-12581.369140625)SP="Default"elseif SelectMaterial=="Dragon Scale"then MMon={"Dragon Crew Archer","Dragon Crew Warrior"}MPos=CFrame.new(6594,383,139)SP="Default"elseif SelectMaterial=="Gunpowder"then MMon={"Pistol Billionaire"}MPos=CFrame.new(-84.8556900024414, 85.62061309814453, 6132.0087890625)SP="Default"elseif SelectMaterial=="Mini Tusk"then MMon={"Mythological Pirate"}MPos=CFrame.new(-13545,470,-6917)SP="Default"elseif SelectMaterial=="Demonic Wisp"then MMon={"Demonic Soul"}MPos=CFrame.new(-9495.6806640625,453.58624267578125,5977.3486328125)SP="Default"end end end
+QuestNeta = function()
+  local Neta = QuestCheck()
+  return {
+    [1] = Mon,
+    [2] = Qdata,
+    [3] = Qname,
+    [4] = PosM,
+    [5] = NameMon,
+    [6] = PosQ
+  }
+end
+
+local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/erenxkuki/KuKi-Hub/refs/heads/main/KuKi-Hub-Fluent-UI.lua"))()
+local Window = Fluent:CreateWindow({Title = "KuKi Hub V1 [ Freemium ]",SubTitle = "| https://discord.gg/HdPBKdzxMN",TabWidth = 155,Size = UDim2.fromOffset(555, 320),Acrylic = false,Theme = "Dark",MinimizeKey = Enum.KeyCode.End})
+
+local CoreGui = game:GetService("CoreGui")
+local VirtualInputManager = game:GetService("VirtualInputManager")
+local UserInputService = game:GetService("UserInputService")
+
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "ControlButtonGUI"
+ScreenGui.Parent = CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+local ToggleButton = Instance.new("ImageButton")
+ToggleButton.Size = UDim2.new(0, 90, 0, 90)
+ToggleButton.Position = UDim2.new(0.15, 0, 0.15, 0)
+ToggleButton.BackgroundTransparency = 1
+ToggleButton.BorderSizePixel = 0
+ToggleButton.Image = "rbxassetid://90981445742149"
+ToggleButton.ScaleType = Enum.ScaleType.Fit
+ToggleButton.Parent = ScreenGui
+
+local Corner = Instance.new("UICorner")
+Corner.CornerRadius = UDim.new(1, 0)
+Corner.Parent = ToggleButton
+
+ToggleButton.MouseButton1Click:Connect(function()
+    VirtualInputManager:SendKeyEvent(true, "End", false, game)
+    VirtualInputManager:SendKeyEvent(false, "End", false, game)
+end)
+
+local dragging = false
+local dragInput, dragStart, startPos
+
+local function update(input)
+    local delta = input.Position - dragStart
+    ToggleButton.Position = UDim2.new(
+        startPos.X.Scale,
+        startPos.X.Offset + delta.X,
+        startPos.Y.Scale,
+        startPos.Y.Offset + delta.Y
+    )
+end
+
+ToggleButton.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+        dragging = true
+        dragStart = input.Position
+        startPos = ToggleButton.Position
+
+        input.Changed:Connect(function()
+            if input.UserInputState == Enum.UserInputState.End then
+                dragging = false
+            end
+        end)
+    end
+end)
+
+ToggleButton.InputChanged:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+        dragInput = input
+    end
+end)
+
+UserInputService.InputChanged:Connect(function(input)
+    if dragging and input == dragInput then
+        update(input)
+    end
+end)
+
+local Tabs = {
+  Main = Window:AddTab({Title = "Main", Icon = "Home"}),
+  Settings = Window:AddTab({Title = "Settings", Icon = "settings"}),
+  Melee = Window:AddTab({Title = "Melee/Fighting Style", Icon = "Scroll"}),
+  Quests = Window:AddTab({Title = "Farm Items", Icon = "swords"}),
+  SeaEvent = Window:AddTab({Title = "Sea", Icon = "wawes"}),
+  Mirage = Window:AddTab({Title = "Mirage Island / V4", Icon = "crown"}),
+  Drago = Window:AddTab({Title = "Dragon Dojo", Icon = "layers"}),
+  Prehistoric = Window:AddTab({Title = "Prehistoric", Icon = "flame"}),
+  Raids = Window:AddTab({Title = "Raid", Icon = "skull"}),
+  Combat = Window:AddTab({Title = "PvP", Icon = "user"}),
+  Travel = Window:AddTab({Title = "Teleportation", Icon = "locate"}),
+  Fruit = Window:AddTab({Title = "Left", Icon = "cherry"}),
+  Shop = Window:AddTab({Title = "Shop", Icon = "shopping"}),
+  Misc = Window:AddTab({Title = "Misc", Icon = "settings-2"})
+}
+ 
+local FarmLevel = Tabs.Main:AddToggle("FarmLevel", {Title = "Auto Farm Level", Description = "", Default = false})
+FarmLevel:OnChanged(function(Value)
+  _G.Level = Value
+end)
+spawn(function()
+  while wait(Sec) do
+	if _G.Level then
+	  pcall(function()
+	    local QuestTitle = plr.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text
+	    if not string.find(QuestTitle, QuestNeta()[5]) then replicated.Remotes.CommF_:InvokeServer("AbandonQuest")end
+	    if plr.PlayerGui.Main.Quest.Visible == false then
+  	      _tp(QuestNeta()[6])
+	      if (Root.Position - QuestNeta()[6].Position).Magnitude <= 5 then replicated.Remotes.CommF_:InvokeServer("StartQuest", QuestNeta()[3], QuestNeta()[2])end
+	    elseif plr.PlayerGui.Main.Quest.Visible == true then
+	      if workspace.Enemies:FindFirstChild(QuestNeta()[1]) then
+		    for i, v in pairs(workspace.Enemies:GetChildren()) do
+		      if Attack.Alive(v) then
+			    if v.Name == QuestNeta()[1] then
+			      if string.find(QuestTitle, QuestNeta()[5]) then
+				    repeat wait() Attack.Kill(v, _G.Level)until not _G.Level or v.Humanoid.Health <= 0 or not v.Parent or plr.PlayerGui.Main.Quest.Visible == false
+				  else
+				    replicated.Remotes.CommF_:InvokeServer("AbandonQuest")
+				  end
+			    end
+			  end
+		    end
+		  else _tp(QuestNeta()[4])if replicated:FindFirstChild(QuestNeta()[1]) then _tp(replicated:FindFirstChild(QuestNeta()[1]).HumanoidRootPart.CFrame * CFrame.new(0, 30, 0))end end
+		end
+	  end)
+	end
+  end
+end)
+local TravelDress = Tabs.Main:AddToggle("TravelDress", {Title = "Auto Travel Dressrosa", Description = "", Default = false})
+TravelDress:OnChanged(function(Value)
+  _G.TravelDres = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.TravelDres then
+        if plr.Data.Level.Value >= 700 then
+          if workspace.Map.Ice.Door.CanCollide == true and workspace.Map.Ice.Door.Transparency == 0 then
+            replicated.Remotes.CommF_:InvokeServer("DressrosaQuestProgress","Detective")
+		    EquipWeapon("Key")
+		    repeat wait() _tp(CFrame.new(1347.7124, 37.3751602, -1325.6488)) until not _G.TravelDres or (Root.Position == CFrame.new(1347.7124, 37.3751602, -1325.6488).Position)
+	      elseif workspace.Map.Ice.Door.CanCollide == false and workspace.Map.Ice.Door.Transparency == 1 then
+            if Enemies:FindFirstChild("Ice Admiral") then
+              for _,xz in pairs(Enemies:GetChildren()) do
+                if xz.Name == "Ice Admiral" and Attack.Alive(xz) then
+              	  repeat task.wait() Attack.Kill(xz,_G.TravelDres) until _G.TravelDres == false or xz.Humanoid.Health <= 0
+                  replicated.Remotes.CommF_:InvokeServer("TravelDressrosa")
+                end
+              end
+            else
+              _tp(CFrame.new(1347.7124, 37.3751602, -1325.6488))
+            end
+	      else
+		    replicated.Remotes.CommF_:InvokeServer("TravelDressrosa")
+	      end
+        end
+      end
+    end)
+  end
+end)
+local Zou = Tabs.Main:AddToggle("Zou", {Title = "Auto Zou Quest", Description = "", Default = false})
+Zou:OnChanged(function(Value)
+  _G.AutoZou = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.AutoZou then
+   	    if plr.Data.Level.Value >= 1500 then
+          if replicated.Remotes.CommF_:InvokeServer("BartiloQuestProgress","Bartilo") == 3 then
+            if replicated.Remotes.CommF_:InvokeServer("GetUnlockables").FlamingoAccess ~= nil then
+              replicated.Remotes.CommF_:InvokeServer("F_","TravelZou")
+              if replicated.Remotes.CommF_:InvokeServer("ZQuestProgress", "Check") == 0 then
+                local v = GetConnectionEnemies("rip_indra")
+                if v then
+                  repeat wait() Attack.Kill(v,_G.AutoZou) until not _G.AutoZou or not v.Parent or v.Humanoid.Health <= 0
+                  Check = 2
+                  repeat wait()replicated.Remotes.CommF_:InvokeServer("F_","TravelZou")until Check == 1                   
+                else
+                  replicated.Remotes.CommF_:InvokeServer("F_","ZQuestProgress","Check") wait(.1)
+                  replicated.Remotes.CommF_:InvokeServer("F_","ZQuestProgress","Begin")
+                end
+              elseif replicated.Remotes["CommF_"]:InvokeServer("ZQuestProgress", "Check") == 1 then
+                replicated.Remotes.CommF_:InvokeServer("F_","TravelZou")
+              else
+                local v = GetConnectionEnemies("Don Swan")
+                if v then
+                  repeat wait() Attack.Kill(v,_G.AutoZou)until not _G.AutoZou or not v.Parent or v.Humanoid.Health<=0                  
+                else
+                  repeat wait() _tp(CFrame.new(2288.802, 15.1870775, 863.034607)) until not _G.AutoZou or (Root.Position == CFrame.new(2288.802, 15.1870775, 863.034607).Position)
+                  if (Root.CFrame == CFrame.new(2288.802, 15.1870775, 863.034607)) then notween(CFrame.new(2288.802, 15.1870775, 863.034607)) end
+                end
+              end
+            else
+            if replicated.Remotes.CommF_:InvokeServer("GetUnlockables").FlamingoAccess == nil then
+              TabelDevilFruitStore = {}
+              TabelDevilFruitOpen = {}
+              for i,v in pairs(replicated.Remotes["CommF_"]:InvokeServer("getInventoryFruits")) do
+                for i1,v1 in pairs(v) do
+                  if i1 == "Name" then table.insert(TabelDevilFruitStore,v1)end
+                end
+              end
+              for i,v in next, game.ReplicatedStorage:WaitForChild("Remotes").CommF_:InvokeServer("GetFruits") do
+                if v.Price >= 1000000 then table.insert(TabelDevilFruitOpen,v.Name) end
+              end
+              for i,DevilFruitOpenDoor in pairs(TabelDevilFruitOpen) do
+                for i1,DevilFruitStore in pairs(TabelDevilFruitStore) do
+                  if DevilFruitOpenDoor == DevilFruitStore and replicated.Remotes.CommF_:InvokeServer("GetUnlockables").FlamingoAccess == nil then
+                    if not plr.Backpack:FindFirstChild(DevilFruitStore) then
+                      replicated.Remotes.CommF_:InvokeServer("F_","LoadFruit",DevilFruitStore)
+                    else
+                      replicated.Remotes.CommF_:InvokeServer("F_","TalkTrevor","1")
+                      replicated.Remotes.CommF_:InvokeServer("F_","TalkTrevor","2")
+                      replicated.Remotes.CommF_:InvokeServer("F_","TalkTrevor","3")
+                    end
+                  end
+                end
+              end
+                replicated.Remotes.CommF_:InvokeServer("F_","TalkTrevor","1")
+                replicated.Remotes.CommF_:InvokeServer("F_","TalkTrevor","2")
+                replicated.Remotes.CommF_:InvokeServer("F_","TalkTrevor","3")
+              end
+            end
+          else
+            if replicated.Remotes.CommF_:InvokeServer("BartiloQuestProgress","Bartilo") == 0 then
+              if string.find(plr.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "Swan Pirates") and string.find(plr.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "50") and plr.PlayerGui.Main.Quest.Visible == true then                
+                local v = GetConnectionEnemies("Swan Pirate")
+                if v then
+                  pcall(function() repeat wait() Attack.Kill(v,_G.AutoZou) until not v.Parent or v.Humanoid.Health <= 0 or _G.AutoZou == false or plr.PlayerGui.Main.Quest.Visible == false end)                    
+                else
+                  _tp(CFrame.new(1057.92761, 137.614319, 1242.08069))
+                end
+              else
+                _tp(CFrame.new(-456.28952, 73.0200958, 299.895966))
+              end
+            elseif replicated.Remotes.CommF_:InvokeServer("BartiloQuestProgress","Bartilo") == 1 then
+              local v = GetConnectionEnemies("Jeremy")
+              if v then
+                repeat wait() Attack.Kill(v,_G.AutoZou) until not v.Parent or v.Humanoid.Health <= 0 or _G.AutoZou == false
+              else
+                _tp(CFrame.new(2099.88159, 448.931, 648.997375))
+              end
+            elseif replicated.Remotes.CommF_:InvokeServer("BartiloQuestProgress","Bartilo") == 2 then
+              repeat wait() _tp(CFrame.new(-1836, 11, 1714)) until not _G.AutoZou or (Root.Position == CFrame.new(-1836, 11, 1714).Position)
+              if (Root.CFrame == CFrame.new(-1836, 11, 1714)) then notween(CFrame.new(-1836, 11, 1714))end
+              notween(CFrame.new(-1850.49329, 13.1789551, 1750.89685))
+              wait(.1)
+              notween(CFrame.new(-1858.87305, 19.3777466, 1712.01807))
+              wait(.1)
+              notween(CFrame.new(-1803.94324, 16.5789185, 1750.89685))
+              wait(.1)
+              notween(CFrame.new(-1858.55835, 16.8604317, 1724.79541))
+              wait(.1)
+              notween(CFrame.new(-1869.54224, 15.987854, 1681.00659))
+              wait(.1)
+              notween(CFrame.new(-1800.0979, 16.4978027, 1684.52368))
+              wait(.1)
+              notween(CFrame.new(-1819.26343, 14.795166, 1717.90625))
+              wait(.1)
+              notween(CFrame.new(-1813.51843, 14.8604736, 1724.79541))
+            end
+          end
+        end
+      end
+    end)
+  end
+end)
+
+Tabs.Main:AddSection("Miscellanea / Quest")
+
+local ClosetMons = Tabs.Main:AddToggle("ClosetMons", {Title = "Auto Farm Nearest", Description = "", Default = false})
+ClosetMons:OnChanged(function(Value)
+  _G.AutoFarmNear = Value
+end)
+spawn(function()
+  while wait() do
+    pcall(function()
+      if _G.AutoFarmNear then
+        for i,v in pairs(workspace.Enemies:GetChildren()) do
+          if v:FindFirstChild("Humanoid") or v:FindFirstChild("HumanoidRootPart") then
+            if v.Humanoid.Health > 0 then
+              repeat wait() Attack.Kill(v,_G.AutoFarmNear) until not _G.AutoFarmNear or not v.Parent or v.Humanoid.Health <= 0
+            end
+          end
+        end
+      end
+    end)
+  end
+end)
+local FactoryRaids = Tabs.Main:AddToggle("FactoryRaids", {Title = "Auto Factory Raid", Description = "", Default = false})
+FactoryRaids:OnChanged(function(Value)
+  _G.AutoFactory = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.AutoFactory then
+        local v = GetConnectionEnemies("Core")
+        if v then
+          repeat wait()
+            EquipWeapon(_G.SelectWeapon)
+            _tp(CFrame.new(448.46756, 199.356781, -441.389252))
+          until v.Humanoid.Health <= 0 or _G.AutoFactory == false
+        else
+          _tp(CFrame.new(448.46756, 199.356781, -441.389252))
+        end
+      end
+    end)
+  end
+end)
+local CastleRaids = Tabs.Main:AddToggle("CastleRaids", {Title = "Auto Pirate Raid", Description = "", Default = false})
+CastleRaids:OnChanged(function(Value)
+  _G.AutoRaidCastle = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.AutoRaidCastle then
+      pcall(function()
+      local CFrameCastleRaid = CFrame.new(-5496.17432, 313.768921, -2841.53027, 0.924894512, 7.37058015e-09, 0.380223751, 3.5881019e-08, 1, -1.06665446e-07, -0.380223751, 1.12297109e-07, 0.924894512)
+        if (CFrame.new(-5539.3115234375, 313.800537109375, -2972.372314453125).Position - Root.Position).Magnitude <= 500 then
+          for i,v in pairs(workspace.Enemies:GetChildren()) do
+            if v:FindFirstChild("HumanoidRootPart") and v:FindFirstChild("Humanoid") and v.Humanoid.Health > 0 then
+              if v.Name then
+                if (v.HumanoidRootPart.Position - Root.Position).Magnitude <= 2000 then
+                  repeat wait() Attack.Kill(v,_G.AutoRaidCastle) until not _G.AutoRaidCastle or not v.Parent or v.Humanoid.Health <= 0 or not workspace.Enemies:FindFirstChild(v.Name)
+                end
+              end
+            end
+          end
+        else
+          local Castle_Mob = {"Galley Pirate","Galley Captain","Raider","Mercenary","Vampire","Zombie","Snow Trooper","Winter Warrior","Lab Subordinate","Horned Warrior","Magma Ninja","Lava Pirate","Ship Deckhand","Ship Engineer","Ship Steward","Ship Officer","Arctic Warrior","Snow Lurker","Sea Soldier","Water Fighter"}
+          for i = 1,#Castle_Mob do
+            if replicated:FindFirstChild(Castle_Mob[i]) then
+              for _,v in pairs(replicated:GetChildren()) do
+                if table.find(Castle_Mob, v.Name) then _tp(CFrameCastleRaid) end
+              end
+            end
+          end
+        end
+      end)
+    end
+  end
+end)
+Test = Tabs.Main:AddDropdown("Test",{Title = "Choose Material",Values = MaterialList,Multi = false,Default = nil})
+Test:OnChanged(function(Value)
+  getgenv().SelectMaterial = Value
+end)
+Toggle = Tabs.Main:AddToggle("Toggle", {Title = "Auto Materials", Description = "", Default = false})
+Toggle:OnChanged(function(Value)
+    getgenv().AutoMaterial = Value
+end)
+spawn(function()
+  local function processEnemy(v, EnemyName)
+    if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+      if v.Name == EnemyName then repeat wait() Attack.Kill(v,getgenv().AutoMaterial) until not getgenv().AutoMaterial or not v.Parent or v.Humanoid.Health <= 0 end
+    end
+  end
+  local function handleEnemySpawns()
+    for _, v in pairs(game:GetService("Workspace")["_WorldOrigin"].EnemySpawns:GetChildren()) do
+      for _, EnemyName in ipairs(MMon) do
+        if string.find(v.Name, EnemyName) then
+          if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.Position).Magnitude >= 10 then
+            _tp(v.CFrame * Pos)
+          end
+        end
+      end
+    end
+  end
+  while wait() do
+    if getgenv().AutoMaterial then
+      pcall(function()
+        if getgenv().SelectMaterial then MaterialMon(getgenv().SelectMaterial) _tp(MPos) end
+        for _, EnemyName in ipairs(MMon) do
+          for _, v in pairs(workspace.Enemies:GetChildren()) do processEnemy(v, EnemyName) end
+        end
+        handleEnemySpawns()
+      end)
+    end
+  end
+end)
+local Q = Tabs.Main:AddToggle("Q", {Title = "Auto Farm Ectoplasm", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.AutoEctoplasm = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.AutoEctoplasm then
+        local EctoTable = {"Ship Deckhand","Ship Engineer","Ship Steward","Ship Officer","Arctic Warrior"}    
+        local v = GetConnectionEnemies(EctoTable)
+		if Attack.Alive(v) then
+		  repeat wait() Attack.Kill(v, _G.AutoEctoplasm)until not _G.AutoEctoplasm or not v.Parent or v.Humanoid.Health <= 0		        
+	    else
+	      replicated.Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(923.21252441406, 126.9760055542, 32852.83203125))
+	    end
+      end
+    end)
+  end
+end)
+local Bartilo = Tabs.Main:AddToggle("Bartilo", {Title = "Auto Done Bartilo Quest", Description = "", Default = false})
+Bartilo:OnChanged(function(Value)
+  _G.Bartilo_Quest = Value
+end)
+spawn(function()
+  while wait(.1) do    
+    pcall(function()
+      if _G.Bartilo_Quest and Lv >= 850 then
+      local Qbart = plr.PlayerGui.Main.Quest
+        if replicated.Remotes.CommF_:InvokeServer("BartiloQuestProgress","Bartilo") == 0 then
+          _G.Level = false
+          if Qbart.Visible == true then
+            local v = GetConnectionEnemies("Swan Pirate")
+            if v then
+              local x = GetConnectionEnemies(BartMon)
+              if x then
+                repeat task.wait()
+                  if not string.find(plr.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "Swan Pirate")then replicated.Remotes.CommF_:InvokeServer("AbandonQuest")
+                  else Attack.Kill(x,_G.Bartilo_Quest)end
+                until _G.Bartilo_Quest == false or not x.Parent or x.Humanoid.Health <= 0 or Qbart.Visible == false or not x:FindFirstChild("HumanoidRootPart")                  
+              end
+            else
+              _tp(CFrame.nee(970.369446, 142.653198, 1217.3667, 0.162079468, -4.85452638e-08, -0.986777723, 1.03357589e-08, 1, -4.74980872e-08, 0.986777723, -2.50063148e-09, 0.162079468))
+            end
+          else
+            repeat wait() 
+              _tp(CFrame.new(-461.533203, 72.3478546, 300.311096, 0.050853312, -0, -0.998706102, 0, 1, -0, 0.998706102, 0, 0.050853312))
+            until (CFrame.new(-461.533203, 72.3478546, 300.311096, 0.050853312, -0, -0.998706102, 0, 1, -0, 0.998706102, 0, 0.050853312).Position - plr.Character.HumanoidRootPart.Position).Magnitude <= 20 or _G.Bartilo_Quest == false
+            if (CFrame.new(-461.533203, 72.3478546, 300.311096, 0.050853312, -0, -0.998706102, 0, 1, -0, 0.998706102, 0, 0.050853312).Position - plr.Character.HumanoidRootPart.Position).Magnitude <= 1 then
+              replicated.Remotes.CommF_:InvokeServer("StartQuest", "BartiloQuest",1)
+            end
+          end
+          elseif replicated.Remotes.CommF_:InvokeServer("BartiloQuestProgress","Bartilo") == 1 then
+            _G.Level = false
+            local je = GetConnectionEnemies("Jeremy")
+            if je then
+              repeat task.wait() Attack.Kill(je,_G.Bartilo_Quest) until _G.Bartilo_Quest == false or not je.Parent or je.Humanoid.Health <= 0 or Qbart.Visible == false or not je:FindFirstChild("HumanoidRootPart")                  
+            else
+              _tp(CFrame.new(2158.97412, 449.056244, 705.411682, -0.754199564, -4.17389057e-09, -0.656645238, -4.47752875e-08, 1, 4.50709301e-08, 0.656645238, 6.3393955e-08, -0.754199564))
+            end
+          elseif replicated.Remotes.CommF_:InvokeServer("BartiloQuestProgress","Bartilo") == 2 then
+          repeat wait() _tp(CFrame.new(-1830.83972, 10.5578213, 1680.60229, 0.979988456, -2.02152783e-08, -0.199054286, 2.20792113e-08, 1, 7.1442483e-09, 0.199054286, -1.13962431e-08, 0.979988456))until (CFrame.new(-1830.83972, 10.5578213, 1680.60229, 0.979988456, -2.02152783e-08, -0.199054286, 2.20792113e-08, 1, 7.1442483e-09, 0.199054286, -1.13962431e-08, 0.979988456).Position - plr.Character.HumanoidRootPart.Position).Magnitude <= 1 or _G.Bartilo_Quest == false
+          wait(0.5)
+          plr.Character.HumanoidRootPart.CFrame = workspace.Map.Dressrosa.BartiloPlates.Plate1.CFrame
+          wait(0.5)
+          plr.Character.HumanoidRootPart.CFrame = workspace.Map.Dressrosa.BartiloPlates.Plate2.CFrame
+          wait(0.5)
+          plr.Character.HumanoidRootPart.CFrame = workspace.Map.Dressrosa.BartiloPlates.Plate3.CFrame
+          wait(0.5)
+          plr.Character.HumanoidRootPart.CFrame = workspace.Map.Dressrosa.BartiloPlates.Plate4.CFrame
+          wait(0.5)
+          plr.Character.HumanoidRootPart.CFrame = workspace.Map.Dressrosa.BartiloPlates.Plate5.CFrame
+          wait(0.5)
+          plr.Character.HumanoidRootPart.CFrame = workspace.Map.Dressrosa.BartiloPlates.Plate6.CFrame
+          wait(0.5)
+          plr.Character.HumanoidRootPart.CFrame = workspace.Map.Dressrosa.BartiloPlates.Plate7.CFrame
+          wait(0.5)
+          plr.Character.HumanoidRootPart.CFrame = workspace.Map.Dressrosa.BartiloPlates.Plate8.CFrame
+          wait(2.5)
+        end
+      end
+    end)
+  end
+end)
+local CitizenQ = Tabs.Main:AddToggle("CitizenQ", {Title = "Auto Done Citizen Quest", Description = "", Default = false})
+CitizenQ:OnChanged(function(Value)
+  _G.CitizenQuest = Value
+end)
+spawn(function()	
+  while wait(Sec) do
+    pcall(function()
+      if _G.CitizenQuest then
+        if Lv >= 1800 and replicated.Remotes.CommF_:InvokeServer("CitizenQuestProgress").KilledBandits == false then
+          if string.find(plr.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "Forest Pirate") and string.find(plr.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "50") and plr.PlayerGui.Main.Quest.Visible == true then
+            local v = GetConnectionEnemies("Forest Pirate")
+            if v then
+              repeat task.wait() Attack.Kill(v,_G.CitizenQuest)until _G.CitizenQuest == false or not v.Parent or v.Humanoid.Health <= 0 or plr.PlayerGui.Main.Quest.Visible == false
+            else
+              _tp(CFrame.new(-13206.452148438, 425.89199829102, -7964.5537109375))
+            end
+          else
+            _tp(CFrame.new(-12443.8671875, 332.40396118164, -7675.4892578125))
+            if (Vector3.new(-12443.8671875, 332.40396118164, -7675.4892578125) - plr.Character.HumanoidRootPart.Position).Magnitude <= 30 then
+              wait(1.5) replicated.Remotes.CommF_:InvokeServer("StartQuest","CitizenQuest",1)
+            end
+          end
+        elseif Lv >= 1800 and replicated.Remotes.CommF_:InvokeServer("CitizenQuestProgress").KilledBoss == false then
+          local v = GetConnectionEnemies("Captain Elephant")
+          if plr.PlayerGui.Main.Quest.Visible and string.find(plr.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "Captain Elephant") and plr.PlayerGui.Main.Quest.Visible == true then
+            if v then
+              repeat task.wait() Attack.Kill(v,_G.CitizenQuest) until _G.CitizenQuest == false or v.Humanoid.Health <= 0 or not v.Parent or plr.PlayerGui.Main.Quest.Visible == false
+            else
+              _tp(CFrame.new(-13374.889648438, 421.27752685547, -8225.208984375))
+            end
+          else
+            _tp(CFrame.new(-12443.8671875, 332.40396118164, -7675.4892578125))
+            if (CFrame.new(-12443.8671875, 332.40396118164, -7675.4892578125).Position - plr.Character.HumanoidRootPart.Position).Magnitude <= 4 then
+              wait(1.5)
+              replicated.Remotes.CommF_:InvokeServer("CitizenQuestProgress","Citizen")
+            end
+          end
+        elseif Lv >= 1800 and replicated.Remotes.CommF_:InvokeServer("CitizenQuestProgress","Citizen") == 2 then
+          _tp(CFrame.new(-12512.138671875, 340.39279174805, -9872.8203125))
+        end
+      end
+    end)
+  end
+end)
+local Q = Tabs.Main:AddToggle("Q", {Title = "Auto Training Dummy", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.DummyMan = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.DummyMan then
+      pcall(function()
+        if plr.PlayerGui.Main.Quest.Visible == false then	
+          local xxx = {[1] = "ArenaTrainer"}
+	      replicated:WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer(unpack(xxx))
+        else
+          local v = GetConnectionEnemies("Training Dummy")
+          if v then
+		    repeat wait() Attack.Kill(v,_G.DummyMan) until not _G.DummyMan or not v.Parent or v.Humanoid.Health <= 0
+	      else
+	        _tp(CFrame.new(3688.005126953125, 12.746943473815918, 170.20953369140625))
+	      end
+	    end
+      end)
+    end
+  end
+end)
+local Berry = Tabs.Main:AddToggle("Berry", {Title = "Auto Collect Berry", Description = "", Default = false})
+Berry:OnChanged(function(Value)
+  _G.AutoBerry = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.AutoBerry then
+      local CollectionService= game:GetService("CollectionService")
+      local Players= game:GetService("Players")
+      local Player = Players.LocalPlayer
+      local BerryBush = CollectionService:GetTagged("BerryBush")      
+      local Distance, Nearest = math.huge      
+      for i = 1, #BerryBush do
+        local Bush = BerryBush[i]        
+        for AttributeName, BerryName in pairs(Bush:GetAttributes()) do
+          if not BerryArray or table.find(BerryArray, BerryName) then           
+            _tp(Bush.Parent:GetPivot())
+            for i = 1, #BerryBush do
+            local Bush = BerryBush[i]        
+              for AttributeName, BerryName in pairs(Bush:GetChildren()) do
+                if not BerryArray or table.find(BerryArray, BerryName) then
+                  _tp(BerryName.WorldPivot)
+                  fireproximityprompt(BerryName.ProximityPrompt,math.huge)
+                end
+              end
+            end      
+          end
+        end
+      end      
+    end
+  end
+end)
+local Chest = Tabs.Main:AddToggle("Chest", {Title = "Auto Collect Chest", Description = "", Default = false})
+Chest:OnChanged(function(Value)
+  _G.AutoFarmChest = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.AutoFarmChest then
+      pcall(function()
+        local CollectionService = game:GetService("CollectionService")
+        local Players = game:GetService("Players")
+        local Player = Players.LocalPlayer
+        local Character = Player.Character or Player.CharacterAdded:Wait()                
+        if not Character then return end                
+        local Position = Character:GetPivot().Position
+        local Chests = CollectionService:GetTagged("_ChestTagged")      
+        local Distance, Nearest = math.huge, nil  
+        for i = 1, #Chests do
+          local Chest = Chests[i]
+          local Magnitude = (Chest:GetPivot().Position - Position).Magnitude        
+          if not SelectedIsland or Chest:IsDescendantOf(SelectedIsland) then
+            if not Chest:GetAttribute("IsDisabled") and Magnitude < Distance then
+              Distance = Magnitude
+              Nearest = Chest
+            end
+          end
+        end
+      if Nearest then _tp(Nearest:GetPivot()) end
+      end)
+    end
+  end
+end)
+Tabs.Main:AddSection("Miscellanea / Mastery")
+local posMastery = {"Cake","Bone"}
+local Mastery_Config = Tabs.Main:AddDropdown("Mastery_Config",{Title = "Choose Island",Values = posMastery,Multi = false,Default = 1})
+Mastery_Config:OnChanged(function(Value)
+  SelectIsland = Value
+end)
+local MasteryFruits = Tabs.Main:AddToggle("MasteryFruits", {Title = "Auto Mastery Fruits", Description = "", Default = false})
+MasteryFruits:OnChanged(function(Value)
+  _G.FarmMastery_Dev = Value
+end)
+spawn(function()RunSer.RenderStepped:Connect(function() pcall(function()if _G.FarmMastery_Dev or _G.FarmMastery_G or _G.FarmMastery_S then for a,b in pairs(plr.PlayerGui.Notifications:GetChildren())do if b.Name=="NotificationTemplate"then if string.find(b.Text,"Skill locked!")then b:Destroy()end end end end end)end) end)
+spawn(function()
+  while wait(Sec) do
+    if _G.FarmMastery_Dev then
+      pcall(function()
+        if SelectIsland == "Cake" then         
+          local v = GetConnectionEnemies(mastery1)
+		  if v then		   
+		    HealthM = v.Humanoid.MaxHealth * 70 / 100
+		    repeat wait()
+		      MousePos = v.HumanoidRootPart.Position
+		      Attack.Mas(v,_G.FarmMastery_Dev)
+		    until _G.FarmMastery_Dev == false or v.Humanoid.Health <= 0 or not v.Parent         		         		        
+		  else
+		    _tp(CFrame.new(-1943.676513671875, 251.5095672607422, -12337.880859375)) 
+		  end
+		elseif SelectIsland == "Bone" then
+          local v = GetConnectionEnemies(mastery2)
+		  if v then		
+		    HealthM = v.Humanoid.MaxHealth * 70 / 100
+		    repeat wait()
+		      MousePos = v.HumanoidRootPart.Position
+		      Attack.Mas(v,_G.FarmMastery_Dev)
+		    until _G.FarmMastery_Dev == false or v.Humanoid.Health <= 0 or not v.Parent		        
+		  else
+		    _tp(CFrame.new(-9495.6806640625, 453.58624267578125, 5977.3486328125)) 		    
+		  end
+        end
+      end)
+    end
+  end
+end)
+local MasteryGun = Tabs.Main:AddToggle("MasteryGun", {Title = "Auto Mastery Gun", Description = "", Default = false})
+MasteryGun:OnChanged(function(Value)
+  _G.FarmMastery_G = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.FarmMastery_G then
+      pcall(function()
+        if SelectIsland == "Cake" then
+          local v = GetConnectionEnemies(mastery1)
+		  if v then		      
+		    HealthM = v.Humanoid.MaxHealth * 70 / 100
+		    repeat wait()
+		      MousePos = v.HumanoidRootPart.Position
+		      Attack.Masgun(v,_G.FarmMastery_G)
+		      local Modules = replicated:FindFirstChild("Modules")
+              local Net = Modules:FindFirstChild("Net")
+              local RE_ShootGunEvent = Net:FindFirstChild("RE/ShootGunEvent")    
+              if plr.Character:FindFirstChildOfClass("Tool").ToolTip ~= "Gun" then return end
+              if plr.Character:FindFirstChildOfClass("Tool") and plr.Character:FindFirstChildOfClass("Tool").Name == 'Skull Guitar' then
+                SoulGuitar = true
+		        plr.Character:FindFirstChildOfClass("Tool").RemoteEvent:FireServer("TAP", MousePos)
+		        if _G.FarmMastery_G then
+		          vim1:SendMouseButtonEvent(0, 0, 0, true, game, 1);wait(0.05)
+                  vim1:SendMouseButtonEvent(0, 0, 0, false, game, 1);wait(0.05)
+                end
+		      elseif plr.Character:FindFirstChildOfClass("Tool") and plr.Character:FindFirstChildOfClass("Tool").Name ~= 'Skull Guitar' then
+		        SoulGuitar = false
+		        RE_ShootGunEvent:FireServer(MousePos, { v.HumanoidRootPart })
+		        if _G.FarmMastery_G then
+		          vim1:SendMouseButtonEvent(0, 0, 0, true, game, 1);wait(0.05)
+                  vim1:SendMouseButtonEvent(0, 0, 0, false, game, 1);wait(0.05)
+                end
+		      end		            		
+		    until _G.FarmMastery_G == false or v.Humanoid.Health <= 0 or not v.Parent    
+		    SoulGuitar = false     		         		        
+		  else
+		    _tp(CFrame.new(-1943.676513671875, 251.5095672607422, -12337.880859375)) 		    
+	  	  end
+		elseif SelectIsland == "Bone" then
+          local v = GetConnectionEnemies(mastery2)
+		  if v then		      
+		    HealthM = v.Humanoid.MaxHealth * 70 / 100
+		    repeat wait()
+		      MousePos = v.HumanoidRootPart.Position
+		      Attack.Masgun(v,_G.FarmMastery_G)
+		      local Modules = replicated:FindFirstChild("Modules")
+              local Net = Modules:FindFirstChild("Net")
+              local RE_ShootGunEvent = Net:FindFirstChild("RE/ShootGunEvent")    
+              if plr.Character:FindFirstChildOfClass("Tool").ToolTip ~= "Gun" then return end
+              if plr.Character:FindFirstChildOfClass("Tool") and plr.Character:FindFirstChildOfClass("Tool").Name == 'Skull Guitar' then
+                SoulGuitar = true
+		        plr.Character:FindFirstChildOfClass("Tool").RemoteEvent:FireServer("TAP", MousePos)
+		        if _G.FarmMastery_G then
+		          vim1:SendMouseButtonEvent(0, 0, 0, true, game, 1);wait(0.05)
+                  vim1:SendMouseButtonEvent(0, 0, 0, false, game, 1);wait(0.05)
+                end
+		      elseif plr.Character:FindFirstChildOfClass("Tool") and plr.Character:FindFirstChildOfClass("Tool").Name ~= 'Skull Guitar' then
+		        SoulGuitar = false
+		        RE_ShootGunEvent:FireServer(MousePos, { v.HumanoidRootPart })
+		        if _G.FarmMastery_G then
+		          vim1:SendMouseButtonEvent(0, 0, 0, true, game, 1);wait(0.05)
+                  vim1:SendMouseButtonEvent(0, 0, 0, false, game, 1);wait(0.05)
+                end
+		      end		            		
+		    until _G.FarmMastery_G == false or v.Humanoid.Health <= 0 or not v.Parent    
+		    SoulGuitar = false     		         		        
+		  else
+		    _tp(CFrame.new(-9495.6806640625, 453.58624267578125, 5977.3486328125)) 
+	  	  end
+        end
+      end)
+    end
+  end
+end)
+local MasterySword = Tabs.Main:AddToggle("MasterySword", {Title = "Auto Mastery All Sword", Description = "", Default = false})
+MasterySword:OnChanged(function(Value)
+  _G.FarmMastery_S = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.FarmMastery_S then
+        if SelectIsland == "Cake" then
+          for _, v in next, replicated.Remotes.CommF_:InvokeServer("getInventory") do          
+            if type(v) == "table" then
+              if v.Type == "Sword" then
+                SwordName = v.Name
+                if tonumber(v.Mastery) >= 1 or tonumber(v.Mastery) <= 599 then
+                  local v = GetConnectionEnemies(mastery1)
+                  if GetBP(SwordName) then                    
+		            if v then
+                      repeat wait() Attack.Sword(v,_G.FarmMastery_S) until _G.FarmMastery_S == false or not v.Parent or v.Humanoid.Healh <= 0		                  
+		            else
+		              _tp(CFrame.new(-1943.676513671875, 251.5095672607422, -12337.880859375)) 
+		            end                    
+                  else
+                    replicated.Remotes.CommF_:InvokeServer("LoadItem",SwordName)   
+                  end   
+              elseif tonumber(v.Mastery) >= 600 then
+                if GetBP(SwordName) then return nil else replicated.Remotes.CommF_:InvokeServer("LoadItem",SwordName) end       
+              end
+                break
+              end
+            end         
+          end
+        elseif SelectIsland == "Bone" then
+          for _, v in next, replicated.Remotes.CommF_:InvokeServer("getInventory") do          
+            if type(v) == "table" then
+              if v.Type == "Sword" then
+                SwordName = v.Name
+                if tonumber(v.Mastery) >= 1 or tonumber(v.Mastery) <= 599 then
+                  local v = GetConnectionEnemies(mastery2)
+                  if GetBP(SwordName) then                    
+		            if v then
+                      repeat wait() Attack.Sword(v,_G.FarmMastery_S) until _G.FarmMastery_S == false or not v.Parent or v.Humanoid.Healh <= 0		                  
+		            else
+		              _tp(CFrame.new(-9495.6806640625, 453.58624267578125, 5977.3486328125)) 
+		            end                    
+                  else
+                    replicated.Remotes.CommF_:InvokeServer("LoadItem",SwordName)   
+                  end   
+                elseif tonumber(v.Mastery) >= 600 then
+                  if GetBP(SwordName) then return nil else replicated.Remotes.CommF_:InvokeServer("LoadItem",SwordName) end       
+                end
+                break
+              end
+            end         
+          end
+        end
+      end
+    end)
+  end
+end)
+
+Tabs.Main:AddSection("Generals Quests / Items")
+local MobKilled = Tabs.Main:AddParagraph({
+    Title = "Cake Princes :",
+    Content = ""
+})
+spawn(function()
+  while wait(.2) do
+    pcall(function()
+  	  local Killed = string.match(replicated.Remotes.CommF_:InvokeServer("CakePrinceSpawner"),"%d+")
+      if Killed then
+        MobKilled:SetDesc(" Killed : " ..(500 - Killed))
+      end
+    end)
+  end
+end)
+local CheckingBone = Tabs.Main:AddParagraph({
+    Title = " Bones :",
+    Content = ""
+})
+spawn(function()
+  while wait(.2) do
+    pcall(function()
+      CheckingBone:SetDesc(" Bones : " ..GetM("Bones"))          
+    end)
+  end
+end)
+local Q = Tabs.Main:AddToggle("Q", {Title = "Auto Cake Prince", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.Auto_Cake_Prince = Value
+end)
+spawn(function()
+  while wait() do
+    if _G.Auto_Cake_Prince then
+      pcall(function()
+        local player = game.Players.LocalPlayer
+        local root = player.Character and player.Character:FindFirstChild("HumanoidRootPart")
+        local questUI = player.PlayerGui.Main.Quest
+        local enemies = workspace.Enemies
+        local bigMirror = workspace.Map.CakeLoaf.BigMirror
+        if not root then return end
+        if not bigMirror:FindFirstChild("Other") then
+          _tp(CFrame.new(-2077, 252, -12373))
+        end        
+        if bigMirror.Other.Transparency == 0 or enemies:FindFirstChild("Cake Prince") then
+          local v = GetConnectionEnemies("Cake Prince")
+          if v then
+            repeat wait() Attack.Kill2(v, _G.Auto_Cake_Prince)until not _G.Auto_Cake_Prince or not v.Parent or v.Humanoid.Health <= 0
+          else
+            if bigMirror.Other.Transparency == 0 and (CFrame.new(-1990.67, 4533, -14973.67).Position - root.Position).Magnitude >= 2000 then
+              _tp(CFrame.new(-2151.82, 149.32, -12404.91))
+            end
+          end
+        else
+          local CakePrince = {"Cookie Crafter","Cake Guard","Baking Staff","Head Baker"}
+          local v = GetConnectionEnemies(CakePrince)
+          if v then
+            if _G.AcceptQuestC and not questUI.Visible then
+              local questPos = CFrame.new(-1927.92, 37.8, -12842.54)
+              _tp(questPos)
+              while (questPos.Position - root.Position).Magnitude > 50 do
+                wait(0.2)
+              end
+              local randomQuest = math.random(1, 4)
+              local questData = {
+                [1] = {"StartQuest", "CakeQuest2", 2},
+                [2] = {"StartQuest", "CakeQuest2", 1},
+                [3] = {"StartQuest", "CakeQuest1", 1},
+                [4] = {"StartQuest", "CakeQuest1", 2}
+              }                    
+              local success, response = pcall(function()
+                return game.ReplicatedStorage.Remotes.CommF_:InvokeServer(unpack(questData[randomQuest]))
+              end)
+            end
+            repeat wait() Attack.Kill(v, _G.Auto_Cake_Prince) until not _G.Auto_Cake_Prince or v.Humanoid.Health <= 0 or bigMirror.Other.Transparency == 0 or (_G.AcceptQuestC and not questUI.Visible)                
+          else
+            _tp(CFrame.new(-2077, 252, -12373))
+          end
+        end
+      end)
+    end
+  end
+end)
+local Q = Tabs.Main:AddToggle("Q", {Title = "Auto Bones", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.AutoFarm_Bone = Value
+end)
+spawn(function()
+  while wait(Sec) do 
+    if _G.AutoFarm_Bone then
+      pcall(function()        
+        local player = game.Players.LocalPlayer
+        local root = player.Character and player.Character:FindFirstChild("HumanoidRootPart")
+        local questUI = player.PlayerGui.Main.Quest
+        local BonesTable = {"Reborn Skeleton","Living Zombie","Demonic Soul","Posessed Mummy"}
+        if not root then return end
+        local bone = GetConnectionEnemies(BonesTable)
+          if bone then
+	        if _G.AcceptQuestC and not questUI.Visible then
+              local questPos = CFrame.new(-9516.99316,172.017181,6078.46533,0,0,-1,0,1,0,1,0,0)
+              _tp(questPos)
+              while (questPos.Position - root.Position).Magnitude > 50 do
+                wait(0.2)
+              end
+              local randomQuest = math.random(1, 4)
+              local questData = {
+                [1] = {"StartQuest", "HauntedQuest2", 2},
+                [2] = {"StartQuest", "HauntedQuest2", 1},
+                [3] = {"StartQuest", "HauntedQuest1", 1},
+                [4] = {"StartQuest", "HauntedQuest1", 2}
+              }                    
+              local success, response = pcall(function()
+                return game.ReplicatedStorage.Remotes.CommF_:InvokeServer(unpack(questData[randomQuest]))
+              end)
+            end
+		    repeat task.wait() Attack.Kill(bone, _G.AutoFarm_Bone) until not _G.AutoFarm_Bone or bone.Humanoid.Health <= 0 or not bone.Parent or (_G.AcceptQuestC and not questUI.Visible)
+          else
+            _tp(CFrame.new(-9495.6806640625, 453.58624267578125, 5977.3486328125)) 	      
+        end
+      end)
+    end
+  end
+end)
+local Q = Tabs.Main:AddToggle("Q", {Title = "Accept Quests", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.AcceptQuestC = Value
+end)          
+local Q = Tabs.Main:AddToggle("Q", {Title = "Auto Farm Mirror", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.AutoMiror = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.AutoMiror then
+      pcall(function()
+        local v = GetConnectionEnemies("Dough King")
+        if v then
+          repeat wait() Attack.Kill(v,_G.AutoMiror) until not _G.AutoMiror or not v.Parent or v.Humanoid.Health <= 0
+        else
+          _tp(CFrame.new(-1943.676513671875, 251.5095672607422, -12337.880859375)) 
+        end
+      end)
+    end
+  end
+end)
+local Q = Tabs.Main:AddToggle("Q", {Title = "Auto Soul Reaper [Fully]", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.AutoHytHallow = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.AutoHytHallow then
+      pcall(function()
+        local v = GetConnectionEnemies("Soul Reaper")
+	    if v then
+          repeat task.wait() Attack.Kill(v,_G.AutoHytHallow) until v.Humanoid.Health <= 0 or _G.AutoHytHallow == false
+        else
+          if not GetBP("Hallow Essence") then
+            repeat task.wait(.1)replicated.Remotes.CommF_:InvokeServer("Bones","Buy",1,1)until _G.AutoHytHallow == false or GetBP("Hallow Essence")
+          else
+            repeat wait(.1) _tp(CFrame.new(-8932.322265625, 146.83154296875, 6062.55078125))until _G.AutoHytHallow == false or (plr.Character.HumanoidRootPart.CFrame == CFrame.new(-8932.322265625, 146.83154296875, 6062.55078125))
+		    EquipWeapon("Hallow Essence")
+          end
+        end
+      end)
+    end
+  end
+end)
+local Q = Tabs.Main:AddToggle("Q", {Title = "Auto Random Bones", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.Auto_Random_Bone = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.Auto_Random_Bone then    
+  	    repeat task.wait() replicated.Remotes.CommF_:InvokeServer("Bones","Buy",1,1) until not _G.Auto_Random_Bone
+      end
+    end)
+  end
+end)
+local Q = Tabs.Main:AddToggle("Q", {Title = "Auto Try Luck Gravestone", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.TryLucky = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.TryLucky then
+    local try_bones_luck = CFrame.new(-8761.3154296875, 164.85829162598, 6161.1567382813)
+      if (plr.Character.HumanoidRootPart.CFrame ~= try_bones_luck) then
+        _tp(CFrame.new(-8761.3154296875, 164.85829162598, 6161.1567382813))
+	 elseif (plr.Character.HumanoidRootPart.CFrame == try_bones_luck) then
+	   replicated.Remotes.CommF_:InvokeServer("gravestoneEvent",1)
+      end
+    end
+  end
+end)
+local Q = Tabs.Main:AddToggle("Q", {Title = "Auto Pray Gravestone", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.Praying = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.Praying then
+    local try_bones_luck = CFrame.new(-8761.3154296875, 164.85829162598, 6161.1567382813)
+      if (plr.Character.HumanoidRootPart.CFrame ~= try_bones_luck) then
+	   _tp(CFrame.new(-8761.3154296875, 164.85829162598, 6161.1567382813))
+      elseif (plr.Character.HumanoidRootPart.CFrame == try_bones_luck) then
+	   replicated.Remotes.CommF_:InvokeServer("gravestoneEvent",2)
+      end
+    end
+  end
+end)
+
+Tabs.Main:AddSection("Unlocked Dungeon")
+local Q = Tabs.Main:AddToggle("Q", {Title = "Auto Unlock Dough dungeon", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.Doughv2 = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.Doughv2 then
+      pcall(function()
+	    if not workspace.Map.CakeLoaf:FindFirstChild("RedDoor") then
+	      if GetBP("Red Key") then
+	        replicated.Remotes.CommF_:InvokeServer("CakeScientist","Check")
+	        replicated.Remotes.CommF_:InvokeServer("RaidsNpc","Check")
+		  end
+	    elseif workspace.Map.CakeLoaf:FindFirstChild("RedDoor") then
+          if GetBP("Red Key") then
+		    repeat wait() _tp(CFrame.new(-2681.97998, 64.3921585, -12853.7363, 0.149007782, -1.87902192e-08, 0.98883605, 3.60619588e-08, 1, 1.35681812e-08, -0.98883605, 3.36376011e-08, 0.149007782)) until not _G.Doughv2 or (plr.Character.HumanoidRootPart.CFrame - CFrame.new(-2681.97998, 64.3921585, -12853.7363, 0.149007782, -1.87902192e-08, 0.98883605, 3.60619588e-08, 1, 1.35681812e-08, -0.98883605, 3.36376011e-08, 0.149007782)).Magnitude <= 5
+		    EquipWeapon("Red Key")
+		  end
+		  elseif GetConnectionEnemies("Dough King") then
+		    local v = GetConnectionEnemies("Dough King")
+            if v then
+              repeat wait() Attack.Kill(v,_G.Doughv2) until not _G.Doughv2 or not v.Parent or v.Humanoid.Health <= 0
+            else
+              _tp(CFrame.new(-1943.676513671875, 251.5095672607422, -12337.880859375)) 
+            end
+	      end
+		  if GetBP("Sweet Chalice") then
+		    replicated.Remotes.CommF_:InvokeServer("CakePrinceSpawner", true)
+		    _G.AutoMiror = true
+	      else
+	        _G.AutoMiror = false
+          end
+	      if GetBP("God's Chalice") and GetM("Conjured Cocoa") >= 10 then
+		    replicated.Remotes.CommF_:InvokeServer("SweetChaliceNpc")
+		  end
+	      if not plr.Backpack:FindFirstChild("God's Chalice") or plr.Character:FindFirstChild("God's Chalice") then
+	        _G.FarmEliteHunt = true
+		  else
+		    _G.FarmEliteHunt = false
+		  end
+	      if GetM("Conjured Cocoa") <= 10 then	        
+		  local cocoa3 = {"Cocoa Warrior","Chocolate Bar Battler"}
+		  local v = GetConnectionEnemies(cocoa3)
+            if v then
+            repeat wait() Attack.Kill(v,_G.Doughv2) until _G.Doughv2 == false or not v.Parent or v.Humanoid.Health <= 0
+          else
+            _tp(CFrame.new(402.7189025878906, 81.06050109863281, -12259.54296875))
+          end	      
+        end
+      end)
+    end
+  end
+end)
+local Q = Tabs.Main:AddToggle("Q", {Title = "Auto Unlock Phoenix dungeon", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.AutoPhoenixF = Value
+end)
+spawn(function()
+  while wait(.1) do
+    if _G.AutoPhoenixF then
+      pcall(function()
+        if GetBP("Bird-Bird: Phoenix") then
+          if plr.Backpack:FindFirstChild(plr.Data.DevilFruit.Value) then
+            if plr.Backpack:FindFirstChild(plr.Data.DevilFruit.Value).Level.Value >= 400 then
+               _tp(CFrame.new(-2812.76708984375, 254.803466796875, -12595.560546875))
+               if (CFrame.new(-2812.76708984375, 254.803466796875, -12595.560546875).Position - plr.Character.HumanoidRootPart.Position).Magnitude <= 10 then
+                 replicated.Remotes.CommF_:InvokeServer("SickScientist","Check")
+                 replicated.Remotes.CommF_:InvokeServer("SickScientist","Heal")
+               end
+             end
+             elseif plr.Character:FindFirstChild(plr.Data.DevilFruit.Value) then
+             if plr.Character:FindFirstChild(plr.Data.DevilFruit.Value).Level.Value >= 400 then
+               _tp(CFrame.new(-2812.76708984375, 254.803466796875, -12595.560546875))
+              if (CFrame.new(-2812.76708984375, 254.803466796875, -12595.560546875).Position - plr.Character.HumanoidRootPart.Position).Magnitude <= 10 then
+                replicated.Remotes.CommF_:InvokeServer("SickScientist","Check")
+                replicated.Remotes.CommF_:InvokeServer("SickScientist","Heal")
+              end
+            end
+          end
+        end
+      end)
+    end 
+  end
+end)
+
+Tabs.Main:AddSection("Buso/Aura Colours")
+local Q = Tabs.Main:AddToggle("Q", {Title = "Auto Teleport Barista Cousin", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.Tp_MasterA = Value
+end)
+spawn(function()
+  while wait() do
+    if _G.Tp_MasterA then
+	  pcall(function()
+	    for _,v in pairs(replicated.NPCs:GetChildren()) do
+	    if v.Name == "Barista Cousin" then _tp(v.HumanoidRootPart.CFrame) end
+        end   	   
+	 end)
+    end
+  end
+end)
+Tabs.Main:AddButton({Title = "Buy Buso Colors", Description = "",
+Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("ColorsDealer","2")
+end})
+local Q = Tabs.Main:AddToggle("Q", {Title = "Auto Rainbow Colors", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.Auto_Rainbow_Haki = Value
+end)
+spawn(function()
+  pcall(function()
+    while wait(Sec) do
+      if _G.Auto_Rainbow_Haki then
+        if plr.PlayerGui.Main.Quest.Visible == false then
+          if _G.GetQFast then
+            if plr.PlayerGui.Main.Quest.Visible == false then replicated.Remotes.CommF_:InvokeServer("HornedMan","Bet") end     
+          else
+            Rainbow1 = CFrame.new(-11892.0703125, 930.57672119141, -8760.1591796875)
+            if (plr.Character.HumanoidRootPart.CFrame ~= Rainbow1) then
+              _tp(Rainbow1)
+            elseif (plr.Character.HumanoidRootPart.CFrame == Rainbow1) then
+              wait(1)
+              replicated.Remotes.CommF_:InvokeServer("HornedMan","Bet")
+            end
+          end
+          elseif plr.PlayerGui.Main.Quest.Visible == true and string.find(plr.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "Stone") then
+            local v = GetConnectionEnemies("Stone")
+            if v then
+              repeat wait() Attack.Kill(v,_G.Auto_Rainbow_Haki) until _G.Auto_Rainbow_Haki == false or v.Humanoid.Health <= 0 or not v.Parent or plr.PlayerGui.Main.Quest.Visible == false
+            else
+              _tp(CFrame.new(-1086.11621, 38.8425903, 6768.71436, 0.0231462717, -0.592676699, 0.805107772, 2.03251839e-05, 0.805323839, 0.592835128, -0.999732077, -0.0137055516, 0.0186523199))
+            end
+          elseif plr.PlayerGui.Main.Quest.Visible == true and string.find(plr.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "Hydra Leader") then
+            local v = GetConnectionEnemies("Hydra Leader")
+            if v then
+              repeat task.wait()Attack.Kill(v,_G.Auto_Rainbow_Haki) until _G.Auto_Rainbow_Haki == false or v.Humanoid.Health <= 0 or not v.Parent or plr.PlayerGui.Main.Quest.Visible == false
+            else
+              replicated.Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(5643.45263671875, 1013.0858154296875, -340.51025390625))
+              local framelong1 = Vector3.new(5643.45263671875, 1013.0858154296875, -340.51025390625)
+              local framelong2 = CFrame.new(5821.89794921875, 1019.0950927734375, -73.71923065185547)
+              if (plr.Character.HumanoidRootPart.CFrame.Position == framelong1) then _tp(framelong2)end
+            end
+          elseif plr.PlayerGui.Main.Quest.Visible == true and string.find(plr.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "Kilo Admiral") then
+            local v = GetConnectionEnemies("Kilo Admiral")
+            if v then
+              repeat task.wait()Attack.Kill(v,_G.Auto_Rainbow_Haki) until _G.Auto_Rainbow_Haki == false or v.Humanoid.Health <= 0 or not v.Parent or plr.PlayerGui.Main.Quest.Visible == false
+            else
+              _tp(CFrame.new(2877.61743, 423.558685, -7207.31006, -0.989591599, -0, -0.143904909, -0, 1.00000012, -0, 0.143904924, 0, -0.989591479))
+            end
+            elseif plr.PlayerGui.Main.Quest.Visible == true and string.find(plr.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "Captain Elephant") then
+              local v = GetConnectionEnemies("Captain Elephant")
+              if v then
+                repeat task.wait() Attack.Kill(v,_G.Auto_Rainbow_Haki)until _G.Auto_Rainbow_Haki == false or v.Humanoid.Health <= 0 or not v.Parent or plr.PlayerGui.Main.Quest.Visible == false
+              else
+              local gamergayror1 = Vector3.new(-12471.169921875, 374.94024658203, -7551.677734375)
+              local gamergayror2 = CFrame.new(-13376.7578125, 433.28689575195, -8071.392578125)
+              if (plr.Character.HumanoidRootPart.CFrame.Position ~= gamergayror1) then
+                replicated.Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-12471.169921875, 374.94024658203, -7551.677734375))
+              elseif (plr.Character.HumanoidRootPart.CFrame.Position == gamergayror1) then
+                _tp(gamergayror2)
+              end
+            end
+        elseif plr.PlayerGui.Main.Quest.Visible == true and string.find(plr.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "Beautiful Pirate") then
+          local v = GetConnectionEnemies("Captain Elephant")
+          if v then
+            repeat task.wait() Attack.Kill(v,_G.Auto_Rainbow_Haki) until _G.Auto_Rainbow_Haki == false or v.Humanoid.Health <= 0 or not v.Parent or plr.PlayerGui.Main.Quest.Visible == false
+          else
+            replicated.Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(5314.54638671875, 22.562219619750977, -127.06755065917969))
+          end
+        end                  
+      end
+    end    
+  end)
+end)
+local Q = Tabs.Main:AddToggle("Q", {Title = "Accept Rainbow Quest Faster", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.GetQFast = Value
+end)
+
+Tabs.Main:AddSection("Instinct / Observation")
+local Q = Tabs.Main:AddToggle("Q", {Title = "Auto Farm Observation", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.obsFarm = Value
+end)
+spawn(function()
+  while wait(.2) do
+    pcall(function()
+      if _G.obsFarm then        
+        replicated.Remotes.CommE:FireServer("Ken",true)
+        if plr:GetAttribute("KenDodgesLeft") == 0 then
+          KenTest = false
+        elseif plr:GetAttribute("KenDodgesLeft") > 0 then
+          replicated.Remotes.CommE:FireServer("Ken",true)
+          KenTest = true
+        end        
+      end
+    end)
+  end
+end)    
+spawn(function()      
+  while wait(.2) do
+    pcall(function()
+      if _G.obsFarm then
+        if World1 then
+          if workspace.Enemies:FindFirstChild("Galley Captain") then
+            if KenTest then
+              repeat wait()
+                plr.Character.HumanoidRootPart.CFrame = workspace.Enemies:FindFirstChild("Galley Captain").HumanoidRootPart.CFrame * CFrame.new(3,0,0)
+              until _G.obsFarm == false or KenTest == false
+            else
+              repeat wait()
+                plr.Character.HumanoidRootPart.CFrame = workspace.Enemies:FindFirstChild("Galley Captain").HumanoidRootPart.CFrame * CFrame.new(0,50,0)
+              until _G.obsFarm == false or KenTest
+            end
+          else
+            _tp(CFrame.new(5533.29785, 88.1079102, 4852.3916))
+          end
+        elseif World2 then
+          if workspace.Enemies:FindFirstChild("Lava Pirate") then
+            if KenTest then
+              repeat wait()
+                plr.Character.HumanoidRootPart.CFrame = workspace.Enemies:FindFirstChild("Lava Pirate").HumanoidRootPart.CFrame * CFrame.new(3,0,0)
+              until _G.obsFarm == false or KenTest == false
+            else
+              repeat wait()
+                plr.Character.HumanoidRootPart.CFrame = workspace.Enemies:FindFirstChild("Lava Pirate").HumanoidRootPart.CFrame * CFrame.new(0,50,0)
+              until _G.obsFarm == false or KenTest
+            end
+          else
+            _tp(CFrame.new(-5478.39209, 15.9775667, -5246.9126))
+          end
+        elseif World3 then
+          if workspace.Enemies:FindFirstChild("Venomous Assailant") then
+            if KenTest then
+              repeat wait()
+                _tp(workspace.Enemies:FindFirstChild("Venomous Assailant").HumanoidRootPart.CFrame * CFrame.new(3,0,0))
+              until _G.obsFarm == false or KenTest == false
+            else
+              repeat wait()
+                _tp(workspace.Enemies:FindFirstChild("Venomous Assailant").HumanoidRootPart.CFrame * CFrame.new(0,50,0))
+              until _G.obsFarm == false or KenTest
+            end
+          else
+            _tp(CFrame.new(4530.3540039063, 656.75695800781, -131.60952758789))
+          end
+        end        
+      end
+    end)
+  end
+end)
+local Q = Tabs.Main:AddToggle("Q", {Title = "Auto Observation V2", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.AutoKenVTWO = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.AutoKenVTWO then
+      pcall(function()
+      local Kv2Pos1 = CFrame.new(-12444.78515625, 332.40396118164, -7673.1806640625)
+      local Kv2Pos2 = "Kuy"
+      local Kv2Pos3 = CFrame.new(-10920.125, 624.20275878906, -10266.995117188)
+      local Kv2Pos4 = CFrame.new(-13277.568359375, 370.34185791016, -7821.1572265625)
+      local Kv2Pos5 = CFrame.new(-13493.12890625, 318.89553833008, -8373.7919921875)
+	  if plr.PlayerGui.Main.Quest.Visible == true and string.find(plr.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text,"Defeat 50 Forest Pirates") then
+	    local v = GetConnectionEnemies("Forest Pirate")
+        if v then
+	      repeat wait() Attack.Kill(v,_G.AutoKenVTWO) until not _G.AutoKenVTWO or v.Humanoid.Health <= 0 or plr.PlayerGui.Main.Quest.Visible == false
+	    else
+	      _tp(Kv2Pos4)
+	    end
+	  elseif plr.PlayerGui.Main.Quest.Visible == true then 
+	    local v = GetConnectionEnemies("Captain Elephant")
+	    if v then
+          repeat wait() Attack.Kill(v,_G.AutoKenVTWO) until not _G.AutoKenVTWO or v.Humanoid.Health <= 0 or plr.PlayerGui.Main.Quest.Visible == false
+	    else
+	      _tp(Kv2Pos5)
+	    end
+	  elseif plr.PlayerGui.Main.Quest.Visible == false then
+	    replicated.Remotes.CommF_:InvokeServer("CitizenQuestProgress","Citizen") wait(.1)
+	    replicated.Remotes.CommF_:InvokeServer("StartQuest","CitizenQuest",1)
+	  end
+	  if replicated.Remotes.CommF_:InvokeServer("CitizenQuestProgress","Citizen") == 2 then
+	    _tp(CFrame.new(-12513.51953125, 340.1137390136719, -9873.048828125))
+	  end
+	  if not plr.Backpack:FindFirstChild("Fruit Bowl") or not plr.Character:FindFirstChild("Fruit Bowl") then
+	  if not GetBP("Fruit Bowl") then   	    
+	    if not GetBP("Apple") then
+	      replicated.Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-12471.169921875, 374.94024658203, -7551.677734375))
+	      for i,v in pairs(workspace:GetDescendants()) do
+	        if v.Name == "Apple" then
+	          v.Handle.CFrame = plr.Character.HumanoidRootPart.CFrame * CFrame.new(0,1,10) wait()
+		      firetouchinterest(plr.Character.HumanoidRootPart,v.Handle,0) wait()		    
+	        end
+	      end
+	    elseif not GetBP("Banana") then
+	      _tp(CFrame.new(2286.0078125,73.13391876220703,-7159.80908203125))
+	      for i,v in pairs(workspace:GetDescendants()) do
+	        if v.Name == "Banana" then
+	          v.Handle.CFrame = plr.Character.HumanoidRootPart.CFrame * CFrame.new(0,1,10) wait()
+		      firetouchinterest(plr.Character.HumanoidRootPart,v.Handle,0) wait()		    
+	        end
+	      end	    
+	    elseif not GetBP("Pineapple") then
+	      _tp(CFrame.new(-712.8272705078125,98.5770492553711,5711.9541015625))
+	      for i,v in pairs(workspace:GetDescendants()) do
+	        if v.Name == "Pineapple" then
+	          v.Handle.CFrame = plr.Character.HumanoidRootPart.CFrame * CFrame.new(0,1,10) wait()
+		      firetouchinterest(plr.Character.HumanoidRootPart,v.Handle,0) wait()		    
+	        end
+	      end	    
+	    end	  
+	  end  	    	    
+	    if plr.Backpack:FindFirstChild("Banana") and plr.Backpack:FindFirstChild("Apple") and plr.Backpack:FindFirstChild("Pineapple") or plr:FindFirstChild("Banana") and plr:FindFirstChild("Apple") and plr:FindFirstChild("Pineapple") then
+	      repeat wait() _tp(Kv2Pos1) until _G.AutoKenVTWO or plr.Character.HumanoidRootPart.CFrame == Kv2Pos1
+		  replicated.Remotes.CommF_:InvokeServer("CitizenQuestProgress","Citizen")	    			 
+	    end
+	      if plr.Backpack:FindFirstChild("Fruit Bowl") or plr.Character:FindFirstChild("Fruit Bowl") then
+	        if plr.Character.HumanoidRootPart.CFrame ~= Kv2Pos3 then _tp(Kv2Pos3)
+		    elseif plr.Character.HumanoidRootPart.CFrame == Kv2Pos3 then
+		      replicated.Remotes.CommF_:InvokeServer("KenTalk2","Start") wait(.1)
+		      replicated.Remotes.CommF_:InvokeServer("KenTalk2","Buy")
+	        end			 		    
+	      end
+	    end
+      end)
+    end
+  end
+end)
+Tabs.Main:AddSection("Upgrade Races V3")
+local Q = Tabs.Main:AddToggle("Q", {Title = "Auto Upgrade Mink V3", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.Auto_Mink = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.Auto_Mink then
+        if replicated.Remotes.CommF_:InvokeServer("Alchemist","1") ~= 2 then
+          if replicated.Remotes.CommF_:InvokeServer("Alchemist","1") == 0 then
+            replicated.Remotes.CommF_:InvokeServer("Alchemist","2")
+          elseif replicated.Remotes.CommF_:InvokeServer("Alchemist","1") == 1 then
+            if not plr.Backpack:FindFirstChild("Flower 1") and not plr.Character:FindFirstChild("Flower 1") then
+              _tp(workspace.Flower1.CFrame)
+            elseif not plr.Backpack:FindFirstChild("Flower 2") and not plr.Character:FindFirstChild("Flower 2") then
+              _tp(workspace.Flower2.CFrame)
+            elseif not plr.Backpack:FindFirstChild("Flower 3") and not plr.Character:FindFirstChild("Flower 3") then
+              local v = GetConnectionEnemies("Swan Pirate")
+              if v then repeat wait() Attack.Kill(v,_G.Auto_Mink) until GetBP("Flower 3") or not v.Parent or v.Humanoid.Health <= 0 or _G.Auto_Mink == false
+              else _tp(CFrame.new(980.0985107421875, 121.331298828125, 1287.2093505859375))end            
+            end        
+          elseif replicated.Remotes.CommF_:InvokeServer("Alchemist","1") == 2 then
+	        replicated.Remotes.CommF_:InvokeServer("Alchemist","3")
+	      end
+        elseif replicated.Remotes.CommF_:InvokeServer("Wenlocktoad","1") == 0 then
+          replicated.Remotes.CommF_:InvokeServer("Wenlocktoad","2")
+        elseif replicated.Remotes.CommF_:InvokeServer("Wenlocktoad","1") == 1 then
+		  _G.AutoFarmChest = true
+	    else
+	      _G.AutoFarmChest = false
+        end
+      end
+    end)
+  end
+end)
+local Q = Tabs.Main:AddToggle("Q", {Title = "Auto Upgrade Human V3", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.Auto_Human = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.Auto_Human then
+        if replicated.Remotes.CommF_:InvokeServer("Alchemist","1") ~= -2 then
+	     if replicated.Remotes.CommF_:InvokeServer("Alchemist","1") == 0 then
+		  replicated.Remotes.CommF_:InvokeServer("Alchemist","2")
+		elseif replicated.Remotes.CommF_:InvokeServer("Alchemist","1") == 1 then
+		  if not plr.Backpack:FindFirstChild("Flower 1") and not plr.Character:FindFirstChild("Flower 1") then
+		    _tp(workspace.Flower1.CFrame)
+		  elseif not plr.Backpack:FindFirstChild("Flower 2") and not plr.Character:FindFirstChild("Flower 2") then
+		    _tp(workspace.Flower2.CFrame)
+		  elseif not plr.Backpack:FindFirstChild("Flower 3") and not plr.Character:FindFirstChild("Flower 3") then
+		    local v = GetConnectionEnemies("Swan Pirate")
+            if v then repeat wait() Attack.Kill(v,_G.Auto_Human) until plr.Backpack:FindFirstChild("Flower 3") or not v.Parent or v.Humanoid.Health <= 0 or _G.Auto_Human == false
+		    else _tp(CFrame.new(980.0985107421875, 121.331298828125, 1287.2093505859375))end
+		  end
+		  elseif replicated.Remotes.CommF_:InvokeServer("Alchemist","1") == 2 then
+		    replicated.Remotes.CommF_:InvokeServer("Alchemist","3")
+		  end
+		  elseif replicated.Remotes.CommF_:InvokeServer("Wenlocktoad","1") == 0 then
+		    replicated.Remotes.CommF_:InvokeServer("Wenlocktoad","2")
+		  elseif replicated.Remotes.CommF_:InvokeServer("Wenlocktoad","1") == 1 then
+		  local v = GetConnectionEnemies(Human_v3_Mob[1])
+          if v then repeat wait()Attack.Kill(v,_G.Auto_Human)until v.Humanoid.Health <= 0 or not v.Parent or not _G.Auto_Human			           
+	      else _tp(CFrame.new(-2172.7399902344, 103.32216644287, -4015.025390625))
+		  end		      
+		  local v = GetConnectionEnemies(Human_v3_Mob[2])
+          if v then repeat wait()Attack.Kill(v,_G.Auto_Human)until v.Humanoid.Health <= 0 or not v.Parent or not _G.Auto_Human			           
+	      else _tp(CFrame.new(2006.9261474609, 448.95666503906, 853.98284912109))
+		  end		      
+		  local v = GetConnectionEnemies(Human_v3_Mob[3])
+          if v then repeat wait()Attack.Kill(v,_G.Auto_Human)until v.Humanoid.Health <= 0 or not v.Parent or not _G.Auto_Human			           
+          else _tp(CFrame.new(-1576.7166748047, 198.59265136719, 13.724286079407))
+	      end		      		
+        end
+      end
+    end)
+  end
+end)
+local Q = Tabs.Main:AddToggle("Q", {Title = "Auto Upgrade Skypiea V3", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.Auto_Skypiea = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.Auto_Skypiea then
+        if replicated.Remotes.CommF_:InvokeServer("Alchemist","1") ~= -2 then
+	      if replicated.Remotes.CommF_:InvokeServer("Alchemist","1") == 0 then
+		    replicated.Remotes.CommF_:InvokeServer("Alchemist","2")
+		  elseif replicated.Remotes.CommF_:InvokeServer("Alchemist","1") == 1 then
+		    if not plr.Backpack:FindFirstChild("Flower 1") and not plr.Character:FindFirstChild("Flower 1") then
+		      _tp(workspace.Flower1.CFrame)
+		    elseif not plr.Backpack:FindFirstChild("Flower 2") and not plr.Character:FindFirstChild("Flower 2") then
+		      _tp(workspace.Flower2.CFrame)
+		    elseif not plr.Backpack:FindFirstChild("Flower 3") and not plr.Character:FindFirstChild("Flower 3") then
+		      local v = GetConnectionEnemies("Swan Pirate")
+		      if v then
+			    repeat wait()Attack.Kill(v,_G.Auto_Skypiea)until plr.Backpack:FindFirstChild("Flower 3") or not v.Parent or v.Humanoid.Health <= 0 or _G.Auto_Skypiea == false
+		      else
+		        _tp(CFrame.new(980.0985107421875, 121.331298828125, 1287.2093505859375))
+		      end
+		    end
+	      elseif replicated.Remotes.CommF_:InvokeServer("Alchemist","1") == 2 then
+            replicated.Remotes.CommF_:InvokeServer("Alchemist","3")
+          end
+		  elseif replicated.Remotes.CommF_:InvokeServer("Wenlocktoad","1") == 0 then
+	        replicated.Remotes.CommF_:InvokeServer("Wenlocktoad","2")
+	    elseif replicated.Remotes.CommF_:InvokeServer("Wenlocktoad","1") == 1 then
+	      for i,v in pairs(game.Players:GetChildren()) do
+            if v.Name ~= plr.Name and tostring(v.Data.Race.Value) == "Skypiea" then
+		      repeat task.wait() _tp(v.HumanoidRootPart.CFrame * CFrame.new(0,8,0) * CFrame.Angles(math.rad(-45),0,0))until v.Humanoid.Health <= 0 or _G.Auto_Skypiea == false
+	        end
+	      end
+        end          
+      end
+    end)
+  end
+end)
+local Q = Tabs.Main:AddToggle("Q", {Title = "Auto Upgrade FishMan V3", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.Auto_Fish = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.Auto_Fish then
+        if replicated.Remotes.CommF_:InvokeServer("Alchemist","1") ~= -2 then
+	      if replicated.Remotes.CommF_:InvokeServer("Alchemist","1") == 0 then
+		    replicated.Remotes.CommF_:InvokeServer("Alchemist","2")
+		  elseif replicated.Remotes.CommF_:InvokeServer("Alchemist","1") == 1 then
+	        if not plr.Backpack:FindFirstChild("Flower 1") and not plr.Character:FindFirstChild("Flower 1") then
+		      _tp(workspace.Flower1.CFrame)
+	        elseif not plr.Backpack:FindFirstChild("Flower 2") and not plr.Character:FindFirstChild("Flower 2") then
+	          _tp(workspace.Flower2.CFrame)
+	        elseif not plr.Backpack:FindFirstChild("Flower 3") and not plr.Character:FindFirstChild("Flower 3") then
+	          local v = GetConnectionEnemies("Swan Pirate")
+		      if v then
+			    repeat wait()Attack.Kill(v,_G.Auto_Fish)until plr.Backpack:FindFirstChild("Flower 3") or not v.Parent or v.Humanoid.Health <= 0 or _G.Auto_Fish == false
+	          else
+		       _tp(CFrame.new(980.0985107421875, 121.331298828125, 1287.2093505859375))
+	          end
+            end
+	      elseif replicated.Remotes.CommF_:InvokeServer("Alchemist","1") == 2 then
+            replicated.Remotes.CommF_:InvokeServer("Alchemist","3")
+          end
+        elseif replicated.Remotes.CommF_:InvokeServer("Wenlocktoad","1") == 0 then
+	      replicated.Remotes.CommF_:InvokeServer("Wenlocktoad","2")
+	    elseif replicated.Remotes.CommF_:InvokeServer("Wenlocktoad","1") == 1 then
+          warn("Sea Beast Soon")
+        end
+      end
+    end)
+  end
+end)
+
+Tabs.Main:AddSection("Dark Dragger + Valkyrie")
+local Q = Tabs.Main:AddToggle("Q", {Title = "Auto Valkyrie", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.AutoRipIngay = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.AutoRipIngay then
+        local v = GetConnectionEnemies("rip_indra")
+	    if not GetWP("Dark Dagger") or not GetIn("Valkyrie") and v then
+	      repeat wait() Attack.Kill(v,_G.AutoRipIngay)until not _G.AutoRipIngay or not v.Parent or v.Humanoid.Health <= 0
+        else
+          replicated.Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-5097.93164, 316.447021, -3142.66602, -0.405007899, -4.31682743e-08, 0.914313197, -1.90943332e-08, 1, 3.8755779e-08, -0.914313197, -1.76180437e-09, -0.405007899))
+		  wait(.1)_tp(CFrame.new(-5344.822265625, 423.98541259766, -2725.0930175781))
+	    end
+      end
+    end)
+  end
+end)
+local Q = Tabs.Main:AddToggle("Q", {Title = "Auto Unlocked Puzzle", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.AutoUnHaki = Value
+end)
+AuraSkin = function(HakiID)
+  local args = {[1] = {["StorageName"] = HakiID,["Type"] = "AuraSkin",["Context"] = "Equip"}};
+  replicated:WaitForChild("Modules"):WaitForChild("Net"):WaitForChild("RF/FruitCustomizerRF"):InvokeServer(unpack(args));
+end;
+VaildColor = function(Part)
+  if Part and Part.BrickColor then return (tostring(Part.BrickColor) == "Lime green") end;
+end;
+HakiCalculate = function(Part)
+  local ID = {["Really red"] = "Pure Red";["Oyster"] = "Snow White";["Hot pink"] = "Winter Sky";};
+  if Part and Part.BrickColor then return (ID[tostring(Part.BrickColor)])end;
+end;
+spawn(function()
+  while wait(Sec) do
+    if _G.AutoUnHaki then
+      pcall(function()
+        local Summoner = workspace.Map["Boat Castle"]:FindFirstChild("Summoner");
+        if Summoner and Summoner:FindFirstChild("Circle") then 
+          for i,v in pairs(Summoner:FindFirstChild("Circle"):GetChildren()) do 
+            if v.Name == "Part" then 
+            local TogglesPart = v:FindFirstChild("Part");
+              if VaildColor(TogglesPart) == false then 
+                AuraSkin(HakiCalculate(v));
+                repeat wait() _tp(v.CFrame) until VaildColor(TogglesPart) == true or not _G.AutoUnHaki;
+              end
+            end            
+          end
+        end        
+      end)
+    end
+  end
+end)
+
+Tabs.Settings:AddSection("Settings / Configure")
+local _Weapon = {"Melee","Sword","Blox Fruit","Gun"}
+local Weapon_Config = Tabs.Settings:AddDropdown("Weapon_Config",{Title = "Select Weapon",Values = _Weapon,Multi = false,Default = 1})
+Weapon_Config:OnChanged(function(Value)
+  _G.ChooseWP = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.ChooseWP == "Melee" then
+        for _,v in pairs(plr.Backpack:GetChildren()) do
+	      if v.ToolTip == "Melee" then
+		    if plr.Backpack:FindFirstChild(tostring(v.Name)) then
+	          _G.SelectWeapon = v.Name              
+            end
+          end
+        end
+   	  elseif _G.ChooseWP == "Sword" then     
+	    for _,v in pairs(plr.Backpack:GetChildren()) do
+	      if v.ToolTip == "Sword" then
+		    if plr.Backpack:FindFirstChild(tostring(v.Name)) then
+		      _G.SelectWeapon = v.Name              
+            end
+          end
+        end
+      elseif _G.ChooseWP == "Gun" then     
+	     for _,v in pairs(plr.Backpack:GetChildren()) do
+	       if v.ToolTip == "Gun" then
+		    if plr.Backpack:FindFirstChild(tostring(v.Name)) then
+		      _G.SelectWeapon = v.Name              
+            end
+          end
+        end
+      elseif _G.ChooseWP == "Blox Fruit" then     
+	    for _,v in pairs(plr.Backpack:GetChildren()) do
+	      if v.ToolTip == "Blox Fruit" then
+		    if plr.Backpack:FindFirstChild(tostring(v.Name)) then
+		      _G.SelectWeapon = v.Name		                    
+            end
+          end
+        end        
+      end
+    end)
+  end
+end)
+
+local Initialize = Tabs.Settings:AddToggle("Initialize", {Title = "Initialize Attack [M1/Melee/Sword]", Description = "[ Not Supported Gas M1 ]", Default = true})
+Initialize:OnChanged(function(Value)
+  _G.Seriality = Value
+end)
+local Bringmob = Tabs.Settings:AddToggle("Bringmob", {Title = "Bring Mobs", Description = "", Default = true})
+Bringmob:OnChanged(function(Value)
+  _B = Value
+end)
+local BusuAura = Tabs.Settings:AddToggle("BusuAura", {Title = "Auto Turn on Buso", Description = "", Default = true})
+BusuAura:OnChanged(function(Value)
+  Boud = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if Boud then
+      local _HasBuso = {"HasBuso","Buso"}
+  	  if not plr.Character:FindFirstChild(_HasBuso[1]) then replicated.Remotes.CommF_:InvokeServer(_HasBuso[2]) end
+      end
+    end)
+  end
+end)
+
+local RaceV3Aura = Tabs.Settings:AddToggle("RaceV3Aura", {Title = "Auto Turn on Race V3", Description = "", Default = false})
+RaceV3Aura:OnChanged(function(Value)
+  _G.RaceClickAutov3 = Value
+end)
+spawn(function()
+  while wait(.2) do
+    pcall(function()
+      if _G.RaceClickAutov3 then
+        repeat
+          replicated.Remotes.CommE:FireServer("ActivateAbility") 
+          wait(30)
+        until not _G.RaceClickAutov3   
+      end 
+    end)
+  end
+end)
+local RaceV4Aura = Tabs.Settings:AddToggle("RaceV4Aura", {Title = "Auto Turn on Race V4", Description = "", Default = false})
+RaceV4Aura:OnChanged(function(Value)
+  _G.RaceClickAutov4 = Value
+end)
+spawn(function()
+  while wait(.2) do
+    pcall(function()
+      if _G.RaceClickAutov4 then
+  	    if plr.Character:FindFirstChild("RaceEnergy") then
+        if plr.Character:FindFirstChild("RaceEnergy").Value == 1 then Useskills("nil","Y") end
+        end        
+      end 
+    end)
+  end
+end)
+local RandomAround = Tabs.Settings:AddToggle("RandomAround", {Title = "Auto Turn on Spin Position", Description = "", Default = false})
+RandomAround:OnChanged(function(Value)
+  RandomCFrame = Value
+end)
+local Byp = Tabs.Settings:AddToggle("Byp", {Title = "Turn on Bypass Teleport", Description = "", Default = false})
+Byp:OnChanged(function(Value)
+  _G.Bypass = Value
+end)
+local SafeModes = Tabs.Settings:AddToggle("SafeModes", {Title = "Panic Mode", Description = "turn on for safe ur health if low", Default = false})
+SafeModes:OnChanged(function(Value)
+  _G.Safemode = Value
+end)
+spawn(function()
+  while task.wait(Sec) do
+    pcall(function()
+	  if _G.Safemode then
+  	  local Calc_Health = plr.Character.Humanoid.Health / plr.Character.Humanoid.MaxHealth * 100
+  	  if Calc_Health < Num_self then shouldTween=true _tp(Root.CFrame * CFrame.new(0,500,0)) else shouldTween=false end
+      end
+    end)
+  end
+end)
+local UnDetectedAFK = Tabs.Settings:AddToggle("UnDetectedAFK", {Title = "Anti AFK", Description = "", Default = true})
+UnDetectedAFK:OnChanged(function(Value)
+  _G.AntiAFK = Value
+end)
+plr.Idled:connect(function()
+  vim2:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+  wait(1)
+  vim2:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+local DisblesVFX = Tabs.Settings:AddToggle("DisblesVFX", {Title = "Remove Hit VFX", Description = "", Default = false})
+DisblesVFX:OnChanged(function(Value)
+  _G.DistroyHit = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.DistroyHit then
+      pcall(function()
+        local __Efeect = {"SlashHit","CurvedRing","SwordSlash","SlashTail"}
+        for _,x in pairs(workspace["_WorldOrigin"]:GetChildren()) do
+	      if table.find(__Effect, x.Name) then x:Destroy() end
+        end
+      end)
+    end
+  end
+end)
+local DisblesVFX = Tabs.Settings:AddToggle("DisblesVFX", {Title = "Remove Death & Respawned VFX", Description = "", Default = false})
+DisblesVFX:OnChanged(function(Value)
+  RDeath = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if RDeath then
+	  if replicated.Effect.Container:FindFirstChild("Death") then replicated.Effect.Container.Death:Destroy() end
+      if replicated.Effect.Container:FindFirstChild("Respawn") then replicated.Effect.Container.Respawn:Destroy() end
+	  end
+    end)
+  end
+end)	
+local DisblesVFX = Tabs.Settings:AddToggle("DisblesVFX", {Title = "Disable Notify", Description = "", Default = false})
+DisblesVFX:OnChanged(function(Value)
+  RemoveDamage = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if RemoveDamage then
+        replicated.Assets.GUI.DamageCounter.Enabled = false
+        plr.PlayerGui.Notifications.Enabled = false
+	  else
+        replicated.Assets.GUI.DamageCounter.Enabled = true
+        plr.PlayerGui.Notifications.Enabled = true
+      end
+    end)
+  end
+end)      
+
+Tabs.Settings:AddSection("Stats Upgrade")
+local StatusSelect = Tabs.Settings:AddSlider("StatusSelect",{Title = "Stats Value",Description = "choose your point need to upgrade",Default = 10,Min = 0,Max = 1000,Rounding = 1, 
+Callback = function(Value)
+  pSats = Value
+end})
+StatusSelect:OnChanged(function(Value)
+  pSats = Value
+end)
+
+local StatsUpg = Tabs.Settings:AddToggle("StatsUpg", {Title = "Auto Melee", Description = "", Default = false})
+StatsUpg:OnChanged(function(Value)
+  _G.Auto_Melee = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+    if _G.Auto_Melee then statsSetings("Melee",pSats) end
+    end)
+  end
+end)
+
+local StatsUpg = Tabs.Settings:AddToggle("StatsUpg", {Title = "Auto Swords", Description = "", Default = false})
+StatsUpg:OnChanged(function(Value)
+  _G.Auto_Sword = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+    if _G.Auto_Sword then statsSetings("Sword",pSats) end
+    end)
+  end
+end)
+local StatsUpg = Tabs.Settings:AddToggle("StatsUpg", {Title = "Auto Gun", Description = "", Default = false})
+StatsUpg:OnChanged(function(Value)
+  _G.Auto_Gun = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+    if _G.Auto_Gun then statsSetings("Gun",pSats) end
+    end)
+  end
+end)
+local StatsUpg = Tabs.Settings:AddToggle("StatsUpg", {Title = "Auto Blox Fruit", Description = "", Default = false})
+StatsUpg:OnChanged(function(Value)
+  _G.Auto_DevilFruit = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+    if _G.Auto_DevilFruit then statsSetings("Devil",pSats) end
+    end)
+  end
+end)
+local StatsUpg = Tabs.Settings:AddToggle("StatsUpg", {Title = "Auto Defense", Description = "", Default = false})
+StatsUpg:OnChanged(function(Value)
+  _G.Auto_Defense = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+    if _G.Auto_Defense then statsSetings("Defense",pSats) end
+    end)
+  end
+end)
+
+Tabs.Melee:AddSection("Fighting Melee Styles")
+local SuperHuman = Tabs.Melee:AddToggle("SuperHuman", {Title = "Auto Superhuman", Description = "", Default = false})
+SuperHuman:OnChanged(function(Value)
+  _G.Auto_SuperHuman = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.Auto_SuperHuman then
+      local M_Beli = plr.Data.Beli.Value
+	  local M_Frag = plr.Data.Fragments.Value
+        if plr:FindFirstChild("WeaponAssetCache") then
+          if not GetBP("Superhuman") then                    
+            if not GetBP("Black Leg") then
+            if (M_Beli >= 150000) then replicated.Remotes.CommF_:InvokeServer("BuyBlackLeg") end
+            elseif GetBP("Black Leg") and GetBP("Black Leg").Level.Value < 299 then _G.Level = true elseif GetBP("Black Leg") and GetBP("Black Leg").Level.Value >= 300 then _G.Level = false end                        
+            if not GetBP("Electro") then
+            if (M_Beli >= 500000) then replicated.Remotes.CommF_:InvokeServer("BuyElectro") end
+            elseif GetBP("Electro") and GetBP("Electro").Level.Value < 299 then _G.Level = true elseif GetBP("Electro") and GetBP("Electro").Level.Value >= 300 then _G.Level = false end                        
+            if not GetBP("Fishman Karate") then
+            if (M_Beli >= 750000) then replicated.Remotes.CommF_:InvokeServer("BuyFishmanKarate") end
+            elseif GetBP("Fishman Karate") and GetBP("Fishman Karate").Level.Value < 299 then _G.Level = true elseif GetBP("Fishman Karate") and GetBP("Fishman Karate").Level.Value >= 300 then _G.Level = false end                        
+            if not GetBP("Dragon Claw") then
+            if (M_Frag >= 1500) then replicated.Remotes.CommF_:InvokeServer("BlackbeardReward","DragonClaw","2") end
+            elseif GetBP("Dragon Claw") and GetBP("Dragon Claw").Level.Value < 299 then _G.Level = true elseif GetBP("Dragon Claw") and GetBP("Dragon Claw").Level.Value >= 300 then _G.Level = false end
+            replicated.Remotes.CommF_:InvokeServer("BuySuperhuman")          
+          end
+        end        
+      end
+    end)
+  end
+end)
+local DeathStep = Tabs.Melee:AddToggle("DeathStep", {Title = "Auto DeathStep", Description = "", Default = false})
+DeathStep:OnChanged(function(Value)
+  _G.AutoDeathStep = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.AutoDeathStep then
+      pcall(function()
+        if plr:FindFirstChild("WeaponAssetCache") then  
+          if not GetBP("Death Step") then          
+            if not GetBP("Black Leg") then replicated.Remotes.CommF_:InvokeServer("BuyBlackLeg") end
+            if GetBP("Black Leg") and GetBP("Black Leg").Level.Value >= 400 then replicated.Remotes.CommF_:InvokeServer("BuyDeathStep") _G.Level = false elseif GetBP("Black Leg") and GetBP("Black Leg").Level.Value < 399 then _G.Level = true end
+            if GetBP("Black Leg") or GetBP("Black Leg").Level.Value >= 400 then
+            if workspace.Map.IceCastle.Hall.LibraryDoor.PhoeyuDoor.Transparency == 0 then            
+              if GetBP("Library Key") then repeat wait() _tp(CFrame.new(6371.2001953125, 296.63433837890625, -6841.18115234375)) until not _G.AutoDeathStep or (Root.Position == CFrame.new(6371.2001953125, 296.63433837890625, -6841.18115234375).Position)
+		        if (Root.CFrame == CFrame.new(6371.2001953125, 296.63433837890625, -6841.18115234375)) then replicated.Remotes.CommF_:InvokeServer("BuyDeathStep") end     
+		        elseif not GetBP("Library Key") then
+		          local v = GetConnectionEnemies("Awakened Ice Admiral")
+		          if v then	repeat wait() Attack.Kill(v,_G.AutoDeathStep) until not v.Parent or v.Humanoid.Health <= 0 or _G.AutoDeathStep == false or GetBP("Library Key") or GetBP("Death Step")
+	              else _tp(CFrame.new(5668.9780273438, 28.519989013672, -6483.3520507813))
+	              end
+		        end		    
+              end
+            end          
+          end
+        end
+      end)
+    end
+  end
+end)
+local SharkManV2 = Tabs.Melee:AddToggle("SharkManV2", {Title = "Auto Sharkman Karate", Description = "", Default = false})
+SharkManV2:OnChanged(function(Value)
+  _G.Auto_SharkMan_Karate = Value
+end)
+spawn(function() 
+  while wait(Sec) do
+    if _G.Auto_SharkMan_Karate then
+      pcall(function()
+        if plr:FindFirstChild("WeaponAssetCache") then  
+          if not GetBP("Sharkman Karate") then          
+            if not GetBP("Fishman Karate") then replicated.Remotes.CommF_:InvokeServer("BuyFishmanKarate") end
+            if GetBP("Fishman Karate") and GetBP("Fishman Karate").Level.Value >= 400 then replicated.Remotes.CommF_:InvokeServer("BuySharkmanKarate") _G.Level = false elseif GetBP("Fishman Karate") and GetBP("Fishman Karate").Level.Value < 399 then _G.Level = true end
+            if GetBP("Fishman Karate") or GetBP("Fishman Karate").Level.Value >= 400 then           
+              if GetBP("Water Key") then
+		        if string.find(replicated.Remotes.CommF_:InvokeServer("BuySharkmanKarate"), "keys") then  
+			      if GetBP("Water Key") then
+			        repeat wait() _tp(CFrame.new(-2604.6958, 239.432526, -10315.1982, 0.0425701365, 0, -0.999093413, 0, 1, 0, 0.999093413, 0, 0.0425701365)) until not _G.Auto_SharkMan_Karate or (Root.Position == CFrame.new(-2604.6958, 239.432526, -10315.1982, 0.0425701365, 0, -0.999093413, 0, 1, 0, 0.999093413, 0, 0.0425701365).Position)
+	                replicated.Remotes.CommF_:InvokeServer("BuySharkmanKarate")
+		          end
+		        end
+		      elseif not GetBP("Water Key") then
+		        local v = GetConnectionEnemies("Tide Keeper")
+		        if v then repeat wait() Attack.Kill(v,_G.Auto_SharkMan_Karate)until not v.Parent or v.Humanoid.Health <= 0 or _G.Auto_SharkMan_Karate == false or GetBP("Water Key") or GetBP("Sharkman Karate")		
+	            else _tp(CFrame.new(-3053.9814453125, 237.18954467773, -10145.0390625))
+	            end
+		      end		                  
+            end          
+          end
+        end
+      end)
+    end
+  end
+end)
+local ElectricClaw = Tabs.Melee:AddToggle("ElectricClaw", {Title = "Auto ElectricClaw", Description = "", Default = false})
+ElectricClaw:OnChanged(function(Value)
+  _G.Auto_Electric_Claw = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.Auto_Electric_Claw then
+      pcall(function()
+        if plr:FindFirstChild("WeaponAssetCache") then 
+        if not GetBP("Electro") then replicated.Remotes.CommF_:InvokeServer("BuyElectro") end        
+          if GetBP("Electro") and GetBP("Electro").Level.Value >= 400 then
+            if replicated.Remotes.CommF_:InvokeServer("BuyElectricClaw", "Start") == nil then notween(CFrame.new(-12548, 337, -7481)) end
+            replicated.Remotes.CommF_:InvokeServer("BuyElectricClaw")
+          elseif GetBP("Electro") and GetBP("Electro").Level.Value < 400 then
+            repeat _G.AutoFarm_Bone = true wait() until not _G.Auto_Electric_Claw or GetBP("Electric Claw") _G.AutoFarm_Bone = false
+          end
+        end       
+      end)
+    end
+  end
+end)
+local DragonTalon = Tabs.Melee:AddToggle("DragonTalon", {Title = "Auto DragonTalon", Description = "", Default = false})
+DragonTalon:OnChanged(function(Value)
+  _G.AutoDragonTalon = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.AutoDragonTalon then
+      pcall(function()
+        if plr:FindFirstChild("WeaponAssetCache") then 
+        if not GetBP("Dragon Claw") then replicated.Remotes.CommF_:InvokeServer("BlackbeardReward","DragonClaw","2") end        
+          if GetBP("Dragon Claw") and GetBP("Dragon Claw").Level.Value >= 400 then replicated.Remotes.CommF_:InvokeServer("Bones","Buy",1,1) replicated.Remotes.CommF_:InvokeServer("BuyDragonTalon")
+          elseif GetBP("Dragon Claw") and GetBP("Dragon Claw").Level.Value < 400 then repeat _G.AutoFarm_Bone = true wait() until not _G.AutoDragonTalon or GetBP("Dragon Talon") _G.AutoFarm_Bone = false
+          end         
+        end
+      end)
+    end
+  end
+end)
+local Godhuman = Tabs.Melee:AddToggle("Godhuman", {Title = "Auto Godhuman", Description = "", Default = false})
+Godhuman:OnChanged(function(Value)
+  _G.Auto_God_Human = Value
+end)
+spawn(function()
+  while wait() do
+    pcall(function()
+      if _G.AutoGodHuman then
+        if replicated.Remotes.CommF_:InvokeServer("BuyGodhuman",true) == "Bring me 20 Fish Tails, 20 Magma Ore, 10 Dragon Scales and 10 Mystic Droplets." then
+          if GetM("Dragon Scale") == false or GetM("Dragon Scale") < 10 then
+            if World3 then
+              Lv = 1575
+              _G.Level = true
+            else
+              replicated.Remotes.CommF_:InvokeServer("TravelZou")
+            end
+          elseif GetM("Fish Tail") == false or GetM("Fish Tail") < 20 then
+            if World3 then
+              Lv = 1775
+              _G.Level = true
+            else
+              replicated.Remotes.CommF_:InvokeServer("TravelZou")
+            end
+          elseif GetM("Mystic Droplet") == false or GetM("Mystic Droplet") < 10 then
+            if World2 then
+              Lv = 1425
+              _G.Level = true
+            else
+              replicated.Remotes.CommF_:InvokeServer("TravelDressrosa")
+            end
+          elseif GetM("Magma Ore") == false or GetM("Magma Ore") < 20 then
+            if World2 then
+              Lv = 1175
+              _G.Level = true
+            else
+              replicated.Remotes.CommF_:InvokeServer("TravelDressrosa")
+            end  
+          end
+        elseif replicated.Remotes.CommF_:InvokeServer("BuyGodhuman",true) == 3 then
+          return nil
+        else
+          replicated.Remotes.CommF_:InvokeServer("BuyGodhuman")
+        end
+      end
+    end)
+  end
+end)
+local SanguineArt = Tabs.Melee:AddToggle("SanguineArt", {Title = "Auto SanguineArt", Description = "", Default = false})
+SanguineArt:OnChanged(function(Value)
+  _G.snaguine = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.snaguine then
+      pcall(function()
+        if not GetBP("Sanguine Art") then replicated.Remotes.CommF_:InvokeServer("Sanguine Art") end
+        if not GetBP("Sanguine Art") then
+          if GetM("Leviathan Heart") >= 1 then print("Completed!!")
+          else
+          if World3 then _G.DangerSc = "Lv Infinite" _G.SailBoats = true; else _G.SailBoats = false; end end
+          if GetM("Vampire Fang") <= 19 then
+            if World2 then
+              local n = GetConnectionEnemies("Vampire")
+              if n then repeat task.wait() Attack.Kill(n,_G.snaguine) until not _G.snaguine or n.Humanoid.Health <= 0 or not n.Parent
+              else _tp(CFrame.new(-6041.29248046875, 6.402710914611816, -1304.63330078125))
+              end
+            else
+              replicated.Remotes.CommF_:InvokeServer("TravelDressrosa")
+            end
+          end                                      
+          if GetM("Vampire Fang") >= 20 and GetM("Demonic Wisp") <= 19 then
+            if World3 then
+              local n = GetConnectionEnemies("Demonic Soul")
+		      if n then repeat task.wait() Attack.Kill(n,_G.snaguine) until not _G.snaguine or n.Humanoid.Health <= 0 or not n.Parent
+              else _tp(CFrame.new(-9495.6806640625, 453.58624267578125, 5977.3486328125)) 
+              end
+             else
+               replicated.Remotes.CommF_:InvokeServer("TravelZou")
+             end
+           end
+           if GetM("Vampire Fang") >= 20 and GetM("Demonic Wisp") >= 20 and GetM("Dark Fragment") <= 1 then
+             if World2 then
+               local n = GetConnectionEnemies("Darkbeard")
+		       if n then repeat task.wait() Attack.Kill(black,_G.snaguine) until _G.snaguine or black.Humanoid.Health <= 0 or not black.Parent
+		      else _tp(CFrame.new(3798.4575195313, 13.826690673828, -3399.806640625))
+		      end
+		    else replicated.Remotes.CommF_:InvokeServer("TravelDressrosa")
+	        end
+          end
+        else replicated.Remotes.CommF_:InvokeServer("BuySanguineArt")
+        end
+      end)
+    end
+  end
+end)
+
+Tabs.Quests:AddSection("Tushita + Yama")
+local Process = Tabs.Quests:AddParagraph({Title = "Elites Process ",Content = ""})
+spawn(function()
+  while wait(Sec) do
+    pcall(function()    
+      Process:SetDesc("Elite Procress :  " ..replicated.Remotes.CommF_:InvokeServer("EliteHunter","Progress"))
+    end)
+  end
+end)
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Auto Elite Quest", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.FarmEliteHunt = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+	  if _G.FarmEliteHunt then
+	    if plr.PlayerGui.Main.Quest.Visible == true then
+	      if string.find(plr.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "Diablo") or string.find(plr.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "Urban") or string.find(plr.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, "Deandre") then
+		    for i,v in pairs(replicated:GetChildren()) do
+		      if string.find(v.Name,"Diablo") or string.find(v.Name,"Urban") or string.find(v.Name,"Deandre") then
+		        _tp(v.HumanoidRootPart.CFrame)				
+		      end	
+		    end
+	 	    for i,v in pairs(Enemies:GetChildren()) do
+		      if (string.find(v.Name,"Diablo") or string.find(v.Name,"Urban") or string.find(v.Name,"Deandre")) and Attack.Alive(v) then
+	            repeat wait() Attack.Kill(v, _G.FarmEliteHunt) until not _G.FarmEliteHunt or plr.PlayerGui.Main.Quest.Visible == false or not v.Parent or v.Humanoid.Health <=0
+	          end
+	        end           
+	      end        
+	    else
+	      replicated.Remotes.CommF_:InvokeServer("EliteHunter")
+	    end
+      end
+    end)
+  end
+end)
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Stop when got God's Chalice", Description = "", Default = true})
+Q:OnChanged(function(Value)
+  _G.StopWhenChalice = Value
+end)
+spawn(function()
+  while wait(.2) do
+    if _G.StopWhenChalice and _G.FarmEliteHunt then
+      pcall(function()
+	    if GetBP("God's Chalice") or GetBP("Sweet Chalice") or GetBP("Fist of Darkness") then
+	      _G.FarmEliteHunt = false
+	    end
+      end)
+    end
+  end
+end)
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Auto Tushita Sword", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.Auto_Tushita = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.Auto_Tushita then
+        if workspace.Map.Turtle:FindFirstChild("TushitaGate") then
+          if not GetBP("Holy Torch") then
+            _tp(CFrame.new(5148.03613, 162.352493, 910.548218))
+            wait(0.7)
+          else
+            EquipWeapon("Holy Torch")
+            task.wait(1)
+            repeat task.wait() _tp(CFrame.new(-10752, 417, -9366)) until not _G.Auto_Tushita or (CFrame.new(-10752, 417, -9366).Position - plr.Character.HumanoidRootPart.Position).Magnitude <= 10
+            wait(.7)
+            repeat task.wait() _tp(CFrame.new(-11672, 334, -9474)) until not _G.Auto_Tushita or (CFrame.new(-11672, 334, -9474).Position - plr.Character.HumanoidRootPart.Position).Magnitude <= 10
+            wait(.7)
+            repeat task.wait() _tp(CFrame.new(-12132, 521, -10655)) until not _G.Auto_Tushita or (CFrame.new(-12132, 521, -10655).Position - plr.Character.HumanoidRootPart.Position).Magnitude <= 10
+            wait(.7)
+            repeat task.wait() _tp(CFrame.new(-13336, 486, -6985)) until not _G.Auto_Tushita or (CFrame.new(-13336, 486, -6985).Position - plr.Character.HumanoidRootPart.Position).Magnitude <= 10
+            wait(.7)
+            repeat task.wait() _tp(CFrame.new(-13489, 332, -7925)) until not _G.Auto_Tushita or (CFrame.new(-13489, 332, -7925).Position - plr.Character.HumanoidRootPart.Position).Magnitude <= 10
+          end
+        else
+          local v = GetConnectionEnemies("Longma")
+          if v then repeat task.wait() Attack.Kill(v,_G.Auto_Tushita) until v.Humanoid.Health <= 0 or not _G.Auto_Tushita or not v.Parent
+          else 
+          if replicated:FindFirstChild("Longma") then _tp(replicated:FindFirstChild("Longma").HumanoidRootPart.CFrame * CFrame.new(0,40,0)) end
+          end                     
+        end
+      end
+    end)
+  end
+end)
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Auto Yama Sword", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.Auto_Yama = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.Auto_Yama then
+	    if replicated.Remotes.CommF_:InvokeServer("EliteHunter", "Progress") < 30 then
+	      _G.FarmEliteHunt = true
+	    elseif replicated.Remotes.CommF_:InvokeServer("EliteHunter", "Progress") > 30 then
+	      _G.FarmEliteHunt = false
+	      if (workspace.Map.Waterfall.SealedKatana.Handle.Position-plr.Character.HumanoidRootPart.Position).Magnitude >= 20 then
+            _tp(workspace.Map.Waterfall.SealedKatana.Handle.CFrame)
+            local zx = GetConnectionEnemies("Ghost")
+            if zx then
+              repeat wait() Attack.Kill(zx,_G.Auto_Yama) until zx.Humanoid.Health <= 0 or not zx.Parent or not _G.Auto_Yama               
+			  fireclickdetector(workspace.Map.Waterfall.SealedKatana.Handle.ClickDetector)
+            end
+          end
+	    end
+      end
+    end)
+  end
+end)
+
+Tabs.Quests:AddSection("Cursed Dual Katana")
+local CheckCDK = Tabs.Quests:AddParagraph({Title = " Number Cursed dual katana quests ",Content = "Quest Numbers :"})
+spawn(function()  
+  while wait(.2) do 
+    if QuestYama_1 == true then 
+	 CheckCDK:SetDesc(" Quest Numbers : yama quest 1") 
+    elseif QuestYama_2 == true then
+	  CheckCDK:SetDesc(" Quest Numbers : yama quest 2") 
+    elseif QuestYama_3 == true then
+	  CheckCDK:SetDesc(" Quest Numbers : yama quest 3") 
+    elseif QuestTushita_1 == true then
+	  CheckCDK:SetDesc(" Quest Numbers : tushita quest 1") 
+    elseif QuestTushita_2 == true then
+	  CheckCDK:SetDesc(" Quest Numbers : tushita quest 2") 
+    elseif QuestTushita_1 == true then
+	  CheckCDK:SetDesc(" Quest Numbers: tushita quest 2") 
+	elseif GetWP("Cursed Dual Katana") then
+	  CheckCDK:SetDesc(" Quest Numbers: CDK done!!")
+    end 
+  end
+end) 
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Auto Get CDK [ Last Quest ]", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.CDK = Value
+end)
+spawn(function()    
+  while wait(Sec) do
+    pcall(function()
+      if _G.CDK then
+        replicated.Remotes.CommF_:InvokeServer("CDKQuest","Progress","Good")
+        replicated.Remotes.CommF_:InvokeServer("CDKQuest","Progress","Evil")
+        replicated.Remotes.CommF_:InvokeServer("CDKQuest","StartTrial","Boss")
+        local v = GetConnectionEnemies("Cursed Skeleton Boss")
+        if v then
+          repeat wait()
+            if plr.Character:FindFirstChild("Yama") or plr.Backpack:FindFirstChild("Yama") then EquipWeapon("Yama")
+            elseif plr.Character:FindFirstChild("Tushita") or plr.Backpack:FindFirstChild("Tushita") then EquipWeapon("Tushita")                                    
+            end _tp(v.HumanoidRootPart.CFrame * CFrame.new(0,20,0))
+          until not _G.CDK or not v.Parent or v.Humanoid.Health <= 0                                
+        else
+          _tp(CFrame.new(-12318.193359375, 601.9518432617188, -6538.662109375)) wait(.5)
+          _tp(workspace.Map.Turtle.Cursed.BossDoor.CFrame)
+        end
+      end
+    end)
+  end
+end)
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Auto Yama CDK", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.CDK_YM = Value
+end)
+spawn(function()
+  while wait() do
+    pcall(function()
+      if _G.CDK_YM then
+        if tostring(replicated.Remotes.CommF_:InvokeServer("CDKQuest", "OpenDoor")) ~= "opened" then                  
+          replicated.Remotes.CommF_:InvokeServer("CDKQuest", "OpenDoor")
+          replicated.Remotes.CommF_:InvokeServer("CDKQuest", "OpenDoor", true)
+        else
+          if replicated.Remotes.CommF_:InvokeServer("CDKQuest","Progress")["Finished"] == nil then
+            replicated.Remotes.CommF_:InvokeServer("CDKQuest","StartTrial","Evil")
+            replicated.Remotes.CommF_:InvokeServer("CDKQuest","StartTrial","Evil")
+          elseif replicated.Remotes.CommF_:InvokeServer("CDKQuest","Progress")["Finished"] == false then                        
+            if tonumber(replicated.Remotes.CommF_:InvokeServer("CDKQuest","Progress")["Evil"]) == -3 then
+              QuestYama_1 = true QuestYama_2 = false QuestYama_3 = false
+              repeat task.wait()
+                if not workspace.Enemies:FindFirstChild("Forest Pirate") then
+                  _tp(CFrame.new(-13223.521484375, 428.1938171386719, -7766.06787109375))
+                else
+                  local v = GetConnectionEnemies("Forest Pirate")
+                  if v then _tp(workspace.Enemies:FindFirstChild("Forest Pirate").HumanoidRootPart.CFrame)end
+                end
+              until tonumber(replicated.Remotes.CommF_:InvokeServer("CDKQuest","Progress")["Evil"]) == 1 or not _G.CDK_YM
+            elseif tonumber(replicated.Remotes.CommF_:InvokeServer("CDKQuest","Progress")["Evil"]) == -4 then
+              QuestYama_1 = false QuestYama_2 = true QuestYama_3 = false
+              for ix,HitMon in pairs(game:GetService("Players").LocalPlayer.QuestHaze:GetChildren()) do
+                for NameMonHaze, CFramePos in pairs(PosMsList) do
+                  if string.find(NameMonHaze,HitMon.Name) and HitMon.Value > 0 then
+                    if (CFramePos.Position - Root.Position).Magnitude <= 1000 and workspace.Enemies:FindFirstChild(NameMonHaze) then
+                      for i,v in pairs(workspace.Enemies:GetChildren()) do
+                        if v:FindFirstChild("HumanoidRootPart") and v:FindFirstChild("Humanoid") and v:FindFirstChild("Humanoid").Health > 0 and v:FindFirstChild("HazeESP") then
+                          repeat wait() Attack.Kill(v, _G.CDK_YM) until not _G.CDK_YM or tonumber(replicated.Remotes.CommF_:InvokeServer("CDKQuest","Progress")["Evil"]) == 2 or not v:FindFirstChild("HazeESP") or v.Humanoid.Health <= 0
+                        end
+                      end
+                    else   
+                      _tp(CFramePos)                               
+                    end
+                  end
+                end
+              end
+            elseif tonumber(replicated.Remotes.CommF_:InvokeServer("CDKQuest","Progress")["Evil"]) == -5 then
+              QuestYama_1 = false QuestYama_2 = false QuestYama_3 = true
+              if workspace.Map:FindFirstChild("HellDimension") then
+                if (Root.Position - workspace.Map.HellDimension.Spawn.Position).Magnitude <= 1000 then
+                  for gg,ez in pairs(workspace.Map.HellDimension.Exit:GetChildren()) do
+                    if tonumber(gg) == 2 then
+                      repeat task.wait() Root.CFrame = workspace.Map.HellDimension.Exit.CFrame until not _G.CDK_YM or tonumber(replicated.Remotes.CommF_:InvokeServer("CDKQuest","Progress")["Evil"]) == 3
+                    end
+                  end
+                  EquipWeapon(_G.SelectWeapon)
+                  if tonumber(replicated.Remotes.CommF_:InvokeServer("CDKQuest","Progress")["Evil"]) ~= 3 then
+                  repeat task.wait()
+                    repeat task.wait() 
+                      _tp(workspace.Map.HellDimension.Torch1.Particles.CFrame) 
+                      for i, v in pairs(workspace.Map.HellDimension:GetDescendants()) do
+                        if v:IsA("ProximityPrompt") then fireproximityprompt(v) end
+                      end
+                    until (workspace.Map.HellDimension.Torch1.Particles.Position - Root.Position).Magnitude < 5
+                    wait(2) _G.T1Yama = true
+                  until not _G.CDK_YM or _G.T1Yama or tonumber(replicated.Remotes.CommF_:InvokeServer("CDKQuest","Progress")["Evil"]) == 3
+                  repeat task.wait()
+                    repeat task.wait()
+                      _tp(workspace.Map.HellDimension.Torch2.Particles.CFrame) 
+                      for i, v in pairs(workspace.Map.HellDimension:GetDescendants()) do
+                        if v:IsA("ProximityPrompt") then fireproximityprompt(v)end
+                      end
+                    until (workspace.Map.HellDimension.Torch2.Particles.Position - Root.Position).Magnitude < 5
+                    wait(2) _G.T2Yama = true
+                  until _G.T2Yama or _G.CDK_YM == false or tonumber(replicated.Remotes.CommF_:InvokeServer("CDKQuest","Progress")["Evil"]) == 3
+                    repeat wait()
+                      repeat task.wait() 
+                        _tp(workspace.Map.HellDimension.Torch3.Particles.CFrame) 
+                        for i, v in pairs(workspace.Map.HellDimension:GetDescendants()) do
+                          if v:IsA("ProximityPrompt") then fireproximityprompt(v)end
+                        end
+                      until (workspace.Map.HellDimension.Torch3.Particles.Position - Root.Position).Magnitude < 5 
+                      wait(2) _G.T3Yama = true
+                    until _G.T3Yama or _G.CDK_YM == false or tonumber(replicated.Remotes.CommF_:InvokeServer("CDKQuest","Progress")["Evil"]) == 3
+                  end
+                  for i,v in pairs(workspace.Enemies:GetChildren()) do
+                    if (v:FindFirstChild("HumanoidRootPart").Position - workspace.Map.HellDimension.Spawn.Position).Magnitude <= 300 then
+                      if v:FindFirstChild("HumanoidRootPart") and v:FindFirstChild("Humanoid") and v:FindFirstChild("Humanoid").Health > 0 then
+                        repeat task.wait() Attack.Kill(v,_G.CDK_YM) until not _G.CDK_YM or v.Humanoid.Health <= 0 or not v.Parent or tonumber(replicated.Remotes.CommF_:InvokeServer("CDKQuest","Progress")["Evil"]) == 3
+                      end
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
+      end
+    end)
+  end
+end)
+spawn(function()
+  while wait() do
+    pcall(function()
+      if _G.CDK_YM then
+        if tonumber(replicated.Remotes.CommF_:InvokeServer("CDKQuest","Progress")["Evil"]) == -5 then
+          if not workspace.Map:FindFirstChild("HellDimension") or (Root.Position - workspace.Map.HellDimension.Spawn.Position).Magnitude > 1000 then
+            local v = GetConnectionEnemies("Soul Reaper")
+            if v then repeat task.wait()_tp(v.HumanoidRootPart.CFrame) until v.Humanoid.Health <= 0 or not _G.CDK_YM or not v.Parent or tonumber(replicated.Remotes.CommF_:InvokeServer("CDKQuest","Progress")["Evil"]) == 3 or (workspace.Map:FindFirstChild("HellDimension") and (Root.Position - workspace.Map.HellDimension.Spawn.Position).Magnitude <= 1000)
+            elseif plr.Backpack:FindFirstChild("Hallow Essence") or plr.Character:FindFirstChild("Hallow Essence") then
+            repeat _tp(CFrame.new(-8932.322265625, 146.83154296875, 6062.55078125)) task.wait() until (CFrame.new(-8932.322265625, 146.83154296875, 6062.55078125).Position - Root.Position).Magnitude <= 8
+            EquipWeapon("Hallow Essence")
+            elseif replicated:FindFirstChild("Soul Reaper") and replicated:FindFirstChild("Soul Reaper").Humanoid.Health > 0 then
+              _tp(replicated:FindFirstChild("Soul Reaper").HumanoidRootPart.CFrame)
+            else
+              if replicated.Remotes.CommF_:InvokeServer("Bones","Check") < 50 and not workspace.Enemies:FindFirstChild("Soul Reaper") and not replicated:FindFirstChild("Soul Reaper") and not workspace.Map:FindFirstChild("HellDimension") then
+                if workspace.Enemies:FindFirstChild("Reborn Skeleton") or workspace.Enemies:FindFirstChild("Living Zombie") or workspace.Enemies:FindFirstChild("Domenic Soul") or workspace.Enemies:FindFirstChild("Posessed Mummy") then
+                  for i,v in pairs(workspace.Enemies:GetChildren()) do
+                    if v.Name == "Reborn Skeleton" or v.Name == "Living Zombie" or v.Name == "Demonic Soul" or v.Name == "Posessed Mummy" then
+                      if v:FindFirstChild("HumanoidRootPart") and v:FindFirstChild("Humanoid") and v:FindFirstChild("Humanoid").Health > 0 then
+                        repeat task.wait() Attack.Kill(v,_G.CDK_YM)until not _G.CDK_YM or v.Humanoid.Health <= 0 or not v.Parent
+                      end
+                    end
+                  end
+                else
+                  _tp(CFrame.new(-9515.2255859375, 164.0062255859375, 5785.38330078125))
+                end
+              else
+                replicated.Remotes.CommF_:InvokeServer("Bones", "Buy", 1, 1)
+              end
+            end
+          end
+        end
+      end
+    end)
+  end
+end)
+
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Auto Tushita CDK", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.CDK_TS = Value
+end)
+spawn(function()
+  while wait() do
+    pcall(function()
+      if _G.CDK_TS then
+        if tostring(replicated.Remotes.CommF_:InvokeServer("CDKQuest", "OpenDoor")) ~= "opened" then
+          wait(.7) replicated.Remotes.CommF_:InvokeServer("CDKQuest", "OpenDoor")
+          wait(.3) replicated.Remotes.CommF_:InvokeServer("CDKQuest", "OpenDoor", true)
+        else
+          if replicated.Remotes.CommF_:InvokeServer("CDKQuest","Progress")["Finished"] == nil then
+            replicated.Remotes.CommF_:InvokeServer("CDKQuest","StartTrial","Good")
+          elseif replicated.Remotes.CommF_:InvokeServer("CDKQuest","Progress")["Finished"] == false then
+            if tonumber(replicated.Remotes.CommF_:InvokeServer("CDKQuest","Progress")["Good"]) == -3 then
+              QuestTushita_1 = true
+              QuestTushita_2 = false
+              QuestTushita_3 = false
+              repeat wait() _tp(CFrame.new(-4602.5107421875, 16.446542739868164, -2880.998046875)) until (CFrame.new(-4602.5107421875, 16.446542739868164, -2880.998046875).Position - game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 3 or not _G.CDK_TS or tonumber(replicated.Remotes.CommF_:InvokeServer("CDKQuest","Progress")["Good"]) == 1
+              if (CFrame.new(-4602.5107421875, 16.446542739868164, -2880.998046875).Position - game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 10 then
+                wait(.7) replicated.Remotes.CommF_:InvokeServer("CDKQuest","BoatQuest",workspace.NPCs:FindFirstChild("Luxury Boat Dealer"),"Check")
+                wait(.5) replicated.Remotes.CommF_:InvokeServer("CDKQuest","BoatQuest",workspace.NPCs:FindFirstChild("Luxury Boat Dealer"))
+              end
+                wait(1) repeat wait() _tp(CFrame.new(4001.185302734375, 10.089399337768555, -2654.86328125)) until (CFrame.new(4001.185302734375, 10.089399337768555, -2654.86328125).Position - game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 3 or not _G.CDK_TS or tonumber(replicated.Remotes.CommF_:InvokeServer("CDKQuest","Progress")["Good"]) == 1
+                if (CFrame.new(4001.185302734375, 10.089399337768555, -2654.86328125).Position - game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 10 then
+                wait(.7) replicated.Remotes.CommF_:InvokeServer("CDKQuest","BoatQuest",workspace.NPCs:FindFirstChild("Luxury Boat Dealer"),"Check")
+                wait(.5) replicated.Remotes.CommF_:InvokeServer("CDKQuest","BoatQuest",workspace.NPCs:FindFirstChild("Luxury Boat Dealer"))
+                end
+                  wait(1) repeat wait() _tp(CFrame.new(-9530.763671875, 7.245208740234375, -8375.5087890625)) until (CFrame.new(-9530.763671875, 7.245208740234375, -8375.5087890625).Position - game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 3 or not _G.CDK_TS or tonumber(replicated.Remotes.CommF_:InvokeServer("CDKQuest","Progress")["Good"]) == 1
+                  if (CFrame.new(-9530.763671875, 7.245208740234375, -8375.5087890625).Position - game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 10 then
+                    wait(.7) replicated.Remotes.CommF_:InvokeServer("CDKQuest","BoatQuest",workspace.NPCs:FindFirstChild("Luxury Boat Dealer"),"Check")
+                    wait(.5) replicated.Remotes.CommF_:InvokeServer("CDKQuest","BoatQuest",workspace.NPCs:FindFirstChild("Luxury Boat Dealer"))
+                  end
+                  wait(1)
+                  elseif tonumber(replicated.Remotes.CommF_:InvokeServer("CDKQuest","Progress")["Good"]) == -4 then
+                    QuestTushita_1 = false
+                    QuestTushita_2 = true
+                    QuestTushita_3 = false
+                    repeat wait()
+                      _G.AutoRaidCastle = true
+                    until not _G.CDK_TS or tonumber(replicated.Remotes.CommF_:InvokeServer("CDKQuest","Progress")["Good"]) == 2 
+                      _G.AutoRaidCastle = false         
+                  elseif tonumber(replicated.Remotes.CommF_:InvokeServer("CDKQuest","Progress")["Good"]) == -5 then
+                    QuestTushita_1 = false
+                    QuestTushita_2 = false
+                    QuestTushita_3 = true
+                    if workspace.Enemies:FindFirstChild("Cake Queen") then
+                      for i,v in pairs(workspace.Enemies:GetChildren()) do
+                        if v.Name == "Cake Queen" then
+                          if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+                            repeat wait()
+                              Attack.Kill(v, _G.CDK_TS)
+                            until not _G.CDK_TS or not v.Parent or v.Humanoid.Health <= 0 or tonumber(replicated.Remotes.CommF_:InvokeServer("CDKQuest","Progress")["Good"]) == 3
+                          end
+                        end
+                      end
+                     elseif replicated:FindFirstChild("Cake Queen") and replicated:FindFirstChild("Cake Queen").Humanoid.Health > 0 then
+                       _tp(replicated:FindFirstChild("Cake Queen").HumanoidRootPart.CFrame * CFrame.new(0,30,0))
+                     else
+                   if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - workspace.Map.HeavenlyDimension.Spawn.Position).Magnitude <= 1000 then
+                     for i,v in pairs(workspace.Map.HeavenlyDimension.Exit:GetChildren()) do
+                       Ex = i
+                     end
+                     if Ex == 2 then
+                       repeat wait()
+                         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Map.HeavenlyDimension.Exit.CFrame
+                       until not _G.CDK_TS or tonumber(replicated.Remotes.CommF_:InvokeServer("CDKQuest","Progress")["Good"]) == 3
+                    end
+                   repeat wait()
+                     repeat wait() 
+                       _tp(CFrame.new(-22529.6171875, 5275.77392578125, 3873.5712890625)) 
+                       for i, v in pairs(workspace.Map.HeavenlyDimension:GetDescendants()) do
+                         if v:IsA("ProximityPrompt") then fireproximityprompt(v) end
+                       end
+                     until (CFrame.new(-22529.6171875, 5275.77392578125, 3873.5712890625).Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude < 5
+                     wait(2)
+                    _G.DoneT1 = true
+                  until not _G.CDK_TS or _G.DoneT1
+                  repeat wait()
+                    repeat wait()
+                      _tp(CFrame.new(-22637.291015625, 5281.365234375, 3749.28857421875)) 
+                       for i, v in pairs(workspace.Map.HeavenlyDimension:GetDescendants()) do
+                         if v:IsA("ProximityPrompt") then fireproximityprompt(v) end
+                       end
+                    until (CFrame.new(-22637.291015625, 5281.365234375, 3749.28857421875).Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude < 5
+                    wait(2) _G.DoneT2 = true
+                  until _G.DoneT2 or _G.CDK_TS == false
+                  repeat wait()
+                    repeat task.wait() 
+                      _tp(CFrame.new(-22791.14453125, 5277.16552734375, 3764.570068359375)) 
+                      for i, v in pairs(workspace.Map.HeavenlyDimension:GetDescendants()) do
+                        if v:IsA("ProximityPrompt") then fireproximityprompt(v) end
+                      end
+                    until (CFrame.new(-22791.14453125, 5277.16552734375, 3764.570068359375).Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude < 5
+                    wait(2) _G.DoneT3 = true
+                  until _G.DoneT3 or _G.CDK_TS == false
+                  for i,v in pairs(workspace.Enemies:GetChildren()) do
+                    if (v:FindFirstChild("HumanoidRootPart").Position - CFrame.new(-22695.7012, 5270.93652, 3814.42847, 0.11794927, 3.32185834e-08, 0.99301964, -8.73070718e-08, 1, -2.30819008e-08, -0.99301964, -8.3975138e-08, 0.11794927).Position).Magnitude <= 300 then
+                      if v:FindFirstChild("HumanoidRootPart") and v:FindFirstChild("Humanoid") and v:FindFirstChild("Humanoid").Health > 0 then
+                        repeat wait()
+                          Attack.Kill(v, _G.CDK_TS)
+                        until not _G.CDK_TS or v.Humanoid.Health <= 0 or not v.Parent                      
+                      end
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
+      end
+    end)
+  end
+end)
+Tabs.Quests:AddSection("True Triple Katana Sword")
+Tabs.Quests:AddButton({Title = "Buy Legendary Sword", Description = "",
+Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("LegendarySwordDealer","1")
+  replicated.Remotes.CommF_:InvokeServer("LegendarySwordDealer","2")
+  replicated.Remotes.CommF_:InvokeServer("LegendarySwordDealer","3")
+end})
+Tabs.Quests:AddButton({Title = "Buy True Triple Katana Sword", Description = "",
+Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("MysteriousMan","2")
+end})
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Tween to Legendary Sword Dealer", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.Tp_LgS = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.Tp_LgS then
+	  pcall(function()
+	    for _,v in pairs(replicated.NPCs:GetChildren()) do
+	      if v.Name == "Legendary Sword Dealer " then _tp(v.HumanoidRootPart.CFrame) end
+        end   	   
+	  end)
+    end
+  end
+end)
+
+Tabs.Quests:AddSection("Pole / God Enal's")
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Auto Pole V1", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.AutoPole = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.AutoPole then
+      pcall(function()
+        local v = GetConnectionEnemies("Thunder God")
+	    if v then
+          repeat task.wait() Attack.Kill(v, _G.AutoPole) until not _G.AutoPole or not v.Parent or v.Humanoid.Health <= 0
+        else
+          _tp(CFrame.new(-7994.984375, 5761.025390625, -2088.6479492188))
+        end
+      end)
+    end
+  end
+end)
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Auto Pole V2 [Beta]", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.AutoPoleV2 = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.AutoPoleV2 then        
+	   if not GetBP("Pole (1st Form)") then replicated.Remotes.CommF_:InvokeServer("LoadItem","Pole (1st Form)") end
+	   if not GetBP("Pole (2nd Form)") then replicated.Remotes.CommF_:InvokeServer("LoadItem","Pole (2nd Form)") end      
+	   if GetBP("Pole (1st Form)") and GetBP("Pole (1st Form)").Level.Value <= 179 then _G.Level = true elseif GetBP("Pole (1st Form)") and GetBP("Pole (1st Form)").Level.Value >= 180 then _G.Level = false end	   
+	   if not GetBP("Rumble Fruit") then return end
+	   if GetBP("Rumble Fruit").AwakenedMoves:FindFirstChild("Z") and GetBP("Rumble Fruit").AwakenedMoves:FindFirstChild("X") and GetBP("Rumble Fruit").AwakenedMoves:FindFirstChild("C") and GetBP("Rumble Fruit").AwakenedMoves:FindFirstChild("V") and GetBP("Rumble Fruit").AwakenedMoves:FindFirstChild("F") then
+	     _G.SelectChip = nil
+		 _G.Raiding = false
+		 _G.Auto_Awakener = false
+		if plr.Data.Fragments.Value >= 5000 then
+          replicated.Remotes.CommF_:InvokeServer("Thunder God", "Talk") wait(Sec)
+          replicated.Remotes.CommF_:InvokeServer("Thunder God", "Sure")
+        end
+        elseif replicated.Remotes.CommF_:InvokeServer("Awakener","Check") == nil or replicated.Remotes.CommF_:InvokeServer("Awakener","Check") == 0 then
+          _G.SelectChip = "Rumble"
+          local Buying = replicated.Remotes.CommF_:InvokeServer("RaidsNpc","Select",_G.SelectChip)
+          if Buying then Buying:Stop() end
+          _G.Raiding = true
+          _G.Auto_Awakener = true
+	    end	   
+      end
+    end)
+  end
+end)
+
+Tabs.Quests:AddSection("Items Law/Order Sword")
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Auto Law Sword", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.AutoLawKak = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.AutoLawKak then
+      pcall(function()
+        local v = GetConnectionEnemies("Order")
+        if v then repeat task.wait() Attack.Kill(v, _G.AutoLawKak) until _G.AutoLawKak == false or not v.Parent or v.Humanoid.Health <= 0
+        else _tp(CFrame.new(-6217.2021484375, 28.047645568848, -5053.1357421875))
+        end
+      end)
+    end
+  end
+end)
+Tabs.Quests:AddButton({Title = "Buy Microchip Law", Description = "",
+Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BlackbeardReward","Microchip","2")
+end})
+Tabs.Quests:AddButton({Title = "Start Law Raids", Description = "",
+Callback = function()
+  fireclickdetector(workspace.Map.CircleIsland.RaidSummon.Button.Main.ClickDetector)
+end})
+
+Tabs.Quests:AddSection("East Blue Misc")
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Auto Saw Sword", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.AutoSaw = Value
+end)
+spawn(function()
+  while wait(.2) do
+    pcall(function()
+      if _G.AutoSaw then
+        local v = GetConnectionEnemies("The Saw")
+        if v then repeat task.wait() Attack.Kill(v, _G.AutoSaw)until _G.AutoSaw == false or v.Humanoid.Health <= 0
+        else _tp(CFrame.new(-784.89715576172, 72.427383422852, 1603.5822753906))
+        end
+      end
+    end)
+  end
+end)
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Auto Saber Sword", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.AutoSaber = Value
+end)
+spawn(function()
+  while wait(.2) do
+    pcall(function()
+      if _G.AutoSaber and plr.Data.Level.Value >= 200 and not plr.Backpack:FindFirstChild("Saber") and not plr.Character:FindFirstChild("Saber") then
+        if workspace.Map.Jungle.Final.Part.Transparency == 0 then
+	      if workspace.Map.Jungle.QuestPlates.Door.Transparency == 0 then
+		    if (CFrame.new(-1612.55884, 36.9774132, 148.719543, 0.37091279, 3.0717151e-09, -0.928667724, 3.97099491e-08, 1, 1.91679348e-08, 0.928667724, -4.39869794e-08, 0.37091279).Position - plr.Character.HumanoidRootPart.Position).Magnitude <= 100 then
+		      _tp(plr.Character.HumanoidRootPart.CFrame)
+		      wait(0.5)
+		      plr.Character.HumanoidRootPart.CFrame = workspace.Map.Jungle.QuestPlates.Plate1.Button.CFrame
+		      wait(0.5)
+		      plr.Character.HumanoidRootPart.CFrame = workspace.Map.Jungle.QuestPlates.Plate2.Button.CFrame
+		      wait(0.5)
+		      plr.Character.HumanoidRootPart.CFrame = workspace.Map.Jungle.QuestPlates.Plate3.Button.CFrame
+	    	  wait(0.5)
+		      plr.Character.HumanoidRootPart.CFrame = workspace.Map.Jungle.QuestPlates.Plate4.Button.CFrame
+		      wait(0.5)
+		      plr.Character.HumanoidRootPart.CFrame = workspace.Map.Jungle.QuestPlates.Plate5.Button.CFrame
+		      wait(0.5) 
+		    else
+		      _tp(CFrame.new(-1612.55884, 36.9774132, 148.719543, 0.37091279, 3.0717151e-09, -0.928667724, 3.97099491e-08, 1, 1.91679348e-08, 0.928667724, -4.39869794e-08, 0.37091279))
+		    end
+	      else
+		    if workspace.Map.Desert.Burn.Part.Transparency == 0 then
+		      if plr.Backpack:FindFirstChild("Torch") or plr.Character:FindFirstChild("Torch") then
+		        EquipWeapon("Torch")
+		        firetouchinterest(plr.Character.Torch.Handle,workspace.Map.Desert.Burn.Fire,0)
+			    firetouchinterest(plr.Character.Torch.Handle,workspace.Map.Desert.Burn.Fire,1)
+		   	    _tp(CFrame.new(1114.61475, 5.04679728, 4350.22803, -0.648466587, -1.28799094e-09, 0.761243105, -5.70652914e-10, 1, 1.20584542e-09, -0.761243105, 3.47544882e-10, -0.648466587))
+		      else
+		        _tp(CFrame.new(-1610.00757, 11.5049858, 164.001587, 0.984807551, -0.167722285, -0.0449818149, 0.17364943, 0.951244235, 0.254912198, 3.42372805e-05, -0.258850515, 0.965917408))                    end
+		      else
+		        if replicated.Remotes.CommF_:InvokeServer("ProQuestProgress","SickMan") ~= 0 then
+		          replicated.Remotes.CommF_:InvokeServer("ProQuestProgress","GetCup")
+			      wait(0.5)
+			      EquipWeapon("Cup")
+			      wait(0.5)
+			      replicated.Remotes.CommF_:InvokeServer("ProQuestProgress","FillCup",plr.Character.Cup)
+			      wait(Sec)
+			      replicated.Remotes.CommF_:InvokeServer("ProQuestProgress","SickMan") 
+		        else
+		 	      if replicated.Remotes.CommF_:InvokeServer("ProQuestProgress","RichSon") == nil then
+			        replicated.Remotes.CommF_:InvokeServer("ProQuestProgress","RichSon")
+		          elseif replicated.Remotes.CommF_:InvokeServer("ProQuestProgress","RichSon") == 0 then
+			        if workspace.Enemies:FindFirstChild("Mob Leader") or replicated:FindFirstChild("Mob Leader") then
+			          _tp(CFrame.new(-2967.59521, -4.91089821, 5328.70703, 0.342208564, -0.0227849055, 0.939347804, 0.0251603816, 0.999569714, 0.0150796166, -0.939287126, 0.0184739735, 0.342634559))
+			         for i,v in pairs(workspace.Enemies:GetChildren()) do
+				       if v.Name == "Mob Leader" and Attack.Alive(v) then
+				       repeat task.wait() Attack.Kill(v, _G.AutoSaber)until v.Humanoid.Health <= 0 or _G.AutoSaber == false
+				       end
+				     end
+			       end
+			     elseif replicated.Remotes.CommF_:InvokeServer("ProQuestProgress","RichSon") == 1 then
+			       replicated.Remotes.CommF_:InvokeServer("ProQuestProgress","RichSon")
+				   EquipWeapon("Relic")
+				  _tp(CFrame.new(-1404.91504, 29.9773273, 3.80598116, 0.876514494, 5.66906877e-09, 0.481375456, 2.53851997e-08, 1, -5.79995607e-08, -0.481375456, 6.30572643e-08, 0.876514494))
+				 end
+			   end
+			 end
+		   end
+		 else
+	     if workspace.Enemies:FindFirstChild("Saber Expert") or replicated:FindFirstChild("Saber Expert") then
+	       for _,v in pairs(workspace.Enemies:GetChildren()) do
+		     if v.Name == "Saber Expert" and Attack.Alive(v) then
+			   repeat task.wait() Attack.Kill(v, _G.AutoSaber) until v.Humanoid.Health <= 0 or _G.AutoSaber == false
+		       if v.Humanoid.Health <= 0 then replicated.Remotes.CommF_:InvokeServer("ProQuestProgress","PlaceRelic") end		      
+		      end
+		    end
+		  else
+		    _tp(CFrame.new(-1401.85046, 29.9773273, 8.81916237, 0.85820812, 8.76083845e-08, 0.513301849, -8.55007443e-08, 1, -2.77243419e-08, -0.513301849, -2.00944328e-08, 0.85820812))
+	      end
+	    end
+      end
+    end)
+  end
+end)
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Auto Cybrog", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.AutoColShad = Value
+end)
+spawn(function()
+  while wait(.2) do
+    if _G.AutoColShad then
+      pcall(function()
+        local v = GetConnectionEnemies("Cyborg")
+	    if v then repeat task.wait()Attack.Kill(v, _G.AutoColShad)until _G.AutoColShad == false or not v.Parent or v.Humanoid.Health <= 0
+        else _tp(CFrame.new(6094.0249023438, 73.770050048828, 3825.7348632813))
+        end
+      end)
+    end
+  end
+end)
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Auto Usoap's Hat", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.AutoGetUsoap = Value
+end)
+spawn(function()
+  while task.wait(Sec) do
+    pcall(function()
+      if _G.AutoGetUsoap then
+	   for _, v in pairs(workspace.Characters:GetChildren()) do
+          if v.Name ~= plr.Name then
+            if v.Humanoid.Health > 0 and v:FindFirstChild("HumanoidRootPart") and v.Parent and (Root.Position - v.HumanoidRootPart.Position).Magnitude <= 230 then
+              repeat task.wait() EquipWeapon(_G.SelectWeapon) _tp(v.HumanoidRootPart.CFrame * CFrame.new(1, 1, 2)) until _G.AutoGetUsoap == false or v.Humanoid.Health <= 0 or not v.Parent or not v:FindFirstChild("HumanoidRootPart") or not v:FindFirstChild("Humanoid")
+            end
+          end
+        end
+      end
+    end)
+  end
+end)
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Auto Bisento V2", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.Greybeard = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.Greybeard then
+      pcall(function()
+        if not GetWP("Bisento") then
+          replicated.Remotes.CommF_:InvokeServer("BuyItem","Bisento")
+        elseif GetWP("Bisento") then
+          replicated.Remotes.CommF_:InvokeServer("LoadItem","Bisento")
+          local v = GetConnectionEnemies("Greybeard")
+          if v then repeat wait() Attack.Kill(v,_G.Greybeard)until _G.Greybeard == false or not v.Parent or v.Humanoid.Health <= 0
+          else _tp(CFrame.new(-5023.38330078125, 28.65203285217285, 4332.3818359375))
+          end
+        end
+      end)
+    end
+  end
+end)
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Auto Warden Sword", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.WardenBoss = Value
+end)
+spawn(function()
+  while wait(.1) do
+    if _G.WardenBoss then
+      pcall(function()
+        local v = GetConnectionEnemies("Chief Warden")
+        if v then repeat wait() Attack.Kill(v,_G.WardenBoss) until _G.WardenBoss == false or not v.Parent or v.Humanoid.Health <= 0 
+        else _tp(CFrame.new(5206.92578,0.997753382,814.976746,0.342041343,-0.00062915677,0.939684749,0.00191645394,0.999998152,-2.80422337e-05,-0.939682961,0.00181045406,0.342041939))
+        end
+      end)
+    end
+  end
+end)
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Auto Marine Coat", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.MarinesCoat = Value
+end)
+spawn(function()
+  while wait(.1) do
+    if _G.MarinesCoat then
+      pcall(function()
+        local v = GetConnectionEnemies("Vice Admiral")
+        if v then repeat wait() Attack.Kill(v, _G.MarinesCoat) until _G.MarinesCoat == false or not v.Parent or v.Humanoid.Health <= 0
+        else _tp(CFrame.new(-5006.5454101563, 88.032081604004, 4353.162109375))
+        end
+      end)
+    end
+  end
+end)
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Auto Swan Coat", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.SwanCoat = Value
+end)
+spawn(function()
+  while wait(.1) do
+    if _G.SwanCoat then
+      pcall(function()
+        local v = GetConnectionEnemies("Swan")
+        if v then repeat wait()Attack.Kill(v, _G.SwanCoat)until _G.SwanCoat == false or not v.Parent or v.Humanoid.Health <= 0
+        else _tp(CFrame.new(5325.09619, 7.03906584, 719.570679, -0.309060812, 0, 0.951042235, 0, 1, 0, -0.951042235, 0, -0.309060812))
+        end
+      end)
+    end
+  end
+end)
+
+Tabs.Quests:AddSection("Rengoku Sword")
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Auto Rengoku Sword", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.IceBossRen = Value
+end)
+spawn(function()
+  pcall(function()
+    while wait(.1) do
+      if _G.IceBossRen then
+        local v = GetConnectionEnemies("Awakened Ice Admiral")
+        if v then repeat task.wait()Attack.Kill(v,_G.IceBossRen)until _G.IceBossRen == false or not v.Parent or v.Humanoid.Health <= 0
+        else _tp(CFrame.new(5668.9780273438, 28.519989013672, -6483.3520507813))
+        end
+      end
+    end
+  end)
+end)
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Auto Key Rengoku", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.KeysRen = Value
+end)
+spawn(function()
+  while wait(.1) do
+    pcall(function()
+      if _G.KeysRen then
+        if plr.Backpack:FindFirstChild(RenMon[3]) or plr.Character:FindFirstChild(RenMon[3]) then
+          EquipWeapon(RenMon[3]) wait(.1)
+          _tp(CFrame.new(6571.1201171875, 299.23028564453, -6967.841796875))
+        else
+          local v = GetConnectionEnemies(RenMon)
+          if v then repeat task.wait() Attack.Kill(v,_G.KeysRen)until plr.Backpack:FindFirstChild(RenMon[3]) or _G.KeysRen == false or not v.Parent or v.Humanoid.Health <= 0
+          else _tp(CFrame.new(5439.716796875, 84.420944213867, -6715.1635742188))
+          end
+        end
+      end
+    end)
+  end
+end)
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Auto Dragon Trident", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.AutoTridentW2 = Value
+end)
+spawn(function()
+  while wait(.1) do
+    pcall(function()
+      if _G.AutoTridentW2 then
+        local v = GetConnectionEnemies("Tide Keeper")
+        if v then repeat task.wait() Attack.Kill(v,_G.AutoTridentW2)until _G.AutoTridentW2 == false or not v.Parent or v.Humanoid.Health <= 0
+        else _tp(CFrame.new(-3795.6423339844, 105.88877105713, -11421.307617188))
+        end
+      end
+    end)
+  end
+end)
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Auto Long Sword", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.LongsWord = Value
+end)
+spawn(function()
+  while wait(.1) do
+    pcall(function()
+      if _G.LongsWord then
+        local v = GetConnectionEnemies("Diamond")
+        if v then repeat task.wait() Attack.Kill(v,_G.LongsWord)until _G.LongsWord == false or not v.Parent or v.Humanoid.Health <= 0
+        else _tp(CFrame.new(-1576.7166748047, 198.59265136719, 13.724286079407))
+        end
+      end
+    end)
+  end
+end)
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Auto Black Spikey", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.BlackSpikey = Value
+end)
+spawn(function()
+  while wait(.1) do
+    if _G.BlackSpikey then
+      pcall(function()
+        local v = GetConnectionEnemies("Jeremy")
+        if v then repeat wait() Attack.Kill(v, _G.BlackSpikey)until _G.BlackSpikey == false or not v.Parent or v.Humanoid.Health <= 0
+        else _tp(CFrame.new(2006.9261474609, 448.95666503906, 853.98284912109))
+        end
+      end)
+    end
+  end
+end)
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Auto Dark Blade V3", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.DarkBladev3 = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.DarkBladev3 and World2 then
+      if not GetBP("Dark Blade") then replicated.Remotes.CommF_:InvokeServer("LoadItem","Dark Blade") end
+        if GetBP("Fist of Darkness") > 1 then
+          if not workspace.Enemies:FindFirstChild("Darkbeard") then
+            _tp(CFrame.new(3677.08203125, 62.751937866211, -3144.8332519531))
+          elseif GetConnectionEnemies("Darkbeard") and GetBP("Fist of Darkness") >= 1 then
+            repeat wait() _tp(CFrame.new(-5719.36376953125, 48.50590515136719, -782.9759521484375)) until not _G.DarkBladev3 or (Root.Position == CFrame.new(-5719.36376953125, 48.50590515136719, -782.9759521484375).Position)
+            fireclickdetector(workspace.Map.GraveIsland.Mountain.Rocks.Button.ClickDetector)
+          end         
+        else
+          _G.AutoFarmChest = true;
+        end        
+      end
+    end)
+  end
+end)
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Auto Midnight Blade", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.AutoEcBoss = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.AutoEcBoss then
+	    if GetM("Ectoplasm") >= 99 then
+	      replicated.Remotes.CommF_:InvokeServer("Ectoplasm","Buy", 3)	   
+	    elseif GetM("Ectoplasm") <= 99 then
+	      local v = GetConnectionEnemies("Cursed Captain")
+	      if v then repeat wait()Attack.Kill(v, _G.AutoEcBoss) until not _G.AutoEcBoss or not v.Parent or v.Humanoid.Health <= 0
+	      else
+	        replicated.Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(923.21252441406, 126.9760055542, 32852.83203125)) wait(.5)
+	        _tp(CFrame.new(916.928589, 181.092773, 33422))
+	      end
+	    end	
+      end
+    end)
+  end
+end)
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Auto Darkbeard", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.Auto_Def_DarkCoat = Value
+end)
+spawn(function()
+  while wait(.1) do
+    if _G.Auto_Def_DarkCoat then
+      pcall(function()
+        if GetBP("Fist of Darkness") and not workspace.Enemies:FindFirstChild("Darkbeard") then          
+          _tp(CFrame.new(3677.08203125, 62.751937866211, -3144.8332519531))
+        elseif GetConnectionEnemies("Darkbeard") then
+          local v = GetConnectionEnemies("Darkbeard")          
+		  if v then repeat wait()Attack.Kill(v,_G.Auto_Def_DarkCoat)until _G.Auto_Def_DarkCoat == false or not v.Parent or v.Humanoid.Helath <= 0 end
+        elseif not GetBP("Fist of Darkness") and not GetConnectionEnemies("Darkbeard") then
+          repeat wait(.1) _G.AutoFarmChest = true until not _G.Auto_Def_DarkCoat or GetBP("Fist of Darkness") or GetConnectionEnemies("Darkbeard") _G.AutoFarmChest = false
+        end
+      end)
+    end
+  end
+end)
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Auto Unlocked DonSwan", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.Auto_DonAcces = Value
+end)
+spawn(function()
+  while wait(.1) do
+    if _G.Auto_DonAcces then
+      pcall(function()
+        if replicated.Remotes.CommF_:InvokeServer("GetUnlockables").FlamingoAccess == nil and plr.Data.Level.Value >= 1500 then
+          FruitPrice = {}
+	      FruitStore = {}
+		  for i,v in next,replicated:WaitForChild("Remotes").CommF_:InvokeServer("GetFruits") do
+		    if v.Price >= 1000000 then  
+		     table.insert(FruitPrice,v.Name)
+		    end
+		  end
+		  for i,v in pairs(replicated.Remotes["CommF_"]:InvokeServer("getInventoryFruits")) do
+		    for _,x in pairs(v) do
+		      if _ == "Name" then 
+		        table.insert(FruitStore,x)
+		      end
+	        end
+	          replicated.Remotes.CommF_:InvokeServer("Cousin","Buy")
+	          for _,y in pairs(FruitPrice) do
+		        for _,z in pairs(FruitStore) do
+		          if y == z and replicated.Remotes.CommF_:InvokeServer("GetUnlockables").FlamingoAccess == nil then
+		            _G.StoreF = false
+			      if not plr.Backpack:FindFirstChild(FruitStore) then
+			        replicated.Remotes.CommF_:InvokeServer("LoadFruit",tostring(y))
+			      else
+			        replicated.Remotes.CommF_:InvokeServer("TalkTrevor","1")
+			        replicated.Remotes.CommF_:InvokeServer("TalkTrevor","2")
+			        replicated.Remotes.CommF_:InvokeServer("TalkTrevor","3")
+			      end
+			    end
+		      end 
+		    end
+		    if replicated.Remotes.CommF_:InvokeServer("GetUnlockables").FlamingoAccess ~= nil then
+		      _G.StoreF = true
+		      _G.Auto_DonAcces = false
+		    end
+	      end
+        end
+      end)
+    end
+  end
+end)
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Auto Swan Glasses", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.Auto_SwanGG = Value
+end)
+spawn(function()
+  while wait(.2) do
+    if _G.Auto_SwanGG then
+      pcall(function()
+        local v = GetConnectionEnemies("Don Swan")
+        if v then repeat wait() Attack.Kill(v,_G.Auto_SwanGG)until _G.Auto_SwanGG == false or not v.Parent or v.Humanoid.Health <= 0
+	    else _tp(CFrame.new(2286.2004394531, 15.177839279175, 863.8388671875))
+        end
+      end)
+    end
+  end
+end)
+
+Tabs.Quests:AddSection("Cavender + Twin Hooks + Bigmom")
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Auto Bigmom", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.AutoBigmom = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.AutoBigmom then
+      pcall(function()
+        local bx = GetConnectionEnemies("Cake Queen")
+        if bx then repeat task.wait() Attack.Kill(bx, _G.AutoBigmom) until not _G.AutoBigmom or not bx.Parent or bx.Humanoid.Health <= 0
+        else _tp(CFrame.new(-709.3132934570312, 381.6005859375, -11011.396484375))
+        end
+      end)
+    end
+  end
+end)
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Auto Canvendish Sword", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.Auto_Cavender = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.Auto_Cavender then
+        local v = GetConnectionEnemies("Beautiful Pirate")
+	    if v then repeat wait() Attack.Kill(v,_G.Auto_Cavender)until not _G.Auto_Cavender or v.Humanoid.Health <= 0
+	    else _tp(CFrame.new(5283.609375,22.56223487854,-110.78285217285))
+	    end
+      end
+    end)
+  end
+end)
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Auto Twin Hooks", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.TwinHook = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.TwinHook then
+        local v = GetConnectionEnemies("Captain Elephant")
+	    if v then repeat wait()Attack.Kill(v,_G.TwinHook)until not _G.TwinHook or v.Humanoid.Health <= 0
+	    else
+          replicated.Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-12471.169921875, 374.94024658203, -7551.677734375)) wait(.2)
+          _tp(CFrame.new(-13376.7578125, 433.28689575195, -8071.392578125))
+	    end
+      end
+    end)
+  end
+end)
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Auto Serpent Bow", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.AutoSerpentBow = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.AutoSerpentBow then
+      local v = GetConnectionEnemies("Hydra Leader")
+      if v then	repeat wait() Attack.Kill(v,_G.AutoSerpentBow)until not _G.AutoSerpentBow or not v.Parent or v.Humanoid.Health <= 0
+	  else _tp(CFrame.new(5821.89794921875, 1019.0950927734375, -73.71923065185547))
+      end
+    end
+  end
+end)
+local Q = Tabs.Quests:AddToggle("Q", {Title = "Auto Lei Accessory", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.AutoKilo = Value
+end)
+spawn(function()
+  while wait(.2) do
+    if _G.AutoKilo then
+      pcall(function()
+        local v = GetConnectionEnemies("Kilo Admiral")
+        if v then repeat task.wait()Attack.Kill(v,_G.AutoKilo)until not _G.AutoKilo or not v.Parent or v.Humanoid.Health <= 0
+        else _tp(CFrame.new(2764.2233886719, 432.46154785156, -7144.4580078125))
+        end
+      end)
+    end
+  end
+end)
+
+Tabs.Mirage:AddSection("Mystic Island / Full Moon")
+FullMOOn = Tabs.Mirage:AddParagraph({Title = " FullMoon Status ",Content = ""})
+Ismirage = Tabs.Mirage:AddParagraph({Title = " Mirage Island Status ",Content = ""})
+spawn(function()
+  while wait(.2) do
+    if workspace.Map:FindFirstChild("MysticIsland") or workspace._WorldOrigin.Locations:FindFirstChild("Mirage Island") then
+      Ismirage:SetDesc(" Mirage Island : True")
+    else
+      Ismirage:SetDesc(" Mirage Island : False")
+    end
+  end
+end)
+spawn(function()
+  while wait(.2) do
+    pcall(function()
+      moon8 = "http://www.roblox.com/asset/?id=9709150401"
+      moon7 = "http://www.roblox.com/asset/?id=9709150086"
+      moon6 = "http://www.roblox.com/asset/?id=9709149680"
+      moon5 = "http://www.roblox.com/asset/?id=9709149431"
+      moon4 = "http://www.roblox.com/asset/?id=9709149052"
+      moon3 = "http://www.roblox.com/asset/?id=9709143733"
+      moon2 = "http://www.roblox.com/asset/?id=9709139597"
+      moon1 = "http://www.roblox.com/asset/?id=9709135895"
+      moon = Getmoon()
+      if moon == moon1 then
+        FullMOOn:SetDesc("Moon : 0 / 8")
+      elseif moon == moon2 then
+        FullMOOn:SetDesc("Moon : 1 / 8")
+      elseif moon == moon3 then
+        FullMOOn:SetDesc("Moon : 2 / 8")
+      elseif moon == moon4 then
+        FullMOOn:SetDesc("Moon : 3 / 8 [ Next Night ]")
+      elseif moon == moon5 then
+        FullMOOn:SetDesc("Moon : 4 / 8 [ Full Moon ]")
+      elseif moon == moon6 then
+        FullMOOn:SetDesc("Moon : 5 / 8 [ Last Night ]")
+      elseif moon == moon7 then
+        FullMOOn:SetDesc("Moon : 6 / 8")
+      elseif moon == moon8 then
+        FullMOOn:SetDesc("Moon : 7 / 8")
+      end
+    end)
+  end
+end)
+local Q = Tabs.Mirage:AddToggle("Q", {Title = "Auto Find Mirage Island", Description = "turn on for finding & tween mirage island", Default = false})
+Q:OnChanged(function(Value)
+  _G.FindMirage = Value
+end)
+spawn(function()
+  while wait() do
+    if _G.FindMirage then 
+      pcall(function()
+        if not workspace["_WorldOrigin"].Locations:FindFirstChild("Mirage Island", true) then                
+          local myBoat = CheckBoat()
+          if not myBoat then
+            local buyBoatCFrame = CFrame.new(-16927.451, 9.086, 433.864)
+            TeleportToTarget(buyBoatCFrame)
+            if (buyBoatCFrame.Position - plr.Character.HumanoidRootPart.Position).Magnitude <= 10 then replicated.Remotes.CommF_:InvokeServer("BuyBoat", _G.SelectedBoat) end
+          else
+            if plr.Character.Humanoid.Sit == false then
+              local boatSeatCFrame = myBoat.VehicleSeat.CFrame * CFrame.new(0, 1, 0)
+              _tp(boatSeatCFrame)
+            else            
+              repeat wait()
+                local targetDestination = CFrame.new(-10000000, 31, 37016.25)
+                if CheckEnemiesBoat() or CheckTerrorShark() or CheckPirateGrandBrigade() then
+                  _tp(CFrame.new(-10000000, 150, 37016.25))
+                else
+                  _tp(CFrame.new(-10000000, 31, 37016.25))
+                end
+              until not _G.FindMirage or (targetDestination.Position - plr.Character.HumanoidRootPart.Position).Magnitude <= 10 or workspace["_WorldOrigin"].Locations:FindFirstChild("Mirage Island") or plr.Character.Humanoid.Sit == false plr.Character.Humanoid.Sit = false
+            end
+          end
+        else
+          _tp(workspace.Map.MysticIsland.Center.CFrame*CFrame.new(0,300,0))
+        end
+      end)
+    end
+  end
+end)
+local Q = Tabs.Mirage:AddToggle("Q", {Title = "Auto Tween To Highest Point", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.HighestMirage = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.HighestMirage then 
+      pcall(function()
+      if workspace["_WorldOrigin"].Locations:FindFirstChild("Mirage Island",true) then _tp(workspace.Map.MysticIsland.Center.CFrame*CFrame.new(0,400,0))end
+      end)
+    end
+  end
+end)
+local Q = Tabs.Mirage:AddToggle("Q", {Title = "Auto Collect Gear", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.TPGEAR = Value
+end)
+spawn(function()
+  pcall(function()
+    while wait(0.1) do
+      if _G.TPGEAR then
+        for i,v in pairs(workspace.Map:FindFirstChild('MysticIsland'):GetChildren()) do
+          if v.Name == "Part" then
+            if v.ClassName == "MeshPart" then _tp(v.CFrame) end
+          end
+        end
+      end
+    end
+  end)
+end)
+local Q = Tabs.Mirage:AddToggle("Q", {Title = "Change Transparency can see", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.can = Value
+end)
+spawn(function()
+  pcall(function()
+    while wait(Sec) do
+      if _G.can then
+        for i,v in pairs(workspace.Map:FindFirstChild('MysticIsland'):GetChildren()) do
+          if v.Name == "Part" then
+            if v.ClassName == "MeshPart" then
+              v.Transparency = 0
+            else 
+              v.Transparency = 1
+            end
+          end
+        end
+      end
+    end
+  end)
+end)
+local Q = Tabs.Mirage:AddToggle("Q", {Title = "Auto Tween Advanced Fruit Dealer", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.Addealer = Value
+end)
+spawn(function()
+  while wait() do
+    if _G.Addealer then
+	  pcall(function()
+	    for _,v in pairs(replicated.NPCs:GetChildren()) do
+	    if v.Name == "Advanced Fruit Dealer" then _tp(v.HumanoidRootPart.CFrame) end
+        end   	   
+	 end)
+    end
+  end
+end)
+local Q = Tabs.Mirage:AddToggle("Q", {Title = "Auto Collect Mirage Chest", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.FarmChestM = Value
+end)
+spawn(function()
+  while wait(.2) do
+    if _G.FarmChestM then
+      pcall(function()
+        if workspace.Map.MysticIsland.Chests:FindFirstChild("DiamondChest") or workspace.Map.MysticIsland.Chests:FindFirstChild("FragChest") then
+          local CollectionService = game:GetService("CollectionService")
+          local Players = game:GetService("Players")
+          local Player = Players.LocalPlayer
+          local Character = Player.Character or Player.CharacterAdded:Wait()                
+          if not Character then return end                
+          local Position = Character:GetPivot().Position
+          local Chests = CollectionService:GetTagged("_ChestTagged")      
+          local Distance, Nearest = math.huge, nil  
+          for i = 1, #Chests do
+            local Chest = Chests[i]
+            local Magnitude = (Chest:GetPivot().Position - Position).Magnitude        
+            if not SelectedIsland or Chest:IsDescendantOf(SelectedIsland) then
+              if not Chest:GetAttribute("IsDisabled") and Magnitude < Distance then
+                Distance = Magnitude
+                Nearest = Chest
+              end
+            end
+          end
+        if Nearest then _tp(Nearest:GetPivot()) end
+        end
+      end)
+    end
+  end
+end)
+
+Tabs.Mirage:AddSection("Skull Guitars / Misc")
+local CheckSoul = Tabs.Mirage:AddParagraph({Title = " Skull Guitar Quests ",Content = ""})
+spawn(function()
+  while wait(.2) do
+    pcall(function()
+      if Quest1 == true then CheckSoul:SetDesc(" Quest Number : Quest1")
+	  elseif Quest2 == true then CheckSoul:SetDesc(" Quest Number : Quest2")
+	  elseif Quest3 == true then CheckSoul:SetDesc(" Quest Number : Quest3")
+	  elseif Quest4 == true then CheckSoul:SetDesc(" Quest Number : Quest4")
+	  elseif GetWP("Skull Guitar") then CheckSoul:SetDesc(" Quest Number : Collect!!")
+	  else CheckSoul:SetDesc(" Quest Number : No Quest!!")
+      end
+    end)
+  end
+end)
+local Q = Tabs.Mirage:AddToggle("Q", {Title = "Auto Skull Guitar", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.Auto_Soul_Guitar = Value
+end)
+task.spawn(function()
+  while wait() do
+    if _G.Auto_Soul_Guitar then 
+      pcall(function() 
+        local v = GetConnectionEnemies("Living Zombie")
+        if v then 
+          v.HumanoidRootPart.CFrame = CFrame.new(-10138.3974609375, 138.6524658203125, 5902.89208984375)
+          v.Head.CanCollide = false
+          v.Humanoid.Sit = false
+          v.HumanoidRootPart.CanCollide = false
+          v.Humanoid.JumpPower = 0
+          v.Humanoid.WalkSpeed = 0
+          if v.Humanoid:FindFirstChild('Animator') then v.Humanoid:FindFirstChild('Animator'):Destroy() end
+        end    
+      end)
+    end
+  end
+end)
+function getT(num)
+    local rotation
+    if num == 1 then
+        rotation = workspace.Map["Haunted Castle"].Tablet.Segment1.Line.Rotation
+    elseif num == 3 then
+        rotation = workspace.Map["Haunted Castle"].Tablet.Segment3.Line.Rotation
+    elseif num == 4 then
+        rotation = workspace.Map["Haunted Castle"].Tablet.Segment4.Line.Rotation
+    elseif num == 7 then
+        rotation = workspace.Map["Haunted Castle"].Tablet.Segment7.Line.Rotation
+    elseif num == 10 then
+        rotation = workspace.Map["Haunted Castle"].Tablet.Segment10.Line.Rotation
+    end
+    if rotation then
+        return rotation.Z
+    end
+end
+function getRT(num)
+    local Trophy_Q = workspace.Map["Haunted Castle"].Trophies.Quest
+    local Trophy_Pos
+    for _, v in pairs(Trophy_Q:GetChildren()) do
+        if num == 1 and v.Name == "Trophy1" and v:FindFirstChild("Handle") then
+            Trophy_Pos = v.Handle.Rotation
+        elseif num == 2 and v.Name == "Trophy2" and v:FindFirstChild("Handle") then
+            Trophy_Pos = v.Handle.Rotation         
+        elseif num == 3 and v.Name == "Trophy3" and v:FindFirstChild("Handle") then
+            Trophy_Pos = v.Handle.Rotation       
+        elseif num == 4 and v.Name == "Trophy4" and v:FindFirstChild("Handle") then
+            Trophy_Pos = v.Handle.Rotation  
+        elseif num == 5 and v.Name == "Trophy5" and v:FindFirstChild("Handle") then
+            Trophy_Pos = v.Handle.Rotation     
+        end          
+        if Trophy_Pos then
+            return Trophy_Pos.Z   
+        end
+    end
+end
+GetFirePlacard = function(Number,Side)
+  if tostring(workspace.Map["Haunted Castle"]["Placard"..Number][Side].Indicator.BrickColor) ~= "Pearl" then
+    fireclickdetector(workspace.Map["Haunted Castle"]["Placard"..Number][Side].ClickDetector)
+  end
+end
+spawn(function()
+  repeat task.wait() until _G.Auto_Soul_Guitar
+  while wait(Sec) do
+    pcall(function()
+      if _G.Auto_Soul_Guitar then
+        if World3 then
+          replicated.Remotes.CommF_:InvokeServer("gravestoneEvent", 2)
+          replicated.Remotes.CommF_:InvokeServer("gravestoneEvent", 2, true)
+          if replicated.Remotes.CommF_:InvokeServer("GuitarPuzzleProgress","Check") == nil then
+            _tp(CFrame.new(-8655.0166015625, 141.3166961669922, 6160.0224609375))
+            replicated.Remotes.CommF_:InvokeServer("gravestoneEvent", 2)
+            replicated.Remotes.CommF_:InvokeServer("gravestoneEvent", 2, true)
+           elseif replicated.Remotes.CommF_:InvokeServer("GuitarPuzzleProgress","Check").Swamp == false then
+             Quest1 = true;
+             Quest2 = false;
+             Quest3 = false;
+             Quest4 = false;
+             local v = GetConnectionEnemies("Living Zombie")
+             if v then repeat task.wait() Attack.Kill(v,_G.Auto_Soul_Guitar) until not _G.Auto_Soul_Guitar or v.Humanoid.Health <= 0 or not v.Parent or workspace.Map["Haunted Castle"].SwampWater.Color ~= Color3.fromRGB(117, 0, 0)
+             else _tp(CFrame.new(-10170.7275390625, 138.6524658203125, 5934.26513671875))
+             end
+           elseif replicated.Remotes.CommF_:InvokeServer("GuitarPuzzleProgress","Check").Gravestones == false then
+             Quest1 = false;
+             Quest2 = true;
+             Quest3 = false;
+             Quest4 = false;
+             GetFirePlacard("7","Left")
+             GetFirePlacard("6","Left")
+             GetFirePlacard("5","Left")
+             GetFirePlacard("4","Right")
+             GetFirePlacard("3","Left")
+             GetFirePlacard("2","Right")
+             GetFirePlacard("1","Right")
+           elseif replicated.Remotes.CommF_:InvokeServer("GuitarPuzzleProgress","Check").Ghost == false then
+             replicated.Remotes.CommF_:InvokeServer("GuitarPuzzleProgress", "Ghost")
+             replicated.Remotes.CommF_:InvokeServer("GuitarPuzzleProgress", "Ghost", true)
+           elseif replicated.Remotes.CommF_:InvokeServer("GuitarPuzzleProgress","Check").Trophies == false then
+             Quest1 = false;
+             Quest2 = false;
+             Quest3 = true;
+             Quest4 = false;             
+             _tp(CFrame.new(-9532.8232421875, 6.471667766571045, 6078.068359375))
+             repeat wait()
+               local z1 = getRT(1)
+               local _z1 = getT(1)
+               if z1 and _z1 then
+                 fireclickdetector(workspace.Map["Haunted Castle"].Tablet.Segment1:FindFirstChild("ClickDetector"))
+               end
+             until z1 == _z1
+            repeat wait()
+              local z2 = getRT(2)
+              local _z2 = getT(3)
+              if z2 and _z2 then
+                fireclickdetector(workspace.Map["Haunted Castle"].Tablet.Segment3:FindFirstChild("ClickDetector"))
+              end
+            until z2 == _z2
+          repeat wait()
+            local z3 = getRT(3)
+            local _z3 = getT(4)
+            if z3 and _z3 then
+              fireclickdetector(workspace.Map["Haunted Castle"].Tablet.Segment4:FindFirstChild("ClickDetector"))
+            end
+          until z3 == _z3
+          repeat wait()
+            local z4 = getRT(4)
+            local _z4 = getT(7)
+            if z4 and _z4 then
+              fireclickdetector(workspace.Map["Haunted Castle"].Tablet.Segment7:FindFirstChild("ClickDetector"))
+            end
+          until z4 == _z4
+        repeat wait()
+          local z5 = getRT(5)
+          local _z5 = getT(10)
+          if z5 and _z5 then
+            fireclickdetector(workspace.Map["Haunted Castle"].Tablet.Segment10:FindFirstChild("ClickDetector"))    
+          end
+        until z5 == _z5
+        repeat wait()    
+          fireclickdetector(workspace.Map["Haunted Castle"].Tablet.Segment2:FindFirstChild("ClickDetector"))
+          fireclickdetector(workspace.Map["Haunted Castle"].Tablet.Segment5:FindFirstChild("ClickDetector"))
+          fireclickdetector(workspace.Map["Haunted Castle"].Tablet.Segment6:FindFirstChild("ClickDetector"))
+          fireclickdetector(workspace.Map["Haunted Castle"].Tablet.Segment8:FindFirstChild("ClickDetector"))
+          fireclickdetector(workspace.Map["Haunted Castle"].Tablet.Segment9:FindFirstChild("ClickDetector"))       
+        until workspace.Map["Haunted Castle"].Tablet.Segment2.Line.Rotation.Z == 0 or workspace.Map["Haunted Castle"].Tablet.Segment5.Line.Rotation.Z == 0 or workspace.Map["Haunted Castle"].Tablet.Segment6.Line.Rotation.Z == 0 or workspace.Map["Haunted Castle"].Tablet.Segment8.Line.Rotation.Z == 0 or workspace.Map["Haunted Castle"].Tablet.Segment9.Line.Rotation.Z == 0
+          elseif replicated.Remotes.CommF_:InvokeServer("GuitarPuzzleProgress","Check").Pipes == false then
+            Quest1 = false;
+            Quest2 = false;
+            Quest3 = false;
+            Quest4 = true;
+           _tp(workspace.Map["Haunted Castle"]["Lab Puzzle"].ColorFloor.Model.Part3.CFrame)
+		   fireclickdetector(workspace.Map["Haunted Castle"]["Lab Puzzle"].ColorFloor.Model.Part3.ClickDetector)
+		   _tp(workspace.Map["Haunted Castle"]["Lab Puzzle"].ColorFloor.Model.Part4.CFrame)
+		   fireclickdetector(workspace.Map["Haunted Castle"]["Lab Puzzle"].ColorFloor.Model.Part4.ClickDetector)
+		   fireclickdetector(workspace.Map["Haunted Castle"]["Lab Puzzle"].ColorFloor.Model.Part4.ClickDetector)
+		   fireclickdetector(workspace.Map["Haunted Castle"]["Lab Puzzle"].ColorFloor.Model.Part4.ClickDetector)
+		   _tp(workspace.Map["Haunted Castle"]["Lab Puzzle"].ColorFloor.Model.Part6.CFrame)
+		   fireclickdetector(workspace.Map["Haunted Castle"]["Lab Puzzle"].ColorFloor.Model.Part6.ClickDetector)
+		   fireclickdetector(workspace.Map["Haunted Castle"]["Lab Puzzle"].ColorFloor.Model.Part6.ClickDetector)
+		   _tp(workspace.Map["Haunted Castle"]["Lab Puzzle"].ColorFloor.Model.Part8.CFrame)
+		   fireclickdetector(workspace.Map["Haunted Castle"]["Lab Puzzle"].ColorFloor.Model.Part8.ClickDetector)
+	   	   _tp(workspace.Map["Haunted Castle"]["Lab Puzzle"].ColorFloor.Model.Part10.CFrame)
+		   fireclickdetector(workspace.Map["Haunted Castle"]["Lab Puzzle"].ColorFloor.Model.Part10.ClickDetector)
+	       fireclickdetector(workspace.Map["Haunted Castle"]["Lab Puzzle"].ColorFloor.Model.Part10.ClickDetector)
+	       fireclickdetector(workspace.Map["Haunted Castle"]["Lab Puzzle"].ColorFloor.Model.Part10.ClickDetector)
+          end
+        end
+      end
+    end)
+  end
+end)
+local Q = Tabs.Mirage:AddToggle("Q", {Title = "Auto Farm Material Skull Guitar", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.AutoMatSoul = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.AutoMatSoul and GetWP("Skull Guitar") == false then
+	    if GetM("Bones") >= 500 and GetM("Ectoplasm") >= 250 and GetM("Dark Fragment") >= 1 then
+	      replicated.Remotes.CommF_:InvokeServer("soulGuitarBuy",true)
+		else
+		  if GetM("Ectoplasm") <= 250 then
+		    if _G.AutoMatSoul and World2 then
+		      local EctoTable = {"Ship Deckhand","Ship Engineer","Ship Steward","Ship Officer","Arctic Warrior"}    
+		      local xz = GetConnectionEnemies(EctoTable)
+              if xz then repeat task.wait() Attack.Kill(xz, _G.AutoMatSoul)until not _G.AutoMatSoul or not xz.Parent or xz.Humanoid.Health <= 0
+			  else replicated.Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(923.21252441406, 126.9760055542, 32852.83203125))
+			  end
+		    else replicated.Remotes.CommF_:InvokeServer("TravelDressrosa")
+		    end
+		  elseif GetM("Dark Fragment") < 1 then
+		    if _G.AutoMatSoul and World2 then
+		      local black = GetConnectionEnemies("Darkbeard")
+		      if black then repeat task.wait()Attack.Kill(black, _G.AutoMatSoul)until _G.AutoMatSoul or black.Humanoid.Health <= 0
+		      else _tp(CFrame.new(3798.4575195313, 13.826690673828, -3399.806640625))
+		      end
+		    else replicated.Remotes.CommF_:InvokeServer("TravelDressrosa")
+			end
+		     if not GetConnectionEnemies("Darkbeard") then Hop() end
+	         elseif GetM("Bones") <= 500 then
+		       if _G.AutoMatSoul and World3 then
+			     local BonesTable = {"Reborn Skeleton","Living Zombie","Demonic Soul","Posessed Mummy"}
+			     local zx = GetConnectionEnemies(BonesTable)			   
+	             if zx then repeat task.wait()Attack.Kill(zx, _G.AutoMatSoul)until not _G.AutoMatSoul or zx.Humanoid.Health <= 0 or not zx.Parent or zx.Humanoid.Health <= 0
+				 else _tp(CFrame.new(-9504.8564453125, 172.14292907714844, 6057.259765625))
+			   end
+		     else
+		       replicated.Remotes.CommF_:InvokeServer("TravelZou")
+		     end
+		   end
+	     end
+	   end
+    end)
+  end
+end)
+Tabs.Mirage:AddButton({Title = "Talk With Stone", Description = "",
+Callback = function()
+  replicated:WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer("RaceV4Progress","Begin")
+  replicated:WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer("RaceV4Progress","Check")
+  replicated:WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer("RaceV4Progress","Teleport")
+  replicated:WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer("RaceV4Progress","Continue")
+end})
+local Q = Tabs.Mirage:AddToggle("Q", {Title = "Auto Look At Moon", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  LookM = Value
+end)
+function MoveCamtoMoon()
+workspace.CurrentCamera.CFrame = CFrame.new(workspace.CurrentCamera.CFrame.Position,Lighting:GetMoonDirection() + workspace.CurrentCamera.CFrame.Position)
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(plr.Character.HumanoidRootPart.Position,Lighting:GetMoonDirection() + plr.Character.HumanoidRootPart.CFrame.Position)
+end
+task.spawn(function()
+  while task.wait() do
+    if LookM then
+      MoveCamtoMoon()
+      wait(.1)
+      replicated.Remotes.CommE:FireServer("ActivateAbility")
+    end
+  end
+end)
+
+Tabs.Mirage:AddSection("Trials Quests / Misc V4")
+local CheckTier = Tabs.Mirage:AddParagraph({Title = " Tiers V4 Status ",Content = ""})
+spawn(function()
+  pcall(function()
+    while wait(.2) do
+      CheckTier:SetDesc(" Tiers - V4  :" .." "..plr.Data.Race.C.Value)
+    end
+  end)
+end)
+local Q = Tabs.Mirage:AddToggle("Q", {Title = "Auto Pull Lever", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.Lver = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.Lver then
+      pcall(function()
+        for x,c in pairs(workspace.Map["Temple of Time"]:GetDescendants()) do
+        if c.Name == "ProximityPrompt" then fireproximityprompt(c,math.huge)end
+        end
+      end)
+    end
+  end
+end)
+local Q = Tabs.Mirage:AddToggle("Q", {Title = "Auto Train V4", Description = "turn on for farm tier + auto upgrade your tier level", Default = false})
+Q:OnChanged(function(Value)
+  _G.AcientOne = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.AcientOne then
+        local BonesTable = {"Reborn Skeleton","Living Zombie","Demonic Soul","Posessed Mummy"}
+	    for i=1,#BonesTable do
+          if plr.Character:FindFirstChild("RaceEnergy").Value == 1 then
+            vim1:SendKeyEvent(true, "Y", false, game)
+            replicated.Remotes.CommF_:InvokeServer("UpgradeRace","Buy")
+            _tp(CFrame.new(-8987.041015625, 215.862060546875, 5886.71044921875))
+	      elseif plr.Character:FindFirstChild("RaceTransformed").Value == false then
+	        local v = GetConnectionEnemies(BonesTable)
+	        if v then repeat wait() Attack.Kill(v, _G.AcientOne) until _G.AcientOne == false or v.Humanoid.Health <= 0 or not v.Parent
+		    else _tp(CFrame.new(-9495.6806640625, 453.58624267578125, 5977.3486328125)) 
+		    end
+	      end
+        end
+      end
+    end)
+  end
+end)
+Tabs.Mirage:AddButton({Title = "Teleport to Temple of Time", Description = "",
+Callback = function()
+  game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(28286.35546875, 14895.3017578125, 102.62469482421875))
+end})
+Tabs.Mirage:AddButton({Title = "Teleport to Ancient One", Description = "",
+Callback = function()
+  notween(CFrame.new(28981.552734375, 14888.4267578125, - 120.245849609375))
+end})
+Tabs.Mirage:AddButton({Title = "Teleport to Ancient Clock", Description = "",
+Callback = function()
+  notween(CFrame.new(29549, 15069, -88))
+end})
+local Q = Tabs.Mirage:AddToggle("Q", {Title = "Auto Teleport to Race Doors", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.TPDoor = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.TPDoor then
+	    if tostring(plr.Data.Race.Value) == "Mink" then
+          _tp(CFrame.new(29020.66015625, 14889.4267578125, -379.2682800292969))
+	    elseif tostring(plr.Data.Race.Value) == "Fishman" then
+          _tp(CFrame.new(28224.056640625, 14889.4267578125, -210.5872039794922))
+	    elseif tostring(plr.Data.Race.Value) == "Cyborg" then
+          _tp(CFrame.new(28492.4140625, 14894.4267578125, -422.1100158691406))
+	    elseif tostring(plr.Data.Race.Value) == "Skypiea" then
+          _tp(CFrame.new(28967.408203125, 14918.0751953125, 234.31198120117188))
+	    elseif tostring(plr.Data.Race.Value) == "Ghoul" then
+          _tp(CFrame.new(28672.720703125, 14889.1279296875, 454.5961608886719))
+	    elseif tostring(plr.Data.Race.Value) == "Human" then
+          _tp(CFrame.new(29237.294921875, 14889.4267578125, -206.94955444335938))
+	    end
+      end
+    end)
+  end
+end)                   
+local Q = Tabs.Mirage:AddToggle("Q", {Title = "Auto Complete Trial Race", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.Complete_Trials = Value
+end)
+GetSeaBeastTrial = function()
+  if not workspace.Map:FindFirstChild("FishmanTrial") then return nil end
+  if workspace["_WorldOrigin"].Locations:FindFirstChild("Trial of Water") then FishmanTrial = workspace["_WorldOrigin"].Locations:FindFirstChild("Trial of Water") end
+  if FishmanTrial then
+    for _,v in next, workspace.SeaBeasts:GetChildren() do
+      if v:FindFirstChild("HumanoidRootPart") and (v.HumanoidRootPart.Position - FishmanTrial.Position).Magnitude <= 1500 then
+      if v.Health.Value > 0 then return v end
+      end
+    end
+  end
+end
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.Complete_Trials then
+        if tostring(plr.Data.Race.Value) == "Mink" then
+          notween(workspace.Map.MinkTrial.Ceiling.CFrame * CFrame.new(0,-20,0))
+	   end
+      end
+    end)
+  end
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function() 
+      if _G.Complete_Trials then
+	    if tostring(plr.Data.Race.Value) == "Fishman" then
+	      if GetSeaBeastTrial() then            
+            repeat task.wait()
+              spawn(function()_tp(CFrame.new(GetSeaBeastTrial().HumanoidRootPart.Position.X,game:GetService("Workspace").Map["WaterBase-Plane"].Position.Y + 300,GetSeaBeastTrial().HumanoidRootPart.Position.Z))end)
+		      MousePos = GetSeaBeastTrial().HumanoidRootPart.Position
+              Useskills("Melee","Z")
+	          Useskills("Melee","X")
+	          Useskills("Melee","C")
+              wait(.1)
+              Useskills("Sword","Z")
+              Useskills("Sword","X")
+              wait(.1)
+              Useskills("Blox Fruit","Z")
+              Useskills("Blox Fruit","X")
+              Useskills("Blox Fruit","C")
+              wait(.1)
+              Useskills("Gun","Z")
+              Useskills("Gun","X")
+            until _G.Complete_Trials == false or not GetSeaBeastTrial()
+          end          
+	    end
+      end
+    end)
+  end
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.Complete_Trials then
+        if tostring(plr.Data.Race.Value) == "Cyborg" then
+         _tp(workspace.Map.CyborgTrial.Floor.CFrame * CFrame.new(0,500,0))
+   	   end
+      end
+    end)
+  end
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.Complete_Trials then
+        if tostring(plr.Data.Race.Value) == "Skypiea" then
+          notween(workspace.Map.SkyTrial.Model.FinishPart.CFrame)
+  	   end
+      end
+    end)
+  end
+end)
+spawn(function()
+  while wait(.1) do   
+    pcall(function()
+      if _G.Complete_Trials then
+	    if tostring(plr.Data.Race.Value) == "Human" or tostring(plr.Data.Race.Value) == "Ghoul" then	      
+	      local TrialsTables = {"Ancient Vampire","Ancient Zombie"}
+	      local v = GetConnectionEnemies(TrialsTables)
+          if v then repeat wait() Attack.Kill(v, _G.Complete_Trials)until _G.Complete_Trials == false or not v.Parent or v.Humanoid.Health <= 0 end		
+        end
+      end
+    end)
+  end
+end)
+local Q = Tabs.Mirage:AddToggle("Q", {Title = "Auto Kill Player After Trial", Description = "turn on for kill player after the race trials", Default = false})
+Q:OnChanged(function(Value)
+  _G.Defeating = Value
+end)
+spawn(function()
+  while task.wait(Sec) do
+    pcall(function()
+      if _G.Defeating then
+	    for _, v in pairs(workspace.Characters:GetChildren()) do
+          if v.Name ~= plr.Name then
+            if v.Humanoid.Health > 0 and v:FindFirstChild("HumanoidRootPart") and v.Parent and (Root.Position - v.HumanoidRootPart.Position).Magnitude <= 250 then
+              repeat task.wait() EquipWeapon(_G.SelectWeapon) _tp(v.HumanoidRootPart.CFrame * CFrame.new(0,0,15)) sethiddenproperty(plr, "SimulationRadius", math.huge)until _G.Defeating == false or v.Humanoid.Health <= 0 or not v.Parent or not v:FindFirstChild("HumanoidRootPart") or not v:FindFirstChild("Humanoid")
+            end
+          end
+        end
+      end
+    end)
+  end
+end)
+
+Tabs.Drago:AddSection("Dojo Quest & Drago Race")
+local DojoQ = Tabs.Drago:AddToggle("DojoQ", {Title = "Auto Dojo Trainer", Description = "turn on for do dojo belt quest white to black", Default = false})
+DojoQ:OnChanged(function(Value)
+  _G.Dojoo = Value
+end)
+function printBeltName(data) if type(data) == "table" and data.Quest["BeltName"] then return data.Quest["BeltName"] end end
+spawn(function()
+  while wait(Sec) do
+    if _G.Dojoo then
+      pcall(function()
+        local args = {[1] = {["NPC"] = "Dojo Trainer",["Command"] = "RequestQuest"}}        
+        local progress = replicated.Modules.Net:FindFirstChild("RF/InteractDragonQuest"):InvokeServer(unpack(args))
+        local NameBelt = printBeltName(progress)
+        if debug == false and not progress and not NameBelt then
+          _tp(CFrame.new(5865.0234375, 1208.3154296875, 871.15185546875))
+          debug = true
+        elseif debug == true and (CFrame.new(5865.0234375, 1208.3154296875, 871.15185546875).Position - plr.Character.HumanoidRootPart.Position).Magnitude <= 50 then
+          if NameBelt == "White" then
+            local v = GetConnectionEnemies("Skull Slayer")
+            if v then repeat task.wait() Attack.Kill(v, _G.Dojoo) until not progress or not _G.Dojoo or not Attack.Alive(v)
+            else _tp(CFrame.new(-16759.58984375, 71.28376770019531, 1595.3399658203125))
+            end
+          elseif NameBelt == "Yellow" then
+            repeat task.wait()
+              _G.SeaBeast1 = true
+              _G.TerrorShark = true
+              _G.Shark = true
+              _G.Piranha = true
+              _G.MobCrew = true
+              _G.FishBoat = true
+              _G.SailBoats = true
+            until not _G.Dojoo or not progress
+            _G.SeaBeast1 = false
+            _G.TerrorShark = false
+            _G.Shark = false
+            _G.Piranha = false
+            _G.MobCrew = false
+            _G.FishBoat = false
+            _G.SailBoats = false               
+          elseif NameBelt == "Green" then
+            repeat task.wait()
+              _G.SailBoats = true
+            until not _G.Dojoo or not progress
+            _G.SailBoats = false
+          elseif NameBelt == "Purple" then
+            repeat task.wait()
+              _G.FarmEliteHunt = true
+            until not _G.Dojoo or not progress
+            _G.FarmEliteHunt = false
+          elseif NameBelt == "Red" then
+            repeat task.wait()
+              _G.SailBoats = true
+              _G.FishBoat = true
+            until not _G.Dojoo or not progress
+            _G.SailBoats = false
+            _G.FishBoat = false                      
+          elseif NameBelt == "Black" then
+            repeat task.wait()              
+              if workspace.Map:FindFirstChild("PrehistoricIsland") or workspace._WorldOrigin.Locations:FindFirstChild("Prehistoric Island") then    
+                _G.Prehis_Find = true                   
+                if workspace.Map.PrehistoricIsland.Core.ActivationPrompt:FindFirstChild("ProximityPrompt",true) then
+                  _G.Prehis_Skills = false
+                  _G.Prehis_Find = true
+                else
+                  _G.Prehis_Skills = true
+                  _G.Prehis_Find = false
+                end
+              else
+                _G.Prehis_Find = true
+                _G.Prehis_Skills = false
+              end
+            until not _G.Dojoo or not progress
+            _G.Prehis_Find = false
+            _G.Prehis_Skills = false                        
+          elseif NameBelt == "Orange" or NameBelt == "Blue" then
+            return nil
+          end
+        end
+        if not progress then
+          debug = false
+          local args = {[1] = {["NPC"] = "Dojo Trainer",["Command"] = "ClaimQuest"}}
+          replicated.Modules.Net:FindFirstChild("RF/InteractDragonQuest"):InvokeServer(unpack(args))
+        end
+      end)
+    end
+  end
+end)
+local BlazeEM = Tabs.Drago:AddToggle("BlazeEM", {Title = "Auto Dragon Hunter", Description = "turn on for farm blaze ember + auto collect blaze ember", Default = false})
+BlazeEM:OnChanged(function(Value)
+  _G.FarmBlazeEM = Value
+end)
+checkQuesta=function()local a={[1]={["Context"]="Check"}}local b=nil;pcall(function()local c={[1]={["Context"]="RequestQuest"}}game:GetService("ReplicatedStorage"):WaitForChild("Modules"):WaitForChild("Net"):WaitForChild("RF/DragonHunter"):InvokeServer(unpack(c))end)local d,e=pcall(function()b=game:GetService("ReplicatedStorage"):WaitForChild("Modules"):WaitForChild("Net"):WaitForChild("RF/DragonHunter"):InvokeServer(unpack(a))end)local f=false;local g;local h;local i;if b then if b.Text then f=true;local j=b.Text;if string.find(tostring(j),"Defeat")then i=1;g=string.sub(tostring(j),8,9)g=tonumber(g)local k={"Hydra Enforcer","Venomous Assailant"}for l,m in pairs(k)do if string.find(j,m)then h=m;break end end elseif string.find(tostring(j),"Destroy")then g=10;i=2;h=nil end end end;return f,h,g,i end
+BackTODoJo=function()for a,b in pairs(game:GetService("Players").LocalPlayer.PlayerGui.Notifications:GetChildren())do if b.Name=="NotificationTemplate"then if string.find(b.Text,"Head back to the Dojo to complete more tasks")then return true end end end;return false end
+DragonMobClear=function(a,b,c)if workspace.Enemies:FindFirstChild(b)then for d,e in pairs(workspace.Enemies:GetChildren())do if e.Name==b and Attack.Alive(e)then if a then Attack.Kill(e,a)end end end else _tp(c)end end
+spawn(function()
+  while wait() do 
+    if _G.FarmBlazeEM then
+      pcall(function()              
+        local a,v,h,x = checkQuesta()                  
+        if a == true and not BackTODoJo() then
+          if x == 1 then
+            if v == "Hydra Enforcer" or v == "Venomous Assailant" then            
+              repeat wait()
+                DragonMobClear(true, v, CFrame.new(4620.61572265625, 1002.2954711914062, 399.0868835449219))
+              until not _G.FarmBlazeEM or not a or BackTODoJo()                            
+            end      
+          elseif x == 2 then
+            if workspace.Map.Waterfall.IslandModel:FindFirstChild("Meshes/bambootree", true) then
+              repeat wait()                
+                spawn(function() _tp(workspace.Map.Waterfall.IslandModel:FindFirstChild("Meshes/bambootree", true).CFrame * CFrame.new(4,0,0)) end)
+                if (workspace.Map.Waterfall.IslandModel:FindFirstChild("Meshes/bambootree", true).Position - Root.Position).Magnitude <= 200 then
+                MousePos = workspace.Map.Waterfall.IslandModel:FindFirstChild("Meshes/bambootree", true).Position
+                Useskills("Melee","Z")
+	            Useskills("Melee","X")
+	            Useskills("Melee","C")
+                wait(.5)
+                Useskills("Sword","Z")
+                Useskills("Sword","X")
+                wait(.5)
+                Useskills("Blox Fruit","Z")
+                Useskills("Blox Fruit","X")
+                Useskills("Blox Fruit","C")
+                wait(.5)
+                Useskills("Gun","Z")
+                Useskills("Gun","X")
+                end
+              until not _G.FarmBlazeEM or not a or BackTODoJo()
+            end
+          end
+        else
+          _tp(CFrame.new(5813, 1208, 884))
+          DragonMobClear(false, nil, nil) 
+        end
+      end)
+    end
+  end
+end)
+spawn(function()
+  while wait(.1) do 
+    if _G.FarmBlazeEM then
+      pcall(function()              
+        if workspace.EmberTemplate:FindFirstChild("Part") then
+          game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.EmberTemplate.Part.CFrame        
+        end
+      end)
+    end
+  end
+end)
+
+Tabs.Drago:AddSection("Drago Trial")
+GetQuestDracoLevel = function()
+  local v371 = {[1] = {NPC = "Dragon Wizard",Command = "Upgrade"}};
+  return replicated.Modules.Net:FindFirstChild("RF/InteractDragonQuest"):InvokeServer(unpack(v371))
+end
+Toggle = Tabs.Drago:AddToggle("Toggle", {Title = "Tween To Upgrade Droco Trial", Description = "", Default = false})
+Toggle:OnChanged(function(Value)
+  _G.UPGDrago = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.UPGDrago then     
+        if GetQuestDracoLevel() == false then
+          return nil
+        elseif GetQuestDracoLevel() == true then
+          if (CFrame.new(5814.42724609375, 1208.3267822265625, 884.5785522460938).Position - Root.Position).Magnitude >= 300 then
+            _tp(CFrame.new(5814.42724609375, 1208.3267822265625, 884.5785522460938));
+          else
+            _tp(CFrame.new(5814.42724609375, 1208.3267822265625, 884.5785522460938));
+            local v371 = {[1] = {NPC = "Dragon Wizard",Command = "Upgrade"}};
+            replicated.Modules.Net:FindFirstChild("RF/InteractDragonQuest"):InvokeServer(unpack(v371));
+          end
+        end
+      end
+    end)
+  end
+end)
+Toggle = Tabs.Drago:AddToggle("Toggle", {Title = "Auto Drago (V1)", Description = "turn on for auto quest1 auto prehistoric event + collect dragon eggs", Default = false})
+Toggle:OnChanged(function(Value)
+  _G.DragoV1 = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.DragoV1 then     
+        if GetM("Dragon Egg") <= 0 then
+        repeat wait()
+          _G.Prehis_Find = true
+          _G.Prehis_Skills = true
+          _G.Prehis_DE = true
+        until not _G.DragoV1 or GetM("Dragon Egg") >= 1
+          _G.Prehis_Find = false
+          _G.Prehis_Skills = false
+          _G.Prehis_DE = false
+        end
+      end
+    end)
+  end
+end)
+local fireflower = Tabs.Drago:AddToggle("fireflower", {Title = "Auto Drago (V2)", Description = "turn on for auto kill Forest Pirate & Collect fireflower", Default = false})
+fireflower:OnChanged(function(Value)
+  _G.AutoFireFlowers = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.AutoFireFlowers then
+      local FireFlower = workspace:FindFirstChild("FireFlowers")
+      local v = GetConnectionEnemies("Forest Pirate")
+      if v then repeat wait() Attack.Kill(v,_G.AutoFireFlowers) until not _G.AutoFireFlowers or not v.Parent or v.Humanoid.Health <= 0 or FireFlower
+      else _tp(CFrame.new(-13206.452148438, 425.89199829102, -7964.5537109375))
+      end      
+      if FireFlower then
+        for i, v in pairs(FireFlower:GetChildren()) do
+          if (v:IsA("Model") and v.PrimaryPart) then
+            local FlowerPos = v.PrimaryPart.Position;
+            local playerRoot = game.Players.LocalPlayer.Character.HumanoidRootPart.Position;
+            local Magnited = (FlowerPos - playerRoot).Magnitude;
+            if (Magnited <= 100) then
+              vim1:SendKeyEvent(true, "E", false, game) wait(1.5) vim1:SendKeyEvent(false, "E", false, game)
+            else
+              _tp(CFrame.new(FlowerPos));
+            end
+          end
+        end
+      end
+    end
+  end
+end)
+Toggle = Tabs.Drago:AddToggle("Toggle", {Title = "Auto Drago (V3)", Description = "turn on for sea event kill terror shark", Default = false})
+Toggle:OnChanged(function(Value)
+  _G.DragoV3 = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.DragoV3 then     
+        repeat wait()
+          _G.DangerSc = "Lv Infinite"
+          _G.SailBoats = true
+          _G.TerrorShark = true
+        until not _G.DragoV3
+        _G.DangerSc = "Lv 1"
+        _G.SailBoats = false
+        _G.TerrorShark = false
+      end
+    end)
+  end
+end)
+Toggle = Tabs.Drago:AddToggle("Toggle", {Title = "Auto Relic Drago Trial [Beta]", Description = "turn on for auto trial v4 you have to COLLECT RELIC by your self", Default = false})
+Toggle:OnChanged(function(Value)
+  _G.Relic123 = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.Relic123 then
+      pcall(function()
+        if workspace.Map:FindFirstChild("DracoTrial") then
+          replicated.Remotes.DracoTrial:InvokeServer()                  
+          wait(.5)
+          repeat wait() _tp(CFrame.new(-39934.9765625, 10685.359375, 22999.34375)) until not _G.Relic123 or (Root.Position == CFrame.new(-39934.9765625, 10685.359375, 22999.34375).Position)
+          repeat wait() _tp(CFrame.new(-40511.25390625, 9376.4013671875, 23458.37890625)) until not _G.Relic123 or (Root.Position == CFrame.new(-40511.25390625, 9376.4013671875, 23458.37890625).Position)
+          wait(2.5)
+          repeat wait() _tp(CFrame.new(-39914.65625, 10685.384765625, 23000.177734375)) until not _G.Relic123 or (Root.Position == CFrame.new(-39914.65625, 10685.384765625, 23000.177734375).Position)
+          repeat wait() _tp(CFrame.new(-40045.83203125, 9376.3984375, 22791.287109375)) until not _G.Relic123 or (Root.Position == CFrame.new(-40045.83203125, 9376.3984375, 22791.287109375).Position)
+          wait(2.5)
+          repeat wait() _tp(CFrame.new(-39908.5, 10685.4052734375, 22990.04296875)) until not _G.Relic123 or (Root.Position == CFrame.new(-39908.5, 10685.4052734375, 22990.04296875).Position)
+          repeat wait() _tp(CFrame.new(-39609.5, 9376.400390625, 23472.94335975)) until not _G.Relic123 or (Root.Position == CFrame.new(-39609.5, 9376.400390625, 23472.94335975).Position) 
+        else
+          local drago = workspace.Map.PrehistoricIsland:FindFirstChild("TrialTeleport")
+          if drago and drago:IsA("Part") then _tp(CFrame.new(drago.Position)) end        
+        end
+      end)
+    end
+  end
+end)
+Toggle = Tabs.Drago:AddToggle("Toggle", {Title = "Auto Train Drago v4", Description = "turn on for training Drago race v4 + auto upgrade tier", Default = false})
+Toggle:OnChanged(function(Value)
+  _G.TrainDrago = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.TrainDrago then
+        local DragoM = {"Venomous Assailant","Hydra Enforcer"}
+	    for i=1,#DragoM do
+          if plr.Character:FindFirstChild("RaceEnergy").Value == 1 then
+            vim1:SendKeyEvent(true, "Y", false, game)
+            replicated.Remotes.CommF_:InvokeServer("UpgradeRace","Buy",2)
+            _tp(CFrame.new(4620.61572265625, 1002.2954711914062, 399.0868835449219))
+	      elseif plr.Character:FindFirstChild("RaceTransformed").Value == false then
+	        local v = GetConnectionEnemies(DragoM)
+	        if v then repeat wait() Attack.Kill(v, _G.TrainDrago) until _G.TrainDrago == false or v.Humanoid.Health <= 0 or not v.Parent                    		
+		    else _tp(CFrame.new(4620.61572265625, 1002.2954711914062, 399.0868835449219))
+		    end
+	      end
+        end
+      end
+    end)
+  end
+end)
+local dragoTpVolcano = Tabs.Drago:AddToggle("dragoTpVolcano", {Title = "Tween to Drago Trials", Description = "", Default = false})
+dragoTpVolcano:OnChanged(function(Value)
+  _G.TpDrago_Prehis = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.TpDrago_Prehis then
+      local v748 = workspace.Map.PrehistoricIsland:FindFirstChild("TrialTeleport");
+      if (v748 and v748:IsA("Part")) then _tp(CFrame.new(v748.Position)) end
+    end
+  end
+end)
+local bdrago = Tabs.Drago:AddToggle("bdrago", {Title = "Swap Drago Race", Description = "", Default = false})
+bdrago:OnChanged(function(Value)
+  _G.BuyDrago = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.BuyDrago then
+      pcall(function()
+        if (CFrame.new(5814.42724609375, 1208.3267822265625, 884.5785522460938).Position - Root.Position).Magnitude >= 300 then
+          _tp(CFrame.new(5814.42724609375, 1208.3267822265625, 884.5785522460938));
+        else
+          _tp(CFrame.new(5814.42724609375, 1208.3267822265625, 884.5785522460938));
+          local v371 = {[1] = {NPC = "Dragon Wizard",Command = "DragonRace"}};
+          replicated.Modules.Net:FindFirstChild("RF/InteractDragonQuest"):InvokeServer(unpack(v371));
+        end
+      end)
+    end
+  end
+end)
+local UpTalon = Tabs.Drago:AddToggle("UpTalon", {Title = "Upgrade Dragon Talon With Uzoth", Description = "", Default = false})
+UpTalon:OnChanged(function(Value)
+  _G.DT_Uzoth = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.DT_Uzoth then
+      local Uz_POS = CFrame.new(5661.89014, 1211.31909, 864.836731, 0.811413169, -1.36805838e-08, -0.584473014, 4.75227395e-08, 1, 4.25682458e-08, 0.584473014, -6.23161966e-08, 0.811413169)
+      _tp(Uz_POS)
+      if (Uz_POS.Position - plr.Character.HumanoidRootPart.Position).Magnitude <= 25 then
+        local ohTable1 = {["NPC"] = "Uzoth",["Command"] = "Upgrade"}
+        replicated.Modules.Net["RF/InteractDragonQuest"]:InvokeServer(ohTable1)
+      end
+    end
+  end
+end)
+
+Tabs.Prehistoric:AddSection("Volcanic Magnet")
+Toggle = Tabs.Prehistoric:AddToggle("Toggle", {Title = "Auto Craft Volcanic Magnet", Description = "turn on for auto farm material and craft volcanic magnet & stop when you have 1 volcanic magnet", Default = false})
+Toggle:OnChanged(function(Value)
+  _G.CraftVM = Value
+end)
+Tabs.Prehistoric:AddButton({Title = "Craft Volcanic Magnet", Description = "",
+Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("CraftItem","Craft","Volcanic Magnet")
+end})
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.CraftVM then     
+        if GetM("Volcanic Magnet") < 1 then
+          if GetM("Scrap Metal") >= 10 and GetM("Blaze Ember") >= 15 then
+            replicated.Remotes.CommF_:InvokeServer("CraftItem","Craft","Volcanic Magnet")
+          elseif GetM("Scrap Metal") < 10 then
+            local v = GetConnectionEnemies("Forest Pirate")
+            if v then repeat wait() Attack.Kill(v,_G.CraftVM) until not _G.CraftVM or not v.Parent or v.Humanoid.Health <= 0 or GetM("Scrap Metal") >= 10
+            else _tp(CFrame.new(-13206.452148438, 425.89199829102, -7964.5537109375))
+            end     
+          elseif GetM("Blaze Ember") < 15 then
+            repeat wait() _G.FarmBlazeEM = true until not _G.CraftVM or GetM("Blaze Ember") >= 15 _G.FarmBlazeEM = false
+          end   
+        end            
+      end
+    end)
+  end
+end)
+Tabs.Prehistoric:AddSection("Prehistoric Island")
+local Check_Volcano = Tabs.Prehistoric:AddParagraph({Title = " Prehistoric Island Status ",Content = ""})
+spawn(function()
+  while wait(.2) do
+    if workspace.Map:FindFirstChild("PrehistoricIsland") or workspace._WorldOrigin.Locations:FindFirstChild("Prehistoric Island") then
+      Check_Volcano:SetDesc(" Prehistoric Island : True")
+    else
+      Check_Volcano:SetDesc(" Prehistoric Island : False")
+    end
+  end
+end)
+Vocan = Tabs.Prehistoric:AddToggle("Vocan", {Title = "Auto Find Prehistoric Island", Description = "turn on for finding & tween & start prehistoric island", Default = false})
+Vocan:OnChanged(function(Value)
+  _G.Prehis_Find = Value
+end)
+local targetDestination = nil
+spawn(function()
+  while wait() do
+    if _G.Prehis_Find then 
+      pcall(function()
+        if not workspace["_WorldOrigin"].Locations:FindFirstChild("Prehistoric Island", true) then                
+          local myBoat = CheckBoat()
+          if not myBoat then
+            local buyBoatCFrame = CFrame.new(-16927.451, 9.086, 433.864)
+            TeleportToTarget(buyBoatCFrame)
+            if (buyBoatCFrame.Position - plr.Character.HumanoidRootPart.Position).Magnitude <= 10 then replicated.Remotes.CommF_:InvokeServer("BuyBoat", _G.SelectedBoat) end
+          else
+            if plr.Character.Humanoid.Sit == false then
+              local boatSeatCFrame = myBoat.VehicleSeat.CFrame * CFrame.new(0, 1, 0)
+              _tp(boatSeatCFrame)
+            else                            
+              repeat wait() 
+                local targetDestination = CFrame.new(-10000000, 31, 37016.25)
+                if CheckEnemiesBoat() or CheckTerrorShark() or CheckPirateGrandBrigade() then
+                  _tp(CFrame.new(-10000000, 150, 37016.25))
+                else
+                  _tp(CFrame.new(-10000000, 31, 37016.25))
+                end
+              until not _G.Prehis_Find or (targetDestination.Position - plr.Character.HumanoidRootPart.Position).Magnitude <= 10 or workspace["_WorldOrigin"].Locations:FindFirstChild("Prehistoric Island") or plr.Character.Humanoid.Sit == false plr.Character.Humanoid.Sit = false
+            end
+          end
+        else
+          if (workspace["_WorldOrigin"].Locations:FindFirstChild("Prehistoric Island").CFrame.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude >= 2000 then _tp(workspace["_WorldOrigin"].Locations:FindFirstChild("Prehistoric Island").CFrame)end
+          if workspace.Map:FindFirstChild("PrehistoricIsland", true) or workspace["_WorldOrigin"].Locations:FindFirstChild("Prehistoric Island", true) then            
+            if workspace.Map.PrehistoricIsland.Core.ActivationPrompt:FindFirstChild("ProximityPrompt", true) then
+              if plr:DistanceFromCharacter(workspace.Map.PrehistoricIsland.Core.ActivationPrompt.CFrame.Position) <= 150 then
+                fireproximityprompt(workspace.Map.PrehistoricIsland.Core.ActivationPrompt.ProximityPrompt, math.huge)
+                vim1:SendKeyEvent(true, "E", false, game) wait(1.5) vim1:SendKeyEvent(false, "E", false, game)
+              end
+              _tp(workspace.Map.PrehistoricIsland.Core.ActivationPrompt.CFrame)              
+            end
+          end
+        end
+      end)
+    end
+  end
+end)
+local Vocan = Tabs.Prehistoric:AddToggle("Vocan", {Title = "Auto Patch Prehistoric Event", Description = "turn on for auto patch volcano + kill aura lava golems + auto remove lava", Default = false})
+Vocan:OnChanged(function(Value)
+  _G.Prehis_Skills = Value
+end)
+spawn(function()
+  while wait() do
+    if _G.Prehis_Skills then
+      local prehistoricIsland = game.Workspace.Map:FindFirstChild("PrehistoricIsland")
+      if prehistoricIsland then
+        for _, obj in pairs(prehistoricIsland:GetDescendants()) do
+        if obj:IsA("Part") and obj.Name:lower():find("lava") then obj:Destroy() end
+        if obj:IsA("MeshPart") and obj.Name:lower():find("lava") then obj:Destroy() end
+        end
+        local lavaModel = game.Workspace.Map.PrehistoricIsland.Core:FindFirstChild("InteriorLava")
+        if lavaModel and lavaModel:IsA("Model") then lavaModel:Destroy() end
+        local Island = workspace.Map:FindFirstChild("PrehistoricIsland")
+        if Island then   
+          local trialTeleport = workspace.Map.PrehistoricIsland:FindFirstChild("TrialTeleport")   
+          for _, v in pairs(Island:GetDescendants()) do
+            if v.Name == "TouchInterest" then
+              if not (trialTeleport and v:IsDescendantOf(trialTeleport)) then
+                v.Parent:Destroy()
+              end
+            end
+          end
+        end  
+      end
+    end
+  end
+end)
+spawn(function()
+  while wait() do
+    pcall(function()
+      if _G.Prehis_Skills then
+        if workspace.Enemies:FindFirstChild("Lava Golem") then
+          local v = GetConnectionEnemies("Lava Golem")
+          if v then repeat wait()Attack.Kill(v,_G.Prehis_Skills) v.Humanoid:ChangeState(15)until not _G.Prehis_Skills or not v.Parent or v.Humanoid.Health <= 0 end
+        end
+        for i,v in pairs(game.Workspace.Map.PrehistoricIsland.Core.VolcanoRocks:GetChildren()) do
+          if v:FindFirstChild("VFXLayer") then
+            if v:FindFirstChild("VFXLayer").At0.Glow.Enabled == true or v.VFXLayer.At0.Glow.Enabled == true then
+              repeat wait()
+                _tp(v.VFXLayer.CFrame)
+                if v.VFXLayer.At0.Glow.Enabled == true and plr:DistanceFromCharacter(v.VFXLayer.CFrame.Position) <= 150 then
+                  MousePos = v.VFXLayer.CFrame.Position
+                  Useskills("Melee","Z") wait(.5)
+          	      Useskills("Melee","X") wait(.5)
+	              Useskills("Melee","C") wait(.5)
+                  Useskills("Blox Fruit","Z") wait(.5)
+                  Useskills("Blox Fruit","X") wait(.5)
+                  Useskills("Blox Fruit","C")
+                end   
+              until not _G.Prehis_Skills or v:FindFirstChild("VFXLayer").At0.Glow.Enabled == false or v.VFXLayer.At0.Glow.Enabled == false            
+            end
+          end
+        end
+      end
+    end)
+  end
+end)
+local Vocan = Tabs.Prehistoric:AddToggle("Vocan", {Title = "Auto Collect Dino Bones", Description = "", Default = false})
+Vocan:OnChanged(function(Value)
+  _G.Prehis_DB = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.Prehis_DB then
+        if workspace:FindFirstChild("DinoBone") then
+          for i,v in pairs(workspace:GetChildren()) do
+            if v.Name == "DinoBone" then _tp(v.CFrame) end
+          end
+        end
+      end
+    end)
+  end
+end)
+local Vocan = Tabs.Prehistoric:AddToggle("Vocan", {Title = "Auto Collect Dragon Eggs", Description = "", Default = false})
+Vocan:OnChanged(function(Value)
+  _G.Prehis_DE = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.Prehis_DE then
+      if workspace.Map.PrehistoricIsland.Core.SpawnedDragonEggs:FindFirstChild("DragonEgg") then _tp(workspace.Map.PrehistoricIsland.Core.SpawnedDragonEggs:FindFirstChild("DragonEgg").Molten.CFrame) fireproximityprompt(workspace.Map.PrehistoricIsland.Core.SpawnedDragonEggs.DragonEgg.Molten.ProximityPrompt, 30) end        
+      end
+    end)
+  end
+end)
+Toggle = Tabs.Prehistoric:AddToggle("Toggle", {Title = "Auto Reset When Complete Volcano", Description = "Reset When Complete Volcano not collect dino bones and else..", Default = false})
+Toggle:OnChanged(function(Value)
+  _G.ResetPH = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.ResetPH then
+        local v748 = workspace.Map.PrehistoricIsland:FindFirstChild("TrialTeleport");
+        if (v748 and v748:FindFirstChild("TouchInterest")) then
+          plr.Character.Humanoid.Health = 0 
+        else
+          if workspace:FindFirstChild("DinoBone") then
+            for i,v in pairs(workspace:GetChildren()) do
+              if v.Name == "DinoBone" then _tp(v.CFrame) end
+            end
+          end
+        end
+      end
+    end)
+  end
+end)
+
+Tabs.SeaEvent:AddSection("Sea Event / Setting Sail")
+local ListSeaBoat={"Guardian","PirateGrandBrigade","MarineGrandBrigade","PirateBrigade","MarineBrigade","PirateSloop","MarineSloop","Beast Hunter"}
+local ListSeaZone={"Lv 1","Lv 2","Lv 3","Lv 4","Lv 5","Lv 6","Lv Infinite"}
+local SPYING = Tabs.SeaEvent:AddParagraph({Title = " Spy Status ",Content = ""})
+spawn(function()
+  while wait(.2) do
+    pcall(function()
+      local spycheck = string.match(replicated.Remotes.CommF_:InvokeServer("InfoLeviathan","1"),"%d+")
+      if spycheck then SPYING:SetDesc(" Spy Leviathan  : "..tostring(spycheck))
+        if tostring(spycheck) == 5 then
+          SPYING:SetDesc(" Spy Leviathan : Already Done!!")
+        end
+      end
+    end)
+  end
+end)
+Tabs.SeaEvent:AddButton({Title = "Buy Fracments with Spy", Description = "Buy the spy for finding leviathan",
+Callback = function()
+  replicated:WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer("InfoLeviathan","2")
+end})
+local FloD = Tabs.SeaEvent:AddParagraph({Title = " FlozenDimension Status ",Content = ""})
+spawn(function()
+  pcall(function()
+    while wait(.2) do
+      if workspace._WorldOrigin.Locations:FindFirstChild('Frozen Dimension') then
+        FloD:SetDesc(' Flozen Dimension : True')
+      else
+        FloD:SetDesc(' Flozen Dimension : False')
+      end
+    end
+  end)
+end)
+local Q = Tabs.SeaEvent:AddToggle("Q", {Title = "Auto Teleport Frozen Dimension", Description = "turn on for teleport to frozen dimension and start the leviathan gate", Default = false})
+Q:OnChanged(function(Value)
+  _G.FrozenTP = Value
+end)
+spawn(function()
+  while wait(.1) do
+    if _G.FrozenTP then
+      pcall(function()
+      if workspace.Map:FindFirstChild("LeviathanGate") then _tp(workspace.Map.LeviathanGate.CFrame) replicated:WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer("OpenLeviathanGate") end
+      end)
+    end
+  end
+end)
+local Q = Tabs.SeaEvent:AddToggle("Q", {Title = "Auto Drive To Hydra Island", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.SailBoat_Hydra = Value
+end)
+spawn(function()
+  while wait() do
+    if _G.SailBoat_Hydra then 
+      pcall(function()        
+        local myBoat = CheckBoat()
+        if not myBoat then
+          local buyBoatCFrame = CFrame.new(-16927.451, 9.086, 433.864)
+          TeleportToTarget(buyBoatCFrame)
+          if (buyBoatCFrame.Position - plr.Character.HumanoidRootPart.Position).Magnitude <= 10 then replicated.Remotes.CommF_:InvokeServer("BuyBoat", _G.SelectedBoat) end
+        elseif myBoat then
+          if plr.Character.Humanoid.Sit == false then
+            local boatSeatCFrame = myBoat.VehicleSeat.CFrame * CFrame.new(0, 1, 0)
+            _tp(boatSeatCFrame)
+          else                         
+            repeat wait() 
+              if CheckEnemiesBoat() or CheckPirateGrandBrigade() or CheckTerrorShark() then
+                _tp(CFrame.new(5433, 150, 290))
+              else
+                _tp(CFrame.new(5433, 35, 290))
+              end           
+            until _G.SailBoat_Hydra==false or plr.Character:WaitForChild("Humanoid").Sit==false plr.Character.Humanoid.Sit = false
+          end
+        end
+      end)
+    end
+  end
+end)
+local Q = Tabs.SeaEvent:AddDropdown("Q",{Title = "Choose Boats",Values = ListSeaBoat,Multi = false,Default = 1})
+Q:OnChanged(function(Value)
+  _G.SelectedBoat = Value
+end)
+Tabs.SeaEvent:AddButton({Title = "Buy Boats", Description = "Buy the select boats",
+Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BuyBoat",_G.SelectedBoat)
+end})
+local Q = Tabs.SeaEvent:AddDropdown("Q",{Title = "Choose Sea Level",Values = ListSeaZone,Multi = false,Default = 1})
+Q:OnChanged(function(Value)
+  _G.DangerSc = Value
+end)
+local Q = Tabs.SeaEvent:AddToggle("Q", {Title = "Auto Sail Boat", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.SailBoats = Value
+end)
+spawn(function()
+  while wait() do
+    if _G.SailBoats then 
+      pcall(function()        
+        local myBoat = CheckBoat()
+        if not myBoat and not(CheckShark()and _G.Shark or CheckTerrorShark()and _G.TerrorShark or CheckFishCrew()and _G.MobCrew or CheckPiranha()and _G.Piranha)and not(CheckEnemiesBoat()and _G.FishBoat)and not(CheckSeaBeast()and _G.SeaBeast1)and not(_G.PGB and CheckPirateGrandBrigade())and not(_G.HCM and CheckHauntedCrew())and not(_G.Leviathan1 and CheckLeviathan())then
+          local buyBoatCFrame = CFrame.new(-16927.451, 9.086, 433.864)
+          TeleportToTarget(buyBoatCFrame)
+          if (buyBoatCFrame.Position - plr.Character.HumanoidRootPart.Position).Magnitude <= 10 then replicated.Remotes.CommF_:InvokeServer("BuyBoat", _G.SelectedBoat) end
+        elseif myBoat and not(CheckShark()and _G.Shark or CheckTerrorShark()and _G.TerrorShark or CheckFishCrew()and _G.MobCrew or CheckPiranha()and _G.Piranha)and not(CheckEnemiesBoat()and _G.FishBoat)and not(CheckSeaBeast()and _G.SeaBeast1)and not(_G.PGB and CheckPirateGrandBrigade())and not(_G.HCM and CheckHauntedCrew())and not(_G.Leviathan1 and CheckLeviathan())then
+          if plr.Character.Humanoid.Sit == false then
+            local boatSeatCFrame = myBoat.VehicleSeat.CFrame * CFrame.new(0, 1, 0)
+            _tp(boatSeatCFrame)
+          else                         
+            if _G.DangerSc == "Lv 1" then CFrameSelectedZone = CFrame.new(-21998.375, 30.0006084, -682.309143)
+            elseif _G.DangerSc == "Lv 2" then CFrameSelectedZone = CFrame.new(-26779.5215, 30.0005474, -822.858032)
+            elseif _G.DangerSc == "Lv 3" then CFrameSelectedZone = CFrame.new(-31171.957, 30.0001011, -2256.93774)
+            elseif _G.DangerSc == "Lv 4" then CFrameSelectedZone = CFrame.new(-34054.6875, 30.2187767, -2560.12012)
+            elseif _G.DangerSc == "Lv 5" then CFrameSelectedZone = CFrame.new(-38887.5547, 30.0004578, -2162.99023)
+            elseif _G.DangerSc == "Lv 6" then CFrameSelectedZone = CFrame.new(-44541.7617, 30.0003204, -1244.8584)
+            elseif _G.DangerSc == "Lv Infinite" then CFrameSelectedZone = CFrame.new(-10000000, 31, 37016.25)
+            end           
+            repeat wait() 
+              if (not _G.FishBoat and CheckEnemiesBoat()) or (not _G.PGB and CheckPirateGrandBrigade()) or (not _G.TerrorShark and CheckTerrorShark()) then
+                _tp(CFrameSelectedZone * CFrame.new(0,150,0))
+              else
+                _tp(CFrameSelectedZone)
+              end           
+            until _G.SailBoats==false or(CheckShark()and _G.Shark or CheckTerrorShark()and _G.TerrorShark or CheckFishCrew()and _G.MobCrew or CheckPiranha()and _G.Piranha)or CheckSeaBeast()and _G.SeaBeast1 or CheckEnemiesBoat()and _G.FishBoat or _G.Leviathan1 and CheckLeviathan() or _G.HCM and CheckHauntedCrew() or _G.PGB and CheckPirateGrandBrigade() or plr.Character:WaitForChild("Humanoid").Sit==false plr.Character.Humanoid.Sit = false
+          end
+        end
+      end)
+    end
+  end
+end)
+spawn(function()while wait(Sec)do pcall(function()for a,b in pairs(workspace.Boats:GetChildren())do for c,d in pairs(workspace.Boats[b.Name]:GetDescendants())do if d:IsA("BasePart")then if _G.SailBoats or _G.Prehis_Find or _G.FindMirage or _G.SailBoat_Hydra or _G.AutofindKitIs then d.CanCollide=false else d.CanCollide=true end end end end end)end end)
+Tabs.SeaEvent:AddSection("Entity Sea Event")
+Q = Tabs.SeaEvent:AddToggle("Q", {Title = "Auto Shark", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.Shark = Value
+end)
+Q = Tabs.SeaEvent:AddToggle("Q", {Title = "Auto Piranha", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.Piranha = Value
+end)
+Q = Tabs.SeaEvent:AddToggle("Q", {Title = "Auto Terror Shark", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.TerrorShark = Value
+end)
+Q = Tabs.SeaEvent:AddToggle("Q", {Title = "Auto Fish Crew Member", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.MobCrew = Value
+end)
+Q = Tabs.SeaEvent:AddToggle("Q", {Title = "Auto Haunted Crew Member", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.HCM = Value
+end)
+Q = Tabs.SeaEvent:AddToggle("Q", {Title = "Auto Attack PirateGrandBrigade", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.PGB = Value
+end)
+Q = Tabs.SeaEvent:AddToggle("Q", {Title = "Auto Attack Fish Boat", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.FishBoat = Value
+end)
+Q = Tabs.SeaEvent:AddToggle("Q", {Title = "Auto Attack Sea Beast", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.SeaBeast1 = Value
+end)
+Q = Tabs.SeaEvent:AddToggle("Q", {Title = "Auto Attack Leviathan", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.Leviathan1 = Value
+end)
+spawn(function()
+  while wait() do
+    pcall(function()	
+      if _G.Shark then local a={"Shark"}if CheckShark()then for b,c in pairs(workspace.Enemies:GetChildren())do if table.find(a,c.Name)then if Attack.Alive(c)then repeat task.wait()Attack.Kill(c,_G.Shark)until _G.Shark==false or not c.Parent or c.Humanoid.Health<=0 end end end end end
+      if _G.TerrorShark then local a={"Terrorshark"}if CheckTerrorShark()then for b,c in pairs(workspace.Enemies:GetChildren())do if table.find(a,c.Name)then if Attack.Alive(c)then repeat task.wait()Attack.KillSea(c,_G.TerrorShark)until _G.TerrorShark==false or not c.Parent or c.Humanoid.Health<=0 end end end end end
+      if _G.Piranha then local a={"Piranha"}if CheckPiranha()then for b,c in pairs(workspace.Enemies:GetChildren())do if table.find(a,c.Name)then if Attack.Alive(c)then repeat task.wait()Attack.Kill(c,_G.Piranha)until _G.Piranha==false or not c.Parent or c.Humanoid.Health<=0 end end end end end
+      if _G.MobCrew then local a={"Fish Crew Member"}if CheckFishCrew()then for b,c in pairs(workspace.Enemies:GetChildren())do if table.find(a,c.Name)then if Attack.Alive(c)then repeat task.wait()Attack.Kill(c,_G.MobCrew)until _G.MobCrew==false or not c.Parent or c.Humanoid.Health<=0 end end end end end                 
+      if _G.HCM then local a={"Haunted Crew Member"}if CheckHauntedCrew()then for b,c in pairs(workspace.Enemies:GetChildren())do if table.find(a,c.Name)then if Attack.Alive(c)then repeat task.wait()Attack.Kill(c,_G.HCM)until _G.HCM==false or not c.Parent or c.Humanoid.Health<=0 end end end end end
+      if _G.SeaBeast1 then if workspace.SeaBeasts:FindFirstChild("SeaBeast1")then for a,b in pairs(workspace.SeaBeasts:GetChildren())do if b:FindFirstChild("HumanoidRootPart")and b:FindFirstChild("Health")and b.Health.Value>0 then repeat task.wait()spawn(function()_tp(CFrame.new(b.HumanoidRootPart.Position.X,game:GetService("Workspace").Map["WaterBase-Plane"].Position.Y+200,b.HumanoidRootPart.Position.Z))end)if plr:DistanceFromCharacter(b.HumanoidRootPart.CFrame.Position)<=500 then AitSeaSkill_Custom=b.HumanoidRootPart.CFrame;MousePos=AitSeaSkill_Custom.Position;if CheckF()then weaponSc("Blox Fruit")Useskills("Blox Fruit","Z")Useskills("Blox Fruit","X")Useskills("Blox Fruit","C")else Useskills("Melee","Z")Useskills("Melee","X")Useskills("Melee","C")wait(.1)Useskills("Sword","Z")Useskills("Sword","X")wait(.1)Useskills("Blox Fruit","Z")Useskills("Blox Fruit","X")Useskills("Blox Fruit","C")wait(.1)Useskills("Gun","Z")Useskills("Gun","X")end end until _G.SeaBeast1==false or not b:FindFirstChild("HumanoidRootPart")or not b.Parent or b.Health.Value<=0 end end end end
+      if _G.Leviathan1 then if workspace.SeaBeasts:FindFirstChild("Leviathan")then for a,b in pairs(workspace.SeaBeasts:GetChildren())do if b:FindFirstChild("HumanoidRootPart")and b:FindFirstChild("Leviathan Segment")and b:FindFirstChild("Health")and b.Health.Value>0 then repeat task.wait()spawn(function()_tp(CFrame.new(b.HumanoidRootPart.Position.X,game:GetService("Workspace").Map["WaterBase-Plane"].Position.Y+200,b.HumanoidRootPart.Position.Z))end)if plr:DistanceFromCharacter(b.HumanoidRootPart.CFrame.Position)<=500 then MousePos=b:FindFirstChild("Leviathan Segment").Position;if CheckF()then weaponSc("Blox Fruit")Useskills("Blox Fruit","Z")Useskills("Blox Fruit","X")Useskills("Blox Fruit","C")else Useskills("Melee","Z")Useskills("Melee","X")Useskills("Melee","C")wait(.1)Useskills("Sword","Z")Useskills("Sword","X")wait(.1)Useskills("Blox Fruit","Z")Useskills("Blox Fruit","X")Useskills("Blox Fruit","C")wait(.1)Useskills("Gun","Z")Useskills("Gun","X")end end until _G.Leviathan1==false or not b:FindFirstChild("HumanoidRootPart")or not b.Parent or b.Health.Value<=0 end end end end
+      if _G.FishBoat then if CheckEnemiesBoat()then for a,b in pairs(workspace.Enemies:GetChildren())do if b:FindFirstChild("Health")and b.Health.Value>0 and b:FindFirstChild("VehicleSeat")then repeat task.wait()spawn(function()if b.Name=="FishBoat"then _tp(b.Engine.CFrame*CFrame.new(0,-50,-25))end end)if plr:DistanceFromCharacter(b.Engine.CFrame.Position)<=150 then AitSeaSkill_Custom=b.Engine.CFrame;MousePos=AitSeaSkill_Custom.Position;if CheckF()then weaponSc("Blox Fruit")Useskills("Blox Fruit","Z")Useskills("Blox Fruit","X")Useskills("Blox Fruit","C")else Useskills("Melee","Z")Useskills("Melee","X")Useskills("Melee","C")wait(.1)Useskills("Sword","Z")Useskills("Sword","X")wait(.1)Useskills("Blox Fruit","Z")Useskills("Blox Fruit","X")Useskills("Blox Fruit","C")wait(.1)Useskills("Gun","Z")Useskills("Gun","X")end end until _G.FishBoat==false or not b:FindFirstChild("VehicleSeat")or b.Health.Value<=0 end end end end
+      if _G.PGB then if CheckPirateGrandBrigade()then for a,b in pairs(workspace.Enemies:GetChildren())do if b:FindFirstChild("Health")and b.Health.Value>0 and b:FindFirstChild("VehicleSeat")then repeat task.wait()spawn(function()if b.Name=="PirateBrigade"then _tp(b.Engine.CFrame*CFrame.new(0,-30,-10))elseif b.Name=="PirateGrandBrigade"then _tp(b.Engine.CFrame*CFrame.new(0,-50,-50))end end)if plr:DistanceFromCharacter(b.Engine.CFrame.Position)<=150 then AitSeaSkill_Custom=b.Engine.CFrame;MousePos=AitSeaSkill_Custom.Position;if CheckF()then weaponSc("Blox Fruit")Useskills("Blox Fruit","Z")Useskills("Blox Fruit","X")Useskills("Blox Fruit","C")else Useskills("Melee","Z")Useskills("Melee","X")Useskills("Melee","C")wait(.1)Useskills("Sword","Z")Useskills("Sword","X")wait(.1)Useskills("Blox Fruit","Z")Useskills("Blox Fruit","X")Useskills("Blox Fruit","C")wait(.1)Useskills("Gun","Z")Useskills("Gun","X")end end until _G.PGB==false or not b:FindFirstChild("VehicleSeat")or b.Health.Value<=0 end end end end
+    end)
+  end
+end)
+
+Tabs.SeaEvent:AddSection("Kitsune Island / Event")
+local Check_Kitsu = Tabs.SeaEvent:AddParagraph({Title = " Kitsune Island Status ",Content = ""})
+spawn(function()
+  while wait(.2) do
+    if workspace.Map:FindFirstChild("KitsuneIsland") or workspace._WorldOrigin.Locations:FindFirstChild("Kitsune Island") then
+      Check_Kitsu:SetDesc(" Kitsune Island : True")
+    else
+      Check_Kitsu:SetDesc(" Kitsune Island : False")
+    end
+  end
+end)
+local Q = Tabs.SeaEvent:AddToggle("Q", {Title = "Auto Find Kitsune Island", Description = "turn on for finding & tween kitsune island", Default = false})
+Q:OnChanged(function(Value)
+  _G.AutofindKitIs = Value
+end)
+spawn(function()
+  while wait() do
+    if _G.AutofindKitIs then 
+      pcall(function()
+        if not workspace["_WorldOrigin"].Locations:FindFirstChild("Kitsune Island", true) then                
+          local myBoat = CheckBoat()
+          if not myBoat then
+            local buyBoatCFrame = CFrame.new(-16927.451, 9.086, 433.864)
+            TeleportToTarget(buyBoatCFrame)
+            if (buyBoatCFrame.Position - plr.Character.HumanoidRootPart.Position).Magnitude <= 10 then replicated.Remotes.CommF_:InvokeServer("BuyBoat", _G.SelectedBoat) end
+          else
+            if plr.Character.Humanoid.Sit == false then
+              local boatSeatCFrame = myBoat.VehicleSeat.CFrame * CFrame.new(0, 1, 0)
+              _tp(boatSeatCFrame)
+            else
+              local targetDestination = CFrame.new(-10000000, 31, 37016.25)              
+              repeat wait() 
+                if CheckEnemiesBoat() or CheckTerrorShark() or CheckPirateGrandBrigade() then
+                  _tp(CFrame.new(-10000000, 150, 37016.25))
+                else
+                  _tp(CFrame.new(-10000000, 31, 37016.25))
+                end
+              until not _G.AutofindKitIs or (targetDestination.Position - plr.Character.HumanoidRootPart.Position).Magnitude <= 10 or workspace["_WorldOrigin"].Locations:FindFirstChild("Kitsune Island") or plr.Character.Humanoid.Sit == false plr.Character.Humanoid.Sit = false
+            end
+          end
+        else
+          _tp(workspace._WorldOrigin.Locations:FindFirstChild("Kitsune Island").CFrame*CFrame.new(0,500,0))
+        end
+      end)
+    end
+  end
+end)
+local Q = Tabs.SeaEvent:AddToggle("Q", {Title = "Auto Teleport to Shrine Actived", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.tweenShrine = Value
+end)
+spawn(function()
+  while wait(.1) do
+    if _G.tweenShrine then
+      pcall(function()
+      local kit_is = workspace.Map:FindFirstChild("KitsuneIsland") or game.Workspace._WorldOrigin.Locations:FindFirstChild("Kitsune Island")
+      local shrineActive = kit_is:FindFirstChild("ShrineActive")
+        if shrineActive then
+          for _, v in next, shrineActive:GetDescendants() do
+            if v:IsA("BasePart") and v.Name:find("NeonShrinePart") then
+              replicated.Modules.Net:FindFirstChild("RE/TouchKitsuneStatue"):FireServer()
+              repeat wait() _tp(v.CFrame * CFrame.new(0,2,0)) until _G.tweenShrine == false or not kit_is
+            end
+          end
+        else
+          _tp(workspace._WorldOrigin.Locations:FindFirstChild("Kitsune Island").CFrame * CFrame.new(0,500,0))        
+        end
+      end)
+    end
+  end
+end)
+local Q = Tabs.SeaEvent:AddToggle("Q", {Title = "Auto Collect Azure Ember", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.Collect_Ember = Value
+end)
+spawn(function()
+  while wait(.1) do
+    if _G.Collect_Ember then
+      pcall(function()
+        if workspace:WaitForChild("AttachedAzureEmber") or workspace:WaitForChild("EmberTemplate") then
+        notween(workspace:WaitForChild("EmberTemplate"):FindFirstChild("Part").CFrame)
+        else
+          _tp(workspace._WorldOrigin.Locations:FindFirstChild("Kitsune Island").CFrame * CFrame.new(0,500,0))        
+          replicated.Modules.Net["RF/KitsuneStatuePray"]:InvokeServer()
+        end
+      end)
+    end
+  end
+end)
+local Q = Tabs.SeaEvent:AddToggle("Q", {Title = "Auto Trade Azure Ember", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.Trade_Ember = Value
+end)
+spawn(function()
+  while wait(.1) do
+    if _G.Trade_Ember then
+      pcall(function()
+        if workspace["_WorldOrigin"].Locations:FindFirstChild("Kitsune Island",true) then
+          replicated.Modules.Net:FindFirstChild("RF/KitsuneStatuePray"):InvokeServer()
+        end
+      end)
+    end
+  end
+end)
+Tabs.SeaEvent:AddButton({Title = "Trade Items Azure", Description = "",
+Callback = function()
+  replicated.Modules.Net:FindFirstChild("RF/KitsuneStatuePray"):InvokeServer()
+end})
+Tabs.SeaEvent:AddButton({Title = "Talk with kitsune statue", Description = "",
+Callback = function()
+  replicated.Modules.Net:FindFirstChild("RE/TouchKitsuneStatue"):FireServer()
+end})
+
+Tabs.Raids:AddSection("Dungeon Event / Raiding")
+local RaidS = Tabs.Raids:AddParagraph({Title = " Raiding Status ",Content = ""})
+spawn(function()
+  while wait(.2) do
+    pcall(function()      
+      if plr.PlayerGui.Main.Timer.Visible == true then
+        RaidS:SetDesc(" Raiding Statud : True")
+      else
+        RaidS:SetDesc(" Raiding Statud : False")
+      end      
+    end)
+  end
+end)
+DungeonTables = {"Flame","Ice","Quake","Light","Dark","String","Rumble","Magma","Human: Buddha","Sand","Bird: Phoenix","Dough"}
+local Q = Tabs.Raids:AddDropdown("Q",{Title = "Select Chip",Values = DungeonTables,Multi = false,Default = 1})
+Q:OnChanged(function(Value)
+  _G.SelectChip = Value
+end)
+local Q = Tabs.Raids:AddToggle("Q", {Title = "Auto Select Dungeon Chip", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.AutoSelectDungeon = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.AutoSelectDungeon then
+      pcall(function()
+        if GetBP("Flame-Flame") then
+          _G.SelectChip = "Flame"
+        elseif GetBP("Ice-Ice") then
+          _G.SelectChip = "Ice"
+        elseif GetBP("Quake-Quake") then
+          _G.SelectChip = "Quake"
+        elseif GetBP("Light-Light") then
+          _G.SelectChip = "Light"
+        elseif GetBP("Dark-Dark") then
+          _G.SelectChip = "Dark"
+        elseif GetBP("String-String") then
+          _G.SelectChip = "String"
+        elseif GetBP("Rumble-Rumble") then
+          _G.SelectChip = "Rumble"
+         elseif GetBP("Magma-Magma") then
+          _G.SelectChip = "Magma"
+         elseif GetBP("Human-Human: Buddha Fruit") then
+          _G.SelectChip = "Human: Buddha"
+        elseif GetBP("Dough-Dough") then
+          _G.SelectChip = "Dough"
+        elseif GetBP("Sand-Sand") then
+          _G.SelectChip = "Sand"
+        elseif GetBP("Bird-Bird: Phoenix") then
+          _G.SelectChip = "Bird: Phoenix"
+        else
+          _G.SelectChip = "Ice"
+        end
+      end)
+    end
+  end
+end)
+Tabs.Raids:AddButton({Title = "Buy Dungeon Chips [Beli]", Description = "",
+Callback = function()
+  if not GetBP("Special Microchip") then replicated.Remotes.CommF_:InvokeServer("RaidsNpc","Select",_G.SelectChip) end
+end})
+Tabs.Raids:AddButton({Title = "Buy Dungeon Chips [Devil Fruit]", Description = "Use your lowest fruit in your bag",
+Callback = function()
+  if GetBP("Special Microchip") then return end
+  local FruitPrice = {}
+  local FruitStore = {}
+  for i,v in next,replicated:WaitForChild("Remotes").CommF_:InvokeServer("GetFruits") do
+    if v.Price <= 490000 then table.insert(FruitPrice,v.Name) end 
+  end    
+  for _,y in pairs(FruitPrice) do    
+    for i,v in pairs(DungeonTables) do 
+      if not GetBP("Special Microchip") then     
+        replicated.Remotes.CommF_:InvokeServer("LoadFruit",tostring(y))	      
+	    replicated.Remotes.CommF_:InvokeServer("RaidsNpc","Select",_G.SelectChip)	
+	  end            
+    end    
+  end
+end})
+
+Tabs.Raids:AddSection("Raiding Menu")
+local Q = Tabs.Raids:AddToggle("Q", {Title = "Auto Start Raid", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.Auto_StartRaid = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.Auto_StartRaid then
+        if plr.PlayerGui.Main.TopHUDList.RaidTimer.Visible == false then
+          if GetBP("Special Microchip") then
+            if World2 then
+              _tp(CFrame.new(-6438.73535, 250.645355, -4501.50684))
+              fireclickdetector(workspace.Map.CircleIsland.RaidSummon2.Button.Main.ClickDetector)
+            elseif World3 then                   
+              replicated.Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-5097.93164, 316.447021, -3142.66602, -0.405007899, -4.31682743e-08, 0.914313197, -1.90943332e-08, 1, 3.8755779e-08, -0.914313197, -1.76180437e-09, -0.405007899))
+              fireclickdetector(workspace.Map["Boat Castle"].RaidSummon2.Button.Main.ClickDetector)
+            end
+          end
+        end
+      end
+    end)
+  end
+end)    
+local Q = Tabs.Raids:AddToggle("Q", {Title = "Teleport To Lab", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.TpLab = Value
+  while _G.TpLab do wait(Sec)
+   if _G.TpLab then
+     if World2 and _G.TpLab then _tp(CFrame.new(-6438.73535, 250.645355, -4501.50684))
+     elseif World3 and _G.TpLab then _tp(CFrame.new(-5017.40869, 314.844055, -2823.0127, -0.925743818, 4.48217499e-08, -0.378151238, 4.55503146e-09, 1, 1.07377559e-07, 0.378151238, 9.7681621e-08, -0.925743818)) end
+   end
+  end
+end)
+Q = Tabs.Raids:AddToggle("Q", {Title = "Auto Complete Raid [Safety]", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.Raiding = Value
+end)
+spawn(function()
+  pcall(function() 
+    while wait(Sec) do
+      if _G.Raiding then  
+        if plr.PlayerGui.Main.TopHUDList.RaidTimer.Visible == true then          
+          local islands = {"Island5","Island 4", "Island 3", "Island 2", "Island 1"}
+          for _, island in ipairs(islands) do
+          local location = game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild(island)
+            if location then
+              for i,v in pairs(workspace.Enemies:GetChildren()) do
+                if v:FindFirstChild("Humanoid") or v:FindFirstChild("HumanoidRootPart") then
+                  if v.Humanoid.Health > 0 then
+                    repeat wait() Attack.Kill(v,_G.Raiding) NextIs=false until not _G.Raiding or not v.Parent or v.Humanoid.Health <= 0 NextIs=true
+                  end
+                end
+              end
+            end
+          end
+        else
+          NextIs = false
+        end
+      else
+        NextIs = false
+      end
+    end
+  end)
+end)
+local Q = Tabs.Raids:AddToggle("Q", {Title = "Kill Aura", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.KillH = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.KillH then
+      for _, v in pairs(workspace.Enemies:GetChildren()) do
+        if Attack.Alive(v) then
+          pcall(function()
+            repeat wait(Sec)
+              sethiddenproperty(plr, "SimulationRadius", math.huge)
+              v:BreakJoints()
+              v.Humanoid.Health = 0
+              v.HumanoidRootPart.CanCollide = false
+            until not _G.KillH or not v.Parent or v.Humanoid.Health <= 0
+          end)
+        end
+      end
+    end
+  end
+end)
+local Q = Tabs.Raids:AddToggle("Q", {Title = "Auto Next Island", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  NextIs = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if NextIs then
+      if plr.PlayerGui.Main.TopHUDList.RaidTimer.Visible == true then
+        if workspace["_WorldOrigin"].Locations:FindFirstChild("Island 5") then _tp(workspace["_WorldOrigin"].Locations:FindFirstChild("Island 5").CFrame*CFrame.new(0,50,100))
+        elseif workspace["_WorldOrigin"].Locations:FindFirstChild("Island 4") then _tp(workspace["_WorldOrigin"].Locations:FindFirstChild("Island 4").CFrame*CFrame.new(0,50,100))
+        elseif workspace["_WorldOrigin"].Locations:FindFirstChild("Island 3") then _tp(workspace["_WorldOrigin"].Locations:FindFirstChild("Island 3").CFrame*CFrame.new(0,50,100))
+        elseif workspace["_WorldOrigin"].Locations:FindFirstChild("Island 2") then _tp(workspace["_WorldOrigin"].Locations:FindFirstChild("Island 2").CFrame*CFrame.new(0,50,100))
+        elseif workspace["_WorldOrigin"].Locations:FindFirstChild("Island 1") then _tp(workspace["_WorldOrigin"].Locations:FindFirstChild("Island 1").CFrame*CFrame.new(0,50,100))
+        end
+      end
+    end
+  end
+end)
+local Q = Tabs.Raids:AddToggle("Q", {Title = "Auto Awakening", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.Auto_Awakener = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.Auto_Awakener then
+        replicated.Remotes.CommF_:InvokeServer("Awakener","Check")
+        replicated.Remotes.CommF_:InvokeServer("Awakener","Awaken")
+      end
+    end)
+  end
+end)	
+Tabs.Combat:AddSection("Combat / Aimbot")
+__indexPlayer = Tabs.Combat:AddParagraph({Title = "All Players On Server :",Content = ""})
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+        if i == 12 then
+          __indexPlayer:SetDesc("All Players :".." "..i.." ".."/".." ".."12".." ".."[Max]")
+        elseif i == 1 then
+          __indexPlayer:SetDesc("All Players  :".." "..i.." ".."/".." ".."12")
+        else
+          __indexPlayer:SetDesc("All Players  :".." "..i.." ".."/".." ".."12")
+        end
+      end
+    end)
+  end
+end)
+__AimBotTurn = Tabs.Combat:AddParagraph({Title = "Aimbot Status :",Content = ""})
+local AimbotMethod = {"AimBots Skill","Auto Aimbots"}
+Checking_AimStatus = function()
+  if _G.AimCam then
+    return "Aimbot Camera"
+  else
+    return ""
+  end 
+  if _G.AimbotGun then
+    return "Aimbot Guns"
+  else
+    return ""  
+  end 
+end
+spawn(function() 
+  while wait(.2) do 
+    pcall(function()      
+      if _G.AimMethod then 
+	   __AimBotTurn:SetDesc("Aimbot - Skills : True") 
+	 elseif (_G.AimCam or _G.AimbotGun) and _G.AimMethod then
+	   __AimBotTurn:SetDesc("Aimbot - Skills |" ..Checking_AimStatus() .." :" .."True")
+	 else
+        __AimBotTurn:SetDesc("Aimbot - Skills : False") 
+      end 
+    end)
+  end
+end)
+local PlrList = {}   
+for _,v in pairs(game:GetService("Players"):GetChildren()) do table.insert(PlrList, v.Name) end
+local SelectedPly = Tabs.Combat:AddDropdown("SelectedPly",{Title = "Choose Players",Values = PlrList,Multi = false,Default = 1})
+SelectedPly:OnChanged(function(Value)
+  _G.PlayersList = Value
+end)
+Q = Tabs.Combat:AddToggle("Q", {Title = "Teleport to choose players", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.TpPly = Value
+  pcall(function()
+    if _G.TpPly then
+      repeat wait()
+        _tp(game:GetService("Players")[_G.PlayersList].Character.HumanoidRootPart.CFrame) 
+      until not _G.TpPly
+    end
+  end)
+end)
+Q = Tabs.Combat:AddToggle("Q", {Title = "Spectate Choose Players", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  SpectatePlys = Value
+  repeat task.wait(.1)
+    workspace.Camera.CameraSubject = game:GetService("Players"):FindFirstChild(_G.PlayersList).Character.Humanoid
+  until SpectatePlys == false 
+    workspace.Camera.CameraSubject = plr.Character.Humanoid
+end)
+
+Q = Tabs.Combat:AddDropdown("Q",{Title = "Choose Aim Method",Values = AimbotMethod,Multi = false,Default = 1})
+Q:OnChanged(function(Value)
+  ABmethod = Value
+end)
+
+Q = Tabs.Combat:AddToggle("Q", {Title = "Aimbot Method Skills", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.AimMethod = Value
+end)
+task.spawn(function()
+  while task.wait() do
+    pcall(function()
+      if _G.AimMethod and ABmethod == "AimBots Skill" then
+        for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+          if v.Name == _G.PlayersList and v.Team ~= game.Players.LocalPlayer.Team then
+            MousePos = v.Character:FindFirstChild("HumanoidRootPart").Position       	  
+          end
+        end
+      end
+    end)
+  end
+end)
+task.spawn(function()
+  while task.wait() do
+    pcall(function()
+      if _G.AimMethod and ABmethod == "Auto Aimbots" then
+        local MaxDistance = math.huge
+        for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+          if v.Name ~= plr.Name and v.Team ~= game.Players.LocalPlayer.Team then
+            local Distance = v:DistanceFromCharacter(plr.Character.HumanoidRootPart.Position)
+            if Distance < MaxDistance then
+              MaxDistance = Distance
+              MousePos = v.Character:FindFirstChild("HumanoidRootPart").Position
+       	    end
+          end
+        end
+      end
+    end)
+  end
+end)
+Q = Tabs.Combat:AddToggle("Q", {Title = "Aimbot Camera Closet Players", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  _G.AimCam = Value
+end)
+task.spawn(function()
+  while task.wait(Sec) do
+    pcall(function()
+      if _G.AimCam then
+      local camera = workspace.CurrentCamera
+	  closestplayer = function()
+	  local dist = math.huge
+	  local target = nil 
+	    for _, v in next, ply:GetPlayers() do
+	      if v ~= plr then
+		    if v.Character and v.Character:FindFirstChild("Head") and _G.AimCam and v.Character.Humanoid.Health > 0 then
+            local Mag = (v.Character.Head.Position - plr.Character.Head.Position).Magnitude
+	          if Mag < dist then
+		        dist = Mag
+			    target = v
+		      end
+		    end
+		  end
+        end
+        return target
+      end
+        repeat task.wait()
+          camera.CFrame = CFrame.new(camera.CFrame.Position,closestplayer().Character.HumanoidRootPart.Position)
+        until _G.AimCam == false or Mag > dist
+      end
+    end)
+  end
+end)
+
+Tabs.Combat:AddSection("LocalPlayer Settings / Misc")
+Q = Tabs.Combat:AddToggle("Q", {Title = "Instance Mink V3 [ INF ]", Description = "turn on for make mink v3 infinity", Default = false})
+Q:OnChanged(function(Value)
+  InfAblities = Value
+end)
+spawn(function()
+  while wait(.2) do
+    pcall(function()
+      if InfAblities then
+        if not plr.Character.HumanoidRootPart:FindFirstChild("Agility") then
+          local agility = replicated.FX["Agility"]:Clone()
+          agility.Name = "Agility"
+          agility.Parent = plr.Character.HumanoidRootPart
+        end
+      else
+        plr.Character.HumanoidRootPart["Agility"]:Destroy()
+      end
+    end)
+  end
+end)
+Q = Tabs.Combat:AddToggle("Q", {Title = "Instance Energy [ INF ]", Description = "turn on for make energy infinity", Default = false})
+Q:OnChanged(function(Value)
+  infEnergy = Value
+  if Value then getInfinity_Ability("Energy", infEnergy) end
+end)
+Q = Tabs.Combat:AddToggle("Q", {Title = "Instance Soru [ INF ]", Description = "turn on for make soru infinity", Default = false})
+Q:OnChanged(function(Value)
+  _G.InfSoru = Value
+  if Value then getInfinity_Ability("Soru", _G.InfSoru) end
+end)
+Q = Tabs.Combat:AddToggle("Q", {Title = "Instance Observation Range [ INF ]", Description = "turn on for make observation range infinity", Default = false})
+Q:OnChanged(function(Value)
+  _G.InfiniteObRange = Value
+  if Value then getInfinity_Ability("Observation", _G.InfiniteObRange) end
+end)
+
+Tabs.Combat:AddSection("Settings Combat / Aimbot Settings")
+
+Q = Tabs.Combat:AddToggle("Q", {Title = "Ignore Same Teams", Description = "turn on for ignore not aimbot same team", Default = false})
+Q:OnChanged(function(Value)
+  _G.NoAimTeam = Value
+end)
+Q = Tabs.Combat:AddToggle("Q", {Title = "Accept Allies", Description = "turn on for auto accept ally", Default = false})
+Q:OnChanged(function(Value)
+  _G.AcceptAlly = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.AcceptAlly then
+      pcall(function()
+        for _, v in pairs(ply:GetChildren()) do 
+          if v.Name ~= plr.Name and v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") then
+            replicated:WaitForChild("Remotes"):WaitForChild("CommF_"):InvokeServer("AcceptAlly", v.Name)
+          end
+        end
+      end)
+    end
+  end
+end)
+
+Tabs.Combat:AddSection("Esp Items / Entity / Island")
+
+function isnil(thing)
+  return (thing == nil)
+end
+local function round(n)
+  return math.floor(tonumber(n) + 0.5)
+end
+Number = math.random(1, 1000000)
+EspPly = function()
+  for _,v in next, game.Players:GetChildren() do
+    pcall(function()
+	  if not isnil(v.Character) then
+	    if PlayerEsp then
+		  if not isnil(v.Character.Head) and not v.Character.Head:FindFirstChild('NameEsp'..Number) then
+		    local bill = Instance.new('BillboardGui',v.Character.Head)
+			bill.Name = 'NameEsp'..Number
+			bill.ExtentsOffset = Vector3.new(0, 1, 0)
+			bill.Size = UDim2.new(1,200,1,30)
+			bill.Adornee = v.Character.Head
+			bill.AlwaysOnTop = true
+			local name = Instance.new('TextLabel',bill)
+    		     name.Font = Enum.Font.Code
+			name.FontSize = "Size14"
+			name.TextWrapped = true
+			name.Text = (v.Name ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Character.Head.Position).Magnitude/3) ..' M')
+			name.Size = UDim2.new(1,0,1,0)
+			name.TextYAlignment = 'Top'
+	        	name.BackgroundTransparency = 1
+			name.TextStrokeTransparency = 0.5
+			  if v.Team == TeamSelf then
+			    name.TextColor3 = Color3.new(0,0,254)
+			  else
+			    name.TextColor3 = Color3.new(255,0,0)
+		  	  end
+			else
+			v.Character.Head['NameEsp'..Number].TextLabel.Text = (v.Data.Level.Value ..' | '.. v.Name ..' | '.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Character.Head.Position).Magnitude/3) ..' M\nHealth : ' .. round(v.Character.Humanoid.Health*100/v.Character.Humanoid.MaxHealth) .. '%')
+		    end
+		  else
+		  if v.Character.Head:FindFirstChild('NameEsp'..Number) then
+		    v.Character.Head:FindFirstChild('NameEsp'..Number):Destroy()
+	  	  end
+	    end
+	  end
+    end)
+  end
+end  
+LocationEsp = function() 
+  for _,v in next, workspace["_WorldOrigin"].Locations:GetChildren() do
+    pcall(function()
+      if IslandESP then 
+        if (v.Name ~= "Sea") then
+          if not v:FindFirstChild('NameEsp') then
+            local bill = Instance.new('BillboardGui',v)
+            bill.Name = 'NameEsp'
+            bill.ExtentsOffset = Vector3.new(0, 1, 0)
+            bill.Size = UDim2.new(1,200,1,30)
+            bill.Adornee = v
+            bill.AlwaysOnTop = true
+            local name = Instance.new('TextLabel',bill)
+            name.Font = Enum.Font.Code
+            name.FontSize = "Size14"
+            name.TextWrapped = true
+            name.Size = UDim2.new(1,0,1,0)
+            name.TextYAlignment = 'Top'
+            name.BackgroundTransparency = 1
+            name.TextStrokeTransparency = 0.5
+            name.TextColor3 = Color3.fromRGB(98,252,252)
+            else
+            v['NameEsp'].TextLabel.Text = (v.Name ..'   \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Position).Magnitude/3) ..' M')
+             end
+           end
+         else
+        if v:FindFirstChild('NameEsp') then
+          v:FindFirstChild('NameEsp'):Destroy()
+        end
+      end
+    end)
+  end
+end
+DevEsp = function()
+  for i,v in next, workspace:GetChildren() do
+    pcall(function()
+      if DevilFruitESP then
+        if string.find(v.Name, "Fruit") then   
+          if not v.Handle:FindFirstChild('NameEsp'..Number) then
+            local bill = Instance.new('BillboardGui',v.Handle)
+            bill.Name = 'NameEsp'..Number
+            bill.ExtentsOffset = Vector3.new(0, 1, 0)
+            bill.Size = UDim2.new(1,200,1,30)
+            bill.Adornee = v.Handle
+            bill.AlwaysOnTop = true
+            local name = Instance.new('TextLabel',bill)
+            name.Font = Enum.Font.Code
+            name.FontSize = "Size14"
+            name.TextWrapped = true
+            name.Size = UDim2.new(1,0,1,0)
+            name.TextYAlignment = 'Top'
+            name.BackgroundTransparency = 1
+            name.TextStrokeTransparency = 0.5
+            name.TextColor3 = Color3.fromRGB(255,255,255)
+            name.Text = (v.Name ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Handle.Position).Magnitude/3) ..' M')
+              else
+                v.Handle['NameEsp'..Number].TextLabel.Text = ('[' ..v.Name ..']' ..'   \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Handle.Position).Magnitude/3) ..' M')
+               end
+             end
+           else
+         if v.Handle:FindFirstChild('NameEsp'..Number) then
+          v.Handle:FindFirstChild('NameEsp'..Number):Destroy()
+        end
+      end
+    end)
+  end
+end
+flowerEsp = function()
+  for i,v in pairs(workspace:GetChildren()) do
+    pcall(function()
+      if v.Name == "Flower2" or v.Name == "Flower1" then
+        if FlowerESP then 
+          if not v:FindFirstChild('NameEsp'..Number) then
+            local bill = Instance.new('BillboardGui',v)
+            bill.Name = 'NameEsp'..Number
+            bill.ExtentsOffset = Vector3.new(0, 1, 0)
+            bill.Size = UDim2.new(1,200,1,30)
+            bill.Adornee = v
+            bill.AlwaysOnTop = true
+            local name = Instance.new('TextLabel',bill)
+            name.Font = Enum.Font.Code
+            name.FontSize = "Size14"
+            name.TextWrapped = true
+            name.Size = UDim2.new(1,0,1,0)
+            name.TextYAlignment = 'Top'
+            name.BackgroundTransparency = 1
+            name.TextStrokeTransparency = 0.5
+            name.TextColor3 = Color3.fromRGB(88, 214, 252)
+            if v.Name == "Flower1" then 
+              name.Text = ("Blue Flower" ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Position).Magnitude/3) ..' M')
+              name.TextColor3 = Color3.fromRGB(88, 214, 252)
+            end
+              if v.Name == "Flower2" then
+                name.Text = ("Red Flower" ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Position).Magnitude/3) ..' M')
+                name.TextColor3 = Color3.fromRGB(88, 214, 252)
+              end
+          else
+            v['NameEsp'..Number].TextLabel.Text = (v.Name ..'   \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Position).Magnitude/3) ..' M')
+          end
+        else
+          if v:FindFirstChild('NameEsp'..Number) then
+            v:FindFirstChild('NameEsp'..Number):Destroy()
+          end
+        end
+      end   
+    end)
+  end
+end
+EventIslandEsp = function()
+  for i, v in pairs(workspace._WorldOrigin.Locations:GetChildren()) do
+    pcall(function()
+      if EspEventIsland then
+	    if (v.Name == "Mirage Island" or v.Name =="Prehistoric Island" or v.Name =="Kitsune Island") then
+	      if not v:FindFirstChild("NameEsp") then
+		    local bill = Instance.new("BillboardGui", v);
+	   	    bill.Name = "NameEsp";
+		    bill.ExtentsOffset = Vector3.new(0, 1, 0);
+		    bill.Size = UDim2.new(1, 200, 1, 30);
+		    bill.Adornee = v;
+		    bill.AlwaysOnTop = true;
+		    local name = Instance.new("TextLabel", bill);
+		    name.Font = "Code";
+		    name.FontSize = "Size14";
+		    name.TextWrapped = true;
+		    name.Size = UDim2.new(1, 0, 1, 0);
+    	    name.TextYAlignment = "Top";
+	        name.BackgroundTransparency = 1;
+    	    name.TextStrokeTransparency = 0.5;
+		    name.TextColor3 = Color3.fromRGB(80, 245, 245);
+	     else
+	 	    v.NameEsp.TextLabel.Text = v.Name .. "   \n" .. round((plr.Character.Head.Position - v.Position).Magnitude / 3) .. " M";
+		  end
+        end
+	  elseif v:FindFirstChild("NameEsp") then
+	    v:FindFirstChild("NameEsp"):Destroy()
+      end
+    end)
+  end
+end
+gearEsp = function()
+  for _,v in pairs(workspace.Map.MysticIsland:GetDescendants()) do
+    pcall(function()
+      if ESPGear then
+        if v.Name == "Part" and v.Material == Enum.Material.Neon then
+          if not v:FindFirstChild("NameEsp") then
+          local bill = Instance.new("BillboardGui", v)
+          bill.Name = "NameEsp"
+          bill.ExtentsOffset = Vector3.new(0, 1, 0)
+          bill.Size = UDim2.new(1, 200, 1, 30)
+          bill.Adornee = v
+          bill.AlwaysOnTop = true
+          local name = Instance.new("TextLabel", bill)
+          name.Font = "Code"
+          name.FontSize = "Size14"
+          name.TextWrapped = true
+          name.Size = UDim2.new(1, 0, 1, 0)
+          name.TextYAlignment = "Top"
+          name.BackgroundTransparency = 1
+          name.TextStrokeTransparency = 0.5
+          name.TextColor3 = Color3.fromRGB(80, 245, 245)
+            else
+            v["NameEsp"].TextLabel.Text =("Gear" .."   \n" .. round((plr.Character.Head.Position - v.Position).Magnitude / 3).. " M")
+                end
+              end
+            else
+          if v:FindFirstChild("NameEsp") then
+            v:FindFirstChild("NameEsp"):Destroy()
+          end
+      end
+    end)
+  end
+end
+AdvanFruitEsp = function()
+if advanEsp == true then     
+for _,v in pairs(replicated.NPCs:GetChildren()) do
+  if v.Name == "Advanced Fruit Dealer" then
+    if not workspace:FindFirstChild("Adv") then
+     Adv = Instance.new("Part")
+     Adv.Name = "Adv"
+     Adv.Transparency = 1
+     Adv.Size = Vector3.new(1,1,1)
+     Adv.Anchored = true
+     Adv.CanCollide = false
+     Adv.Parent = workspace
+     Adv.CFrame = v.HumanoidRootPart.CFrame    
+     elseif workspace:FindFirstChild("Adv") then
+      if not Adv:FindFirstChild("NameEsp") then
+        local bill = Instance.new("BillboardGui", Adv)
+        bill.Name = "NameEsp"
+        bill.ExtentsOffset = Vector3.new(0, 1, 0)
+        bill.Size = UDim2.new(1, 200, 1, 30)
+        bill.Adornee = Adv
+        bill.AlwaysOnTop = true
+        local name = Instance.new("TextLabel", bill)
+        name.Font = "Code"
+        name.FontSize = "Size14"
+        name.TextWrapped = true
+        name.Size = UDim2.new(1, 0, 1, 0)
+        name.TextYAlignment = "Top"
+        name.BackgroundTransparency = 1
+        name.TextStrokeTransparency = 0.5
+        name.TextColor3 = Color3.fromRGB(80, 245, 245)        
+        else
+          Adv["NameEsp"].TextLabel.Text = (v.Name .."   \n" ..round((plr.Character.Head.Position - v.HumanoidRootPart.Position).Magnitude /3) .." M")    
+          end                              
+        end
+      end
+    end
+    else
+      if workspace:FindFirstChild("Adv") then
+        workspace:FindFirstChild("Adv"):Destroy()
+    end    
+  end
+end
+HakiClorEsp = function()
+if ColorEsp == true then     
+for _,v in pairs(replicated.NPCs:GetChildren()) do
+  if v.Name == "Barista Cousin" then
+    if not workspace:FindFirstChild("Gay") then
+     Gay = Instance.new("Part")
+     Gay.Name = "Gay"
+     Gay.Transparency = 1
+     Gay.Size = Vector3.new(1,1,1)
+     Gay.Anchored = true
+     Gay.CanCollide = false
+     Gay.Parent = workspace
+     Gay.CFrame = v.HumanoidRootPart.CFrame    
+     elseif workspace:FindFirstChild("Gay") then
+      if not Gay:FindFirstChild("NameEsp") then
+        local bill = Instance.new("BillboardGui", Gay)
+        bill.Name = "NameEsp"
+        bill.ExtentsOffset = Vector3.new(0, 1, 0)
+        bill.Size = UDim2.new(1, 200, 1, 30)
+        bill.Adornee = Gay
+        bill.AlwaysOnTop = true
+        local name = Instance.new("TextLabel", bill)
+        name.Font = "Code"
+        name.FontSize = "Size14"
+        name.TextWrapped = true
+        name.Size = UDim2.new(1, 0, 1, 0)
+        name.TextYAlignment = "Top"
+        name.BackgroundTransparency = 1
+        name.TextStrokeTransparency = 0.5
+        name.TextColor3 = Color3.fromRGB(80, 245, 245)        
+        else
+          Gay["NameEsp"].TextLabel.Text = (v.Name .."   \n" ..round((plr.Character.Head.Position - v.HumanoidRootPart.Position).Magnitude /3) .." M")    
+          end                              
+        end
+      end
+    end
+    else
+      if workspace:FindFirstChild("Gay") then
+        workspace:FindFirstChild("Gay"):Destroy()
+    end    
+  end
+end
+LegenSword = function()
+if LegenS == true then     
+for _,v in pairs(replicated.NPCs:GetChildren()) do
+  if v.Name == "Legendary Sword Dealer " then
+    if not workspace:FindFirstChild("Lgd") then
+     Lgd = Instance.new("Part")
+     Lgd.Name = "Lgd"
+     Lgd.Transparency = 1
+     Lgd.Size = Vector3.new(1,1,1)
+     Lgd.Anchored = true
+     Lgd.CanCollide = false
+     Lgd.Parent = workspace
+     Lgd.CFrame = v.HumanoidRootPart.CFrame    
+     elseif workspace:FindFirstChild("Lgd") then
+      if not Lgd:FindFirstChild("NameEsp") then
+        local bill = Instance.new("BillboardGui", Lgd)
+        bill.Name = "NameEsp"
+        bill.ExtentsOffset = Vector3.new(0, 1, 0)
+        bill.Size = UDim2.new(1, 200, 1, 30)
+        bill.Adornee = Lgd
+        bill.AlwaysOnTop = true
+        local name = Instance.new("TextLabel", bill)
+        name.Font = "Code"
+        name.FontSize = "Size14"
+        name.TextWrapped = true
+        name.Size = UDim2.new(1, 0, 1, 0)
+        name.TextYAlignment = "Top"
+        name.BackgroundTransparency = 1
+        name.TextStrokeTransparency = 0.5
+        name.TextColor3 = Color3.fromRGB(80, 245, 245)        
+        else
+          Lgd["NameEsp"].TextLabel.Text = (v.Name .."   \n" ..round((plr.Character.Head.Position - v.HumanoidRootPart.Position).Magnitude /3) .." M")    
+          end                              
+        end
+      end
+    end
+    else
+      if workspace:FindFirstChild("Lgd") then
+        workspace:FindFirstChild("Lgd"):Destroy()
+    end    
+  end
+end
+ChestEsp = function()
+    if ChestESP then
+        local CollectionService = game:GetService("CollectionService")
+        local Players = game:GetService("Players")
+        local Player = Players.LocalPlayer
+        local Character = Player.Character or Player.CharacterAdded:Wait()
+        local playerPos = Character:GetPivot().Position
+        local Chests = CollectionService:GetTagged("_ChestTagged")        
+        for _, Chest in ipairs(Chests) do
+local __DARKLUA_CONTINUE_507=false repeat            if not SelectedIsland or Chest:IsDescendantOf(SelectedIsland) then
+                if not Chest:GetAttribute("IsDisabled") then
+                    local chestPos
+                    local success, result = pcall(function() return Chest:GetPivot().Position end)
+                    if success then
+                        chestPos = result
+                    elseif Chest:IsA("BasePart") then
+                        chestPos = Chest.Position
+                    else
+__DARKLUA_CONTINUE_507=true                        break  
+                    end                  
+                    local distanceMagnitude = (chestPos - playerPos).Magnitude
+                    local sanitizedFullName = Chest:GetFullName():gsub("[^%w_]", "_")
+                    local existingEsp = Chest:FindFirstChild("ChestEspAttachment")                    
+                    if not existingEsp then
+                        local attachment = Instance.new("Attachment")
+                        attachment.Name = "ChestEspAttachment"
+                        attachment.Parent = Chest
+                        attachment.Position = Vector3.new(0, 3, 0)                     
+                        local nameEsp = Instance.new("BillboardGui")
+                        nameEsp.Name = "NameEsp"
+                        nameEsp.Size = UDim2.new(0, 200, 0, 30)
+                        nameEsp.Adornee = attachment
+                        nameEsp.ExtentsOffset = Vector3.new(0, 1, 0)
+                        nameEsp.AlwaysOnTop = true
+                        nameEsp.Parent = attachment                        
+                        local nameLabel = Instance.new("TextLabel")
+                        nameLabel.Font = Enum.Font.Code
+                        nameLabel.TextSize = 14
+                        nameLabel.TextWrapped = true
+                        nameLabel.Size = UDim2.new(1, 0, 1, 0)
+                        nameLabel.TextYAlignment = Enum.TextYAlignment.Top
+                        nameLabel.BackgroundTransparency = 1
+                        nameLabel.TextStrokeTransparency = 0.5
+                        nameLabel.TextColor3 = Color3.fromRGB(80, 245, 245)
+                        nameLabel.Parent = nameEsp
+                    end
+                    local nameEsp = existingEsp and existingEsp:FindFirstChild("NameEsp")
+                    if nameEsp then
+                        local displayDistance = math.floor(distanceMagnitude / 3)
+                        local chestName = Chest.Name:gsub("Label", "")
+                        nameEsp.TextLabel.Text = string.format("[%s] %d M", chestName, displayDistance)
+                    end
+                    if _G_AutoFarmChest and distanceMagnitude <= 20 then
+                        if existingEsp then
+                            existingEsp:Destroy()
+                        end
+                    end
+                end
+            end
+__DARKLUA_CONTINUE_507=true until true if not __DARKLUA_CONTINUE_507 then break end        end
+    else
+        for _, Chest in ipairs(game:GetService("CollectionService"):GetTagged("_ChestTagged")) do
+            local espAttachment = Chest:FindFirstChild("ChestEspAttachment")
+            if espAttachment then
+                espAttachment:Destroy()
+            end
+        end
+    end
+end
+berriesEsp = function()
+    if BerryEsp then
+        local CollectionService = game:GetService("CollectionService")
+        local Players = game:GetService("Players")
+        local Player = Players.LocalPlayer
+        local BerryBushes = CollectionService:GetTagged("BerryBush")
+        for _, Bush in ipairs(BerryBushes) do
+            local bushPosition = Bush.Parent:GetPivot().Position
+            for _, BerryName in pairs(Bush:GetAttributes()) do
+                if BerryName and (not BerryArray or table.find(BerryArray, BerryName)) then
+                    local espPartName = "BerryEspPart_" .. BerryName .. "_" .. tostring(bushPosition)
+                    local existingEsp = workspace:FindFirstChild(espPartName)
+                    if not existingEsp then
+                        existingEsp = Instance.new("Part")
+                        existingEsp.Name = espPartName
+                        existingEsp.Transparency = 1
+                        existingEsp.Size = Vector3.new(1, 1, 1)
+                        existingEsp.Anchored = true
+                        existingEsp.CanCollide = false
+                        existingEsp.Parent = workspace
+                        existingEsp.CFrame = CFrame.new(bushPosition)
+                    end
+                    if not existingEsp:FindFirstChild("NameEsp") then
+                        local nameEsp = Instance.new("BillboardGui", existingEsp)
+                        nameEsp.Name = "NameEsp"
+                        nameEsp.ExtentsOffset = Vector3.new(0, 1, 0)
+                        nameEsp.Size = UDim2.new(0, 200, 0, 30)
+                        nameEsp.Adornee = existingEsp
+                        nameEsp.AlwaysOnTop = true
+                        local nameLabel = Instance.new("TextLabel", nameEsp)
+                        nameLabel.Font = Enum.Font.Code
+                        nameLabel.TextSize = 14
+                        nameLabel.TextWrapped = true
+                        nameLabel.Size = UDim2.new(1, 0, 1, 0)
+                        nameLabel.TextYAlignment = Enum.TextYAlignment.Top
+                        nameLabel.BackgroundTransparency = 1
+                        nameLabel.TextStrokeTransparency = 0.5
+                        nameLabel.TextColor3 = Color3.fromRGB(80, 245, 245)
+                        nameLabel.Parent = nameEsp
+                    end
+                    local nameEsp = existingEsp:FindFirstChild("NameEsp")
+                    local distance = (Player.Character.Head.Position - bushPosition).Magnitude / 3
+                    nameEsp.TextLabel.Text = ('[' .. BerryName .. ']' .. " " .. math.round(distance) .. " M")
+                    if _G.AutoBerry and math.round(distance) <= 20 then
+                        existingEsp:Destroy()
+                    end
+                end
+            end
+        end
+    else
+        for _, v in ipairs(workspace:GetChildren()) do
+            if v:IsA("Part") and v.Name:match("BerryEspPart_.*") then
+                v:Destroy()
+            end
+        end
+    end
+end
+
+Q = Tabs.Combat:AddToggle("Q", {Title = "Esp Berries", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  BerryEsp = Value
+  while BerryEsp do wait()
+    berriesEsp() 
+  end
+end)
+
+Q = Tabs.Combat:AddToggle("Q", {Title = "Esp Players", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  PlayerEsp = Value
+  while PlayerEsp do wait()
+    EspPly()
+  end
+end)
+
+Q = Tabs.Combat:AddToggle("Q", {Title = "Esp Chests", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  ChestESP = Value
+  while ChestESP do wait()
+    ChestEsp() 
+  end
+end)
+
+Q = Tabs.Combat:AddToggle("Q", {Title = "Esp Fruits", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  DevilFruitESP = Value
+  while DevilFruitESP do wait()
+    DevEsp() 
+  end
+end)
+
+Q = Tabs.Combat:AddToggle("Q", {Title = "Esp Island Location", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  IslandESP = Value
+  while IslandESP do wait()
+    LocationEsp() 
+  end
+end)
+
+if World2 then
+Q = Tabs.Combat:AddToggle("Q", {Title = "Esp Flower", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  FlowerESP = Value
+  while FlowerESP do wait()
+    flowerEsp() 
+  end
+end)
+Q = Tabs.Combat:AddToggle("Q", {Title = "Esp Legendary Sword", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  LegenS = Value
+  while LegenS do wait()
+    LegenSword()
+  end
+end)
+end
+
+if World2 or World3 then
+Q = Tabs.Combat:AddToggle("Q", {Title = "Esp Aura Colour Dealers", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  ColorEsp = Value
+  while ColorEsp do wait()
+    HakiClorEsp()
+  end
+end)
+end
+
+if World3 then
+Q = Tabs.Combat:AddToggle("Q", {Title = "Esp Gears", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  ESPGear = Value
+  while ESPGear do wait()
+    gearEsp()
+  end
+end)
+Q = Tabs.Combat:AddToggle("Q", {Title = "Esp SeaEvent Island", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  EspEventIsland = Value
+  while EspEventIsland do wait()
+    EventIslandEsp()
+  end
+end)
+Q = Tabs.Combat:AddToggle("Q", {Title = "Esp Advanced Fruits Dealer", Description = "", Default = false})
+Q:OnChanged(function(Value)
+  advanEsp = Value
+  while advanEsp do wait()
+    AdvanFruitEsp()
+  end
+end)
+end
+
+Tabs.Travel:AddSection("Travel - Worlds")
+Tabs.Travel:AddButton({Title = "Travel East Blue (World 1)", Description = "",
+Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("TravelMain")
+end})
+Tabs.Travel:AddButton({Title = "Travel Dressrosa (World 2)", Description = "",
+Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("TravelDressrosa")
+end})
+Tabs.Travel:AddButton({Title = "Travel Zou (World 3)", Description = "",
+Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("TravelZou")
+end})
+Tabs.Travel:AddSection("Travel - Island")
+Location = {}
+for i,v in pairs(workspace["_WorldOrigin"].Locations:GetChildren()) do  
+  table.insert(Location ,v.Name)
+end
+Travelllll = Tabs.Travel:AddDropdown("Travelllll",{Title = "Select Travelling",Values = Location,Multi = false,Default = 1})
+Travelllll:OnChanged(function(Value)
+  _G.Island = Value
+end)
+GoIsland = Tabs.Travel:AddToggle("GoIsland", {Title = "Auto Travel", Description = "Automatic teleport to pos island", Default = false})
+GoIsland:OnChanged(function(Value)
+  _G.Teleport = Value
+  if Value then
+    for i,v in pairs(workspace["_WorldOrigin"].Locations:GetChildren()) do
+      if v.Name == _G.Island then
+        repeat wait()
+	     _tp(v.CFrame * CFrame.new(0, 30, 0)) 
+        until not _G.Teleport or Root.CFrame == v.CFrame
+      end
+    end
+  end
+end)
+
+Tabs.Travel:AddSection("Travel - Portal")
+if World1 then
+  Location_Portal = {
+    "Sky",
+    "UnderWater"
+  }
+elseif World2 then
+  Location_Portal = {
+    "SwanRoom",
+    "Cursed Ship"
+  }
+elseif World3 then
+  Location_Portal = {
+    "Castle On The Sea",
+    "Mansion Cafe",
+    "Hydra Teleport",
+    "Canvendish Room",
+    "Temple of Time"
+  }
+end
+
+PortalTP = Tabs.Travel:AddDropdown("PortalTP",{Title = "Select Portal",Values = Location_Portal,Multi = false,Default = 1})
+PortalTP:OnChanged(function(Value)
+  _G.Island_PT = Value
+end)
+Tabs.Travel:AddButton({Title = "requestEntrance", Description = "",Callback = function()
+  if _G.Island_PT == "Sky" then
+    replicated.Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-7894, 5547, -380))
+  elseif _G.Island_PT == "UnderWater" then
+    replicated.Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(61163, 11, 1819))
+  elseif _G.Island_PT == "SwanRoom" then
+    replicated.Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(2285, 15, 905))
+  elseif _G.Island_PT == "Cursed Ship" then
+    replicated.Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(923, 126, 32852))
+  elseif _G.Island_PT == "Castle On The Sea" then
+    replicated.Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-5097.93164, 316.447021, -3142.66602, -0.405007899, -4.31682743e-08, 0.914313197, -1.90943332e-08, 1, 3.8755779e-08, -0.914313197, -1.76180437e-09, -0.405007899))
+  elseif _G.Island_PT == "Mansion Cafe" then
+    replicated.Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-12471.169921875, 374.94024658203, -7551.677734375))
+  elseif _G.Island_PT == "Hydra Teleport" then
+    replicated.Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(5643.45263671875, 1013.0858154296875, -340.51025390625))
+  elseif _G.Island_PT == "Canvendish Room" then
+    replicated.Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(5314.54638671875, 22.562219619750977, -127.06755065917969))
+  elseif _G.Island_PT == "Temple of Time" then
+    replicated.Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(28310.0234, 14895.1123, 109.456741, -0.469690144, -2.85620132e-08, -0.882831335, -3.23509219e-08, 1, -1.51411736e-08, 0.882831335, 2.14487486e-08, -0.469690144))
+  end
+end})
+
+Tabs.Travel:AddSection("Travel - NPCs")
+for _, v in pairs(replicated.NPCs:GetChildren()) do table.insert(NPCList, v.Name)end
+NPCsPos = Tabs.Travel:AddDropdown("NPCsPos",{Title = "Select NPCs",Values = NPCList,Multi = false,Default = 1})
+NPCsPos:OnChanged(function(Value)
+  NPClist = Value
+end)
+GoNPCs = Tabs.Travel:AddToggle("GoNPCs", {Title = "Auto Tween to NPCs", Description = "Automatic teleport to pos Npcs", Default = false})
+GoNPCs:OnChanged(function(Value)
+  _G.TPNpc = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.TPNpc then
+	 pcall(function()
+       for __, v in pairs(replicated.NPCs:GetChildren()) do
+       if v.Name == NPClist then _tp(v.HumanoidRootPart.CFrame) end
+       end                	   	   
+	 end)
+    end
+  end
+end)
+
+Tabs.Fruit:AddSection("Fruits Options")
+local fruitsOnSale = {}
+local function addCommas(number)
+    local formatted = tostring(number)
+    while true do  
+        formatted, k = formatted:gsub("^(-?%d+)(%d%d%d)", '%1,%2')
+        if k == 0 then break end
+    end
+    return formatted
+end
+for _, fruitData in pairs(replicated.Remotes.CommF_:InvokeServer("GetFruits",true)) do
+    if fruitData["OnSale"] == true then
+        local priceWithCommas = addCommas(fruitData["Price"])
+        local fruitInfo = fruitData["Name"]
+        table.insert(fruitsOnSale, fruitInfo)
+    end
+end
+local Nms = {}
+for _, fruitData in pairs(replicated.Remotes.CommF_:InvokeServer("GetFruits",false)) do
+    if fruitData["OnSale"] == true then
+        local price = addCommas(fruitData["Price"])
+        local NormalInFO = fruitData["Name"]
+        table.insert(Nms, NormalInFO)
+    end
+end
+Sel_NFruit = Tabs.Fruit:AddDropdown("Sel_NFruit",{Title = "Select Fruit Stock",Values = Nms,Multi = false,Default = 1})
+Sel_NFruit:OnChanged(function(Value)
+  _G.SelectFruit = Value
+end)
+Tabs.Fruit:AddButton({Title = "Buy Basic Stock", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("PurchaseRawFruit",_G.SelectFruit)
+end})
+Sel_MFruit = Tabs.Fruit:AddDropdown("Sel_MFruit",{Title = "Select Mirage Fruit",Values = fruitsOnSale,Multi = false,Default = 1})
+Sel_MFruit:OnChanged(function(Value)
+  SelectF_Adv = Value
+end)
+local Nms = {}
+for _, fruitData in pairs(replicated.Remotes.CommF_:InvokeServer("GetFruits",false)) do
+    if fruitData["OnSale"] == true then
+        local price = addCommas(fruitData["Price"])
+        local NormalInFO = fruitData["Name"]
+        table.insert(Nms, NormalInFO)
+    end
+end
+Tabs.Fruit:AddButton({Title = "Buy Mirage Stock", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("PurchaseRawFruit",SelectF_Adv)
+end})
+RandomFF = Tabs.Fruit:AddToggle("RandomFF", {Title = "Auto Random Fruit", Description = "Automatic random devil fruit", Default = false})
+RandomFF:OnChanged(function(Value)
+  _G.Random_Auto = Value
+end)
+spawn(function()
+  while wait(Sec) do
+   	pcall(function()
+      if _G.Random_Auto then replicated.Remotes.CommF_:InvokeServer("Cousin","Buy") end 
+    end)
+  end
+end)
+DropF = Tabs.Fruit:AddToggle("DropF", {Title = "Auto Drop Fruit", Description = "Automatic drop devil fruit", Default = false})
+DropF:OnChanged(function(Value)
+  _G.DropFruit = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.DropFruit then
+      pcall(function() DropFruits() end)
+    end
+  end
+end)
+StoredF = Tabs.Fruit:AddToggle("StoredF", {Title = "Auto Store Fruit", Description = "Automatic store devil fruit", Default = false})
+StoredF:OnChanged(function(Value)
+  _G.StoreF = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.StoreF then
+      pcall(function() UpdStFruit() end)
+    end
+  end
+end)
+TwF = Tabs.Fruit:AddToggle("TwF", {Title = "Auto Tween to Fruit", Description = "Automatic tween to get devil fruit", Default = false})
+TwF:OnChanged(function(Value)
+  _G.TwFruits = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.TwFruits then
+      pcall(function()
+        for _,x1 in pairs(workspace:GetChildren()) do
+	    if string.find(x1.Name, "Fruit") then _tp(x1.Handle.CFrame) end
+	    end
+      end)
+    end
+  end
+end)
+BringF = Tabs.Fruit:AddToggle("BringF", {Title = "Auto Collect Fruit", Description = "Automatic bring devil fruit", Default = false})
+BringF:OnChanged(function(Value)
+  _G.InstanceF = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    if _G.InstanceF then
+      pcall(function() collectFruits(_G.InstanceF) end)
+    end
+  end
+end)
+
+Tabs.Shop:AddSection("Shop Options")
+Tabs.Shop:AddButton({Title = "Buy Buso", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BuyHaki","Buso")
+end})
+Tabs.Shop:AddButton({Title = "Buy Geppo", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BuyHaki","Geppo")
+end})
+Tabs.Shop:AddButton({Title = "Buy Soru", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BuyHaki","Soru")
+end})
+Tabs.Shop:AddButton({Title = "Buy Ken", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("KenTalk","Buy")
+end})
+
+Tabs.Shop:AddSection("Fighting - Style")
+Tabs.Shop:AddButton({Title = "Buy Black Leg", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BuyBlackLeg")
+end})
+Tabs.Shop:AddButton({Title = "Buy Electro", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BuyElectro")
+end})
+Tabs.Shop:AddButton({Title = "Buy Fishman Karate", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BuyFishmanKarate")
+end})
+Tabs.Shop:AddButton({Title = "Buy DragonClaw", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BlackbeardReward","DragonClaw","2")
+end})
+Tabs.Shop:AddButton({Title = "Buy Superhuman", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BuySuperhuman")
+end})
+Tabs.Shop:AddButton({Title = "Buy Death Step", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BuyDeathStep")
+end})
+Tabs.Shop:AddButton({Title = "Buy Sharkman Karate", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BuySharkmanKarate")
+end})
+Tabs.Shop:AddButton({Title = "Buy ElectricClaw", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BuyElectricClaw")
+end})
+Tabs.Shop:AddButton({Title = "Buy DragonTalon", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BuyDragonTalon")
+end})
+Tabs.Shop:AddButton({Title = "Buy Godhuman", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BuyGodhuman")
+end})
+Tabs.Shop:AddButton({Title = "Buy SanguineArt", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BuySanguineArt")
+end})
+
+Tabs.Shop:AddSection("Accessory")
+Tabs.Shop:AddButton({Title = "Buy Tomoe Ring", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BuyItem","Tomoe Ring")
+end})
+Tabs.Shop:AddButton({Title = "Buy Black Cape", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BuyItem","Black Cape")
+end})
+Tabs.Shop:AddButton({Title = "Buy Swordsman Hat", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BuyItem","Swordsman Hat")
+end})
+Tabs.Shop:AddButton({Title = "Buy Bizarre Rifle", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("Ectoplasm","Buy", 1)
+end})
+Tabs.Shop:AddButton({Title = "Buy Ghoul Mask", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("Ectoplasm","Buy", 2)
+end})
+
+Tabs.Shop:AddSection("Accessory SeaEvent")
+Tabs.Shop:AddButton({Title = "Craft Dragonheart", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("CraftItem","Craft","Dragonheart");
+end})
+Tabs.Shop:AddButton({Title = "Craft Dragonstorm", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("CraftItem","Craft","Dragonstorm");
+end})
+Tabs.Shop:AddButton({Title = "Craft DinoHood", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("CraftItem","Craft","DinoHood");
+end})   
+Tabs.Shop:AddButton({Title = "Craft SharkTooth", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("CraftItem","Craft","SharkTooth");
+end})   
+Tabs.Shop:AddButton({Title = "Craft TerrorJaw", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("CraftItem","Craft","TerrorJaw");
+end})   
+Tabs.Shop:AddButton({Title = "Craft SharkAnchor", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("CraftItem","Craft","SharkAnchor");
+end})   
+Tabs.Shop:AddButton({Title = "Craft LeviathanCrown", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("CraftItem","Craft","LeviathanCrown");
+end})   
+Tabs.Shop:AddButton({Title = "Craft LeviathanShield", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("CraftItem","Craft","LeviathanShield");
+end})   
+Tabs.Shop:AddButton({Title = "Craft LeviathanBoat", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("CraftItem","Craft","LeviathanBoat");
+end})   
+Tabs.Shop:AddButton({Title = "Craft LegendaryScroll", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("CraftItem","Craft","LegendaryScroll");
+end})   
+Tabs.Shop:AddButton({Title = "Craft MythicalScroll", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("CraftItem","Craft","MythicalScroll");
+end})   
+
+Tabs.Shop:AddSection("Weapon World1")
+Tabs.Shop:AddButton({Title = "Buy Cutlass", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BuyItem","Cutlass")
+end})
+Tabs.Shop:AddButton({Title = "Buy Katana", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BuyItem","Katana")
+end})
+Tabs.Shop:AddButton({Title = "Buy Iron Mace", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BuyItem","Iron Mace")
+end})   
+Tabs.Shop:AddButton({Title = "Buy Duel Katana", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BuyItem","Duel Katana")
+end})   
+Tabs.Shop:AddButton({Title = "Buy Triple Katana", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BuyItem","Triple Katana")
+end})  
+Tabs.Shop:AddButton({Title = "Buy Pipe", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BuyItem","Pipe")
+end})  
+Tabs.Shop:AddButton({Title = "Buy Dual-Headed Blade", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BuyItem","Dual-Headed Blade")
+end})   
+Tabs.Shop:AddButton({Title = "Buy Bisento", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BuyItem","Bisento")
+end})  
+Tabs.Shop:AddButton({Title = "Buy Soul Cane", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BuyItem","Soul Cane")
+end})
+Tabs.Shop:AddButton({Title = "Buy Slingshot", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BuyItem","Slingshot")
+end})
+Tabs.Shop:AddButton({Title = "Buy Musket", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BuyItem","Musket")
+end})    
+Tabs.Shop:AddButton({Title = "Buy Dual Flintlock", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BuyItem","Dual Flintlock")
+end})   
+Tabs.Shop:AddButton({Title = "Buy Flintlock", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BuyItem","Flintlock")
+end})   
+Tabs.Shop:AddButton({Title = "Buy Refined Flintlock", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BuyItem","Refined Flintlock")
+end})   
+Tabs.Shop:AddButton({Title = "Buy Cannon", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BuyItem","Cannon")
+end}) 
+Tabs.Shop:AddButton({Title = "Buy Kabucha", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BlackbeardReward","Slingshot","2")
+end})
+
+Tabs.Shop:AddSection("Fragments shop")
+Tabs.Shop:AddButton({Title = "Buy Refund Stats", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BlackbeardReward","Refund","2")
+end})
+Tabs.Shop:AddButton({Title = "Buy Reroll Race", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("BlackbeardReward","Reroll","2")
+end})   
+Tabs.Shop:AddButton({Title = "Buy Ghoul Race (2.5k)", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("Ectoplasm"," Change", 4)
+end})	
+Tabs.Shop:AddButton({Title = "Buy Cyborg Race (2.5k)", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("CyborgTrainer"," Buy")
+end})
+
+Tabs.Misc:AddSection("Server - Function")
+Tabs.Misc:AddButton({Title = "Rejoin Server", Description = "",Callback = function()
+  game:GetService("TeleportService"):Teleport(game.PlaceId, game.Players.LocalPlayer)
+end})
+Tabs.Misc:AddButton({Title = "Hop Server", Description = "",Callback = function()
+  Hop()
+end})
+Tabs.Misc:AddButton({Title = "Hop to Lowest Players", Description = "",Callback = function()
+  local Http = game:GetService("HttpService")
+  local TPS = game:GetService("TeleportService")
+  local Api = "https://games.roblox.com/v1/games/"
+  local _place = game.PlaceId
+  local _servers = Api.._place.."/servers/Public?sortOrder=Asc&limit=100"
+   function ListServers(cursor)
+     local Raw = game:HttpGet(_servers .. ((cursor and "&cursor="..cursor) or ""))
+     return Http:JSONDecode(Raw)
+   end
+   local Server, Next; repeat
+   local Servers = ListServers(Next)
+   Server = Servers.data[1]
+   Next = Servers.nextPageCursor
+  until Server
+  TPS:TeleportToPlaceInstance(_place,Server.id,plr)
+end})
+
+Tabs.Misc:AddButton({Title = "Hop to Lowest Pings Server", Description = "",Callback = function()
+local HTTPService = game:GetService("HttpService")
+local TeleportService = game:GetService("TeleportService")
+local StatsService = game:GetService("Stats")
+local function fetchServersData(placeId, limit)
+    local url = string.format("https://games.roblox.com/v1/games/%d/servers/Public?limit=%d", placeId, limit)
+    local success, response = pcall(function()
+        return HTTPService:JSONDecode(game:HttpGet(url))
+    end)
+  if success and response and response.data then
+	return response.data
+  end
+    return nil
+  end
+  local placeId = game.PlaceId
+  local serverLimit = 100
+  local servers = fetchServersData(placeId, serverLimit)
+  if not servers then return end
+  local lowestPingServer = servers[1]
+  for _, server in pairs(servers) do
+    if server["ping"] < lowestPingServer["ping"] and server.maxPlayers > server.playing then
+      lowestPingServer = server
+    end
+  end
+  local commonLoadTime = 0.5
+  task.wait(commonLoadTime)
+  local pingThreshold = 100
+  local serverStats = StatsService.Network.ServerStatsItem
+  local dataPing = serverStats["Data Ping"]:GetValueString()
+  local pingValue = tonumber(dataPing:match("(%d+)"))
+  if pingValue >= pingThreshold then
+    TeleportService:TeleportToPlaceInstance(placeId, lowestPingServer.id)
+  else
+    --pings
+  end
+end})
+
+local JobID = Tabs.Misc:AddInput("JobID", {Title = "JobID",Default = "",Placeholder = "",
+Numeric = false, -- Only allows numbers
+Finished = false, -- Only calls callback when you press enter
+Callback = function(Value)
+  _G.JobId = Value
+end})
+spawn(function()
+  while wait(Sec) do
+    if _G.JobId then
+      pcall(function()
+        local Connection
+        Connection = plr.OnTeleport:Connect(function(br)
+          if br == Enum.TeleportState.Failed then
+          Connection:Disconnect()
+          if workspace:FindFirstChild("Message") then workspace.Message:Destroy() end
+          end
+        end)
+      end)
+    end
+  end
+end)
+
+Tabs.Misc:AddButton({Title = "Teleport [Job ID]", Description = "",Callback = function()
+  replicated['__ServerBrowser']:InvokeServer("teleport",_G.JobId)
+end})
+Tabs.Misc:AddButton({Title = "Copy JobID", Description = "",Callback = function()
+  setclipboard(tostring(game.JobId))
+end})
+
+Tabs.Misc:AddSection("Player Gui / Others")
+
+Tabs.Misc:AddButton({Title = "Open Awakenings Expert", Description = "",Callback = function()
+  plr.PlayerGui.Main.AwakeningToggler.Visible = true
+end})
+Tabs.Misc:AddButton({Title = "Open Title Selection", Description = "",Callback = function()
+  replicated.Remotes.CommF_:InvokeServer("getTitles",true)
+  plr.PlayerGui.Main.Titles.Visible = true
+end})
+DisbleChat = Tabs.Misc:AddToggle("DisbleChat", {Title = "Disable Chat GUI", Description = "", Default = false})
+DisbleChat:OnChanged(function(Value)
+  _G.Rechat = Value
+  if  _G.Rechat == true then
+    local StarterGui = game:GetService('StarterGui')
+    StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, false)    
+  elseif _G.chat == false then
+    local StarterGui = game:GetService('StarterGui')
+    StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, true)    
+  end
+end)
+DisbleLeaderB = Tabs.Misc:AddToggle("DisbleLeaderB", {Title = "Disable Leader Board GUI", Description = "", Default = false})
+DisbleLeaderB:OnChanged(function(Value)
+  ReLeader = Value
+  if ReLeader == true then
+    local StarterGui = game:GetService('StarterGui')
+    StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.PlayerList, false)   
+  elseif ReLeader == false then
+    local StarterGui = game:GetService('StarterGui')
+    StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.PlayerList, true)   
+  end
+end)
+Tabs.Misc:AddButton({Title = "Set Pirate Team", Description = "",Callback = function()
+  Pirates()
+end})  
+Tabs.Misc:AddButton({Title = "Set Marine Team", Description = "",Callback = function()
+  Marines()
+end})
+UnPortal = Tabs.Misc:AddToggle("UnPortal", {Title = "Unlock All Portals", Description = "unlocked portal for who doesn't defeat rip_indra", Default = false})
+UnPortal:OnChanged(function(Value)
+  _G.PortalUnLock = Value
+end)
+spawn(function()
+  while wait(Sec) do
+    pcall(function()
+      if _G.PortalUnLock then        
+         if Attack.Pos(CstlePos_Miti,8) then
+           replicated.Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-12471.169921875, 374.94024658203, -7551.677734375))
+         elseif Attack.Pos(Man3Pos_Miti,8) then
+           replicated.Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-5072.08984375, 314.5412902832, -3151.1098632812))
+         elseif Attack.Pos(HydraPos_Miti,8) then                    
+           replicated.Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(5748.7587890625, 610.44982910156, -267.81704711914))
+         elseif Attack.Pos(HydratoCastle,8) then                   
+           replicated.Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-5072.08984375, 314.5412902832, -3151.1098632812))
+        end
+      end
+    end)
+  end
+end)
+
+Tabs.Misc:AddSection("Graphics / Haki Stats")
+
+HakiSt = {"State 0","State 1","State 2","State 3","State 4","State 5"}
+HakiStat = Tabs.Misc:AddDropdown("HakiStat",{Title = "Select Haki States",Values = HakiSt,Multi = false,Default = 1})
+HakiStat:OnChanged(function(Value)
+  _G.SelectStateHaki = Value
+end)
+Tabs.Misc:AddButton({Title = "ChangeBusoStage", Description = "",Callback = function()
+  if _G.SelectStateHaki == "State 0" then
+    replicated.Remotes.CommF_:InvokeServer("ChangeBusoStage",0)
+  elseif _G.SelectStateHaki == "State 1" then
+    replicated.Remotes.CommF_:InvokeServer("ChangeBusoStage",1)
+  elseif _G.SelectStateHaki == "State 2" then
+    replicated.Remotes.CommF_:InvokeServer("ChangeBusoStage",2)
+  elseif _G.SelectStateHaki == "State 3" then
+    replicated.Remotes.CommF_:InvokeServer("ChangeBusoStage",3)
+  elseif _G.SelectStateHaki == "State 4" then
+    replicated.Remotes.CommF_:InvokeServer("ChangeBusoStage",4)
+  elseif _G.SelectStateHaki == "State 5" then
+    replicated.Remotes.CommF_:InvokeServer("ChangeBusoStage",5)
+  end
+end})
+rtxM = Tabs.Misc:AddToggle("rtxM", {Title = "Turn on RTX Mode", Description = "", Default = false})
+rtxM:OnChanged(function(Value)
+  _G.RTXMode = Value
+  local a = game.Lighting
+  local c = Instance.new("ColorCorrectionEffect", a)
+  local e = Instance.new("ColorCorrectionEffect", a)
+  OldAmbient = a.Ambient
+  OldBrightness = a.Brightness
+  OldColorShift_Top = a.ColorShift_Top
+  OldBrightnessc = c.Brightness
+  OldContrastc = c.Contrast
+  OldTintColorc = c.TintColor
+  OldTintColore = e.TintColor    
+  if not _G.RTXMode then return end
+  while _G.RTXMode do wait()
+    a.Ambient = Color3.fromRGB(33, 33, 33)
+    a.Brightness = 0.3
+    c.Brightness = 0.176
+    c.Contrast = 0.39
+    c.TintColor = Color3.fromRGB(217, 145, 57)
+    game.Lighting.FogEnd = 999
+    if not plr.Character.HumanoidRootPart:FindFirstChild("PointLight") then
+      local a2 = Instance.new("PointLight")
+      a2.Parent = plr.Character.HumanoidRootPart
+      a2.Range = 15
+      a2.Color = Color3.fromRGB(217, 145, 57)
+    end
+    if not _G.RTXMode then
+      a.Ambient = OldAmbient
+      a.Brightness = OldBrightness
+      a.ColorShift_Top = OldColorShift_Top
+      c.Contrast = OldContrastc
+      c.Brightness = OldBrightnessc
+      c.TintColor = OldTintColorc
+      e.TintColor = OldTintColore
+      game.Lighting.FogEnd = 2500
+      plr.Character.HumanoidRootPart:FindFirstChild("PointLight"):Destroy()
+    end
+  end
+end)
+Tabs.Misc:AddButton({Title = "Turn on Fast Mode", Description = "",Callback = function()
+  for _,zx in next, workspace:GetDescendants() do
+  if table.find(Past, zx.ClassName) then  zx.Material = "Plastic" end
+  end
+end})
+Tabs.Misc:AddButton({Title = "Turn on Low CPU", Description = "",Callback = function()
+  LowCpu()
+end})
+Tabs.Misc:AddButton({Title = "Turn on increase Boats", Description = "",Callback = function()
+  for _, v in pairs(workspace.Boats:GetDescendants()) do
+    if table.find(ListSeaBoat, v.Name) and tostring(v.Owner.Value) == tostring(plr.Name) then              
+      v.VehicleSeat.MaxSpeed = 350
+      v.VehicleSeat.Torque = 0.2
+      v.VehicleSeat.TurnSpeed = 5
+      v.VehicleSeat.HeadsUpDisplay = true
+    end
+  end
+end})
+Tabs.Misc:AddButton({Title = "Remove Sky Fog", Description = "",Callback = function()
+  if Lighting:FindFirstChild("LightingLayers") then Lighting.LightingLayers:Destroy() end
+  if Lighting:FindFirstChild("SeaTerrorCC") then Lighting.SeaTerrorCC:Destroy() end
+  if Lighting:FindFirstChild("FantasySky") then Lighting.FantasySky:Destroy() end
+end})
+
+Tabs.Misc:AddSection("Configure - God")
+Tabs.Misc:AddButton({Title = "Rain Fruits (Client)", Description = "",Callback = function()
+  for i, v in pairs(game:GetObjects("rbxassetid://14759368201")[1]:GetChildren()) do
+    v.Parent = game.Workspace.Map
+    v:MoveTo(plr.Character.PrimaryPart.Position + Vector3.new(math.random(-50, 50), 100, math.random(-50, 50)))
+    if v.Fruit:FindFirstChild("AnimationController") then
+      v.Fruit:FindFirstChild("AnimationController"):LoadAnimation(v.Fruit:FindFirstChild("Idle")):Play()
+    end
+    v.Handle.Touched:Connect(function(otherPart)
+      if otherPart.Parent == plr.Character then
+        v.Parent = plr.Backpack
+        plr.Character.Humanoid:EquipTool(v)
+      end
+    end)
+  end
+end})
+briggt1 = Tabs.Misc:AddToggle("briggt1", {Title = "Turn on Full Bright", Description = "", Default = false})
+briggt1:OnChanged(function(Value)
+  bright = Value
+  if Value == true then
+    Lighting.Ambient = Color3.new(1, 1, 1)
+    Lighting.ColorShift_Bottom = Color3.new(1, 1, 1)
+    Lighting.ColorShift_Top = Color3.new(1, 1, 1)
+  else
+    Lighting.Ambient = Color3.new(0, 0, 0)
+    Lighting.ColorShift_Bottom = Color3.new(0, 0, 0)
+    Lighting.ColorShift_Top = Color3.new(0, 0, 0)
+  end  
+end)
+
+Cheat_DayNight = {"Day", "Night"}
+DayN = Tabs.Misc:AddDropdown("DayN",{Title = "Select Time",Values = Cheat_DayNight,Multi = false,Default = 1})
+DayN:OnChanged(function(Value)
+  _G.SelectDN = Value
+end)
+dayornight = Tabs.Misc:AddToggle("dayornight", {Title = "Turn on Time", Description = "", Default = false})
+dayornight:OnChanged(function(Value)
+  _G.daylightN = Value
+end)
+task.spawn(function()
+  while task.wait() do
+    if _G.daylightN then
+      if _G.SelectDN == "Day" then
+        Lighting.ClockTime = 12
+      elseif _G.SelectDN == "Night" then
+        Lighting.ClockTime = 0
+      end
+    end
+  end
+end)
+walkWater = Tabs.Misc:AddToggle("walkWater", {Title = "Turn on Walk on Water", Description = "walk on water", Default = true})
+walkWater:OnChanged(function(Value)
+  _G.WalkWater_Part = Value
+  if _G.WalkWater_Part then
+    game:GetService("Workspace").Map["WaterBase-Plane"].Size = Vector3.new(1000, 112, 1000)
+  else
+    game:GetService("Workspace").Map["WaterBase-Plane"].Size = Vector3.new(1000, 80, 1000)
+  end
+end)
+iceWalk = Tabs.Misc:AddToggle("iceWalk", {Title = "Turn on Ice Walk", Description = "Ice walk just like walk on water but have ice effect", Default = false})
+iceWalk:OnChanged(function(Value)
+  _G.WalkWater = Value
+end)
+spawn(function()
+  while task.wait() do
+    if _G.WalkWater then
+      pcall(function()
+	   if plr.Character and plr.Character:FindFirstChild("LeftFoot") then
+	   local upval0 = replicated.Assets.Models.IceSpikes4:Clone()
+        upval0.Parent = workspace
+        upval0.Size = Vector3.new(3+math.random(10,12),1.7,3+math.random(10,12))
+        upval0.Color = Color3.fromRGB(128,187,219)
+        upval0.CFrame = CFrame.new(plr.Character.Head.Position.X,-3.8,plr.Character.Head.Position.Z)*CFrame.Angles((math.random()-0.5)*0.06, math.random()*7,(math.random()-0.5)*0.07)
+        local var85={};
+        var85.Size=Vector3.new(0,0.3,0)
+        local var3=TW:Create(upval0,TweenInfo.new(2,Enum.EasingStyle.Quad,Enum.EasingDirection.In),var85)
+        var3.Completed:Connect(function()
+          upval0:Destroy()
+        end)
+          var3:Play()
+	    end	
+      end)
+    end
+  end
+end)
+local player = game.Players.LocalPlayer
+local function IsEntityAlive(entity)
+    if not entity then return false end
+    local humanoid = entity:FindFirstChild("Humanoid")
+    return humanoid and humanoid.Health > 0
+end
+local function GetEnemiesInRange(character, range)
+    local enemies = game:GetService("Workspace").Enemies:GetChildren()
+    local players = game:GetService("Players"):GetPlayers()
+    local targets = {}
+    local playerPos = character:GetPivot().Position
+    for _, enemy in ipairs(enemies) do
+        local rootPart = enemy:FindFirstChild("HumanoidRootPart")
+        if rootPart and IsEntityAlive(enemy) then
+            local distance = (rootPart.Position - playerPos).Magnitude
+            if distance <= range then
+                table.insert(targets, enemy)
+            end
+        end
+    end
+    for _, otherPlayer in ipairs(players) do
+        if otherPlayer ~= player and otherPlayer.Character then
+            local rootPart = otherPlayer.Character:FindFirstChild("HumanoidRootPart")
+            if rootPart and IsEntityAlive(otherPlayer.Character) then
+                local distance = (rootPart.Position - playerPos).Magnitude
+                if distance <= range then
+                    table.insert(targets, otherPlayer.Character)
+                end
+            end
+        end
+    end
+    return targets
+end
+function AttackNoCoolDown()
+    local player = game:GetService("Players").LocalPlayer
+    local character = player.Character
+    if not character then return end
+    local equippedWeapon = nil
+    for _, item in ipairs(character:GetChildren()) do
+        if item:IsA("Tool") then
+            equippedWeapon = item
+            break
+        end
+    end
+    if not equippedWeapon then return end
+    local enemiesInRange = GetEnemiesInRange(character, 60)
+    if #enemiesInRange == 0 then return end
+    local storage = game:GetService("ReplicatedStorage")
+    local modules = storage:FindFirstChild("Modules")
+    if not modules then return end
+    local attackEvent = storage:WaitForChild("Modules"):WaitForChild("Net"):WaitForChild("RE/RegisterAttack")
+    local hitEvent = storage:WaitForChild("Modules"):WaitForChild("Net"):WaitForChild("RE/RegisterHit")
+    if not attackEvent or not hitEvent then return end
+    local targets, mainTarget = {}, nil
+    for _, enemy in ipairs(enemiesInRange) do
+        if not enemy:GetAttribute("IsBoat") then
+            local HitboxLimbs = {"RightLowerArm", "RightUpperArm", "LeftLowerArm", "LeftUpperArm", "RightHand", "LeftHand"}
+            local head = enemy:FindFirstChild(HitboxLimbs[math.random(#HitboxLimbs)]) or enemy.PrimaryPart
+            if head then
+                table.insert(targets, { enemy, head })
+                mainTarget = head
+            end
+        end
+    end
+    if not mainTarget then return end
+    attackEvent:FireServer(0)
+    local playerScripts = player:FindFirstChild("PlayerScripts")
+    if not playerScripts then return end
+    local localScript = playerScripts:FindFirstChildOfClass("LocalScript")
+    while not localScript do
+        playerScripts.ChildAdded:Wait()
+        localScript = playerScripts:FindFirstChildOfClass("LocalScript")
+    end
+    local hitFunction
+    if getsenv then
+        local success, scriptEnv = pcall(getsenv, localScript)
+        if success and scriptEnv then
+            hitFunction = scriptEnv._G.SendHitsToServer
+        end
+    end
+    local successFlags, combatRemoteThread = pcall(function()
+        return require(modules.Flags).COMBAT_REMOTE_THREAD or false
+    end)
+    if successFlags and combatRemoteThread and hitFunction then
+        hitFunction(mainTarget, targets)
+    elseif successFlags and not combatRemoteThread then
+        hitEvent:FireServer(mainTarget, targets)
+    end
+end
+CameraShakerR = require(game.ReplicatedStorage.Util.CameraShaker)
+CameraShakerR:Stop()
+get_Monster=function()for a,b in pairs(workspace.Enemies:GetChildren())do local c=b:FindFirstChild("UpperTorso")or b:FindFirstChild("Head")if b:FindFirstChild("HumanoidRootPart",true)and c then if(b.Head.Position-plr.Character.HumanoidRootPart.Position).Magnitude<=50 then return true,c.Position end end end;for a,d in pairs(workspace.SeaBeasts:GetChildren())do if d:FindFirstChild("HumanoidRootPart")and d:FindFirstChild("Health")and d.Health.Value>0 then return true,d.HumanoidRootPart.Position end end;for a,d in pairs(workspace.Enemies:GetChildren())do if d:FindFirstChild("Health")and d.Health.Value>0 and d:FindFirstChild("VehicleSeat")then return true,d.Engine.Position end end end
+Actived=function()local a=game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool")for b,c in next,getconnections(a.Activated)do if typeof(c.Function)=='function'then getupvalues(c.Function)end end end
+task.spawn(function()
+  RunSer.Heartbeat:Connect(function()
+    pcall(function()      
+      if not _G.Seriality then return end      
+      AttackNoCoolDown() 
+      local Pretool = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool")
+      local ToolTip = Pretool.ToolTip
+      local MobAura, Mon = get_Monster()      
+      if ToolTip == "Blox Fruit" then
+        if MobAura then           
+          local LeftClickRemote = Pretool:FindFirstChild('LeftClickRemote');
+          if LeftClickRemote then Actived() LeftClickRemote:FireServer(Vector3.new(0.01,-500,0.01),1,true);LeftClickRemote:FireServer(false)end
+        end     		                         
+      end      
+    end)
+  end)
+end)
+Window:SelectTab(1)

@@ -34,8 +34,7 @@ end
 end
 end
 end
--- Color changed from green (168, 237, 7) to red (255, 50, 50)
-_G.Color = Color3.fromRGB(255, 50, 50)
+_G.Color = Color3.fromRGB(230, 30, 30) -- True V2 Red accent
 function CircleClick(Button, X, Y)
 coroutine.resume(
   coroutine.create(
@@ -129,9 +128,8 @@ game:GetService("UserInputService").InputChanged:Connect(
 )
 end
 
--- Logo updated to the specified asset ID 129872344726942
-_G.Logo = 129872344726942
-_G.Logo1 = 129872344726942
+_G.Logo = 14103696428
+_G.Logo1 = 14288624550
 local UI = Instance.new("ScreenGui")
 UI.Name = randomString
 UI.Parent = game.CoreGui:WaitForChild("RobloxGui"):WaitForChild("Modules")
@@ -140,7 +138,9 @@ if syn then
 syn.protect_gui(UI)
 end
 function library:Destroy()
-library:Destroy()
+if UI and UI.Parent then
+UI:Destroy()
+end
 end
 function library:Make()
 local Main = Instance.new("Frame")
@@ -215,8 +215,8 @@ Title.BackgroundTransparency = 1.000
 Title.Position = UDim2.new(0.05, 0, 0.04, 0)
 Title.Size = UDim2.new(0, 483, 0, 31)
 Title.Font = Enum.Font.GothamBold
--- Name changed to "KuKi Hub" with red accent color
-Title.Text = "KuKi".."<font color='rgb(255, 50, 50)'> Hub</font>".." | "..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+-- KuKi Hub | True V2 Red branding
+Title.Text = "KuKi".."<font color='rgb(255, 70, 70)'> Hub</font>".." True V2 Red | "..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
 Title.RichText = true;
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.TextSize = 15.000
@@ -327,6 +327,8 @@ postog123.Transparency = 0.5
 postog123.Enabled = true
 postog123.Archivable = true
 
+local MainPageclose = false
+
 Menu_Setting.MouseButton1Click:Connect(function()
   if MainPageclose == false then
   MainPageclose = true
@@ -369,9 +371,8 @@ Line.BackgroundTransparency = 1
 Line.Position = UDim2.new(0.5, 0, 0.311723471, 0)
 Line.Size = UDim2.new(0, 300, 0, 1)
 
--- Updated gradient to use red shades
 UIGradient.Color = ColorSequence.new {
-  ColorSequenceKeypoint.new(0.00, Color3.fromRGB(30,30,30)), ColorSequenceKeypoint.new(0.29, Color3.fromRGB(255, 50, 50)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(255, 50, 50)), ColorSequenceKeypoint.new(0.68, Color3.fromRGB(170, 30, 30)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(30,30,30))}
+  ColorSequenceKeypoint.new(0.00, Color3.fromRGB(30,30,30)), ColorSequenceKeypoint.new(0.29, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(0.68, Color3.fromRGB(170, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(30,30,30))}
 UIGradient.Parent = Line
 
 PlayerInfoFrame.Name = "PlayerInfoFrame"
@@ -477,8 +478,7 @@ HealthText.Position = UDim2.new(0.0260000005, 0, 0.100000001, 0)
 HealthText.Size = UDim2.new(0, 300, 0, 22)
 HealthText.Font = Enum.Font.GothamBold
 HealthText.Text = "Health"
--- Changed health bar color to red (255, 50, 50)
-HealthText.TextColor3 = Color3.fromRGB(255, 50, 50)
+HealthText.TextColor3 = Color3.fromRGB(255, 100, 100) -- Red theme
 HealthText.TextSize = 12.000
 HealthText.TextWrapped = true
 HealthText.TextXAlignment = Enum.TextXAlignment.Left
@@ -493,8 +493,7 @@ Line.Size = UDim2.new(0, 150, 0, 5)
 
 LineHealth.Name = "LineHealth"
 LineHealth.Parent = Line
--- Changed health fill color to red (255, 50, 50)
-LineHealth.BackgroundColor3 = Color3.fromRGB(255, 50, 50)
+LineHealth.BackgroundColor3 = Color3.fromRGB(255, 70, 70) -- Red health bar
 LineHealth.BorderSizePixel = 0
 LineHealth.Size = UDim2.new(0, 210, 0, 5)
 
@@ -525,8 +524,7 @@ StaminaText.Position = UDim2.new(0.0260000005, 0, 0.100000001, 0)
 StaminaText.Size = UDim2.new(0, 300, 0, 22)
 StaminaText.Font = Enum.Font.GothamBold
 StaminaText.Text = "Stamina"
--- Changed stamina text color to a lighter red to match theme
-StaminaText.TextColor3 = Color3.fromRGB(255, 100, 100)
+StaminaText.TextColor3 = Color3.fromRGB(255, 140, 80) -- Orange-red stamina text
 StaminaText.TextSize = 12.000
 StaminaText.TextWrapped = true
 StaminaText.TextXAlignment = Enum.TextXAlignment.Left
@@ -541,8 +539,7 @@ StaminaLine.Size = UDim2.new(0, 150, 0, 5)
 
 LineStamina.Name = "LineStamina"
 LineStamina.Parent = StaminaLine
--- Changed stamina fill color to red (255, 100, 100) to match theme
-LineStamina.BackgroundColor3 = Color3.fromRGB(255, 100, 100)
+LineStamina.BackgroundColor3 = Color3.fromRGB(255, 140, 70) -- Red-orange stamina bar
 LineStamina.BorderSizePixel = 0
 LineStamina.Size = UDim2.new(0, 200, 0, 5)
 
@@ -898,7 +895,7 @@ azure.BackgroundTransparency = 1.000
 azure.Size = UDim2.new(0, 240, 0, 15)
 
 Text.Name = "Text"
-Text.Parent = Label
+Text.Parent = azure
 Text.AnchorPoint = Vector2.new(0.5, 0.5)
 Text.BackgroundColor3 = _G.Color
 Text.BackgroundTransparency = 1.000
@@ -956,8 +953,9 @@ Button_2.Parent = SectionContainer
 Button_2.BackgroundColor3 = Color3.fromRGB(33, 132, 112)
 Button_2.Size = UDim2.new(0.975000024, 0, 0, 25)
 Button_2.ZIndex = 16
+local redActive = Color3.fromRGB(210, 40, 40) -- True V2 Red active state
 if default then
-Button_2.BackgroundColor3 = Color3.fromRGB(33, 132, 112)
+Button_2.BackgroundColor3 = redActive
 else
   Button_2.BackgroundColor3 = _G.Color
 end
@@ -998,7 +996,7 @@ TweenService:Create(
   Button_2,
   TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
   {
-    BackgroundColor3 = state and _G.Color or Color3.fromRGB(33, 132, 112)
+    BackgroundColor3 = default and redActive or _G.Color
   }
 ):Play()
 callback(default)
@@ -1009,7 +1007,7 @@ TweenService:Create(
   Button_2,
   TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
   {
-    BackgroundColor3 = state and Color3.fromRGB(33, 132, 112) or _G.Color
+    BackgroundColor3 = state and redActive or _G.Color
   }
 ):Play()
 callback(state)
@@ -1222,7 +1220,6 @@ TextButton.MouseButton1Click:Connect(function()
 	end
 	wait(0.1)
 	CircleClick(TextButton, Mouse.X, Mouse.Y)
-	SoundClick:Destroy()
 end)
 
 return ToglFunc
@@ -1413,7 +1410,7 @@ Item.TextSize = 13.000
 Item.TextTransparency = 0
 
 UICorner1.CornerRadius = UDim.new(0, 4)
-UICorner1.Parent = item
+UICorner1.Parent = Item
 
 Item.MouseEnter:Connect(function()
   TweenService:Create(
@@ -1493,7 +1490,7 @@ Item.TextTransparency = 0
 
 local UICorner2 = Instance.new("UICorner")
 UICorner2.CornerRadius = UDim.new(0, 4)
-UICorner2.Parent = item
+UICorner2.Parent = Item
 
 Item.MouseEnter:Connect(function()
   TweenService:Create(
@@ -1971,4 +1968,30 @@ return sections
 end
 return tabs
 end
+
+-- KuKi Hub True V2 Red UI
+local KuKiHub = library:Make()
+local HomeTab = KuKiHub:Tab("Home", 14288624550)
+local HomePage = HomeTab:CraftPage(1)
+local HomeSection = HomePage:Section("Welcome")
+HomeSection:Label("Welcome to KuKi Hub True V2 Red")
+HomeSection:Label("Use the tabs to access scripts and settings.")
+HomeSection:Button("Join Discord", function()
+  print("KuKi Hub Discord button pressed")
+end)
+
+local ScriptsTab = KuKiHub:Tab("Scripts", 14103696428)
+local ScriptsPage = ScriptsTab:CraftPage(2)
+local ScriptsSection = ScriptsPage:Section("Core Scripts")
+ScriptsSection:Button("Load Example Script", function()
+  print("Example script running - KuKi Hub")
+end)
+
+local SettingsTab = KuKiHub:Tab("Settings", 14479606771)
+local SettingsPage = SettingsTab:CraftPage(1)
+local SettingsSection = SettingsPage:Section("UI Options")
+SettingsSection:Toggle("Enable Cooldown", false, function(state)
+  print("Cooldown enabled:", state)
+end)
+
 return library

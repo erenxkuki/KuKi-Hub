@@ -1,6 +1,13 @@
+--[[
+    Ryzu Hub | True V2
+    Theme: Purple (#8A2BE2) / Black / White
+    Features: Tabs, Sections, Buttons, Toggles, Sliders, Dropdowns, Textboxes, MultiDropdowns
+    Toggle Button: Always visible (Purple cube)
+--]]
+
 do
-local ui = game:GetService("CoreGui"):FindFirstChild("UILibrary")
-if ui then ui:Destroy() end
+    local ui = game:GetService("CoreGui"):FindFirstChild("UILibrary")
+    if ui then ui:Destroy() end
 end
 
 local library = {}
@@ -21,8 +28,8 @@ for i, v in pairs(game.CoreGui:WaitForChild("RobloxGui"):WaitForChild("Modules")
     end
 end
 
--- ██████ KuKi Hub Theme (Red) ██████
-_G.Color = Color3.fromRGB(255, 0, 0)  -- Pure Red
+-- ██████ RYZU HUB THEME (Purple) ██████
+_G.Color = Color3.fromRGB(138, 43, 226)  -- Purple (BlueViolet)
 
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
@@ -53,7 +60,7 @@ function CircleClick(Button, X, Y)
 end
 
 function dragify(Frame, object)
-    local dragToggle, dragStart, startPos
+    local dragToggle, dragStart, startPos, dragInput
     local function updateInput(input)
         local Delta = input.Position - dragStart
         TweenService:Create(object, TweenInfo.new(0.25), { Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y) }):Play()
@@ -80,42 +87,9 @@ local UI = Instance.new("ScreenGui")
 UI.Name = randomString
 UI.Parent = game.CoreGui:WaitForChild("RobloxGui"):WaitForChild("Modules")
 UI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+UI.Enabled = true
 if syn then syn.protect_gui(UI) end
 
--- ██████ SEPARATE TOGGLE BUTTON (using provided asset) ██████
-local ToggleButton = Instance.new("ImageButton")
-ToggleButton.Parent = UI
-ToggleButton.Size = UDim2.new(0, 50, 0, 50)
-ToggleButton.Position = UDim2.new(0, 10, 0.5, -25)
-ToggleButton.BackgroundTransparency = 1
-ToggleButton.Image = "rbxassetid://129872344726942"  -- Your asset
-ToggleButton.ImageColor3 = Color3.fromRGB(255, 255, 255)
-ToggleButton.ZIndex = 20
-ToggleButton.AutoButtonColor = false
-
-local ToggleStroke = Instance.new("UIStroke")
-ToggleStroke.Color = _G.Color
-ToggleStroke.Thickness = 2
-ToggleStroke.Transparency = 0.5
-ToggleStroke.Parent = ToggleButton
-
-local ToggleCorner = Instance.new("UICorner")
-ToggleCorner.CornerRadius = UDim.new(0, 8)
-ToggleCorner.Parent = ToggleButton
-
-local guiVisible = true
-ToggleButton.MouseButton1Click:Connect(function()
-    CircleClick(ToggleButton, Mouse.X, Mouse.Y)
-    guiVisible = not guiVisible
-    UI.Enabled = guiVisible
-    if guiVisible then
-        TweenService:Create(ToggleButton, TweenInfo.new(0.3), { ImageColor3 = Color3.fromRGB(255,255,255) }):Play()
-    else
-        TweenService:Create(ToggleButton, TweenInfo.new(0.3), { ImageColor3 = _G.Color }):Play()
-    end
-end)
-
--- ██████ MAIN LIBRARY CONSTRUCTION ██████
 function library:Make()
     local Main = Instance.new("Frame")
     local UICorner = Instance.new("UICorner")
@@ -130,11 +104,12 @@ function library:Make()
     Main.Name = "Main"
     Main.Parent = UI
     Main.Position = UDim2.new(0.5, 0, 0.5, 0)
-    Main.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+    Main.BackgroundColor3 = Color3.fromRGB(20, 20, 20)   -- Black
     Main.Size = UDim2.new(0, 520, 0, 350)
     Main.ClipsDescendants = true
     Main.AnchorPoint = Vector2.new(0.5, 0.5)
     Main.BackgroundTransparency = 0
+    Main.Visible = true
 
     local MainStroke = Instance.new("UIStroke")
     MainStroke.Color = _G.Color
@@ -142,8 +117,37 @@ function library:Make()
     MainStroke.Transparency = 0.3
     MainStroke.Parent = Main
 
-    UICorner.CornerRadius = UDim.new(0, 4)
+    UICorner.CornerRadius = UDim.new(0, 6)
     UICorner.Parent = Main
+
+    -- ██████ TOGGLE BUTTON (always visible) ██████
+    local ToggleButton = Instance.new("ImageButton")
+    ToggleButton.Parent = UI
+    ToggleButton.Size = UDim2.new(0, 50, 0, 50)
+    ToggleButton.Position = UDim2.new(0, 10, 0.5, -25)
+    ToggleButton.BackgroundTransparency = 1
+    ToggleButton.Image = "rbxassetid://129872344726942"  -- You can replace with your own asset
+    ToggleButton.ImageColor3 = Color3.fromRGB(255, 255, 255)
+    ToggleButton.ZIndex = 20
+    ToggleButton.AutoButtonColor = false
+
+    local ToggleStroke = Instance.new("UIStroke")
+    ToggleStroke.Color = _G.Color
+    ToggleStroke.Thickness = 2
+    ToggleStroke.Transparency = 0.5
+    ToggleStroke.Parent = ToggleButton
+
+    local ToggleCorner = Instance.new("UICorner")
+    ToggleCorner.CornerRadius = UDim.new(0, 8)
+    ToggleCorner.Parent = ToggleButton
+
+    local guiVisible = true
+    ToggleButton.MouseButton1Click:Connect(function()
+        CircleClick(ToggleButton, Mouse.X, Mouse.Y)
+        guiVisible = not guiVisible
+        Main.Visible = guiVisible
+        ToggleButton.ImageColor3 = guiVisible and Color3.fromRGB(255,255,255) or _G.Color
+    end)
 
     -- Keybind toggle (RightControl)
     local uitoggled = false
@@ -151,20 +155,22 @@ function library:Make()
         if io.KeyCode == UIConfig.Bind then
             if uitoggled then
                 Main:TweenSize(UDim2.new(0,520,0,350), "Out", "Quart", 0.8, true)
-                UI.Enabled = true
+                Main.Visible = true
                 uitoggled = false
+                ToggleButton.ImageColor3 = Color3.fromRGB(255,255,255)
             else
                 Main:TweenSize(UDim2.new(0,0,0,0), "Out", "Quart", 0.8, true)
-                uitoggled = true
                 task.wait(0.1)
-                UI.Enabled = false
+                Main.Visible = false
+                uitoggled = true
+                ToggleButton.ImageColor3 = _G.Color
             end
         end
     end)
 
     HeaderTop.Name = "Top"
     HeaderTop.Parent = Main
-    HeaderTop.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+    HeaderTop.BackgroundColor3 = Color3.fromRGB(15, 15, 15)  -- Darker black
     HeaderTop.Size = UDim2.new(1, 0, 0, 35)
 
     local HeaderCorner = Instance.new("UICorner")
@@ -175,15 +181,14 @@ function library:Make()
     Title.Parent = HeaderTop
     Title.BackgroundTransparency = 1
     Title.Position = UDim2.new(0.05, 0, 0, 5)
-    Title.Size = UDim2.new(0, 400, 0, 25)
+    Title.Size = UDim2.new(0, 450, 0, 25)
     Title.Font = Enum.Font.GothamBold
-    Title.Text = "KuKi" .. "<font color='rgb(255,0,0)'> Hub</font>" .. " | " .. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+    Title.Text = "Ryzu Hub" .. "<font color='rgb(138,43,226)'> | True V2</font>  •  " .. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
     Title.RichText = true
     Title.TextColor3 = Color3.fromRGB(255,255,255)
     Title.TextSize = 15
     Title.TextXAlignment = Enum.TextXAlignment.Left
 
-    -- Drag functionality
     dragify(HeaderTop, Main)
 
     TabHolder.Name = "TabHolder"
@@ -214,12 +219,12 @@ function library:Make()
 
     Bottom.Name = "Bottom"
     Bottom.Parent = Main
-    Bottom.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+    Bottom.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
     Bottom.BackgroundTransparency = 1
     Bottom.Position = UDim2.new(0, 10, 0, 85)
     Bottom.Size = UDim2.new(0, 500, 0, 250)
 
-    -- Settings gear (kept optional)
+    -- Optional settings gear
     local Menu_Setting = Instance.new("ImageButton")
     Menu_Setting.Parent = HeaderTop
     Menu_Setting.BackgroundTransparency = 1
@@ -247,11 +252,11 @@ function library:Make()
 
         Tab.Name = "Tab"
         Tab.Parent = TabContainer
-        Tab.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+        Tab.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
         Tab.Size = UDim2.new(0, 114, 0, 30)
         Tab.Text = ""
 
-        TabCorner.CornerRadius = UDim.new(0, 3)
+        TabCorner.CornerRadius = UDim.new(0, 4)
         TabCorner.Parent = Tab
 
         ImageLabel.Parent = Tab
@@ -387,6 +392,7 @@ function library:Make()
             end)
 
             local functionitem = {}
+
             function functionitem:Label(text)
                 local Label = Instance.new("TextLabel")
                 Label.Parent = SectionContainer
@@ -644,6 +650,117 @@ function library:Make()
                 end)
                 if default then callback(default) end
                 return {}
+            end
+
+            function functionitem:MultiDropdown(Name, list, default, callback)
+                local Dropfunc = {}
+                local MainDropDown = Instance.new("Frame")
+                MainDropDown.Parent = SectionContainer
+                MainDropDown.BackgroundColor3 = Color3.fromRGB(30,30,30)
+                MainDropDown.Size = UDim2.new(1, 0, 0, 30)
+                MainDropDown.ClipsDescendants = true
+                Instance.new("UICorner", MainDropDown).CornerRadius = UDim.new(0,3)
+                local Title = Instance.new("TextLabel")
+                Title.Parent = MainDropDown
+                Title.BackgroundTransparency = 1
+                Title.Position = UDim2.new(0,8,0,0)
+                Title.Size = UDim2.new(1,-30,1,0)
+                Title.Font = Enum.Font.GothamBold
+                Title.Text = Name .. " : " .. (default and table.concat(default, ", ") or "")
+                Title.TextColor3 = Color3.fromRGB(225,225,225)
+                Title.TextSize = 12
+                Title.TextXAlignment = Enum.TextXAlignment.Left
+                local Arrow = Instance.new("ImageLabel")
+                Arrow.Parent = MainDropDown
+                Arrow.BackgroundTransparency = 1
+                Arrow.Position = UDim2.new(1,-22,0,6)
+                Arrow.Size = UDim2.new(0,16,0,16)
+                Arrow.Image = "rbxassetid://7072706663"
+                Arrow.Rotation = 180
+                local Scroll = Instance.new("ScrollingFrame")
+                Scroll.Parent = MainDropDown
+                Scroll.Position = UDim2.new(0,0,1,0)
+                Scroll.Size = UDim2.new(1,0,0,100)
+                Scroll.BackgroundTransparency = 1
+                Scroll.CanvasSize = UDim2.new(0,0,0,0)
+                Scroll.ScrollBarThickness = 2
+                local List = Instance.new("UIListLayout")
+                List.Parent = Scroll
+                List.Padding = UDim.new(0,3)
+                local Btn = Instance.new("TextButton")
+                Btn.Parent = MainDropDown
+                Btn.BackgroundTransparency = 1
+                Btn.Size = UDim2.new(1,0,1,0)
+                Btn.Text = ""
+                local selected = default or {}
+                local isOpen = false
+                Btn.MouseButton1Click:Connect(function()
+                    isOpen = not isOpen
+                    MainDropDown:TweenSize(UDim2.new(1,0,0, isOpen and 131 or 30), "Out", "Quad", 0.3, true)
+                    TweenService:Create(Arrow, TweenInfo.new(0.3), {Rotation = isOpen and 0 or 180}):Play()
+                end)
+                local function addOption(opt)
+                    local Item = Instance.new("TextButton")
+                    Item.Parent = Scroll
+                    Item.BackgroundColor3 = Color3.fromRGB(30,30,30)
+                    Item.Size = UDim2.new(1,-6,0,20)
+                    Item.Font = Enum.Font.GothamBold
+                    Item.Text = opt
+                    Item.TextColor3 = Color3.fromRGB(225,225,225)
+                    Item.TextSize = 13
+                    Instance.new("UICorner", Item).CornerRadius = UDim.new(0,4)
+                    Item.MouseButton1Click:Connect(function()
+                        if table.find(selected, opt) then
+                            table.remove(selected, table.find(selected, opt))
+                        else
+                            table.insert(selected, opt)
+                        end
+                        Title.Text = Name .. " : " .. table.concat(selected, ", ")
+                        callback(selected, opt)
+                    end)
+                end
+                for _, opt in ipairs(list) do addOption(opt) end
+                List:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
+                    Scroll.CanvasSize = UDim2.new(0,0,0,List.AbsoluteContentSize.Y + 10)
+                end)
+                return Dropfunc
+            end
+
+            function functionitem:Textbox(Name, Placeholder, callback)
+                local Textbox = Instance.new("Frame")
+                Textbox.Parent = SectionContainer
+                Textbox.BackgroundColor3 = Color3.fromRGB(30,30,30)
+                Textbox.Size = UDim2.new(1, 0, 0, 35)
+                Instance.new("UICorner", Textbox).CornerRadius = UDim.new(0,4)
+                local Label = Instance.new("TextLabel")
+                Label.Parent = Textbox
+                Label.BackgroundTransparency = 1
+                Label.Position = UDim2.new(0,10,0,10)
+                Label.Size = UDim2.new(0,100,0,12)
+                Label.Font = Enum.Font.GothamBold
+                Label.Text = Name
+                Label.TextColor3 = Color3.fromRGB(255,255,255)
+                Label.TextSize = 11
+                Label.TextXAlignment = Enum.TextXAlignment.Left
+                local Box = Instance.new("TextBox")
+                Box.Parent = Textbox
+                Box.AnchorPoint = Vector2.new(0.5,0.5)
+                Box.BackgroundColor3 = Color3.fromRGB(20,20,20)
+                Box.Position = UDim2.new(0.8, 0, 0.5, 0)
+                Box.Size = UDim2.new(0, 80, 0, 25)
+                Box.Font = Enum.Font.GothamBold
+                Box.PlaceholderText = Placeholder
+                Box.PlaceholderColor3 = Color3.fromRGB(150,150,150)
+                Box.Text = ""
+                Box.TextColor3 = Color3.fromRGB(255,255,255)
+                Box.TextSize = 12
+                Instance.new("UICorner", Box).CornerRadius = UDim.new(0,4)
+                Box.FocusLost:Connect(function(ep)
+                    if ep and #Box.Text > 0 then
+                        callback(Box.Text)
+                        Box.Text = ""
+                    end
+                end)
             end
 
             return functionitem
